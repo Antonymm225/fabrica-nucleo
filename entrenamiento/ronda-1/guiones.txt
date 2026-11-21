@@ -1,0 +1,642 @@
+# Ronda 1 de entrenamiento: 30 guiones para que Antony los califique de 0 a 10.
+# Formato EST-01: [mostrado|hablado] para cifras, *clave* para la palabra clave.
+# Cada guion empieza con: ## ID | título | tipo de gancho
+# Cifras calculadas con Python (préstamos con amortización mensual).
+
+## R1-01 | La tarjeta de la tienda | Cifra que duele (temporada)
+Este *Black Friday* te van a ofrecer
+[10%|diez por ciento] de descuento por sacar su *tarjeta*.
+Se llama la *tarjeta de tienda*.
+Suena bien, pero cobran cerca de [30%|treinta por ciento] de *interés*.
+Imagina que compras una tele de [$1,000|mil dólares].
+Te ahorras [$100|cien dólares] de *descuento*.
+Pero si pagas [$40|cuarenta dólares] al mes,
+tardas más de *tres años* en pagarla.
+Y le dejas a la tienda
+casi [$600|seiscientos dólares] en *intereses*.
+O sea, el *descuento* te salió carísimo.
+Si ya la tienes, págala *completa* cada mes.
+Y si no puedes pagarla completa,
+mejor *no la saques*.
+Junta el dinero primero y compra *de contado*.
+Son casi [$500|quinientos dólares] que se quedan
+en *tu casa*, no en la tienda.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va de *compras*.
+
+## R1-02 | Compra ahora, paga después | Error común
+Si compras en *cuatro pagos* sin interés,
+cuidado con este *detalle*.
+Se llama *paga después*.
+Divides una compra de [$200|doscientos dólares]
+en cuatro pagos de [$50|cincuenta].
+Suena fácil, ¿verdad?
+Pero si un pago se *atrasa*,
+te pueden cobrar un *cargo por atraso*.
+Y si tienes *tres o cuatro* de estos planes,
+los pagos se juntan en la misma *quincena*.
+Ahí es donde se te va la *renta*,
+la comida del *mes*,
+o la gasolina de la *troca*.
+Antes de usarlo, suma *todos* tus pagos pendientes.
+Si no te alcanzan con *una quincena*,
+mejor no lo uses.
+Y nunca tengas *dos planes* a la vez.
+Tu *quincena* tiene que alcanzar para tu casa.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra en *cuotas*.
+
+## R1-03 | El préstamo de día de pago | Cifra absurda
+Un préstamo de [$400|cuatrocientos dólares]
+te cobra un interés de casi [400%|cuatrocientos por ciento].
+Se llama el *préstamo de día de pago*.
+Te piden [$15|quince dólares] por cada [$100|cien].
+Por [$400|cuatrocientos], pagas [$60|sesenta dólares] en *dos semanas*.
+Parece poco, pero si lo *renuevas*,
+vuelves a pagar [$60|sesenta] cada *quincena*.
+En un año, eso es un interés
+de casi [390%|trescientos noventa por ciento].
+Muchos lo renuevan *mes tras mes*
+y nunca terminan de *pagarlo*.
+Mejor pide un adelanto en tu *trabajo*,
+o ve a una *cooperativa de crédito*,
+que presta poquito con interés *mucho menor*.
+Y empieza un *ahorro de emergencia*,
+aunque sea de [$20|veinte dólares] por semana.
+Así la próxima vez no dependes de *nadie*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien anda *apretado*.
+
+## R1-04 | Lo que cuesta mandar dinero | Pregunta directa
+¿Cuánto te cobran por mandar *dinero a tu familia*?
+Al año puede ser más de [$300|trescientos dólares].
+Se llama la *comisión de envío*.
+Imagina que mandas dinero *dos veces* al mes.
+Y cada envío te cuesta [$15|quince dólares],
+entre la *comisión* y el *tipo de cambio*.
+Son [$30|treinta] al mes,
+y [$360|trescientos sesenta dólares] al *año*.
+Eso es el *regalo de Navidad* de tus hijos,
+o un mes de *luz y agua* allá.
+Antes de mandar, *compara* dos o tres servicios.
+Fíjate cuánto *recibe* tu familia,
+no solo cuánto *cobra* el envío.
+Y si puedes, manda *una vez* al mes
+en lugar de *dos*.
+Con ese cambio, pagas la *mitad*.
+Son [$180|ciento ochenta dólares] más al año
+para *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien manda dinero a *su tierra*.
+
+## R1-05 | El fondo de emergencia | Historia de un conocido
+Mi compadre se quedó sin trabajo *tres semanas*.
+Y terminó debiendo más de [$2,000|dos mil dólares].
+Se llama *no tener colchón*.
+Pagó la renta con la *tarjeta*,
+y la comida con un *préstamo*.
+Cuando volvió a trabajar,
+ya estaba *endeudado* por meses.
+La solución es un *fondo de emergencia*.
+Empieza con [$20|veinte dólares] cada *semana*.
+En un año, tienes [$1,040|mil cuarenta dólares].
+En tres años, más de [$3,000|tres mil].
+Ponlo en una cuenta *aparte*,
+que no veas todos los días.
+Y no lo toques para *gustos*,
+solo para *emergencias* de verdad.
+Ese dinero es la *tranquilidad*
+de *tu casa* cuando el trabajo falla.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja por *temporada*.
+
+## R1-06 | Usar toda tu tarjeta | Mito (aunque pagues a tiempo)
+Usar *toda tu tarjeta* te baja el puntaje,
+aunque la pagues *a tiempo*.
+Se llama el *uso del crédito*.
+Imagina que tu tarjeta tiene un límite
+de [$2,000|dos mil dólares].
+Si debes [$1,900|mil novecientos],
+el banco ve que usas *casi todo*.
+Y tu *puntaje* baja.
+Con un puntaje bajo,
+la *troca* te sale más cara,
+en la *renta* te piden más depósito,
+y la *casa* te cuesta más interés.
+La regla es sencilla:
+usa menos del [30%|treinta por ciento] de tu límite.
+Con un límite de [$2,000|dos mil],
+no debas más de [$600|seiscientos].
+Y paga *antes* de la fecha de corte.
+Tu *puntaje* es la llave de tu casa.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *subir su crédito*.
+
+## R1-07 | El crédito que nadie pide | Lo que no te dicen
+Uno de cada *cinco* trabajadores
+deja de cobrar un dinero que le *toca*.
+Se llama el *crédito por ingreso*.
+Es un crédito del *gobierno*
+para familias que *trabajan* y ganan poco.
+Se cobra al hacer tus *impuestos*.
+Y mientras más *hijos* tienes, más te puede tocar.
+Pero mucha gente no lo *pide*,
+porque no sabe que *existe*,
+o porque no hace su *declaración*.
+Ese dinero puede ser la *renta* de un mes,
+los *útiles* de la escuela,
+o el principio de tu *ahorro*.
+Cuando hagas tus impuestos, pregunta *directamente*:
+¿Califico para el crédito por ingreso del trabajo?
+Hay lugares *gratis* que revisan si calificas.
+Es dinero de *tu familia*. Pídelo.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien hace sus *impuestos*.
+
+## R1-08 | Cincuenta dólares al mes para tu hijo | Reto con número
+Con [$50|cincuenta dólares] al mes,
+tu hijo puede cumplir [18|dieciocho] con casi [$16,000|dieciséis mil].
+Se llama *ahorrar desde chiquito*.
+Son [$50|cincuenta] al mes, desde que *nace*.
+En [18|dieciocho] años, tú pones [$10,800|diez mil ochocientos].
+Pero si la cuenta paga [4%|cuatro por ciento],
+los *intereses* van sumando solos.
+Y llega a casi [$16,000|dieciséis mil dólares].
+Casi [$5,000|cinco mil] que tú *no pusiste*.
+Eso es su primer *carro*,
+un año de *escuela*,
+o el enganche de su *casa*.
+El secreto es *empezar temprano*,
+aunque sea poquito.
+Abre una cuenta *a su nombre*
+y pon el depósito *automático*.
+Así no se te olvida *ningún mes*.
+Es el mejor regalo para *tus hijos*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *hijos chiquitos*.
+
+## R1-09 | La hipoteca a treinta años | Cifra que duele
+Tu casa de [$300,000|trescientos mil dólares]
+te puede costar más del *doble*.
+Se llama la *hipoteca a treinta años*.
+Con un interés de [6.5%|seis y medio por ciento],
+pagas casi [$1,900|mil novecientos] al mes.
+Y en [30|treinta] años, le dejas al banco
+más de [$380,000|trescientos ochenta mil] en *intereses*.
+Eso es otra *casa* entera,
+y la *escuela* de tus hijos.
+A [15|quince] años, la tasa suele ser *más baja*.
+Pagas unos [$2,500|dos mil quinientos] al mes,
+pero solo [$153,000|ciento cincuenta y tres mil] de *intereses*.
+Si no te alcanza para [15|quince],
+está bien, no te *ahogues*.
+Pero pregunta siempre por el *total a pagar*,
+no solo por el *pago mensual*.
+Son más de [$200,000|doscientos mil dólares]
+que se quedan en *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *comprar casa*.
+
+## R1-10 | El pago número trece | Truco poco conocido
+Un pago *extra* al año
+le quita casi *seis años* a tu hipoteca.
+Se llama el *pago número trece*.
+Imagina una casa de [$300,000|trescientos mil]
+a [30|treinta] años, al [6.5%|seis y medio por ciento].
+Pagas casi [$1,900|mil novecientos] al mes.
+Ahora divide ese pago entre *doce*,
+y súmale ese pedacito a *cada mes*.
+Son unos [$158|ciento cincuenta y ocho] dólares más.
+Al final del año, hiciste *un pago extra*.
+Y terminas de pagar casi *seis años antes*.
+Te ahorras más de [$87,000|ochenta y siete mil] en *intereses*.
+Antes de hacerlo, llama a tu *banco*,
+y pide que el extra vaya *al capital*.
+Que no lo usen para *adelantar* pagos.
+Son seis años sin *hipoteca*,
+y más dinero para *tu retiro*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien ya tiene *casa*.
+
+## R1-11 | El seguro que sube solito | Pregunta directa
+¿Hace cuánto no comparas el *seguro de tu troca*?
+Podrías estar pagando de más *cada mes*.
+Se llama el *cliente dormido*.
+Muchas aseguradoras te suben el precio
+*poco a poco*, en cada renovación.
+Y como no comparas, *ni cuenta te das*.
+Imagina que pagas [$150|ciento cincuenta dólares] al mes.
+Y otra te da lo mismo por [$120|ciento veinte].
+Son [$30|treinta] al mes,
+y [$360|trescientos sesenta dólares] al *año*.
+Eso es casi un mes de *comida*,
+o las llantas nuevas de la *troca*.
+Una vez al año, pide *dos o tres* precios
+con la *misma cobertura*.
+Y pregunta por *descuentos*:
+por buen manejo, o por juntar *casa y carro*.
+Es dinero que se queda en *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien maneja *todos los días*.
+
+## R1-12 | El café de treinta y nueve dólares | Contraste absurdo
+Un café de [$4|cuatro dólares]
+te puede costar [$39|treinta y nueve].
+Se llama el *cargo por sobregiro*.
+Pasa cuando pagas con tu *tarjeta de débito*
+y no tienes *suficiente* en la cuenta.
+El banco paga por ti,
+y te cobra hasta [$35|treinta y cinco dólares] de *multa*.
+Si te pasa *dos veces* al mes,
+son [$840|ochocientos cuarenta dólares] al *año*.
+Eso es la *renta* de un cuarto,
+o los *útiles* de tus hijos.
+Llama a tu banco y pide que *apaguen*
+el *sobregiro* en tu tarjeta de débito.
+Así, si no tienes saldo, la compra *no pasa*.
+Y pon una *alerta* en tu celular
+para cuando tu saldo esté *bajo*.
+Son cientos de dólares que se quedan
+en *tu casa*, no en el banco.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien usa *tarjeta de débito*.
+
+## R1-13 | El gasto hormiga | Cifra que duele
+Esa bebida de [$5|cinco dólares] cada mañana
+te cuesta más de [$1,800|mil ochocientos] al año.
+Se llama el *gasto hormiga*.
+Un energético en la *gasolinera*,
+un café antes del *trabajo*.
+Parece *nada*, ¿verdad?
+Pero son [$5|cinco] todos los días.
+En un año, [$1,825|mil ochocientos veinticinco dólares].
+En cinco años, más de [$9,000|nueve mil].
+Eso es el *enganche* de una troca,
+o el *fondo de emergencia* de tu casa.
+No te digo que *no* te des gustos.
+Pero llévate el café *de casa*
+al menos *tres días* por semana.
+Y ese dinero, guárdalo *aparte*.
+Vas a ver cómo *crece*.
+Pequeños gastos hacen *grandes huecos*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien no sale sin su *café*.
+
+## R1-14 | La troca nueva que pierde | Cifra que duele
+Esa troca *nueva* pierde [$8,000|ocho mil dólares]
+apenas en su *primer año*.
+Se llama la *depreciación*.
+Imagina una troca nueva de [$40,000|cuarenta mil].
+El primer año pierde cerca del [20%|veinte por ciento].
+Son unos [$8,000|ocho mil dólares]
+que *desaparecen* aunque la cuides.
+Y tú la sigues *pagando* completa.
+Una troca de *dos o tres años*
+ya pasó esa caída *más fuerte*.
+Funciona igual, y cuesta *mucho menos*.
+Antes de comprar usada,
+pide el *historial* del vehículo,
+y que la revise un *mecánico de confianza*.
+Así no compras *problemas*.
+Son miles de dólares que se quedan
+para la *casa* de tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *estrenar troca*.
+
+## R1-15 | La bola de nieve | Orden directa (sin cifras)
+Si tienes *varias deudas*,
+no las pagues *todas igual*.
+Se llama la *bola de nieve*.
+Haz una lista de tus deudas,
+de la *más chica* a la *más grande*.
+A todas les pagas el *mínimo*.
+Y todo lo que te sobre,
+se lo echas a la *más chica*.
+Cuando la terminas, sientes que *sí se puede*.
+Y ese pago que ya no haces,
+se lo sumas a la *siguiente*.
+Así la bola va *creciendo*,
+y cada deuda cae *más rápido*.
+Lo más importante es *no sacar* deuda nueva
+mientras pagas las *viejas*.
+Guarda las tarjetas en un *cajón*,
+no en la *cartera*.
+Cada deuda que cae es *libertad* para tu casa.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *salir de deudas*.
+
+## R1-16 | El dinero gratis del trabajo | Lo que no te dicen
+Si tu trabajo te ofrece un *plan de retiro*,
+puede que estés dejando *dinero gratis*.
+Se llama el *aporte del patrón*.
+Muchas empresas ponen dinero *extra*
+si tú también *ahorras*.
+Imagina que ganas [$40,000|cuarenta mil dólares] al año.
+Si tú pones el [4%|cuatro por ciento],
+la empresa pone *otro* [4%|cuatro por ciento].
+Son [$1,600|mil seiscientos dólares] al año
+que te regalan *por ahorrar*.
+Y si no te inscribes, ese dinero
+se queda con la *empresa*.
+Pregunta en *recursos humanos*:
+¿Ustedes ponen dinero si yo ahorro?
+Y pon por lo menos lo que ellos *igualan*.
+Es como un *aumento de sueldo*
+que nadie te va a *ofrecer*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *trabajo fijo*.
+
+## R1-17 | El cajero de otro banco | Cifra chica que suma
+Sacar [$40|cuarenta dólares] del cajero
+te puede costar casi [$5|cinco] de *comisión*.
+Se llama el *cajero de otro banco*.
+Te cobra el *dueño* del cajero,
+y a veces también *tu banco*.
+Juntos, casi [$5|cinco dólares] cada vez.
+Si lo haces *una vez por semana*,
+son unos [$240|doscientos cuarenta] al año.
+Por sacar *tu propio dinero*.
+Eso es una semana de *comida*
+para toda tu *familia*.
+Usa los cajeros de *tu banco*,
+o pide efectivo al pagar en el *súper*.
+Y saca para *toda la semana*,
+no de a poquito.
+Busca en la app de tu banco
+los cajeros *sin costo* cerca de ti.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien anda con *efectivo*.
+
+## R1-18 | Las suscripciones olvidadas | Orden directa
+Revisa tu tarjeta: hay *cobros* que ya ni usas.
+Pueden ser más de [$500|quinientos dólares] al año.
+Se llama la *suscripción olvidada*.
+Una app de *películas*,
+otra de *música*,
+y el *gimnasio* que no pisas desde enero.
+Tres cobros de [$15|quince dólares] al mes.
+Son [$45|cuarenta y cinco] al mes,
+y [$540|quinientos cuarenta dólares] al *año*.
+Eso es la *ropa* de la escuela,
+o un regalo de *cumpleaños*.
+Hoy mismo, abre tu *estado de cuenta*.
+Marca cada cobro que se *repite*.
+Y pregúntate: ¿lo usé *este mes*?
+Si no, *cancélalo*.
+Siempre puedes volver a *pagarlo* después.
+Ese dinero es de *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *muchas apps*.
+
+## R1-19 | Cambiar el cheque en la tienda | Cifra que duele
+Cambiar tu cheque en la tienda
+te puede costar más de [$500|quinientos dólares] al año.
+Se llama el *cobro por cambiar cheques*.
+Muchos lugares cobran un *porcentaje*.
+Imagina un cheque de [$1,000|mil dólares] cada *quincena*.
+Si te cobran el [2%|dos por ciento],
+son [$20|veinte dólares] cada vez.
+Con [26|veintiséis] quincenas al año,
+son [$520|quinientos veinte dólares].
+Eso es la *luz* de varios meses,
+o el *regalo de Navidad* de tus hijos.
+Con una *cuenta de banco*,
+cambiar tu cheque es *gratis*.
+Muchos bancos y cooperativas te abren cuenta
+con *pasaporte* o *matrícula consular*.
+Y pide el *depósito directo* en tu trabajo.
+Tu sueldo llega *completo* a tu casa.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra con *cheque*.
+
+## R1-20 | El enganche que no necesitas | Mito
+No necesitas [$50,000|cincuenta mil dólares] para comprar casa.
+A veces bastan menos de [$9,000|nueve mil].
+Se llama el *préstamo FHA*.
+Mucha gente cree que necesita
+el [20%|veinte por ciento] de *enganche*.
+En una casa de [$250,000|doscientos cincuenta mil],
+eso son [$50,000|cincuenta mil dólares].
+Pero con un préstamo *FHA*,
+el enganche puede ser de [3.5%|tres y medio por ciento].
+Son unos [$8,750|ocho mil setecientos cincuenta].
+Ojo: con menos enganche, pagas un *seguro extra*
+y la mensualidad es *más alta*.
+Pero puede ser la puerta a tu *primera casa*.
+Para calificar, cuida tu *puntaje de crédito*
+y guarda tus *talones de pago*.
+Pregunta a un *prestamista* por este programa.
+Dejar de *rentar* empieza con un plan.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien sueña con su *casa*.
+
+## R1-21 | Un punto de interés | Cifra que duele
+Un *punto* de interés en tu casa
+te puede costar más de [$70,000|setenta mil dólares].
+Se llama el *precio de tu crédito*.
+Imagina una casa de [$300,000|trescientos mil] a [30|treinta] años.
+Con buen crédito, te dan [6.5%|seis y medio por ciento].
+Pagas casi [$1,900|mil novecientos] al mes.
+Con crédito regular, te dan [7.5%|siete y medio].
+Pagas casi [$2,100|dos mil cien] al mes.
+Son [$200|doscientos dólares] más *cada mes*,
+durante [30|treinta] años.
+En total, más de [$72,000|setenta y dos mil].
+Eso es la *universidad* de un hijo.
+Antes de buscar casa, prepara tu *crédito*:
+paga todo *a tiempo*,
+y baja lo que debes en *tarjetas*.
+Unos meses de *disciplina*
+valen miles de dólares para *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien está *buscando casa*.
+
+## R1-22 | Empeñar el título de la troca | Advertencia
+Empeñar el título de tu troca
+te puede costar [$3,000|tres mil dólares] al año.
+Se llama el *préstamo de título*.
+Te prestan rápido, con tu *troca* de garantía.
+Pero cobran cerca de [25%|veinticinco por ciento] *al mes*.
+Por [$1,000|mil dólares], pagas [$250|doscientos cincuenta] cada mes.
+Y eso es solo el *interés*.
+Si lo renuevas todo el año,
+son [$3,000|tres mil dólares],
+y todavía debes los [$1,000|mil].
+Y si no pagas, te *quitan la troca*.
+Sin troca, no llegas al *trabajo*.
+Mejor habla con tu *patrón* por un adelanto,
+o con una *cooperativa de crédito*.
+Y si ya lo tienes,
+paga *primero* ese préstamo.
+Tu troca es *tu trabajo*. Cuídala.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien necesita *dinero rápido*.
+
+## R1-23 | El dinero debajo del colchón | Mito
+Ese dinero guardado *en la casa*
+pierde valor *cada año*.
+Se llama la *inflación*.
+Imagina que guardas [$10,000|diez mil dólares] en efectivo.
+Si los precios suben [3%|tres por ciento] al año,
+en cinco años, tus [$10,000|diez mil]
+compran como si fueran [$8,600|ocho mil seiscientos].
+Perdiste casi [$1,400|mil cuatrocientos]
+sin *gastar* nada.
+Y si hay un *robo* o un *incendio*,
+lo pierdes *todo*.
+En un banco o cooperativa, tu dinero está *asegurado*.
+Y en una cuenta de *alto rendimiento*,
+te paga *intereses* mientras lo guardas.
+Ten algo de efectivo para *emergencias*,
+pero no los ahorros de *toda tu vida*.
+Tu dinero tiene que *trabajar* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien guarda dinero *en la casa*.
+
+## R1-24 | Si tu sueldo no alcanza | Provocación
+Si tu sueldo no te *alcanza*,
+puede que el problema no sea el *sueldo*.
+Se llama la regla *cincuenta, treinta, veinte*.
+Divide lo que ganas en *tres partes*.
+La mitad, para lo que *necesitas*:
+renta, comida, luz y *gasolina*.
+El [30%|treinta por ciento], para tus *gustos*.
+Y el [20%|veinte por ciento], para *ahorrar* o pagar deudas.
+Si ganas [$3,000|tres mil dólares] al mes,
+son [$1,500|mil quinientos] para lo necesario,
+[$900|novecientos] para gustos,
+y [$600|seiscientos] para tu *futuro*.
+Si tus gastos fijos pasan de la *mitad*,
+ahí está el *problema*.
+Empieza por anotar *todo* lo que gastas
+durante un mes.
+Lo que se mide, se puede *mejorar*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien dice que *no le alcanza*.
+
+## R1-25 | La llamada falsa del IRS | Advertencia urgente
+Si te llaman del *IRS* pidiendo dinero,
+*cuelga*. Es una estafa.
+Se llama la *llamada falsa*.
+Te dicen que debes *impuestos*,
+que te van a *arrestar*,
+o que te van a *deportar*.
+Y te piden pagar *hoy mismo*,
+con *tarjetas de regalo* o transferencias.
+El IRS de verdad te manda *cartas por correo*.
+Nunca te pide pagar con *tarjetas de regalo*.
+Y nunca te amenaza por *teléfono*.
+Si tienes duda, *cuelga*,
+y llama tú al número *oficial*.
+No des tu *número de seguro social*
+ni los datos de tu *banco*.
+Estos estafadores buscan a nuestra *comunidad*,
+porque saben que tenemos *miedo*.
+Cuida el dinero de *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien contesta *todas las llamadas*.
+
+## R1-26 | Dos amigos, la misma troca | Comparación de dos personas
+Dos amigos compran la *misma troca*.
+Uno paga [$1,300|mil trescientos dólares] menos de interés.
+Se llama el *enganche*.
+La troca cuesta [$30,000|treinta mil dólares],
+a [60|sesenta] meses, con [8%|ocho por ciento] de interés.
+El primero no da *nada* de enganche.
+Paga [$608|seiscientos ocho] al mes,
+y casi [$6,500|seis mil quinientos] de *intereses*.
+El segundo da [$6,000|seis mil] de enganche.
+Paga [$487|cuatrocientos ochenta y siete] al mes,
+y solo [$5,200|cinco mil doscientos] de *intereses*.
+Además, paga [$120|ciento veinte dólares] *menos* cada mes.
+La diferencia es que el segundo
+*ahorró antes* de comprar.
+Junta por lo menos el [20%|veinte por ciento]
+antes de ir a la *agencia*.
+Es dinero que se queda en *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a comprar *troca*.
+
+## R1-27 | ¿Quién recibe tu dinero? | Pregunta emotiva
+Si mañana te pasa algo,
+¿tu familia sabría *dónde está tu dinero*?
+Se llama el *beneficiario*.
+Tu cuenta del banco, tu *plan de retiro*,
+tu *seguro del trabajo*.
+Cada uno tiene un espacio
+para poner *quién recibe* ese dinero.
+Si está *vacío*, el dinero puede quedar atorado
+*meses* en trámites.
+Y tu familia lo necesita *ya*:
+para la *renta*, la comida, la escuela.
+Esta semana, entra a cada cuenta
+y revisa el *beneficiario*.
+Pon el nombre *completo* y actualizado.
+Y haz una lista de tus cuentas,
+en un lugar que tu pareja *conozca*.
+Diez minutos que protegen a *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *familia*.
+
+## R1-28 | La llamada de cinco minutos | Truco poco conocido
+Una llamada de *cinco minutos*
+te puede bajar el interés de tu *tarjeta*.
+Se llama *pedir una tasa menor*.
+Muchas tarjetas cobran más de [20%|veinte por ciento] al año.
+Si debes [$5,000|cinco mil dólares],
+eso es más de [$1,000|mil dólares] al año de *intereses*.
+Pero si siempre pagas *a tiempo*,
+puedes llamar y *pedir* una tasa más baja.
+No siempre dicen que sí,
+pero muchas veces *funciona*.
+Di algo así:
+Soy buen cliente y quiero una *tasa menor*.
+Si te bajan solo *cinco puntos*,
+ahorras unos [$250|doscientos cincuenta] al año.
+Y ese ahorro, úsalo para *pagar la deuda*.
+Preguntar *no cuesta nada*.
+Y puede valer mucho para *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *tarjetas*.
+
+## R1-29 | Veinticinco dólares por semana | Reto con número
+[$25|veinticinco dólares] a la semana
+pueden ser [$13,000|trece mil] para la *escuela* de tu hijo.
+Se llama el *ahorro para la escuela*.
+Si tu hijo tiene *ocho años*,
+te quedan unos *diez años* antes de la universidad.
+Guarda [$25|veinticinco] cada semana.
+Son [$1,300|mil trescientos] al año.
+En diez años, [$13,000|trece mil dólares],
+sin contar los *intereses*.
+Eso paga *libros*, inscripción,
+o un buen pedazo del *colegio comunitario*.
+Hay cuentas *especiales* para la escuela,
+que en muchos estados dan *beneficios* en impuestos.
+Pregunta por el *plan* [529|quinientos veintinueve].
+Y si no, una cuenta *aparte* también sirve.
+Lo importante es *empezar* hoy.
+La escuela de tus hijos *no espera*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere hijos *universitarios*.
+
+## R1-30 | Empezar tu crédito desde cero | Problema común
+Sin historial de *crédito*,
+todo te cuesta *más caro*.
+Se llama la *tarjeta asegurada*.
+Es una tarjeta para *empezar* tu crédito.
+Tú dejas un depósito, por ejemplo [$300|trescientos dólares],
+y ese es tu *límite*.
+La usas para algo *pequeño* cada mes,
+como la *gasolina*.
+Y la pagas *completa* antes de la fecha.
+Así el banco reporta que eres *cumplido*.
+En unos meses, empiezas a tener *puntaje*.
+Con buen puntaje, la *renta* te pide menos depósito,
+la *troca* te sale con menos interés,
+y la *casa* se vuelve posible.
+Cuando cierras la cuenta en buen estado,
+te devuelven tu *depósito*.
+Es el primer paso para *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *empezar su crédito*.

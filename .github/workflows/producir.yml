@@ -1,6 +1,7 @@
 # Producir videos de punta a punta en GitHub, sin la PC:
 # Claude (API) elige e investiga el tema → escribe guion y escenas → revisión automática → voz (ElevenLabs) → render.
 # Uso: Actions → "Producir videos" → Run workflow → marca y cantidad.
+# También arranca solo cuando se sube un cambio a pedido.json ({"marca": "...", "cantidad": N}).
 # Necesita los Secrets ANTHROPIC_API_KEY y ELEVENLABS_API_KEY.
 name: Producir videos
 
@@ -15,6 +16,9 @@ on:
         description: "Cuántos videos nuevos"
         required: true
         default: "1"
+  push:
+    branches: [main]
+    paths: ["pedido.json"]
 
 permissions:
   contents: read
@@ -22,7 +26,7 @@ permissions:
 jobs:
   guionista:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     permissions:
       contents: write
     outputs:
@@ -47,6 +51,9 @@ jobs:
           MARCA: ${{ github.event.inputs.marca }}
           CANTIDAD: ${{ github.event.inputs.cantidad }}
         run: |
+          if [ -z "$MARCA" ]; then MARCA=$(jq -r '.marca' pedido.json); CANTIDAD=$(jq -r '.cantidad' pedido.json); fi
+          echo "marca=$MARCA" >> "$GITHUB_OUTPUT"
+          echo "Pedido: $CANTIDAD videos de $MARCA"
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::error::Falta el Secret ANTHROPIC_API_KEY"; exit 1; fi
           if ! [ -f "marcas/$MARCA.json" ]; then echo "::error::No existe marcas/$MARCA.json"; exit 1; fi
           python -X utf8 tools/producir.py --marca "$MARCA" --cantidad "$CANTIDAD"
@@ -62,7 +69,7 @@ jobs:
           if [ -d rechazados ]; then git add -A rechazados; fi
           git status --short
           if git diff --cached --quiet; then echo "nada nuevo"; exit 0; fi
-          git commit -m "Guiones nuevos de ${{ github.event.inputs.marca }}: ${{ steps.escribir.outputs.videos }}"
+          git commit -m "Guiones nuevos de ${{ steps.escribir.outputs.marca }}: ${{ steps.escribir.outputs.videos }}"
           git push
 
       - name: Guiones para revisar (tema, guion, escenas)

@@ -1,0 +1,991 @@
+# Ronda 2 de entrenamiento: 30 guiones (18 de puro valor + 12 con IUL), de 60 a 90 segundos, con open loop.
+# Reglas nuevas de la ronda 1: ganchos más fuertes, open loop, mencionar Estados Unidos, IUL natural en 4 de cada 10.
+# IUL: siempre "hasta un 10%", "no pierde por la caída del mercado / piso cero", nunca "garantizado" ni "no garantizado",
+# y siempre "Un asesor certificado debe ver tu caso a detalle".
+# Cada guion empieza con: ## ID | título | tipo de gancho
+# Cifras calculadas con Python (calc2.py en el chat).
+
+## R2-01 | ¿Cuánto quieres pagar al mes? | Trampa del vendedor
+Cuando el vendedor te pregunte
+*¿cuánto quieres pagar al mes?*,
+no le contestes.
+Esa pregunta te puede costar más de [$3,000|tres mil dólares].
+Al final te digo qué contestar *en su lugar*.
+Se llama el *truco del pago mensual*.
+Mira cómo funciona.
+Tú quieres una troca de [$35,000|treinta y cinco mil dólares].
+Le dices que puedes pagar unos [$550|quinientos cincuenta] al mes.
+Y él te dice: "*Sí se puede*".
+Pero no te baja el precio.
+Te *estira el préstamo*.
+De [60|sesenta] meses lo pasa a [84|ochenta y cuatro].
+Siete años pagando la misma troca.
+A [60|sesenta] meses, con [8%|ocho por ciento] de interés,
+pagabas [$710|setecientos diez] al mes,
+y [$7,580|siete mil quinientos ochenta] de *intereses*.
+A [84|ochenta y cuatro] meses, pagas [$546|quinientos cuarenta y seis] al mes.
+Suena mejor, ¿verdad?
+Pero los intereses suben a [$10,823|diez mil ochocientos veintitrés].
+Son más de [$3,200|tres mil doscientos] extra
+por la *misma troca*.
+Y lo peor: a los cinco años,
+la troca vale *menos* de lo que debes.
+Entonces, ¿qué le contestas?
+Dile: "Quiero saber el *precio total*,
+y el interés *por escrito*".
+Habla del precio de la troca,
+nunca del *pago mensual*.
+Así, en Estados Unidos, tú *mandas* en la agencia.
+Son más de [$3,000|tres mil dólares] para *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a comprar *troca*.
+
+## R2-02 | Los extras escondidos en tu préstamo | Advertencia
+Antes de firmar tu carro,
+busca esta línea en el *contrato*.
+Ahí se esconden casi [$800|ochocientos dólares] de *intereses*.
+Y no solo eso. Quédate al final.
+Se llama los *extras financiados*.
+Ya acordaste el precio. Ya estás cansado.
+Y en la oficina de *finanzas* te ofrecen cosas.
+La *garantía extendida*.
+La *protección de pintura*.
+El *seguro de llantas*.
+Y te dicen: "Son solo [$45|cuarenta y cinco] más al mes".
+Suena poco.
+Pero si suman [$2,500|dos mil quinientos dólares],
+y los metes al préstamo a [72|setenta y dos] meses,
+con [9%|nueve por ciento] de interés,
+terminas pagando [$3,245|tres mil doscientos cuarenta y cinco].
+Casi [$750|setecientos cincuenta] solo de *intereses*,
+por cosas que muchas veces *ni usas*.
+Y aquí viene lo que nadie te dice:
+la mayoría de esos extras *son opcionales*.
+Puedes decir que *no*.
+Y si ya los firmaste,
+muchos se pueden *cancelar* después,
+y te devuelven una *parte*.
+Pide la lista de *todo* lo que pagas,
+línea por línea.
+Y pregunta: "¿Esto es *obligatorio*?"
+Si no lo es, *táchalo*.
+Son cientos de dólares que se quedan
+en *tu casa*, no en la agencia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a *firmar* un carro.
+
+## R2-03 | La tele de mil quinientos dólares | Cifra absurda
+Esa tele de [$500|quinientos dólares]
+te puede terminar costando [$1,560|mil quinientos sesenta].
+Sin que te des cuenta.
+Al final te digo cómo tenerla *por menos*.
+Se llama *renta con opción a compra*.
+Es la tienda que dice:
+"*Sin crédito*, llévatela hoy".
+Te la llevas a la casa,
+y pagas [$20|veinte dólares] *por semana*.
+Parece nada, ¿verdad?
+Veinte dólares los gastas en un día.
+Pero el contrato es de [78|setenta y ocho] semanas.
+Año y medio pagando.
+[$20|veinte] por [78|setenta y ocho] semanas
+son [$1,560|mil quinientos sesenta dólares].
+Por una tele de [$500|quinientos].
+Pagaste *tres teles* y te llevaste *una*.
+Y hay algo peor:
+si te atrasas en un pago,
+te la pueden *recoger*,
+y pierdes *todo* lo que ya pagaste.
+Ahora, ¿cómo la tienes por menos?
+Guarda esos mismos [$20|veinte dólares] por semana.
+En unas [25|veinticinco] semanas, ya tienes [$500|quinientos].
+Y la compras *de contado*.
+Tienes que esperar unos meses,
+pero te ahorras más de [$1,000|mil dólares].
+Y la tele es *tuya* desde el primer día.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *estrenar tele*.
+
+## R2-04 | El que te hace los impuestos | Lo que no te dicen
+Si te cobran [$400|cuatrocientos dólares] por hacer tus impuestos,
+escucha esto.
+Puede que los podías hacer *gratis*.
+Y al final te digo *dónde*.
+Se llama la *preparación gratuita*.
+Cada año, en Estados Unidos,
+millones de familias trabajadoras *pagan de más*
+por llenar una declaración *sencilla*.
+Un [W-2|dábliu dos], dos hijos, y listo.
+Y te cobran [$300|trescientos], [$400|cuatrocientos], hasta más.
+Y muchas veces lo sacan *de tu reembolso*,
+para que no lo sientas.
+Pero sí lo sientes.
+Son [$400|cuatrocientos dólares] que eran *de tu familia*.
+Ojo con otra trampa:
+el *adelanto del reembolso*.
+Te dan el dinero *rápido*,
+pero te cobran *cargos* por eso.
+El reembolso llega igual en unas *semanas*.
+Ahora, ¿dónde los haces gratis?
+El gobierno tiene un programa que se llama *VITA*.
+Voluntarios *certificados* te preparan tus impuestos,
+sin cobrarte nada,
+si ganas *menos* de cierta cantidad.
+Muchos atienden en *español*.
+Busca "VITA" con tu *código postal*.
+Y lleva tus papeles *completos*.
+Son cientos de dólares que se quedan
+en *tu casa* cada año.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien hace sus *impuestos*.
+
+## R2-05 | El pago que no regresa | Advertencia urgente
+Si mandas dinero por *app* a un desconocido,
+lo puedes perder *para siempre*.
+Y el banco *no te lo regresa*.
+Al final te digo la regla de oro.
+Se llama la *estafa del pago rápido*.
+Así empieza:
+vendes tu troca en internet,
+o compras una herramienta *barata*.
+Y la otra persona te dice:
+"Te mando el dinero por la *app*".
+O te pide que tú le mandes *primero*.
+También pasa con llamadas:
+"Hablamos de *tu banco*,
+manda tu dinero a esta cuenta *segura*".
+Tu banco *nunca* te va a pedir eso.
+Esas apps son como dar *efectivo*.
+Una vez que lo mandas,
+*no hay forma* de cancelarlo.
+Si mandas [$1,000|mil dólares] a un estafador,
+esos [$1,000|mil] *se fueron*.
+Y en muchos casos, el banco dice:
+"Tú autorizaste el pago".
+Entonces, la regla de oro:
+usa esas apps solo con gente que *conoces*.
+Tu familia, tu patrón, tu compadre.
+Nunca con *desconocidos*.
+Y si alguien te llama de tu banco,
+*cuelga*, y llama tú al número de tu *tarjeta*.
+Cuida el dinero de *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien usa *apps de pago*.
+
+## R2-06 | Cero por ciento que no es cero | Truco de la tienda
+"*Cero por ciento* de interés por un año".
+Suena perfecto, ¿no?
+Pero si te falta *un solo pago*,
+te cobran el interés de *todo el año*.
+Y al final te digo cómo no caer.
+Se llama el *interés diferido*.
+Lo ves mucho en esta época,
+en tiendas de muebles y *electrónicos*.
+Imagina que compras un sillón de [$1,200|mil doscientos dólares].
+Te dan [12|doce] meses sin interés.
+Tú pagas [$90|noventa] cada mes.
+Al final del año, debes [$120|ciento veinte].
+Solo [$120|ciento veinte].
+Pero la letra chiquita dice:
+si no pagas *todo* antes de la fecha,
+te cobran los intereses *desde el primer día*.
+Con una tasa de casi [30%|treinta por ciento].
+De golpe, te llegan más de [$200|doscientos dólares] de *intereses*.
+Por deber solo [$120|ciento veinte].
+No es *cero* por ciento.
+Es cero, *si eres perfecto*.
+Entonces, ¿cómo no caer?
+Divide el precio entre los meses *menos uno*.
+[$1,200|mil doscientos] entre [11|once]
+son unos [$110|ciento diez] al mes.
+Así terminas *un mes antes*,
+y no te pueden cobrar *nada*.
+Y apunta la fecha en tu *celular*.
+Son cientos de dólares para *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra *a meses*.
+
+## R2-07 | Compra aquí, paga aquí | Cifra que duele
+Ese lote que dice "*compra aquí, paga aquí*"
+te puede cobrar casi [$5,000|cinco mil dólares] de más.
+Por el mismo carro.
+Quédate, porque al final te digo la salida.
+Se llama el *lote sin crédito*.
+Te dicen: "No importa tu crédito,
+aquí *todos* califican".
+Y es verdad. Te aprueban rápido.
+Pero el interés puede llegar al [22%|veintidós por ciento].
+Imagina un carro de [$15,000|quince mil dólares],
+a [48|cuarenta y ocho] meses.
+Al [22%|veintidós por ciento], pagas [$473|cuatrocientos setenta y tres] al mes.
+Y casi [$7,700|siete mil setecientos] de *intereses*.
+En un banco, al [9%|nueve por ciento],
+pagarías [$373|trescientos setenta y tres] al mes.
+Y menos de [$3,000|tres mil] de intereses.
+La diferencia: más de [$4,700|cuatro mil setecientos].
+Y muchos de esos lotes
+ponen un *aparato* para apagar el carro
+si te atrasas un *pago*.
+Entonces, ¿cuál es la salida?
+Primero, junta un *enganche* más grande.
+Segundo, pide una *preaprobación*
+en un banco antes de ir.
+Aunque tu crédito no sea perfecto,
+compara *por lo menos dos* ofertas.
+Y si puedes, espera unos meses
+y sube tu *puntaje*.
+Son miles de dólares para *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien necesita *carro*.
+
+## R2-08 | Lo que te cobra tu banco cada mes | Pregunta directa
+¿Sabes cuánto te cobra tu banco
+*solo por tener* una cuenta?
+Muchas familias pagan [$144|ciento cuarenta y cuatro dólares] al año
+sin saberlo.
+Al final te digo cómo *quitarlo* en una llamada.
+Se llama el *cargo de mantenimiento*.
+Revisa tu estado de cuenta.
+Busca una línea que diga
+"*cargo mensual*" o "*cuota de servicio*".
+Muchas veces son [$12|doce dólares] al mes.
+Doce al mes parece poco.
+Pero son [$144|ciento cuarenta y cuatro] al año.
+En cinco años, [$720|setecientos veinte dólares].
+Por guardar *tu propio dinero*.
+Y si a eso le sumas los *sobregiros*,
+y los cajeros de *otros bancos*,
+se te puede ir mucho más.
+Ahora, ¿cómo lo quitas?
+Llama a tu banco y pregunta:
+"¿Qué necesito para *no pagar* el cargo mensual?"
+Muchas veces basta con tener *depósito directo*,
+o un saldo *mínimo*.
+Y si no te lo quitan,
+busca un banco con cuenta *sin cargo mensual*.
+Hay muchos en Estados Unidos.
+Una llamada de *cinco minutos*
+y te ahorras cientos de dólares.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *cuenta de banco*.
+
+## R2-09 | Mandar dinero con tarjeta de crédito | Error común
+Si mandas dinero a tu familia
+con tu *tarjeta de crédito*,
+para. Te están cobrando *doble*.
+Y al final te digo la forma *correcta*.
+Se llama el *adelanto de efectivo*.
+Mucha gente no lo sabe,
+pero cuando mandas dinero con tarjeta de crédito,
+el banco lo cuenta como si sacaras *efectivo*.
+Y eso tiene *tres castigos*.
+Uno: un cargo de casi [5%|cinco por ciento].
+En un envío de [$500|quinientos dólares], son [$25|veinticinco].
+Dos: un interés *más alto* que el normal.
+Muchas veces arriba del [29%|veintinueve por ciento].
+Tres: el interés empieza a correr *el mismo día*.
+No hay periodo de gracia.
+En un solo mes, entre cargo e interés,
+ese envío te cuesta casi [$40|cuarenta dólares] *extra*.
+Y si lo haces cada mes,
+son unos [$450|cuatrocientos cincuenta dólares] al año.
+Dinero que no le llega *a tu familia*.
+¿La forma correcta?
+Manda con tu *tarjeta de débito*,
+o directo de tu *cuenta de banco*.
+Compara cuánto *recibe* tu familia allá.
+Y si no tienes el dinero hoy,
+mejor espera a la *quincena*.
+Tu familia recibe más, y tú pagas menos.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien manda dinero a *su tierra*.
+
+## R2-10 | Los gastos de cierre | Lo que no te dicen
+Juntaste para el *enganche* de tu casa.
+¡Felicidades, ya casi!
+Pero te falta *otro* dinero que nadie te dijo.
+Pueden ser hasta [$15,000|quince mil dólares].
+Y al final te digo cómo *bajarlos*.
+Se llama los *gastos de cierre*.
+Son los pagos del *día de la firma*:
+el avalúo, el seguro del título,
+los cargos del préstamo, los impuestos.
+En Estados Unidos, suelen ser
+entre el [2%|dos por ciento] y el [5%|cinco por ciento] del precio.
+En una casa de [$300,000|trescientos mil dólares],
+eso es de [$6,000|seis mil] a [$15,000|quince mil].
+Encima del enganche.
+Mucha gente llega al cierre *sin ese dinero*,
+y pierde la casa en el *último paso*.
+O lo saca con una *tarjeta*,
+y empieza su casa *endeudada*.
+Ahora, ¿cómo los bajas?
+Primero: pide al prestamista el *estimado* por escrito,
+desde el principio.
+Segundo: compara *dos o tres* prestamistas.
+Los cargos cambian *mucho*.
+Tercero: pide que el *vendedor* pague una parte.
+Se negocia en la *oferta*.
+Y pregunta por *programas de ayuda*
+para compradores de *primera casa*.
+Así llegas al cierre *tranquilo*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien está *buscando casa*.
+
+## R2-11 | Si te pagan por contrato | Advertencia
+Si te pagan con [1099|diez noventa y nueve],
+en abril te puede llegar una *sorpresa*.
+De más de [$5,600|cinco mil seiscientos dólares].
+Al final te digo cómo *no sufrir* en abril.
+Se llama el *impuesto del trabajador independiente*.
+En roofing, en construcción, en jardinería,
+a muchos les pagan *por contrato*.
+Te dan el cheque *completo*,
+sin quitarte *nada* de impuestos.
+Y se siente bien.
+Pero en Estados Unidos,
+cuando trabajas por tu cuenta,
+tú pagas el seguro social y el medicare
+*de los dos lados*:
+el tuyo, y el del *patrón*.
+Es un poco más del [15%|quince por ciento].
+Si ganas [$40,000|cuarenta mil dólares] al año,
+son unos [$5,652|cinco mil seiscientos cincuenta y dos].
+Y eso es *antes* del impuesto normal.
+Si no guardaste nada,
+en abril no tienes con qué pagar.
+Y la deuda con el IRS *crece* con multas.
+¿Cómo no sufrir en abril?
+De cada cheque, aparta un *porcentaje*
+en una cuenta *aparte*.
+Muchos apartan entre el [25%|veinticinco por ciento] y el [30%|treinta por ciento].
+Y paga *cada trimestre*, no todo al final.
+Guarda tus *recibos*: gasolina, herramientas, millas.
+Eso te puede *bajar* lo que debes.
+Y que alguien *certificado* revise tus números.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja *por contrato*.
+
+## R2-12 | La lotería de cada semana | Cifra que duele
+[$10|diez dólares] de lotería cada semana
+parecen *nada*.
+Pero en diez años son más de [$5,000|cinco mil dólares].
+Y hay una forma de que *sí gane*.
+Te la digo al final.
+Se llama el *boleto de la esperanza*.
+Lo compras el viernes,
+y por un rato sueñas con la *casa*,
+con la troca, con *dejar de trabajar*.
+Y eso no tiene nada de malo.
+Pero hagamos la cuenta.
+[$10|diez] por semana son [$520|quinientos veinte] al año.
+En diez años, [$5,200|cinco mil doscientos dólares].
+¿Y cuánto te regresó la lotería?
+Para la mayoría, casi *nada*.
+Las probabilidades de ganar el premio grande
+son de una en *cientos de millones*.
+Es más fácil que te caiga un *rayo*.
+Ahora, la forma de que ese dinero sí gane:
+compra *un boleto* al mes, no cuatro,
+si te gusta soñar.
+Y los otros [$30|treinta] al mes,
+mándalos a una cuenta de *ahorro automático*.
+En diez años, tienes miles de dólares *de verdad*.
+No en un sueño.
+En *tu cuenta*.
+Para la casa, la troca, o una *emergencia*.
+La suerte también se *construye*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra *lotería*.
+
+## R2-13 | La comida rápida de la familia | Cifra que duele
+Dos veces por semana, comida rápida.
+Al año, más de [$4,000|cuatro mil dólares].
+Al final te digo qué hacer con él
+sin dejar de *darte gustos*.
+Se llama el *antojo de la semana*.
+Llegas cansado del trabajo.
+Nadie quiere cocinar.
+Y paras por hamburguesas para *toda la familia*.
+Cuatro personas, unos [$40|cuarenta dólares].
+Y lo haces *dos veces* por semana.
+Son [$80|ochenta] por semana.
+[$4,160|cuatro mil ciento sesenta dólares] al año.
+Es más que el *enganche* de una troca usada.
+Más que *dos meses de renta*.
+Y casi siempre, sin darte cuenta.
+No te digo que *nunca* comas fuera.
+Te digo que lo *planees*.
+Una vez por semana, *sí*.
+La otra, cocina *doble* el domingo,
+y deja comida lista para el *miércoles*.
+Solo con ese cambio,
+te ahorras más de [$2,000|dos mil dólares] al año.
+Ahora, ¿qué haces con ese dinero?
+Que no se quede en la cuenta *normal*,
+porque se gasta.
+Mándalo a una cuenta *aparte*,
+el mismo día de la *quincena*.
+En un año, tienes tu *fondo de emergencia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien no quiere *cocinar*.
+
+## R2-14 | Firmar por tu primo | Historia con advertencia
+Tu primo te pide un favor:
+"*Fírmame* para la troca, nomás para que me aprueben".
+Ese favor te puede costar [$20,000|veinte mil dólares].
+Y tu crédito.
+Al final te digo cómo ayudar *sin arriesgarte*.
+Se llama ser *codeudor*.
+Cuando firmas un préstamo con alguien,
+no eres testigo.
+Eres *dueño de la deuda*.
+Si tu primo deja de pagar,
+el banco te cobra *a ti*.
+Los [$20,000|veinte mil dólares] completos.
+Y cada pago atrasado
+aparece en *tu* crédito,
+no solo en el de él.
+Tu puntaje baja,
+y cuando tú quieras comprar *casa*,
+te van a cobrar más interés,
+o no te van a *aprobar*.
+Pasa más de lo que crees.
+Se quedan sin trabajo, se van,
+o simplemente *dejan de pagar*.
+Y la familia se *pelea* por dinero.
+Entonces, ¿cómo ayudas sin arriesgarte?
+Ayúdale a juntar un *enganche*.
+O a sacar una *tarjeta asegurada*
+para que construya *su* crédito.
+Y si de todas formas firmas,
+firma solo lo que *podrías pagar tú*.
+Cuida tu crédito. Es de *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien firma *por todos*.
+
+## R2-15 | Congela tu crédito gratis | Truco poco conocido
+Alguien puede sacar una tarjeta *a tu nombre*
+y tú ni enterarte.
+Pero hay un candado *gratis*
+que casi nadie usa.
+Al final te digo cómo ponerlo en *diez minutos*.
+Se llama *congelar tu crédito*.
+Los ladrones de identidad
+consiguen tu *número de seguro social*,
+tu fecha de nacimiento,
+y tu dirección.
+Con eso, sacan *tarjetas*, *préstamos*,
+hasta *celulares* a tu nombre.
+Y tú te enteras meses después,
+cuando te llama un *cobrador*.
+Arreglar eso puede tardar *meses*.
+Y mientras tanto, tu crédito *se cae*.
+El candado funciona así:
+en Estados Unidos hay *tres* oficinas de crédito.
+Si congelas tu crédito en las tres,
+*nadie* puede abrir cuentas nuevas a tu nombre.
+Ni siquiera con tus datos.
+Y es *gratis* por ley.
+Tus tarjetas de ahora *siguen funcionando* igual.
+Cuando tú quieras sacar crédito,
+lo *descongelas* por unos días,
+y lo vuelves a congelar.
+Entra a la página de cada oficina,
+crea tu cuenta, y dale *congelar*.
+Diez minutos que protegen a *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cuida *sus datos*.
+
+## R2-16 | La deuda que no baja | Cifra que duele
+Debes [$3,000|tres mil dólares] en tu tarjeta.
+Pagas cada mes.
+Y la deuda *no baja*.
+Al final te digo por qué, y cómo romperlo.
+Se llama el *interés que te come*.
+Muchas tarjetas cobran un [25%|veinticinco por ciento] al año.
+Con [$3,000|tres mil] de deuda,
+eso son más de [$60|sesenta dólares] *al mes*
+solo de intereses.
+Si tú pagas [$70|setenta] al mes,
+casi todo se va al *interés*.
+A la deuda le bajas *casi nada*.
+Y si ese mes usas la tarjeta otra vez,
+la deuda *sube*.
+En un año, le pagas al banco
+[$750|setecientos cincuenta dólares] de intereses.
+Y sigues debiendo *casi lo mismo*.
+Es como llenar una cubeta *con un hoyo*.
+Ahora, ¿cómo lo rompes?
+Primero: deja de *usar* esa tarjeta.
+Guárdala, no la cargues.
+Segundo: paga *más* del interés.
+Aunque sean [$150|ciento cincuenta] al mes.
+Así la deuda *sí baja*.
+Tercero: llama y pide una *tasa menor*.
+Si siempre pagas a tiempo, muchas veces *funciona*.
+Cada dólar extra es un dólar
+que *deja de crecer* en tu contra.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien no sale de su *tarjeta*.
+
+## R2-17 | El precio de antes | Truco de la tienda
+"*Antes* [$1,299|mil doscientos noventa y nueve], *ahora* [$899|ochocientos noventa y nueve]".
+¿Y si te digo que nunca costó [$1,299|mil doscientos noventa y nueve]?
+Al final te doy el truco para *descubrirlo*.
+Se llama el *precio inflado*.
+En esta temporada,
+muchas tiendas en Estados Unidos
+ponen un precio de "antes" *muy alto*,
+para que el descuento se vea *enorme*.
+Tú ves [$400|cuatrocientos dólares] de descuento,
+y sientes que *tienes que* comprarlo hoy.
+Pero muchas veces, ese producto
+se vendía a [$950|novecientos cincuenta] el mes pasado.
+El descuento *real* fue de [$51|cincuenta y un dólares].
+No de [$400|cuatrocientos].
+Y como sientes la *prisa*,
+compras cosas que *no tenías planeadas*.
+Ahí está el verdadero gasto.
+Ahora, el truco para descubrirlo:
+antes de la temporada,
+haz una *lista* de lo que de verdad necesitas.
+Toma *foto* de los precios
+dos o tres semanas antes.
+Y el día de la oferta, *compara*.
+Si el descuento es real, *aprovéchalo*.
+Si no, *no te apures*.
+Las ofertas vuelven *cada año*.
+Tu dinero no tiene que *correr*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va de *compras*.
+
+## R2-18 | Págate primero | Problema común
+Cobras el viernes,
+y para el lunes *ya no tienes nada*.
+No es que ganes poco.
+Es que te pagas *al último*.
+Al final te digo cómo juntar casi [$4,000|cuatro mil dólares]
+al año, sin sentirlo.
+Se llama *pagarte primero*.
+La mayoría hace esto:
+cobra, paga renta, luz, comida,
+la troca, los gustos...
+Y lo que *sobra*, lo ahorra.
+Pero nunca sobra *nada*.
+El truco es al revés.
+El mismo día que cobras,
+antes de pagar *cualquier cosa*,
+te apartas *tu parte*.
+Aunque sea el [10%|diez por ciento].
+Si cobras [$1,500|mil quinientos dólares] por quincena,
+son [$150|ciento cincuenta].
+Y con el resto, *te acomodas*.
+Al principio cuesta.
+Pero en dos o tres quincenas,
+ni lo *extrañas*.
+[$150|ciento cincuenta] por [26|veintiséis] quincenas
+son [$3,900|tres mil novecientos dólares] al año.
+¿Cómo lo haces sin sentirlo?
+Pide en tu banco una *transferencia automática*,
+el mismo día del *depósito*,
+a una cuenta *aparte*.
+Lo que no ves, *no lo gastas*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien dice que *no le alcanza*.
+
+## R2-19 | El dinero debajo del colchón | Mito · IUL
+Ese dinero que guardas *en la casa*
+no está seguro.
+Cada año vale *menos*.
+Y al final te enseño dónde puede *crecer*
+sin perder cuando el mercado cae.
+Se llama la *inflación*.
+Imagina que guardas [$10,000|diez mil dólares] en efectivo.
+Si los precios suben [3%|tres por ciento] al año,
+en cinco años, tus [$10,000|diez mil]
+compran como si fueran [$8,626|ocho mil seiscientos veintiséis].
+Perdiste casi [$1,400|mil cuatrocientos]
+sin *gastar* nada.
+Y si hay un robo o un incendio,
+lo pierdes *todo*.
+Ahora, mira la otra opción.
+Se llama [IUL|i u ele]: un *seguro de vida indexado*.
+Primero, protege a tu familia
+si a ti te pasa algo.
+Y además, tu dinero puede crecer
+ligado al mercado, *hasta un* [10%|diez por ciento] al año.
+Y si el mercado cae,
+tu dinero *no pierde* por esa caída.
+Tiene *piso cero*.
+Esos mismos [$10,000|diez mil dólares],
+creciendo hasta un [10%|diez por ciento] al año,
+en cinco años podrían llegar a [$16,105|dieciséis mil ciento cinco].
+Contra [$8,626|ocho mil seiscientos veintiséis] en el colchón.
+Cada caso es distinto.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien guarda dinero *en la casa*.
+
+## R2-20 | Cincuenta dólares a la semana para tu hijo | Reto con número · IUL
+Con [$50|cincuenta dólares] a la semana,
+tu hijo podría cumplir [18|dieciocho] años
+con más de [$120,000|ciento veinte mil dólares].
+Y no es magia.
+Al final te hago las cuentas *año por año*.
+Se llama *interés compuesto*.
+[$50|cincuenta] a la semana son [$200|doscientos] al mes.
+Al año, [$2,400|dos mil cuatrocientos dólares].
+Ahora, ¿dónde los pones?
+En el banco, te pagan *casi nada*.
+Pero en un [IUL|i u ele], un *seguro de vida indexado*,
+tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Mira las cuentas, creciendo hasta un [10%|diez por ciento].
+Primer año: pones [$2,400|dos mil cuatrocientos].
+El interés te da [$240|doscientos cuarenta].
+Tienes [$2,640|dos mil seiscientos cuarenta].
+Segundo año: pones otros [$2,400|dos mil cuatrocientos].
+El interés ya te da [$504|quinientos cuatro].
+Tienes [$5,544|cinco mil quinientos cuarenta y cuatro].
+Tercer año: el interés ya es de [$794|setecientos noventa y cuatro].
+Los intereses *generan más intereses*.
+A los [18|dieciocho] años, tú pusiste [$43,200|cuarenta y tres mil doscientos].
+Y podría llegar a más de [$120,000|ciento veinte mil dólares].
+Para su escuela, su casa, su *futuro*.
+Y mientras tanto, tu familia está *protegida*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *hijos chiquitos*.
+
+## R2-21 | Gastos hormiga que valen medio millón | Cifra que duele · IUL
+Entre comisiones, antojos y compras de impulso,
+se te pueden ir [$50|cincuenta dólares] a la semana.
+Y no te das cuenta.
+Eso podría ser casi *medio millón* en tu retiro.
+Al final te digo cómo.
+Se llama el *futuro que se te escapa*.
+Un energético aquí, un antojo allá.
+Una comisión del banco.
+Algo que viste en el celular y *compraste*.
+Sumado, fácil [$50|cincuenta] a la semana.
+Al año, son [$2,600|dos mil seiscientos dólares].
+Es dinero que *ya gastas*,
+pero que no ves.
+Ahora imagina que lo *tomas de vuelta*.
+Y lo pones en un [IUL|i u ele],
+un *seguro de vida indexado*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si empiezas a los [30|treinta] años,
+con [$50|cincuenta] a la semana,
+a los [60|sesenta] podrías tener cerca de [$470,000|cuatrocientos setenta mil dólares].
+Tú habrías puesto solo [$78,000|setenta y ocho mil].
+Y no es solo retiro.
+Si te pasa algo, tu familia recibe un *beneficio*.
+Y si te enfermas grave,
+puedes usar parte *en vida*.
+Hacerse de dinero no es *suerte*.
+Son cosas pequeñas que controlas *hoy*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien dice que *no puede ahorrar*.
+
+## R2-22 | El plan de retiro del trabajo | Lo que no te dicen · IUL
+Tu plan de retiro del trabajo
+tiene un problema que nadie te explica.
+Depende de que *sigas en ese trabajo*.
+Al final te digo qué pasa si te *despiden*.
+Se llama el *retiro amarrado*.
+Muchos trabajos en Estados Unidos
+te ofrecen un plan de retiro.
+Está bien, sobre todo si la empresa *pone dinero*.
+Pero piénsalo.
+En construcción, en roofing, en jardinería,
+cambias de patrón *seguido*.
+Hay temporadas sin trabajo.
+Y si te despiden, o te cambias,
+ya *no puedes* seguir aportando a ese plan.
+Tienes que *moverlo*.
+Y es todo un *trámite*.
+Mucha gente lo saca de golpe,
+y paga *multas* e impuestos.
+Ahora, mira otra opción.
+Un [IUL|i u ele] es un *seguro de vida indexado*
+que es *tuyo*, no de tu trabajo.
+Tú decides *cuánto* aportas, y *cuándo*.
+Cambias de patrón, y tu plan *sigue contigo*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Además, protege a tu familia
+si a ti te pasa algo.
+Y si empiezas joven, podrías llegar hasta
+*medio millón* para tu retiro.
+Todo depende de *cuándo empieces*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cambia *seguido* de trabajo.
+
+## R2-23 | Si mañana te pasa algo | Pregunta emotiva · IUL
+Si mañana no regresas del trabajo,
+¿cuántos meses aguanta tu familia
+*sin tu sueldo*?
+Piénsalo un segundo.
+Al final te digo cuánto necesitarían *de verdad*.
+Se llama la *protección de la familia*.
+Tú eres el que *trae el dinero*.
+La renta, la comida, la troca, la escuela.
+Todo sale de *tus manos*.
+Y si un día faltas,
+todo eso *sigue llegando*.
+La renta no espera.
+Muchas familias en Estados Unidos
+solo tienen el *seguro del trabajo*.
+Y ese seguro suele ser
+de *una o dos veces* tu sueldo.
+Si ganas [$40,000|cuarenta mil dólares],
+son de [$40,000|cuarenta mil] a [$80,000|ochenta mil].
+Eso dura *uno o dos años*.
+¿Y después?
+Muchos expertos dicen que tu familia necesita
+unas *diez veces* tu sueldo.
+Con [$40,000|cuarenta mil], son [$400,000|cuatrocientos mil dólares].
+Un [IUL|i u ele] es un *seguro de vida indexado*.
+Le deja a tu familia un *beneficio* si tú faltas.
+Y mientras vives, tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año, con *piso cero*.
+Es protección y ahorro *en uno*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con el *pilar* de su casa.
+
+## R2-24 | ¿Y si te enfermas? | Pregunta emotiva · IUL
+En el roofing, una caída
+te puede dejar *meses* sin trabajar.
+¿Y quién paga la renta mientras tanto?
+Al final te digo un beneficio *poco conocido*.
+Se llama *beneficio en vida*.
+Trabajas con tu cuerpo.
+Subes techos, cargas material,
+manejas horas.
+Y no solo es un accidente.
+Un infarto, un cáncer, una *diabetes* que se complica.
+Si no puedes trabajar,
+el dinero deja de *entrar*,
+pero los biles *siguen llegando*.
+Muchos terminan vendiendo la troca,
+o endeudados con *tarjetas*.
+Mucha gente cree que un seguro de vida
+solo paga *cuando te mueres*.
+Pero hay seguros que también te ayudan *en vida*.
+Un [IUL|i u ele], un *seguro de vida indexado*,
+puede tener *beneficios en vida*.
+Si te da una enfermedad *crónica*, *crítica*
+o *terminal*,
+puedes recibir *una parte* del beneficio.
+Mientras estás *vivo*.
+Para pagar la renta, recuperarte,
+o volver a trabajar con calma.
+Y además, tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año, con *piso cero*.
+Pregunta si tu póliza los incluye.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja *con su cuerpo*.
+
+## R2-25 | La troca que pierde, el dinero que crece | Comparación · IUL
+Esa troca nueva pierde [$8,000|ocho mil dólares]
+en su *primer año*.
+Esos mismos [$8,000|ocho mil], en otro lugar,
+podrían convertirse en más de [$20,000|veinte mil].
+Al final te digo dónde.
+Se llama la *depreciación*.
+Imagina una troca nueva de [$40,000|cuarenta mil dólares].
+El primer año pierde cerca del [20%|veinte por ciento].
+Son unos [$8,000|ocho mil] que *desaparecen*.
+Aunque la cuides. Aunque no la choques.
+Y tú la sigues pagando *completa*.
+Una troca de *dos o tres años*
+ya pasó esa caída *más fuerte*.
+Funciona igual, y cuesta *mucho menos*.
+Ahora, ¿qué haces con la diferencia?
+Ahí entra un [IUL|i u ele], un *seguro de vida indexado*.
+Al revés que la troca, tu dinero puede *crecer*,
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Esos [$8,000|ocho mil dólares], creciendo hasta un [10%|diez por ciento],
+en diez años podrían llegar a [$20,750|veinte mil setecientos cincuenta].
+Con interés compuesto:
+los intereses *generan más intereses*.
+Y mientras tanto, tu familia está *protegida*.
+La troca pierde. Tu dinero *gana*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *estrenar troca*.
+
+## R2-26 | La bola de nieve a tu favor | Cambio de perspectiva · IUL
+Las deudas son una *bola de nieve*
+que crece en tu contra.
+Pero existe una bola de nieve
+que puede crecer *a tu favor*.
+Al final te enseño cuánto puede crecer.
+Se llama *interés compuesto*.
+Con una tarjeta de crédito,
+el banco te cobra interés,
+y luego interés *sobre el interés*.
+Por eso la deuda no baja.
+Ahora dale la vuelta.
+Imagina que tú eres el que *gana* ese interés.
+Pones [$100|cien dólares] al mes.
+Al año, [$1,200|mil doscientos].
+Y ese dinero gana interés.
+Y el interés gana *más interés*.
+Así, cada año la bola es *más grande*.
+Eso hace un [IUL|i u ele],
+un *seguro de vida indexado*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Con [$100|cien] al mes durante [25|veinticinco] años,
+tú pones [$30,000|treinta mil dólares].
+Y podría llegar a casi [$130,000|ciento treinta mil].
+Y todo eso es *para ti*,
+cuando decidas retirarte.
+Primero sal de las deudas que te *comen*.
+Y luego, pon la bola a *tu favor*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *salir de deudas*.
+
+## R2-27 | Empezar a los treinta o a los cuarenta | Comparación de dos personas · IUL
+Dos hermanos. El mismo sueldo.
+El mismo ahorro cada mes.
+Uno se retira con casi [$300,000|trescientos mil dólares] *más*.
+La única diferencia: *diez años*.
+Al final te digo por qué pasa.
+Se llama el *costo de esperar*.
+El primer hermano empieza a los [30|treinta] años.
+Pone [$200|doscientos dólares] al mes en un [IUL|i u ele],
+un *seguro de vida indexado*.
+El segundo dice: "Todavía estoy joven.
+Empiezo *después*".
+Y empieza a los [40|cuarenta].
+Los dos ponen lo mismo cada mes,
+hasta los [60|sesenta] años.
+Su dinero puede crecer *hasta un* [10%|diez por ciento] al año,
+con *piso cero* si el mercado cae.
+A los [60|sesenta], el que empezó a los [40|cuarenta]
+podría tener unos [$151,000|ciento cincuenta y un mil dólares].
+El que empezó a los [30|treinta]
+podría tener más de [$434,000|cuatrocientos treinta y cuatro mil].
+Casi el *triple*.
+Y solo puso [$24,000|veinticuatro mil] más que su hermano.
+¿Por qué pasa?
+Porque los intereses *generan más intereses*.
+Y esos diez años de más
+son los que hacen *crecer la bola*.
+El mejor momento para empezar fue *ayer*.
+El segundo mejor es *hoy*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con tu *hermano*.
+
+## R2-28 | Mandas dinero a tu familia, ¿y si faltas? | Pregunta emotiva · IUL
+Cada mes mandas dinero a tu familia.
+Allá dependen de ti.
+Pero, ¿qué pasa con ellos
+si un día *tú faltas*?
+Al final te digo cómo dejarlos *protegidos*.
+Se llama el *envío que no se corta*.
+Millones de hispanos en Estados Unidos
+sostienen *dos casas*.
+La de aquí, y la de *allá*.
+La renta, la comida de tus hijos,
+la medicina de tu mamá.
+Si mandas [$300|trescientos dólares] al mes,
+son [$3,600|tres mil seiscientos] al año.
+Y ese dinero *depende de ti*.
+De que sigas trabajando. De que *sigas vivo*.
+Nadie quiere pensar en eso.
+Pero pensarlo es *cuidarlos*.
+Un [IUL|i u ele] es un *seguro de vida indexado*.
+Si tú faltas, deja un *beneficio* para tu familia.
+Así el apoyo *no se corta* de golpe.
+Y mientras vives,
+tu dinero puede crecer *hasta un* [10%|diez por ciento] al año,
+con *piso cero* si el mercado cae.
+Ese dinero te sirve para *tu retiro*,
+o para regresar a tu tierra *con algo*.
+Pregunta cómo funciona el beneficio
+si tu familia vive *en otro país*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien manda dinero a *su tierra*.
+
+## R2-29 | El seguro del trabajo no es suficiente | Lo que no te dicen · IUL
+¿Tienes seguro de vida *del trabajo*?
+Qué bueno.
+Pero tiene dos problemas que *nadie te explica*.
+Y el segundo es el peor.
+Te los digo ahora.
+Se llama el *seguro prestado*.
+Primer problema: es *chico*.
+Suele ser de *una o dos veces* tu sueldo.
+Si ganas [$40,000|cuarenta mil dólares],
+tu familia recibiría de [$40,000|cuarenta mil] a [$80,000|ochenta mil].
+Con la renta, la troca y la escuela,
+eso se acaba en *uno o dos años*.
+Segundo problema, el peor:
+*no es tuyo*.
+Es del trabajo.
+Si te despiden, si renuncias,
+o si la empresa *cierra*,
+el seguro *se acaba*.
+Y casi siempre, justo cuando eres *más grande*,
+y sacar uno nuevo cuesta *más caro*.
+Por eso conviene tener un seguro *propio*.
+Un [IUL|i u ele] es un *seguro de vida indexado*,
+a *tu nombre*.
+Cambias de trabajo, y *sigue contigo*.
+Protege a tu familia si te pasa algo.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año,
+con *piso cero* si el mercado cae.
+Mientras más joven empiezas, *mejor*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien solo tiene *seguro del trabajo*.
+
+## R2-30 | ¿Con qué te vas a retirar? | Pregunta directa · IUL
+Trabajas desde los quince años.
+¿Y a los sesenta y cinco, *con qué vives*?
+Si tu respuesta es "con el *Seguro Social*",
+escucha esto hasta el final.
+Se llama el *retiro sin plan*.
+Muchos hispanos en Estados Unidos
+trabajan *toda la vida*,
+pero sin un plan de retiro.
+Y piensan que el Seguro Social *va a alcanzar*.
+Pero el Seguro Social se hizo
+para *ayudar*, no para vivir solo de él.
+Y si trabajaste parte de tu vida *en efectivo*,
+o sin reportar todo,
+te puede tocar *todavía menos*.
+Imagina tener sesenta y cinco años,
+y seguir subiendo *techos*.
+Porque no te queda de otra.
+No tiene que ser así.
+Un [IUL|i u ele] es un *seguro de vida indexado*.
+Tú vas aportando cada mes.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si empiezas joven, podrías llegar
+hasta *medio millón* para tu retiro.
+Y mientras tanto, tu familia está *protegida*.
+Lo importante es *empezar ya*.
+Cada año que esperas, *cuesta*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja *desde joven*.

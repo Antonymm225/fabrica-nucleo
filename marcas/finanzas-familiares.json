@@ -3,8 +3,16 @@
   "codigo": "FF",
   "estilo": "EST-01",
   "tono": "Cálido y directo, de papá a papá. Frases cortas. Español neutro con tú.",
-  "temas": ["deudas de la casa", "tarjetas de crédito", "ahorro para los hijos", "escuela", "casa propia", "proteger a la familia"],
+  "temas": ["deudas de la casa", "tarjetas de crédito", "trampas al comprar troca o casa", "impuestos del trabajador", "ahorro para los hijos", "retiro", "proteger a la familia", "beneficios en vida si te enfermas"],
   "colores": { "fondo": "#F0EFE8", "principal": "#D8704F", "tinta": "#18121A", "gris": "#8E8A84", "acentos": ["#E2B33C", "#4E9A63", "#3F6FA8", "#8C5BB0"] },
+  "paletas": [
+    { "nombre": "terracota", "fondo": "#F0EFE8", "principal": "#D8704F", "tinta": "#18121A", "gris": "#8E8A84", "acentos": ["#E2B33C", "#4E9A63", "#3F6FA8", "#8C5BB0"] },
+    { "nombre": "menta", "fondo": "#E3EFE6", "principal": "#1F8A5B", "tinta": "#10201A", "gris": "#7A8A80", "acentos": ["#F2B33D", "#E0664A", "#3F6FA8", "#8C5BB0"] },
+    { "nombre": "cielo", "fondo": "#E5ECF5", "principal": "#2F62C9", "tinta": "#121A2B", "gris": "#7E8796", "acentos": ["#F2B33D", "#E0664A", "#4E9A63", "#8C5BB0"] },
+    { "nombre": "lavanda", "fondo": "#EDE7F4", "principal": "#7A3FB0", "tinta": "#1C1426", "gris": "#8A8296", "acentos": ["#E2B33C", "#4E9A63", "#E0664A", "#3F6FA8"] },
+    { "nombre": "maiz", "fondo": "#F6ECC9", "principal": "#D2452F", "tinta": "#1E1610", "gris": "#8F8670", "acentos": ["#2F62C9", "#4E9A63", "#8C5BB0", "#E2B33C"] },
+    { "nombre": "rosa", "fondo": "#F6E3E0", "principal": "#C23B5A", "tinta": "#1F1216", "gris": "#93807F", "acentos": ["#E2B33C", "#3F6FA8", "#4E9A63", "#8C5BB0"] }
+  ],
   "voz": "pC0w7bOSDTlgiOCrNBX3",
   "cierre": "Sígueme para más videos de finanzas",
   "aviso": "Contenido educativo. No es asesoría financiera."

@@ -11,7 +11,9 @@ type Contador = string | { en: En; texto: string }[];
 type Esc = { tipo: string; desde: En; capitulo: string; contador?: Contador; entrada?: "destello" | "cuadritos" | "ola" | "corte"; [k: string]: any };
 
 const vo = VOJ as unknown as VO;
-const vid = VID as unknown as { escenas: Esc[]; aviso?: string; musica?: string };
+type Visual = { paleta?: number; fondo?: "cruces" | "puntos" | "rayas" | "cuadricula" | "liso"; clave?: "serif" | "negra" };
+const vid = VID as unknown as { escenas: Esc[]; aviso?: string; musica?: string; visual?: Visual };
+const VIS: Visual = vid.visual ?? {};
 export const TOTAL = Math.ceil((vo.dur + 0.4) * FPS);
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9$%]/g, "");
@@ -26,17 +28,36 @@ export const wordFrame = (line: number, word?: string | number, occ = 0) => {
 };
 const starts = vid.escenas.map((s, i) => (i === 0 ? 0 : wordFrame(s.desde[0], s.desde[1]) - 3));
 
-/* ---------- Fondo: papel crema con grano y crucecitas ---------- */
-const Fondo: React.FC<{ seed: number; f: number }> = ({ seed, f }) => (
-  <g>
-    <rect width={W} height={H} fill={T.B} />
-    <rect width={W} height={H} filter="url(#grano)" />
-    {Array.from({ length: 30 }, (_, i) => {
-      const x = rnd(i + seed * 31) * W, y = 200 + rnd(i * 3 + seed * 17) * (H - 260) - f * 0.15, s = 9 + rnd(i + 5) * 6;
-      return <path key={i} d={`M${x - s} ${y - s}L${x + s} ${y + s}M${x + s} ${y - s}L${x - s} ${y + s}`} stroke={T.P} strokeWidth={3} opacity={0.32} />;
-    })}
-  </g>
-);
+/* ---------- Fondo: papel con grano y un motivo que cambia por video (cruces, puntos, rayas, cuadrícula o liso) ---------- */
+const Fondo: React.FC<{ seed: number; f: number }> = ({ seed, f }) => {
+  const m = VIS.fondo ?? "cruces", dy = -f * 0.15;
+  let motivo: React.ReactNode = null;
+  if (m === "cruces") motivo = Array.from({ length: 30 }, (_, i) => {
+    const x = rnd(i + seed * 31) * W, y = 200 + rnd(i * 3 + seed * 17) * (H - 260) + dy, s = 9 + rnd(i + 5) * 6;
+    return <path key={i} d={`M${x - s} ${y - s}L${x + s} ${y + s}M${x + s} ${y - s}L${x - s} ${y + s}`} stroke={T.P} strokeWidth={3} opacity={0.32} />;
+  });
+  if (m === "puntos") motivo = Array.from({ length: 12 * 22 }, (_, k) => {
+    const cx = k % 12, cy = Math.floor(k / 12), x = 45 + cx * 90 + (cy % 2) * 45, y = 40 + cy * 90 + (dy % 90);
+    return <circle key={k} cx={x} cy={y} r={4.5} fill={T.P} opacity={0.22} />;
+  });
+  if (m === "rayas") motivo = Array.from({ length: 34 }, (_, k) => {
+    const x = -H + k * 90 + (seed * 23) % 90;
+    return <path key={k} d={`M${x} ${H}L${x + H} 0`} stroke={T.P} strokeWidth={14} opacity={0.07} />;
+  });
+  if (m === "cuadricula") motivo = (
+    <g opacity={0.16} stroke={T.P} strokeWidth={2}>
+      {Array.from({ length: 13 }, (_, k) => <path key={"v" + k} d={`M${k * 90} 0V${H}`} />)}
+      {Array.from({ length: 23 }, (_, k) => <path key={"h" + k} d={`M0 ${k * 90 + (dy % 90)}H${W}`} />)}
+    </g>
+  );
+  return (
+    <g>
+      <rect width={W} height={H} fill={T.B} />
+      <rect width={W} height={H} filter="url(#grano)" />
+      {motivo}
+    </g>
+  );
+};
 
 /* ---------- Franja de capítulo ---------- */
 const Franja: React.FC<{ e: Esc; f: number; oscuro: boolean }> = ({ e, f, oscuro }) => {
@@ -62,6 +83,7 @@ const Texto: React.FC<{ f: number; oscuro: boolean }> = ({ f, oscuro }) => {
   if (next && t >= next.s - 0.05) return null;
   const ws = vo.words.filter((w) => w.line === li);
   let clave = false;
+  const negra = VIS.clave === "negra";
   const tinta = oscuro ? T.B : T.K, gris = oscuro ? "#77727a" : "#B3AEA6";
   return (
     <div style={{ position: "absolute", top: 150, left: 84, right: 110, display: "flex", flexWrap: "wrap", alignItems: "baseline", columnGap: 20, rowGap: 0, lineHeight: 1.12 }}>
@@ -79,11 +101,11 @@ const Texto: React.FC<{ f: number; oscuro: boolean }> = ({ f, oscuro }) => {
           <span key={i} style={{
             opacity: esClave ? op * (0.45 + 0.55 * k) : op,
             color: col,
-            fontFamily: esClave ? F.clave : F.texto,
-            fontStyle: esClave ? "italic" : "normal",
-            fontWeight: esClave ? 400 : 500,
-            fontSize: esClave ? 92 : 76,
-            letterSpacing: esClave ? 0 : -0.8,
+            fontFamily: esClave ? (negra ? F.texto : F.clave) : F.texto,
+            fontStyle: esClave && !negra ? "italic" : "normal",
+            fontWeight: esClave ? (negra ? 800 : 400) : 500,
+            fontSize: esClave ? (negra ? 80 : 92) : 76,
+            letterSpacing: esClave ? (negra ? -1.5 : 0) : -0.8,
             transform: `translateY(${(1 - op) * 10}px)`,
             display: "inline-block",
           }}>{txt}</span>

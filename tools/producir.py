@@ -14,8 +14,29 @@ MODELO = "claude-sonnet-5-5"
 TAG = re.compile(r"\[([^|\]]*)\|([^\]]*)\]")
 OBJETOS = {"tarjeta", "alcancia", "casa", "troca", "escuela", "banco", "calendario", "billete", "moneda"}
 TIPOS = {"cifra", "armar", "tablero", "tiempo", "colgantes", "comparativa", "pasos", "oscura", "cierre"}
-PROHIBIDO = [r"garantiz", r"sin riesgo", r"libre de impuestos", r"hazte rico", r"link en (mi|el) perfil", r"agenda", r"cotiza", r"\biul\b",
-             r"\bvos\b", r"\btenés\b", r"\bcomentá\b", r"criptomoneda", r"bitcoin", r"acciones de"]
+PROHIBIDO = [r"garantiz", r"sin riesgo", r"libre de impuestos", r"hazte rico", r"link en (mi|el) perfil", r"agenda", r"cotiza",
+             r"\bvos\b", r"\btenés\b", r"\bcomentá\b", r"criptomoneda", r"bitcoin", r"acciones de", r"\bplata\b", r"\blana\b", r"\bguita\b",
+             r"cooperativa", r"seguro de (auto|carro|troca)"]
+LINEAS, PALABRAS = (26, 42), (170, 300)   # 50 a 88 segundos a 205 palabras por minuto
+FONDOS = ["cruces", "puntos", "rayas", "cuadricula", "liso"]
+
+
+def con_iul(cod):
+    """4 de cada 10 videos llevan el IUL (los que terminan en 1, 3, 6 y 8)."""
+    return int(cod.rsplit("-", 1)[1]) % 5 in (1, 3)
+
+
+def visual_de(cod):
+    """Paleta, fondo y letra de la palabra clave cambian de un video a otro."""
+    n = int(cod.rsplit("-", 1)[1])
+    return {"paleta": n % 6, "fondo": FONDOS[n % 5], "clave": ["serif", "negra"][(n // 2) % 2]}
+
+
+DATOS_IUL = [
+    {"dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'", "valor": 10, "unidad": "%", "fuente": "https://interno/regla-de-la-marca-iul"},
+    {"dato": "Piso del IUL: no pierde por la caída del mercado", "valor": 0, "unidad": "%", "fuente": "https://interno/regla-de-la-marca-iul"},
+    {"dato": "Retiro: 'podrías llegar hasta medio millón'", "valor": 500000, "unidad": "$", "fuente": "https://interno/regla-de-la-marca-iul"},
+]
 REFS = {"en", "desde", "hasta", "armado", "elegir", "alcancia", "seguir", "compartir"}
 
 
@@ -78,7 +99,7 @@ def tokens(linea):
 
 def revisar(lineas, escenas, ficha, marca):
     err = []
-    if not 16 <= len(lineas) <= 22: err.append(f"el guion tiene {len(lineas)} líneas; deben ser de 16 a 22")
+    if not LINEAS[0] <= len(lineas) <= LINEAS[1]: err.append(f"el guion tiene {len(lineas)} líneas; deben ser de {LINEAS[0]} a {LINEAS[1]}")
     habladas = 0
     for i, l in enumerate(lineas):
         tk = tokens(l)
@@ -92,7 +113,17 @@ def revisar(lineas, escenas, ficha, marca):
         low = l.lower()
         for p in PROHIBIDO:
             if re.search(p, low): err.append(f"línea {i}: frase prohibida ({p}): {l}")
-    if not 110 <= habladas <= 165: err.append(f"el guion tiene {habladas} palabras habladas; deben ser de 110 a 165")
+    if not PALABRAS[0] <= habladas <= PALABRAS[1]: err.append(f"el guion tiene {habladas} palabras habladas; deben ser de {PALABRAS[0]} a {PALABRAS[1]}")
+    # IUL: solo cuando toca, y siempre con sus frases obligatorias
+    todo = " ".join(lineas).lower()
+    tiene_iul = bool(re.search(r"\biul\b|seguro de vida indexado", todo))
+    if ficha.get("con_iul"):
+        if not tiene_iul: err.append("este video lleva IUL: preséntalo como [IUL|i u ele], un *seguro de vida indexado*")
+        if "asesor certificado" not in todo: err.append("falta la línea: Un *asesor certificado* debe ver tu caso a detalle.")
+        for i, l in enumerate(lineas):
+            if re.search(r"\[10%\|", l) and "hasta" not in l.lower(): err.append(f"línea {i}: el 10% del IUL siempre va con 'hasta': {l}")
+    elif tiene_iul:
+        err.append("este video es de puro valor: no menciones el IUL ni seguros de vida")
     if len(lineas) >= 2:
         if "sígueme" not in lineas[-2].lower(): err.append("la penúltima línea debe empezar el cierre con *Sígueme*")
         if "compártelo" not in lineas[-1].lower(): err.append("la última línea debe decir 'compártelo'")
@@ -185,7 +216,11 @@ def texto(r):
     return "\n".join(b.text for b in r.content if b.type == "text")
 
 
-def investigar(c, marca, historia):
+TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero del día a día en Estados Unidos con un ejemplo con números que duela (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y una salida práctica. Lo que mejor funciona con esta audiencia: trampas al comprar troca o casa, tarjetas de tienda y "cero por ciento", préstamos caros, cargos del banco, estafas, impuestos del que cobra por contrato, gastos hormiga. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, FTC, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, nada de seguros (ni de vida ni de auto), y no mandes a la gente a cooperativas ni a planes del trabajo."""
+TAREA_IUL = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Elige UN tema nuevo que gire alrededor de uno de sus 3 beneficios: ahorro para el retiro (el dinero que se pierde en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia, o el costo de empezar tarde), protección de la familia si tú faltas (el seguro del trabajo que no alcanza, la familia que depende de tus envíos), o beneficios en vida si te da una enfermedad crónica, crítica o terminal (el que trabaja con su cuerpo). Busca en la web los datos del problema en Estados Unidos (inflación, tasas del banco, depreciación, Seguro Social, etc.) en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero, retiro de hasta medio millón). Calcula las proyecciones con el 10% como tope (aporte al inicio de cada año, interés anual)."""
+
+
+def investigar(c, marca, historia, iul=False):
     pedido = f"""Eres investigador de contenido de finanzas personales para la marca "{marca['nombre']}".
 Tono de la marca: {marca['tono']}
 Temas preferidos: {', '.join(marca['temas'])}.
@@ -194,7 +229,7 @@ Audiencia: hispanos en Estados Unidos de 30 a 55 años que trabajan en oficios (
 Temas que la marca YA hizo (no repitas ni el tema ni el ángulo):
 {chr(10).join('- ' + h for h in historia) or '- (ninguno)'}
 
-Tarea: elige UN tema nuevo de finanzas del día a día con un ejemplo con números que sorprenda (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y un consejo práctico. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, ni de seguros específicos.
+{TAREA_IUL if iul else TAREA_VALOR}
 
 Responde al final con UN bloque ```json con esta forma exacta:
 {{
@@ -213,7 +248,10 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     t = texto(r)
     m = re.findall(r"```json\s*(\{.*?\})\s*```", t, re.S)
     if not m: raise RuntimeError("la investigación no devolvió el bloque JSON")
-    return json.loads(m[-1])
+    ficha = json.loads(m[-1])
+    ficha["con_iul"] = iul
+    if iul: ficha["datos"] = ficha.get("datos", []) + DATOS_IUL
+    return ficha
 
 
 ESQUEMA = {"type": "object", "additionalProperties": False, "required": ["titulo", "lineas", "escenas_json", "aviso"],
@@ -230,6 +268,9 @@ Nombre para el cierre: "{marca['nombre']}". Lema para el cierre (campo sub): "di
 Ficha del tema investigado (las únicas cifras permitidas están en "datos" y "calculos"):
 {json.dumps(ficha, ensure_ascii=False, indent=1)}
 
+Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra" if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
+Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. Gancho fuerte con open loop que se cierra al final.
+
 Escribe el video siguiendo el cerebro de EST-01:
 - "lineas": las líneas del guion, en orden, con el formato [mostrado|hablado] y *clave*.
 - "escenas_json": la lista de escenas como texto JSON (una lista [...] de objetos), con las referencias a palabras que existan en esas líneas.
@@ -244,6 +285,25 @@ Escribe el video siguiendo el cerebro de EST-01:
 
 
 # ---------------------------------------------------------------- archivos
+def calificados(minimo=9, maximo=4):
+    """Guiones de entrenamiento con nota alta (entrenamiento/ronda-N/notas) para usarlos como modelo."""
+    out = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "entrenamiento", "ronda-*", "guiones.txt")), reverse=True):
+        notas = {}
+        for n in glob.glob(os.path.join(os.path.dirname(f), "notas", "notas", "*.json")):
+            d = json.load(open(n, encoding="utf-8")); d = d.get("data", d)
+            if isinstance(d.get("nota"), (int, float)): notas[os.path.basename(n)[:-5]] = d
+        cur = None; G = []
+        for l in open(f, encoding="utf-8"):
+            l = l.rstrip("\n")
+            if l.startswith("## "): cur = [x.strip() for x in l[3:].split("|")] + [[]]; G.append(cur)
+            elif l.strip() and not l.startswith("#") and cur: cur[3].append(l.strip())
+        for i, tt, g, L in G:
+            if i in notas and notas[i]["nota"] >= minimo:
+                out.append((-notas[i]["nota"], f"### {i} · {tt} · gancho: {g} · nota de Antony: {notas[i]['nota']}/10\n" + "\n".join(L)))
+    return [x for _, x in sorted(out, key=lambda z: z[0])][:maximo]
+
+
 def ejemplos_de(estilo):
     out = []
     for d in sorted(glob.glob(os.path.join(ROOT, "videos", "*"))):
@@ -253,8 +313,11 @@ def ejemplos_de(estilo):
         if esc.get("estilo") != estilo or not esc.get("modelo", True): continue
         lin = [l.rstrip("\n") for l in open(g, encoding="utf-8") if l.strip() and not l.startswith("#")]
         out.append(f"### {os.path.basename(d)}\nlineas:\n" + "\n".join(f"{i}: {l}" for i, l in enumerate(lin)) + "\nescenas:\n" + json.dumps(esc["escenas"], ensure_ascii=False))
-        if len(out) >= 3: break
-    return "\n\n".join(out)
+        if len(out) >= 1: break
+    txt = "### Formato de escenas (video viejo y corto: copia el formato JSON, NO el largo ni el gancho)\n" + "\n\n".join(out)
+    cal = calificados()
+    if cal: txt += "\n\n## Guiones que Antony calificó con 9 o 10 (copia la fuerza del gancho y de la cifra; hoy el video es más largo y con open loop)\n" + "\n\n".join(cal)
+    return txt
 
 
 def historia_de(codigo):
@@ -278,7 +341,8 @@ def guardar(cod, marca, ficha, v, escenas):
            *[f"# Fuente: {d['dato']} = {d['valor']} {d.get('unidad', '')} · {d['fuente']}" for d in ficha.get("datos", [])],
            "# BLOQUE 1"]
     open(os.path.join(D, "guion.txt"), "w", encoding="utf-8").write("\n".join(cab + v["lineas"]) + "\n")
-    json.dump({"marca": marca["slug"], "estilo": marca["estilo"], "musica": marca.get("musica", "jugueton"), "aviso": v["aviso"], "escenas": escenas},
+    json.dump({"marca": marca["slug"], "estilo": marca["estilo"], "musica": marca.get("musica", "jugueton"), "aviso": v["aviso"],
+               "con_iul": bool(ficha.get("con_iul")), "visual": visual_de(cod), "escenas": escenas},
               open(os.path.join(D, "escenas.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
@@ -307,8 +371,8 @@ def main():
     for _ in range(a.cantidad):
         cod = siguiente(marca["codigo"])
         try:
-            ficha = investigar(c, marca, historia_de(marca["codigo"]))
-            print(f"{cod}: tema «{ficha['titulo']}» · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
+            ficha = investigar(c, marca, historia_de(marca["codigo"]), con_iul(cod))
+            print(f"{cod}: tema «{ficha['titulo']}» · {'con IUL' if ficha['con_iul'] else 'puro valor'} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
             err = revisar(v["lineas"], esc, ficha, marca)

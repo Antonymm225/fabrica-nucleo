@@ -1,0 +1,101 @@
+{
+ "titulo": "La deuda de la troca vieja que se mete en la nueva",
+ "angulo": "Cuando cambias tu troca y todavía debes más de lo que vale, el dealer te 'resuelve' el problema metiendo esa deuda en el préstamo nuevo, y terminas pagando intereses por una troca que ya ni tienes.",
+ "explicacion": "Si debes más de lo que vale tu troca, eso se llama estar 'al revés' (negative equity). Casi 3 de cada 10 personas que cambian de carro están así. El dealer dice 'no te preocupes, yo lo arreglo' y suma esa deuda al préstamo nuevo. El pago sube solo un poco y parece fácil. Pero pagas intereses por años sobre dinero de un carro que ya no tienes.",
+ "datos": [
+  {
+   "dato": "Promedio que se debe de más en un trade-in al revés (Q4 2025, récord)",
+   "valor": 7214,
+   "unidad": "$",
+   "fuente": "https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html"
+  },
+  {
+   "dato": "Porcentaje de trade-ins para carro nuevo que están al revés (Q4 2025)",
+   "valor": 29.3,
+   "unidad": "%",
+   "fuente": "https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html"
+  },
+  {
+   "dato": "Porcentaje de compras con deuda vieja que se financian a 84 meses",
+   "valor": 40.7,
+   "unidad": "%",
+   "fuente": "https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html"
+  },
+  {
+   "dato": "Precio promedio de un carro nuevo (Kelley Blue Book)",
+   "valor": 49353,
+   "unidad": "$",
+   "fuente": "https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html"
+  },
+  {
+   "dato": "Pago mensual promedio de quien mete la deuda vieja al préstamo nuevo (Q4 2025)",
+   "valor": 916,
+   "unidad": "$",
+   "fuente": "https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html"
+  },
+  {
+   "dato": "Pago mensual promedio de todas las compras de carro nuevo (Q4 2025)",
+   "valor": 772,
+   "unidad": "$",
+   "fuente": "https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html"
+  },
+  {
+   "dato": "Tasa promedio de préstamo de carro nuevo (Experian, Q1 2025)",
+   "valor": 6.73,
+   "unidad": "%",
+   "fuente": "https://www.sofi.com/learn/content/good-interest-rates/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Préstamo A: troca de $49,353 sin deuda vieja, 84 meses al 6.73%, pago mensual",
+   "expresion": "round(49353*(0.0673/12)/(1-(1+0.0673/12)**-84),2)",
+   "resultado": 738.37
+  },
+  {
+   "descripcion": "Préstamo B: la misma troca + $7,214 de deuda vieja = $56,567, 84 meses al 6.73%, pago mensual",
+   "expresion": "round(56567*(0.0673/12)/(1-(1+0.0673/12)**-84),2)",
+   "resultado": 846.3
+  },
+  {
+   "descripcion": "Diferencia de pago mensual entre B y A",
+   "expresion": "round(846.30-738.37,2)",
+   "resultado": 107.93
+  },
+  {
+   "descripcion": "Total pagado en A (84 meses)",
+   "expresion": "round(738.37*84,2)",
+   "resultado": 62023.08
+  },
+  {
+   "descripcion": "Total pagado en B (84 meses)",
+   "expresion": "round(846.30*84,2)",
+   "resultado": 71089.2
+  },
+  {
+   "descripcion": "Cuánto más pagas en total por meter la deuda vieja (B menos A)",
+   "expresion": "round(71089.20-62023.08,2)",
+   "resultado": 9066.12
+  },
+  {
+   "descripcion": "Intereses extra por los $7,214 de deuda vieja (lo que pagas de más sobre los $7,214)",
+   "expresion": "round(9066.12-7214,2)",
+   "resultado": 1852.12
+  },
+  {
+   "descripcion": "Salida: cuánto ahorrar al mes por 24 meses para cubrir los $7,214 antes de cambiar de troca",
+   "expresion": "round(7214/24,2)",
+   "resultado": 300.58
+  }
+ ],
+ "consejo": "Antes de ir al dealer, pide a tu prestamista actual el 'payoff' (cuánto debes exacto) y busca cuánto vale tu troca en Kelley Blue Book. Si debes más de lo que vale, no cambies todavía. Paga extra al préstamo viejo (aunque sea $100 o $300 al mes) hasta cerrar el hueco, o cubre la diferencia en efectivo. Si de verdad tienes que cambiar, busca un carro más barato para que el préstamo no crezca. Y no aceptes el plazo de 84 meses solo para bajar el pago.",
+ "que_no_decir": [
+  "El dealer te lo 'perdona' o 'te lo borra' (la deuda no desaparece, se suma al préstamo nuevo)",
+  "Que siempre es mala idea cambiar de troca (depende del caso)",
+  "Promesas de ahorro exacto: la tasa y el pago dependen del crédito de cada quien",
+  "Que los números son para todos (usamos promedios de Edmunds, KBB y Experian como ejemplo)",
+  "Recomendar seguros (como GAP) o cooperativas",
+  "Culpar a la persona: es una trampa común, no un error de tonto"
+ ],
+ "con_iul": false
+}

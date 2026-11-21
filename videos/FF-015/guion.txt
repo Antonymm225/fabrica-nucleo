@@ -1,0 +1,46 @@
+# FF-015 · Finanzas Familiares · EST-01 · El pago quincenal que te cobran por hacer gratis
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cuota de apertura típica de empresas externas de pago quincenal (punto medio del rango $200 a $400; usamos $350 como ejemplo) = 350 $ · https://www.amerisave.com/glossary/biweekly-mortgage-payments-how-they-work-in
+# Fuente: Cargo por cada pago procesado (rango $2 a $5; usamos $3 como ejemplo) = 3 $ · https://www.amerisave.com/glossary/biweekly-mortgage-payments-how-they-work-in
+# Fuente: Años para recuperar solo la cuota de apertura en el ejemplo de la CFPB (préstamo de $160,000 al 4.125%) = 9 años · https://www.amerisave.com/learn/biweekly-vs-monthly-mortgage-payments-in-which-saves-you-more
+# Fuente: Pagos al año con plan quincenal: 26 medios pagos, igual a 13 pagos completos = 26 pagos · https://en.wikipedia.org/wiki/Biweekly_mortgage
+# Fuente: Tasa del ejemplo: es hipotética, no un promedio oficial = 6.5 % · https://www.freddiemac.com/pmms
+# BLOQUE 1
+Te cobran [$350|trescientos cincuenta dólares] por algo
+que tú puedes hacer *gratis* con tu casa.
+Al final te digo *cómo*.
+Se llama el *pago quincenal*.
+Una empresa te ofrece pagar tu casa
+cada dos semanas, para *ahorrar miles*.
+Y sí, es cierto que *ahorras*.
+Son [26|veintiséis] medios pagos: un pago *extra*.
+Pero la empresa te cobra *apertura*:
+unos [$350|trescientos cincuenta dólares] solo por empezar.
+Más [$3|tres dólares] por *cada pago*.
+Y algunas son difíciles de *cancelar*.
+Imagina un préstamo de [$300,000|trescientos mil dólares]
+con interés de [6.5%|seis punto cinco por ciento], a plazo *normal*.
+Pagas [$1,896|mil ochocientos noventa y seis] al *mes*.
+Y le das al banco casi
+[$383,000|trescientos ochenta y tres mil] en *intereses*.
+Y lo peor: esa empresa se queda
+con unos [$2,200|dos mil doscientos dólares] en *cobros*.
+Pero aquí viene lo que *nadie te dice*.
+Tú logras lo mismo *sin pagar nada*.
+Suma un *doceavo* de tu pago a cada mensualidad.
+Aquí son [$158|ciento cincuenta y ocho dólares] al *mes*.
+Con ese extra terminas en [24|veinticuatro] años,
+y te quitas [70|setenta] *meses* de deuda.
+Y te ahorras más de [$87,000|ochenta y siete mil] en *intereses*.
+Llama a tu *banco* y pregunta
+si hay *penalidad* por pagar antes.
+Pide por escrito que el extra
+se aplique directo al *principal*.
+Antes de firmar con una empresa,
+pregunta cuánto cobra en *total*.
+Y si tienes tarjetas, págalas *primero*.
+Esas cobran más *interés* que tu casa.
+Así tu casa se paga *más rápido*,
+y ese dinero se queda en *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga la *hipoteca*.

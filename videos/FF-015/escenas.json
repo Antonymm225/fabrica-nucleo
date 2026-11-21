@@ -1,0 +1,681 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo de $300,000 a 30 años con interés de 6.5% y $158 extra al mes. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "la oferta",
+   "contador": "te cobran |$350",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       2,
+       "cómo"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 40,
+     "tam": 36,
+     "en": [
+      1,
+      "casa"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-$350",
+     "x": 66,
+     "y": 70,
+     "tam": 9,
+     "etiqueta": "por empezar",
+     "en": [
+      0,
+      "350"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    3
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "PAGOS",
+    "QUINCE"
+   ],
+   "en": [
+    3,
+    "quincenal"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "cómo funciona",
+   "contador": "al año |26 pagos",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 3,
+     "etiqueta": "LA EMPRESA",
+     "en": [
+      4,
+      "empresa"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Paga cada dos semanas y ahorra miles",
+     "piensa": false,
+     "cola": 1,
+     "x": 62,
+     "y": 16,
+     "en": [
+      4,
+      "ofrece"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 22,
+     "y": 55,
+     "tam": 24,
+     "en": [
+      5,
+      "semanas"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "26 medios pagos",
+     "color": "verde",
+     "x": 28,
+     "y": 82,
+     "tam": 4.5,
+     "en": [
+      7,
+      "26"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "los cobros",
+   "contador": "apertura |$350",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Plan quincenal",
+     "en": [
+      8
+     ],
+     "renglones": [
+      {
+       "texto": "Cuota de apertura",
+       "valor": "$350",
+       "en": [
+        9,
+        "350"
+       ]
+      },
+      {
+       "texto": "Cargo por cada pago",
+       "valor": "$3",
+       "en": [
+        10,
+        "3"
+       ]
+      },
+      {
+       "texto": "Cancelar el plan",
+       "valor": "difícil",
+       "en": [
+        11,
+        "cancelar"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       10,
+       "cada"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "préstamo |$300,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 35,
+     "tam": 30,
+     "etiqueta": "$300,000",
+     "en": [
+      12,
+      "préstamo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 1896,
+     "prefijo": "$",
+     "x": 72,
+     "y": 42,
+     "tam": 10,
+     "etiqueta": "al mes",
+     "en": [
+      14,
+      "Pagas"
+     ],
+     "hasta": [
+      14,
+      "mes"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      13,
+      "interés"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo que pagas",
+   "contador": "intereses |$383,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "tú",
+     "en": [
+      15
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 28,
+     "tam": 32,
+     "etiqueta": "el banco",
+     "en": [
+      15,
+      "banco"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      15,
+      "banco"
+     ],
+     "hasta": [
+      16,
+      "intereses"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 383000,
+     "prefijo": "$",
+     "x": 50,
+     "y": 70,
+     "tam": 9,
+     "etiqueta": "intereses",
+     "en": [
+      16,
+      "383,000"
+     ],
+     "hasta": [
+      16,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "otro cobro",
+   "contador": "cobros |$2,200",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      17
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 62,
+     "tam": 28,
+     "etiqueta": "la empresa",
+     "en": [
+      17,
+      "empresa"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-$2,200",
+     "x": 72,
+     "y": 26,
+     "tam": 8,
+     "etiqueta": "en cobros",
+     "color": "principal",
+     "en": [
+      18,
+      "2,200"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "la salida",
+   "contador": "extra |$158 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 7,
+     "en": [
+      19
+     ],
+     "items": [
+      {
+       "texto": "Lo haces tú, sin pagar nada",
+       "en": [
+        20,
+        "sin"
+       ]
+      },
+      {
+       "texto": "Suma un doceavo a cada pago",
+       "en": [
+        21,
+        "doceavo"
+       ]
+      },
+      {
+       "texto": "Son $158 más al mes",
+       "en": [
+        22,
+        "158"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       20,
+       "logras"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "tu ahorro",
+   "contador": "terminas en |24 años",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 36,
+     "tam": 28,
+     "etiqueta": "24 años",
+     "en": [
+      23
+     ]
+    },
+    {
+     "id": "cviejo",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 36,
+     "tam": 28,
+     "etiqueta": "plazo normal",
+     "en": [
+      24,
+      "te"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cviejo",
+     "en": [
+      24,
+      "quitas"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-70 meses",
+     "x": 50,
+     "y": 72,
+     "tam": 10,
+     "etiqueta": "menos deuda",
+     "color": "verde",
+     "en": [
+      24,
+      "70"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    25
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |$87,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$87,000",
+    "etiqueta": "en intereses",
+    "en": [
+     25,
+     "87,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     25,
+     "intereses"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "llama al banco",
+   "contador": "paso |1 y 2",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "Tu banco",
+     "que": "celular",
+     "modo": "llamada",
+     "de": "Tu banco",
+     "x": 20,
+     "y": 55,
+     "en": [
+      26,
+      "Llama"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "en": [
+      26,
+      "banco"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Hay penalidad por pagar antes?",
+     "piensa": false,
+     "cola": 1,
+     "x": 68,
+     "y": 18,
+     "en": [
+      27,
+      "penalidad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "ojo",
+   "contador": "ojo |antes de firmar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       33,
+       "interés"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto cobra en total?",
+     "piensa": true,
+     "cola": 1,
+     "x": 40,
+     "y": 22,
+     "en": [
+      31,
+      "cuánto"
+     ]
+    },
+    {
+     "id": "tar",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 82,
+     "y": 55,
+     "tam": 26,
+     "giro": -8,
+     "en": [
+      32,
+      "tarjetas"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PAGA PRIMERO",
+     "color": "verde",
+     "x": 82,
+     "y": 55,
+     "en": [
+      32,
+      "primero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "tu casa",
+   "contador": "tu casa |más rápido",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 28,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "tu casa",
+     "en": [
+      34,
+      "casa"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "tu familia",
+     "en": [
+      35,
+      "familia"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "titulo": "El pago quincenal que te cobran por hacer gratis",
+ "angulo": "Una empresa te cobra cientos de dólares por hacer 'pagos quincenales' de tu hipoteca, y tú logras el mismo ahorro agregando una cantidad pequeña cada mes sin pagar nada.",
+ "explicacion": "Te llega una oferta para pagar tu casa cada dos semanas y 'ahorrar miles'. Es cierto que ahorras, porque al año terminas pagando 13 cuotas en vez de 12. Pero la empresa cobra una cuota de apertura y un cargo por cada pago, y algunas son difíciles de cancelar. Tú puedes lograr lo mismo sumando un doceavo de tu pago a cada mensualidad. Llama a tu banco y pide que ese dinero extra se aplique directo al principal.",
+ "datos": [
+  {
+   "dato": "Cuota de apertura típica de empresas externas de pago quincenal (punto medio del rango $200 a $400; usamos $350 como ejemplo)",
+   "valor": 350,
+   "unidad": "$",
+   "fuente": "https://www.amerisave.com/glossary/biweekly-mortgage-payments-how-they-work-in"
+  },
+  {
+   "dato": "Cargo por cada pago procesado (rango $2 a $5; usamos $3 como ejemplo)",
+   "valor": 3,
+   "unidad": "$",
+   "fuente": "https://www.amerisave.com/glossary/biweekly-mortgage-payments-how-they-work-in"
+  },
+  {
+   "dato": "Años para recuperar solo la cuota de apertura en el ejemplo de la CFPB (préstamo de $160,000 al 4.125%)",
+   "valor": 9,
+   "unidad": "años",
+   "fuente": "https://www.amerisave.com/learn/biweekly-vs-monthly-mortgage-payments-in-which-saves-you-more"
+  },
+  {
+   "dato": "Pagos al año con plan quincenal: 26 medios pagos, igual a 13 pagos completos",
+   "valor": 26,
+   "unidad": "pagos",
+   "fuente": "https://en.wikipedia.org/wiki/Biweekly_mortgage"
+  },
+  {
+   "dato": "Tasa del ejemplo: es hipotética, no un promedio oficial",
+   "valor": 6.5,
+   "unidad": "%",
+   "fuente": "https://www.freddiemac.com/pmms"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual de $300,000 a 30 años al 6.5%",
+   "expresion": "round(300000*(0.065/12)/(1-(1+0.065/12)**-360),2)",
+   "resultado": 1896.2
+  },
+  {
+   "descripcion": "Total de intereses pagando normal 30 años",
+   "expresion": "round(1896.2040704788958*360-300000,2)",
+   "resultado": 382633.47
+  },
+  {
+   "descripcion": "Extra mensual para lograr 13 pagos al año (un doceavo del pago)",
+   "expresion": "round(1896.2040704788958/12,2)",
+   "resultado": 158.02
+  },
+  {
+   "descripcion": "Total de intereses con ese extra mensual (simulación mes a mes: termina en 290 meses)",
+   "expresion": "round(295377.18,2)",
+   "resultado": 295377.18
+  },
+  {
+   "descripcion": "Intereses ahorrados con el extra",
+   "expresion": "round(382633.47-295377.18,2)",
+   "resultado": 87256.29
+  },
+  {
+   "descripcion": "Meses que te quitas del préstamo",
+   "expresion": "360-290",
+   "resultado": 70
+  },
+  {
+   "descripcion": "Años que dura el préstamo con el extra",
+   "expresion": "round(290/12,2)",
+   "resultado": 24.17
+  },
+  {
+   "descripcion": "Lo que cobraría la empresa en ese tiempo: $350 de apertura más $3 por 26 pagos al año",
+   "expresion": "round(350+3*26*(290/12),2)",
+   "resultado": 2235.0
+  },
+  {
+   "descripcion": "Ahorro neto si pagas a la empresa",
+   "expresion": "round(87256.29-2235,2)",
+   "resultado": 85021.29
+  },
+  {
+   "descripcion": "Ahorro neto si lo haces tú mismo gratis, y lo que te quedas de más",
+   "expresion": "round(87256.29-0,2)",
+   "resultado": 87256.29
+  }
+ ],
+ "consejo": "No pagues a ninguna empresa por pagos quincenales. Llama a tu banco o servicer, confirma que tu préstamo no tenga penalidad por pagar antes y suma un doceavo de tu pago a cada mensualidad. En el ejemplo son $158.02 al mes. Pide por escrito que ese extra se aplique al principal. Si tu banco ofrece el plan quincenal gratis, también sirve. Antes de firmar con cualquier empresa, pregunta cuánto cobra en total y cómo se cancela.",
+ "que_no_decir": [
+  "Que los pagos quincenales son una estafa. El ahorro es real, lo que molesta es el cobro",
+  "Que vas a ahorrar exactamente $87,256. Es un ejemplo con 6.5% y $300,000",
+  "Que todas las empresas cobran lo mismo o que 6.5% es la tasa de hoy",
+  "Que mandes dinero extra sin confirmar que se aplique al principal y que no haya penalidad",
+  "Que mandes a la gente a refinanciar, a cooperativas o a planes del trabajo",
+  "Promesas de que pagarás la casa 'seguro' en 24 años o que esto aplica a todos los préstamos",
+  "Que dejes de pagar tus deudas más caras, como las tarjetas, para hacer pagos extra a la casa"
+ ],
+ "con_iul": false
+}

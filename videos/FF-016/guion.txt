@@ -1,0 +1,47 @@
+# FF-016 · Finanzas Familiares · EST-01 · Tu cuerpo es tu herramienta
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Proporción de jóvenes de 20 años que se incapacitará antes de la edad de retiro (más de 1 de cada 4) = 25 % · https://blog.massmutual.com/insurance/disability-surprising-facts
+# Fuente: Beneficio mensual promedio del Seguro Social por incapacidad (SSDI), inicios de 2026 = 1634 $ · https://blog.massmutual.com/insurance/disability-surprising-facts
+# Fuente: SUPUESTO de ejemplo: ingreso mensual de un trabajador de oficio = 4000 $ · https://blog.massmutual.com/insurance/disability-surprising-facts
+# Fuente: SUPUESTO de ejemplo: aporte anual al IUL ($200 al mes) = 2400 $ · https://blog.massmutual.com/insurance/disability-surprising-facts
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Uno de cada *cuatro* trabajadores
+se incapacita antes de *retirarse*.
+Y el Seguro Social paga *menos de la mitad*.
+Al final te digo cómo *cubrir* ese hueco.
+Se llama el *hueco de ingreso*.
+Tú vives de tus *manos*,
+tu *espalda* y tus rodillas.
+Hoy ganas [$4,000|cuatro mil dólares] al mes.
+Te lesionas y ya no *puedes trabajar*.
+El Seguro Social te paga unos [$1,634|mil seiscientos treinta y cuatro] al mes.
+Y lo peor: te faltan [$2,366|dos mil trescientos sesenta y seis] cada *mes*.
+Eso es la *renta* y los biles.
+Son [$28,392|veintiocho mil trescientos noventa y dos] que faltan al *año*.
+Pero aquí viene lo que *nadie* te dice.
+El [IUL|i u ele], un *seguro de vida indexado*,
+te puede dar *beneficios en vida*
+si te da una enfermedad *crónica*,
+*crítica* o terminal.
+Tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Y si el mercado cae, *no pierde*
+por esa caída. Tiene *piso cero*.
+Si empiezas a los treinta
+con [$2,400|dos mil cuatrocientos dólares] al año,
+a los sesenta podrías llegar
+a unos [$434,000|cuatrocientos treinta y cuatro mil] para tu *retiro*.
+Pero si esperas a los cuarenta,
+llegas a unos [$151,000|ciento cincuenta y un mil].
+Esperar [10|diez] años te cuesta [$283,000|doscientos ochenta y tres mil].
+Por eso *empezar hoy* importa.
+Haz esta cuenta: lo que *ganas*,
+menos [$1,634|mil seiscientos treinta y cuatro]. Esa es tu *cifra*.
+Ese hueco lo paga *tu familia*.
+Cúbrelo con el [IUL|i u ele] mientras estás *sano*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien vive de su *cuerpo*.

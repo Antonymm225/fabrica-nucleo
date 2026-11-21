@@ -1,0 +1,763 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: ingreso de $4,000 al mes y aporte de $2,400 al año al IUL con crecimiento de hasta 10% anual. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 4,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cuerpo",
+   "contador": "uno de |cada cuatro",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 13,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 0,
+     "piel": 1,
+     "en": [
+      0
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 38,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "piel": 2,
+     "en": [
+      0,
+      "de"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 62,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 3,
+     "en": [
+      0,
+      "cada"
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "incapacita"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 87,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 3,
+     "piel": 1,
+     "en": [
+      0,
+      "cuatro"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "ANTES DE RETIRARSE",
+     "x": 50,
+     "y": 35,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      1,
+      "antes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "el hueco",
+   "contador": "paga |menos de la mitad",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 4000,
+     "max": 4000,
+     "prefijo": "$",
+     "etiqueta": "lo que ganabas",
+     "en": [
+      2
+     ],
+     "hasta": [
+      2,
+      "Social"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 1634,
+     "max": 4000,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "Seguro Social",
+     "en": [
+      2,
+      "paga"
+     ],
+     "hasta": [
+      2,
+      "mitad"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿CÓMO LO CUBRES?",
+     "x": 50,
+     "y": 14,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      3,
+      "cubrir"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "HUECO",
+    "INGRESO"
+   ],
+   "en": [
+    4,
+    "hueco"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "tu herramienta",
+   "contador": [
+    {
+     "en": [
+      5,
+      6
+     ],
+     "texto": "vives de |tu cuerpo"
+    },
+    {
+     "en": [
+      7,
+      8
+     ],
+     "texto": "ganas |$4,000 al mes"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      5
+     ],
+     "cambia": {
+      "en": [
+       8,
+       "lesionas"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Vivo de mis manos y mi espalda.",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      5,
+      "manos"
+     ],
+     "sale": [
+      7,
+      "ganas"
+     ]
+    },
+    {
+     "id": "cart",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 74,
+     "y": 45,
+     "tam": 28,
+     "etiqueta": "$4,000 al mes",
+     "en": [
+      7,
+      "4,000"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Me lesioné. Ya no puedo trabajar.",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      8,
+      "lesionas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "las cuentas",
+   "contador": [
+    {
+     "en": [
+      9
+     ],
+     "texto": "seguro |$1,634"
+    },
+    {
+     "en": [
+      10,
+      11,
+      12
+     ],
+     "texto": "faltan |$2,366"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 80,
+     "titulo": "Tu mes si te incapacitas",
+     "en": [
+      9
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que ganas",
+       "valor": "$4,000",
+       "en": [
+        9
+       ]
+      },
+      {
+       "texto": "Seguro Social",
+       "valor": "$1,634",
+       "en": [
+        9,
+        "1,634"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       10,
+       "peor"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Te faltan",
+      "valor": "$2,366",
+      "en": [
+       10,
+       "2,366"
+      ]
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 24,
+     "y": 80,
+     "tam": 24,
+     "etiqueta": "la renta",
+     "en": [
+      11,
+      "renta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$28,392",
+     "x": 72,
+     "y": 78,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "al año",
+     "en": [
+      12,
+      "28,392"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |de vida",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 36,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      13
+     ],
+     "cambia": {
+      "en": [
+       14,
+       "indexado"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "x": 70,
+     "y": 34,
+     "tam": 12,
+     "color": "principal",
+     "en": [
+      14,
+      "IUL"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "seguro de vida",
+     "x": 70,
+     "y": 52,
+     "tam": 4.5,
+     "color": "tinta",
+     "en": [
+      14,
+      "seguro"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "indexado",
+     "x": 70,
+     "y": 60,
+     "tam": 4.5,
+     "color": "tinta",
+     "en": [
+      14,
+      "indexado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "en vida",
+   "contador": "beneficios |en vida",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "p",
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "TÚ",
+     "en": [
+      15
+     ],
+     "cambia": {
+      "en": [
+       17,
+       "terminal"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "h",
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 72,
+     "y": 42,
+     "tam": 34,
+     "etiqueta": "beneficios",
+     "en": [
+      15,
+      "beneficios"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "h",
+     "a": "p",
+     "en": [
+      16,
+      "enfermedad"
+     ],
+     "hasta": [
+      17,
+      "terminal"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "tu dinero",
+   "contador": "crece |hasta 10%",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 2400,
+     "final": 434264,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN 30 AÑOS",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 88,
+     "en": [
+      18
+     ],
+     "hasta": [
+      19,
+      "año"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SI EL MERCADO CAE",
+     "x": 50,
+     "y": 12,
+     "tam": 4.5,
+     "color": "tinta",
+     "en": [
+      20,
+      "mercado"
+     ],
+     "sale": [
+      21,
+      "Tiene"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO: NUNCA BAJA",
+     "x": 50,
+     "y": 12,
+     "tam": 4.5,
+     "color": "verde",
+     "en": [
+      21,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "opción a",
+   "contador": "aportas |$2,400 al año",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "p",
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ A LOS 30",
+     "en": [
+      22
+     ],
+     "cambia": {
+      "en": [
+       25,
+       "434,000"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "$2,400 al año",
+     "piensa": false,
+     "cola": -1,
+     "x": 24,
+     "y": 22,
+     "en": [
+      23,
+      "2,400"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 434264,
+     "max": 434264,
+     "prefijo": "$",
+     "etiqueta": "a los 60",
+     "en": [
+      24,
+      "podrías"
+     ],
+     "hasta": [
+      25,
+      "434,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "opción b",
+   "contador": "pierdes |$283,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 24,
+     "y": 95,
+     "tam": 50,
+     "valor": 434264,
+     "max": 434264,
+     "prefijo": "$",
+     "etiqueta": "A LOS 30",
+     "en": [
+      26
+     ],
+     "hasta": [
+      26,
+      "esperas"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 76,
+     "y": 95,
+     "tam": 50,
+     "valor": 151206,
+     "max": 434264,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "A LOS 40",
+     "en": [
+      26,
+      "cuarenta"
+     ],
+     "hasta": [
+      27,
+      "151,000"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-$283,000",
+     "x": 50,
+     "y": 20,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "por esperar",
+     "en": [
+      28,
+      "283,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "haz |la cuenta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      30
+     ],
+     "items": [
+      {
+       "texto": "Lo que ganas al mes",
+       "en": [
+        30,
+        "ganas"
+       ]
+      },
+      {
+       "texto": "Menos $1,634 del Seguro Social",
+       "en": [
+        31,
+        "1,634"
+       ]
+      },
+      {
+       "texto": "Esa es tu cifra a cubrir",
+       "en": [
+        31,
+        "cifra"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      30
+     ],
+     "cambia": {
+      "en": [
+       31,
+       "cifra"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "tu familia",
+   "contador": "faltan |$2,366 al mes",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$2,366",
+    "etiqueta": "cada mes",
+    "en": [
+     32,
+     "hueco"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     32,
+     "familia"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

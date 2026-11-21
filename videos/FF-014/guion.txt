@@ -1,0 +1,46 @@
+# FF-014 · Finanzas Familiares · EST-01 · La deuda de la troca vieja
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Promedio que se debe de más en un trade-in al revés (Q4 2025, récord) = 7214 $ · https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html
+# Fuente: Porcentaje de trade-ins para carro nuevo que están al revés (Q4 2025) = 29.3 % · https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html
+# Fuente: Porcentaje de compras con deuda vieja que se financian a 84 meses = 40.7 % · https://www.edmunds.com/car-news/edmunds-q4-2025-insights-report.html
+# Fuente: Precio promedio de un carro nuevo (Kelley Blue Book) = 49353 $ · https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html
+# Fuente: Pago mensual promedio de quien mete la deuda vieja al préstamo nuevo (Q4 2025) = 916 $ · https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html
+# Fuente: Pago mensual promedio de todas las compras de carro nuevo (Q4 2025) = 772 $ · https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html
+# Fuente: Tasa promedio de préstamo de carro nuevo (Experian, Q1 2025) = 6.73 % · https://www.sofi.com/learn/content/good-interest-rates/
+# BLOQUE 1
+Si cambias tu *troca* y todavía la debes,
+el dealer te suma [$7,214|siete mil doscientos catorce dólares] de *deuda vieja*.
+Se llama estar *al revés*.
+Debes más de lo que *vale* tu troca.
+Y al final te digo cómo *evitarlo*.
+En Estados Unidos, casi [3|tres] de cada [10|diez]
+que cambian de carro están *al revés*.
+El dealer dice: yo lo *arreglo*, tranquilo.
+Y suma esa deuda al *préstamo nuevo*.
+El pago sube poquito, y parece *fácil*.
+Pero aquí viene lo que *nadie te dice*.
+Imagina una troca nueva de [$49,353|cuarenta y nueve mil trescientos cincuenta y tres].
+Más los [$7,214|siete mil doscientos catorce] de tu *troca vieja*.
+Son [$56,567|cincuenta y seis mil quinientos sesenta y siete] para *financiar*.
+A *siete años*, con interés de [6.73%|seis punto setenta y tres por ciento].
+Sin la deuda vieja, pagarías [$738|setecientos treinta y ocho] al mes.
+Con la deuda vieja, pagas [$846|ochocientos cuarenta y seis].
+Solo [$108|ciento ocho] más al mes. Parece *poquito*.
+Y lo peor: en total pagas [$9,066|nueve mil sesenta y seis] *más*.
+Por meter una deuda de [$7,214|siete mil doscientos catorce].
+De ahí, [$1,852|mil ochocientos cincuenta y dos] son puros *intereses*.
+Intereses por una troca que *ya ni tienes*.
+Eso pudo ser la *renta* de diciembre.
+Ahora, ¿cómo lo *evitas*?
+Antes del dealer, pide el *payoff* a tu prestamista.
+Es cuánto debes *exacto* hoy.
+Luego mira cuánto vale tu troca *hoy*.
+Si debes más de lo que vale,
+*no cambies* todavía.
+Paga extra al préstamo viejo cada *mes*.
+Con unos [$300|trescientos] al mes por *dos años*,
+cubres esos [$7,214|siete mil doscientos catorce] y sales *limpio*.
+No aceptes *siete años* para *bajar el pago*.
+Si tienes que cambiar, busca una troca *más barata*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a cambiar de *troca*.

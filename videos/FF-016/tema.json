@@ -1,0 +1,113 @@
+{
+ "titulo": "Tu cuerpo es tu herramienta y no tiene seguro",
+ "angulo": "1 de cada 4 trabajadores se incapacita antes de retirarse, y el Seguro Social paga menos de la mitad de lo que ganabas.",
+ "explicacion": "Tú vives de tu cuerpo: tus manos, tu espalda, tus rodillas. Más de uno de cada cuatro jóvenes de 20 años se incapacitará antes de retirarse, según el Seguro Social. Si te pasa, el pago promedio por incapacidad es de unos $1,634 al mes. Si hoy ganas $4,000 al mes, te faltan $2,366 cada mes. Un IUL puede darte beneficios en vida si te da una enfermedad crónica, crítica o terminal. Además, con un piso de cero, tu dinero no baja si el mercado cae.",
+ "datos": [
+  {
+   "dato": "Proporción de jóvenes de 20 años que se incapacitará antes de la edad de retiro (más de 1 de cada 4)",
+   "valor": 25,
+   "unidad": "%",
+   "fuente": "https://blog.massmutual.com/insurance/disability-surprising-facts"
+  },
+  {
+   "dato": "Beneficio mensual promedio del Seguro Social por incapacidad (SSDI), inicios de 2026",
+   "valor": 1634,
+   "unidad": "$",
+   "fuente": "https://blog.massmutual.com/insurance/disability-surprising-facts"
+  },
+  {
+   "dato": "SUPUESTO de ejemplo: ingreso mensual de un trabajador de oficio",
+   "valor": 4000,
+   "unidad": "$",
+   "fuente": "https://blog.massmutual.com/insurance/disability-surprising-facts"
+  },
+  {
+   "dato": "SUPUESTO de ejemplo: aporte anual al IUL ($200 al mes)",
+   "valor": 2400,
+   "unidad": "$",
+   "fuente": "https://blog.massmutual.com/insurance/disability-surprising-facts"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que falta cada mes si te incapacitas: ingreso de $4,000 menos beneficio promedio de $1,634",
+   "expresion": "round(4000-1634,2)",
+   "resultado": 2366
+  },
+  {
+   "descripcion": "Lo que falta al año",
+   "expresion": "round((4000-1634)*12,2)",
+   "resultado": 28392
+  },
+  {
+   "descripcion": "Beneficio de incapacidad al año",
+   "expresion": "round(1634*12,2)",
+   "resultado": 19608
+  },
+  {
+   "descripcion": "Ingreso anual de $4,000 al mes",
+   "expresion": "round(4000*12,2)",
+   "resultado": 48000
+  },
+  {
+   "descripcion": "Empiezas a los 30 y llegas a los 60 (30 años): $2,400 al inicio de cada año al 10% anual",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1,2)",
+   "resultado": 434264.22
+  },
+  {
+   "descripcion": "Total que pusiste de tu bolsillo en 30 años",
+   "expresion": "round(2400*30,2)",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Crecimiento ganado a los 60 (30 años) al 10%",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1-2400*30,2)",
+   "resultado": 362264.22
+  },
+  {
+   "descripcion": "Empiezas a los 40 y llegas a los 60 (20 años): mismo aporte al 10% anual",
+   "expresion": "round(2400*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 151206.0
+  },
+  {
+   "descripcion": "Empiezas a los 50 y llegas a los 60 (10 años): mismo aporte al 10% anual",
+   "expresion": "round(2400*((1.1**10-1)/0.1)*1.1,2)",
+   "resultado": 42074.8
+  },
+  {
+   "descripcion": "Lo que pierdes por empezar a los 40 en vez de a los 30",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1-2400*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 283058.22
+  }
+ ],
+ "consejo": "Haz esta cuenta hoy: cuánto ganas al mes menos $1,634. Esa es la cifra que tu familia tendría que cubrir. Habla con un agente con licencia sobre un IUL con beneficios en vida por enfermedad. Empieza ahora, mientras estás sano y la edad te ayuda.",
+ "que_no_decir": [
+  "Que el 10% está garantizado: es un máximo de crecimiento en un año, no una promesa.",
+  "Que vas a tener $434,264 seguro: es una proyección de ejemplo con 10% todos los años.",
+  "Que el Seguro Social no te va a pagar nada: sí paga, pero en promedio unos $1,634 al mes.",
+  "Que el IUL es una inversión o que sustituye el seguro médico.",
+  "Que cualquier enfermedad califica: los beneficios en vida dependen de las condiciones de la póliza.",
+  "Que el 1 de cada 4 aplica exactamente a ti: es el dato general para jóvenes de 20 años.",
+  "Que $4,000 al mes o $2,400 al año son cifras reales de todos: son supuestos de ejemplo.",
+  "Que no hay costos: el IUL tiene costos y cargos que el agente debe explicar."
+ ],
+ "con_iul": true
+}

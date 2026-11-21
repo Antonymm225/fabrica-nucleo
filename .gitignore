@@ -1,0 +1,21 @@
+# Dependencias y temporales
+node_modules/
+tmp/
+*.log
+__pycache__/
+# Generados por tools/usar.py
+engine/src/video/
+engine/public/video/
+# Salidas de render y revisión
+videos/*/render/
+videos/*/stills/
+videos/*/tramos/
+videos/*/*.jpg
+videos/*/voz/*.mp3
+videos/*/voz/*.wav
+# Material de terceros: los videos de referencia NUNCA se suben (repo público)
+estilos/*/referencia/
+# Secretos
+.env
+*.key
+credenciales*.json

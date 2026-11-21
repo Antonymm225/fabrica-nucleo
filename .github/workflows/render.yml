@@ -1,0 +1,108 @@
+# Renderiza videos en las máquinas de GitHub.
+# - A mano: pestaña Actions → "Render de videos" → Run workflow → escribe el código (ej. FF-001, o varios: FF-001,FF-002).
+# - Solo: cada vez que se sube un cambio dentro de videos/<código>/, se renderiza ese video.
+# El MP4 queda en "Artifacts" del run por 1 día (después GitHub lo borra solo). Más adelante se sube directo a Drive.
+name: Render de videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: "Códigos de video separados por coma (ej. FF-001,FF-002)"
+        required: true
+        default: "FF-001"
+  push:
+    branches: [main]
+    paths: ["videos/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: render-${{ github.ref }}-${{ github.event.inputs.videos || github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lista: ${{ steps.lista.outputs.lista }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: lista
+        name: Qué videos renderizar
+        env:
+          ENTRADA: ${{ github.event.inputs.videos }}
+          ANTES: ${{ github.event.before }}
+        run: |
+          if [ -n "$ENTRADA" ]; then
+            CODIGOS=$(echo "$ENTRADA" | tr ',' '\n' | sed 's/ //g' | grep -v '^$')
+          else
+            BASE="${ANTES:-HEAD~1}"
+            git cat-file -e "$BASE" 2>/dev/null || BASE="HEAD~1"
+            CODIGOS=$(git diff --name-only "$BASE" HEAD -- videos | cut -d/ -f2 | sort -u)
+          fi
+          VALIDOS=""
+          for c in $CODIGOS; do
+            if [ -f "videos/$c/escenas.json" ] && [ -f "videos/$c/vo.json" ] && [ -f "videos/$c/vo.wav" ]; then VALIDOS="$VALIDOS $c"; else echo "::warning::$c no está completo (falta escenas.json, vo.json o vo.wav)"; fi
+          done
+          echo "lista=$(printf '%s\n' $VALIDOS | jq -R . | jq -cs 'map(select(length>0))')" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: plan
+    if: needs.plan.outputs.lista != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        video: ${{ fromJson(needs.plan.outputs.lista) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Caché de dependencias (Remotion y su navegador)
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: engine/node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('engine/package-lock.json') }}
+
+      - name: Instalar dependencias
+        if: steps.cache.outputs.cache-hit != 'true'
+        working-directory: engine
+        run: npm ci --no-audit --no-fund
+
+      - name: Instalar ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Render ${{ matrix.video }}
+        working-directory: engine
+        env:
+          PYTHON: python
+        run: node render.mjs "${{ matrix.video }}"
+
+      - name: Revisar y normalizar audio
+        env:
+          SALIDA: ${{ github.workspace }}/salida
+        run: |
+          python -X utf8 tools/finalizar.py "${{ matrix.video }}" "${{ matrix.video }}"
+          ls -la salida
+
+      - name: Guardar MP4 (se borra en 1 día)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.video }}
+          path: salida/${{ matrix.video }}.mp4
+          retention-days: 1
+          compression-level: 0

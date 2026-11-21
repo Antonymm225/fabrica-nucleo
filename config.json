@@ -1,0 +1,15 @@
+{
+  "voz": {
+    "voice_id": "pC0w7bOSDTlgiOCrNBX3",
+    "nombre": "Enrique González",
+    "model_id": "eleven_v4",
+    "settings": { "stability": 0.45, "similarity_boost": 0.75 },
+    "formato": "mp3_44100_192",
+    "seed": 4242,
+    "pausa_entre_bloques": 0.15,
+    "tempo": 0.936,
+    "ppm_objetivo": 205
+  },
+  "salida": "D:/Videos Ecomfy/Finanzas Familiares",
+  "lufs": -14
+}

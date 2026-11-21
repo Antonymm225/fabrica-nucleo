@@ -1,0 +1,11 @@
+{
+  "nombre": "Finanzas Familiares",
+  "codigo": "FF",
+  "estilo": "EST-01",
+  "tono": "Cálido y directo, de papá a papá. Frases cortas. Español neutro con tú.",
+  "temas": ["deudas de la casa", "tarjetas de crédito", "ahorro para los hijos", "escuela", "casa propia", "proteger a la familia"],
+  "colores": { "fondo": "#F0EFE8", "principal": "#D8704F", "tinta": "#18121A", "gris": "#8E8A84", "acentos": ["#E2B33C", "#4E9A63", "#3F6FA8", "#8C5BB0"] },
+  "voz": "pC0w7bOSDTlgiOCrNBX3",
+  "cierre": "Sígueme para más videos de finanzas",
+  "aviso": "Contenido educativo. No es asesoría financiera."
+}

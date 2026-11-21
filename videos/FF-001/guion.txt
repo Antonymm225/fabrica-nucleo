@@ -1,0 +1,25 @@
+# FF-001 · Finanzas Familiares · EST-01 · La trampa del pago mínimo
+# Formato: una frase por línea (= una página de texto en pantalla).
+# [mostrado|hablado] para cifras. *palabra* = palabra clave (cursiva de color). Las cifras están verificadas con Python:
+# deuda de $5,000 al 24% anual (2% mensual). Pagando $150 al mes: 56 meses, $3,322.09 de intereses. Pagando $300: 21 meses, $1,143.34.
+# BLOQUE 1
+Pagar *puntual* tu tarjeta
+te puede costar más de [$3,000|tres mil dólares] *extra*.
+Se llama la trampa del *pago mínimo*.
+Imagina que debes [$5,000|cinco mil dólares]
+con un interés del [24%|veinticuatro por ciento] al *año*.
+Si pagas [$150|ciento cincuenta] al mes,
+tardas casi *cinco años* en salir.
+Y le regalas al banco [$3,322|tres mil trescientos veintidós] en *intereses*.
+Eso era la *alcancía* de tus hijos,
+los pagos de la *troca*,
+y los útiles de la *escuela*.
+Pero si subes a [$300|trescientos] al mes,
+sales en *menos de dos años*,
+y pagas solo [$1,143|mil ciento cuarenta y tres].
+Paga primero la tarjeta con *más interés*,
+y lo que te ahorres, a la *alcancía*.
+Son más de [$2,000|dos mil dólares]
+para el enganche de *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga *solo el mínimo*.

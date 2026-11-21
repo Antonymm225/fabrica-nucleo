@@ -376,7 +376,8 @@ def main():
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
             err = revisar(v["lineas"], esc, ficha, marca)
-            if err:
+            for _ in range(2):   # hasta 2 correcciones
+                if not err: break
                 print(f"{cod}: {len(err)} problemas, Claude los corrige:"); [print("  -", x) for x in err]
                 v = escribir(c, marca, ficha, ejemplos, err, v)
                 esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []

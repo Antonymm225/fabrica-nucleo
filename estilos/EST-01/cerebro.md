@@ -98,6 +98,8 @@ Ejemplo (dos amigos que ahorran, uno empieza tarde):
 ### Reglas de las escenas
 - De 9 a 14 escenas; **ninguna cubre más de 4 líneas**. La primera empieza en la línea 0 y el cierre en la penúltima.
 - **Al menos 6 lienzos** por video, cada uno diseñado para sus líneas.
+- **Nunca dejes la pantalla vacía:** en cada lienzo, el primer elemento entra en la primera línea de la escena (o sin `en`), y lo demás se va sumando con las palabras.
+- Las personas van abajo (y de 85 a 97) y los globos arriba de ellas; el recibo y la lista van arriba (y de 5 a 25). No pongas dos cosas grandes en el mismo lugar.
 - Dos escenas seguidas nunca son del mismo tipo de composición: si una tiene dos personas con torres, la siguiente es otra cosa.
 - Varía las entradas de las escenas (`entrada`: "destello", "cuadritos", "corte", "ola").
 - En videos con IUL, dibuja el IUL con lo que significa: una `grafica` que sube con piso (nunca baja), la `familia` protegida, una persona en el `hospital` que recibe dinero en vida.

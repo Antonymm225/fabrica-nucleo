@@ -174,6 +174,17 @@ def revisar(lineas, escenas, ficha, marca):
                 if not isinstance(els, list) or not 1 <= len(els) <= 6: err.append(f"{d}: el lienzo necesita de 1 a 6 elementos")
                 else:
                     ids = {x.get("id") for x in els if x.get("id")}
+                    ini0 = (e.get("desde") or [None])[0]
+                    visibles = [x for x in els if x.get("que") not in ("dinero", "flecha", "tacha")]
+                    def temprano(x):
+                        en = x.get("en")
+                        if not en: return True
+                        if en[0] != ini0 or ini0 is None or not 0 <= ini0 < len(lineas): return False
+                        if len(en) < 2 or not isinstance(en[1], str): return True
+                        k = norm(en[1]); pal = [norm(w) for w in tokens(lineas[ini0])]
+                        return any(k and k in w for w in pal[:3])
+                    if not any(temprano(x) for x in visibles):
+                        err.append(f"{d}: la pantalla queda vacía al empezar; al menos un elemento tiene que entrar en las primeras 3 palabras de la línea {ini0} (o sin 'en')")
                     for j, x in enumerate(els):
                         dx = f"{d}.elementos[{j}]"
                         if x.get("que") not in ELEMENTOS: err.append(f"{dx}: 'que' debe ser uno de {sorted(ELEMENTOS)}")

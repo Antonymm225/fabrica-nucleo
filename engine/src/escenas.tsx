@@ -329,7 +329,7 @@ const oscura = (p: P, f: number, c: Ctx): Out => {
         ))}
         {f >= num && (
           <g transform={`translate(540 ${640 - lin(f, cae, cae + 12, 0, 60)}) scale(${sp(f, num)})`}>
-            <text textAnchor="middle" fontFamily={F.cifra} fontSize={200} fill={T.A[0]} filter="url(#brillo)">{p.cifra.texto}</text>
+            <text textAnchor="middle" fontFamily={F.cifra} fontSize={Math.min(200, 980 / Math.max(1, String(p.cifra.texto).length * 0.68))} fill={T.A[0]} filter="url(#brillo)">{p.cifra.texto}</text>
             <text y={70} textAnchor="middle" fontFamily={F.mono} fontWeight={700} fontSize={30} fill={T.B} letterSpacing={6}>{(p.cifra.etiqueta ?? "").toUpperCase()}</text>
           </g>
         )}

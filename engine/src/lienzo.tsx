@@ -21,6 +21,22 @@ export const OBJ2: Record<string, (p: any) => React.ReactElement> = {
   cartera: (p) => <Cartera {...p} />, tienda: (p) => <Tienda {...p} />, hospital: (p) => <Hospital {...p} />, familia: (p) => <Familia {...p} />,
 };
 
+/** Mitad del ancho de cada elemento, para que nunca se salga de la pantalla. */
+const mitad = (e: P) => {
+  const tam = e.tam;
+  switch (e.que) {
+    case "globo": return (W * (tam ?? 74)) / 200;
+    case "recibo": return (W * (tam ?? 80)) / 200;
+    case "lista": case "grafica": return (W * (tam ?? 84)) / 200;
+    case "celular": return (AH * (tam ?? 62)) / 400;
+    case "persona": return (AH * (tam ?? 34)) / 100 * 0.34;
+    case "objeto": return (W * (tam ?? 30)) / 200;
+    case "torre": return 100;
+    case "sello": return (W * (tam ?? 66)) / 200;
+    default: return 0;
+  }
+};
+
 /** Centro aproximado de un elemento (para flechas, dinero que vuela y tachones). */
 const centro = (e: P): [number, number] => {
   const x = X(e.x ?? 50), y = Y(e.y ?? 50);
@@ -170,7 +186,8 @@ export const lienzo = (p: P, f: number, c: Ctx): Out => {
   const capa: React.ReactNode[] = [];
   els.forEach((e, i) => {
     const t0 = at(c, e.en, i * 5), sale = e.sale ? at(c, e.sale, 1e9) : 1e9;
-    const x = X(e.x ?? 50), y = Y(e.y ?? 50);
+    const hw = mitad(e);
+    const x = Math.min(W - hw - 24, Math.max(hw + 24, X(e.x ?? 50))), y = Y(e.y ?? 50);
     const key = "e" + i;
     if (["persona", "objeto", "torre", "cifra", "texto", "globo", "recibo", "celular", "lista", "grafica"].includes(e.que)) sfx.push(<Sfx key={key} at={t0} s={e.entra === "cae" ? "whoosh" : "pop"} v={0.22} />);
     if (e.que === "persona") {

@@ -27,7 +27,7 @@ Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunc
 - La protección: "si el mercado cae, *no pierde* por esa caída. Tiene *piso cero*."
 - **El único tope es el crecimiento de un año: hasta un 10%. El piso es 0%.** El dinero que juntas **no tiene tope**: depende de cuánto aportas y de **desde cuándo empiezas**. Nunca llames "tope", "máximo" ni "límite" a una cantidad de dinero (nada de "como tope, podrías llegar a $150,000" ni "Es un tope, no una promesa").
 - Las proyecciones se dicen atadas a cuándo empiezas: "Si empiezas a los [30|treinta] con [$200|doscientos dólares] al mes, a los [60|sesenta] podrías llegar a unos [$434,000|cuatrocientos treinta y cuatro mil]". Calcúlalas con el 10% al año. Se vale "podrías llegar hasta *medio millón* para tu retiro, depende de cuándo empieces".
-- **Nunca** digas "garantizado" ni "no garantizado".
+- **Nunca** digas "garantizado" ni "no garantizado", ni la palabra "promesa" ("es una promesa", "no es una promesa", "es un máximo, no una promesa"). Tampoco en las escenas ni en el aviso. Nada de frases para curarte en salud: eso lo cubre la línea del asesor.
 - **Siempre**, antes del cierre, la línea: `Un *asesor certificado* debe ver tu caso a detalle.`
 - Sin precios del seguro, sin nombres de aseguradoras, sin "cotiza", sin links.
 - Cuando `con_iul` es falso, no menciones el IUL ni seguros: el video es de puro valor.

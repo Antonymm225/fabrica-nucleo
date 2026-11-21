@@ -17,7 +17,7 @@ TIPOS = {"cifra", "armar", "tablero", "oscura", "cierre", "lienzo"}
 ELEMENTOS = {"persona", "objeto", "torre", "cifra", "texto", "globo", "recibo", "celular", "lista", "grafica", "dinero", "flecha", "tacha", "sello", "check"}
 PROHIBIDO = [r"garantiz", r"sin riesgo", r"libre de impuestos", r"hazte rico", r"link en (mi|el) perfil", r"agenda", r"cotiza",
              r"\bvos\b", r"\btenés\b", r"\bcomentá\b", r"criptomoneda", r"bitcoin", r"acciones de", r"\bplata\b", r"\blana\b", r"\bguita\b",
-             r"cooperativa", r"seguro de (auto|carro|troca)"]
+             r"cooperativa", r"seguro de (auto|carro|troca)", r"promesa"]
 LINEAS, PALABRAS = (26, 42), (170, 300)   # 50 a 88 segundos a 205 palabras por minuto
 FONDOS = ["cruces", "puntos", "rayas", "cuadricula", "liso"]
 
@@ -314,6 +314,12 @@ def revisar(lineas, escenas, ficha, marca):
     return err
 
 
+
+def revisar_aviso(aviso):
+    """El aviso de abajo tampoco puede curarse en salud ni hablar de topes en dólares."""
+    s = aviso.lower()
+    return [f"aviso: quita «{m}» del aviso: {aviso}" for m in ("promesa", "garantiz", "tope", "máximo") if m in s]
+
 # ---------------------------------------------------------------- Claude
 def cliente():
     import anthropic
@@ -507,13 +513,13 @@ def main():
             print(f"{cod}: tema «{ficha['titulo']}» · {'con IUL' if ficha['con_iul'] else 'puro valor'} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
-            err = revisar(v["lineas"], esc, ficha, marca)
+            err = revisar(v["lineas"], esc, ficha, marca) + revisar_aviso(v.get("aviso", ""))
             for _ in range(2):   # hasta 2 correcciones
                 if not err: break
                 print(f"{cod}: {len(err)} problemas, Claude los corrige:"); [print("  -", x) for x in err]
                 v = escribir(c, marca, ficha, ejemplos, err, v)
                 esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
-                err = revisar(v["lineas"], esc, ficha, marca)
+                err = revisar(v["lineas"], esc, ficha, marca) + revisar_aviso(v.get("aviso", ""))
             if err:
                 print(f"::error::{cod} no pasó la revisión:"); [print("  -", x) for x in err]
                 D = os.path.join(ROOT, "rechazados"); os.makedirs(D, exist_ok=True)

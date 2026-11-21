@@ -134,7 +134,10 @@ def caja(e):
         hw = 85; c = (x - hw, y - hw, x + hw, y + hw)
     else:
         return None
-    dx = max(0, hw + 24 - c[0]) - max(0, c[2] - (W_ - hw - 24) + hw - hw) if False else 0
+    et = str(e.get("etiqueta") or "")
+    if et and q in ("persona", "objeto", "torre", "cifra"):
+        ancho = len(et) * {"persona": 34, "objeto": 32, "torre": 30, "cifra": 30}[q] * (0.78 if q == "cifra" else 0.66) + 48
+        if ancho / 2 > hw: c = (x - ancho / 2, c[1], x + ancho / 2, c[3])
     # el motor corre el elemento para que no se salga por los lados: aquí igual
     corr = 0
     if c[0] < 24: corr = 24 - c[0]
@@ -142,8 +145,8 @@ def caja(e):
     return (c[0] + corr, c[1], c[2] + corr, c[3])
 
 
-ENCIMA_OK = {"sello", "check"}          # se ponen encima a propósito (de objetos, personas, recibos o celular)
-TEXTUALES = {"cifra", "texto", "globo", "lista", "recibo", "torre", "grafica"}
+ENCIMA_OK = {"sello", "check"}          # se ponen encima a propósito...
+DEBAJO_OK = {"objeto", "recibo", "celular"}   # ...solo de estas cosas
 
 
 def acomodo(els, d):
@@ -161,7 +164,7 @@ def acomodo(els, d):
             ja, ea, ca, na = cajas[a]; jb, eb, cb, nb = cajas[b]
             if ea.get("sale") or eb.get("sale"): continue
             qa, qb = ea.get("que"), eb.get("que")
-            if (qa in ENCIMA_OK and qb not in TEXTUALES) or (qb in ENCIMA_OK and qa not in TEXTUALES): continue
+            if (qa in ENCIMA_OK and qb in DEBAJO_OK) or (qb in ENCIMA_OK and qa in DEBAJO_OK): continue
             ix = min(ca[2], cb[2]) - max(ca[0], cb[0]); iy = min(ca[3], cb[3]) - max(ca[1], cb[1])
             if ix <= 0 or iy <= 0: continue
             menor = min((ca[2] - ca[0]) * (ca[3] - ca[1]), (cb[2] - cb[0]) * (cb[3] - cb[1]))
@@ -232,7 +235,7 @@ def revisar(lineas, escenas, ficha, marca):
             for v in o.values(): yield from textos(v)
         elif isinstance(o, list):
             for v in o: yield from textos(v)
-    for s in textos(escenas):
+    for s in (textos(escenas) if ficha.get("con_iul") else []):
         if re.search(r"\btope\b|\bm[aá]xim|\bl[ií]mite\b", s.lower()) and "10" not in s:
             err.append(f"escenas: «{s}»: no llames tope ni máximo a una cantidad de dinero; el único tope es el 10% al año")
     tks = [[norm(t) for t in tokens(l)] for l in lineas]
@@ -287,6 +290,23 @@ def revisar(lineas, escenas, ficha, marca):
                             if k in x and not (isinstance(x[k], (int, float)) and 0 <= x[k] <= 100): err.append(f"{dx}: {k} debe ir de 0 a 100")
                         for k in ("de", "a", "sobre"):
                             if k in x and x[k] not in ids: err.append(f"{dx}: '{k}' apunta a un id que no existe: {x[k]}")
+                        q = x.get("que")
+                        if q == "globo" and len(str(x.get("texto", ""))) > 60: err.append(f"{dx}: el globo aguanta máximo 60 caracteres")
+                        if q == "sello" and len(str(x.get("texto", ""))) > 14: err.append(f"{dx}: el sello aguanta máximo 14 caracteres")
+                        if q == "texto" and len(str(x.get("texto", "")).split()) > 6: err.append(f"{dx}: el texto grande aguanta máximo 6 palabras")
+                        if q in ("persona", "objeto", "torre") and len(str(x.get("etiqueta") or "")) > 16: err.append(f"{dx}: la etiqueta aguanta máximo 16 caracteres")
+                        if q == "lista":
+                            its = x.get("items") or []
+                            if not 2 <= len(its) <= 4: err.append(f"{dx}: la lista lleva de 2 a 4 pasos")
+                            if any(len(str(i.get("texto", ""))) > 40 for i in its): err.append(f"{dx}: cada paso de la lista aguanta máximo 40 caracteres")
+                        if q == "recibo":
+                            rs = x.get("renglones") or []
+                            if not 2 <= len(rs) <= 5: err.append(f"{dx}: el recibo lleva de 2 a 5 renglones")
+                            if any(len(str(r.get("texto", ""))) + len(str(r.get("valor", ""))) > 32 for r in rs): err.append(f"{dx}: un renglón del recibo no cabe (texto + valor, máximo 32 caracteres)")
+                            m = x.get("marca")
+                            if m and not (isinstance(m.get("fila"), int) and 0 <= m["fila"] < len(rs)): err.append(f"{dx}: marca.fila no existe en el recibo")
+                        if q == "grafica" and not all(isinstance(x.get(k), (int, float)) and x[k] > 0 for k in ("inicio", "final")): err.append(f"{dx}: la gráfica necesita inicio y final (números mayores que 0)")
+                        if q == "torre" and not isinstance(x.get("valor"), (int, float)): err.append(f"{dx}: la torre necesita valor (número)")
                         if x.get("que") in ("torre", "cifra") and isinstance(x.get("valor"), (int, float)) and not ok(float(x["valor"])): err.append(f"{dx}: el valor {x['valor']} no sale de la ficha")
             if t == "comparativa":
                 for r in e["filas"]:

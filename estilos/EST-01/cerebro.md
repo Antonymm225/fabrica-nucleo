@@ -15,6 +15,7 @@ Una trampa o un secreto de dinero del día a día contado en **50 a 85 segundos*
 - Menciona **Estados Unidos** cuando caiga natural ("en Estados Unidos…", "el IRS", "aquí en Estados Unidos").
 
 ## El gancho y el open loop (lo más importante)
+- **El gancho se entiende a la primera, solo y sin contexto.** Si hay que pensarlo dos veces, está mal (malo: "Esperar diez años te ahorra solo $36,000"; bueno: "Esperar diez años para ahorrar te puede costar $683,000"). Una sola idea y una sola cifra en las dos primeras líneas.
 - **Líneas 0 a 3: el gancho.** Una contradicción, una cifra que duele o una advertencia que frena el scroll, con una cifra concreta. Antes de escribir, piensa 5 ganchos y quédate con el más fuerte. Tipos que funcionan: cifra que duele, trampa del vendedor, advertencia urgente, "lo que no te dicen", truco poco conocido, comparación de dos personas, pregunta emotiva.
 - **Open loop:** en las líneas 2 a 4 abre una promesa que se cierra al final: "Al final te digo qué contestarle", "Y al final te enseño dónde puede crecer". El video tiene que pagar esa promesa en el último tercio, con algo concreto.
 - **Reenganches:** a la mitad, una o dos frases que vuelven a jalar la atención: "Y lo peor…", "Pero aquí viene lo que nadie te dice", "Ahora, ¿cómo lo evitas?".
@@ -45,10 +46,10 @@ Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunc
 - **Prohibido:** "garantizado", "sin riesgo", "libre de impuestos", "hazte rico", "link en mi perfil", "agenda tu cita", "cotiza", nombres de bancos, apps o empresas reales, consejos de acciones o criptomonedas, cooperativas, seguro de auto, miedo exagerado.
 
 ## Escenas
-El video se arma con escenas tipo. Cada escena empieza en una línea (`desde`) y dura hasta que empieza la siguiente. Debes cubrir todas las líneas, en orden.
+El video se arma con escenas. Cada escena empieza en una línea (`desde`) y dura hasta que empieza la siguiente. Debes cubrir todas las líneas, en orden.
 
 Campos comunes de toda escena:
-- `tipo`: uno del catálogo.
+- `tipo`: casi siempre `lienzo`; además están las escenas fijas `tablero`, `oscura`, `cierre`, `cifra` y `armar`.
 - `desde`: `[número de línea]`. La primera escena es `[0]`. Las demás van en orden creciente.
 - `capitulo`: 1 a 3 palabras en minúscula, para la franja de arriba ("tu tarjeta", "opción a", "qué hacer").
 - `contador`: texto de la derecha de la franja, con `|` antes de la parte en color: `"deuda |$5,000"`. También puede ser una lista que cambia: `[{"en": [14], "texto": "paso |1 de 2"}, {"en": [15], "texto": "paso |2 de 2"}]`.
@@ -87,7 +88,7 @@ Elementos (`que`):
 - `check`: una palomita verde grande. `x`, `y`, `en`.
 
 Ejemplo (dos amigos que ahorran, uno empieza tarde):
-`{"tipo":"lienzo","desde":[6],"capitulo":"dos amigos","contador":"ahorran |$3,600 al año","elementos":[{"que":"persona","x":18,"y":95,"etiqueta":"TÚ","cara":"feliz","gorro":"casco","en":[6,"Uno"]},{"que":"torre","x":38,"y":95,"tam":55,"valor":1073000,"max":1073000,"en":[8,"juntar"],"hasta":[8,"1,073,000"]},{"que":"persona","x":64,"y":95,"etiqueta":"TU AMIGO","cara":"neutro","gorro":"gorra","ropa":2,"en":[7,"espera"],"cambia":{"en":[9,"389,000"],"cara":"preocupado"}},{"que":"torre","x":85,"y":95,"tam":55,"valor":389000,"max":1073000,"color":"gris","en":[9,"segundo"],"hasta":[9,"389,000"]}]}`
+`{"tipo":"lienzo","desde":[6],"capitulo":"dos amigos","contador":"ahorran |$3,600 al año","elementos":[{"que":"persona","x":16,"y":95,"tam":30,"etiqueta":"TÚ","cara":"feliz","gorro":"casco","en":[6,"Uno"]},{"que":"torre","x":40,"y":95,"tam":55,"valor":1073000,"max":1073000,"en":[8,"juntar"],"hasta":[8,"1,073,000"]},{"que":"persona","x":63,"y":95,"tam":30,"etiqueta":"TU AMIGO","cara":"neutro","gorro":"gorra","ropa":2,"en":[7,"espera"],"cambia":{"en":[9,"389,000"],"cara":"preocupado"}},{"que":"torre","x":87,"y":95,"tam":55,"valor":389000,"max":1073000,"color":"gris","en":[9,"segundo"],"hasta":[9,"389,000"]}]}`
 
 #### Escenas fijas (además del lienzo)
 - **tablero** (obligatoria, en la línea "Se llama…"): letras de aeropuerto. `filas`: 2 palabras en MAYÚSCULAS, sin acentos, de máximo 7 letras. `en`: [línea, palabra].
@@ -100,8 +101,9 @@ Ejemplo (dos amigos que ahorran, uno empieza tarde):
 - De 9 a 14 escenas; **ninguna cubre más de 4 líneas**. La primera empieza en la línea 0 y el cierre en la penúltima.
 - **Al menos 6 lienzos** por video, cada uno diseñado para sus líneas.
 - **Nada se encima:** cada elemento ocupa su propio lugar. Una cifra o un texto nunca va encima de una persona, un objeto, un globo u otra cifra; un sello solo va encima de un objeto, un recibo o el celular. Guía de lugares: personas abajo (y 85 a 97) con su globo arriba (y 10 a 35); cosas a la izquierda (x 20 a 35) y a la derecha (x 65 a 80), nunca dos grandes en la misma mitad y la misma altura; la cifra con etiqueta ocupa casi todo el ancho, así que va sola en su franja (por ejemplo y 40 a 55). La revisión mide cada cosa y rechaza el lienzo si algo se encima o se sube al texto de arriba.
-- **Nunca dejes la pantalla vacía:** en cada lienzo, el primer elemento entra en la primera línea de la escena (o sin `en`), y lo demás se va sumando con las palabras.
-- Las personas van abajo (y de 85 a 97) y los globos arriba de ellas; el recibo y la lista van arriba (y de 5 a 25). No pongas dos cosas grandes en el mismo lugar.
+- **Nunca dejes la pantalla vacía:** en cada lienzo, el primer elemento entra en las primeras 3 palabras de la primera línea de la escena (o sin `en`), y lo demás se va sumando con las palabras.
+- El recibo y la lista van arriba (y de 5 a 25) y ocupan casi todo el ancho: debajo solo cabe una persona chica o nada.
+- Las etiquetas son cortas (máximo 16 caracteres): una etiqueta larga se encima con lo de al lado.
 - Dos escenas seguidas nunca son del mismo tipo de composición: si una tiene dos personas con torres, la siguiente es otra cosa.
 - Varía las entradas de las escenas (`entrada`: "destello", "cuadritos", "corte", "ola").
 - En videos con IUL, dibuja el IUL con lo que significa: una `grafica` que sube con piso (nunca baja), la `familia` protegida, una persona en el `hospital` que recibe dinero en vida.

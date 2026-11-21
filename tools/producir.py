@@ -305,7 +305,7 @@ def revisar(lineas, escenas, ficha, marca):
                             if any(len(str(r.get("texto", ""))) + len(str(r.get("valor", ""))) > 32 for r in rs): err.append(f"{dx}: un renglón del recibo no cabe (texto + valor, máximo 32 caracteres)")
                             m = x.get("marca")
                             if m and not (isinstance(m.get("fila"), int) and 0 <= m["fila"] < len(rs)): err.append(f"{dx}: marca.fila no existe en el recibo")
-                        if q == "grafica" and not all(isinstance(x.get(k), (int, float)) and x[k] > 0 for k in ("inicio", "final")): err.append(f"{dx}: la gráfica necesita inicio y final (números mayores que 0)")
+                        if q == "grafica" and not (all(isinstance(x.get(k), (int, float)) and x[k] >= 0 for k in ("inicio", "final")) and x["inicio"] + x["final"] > 0): err.append(f"{dx}: la gráfica necesita inicio y final (números; uno de los dos puede ser 0)")
                         if q == "torre" and not isinstance(x.get("valor"), (int, float)): err.append(f"{dx}: la torre necesita valor (número)")
                         if x.get("que") in ("torre", "cifra") and isinstance(x.get("valor"), (int, float)) and not ok(float(x["valor"])): err.append(f"{dx}: el valor {x['valor']} no sale de la ficha")
             if t == "comparativa":

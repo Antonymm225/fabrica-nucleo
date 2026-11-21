@@ -153,9 +153,10 @@ const Grafica: React.FC<{ e: P; f: number; c: Ctx; t0: number }> = ({ e, f, c, t
   // Barras de monedas de `inicio` a `final` (sube o baja de forma compuesta), una por periodo.
   const n = Math.min(20, Math.max(3, e.barras ?? 10)), w = (W * (e.tam ?? 84)) / 100, hMax = AH * 0.5;
   const t1 = at(c, e.hasta, t0 + 40), k = lin(f, t0, t1, 0, 1, eio);
-  const a = Math.max(1, e.inicio ?? 1), z = Math.max(1, e.final ?? 1), baja = z < a;
-  const v = (i: number) => a * Math.pow(z / a, i / (n - 1));
-  const g = (i: number) => v(i) / Math.max(a, z);
+  const a = Math.max(0, e.inicio ?? 1), z = Math.max(0, e.final ?? 1), baja = z < a;
+  // Crece o baja de forma compuesta; si llega a cero (una deuda que se paga) o sale de cero, va en línea recta.
+  const v = (i: number) => (a > 0 && z > 0 ? a * Math.pow(z / a, i / (n - 1)) : a + ((z - a) * i) / (n - 1));
+  const g = (i: number) => v(i) / Math.max(a, z, 1);
   const bw = w / n;
   const visible = k * n;
   const ult = Math.max(0, Math.min(n - 1, Math.ceil(visible) - 1));

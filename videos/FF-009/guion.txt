@@ -1,0 +1,40 @@
+# FF-009 · Finanzas Familiares · EST-01 · El descuento de la tarjeta de tienda
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: APR promedio de tarjetas de tienda (retail) en 2025 = 30.14 % · https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/
+# Fuente: APR promedio de todas las tarjetas de crédito (Bankrate, 2025) = 20.12 % · https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/
+# Fuente: Descuento típico por abrir la tarjeta en la caja (ejemplo común) = 20 % · https://www.baltimoresun.com/2024/09/18/store-credit-cards-charging-record-high-interest-rates/
+# BLOQUE 1
+El cajero te regala [$400|cuatrocientos dólares]
+y tú terminas pagando *más caro*.
+Se llama la *tarjeta de tienda*.
+Al final te digo qué *preguntarte* en la caja.
+Estás en la caja con tus *herramientas*.
+Compras por [$2,000|dos mil dólares].
+Y te dicen: abre la *tarjeta*
+y ahorra [20%|veinte por ciento] *hoy*.
+Son [$400|cuatrocientos dólares] menos. Suena a *ganancia*.
+Quedan [$1,600|mil seiscientos dólares] en la *tarjeta*.
+En Estados Unidos, estas tarjetas cobran
+más de [30%|treinta por ciento] de *interés* al año.
+Si pagas poquito *cada mes*,
+pasas [21|veintiún] *meses* pagando.
+Y aquí viene lo *peor*.
+Pagas [$472|cuatrocientos setenta y dos] en *intereses*.
+Eso se come tus [$400|cuatrocientos dólares] de *descuento*.
+Al final pagaste [$2,072|dos mil setenta y dos dólares],
+o sea [$72|setenta y dos dólares] más que el *precio normal*.
+El descuento te salió *carísimo*.
+Ahora, ¿cómo lo evitas?
+Antes de abrirla, hazte *una pregunta*.
+¿Puedo pagar *todo* cuando llegue el cobro?
+Si dices que *sí*, toma el descuento
+y paga el *total*, sin dejar saldo.
+Si dices que *no*, di que no
+y espera a tener el *dinero*.
+Si ya la abriste, programa el *pago total*
+desde tu banco el día de la *compra*.
+Y no la uses para *nada más*.
+Así el descuento sí es *ganancia*.
+Son [$400|cuatrocientos dólares] que se quedan *en tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien abre tarjetas en la *caja*.

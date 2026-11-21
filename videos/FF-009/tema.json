@@ -1,0 +1,78 @@
+{
+ "titulo": "El 20% de descuento de la tarjeta de tienda",
+ "angulo": "El cajero te regala $400 de descuento hoy, pero si pagas $100 al mes, los intereses de la tarjeta te cobran más de $400 y terminas pagando más que el precio normal.",
+ "explicacion": "En la caja te dicen: abre la tarjeta y ahorra 20% hoy. Suena a ganancia. Pero la tarjeta de tienda cobra en promedio 30.14% al año, más que una tarjeta normal. Si compras $2,000 en herramientas o electrodomésticos y pagas $100 al mes, pagas intereses por 21 meses. Al final pagaste más que el precio sin descuento.",
+ "datos": [
+  {
+   "dato": "APR promedio de tarjetas de tienda (retail) en 2025",
+   "valor": 30.14,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/"
+  },
+  {
+   "dato": "APR promedio de todas las tarjetas de crédito (Bankrate, 2025)",
+   "valor": 20.12,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/"
+  },
+  {
+   "dato": "Descuento típico por abrir la tarjeta en la caja (ejemplo común)",
+   "valor": 20,
+   "unidad": "%",
+   "fuente": "https://www.baltimoresun.com/2024/09/18/store-credit-cards-charging-record-high-interest-rates/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Descuento en una compra de $2,000 con 20% de descuento",
+   "expresion": "round(2000*0.20,2)",
+   "resultado": 400.0
+  },
+  {
+   "descripcion": "Precio con descuento que queda en la tarjeta",
+   "expresion": "round(2000-2000*0.20,2)",
+   "resultado": 1600.0
+  },
+  {
+   "descripcion": "Interés del primer mes sobre $1,600 al 30.14% anual",
+   "expresion": "round(1600*(0.3014/12),2)",
+   "resultado": 40.19
+  },
+  {
+   "descripcion": "Último pago (el 21) cuando pagas $100 al mes",
+   "expresion": "round((1600*(1+0.3014/12)**20-100*((1+0.3014/12)**20-1)/(0.3014/12))*(1+0.3014/12),2)",
+   "resultado": 72.06
+  },
+  {
+   "descripcion": "Total pagado: 20 pagos de $100 más el último",
+   "expresion": "round(20*100+72.06,2)",
+   "resultado": 2072.06
+  },
+  {
+   "descripcion": "Intereses totales pagados",
+   "expresion": "round(2072.06-1600,2)",
+   "resultado": 472.06
+  },
+  {
+   "descripcion": "Cuánto más pagaste que el precio normal de $2,000",
+   "expresion": "round(2072.06-2000,2)",
+   "resultado": 72.06
+  },
+  {
+   "descripcion": "Intereses menos descuento: el descuento no alcanzó",
+   "expresion": "round(472.06-400,2)",
+   "resultado": 72.06
+  }
+ ],
+ "consejo": "Antes de abrir la tarjeta en la caja, hazte una pregunta: ¿puedo pagar toda la compra cuando llegue el primer estado de cuenta? Si la respuesta es sí, toma el descuento y paga el total, sin dejar saldo. Si no, di que no y espera a tener el dinero. Si ya abriste la tarjeta, programa el pago total desde tu banco el día que llegue la compra y no la uses para nada más.",
+ "que_no_decir": [
+  "No digas que las tarjetas de tienda son siempre malas. Con pago completo, el descuento sí es ganancia.",
+  "No prometas que el descuento siempre se pierde. Depende de cuánto tardes en pagar.",
+  "No digas que todas las tarjetas cobran 30.14%. Es un promedio.",
+  "No digas que el ejemplo de $2,000 con $100 al mes es lo que le pasa a todos. Es un ejemplo ilustrativo.",
+  "No recomiendes abrir tarjetas para mejorar el crédito.",
+  "No menciones marcas de tiendas específicas.",
+  "No hables de inversiones, seguros, cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false
+}

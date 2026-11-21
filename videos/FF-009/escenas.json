@@ -1,0 +1,617 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: compra de $2,000 con 20% de descuento, pagada en pagos mensuales chicos durante 21 meses a 30.14% de interés anual. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "en la caja",
+   "contador": "descuento |$400",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 38,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "caro"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "piel": 2,
+     "etiqueta": "EL CAJERO",
+     "en": [
+      0,
+      "cajero"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$400",
+     "color": "verde",
+     "x": 50,
+     "y": 30,
+     "tam": 13,
+     "en": [
+      0,
+      "400"
+     ],
+     "etiqueta": "de descuento"
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TARJETA",
+    "TIENDA"
+   ],
+   "en": [
+    2,
+    "tarjeta"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "en la caja",
+   "contador": "tus |herramientas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 40,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué me pregunto aquí?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      3,
+      "preguntarte"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 55,
+     "tam": 38,
+     "etiqueta": "LA CAJA",
+     "en": [
+      4,
+      "caja"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la oferta",
+   "contador": "compra |$2,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "En la caja",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Tu compra",
+       "valor": "$2,000",
+       "en": [
+        5,
+        "2,000"
+       ]
+      },
+      {
+       "texto": "Con la tarjeta",
+       "valor": "-20%",
+       "en": [
+        7,
+        "20"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       7,
+       "hoy"
+      ],
+      "texto": "¡ojo!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "suena bien",
+   "contador": "quedan |$1,600",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 40,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "-$400",
+     "color": "verde",
+     "x": 28,
+     "y": 30,
+     "tam": 12,
+     "en": [
+      8,
+      "400"
+     ],
+     "etiqueta": "descuento"
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 74,
+     "y": 50,
+     "tam": 38,
+     "giro": 8,
+     "etiqueta": "te quedan $1,600",
+     "en": [
+      9,
+      "tarjeta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el interés",
+   "contador": "interés |30% al año",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "Tarjetas de tienda",
+     "color": "tinta",
+     "x": 50,
+     "y": 10,
+     "tam": 5,
+     "en": [
+      10,
+      "Unidos"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "30%+",
+     "color": "principal",
+     "x": 50,
+     "y": 55,
+     "tam": 24,
+     "en": [
+      11,
+      "30"
+     ],
+     "etiqueta": "interés al año"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "pagos",
+   "contador": "pagas |21 meses",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 35,
+     "tam": 32,
+     "etiqueta": "pagos chicos",
+     "en": [
+      12,
+      "poquito"
+     ]
+    },
+    {
+     "id": "k",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 74,
+     "y": 60,
+     "tam": 36,
+     "etiqueta": "21 meses",
+     "en": [
+      13,
+      "21"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "k",
+     "en": [
+      13,
+      "21"
+     ],
+     "hasta": [
+      14,
+      "peor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "la cuenta",
+   "contador": "intereses |$472",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 93,
+     "tam": 55,
+     "valor": 472,
+     "max": 472,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      15,
+      "472"
+     ],
+     "hasta": [
+      15,
+      "intereses"
+     ],
+     "etiqueta": "intereses"
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 93,
+     "tam": 55,
+     "valor": 400,
+     "max": 472,
+     "prefijo": "$",
+     "en": [
+      16,
+      "400"
+     ],
+     "hasta": [
+      16,
+      "descuento"
+     ],
+     "etiqueta": "descuento"
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    17
+   ],
+   "capitulo": "la trampa",
+   "contador": "de más |$72",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$72",
+    "etiqueta": "más que el precio normal",
+    "en": [
+     18,
+     "72"
+    ]
+   },
+   "cae": {
+    "objeto": "tarjeta",
+    "letrero": "TRAMPA",
+    "en": [
+     19,
+     "carísimo"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "la pregunta",
+   "contador": "hazte |una pregunta",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 42,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       22,
+       "cobro"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Puedo pagar TODO el primer mes?",
+     "piensa": true,
+     "cola": 1,
+     "x": 50,
+     "y": 24,
+     "en": [
+      22,
+      "Puedo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      23
+     ],
+     "texto": "si |puedes"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "si |no puedes"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      23
+     ],
+     "items": [
+      {
+       "texto": "Sí puedes: paga el total",
+       "en": [
+        24,
+        "total"
+       ]
+      },
+      {
+       "texto": "No puedes: di que no y espera",
+       "en": [
+        25,
+        "no"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 72,
+     "en": [
+      24,
+      "saldo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "si ya la tienes",
+   "contador": "pago |total",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 74,
+     "y": 30,
+     "tam": 34,
+     "etiqueta": "pago total",
+     "en": [
+      27,
+      "pago"
+     ]
+    },
+    {
+     "id": "k",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 26,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "el día de la compra",
+     "en": [
+      28,
+      "día"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "k",
+     "a": "b",
+     "en": [
+      28,
+      "compra"
+     ]
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 50,
+     "y": 75,
+     "tam": 32,
+     "en": [
+      29
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      29,
+      "uses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "la ganancia",
+   "contador": "te quedan |$400",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 94,
+     "tam": 40,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "+$400",
+     "color": "verde",
+     "x": 28,
+     "y": 30,
+     "tam": 12,
+     "en": [
+      30,
+      "ganancia"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 48,
+     "tam": 36,
+     "etiqueta": "tu casa",
+     "en": [
+      31,
+      "casa"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 85,
+     "en": [
+      31,
+      "quedan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

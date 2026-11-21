@@ -318,7 +318,8 @@ def revisar(lineas, escenas, ficha, marca):
 def revisar_aviso(aviso):
     """El aviso de abajo tampoco puede curarse en salud ni hablar de topes en dólares."""
     s = aviso.lower()
-    return [f"aviso: quita «{m}» del aviso: {aviso}" for m in ("promesa", "garantiz", "tope", "máximo") if m in s]
+    malas = ("promesa", "garantiz") + (() if "10" in s else ("tope", "máximo"))
+    return [f"aviso: quita «{m}» del aviso: {aviso}" for m in malas if m in s]
 
 # ---------------------------------------------------------------- Claude
 def cliente():

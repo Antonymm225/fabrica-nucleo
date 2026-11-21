@@ -1,0 +1,50 @@
+# FF-008 · Finanzas Familiares · EST-01 · El Seguro Social no alcanza
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje del sueldo que reemplaza el Seguro Social para un trabajador promedio = 40 % · https://www.ssa.gov/policy/docs/ssb/v68n2/v68n2p1.html
+# Fuente: Porcentaje del sueldo que se recomienda tener en el retiro para vivir con comodidad = 70 % · https://www.ssa.gov/policy/docs/ssb/v68n2/v68n2p1.html
+# Fuente: Año en que el fondo del Seguro Social se agotaría según los administradores (trustees) = 2034 año · https://www.ssa.gov/oact/tr/2025/tr2025.pdf
+# Fuente: Recorte estimado a los beneficios en 2034 si el Congreso no actúa = 17 % · https://www.aarp.org/social-security/trust-fund-report-2026/
+# Fuente: Beneficio mensual promedio de un jubilado (diciembre 2025) = 2071.3 $ · https://www.fool.com/retirement/social-security/2026/10/05/if-your-social-security-benefit-is-larger-than-this-you-re-getting-more-from-the-program-than-most/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Pagaste años de *Seguro Social*,
+pero te devuelve solo [40%|cuarenta por ciento].
+Y en [2034|dos mil treinta y cuatro] podrían *recortarlo*.
+Al final te digo cómo *llenar el hueco*.
+Se llama el *hueco del retiro*.
+Cada semana te descuentan del *cheque*.
+Piensas que eso es tu *retiro*.
+Pero el Seguro Social reemplaza cerca del [40%|cuarenta por ciento]
+de lo que *ganabas*.
+Y los expertos dicen que necesitas [70%|setenta por ciento].
+Mira el ejemplo de un *sueldo* normal.
+El *Seguro Social* te paga [$1,600|mil seiscientos].
+Pero necesitas [$2,800|dos mil ochocientos].
+Te faltan [$1,200|mil doscientos] cada *mes*.
+Son [$14,400|catorce mil cuatrocientos] al *año*.
+Y lo peor: si lo recortan [17%|diecisiete por ciento],
+pierdes otros [$272|doscientos setenta y dos] al *mes*.
+Ese dinero era la *renta*,
+la comida de tus *hijos*,
+o los pagos de la *troca*.
+Ahora, ¿cómo llenas ese *hueco*?
+Un [IUL|i u ele], un *seguro de vida indexado*,
+puede ser una pieza para tu *retiro*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si faltas, protege a tu *familia*.
+Y si te enfermas gravemente, tiene *beneficios en vida*.
+Con [$250|doscientos cincuenta] al mes durante muchos años,
+aportarías [$75,000|setenta y cinco mil dólares] en total.
+Con el tope de [10%|diez por ciento], podrías llegar hasta [$324,000|trescientos veinticuatro mil].
+Es un *tope*, no una promesa.
+Primero, entra a tu cuenta del *Seguro Social*,
+y mira cuánto te tocaría.
+Réstalo de lo que *gastas* hoy.
+Ese es tu *hueco*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien espera su *Seguro Social*.

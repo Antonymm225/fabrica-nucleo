@@ -1,0 +1,365 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: Seguro Social de $1,600 al mes y $250 al mes, con el tope de 10%. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cheque",
+   "contador": "seguro social |40%",
+   "objeto": "billete",
+   "valor": 40,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "lo que cubre",
+   "hasta": [
+    1,
+    "40%"
+   ],
+   "insignia": {
+    "texto": "RECORTE 2034",
+    "en": [
+     2,
+     "2034"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "contador": "trampa |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "HUECO",
+    "RETIRO"
+   ],
+   "en": [
+    4,
+    "hueco"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    6
+   ],
+   "capitulo": "tu retiro",
+   "contador": "necesitas |70%",
+   "objeto": "alcancia",
+   "valor": 70,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "lo que necesitas",
+   "hasta": [
+    9,
+    "70%"
+   ],
+   "insignia": {
+    "texto": "SS: 40%",
+    "en": [
+     8,
+     "ganabas"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "seguro social |$1,600",
+   "entrada": "cuadritos",
+   "objeto": "billete",
+   "valor": 1600,
+   "prefijo": "$",
+   "etiqueta": "te paga al mes",
+   "hasta": [
+    11,
+    "1,600"
+   ],
+   "insignia": {
+    "texto": "40% DEL SUELDO",
+    "en": [
+     11,
+     "1,600"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    12
+   ],
+   "capitulo": "tu hueco",
+   "contador": "hueco |$1,200 al mes",
+   "objeto": "calendario",
+   "valor": 14400,
+   "prefijo": "$",
+   "etiqueta": "hueco al año",
+   "hasta": [
+    14,
+    "14,400"
+   ],
+   "insignia": {
+    "texto": "-$1,200 AL MES",
+    "en": [
+     13,
+     "1,200"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo peor",
+   "contador": "recorte |17%",
+   "objeto": "billete",
+   "valor": 272,
+   "prefijo": "$",
+   "etiqueta": "menos cada mes",
+   "hasta": [
+    16,
+    "272"
+   ],
+   "insignia": {
+    "texto": "RECORTE 17%",
+    "en": [
+     15,
+     "17%"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    17
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "recorte |-$272",
+   "items": [
+    {
+     "objeto": "casa",
+     "etiqueta": "RENTA",
+     "en": [
+      17,
+      "renta"
+     ]
+    },
+    {
+     "objeto": "escuela",
+     "etiqueta": "HIJOS",
+     "en": [
+      18,
+      "hijos"
+     ]
+    },
+    {
+     "objeto": "troca",
+     "etiqueta": "TROCA",
+     "en": [
+      19,
+      "troca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    20
+   ],
+   "capitulo": "la salida",
+   "contador": "iul |hasta 10%",
+   "entrada": "destello",
+   "objeto": "alcancia",
+   "valor": 10,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "puede crecer hasta",
+   "hasta": [
+    23,
+    "10%"
+   ],
+   "insignia": {
+    "texto": "IUL",
+    "en": [
+     21,
+     "IUL"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    24
+   ],
+   "capitulo": "tu protección",
+   "contador": "iul |piso cero",
+   "items": [
+    {
+     "objeto": "billete",
+     "etiqueta": "SIN PERDER",
+     "en": [
+      24,
+      "pierde"
+     ]
+    },
+    {
+     "objeto": "alcancia",
+     "etiqueta": "PISO CERO",
+     "en": [
+      25,
+      "cero"
+     ]
+    },
+    {
+     "objeto": "casa",
+     "etiqueta": "FAMILIA",
+     "en": [
+      26,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    28
+   ],
+   "capitulo": "tus aportes",
+   "contador": "aportes |$75,000",
+   "entrada": "cuadritos",
+   "objeto": "alcancia",
+   "valor": 75000,
+   "prefijo": "$",
+   "etiqueta": "tus aportes",
+   "hasta": [
+    29,
+    "75,000"
+   ],
+   "insignia": {
+    "texto": "MUCHOS AÑOS",
+    "en": [
+     28,
+     "años"
+    ]
+   }
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "tu retiro",
+   "contador": "tope |+$324,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$324,000",
+    "etiqueta": "en el mejor caso",
+    "en": [
+     30,
+     "324,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TOPE",
+    "en": [
+     31,
+     "tope"
+    ]
+   }
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    32
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      34
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "tasas": [
+    "TU SS",
+    "GASTO",
+    "HUECO"
+   ],
+   "elegida": 2,
+   "primero": "HUECO",
+   "elegir": [
+    34,
+    "gastas"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    35
+   ],
+   "capitulo": "tu número",
+   "contador": "hueco |ejemplo",
+   "objeto": "casa",
+   "valor": 1200,
+   "prefijo": "$",
+   "etiqueta": "ejemplo de hueco",
+   "hasta": [
+    35,
+    "hueco"
+   ],
+   "insignia": {
+    "texto": "ASESOR",
+    "en": [
+     36,
+     "asesor"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "titulo": "El Seguro Social solo te cubre la mitad",
+ "angulo": "Pasaste décadas pagando Seguro Social, pero ese cheque reemplaza solo cerca del 40% de tu sueldo, y se podría recortar en 2034.",
+ "explicacion": "Cada semana te descuentan Seguro Social del cheque. Piensas que eso es tu retiro. Pero el Seguro Social solo reemplaza cerca del 40% de lo que ganabas, y los expertos dicen que necesitas cerca del 70%. Además, los administradores del programa calculan que en 2034 el fondo no alcanzaría para pagar todo, y el cheque bajaría cerca de 17% si el Congreso no actúa. Un IUL puede ser una pieza para llenar ese hueco, con piso de cero y crecimiento de hasta 10% al año (es un tope, no una garantía).",
+ "datos": [
+  {
+   "dato": "Porcentaje del sueldo que reemplaza el Seguro Social para un trabajador promedio",
+   "valor": 40,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/policy/docs/ssb/v68n2/v68n2p1.html"
+  },
+  {
+   "dato": "Porcentaje del sueldo que se recomienda tener en el retiro para vivir con comodidad",
+   "valor": 70,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/policy/docs/ssb/v68n2/v68n2p1.html"
+  },
+  {
+   "dato": "Año en que el fondo del Seguro Social se agotaría según los administradores (trustees)",
+   "valor": 2034,
+   "unidad": "año",
+   "fuente": "https://www.ssa.gov/oact/tr/2025/tr2025.pdf"
+  },
+  {
+   "dato": "Recorte estimado a los beneficios en 2034 si el Congreso no actúa",
+   "valor": 17,
+   "unidad": "%",
+   "fuente": "https://www.aarp.org/social-security/trust-fund-report-2026/"
+  },
+  {
+   "dato": "Beneficio mensual promedio de un jubilado (diciembre 2025)",
+   "valor": 2071.3,
+   "unidad": "$",
+   "fuente": "https://www.fool.com/retirement/social-security/2026/10/05/if-your-social-security-benefit-is-larger-than-this-you-re-getting-more-from-the-program-than-most/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: Seguro Social (40%) sobre un sueldo de $4,000 al mes",
+   "expresion": "round(4000*0.40, 2)",
+   "resultado": 1600.0
+  },
+  {
+   "descripcion": "Ejemplo: lo que necesitarías (70%) sobre un sueldo de $4,000 al mes",
+   "expresion": "round(4000*0.70, 2)",
+   "resultado": 2800.0
+  },
+  {
+   "descripcion": "Hueco mensual entre lo que necesitas y lo que paga el Seguro Social",
+   "expresion": "round(4000*0.70 - 4000*0.40, 2)",
+   "resultado": 1200.0
+  },
+  {
+   "descripcion": "Hueco anual (hueco mensual por 12)",
+   "expresion": "round((4000*0.70 - 4000*0.40)*12, 2)",
+   "resultado": 14400.0
+  },
+  {
+   "descripcion": "Seguro Social del ejemplo si lo recortan 17% en 2034",
+   "expresion": "round(4000*0.40*0.83, 2)",
+   "resultado": 1328.0
+  },
+  {
+   "descripcion": "Dinero que pierdes cada mes con ese recorte",
+   "expresion": "round(4000*0.40*0.17, 2)",
+   "resultado": 272.0
+  },
+  {
+   "descripcion": "Hueco mensual con el recorte incluido",
+   "expresion": "round(4000*0.70 - 4000*0.40*0.83, 2)",
+   "resultado": 1472.0
+  },
+  {
+   "descripcion": "Total aportado: $250 al mes ($3,000 al año) durante 25 años",
+   "expresion": "3000*25",
+   "resultado": 75000
+  },
+  {
+   "descripcion": "Valor a 25 años con $3,000 al inicio de cada año al 10% anual (el tope, no garantizado)",
+   "expresion": "round(3000*1.1*((1.1**25-1)/0.1), 2)",
+   "resultado": 324545.3
+  },
+  {
+   "descripcion": "Ganancia de interés a 25 años en ese escenario del tope (valor menos aportes)",
+   "expresion": "round(3000*1.1*((1.1**25-1)/0.1) - 3000*25, 2)",
+   "resultado": 249545.3
+  }
+ ],
+ "consejo": "Entra a ssa.gov/myaccount, crea tu cuenta y mira cuánto te tocaría de Seguro Social. Resta eso de lo que gastas hoy al mes y ese es tu hueco. Luego habla con un agente con licencia sobre cuánto aportar a un IUL para cubrir parte de ese hueco, con lo que puedas pagar sin ahogarte.",
+ "que_no_decir": [
+  "El Seguro Social se va a acabar (el fondo se agota en 2034, pero los ingresos seguirían cubriendo cerca del 83% de los beneficios)",
+  "Vas a ganar 10% cada año (el 10% es un tope, y el piso es cero)",
+  "Con $250 al mes vas a tener $324,545 seguro (es el escenario máximo, no una promesa)",
+  "El IUL reemplaza el Seguro Social o es mejor que cualquier inversión",
+  "El IUL es una inversión sin riesgo o sin costos (tiene cargos y requiere pagar las primas)",
+  "Cifras de sueldo o de hueco como si fueran las de todos (el ejemplo de $4,000 al mes es ilustrativo)",
+  "Promesas de cuánto vas a poder retirar, sin explicar que depende de aportes, cargos y tiempo"
+ ],
+ "con_iul": true
+}

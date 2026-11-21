@@ -58,10 +58,25 @@ jobs:
         run: |
           git config user.name "fabrica-bot"
           git config user.email "fabrica-bot@users.noreply.github.com"
-          git add videos rechazados 2>/dev/null || true
+          git add -A videos
+          if [ -d rechazados ]; then git add -A rechazados; fi
+          git status --short
           if git diff --cached --quiet; then echo "nada nuevo"; exit 0; fi
           git commit -m "Guiones nuevos de ${{ github.event.inputs.marca }}: ${{ steps.escribir.outputs.videos }}"
           git push
+
+      - name: Guiones para revisar (tema, guion, escenas)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guiones
+          path: |
+            videos/*/tema.json
+            videos/*/guion.txt
+            videos/*/escenas.json
+            rechazados/
+          if-no-files-found: ignore
+          retention-days: 7
 
   render:
     needs: guionista

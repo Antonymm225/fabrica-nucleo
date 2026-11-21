@@ -41,8 +41,13 @@ jobs:
             CODIGOS=$(echo "$ENTRADA" | tr ',' '\n' | sed 's/ //g' | grep -v '^$')
           else
             BASE="${ANTES:-HEAD~1}"
-            git cat-file -e "$BASE" 2>/dev/null || BASE="HEAD~1"
-            CODIGOS=$(git diff --name-only "$BASE" HEAD -- videos | cut -d/ -f2 | sort -u)
+            git cat-file -e "$BASE^{commit}" 2>/dev/null || BASE="HEAD~1"
+            if git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+              CODIGOS=$(git diff --name-only "$BASE" HEAD -- videos | cut -d/ -f2 | sort -u)
+            else
+              # primera subida del repo: renderiza todos los videos que vengan en ese commit
+              CODIGOS=$(git ls-tree -r --name-only HEAD -- videos | cut -d/ -f2 | sort -u)
+            fi
           fi
           VALIDOS=""
           for c in $CODIGOS; do

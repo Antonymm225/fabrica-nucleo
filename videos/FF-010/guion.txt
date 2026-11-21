@@ -1,0 +1,45 @@
+# FF-010 · Finanzas Familiares · EST-01 · El préstamo de día de pago
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo típico por cada $100 prestados en un préstamo de día de pago de 2 semanas = 15 $ · https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans
+# Fuente: APR de un préstamo de día de pago típico (cargo de $15 por $100, 2 semanas) = 391 % · https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans
+# Fuente: APR promedio de tarjetas de crédito, primer trimestre de 2023 = 21 % · https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans
+# Fuente: Cargos medianos que paga al año un cliente de préstamos de día de pago = 458 $ · https://files.consumerfinance.gov/f/201304_cfpb_paydayfactsheet.pdf
+# BLOQUE 1
+Te prestan [$500|quinientos dólares] *solo por dos semanas*,
+y te cobran como [391%|trescientos noventa y uno por ciento] *al año*.
+Se llama el préstamo de *día de pago*.
+Al final te digo cómo *evitarlo*.
+Te urge dinero para la *renta*,
+o para arreglar la *troca*.
+Te lo dan rápido, sin *revisar* mucho.
+Pero cobran [$15|quince dólares] por cada cien dólares.
+Si pides [$500|quinientos dólares],
+son [$75|setenta y cinco dólares] de *cargo*.
+En dos semanas devuelves [$575|quinientos setenta y cinco dólares] *todo junto*.
+¿Y si no puedes?
+Lo *renuevas* y pagas otro cargo.
+Y la deuda *no baja*.
+Pero aquí viene lo que *nadie* te dice.
+Si lo renuevas [6|seis] veces,
+pagas [$450|cuatrocientos cincuenta dólares] solo en *cargos*.
+Y sigues debiendo los [$500|quinientos dólares].
+En total pagaste [$950|novecientos cincuenta dólares] por [$500|quinientos dólares].
+Una *tarjeta* al [21%|veintiuno por ciento]
+cobra unos [$24|veinticuatro dólares] en esas semanas.
+Es unas [18|dieciocho] veces *más caro*.
+Ahora, ¿cómo lo *evitas*?
+Pregunta cuánto es el *APR*, el costo anual,
+y el *total* en dólares.
+Si es cerca de [400%|cuatrocientos por ciento], *no firmes*.
+Llama a quien le debes:
+la *renta*, la luz, el *mecánico*.
+Pide un *plan de pagos* o más días.
+Muchas veces *aceptan*, sin cobrarte eso.
+Y si ya tienes uno, *no lo renueves*.
+Paga lo que puedas y pide un *plan*.
+Y empieza hoy un *colchón*:
+[$20|veinte dólares] por semana
+son [$500|quinientos dólares] en [25|veinticinco] *semanas*.
+Así no vuelves a *necesitar* este préstamo.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien ha pedido un *préstamo rápido*.

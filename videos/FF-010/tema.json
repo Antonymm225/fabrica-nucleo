@@ -1,0 +1,88 @@
+{
+ "titulo": "El préstamo de día de pago",
+ "angulo": "Te prestan $500 'solo por dos semanas' y el cargo de $75 equivale a una tasa anual de 391%, unas 18 veces más cara que una tarjeta de crédito.",
+ "explicacion": "Te urge dinero para la renta o para arreglar la troca. El préstamo de día de pago te lo da rápido, sin revisar mucho. Cobran $15 por cada $100, y en dos semanas tienes que devolver todo junto. Si no puedes, lo renuevas y pagas otro cargo, y la deuda no baja. Así $500 se convierten en cientos de dólares perdidos.",
+ "datos": [
+  {
+   "dato": "Cargo típico por cada $100 prestados en un préstamo de día de pago de 2 semanas",
+   "valor": 15,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans"
+  },
+  {
+   "dato": "APR de un préstamo de día de pago típico (cargo de $15 por $100, 2 semanas)",
+   "valor": 391,
+   "unidad": "%",
+   "fuente": "https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans"
+  },
+  {
+   "dato": "APR promedio de tarjetas de crédito, primer trimestre de 2023",
+   "valor": 21,
+   "unidad": "%",
+   "fuente": "https://consumer.ftc.gov/articles/what-know-about-payday-and-car-title-loans"
+  },
+  {
+   "dato": "Cargos medianos que paga al año un cliente de préstamos de día de pago",
+   "valor": 458,
+   "unidad": "$",
+   "fuente": "https://files.consumerfinance.gov/f/201304_cfpb_paydayfactsheet.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Cargo por 2 semanas en un préstamo de $500 a $15 por cada $100",
+   "expresion": "round(500/100*15,2)",
+   "resultado": 75.0
+  },
+  {
+   "descripcion": "Total a devolver a las 2 semanas",
+   "expresion": "round(500+500/100*15,2)",
+   "resultado": 575.0
+  },
+  {
+   "descripcion": "Cargos si renuevas 6 veces (12 semanas) y sigues debiendo los $500",
+   "expresion": "round(6*500/100*15,2)",
+   "resultado": 450.0
+  },
+  {
+   "descripcion": "Total pagado en esas 12 semanas incluyendo los $500",
+   "expresion": "round(500+6*500/100*15,2)",
+   "resultado": 950.0
+  },
+  {
+   "descripcion": "Interés de $500 en una tarjeta al 21% por 12 semanas (84 días)",
+   "expresion": "round(500*0.21*84/365,2)",
+   "resultado": 24.16
+  },
+  {
+   "descripcion": "Diferencia entre el préstamo de día de pago y la tarjeta en 12 semanas",
+   "expresion": "round(450-500*0.21*84/365,2)",
+   "resultado": 425.84
+  },
+  {
+   "descripcion": "Comprobación del APR: 15% cada 14 días llevado a un año, en %",
+   "expresion": "round(0.15*365/14*100,2)",
+   "resultado": 391.07
+  },
+  {
+   "descripcion": "Cuántas veces más caro es 391% que 21%",
+   "expresion": "round(391/21,2)",
+   "resultado": 18.62
+  },
+  {
+   "descripcion": "Semanas para juntar un colchón de $500 ahorrando $20 por semana",
+   "expresion": "round(500/20,2)",
+   "resultado": 25.0
+  }
+ ],
+ "consejo": "Antes de firmar uno de estos préstamos, pregunta cuánto es el APR y el total en dólares. Si es cerca de 400%, no firmes. Llama a quien le debes (renta, luz, mecánico, clínica) y pide un plan de pagos o más días. Casi siempre aceptan y no te cobran 391%. Si ya tienes un préstamo así, no lo renueves: paga lo que puedas y pregunta si tienen un plan de pago sin cargos extra. Y empieza hoy un colchón: $20 por semana son $500 en 25 semanas, y con eso no vuelves a necesitar este préstamo.",
+ "que_no_decir": [
+  "Todos los préstamos de día de pago son estafa (hay lenders legales; el problema es el costo)",
+  "Una tarjeta de crédito siempre es la mejor salida (solo es mejor si la pagas rápido)",
+  "Te garantizo que te dan un plan de pagos (depende de cada acreedor)",
+  "Nunca vas a necesitar dinero rápido",
+  "Las tasas que mostramos son iguales en todos los estados (los cargos varían, de $10 a $30 por cada $100)",
+  "Los $450 de cargos son lo que paga todo el mundo (es un ejemplo con 6 renovaciones, no un promedio)"
+ ],
+ "con_iul": false
+}

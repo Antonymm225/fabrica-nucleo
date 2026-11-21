@@ -1,0 +1,689 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo de $500 a 2 semanas con cargo de $15 por cada $100, renovado 6 veces. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "te prestan",
+   "contador": "préstamo |$500",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 40,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      0,
+      "Te"
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "391"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 36,
+     "tam": 30,
+     "en": [
+      0,
+      "500"
+     ],
+     "etiqueta": "solo dos semanas"
+    },
+    {
+     "que": "cifra",
+     "texto": "391%",
+     "x": 72,
+     "y": 72,
+     "tam": 13,
+     "color": "principal",
+     "en": [
+      1,
+      "391"
+     ],
+     "etiqueta": "al año"
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "DIA",
+    "PAGO"
+   ],
+   "en": [
+    2,
+    "día"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "te urge",
+   "contador": "urge |dinero",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 94,
+     "tam": 40,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "en": [
+      4,
+      "Te"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Necesito dinero hoy!",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      4,
+      "urge"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "la renta",
+     "en": [
+      4,
+      "renta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 64,
+     "tam": 32,
+     "etiqueta": "la troca",
+     "en": [
+      5,
+      "troca"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "RÁPIDO",
+     "color": "rojo",
+     "x": 48,
+     "y": 50,
+     "en": [
+      6,
+      "rápido"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el cargo",
+   "contador": "cargo |$75",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Préstamo de día de pago",
+     "en": [
+      7,
+      "Pero"
+     ],
+     "renglones": [
+      {
+       "texto": "Cargo por cada cien",
+       "valor": "$15",
+       "en": [
+        7,
+        "15"
+       ]
+      },
+      {
+       "texto": "Tú pides",
+       "valor": "$500",
+       "en": [
+        8,
+        "500"
+       ]
+      },
+      {
+       "texto": "Cargo a 2 semanas",
+       "valor": "$75",
+       "en": [
+        9,
+        "75"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       9,
+       "cargo"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "dos semanas",
+   "contador": "devuelves |$575",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 22,
+     "tam": 32,
+     "etiqueta": "tu quincena",
+     "en": [
+      10,
+      "devuelves"
+     ]
+    },
+    {
+     "id": "p",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 74,
+     "y": 52,
+     "tam": 34,
+     "etiqueta": "el prestamista",
+     "en": [
+      10,
+      "devuelves"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "p",
+     "en": [
+      10,
+      "575"
+     ],
+     "hasta": [
+      11,
+      "puedes"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$575",
+     "x": 28,
+     "y": 66,
+     "tam": 12,
+     "color": "principal",
+     "en": [
+      10,
+      "575"
+     ],
+     "etiqueta": "todo junto"
+    },
+    {
+     "que": "sello",
+     "texto": "OTRO CARGO",
+     "color": "rojo",
+     "x": 72,
+     "y": 85,
+     "en": [
+      12,
+      "otro"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LA DEUDA NO BAJA",
+     "color": "gris",
+     "x": 28,
+     "y": 90,
+     "en": [
+      13,
+      "baja"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "seis renovaciones",
+   "contador": "cargos |$450",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      14,
+      "Pero"
+     ],
+     "cambia": {
+      "en": [
+       16,
+       "450"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 46,
+     "y": 95,
+     "tam": 55,
+     "valor": 450,
+     "max": 500,
+     "prefijo": "$",
+     "en": [
+      15,
+      "renuevas"
+     ],
+     "hasta": [
+      16,
+      "cargos"
+     ],
+     "etiqueta": "cargos"
+    },
+    {
+     "que": "torre",
+     "x": 78,
+     "y": 95,
+     "tam": 55,
+     "valor": 500,
+     "max": 500,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      17,
+      "sigues"
+     ],
+     "hasta": [
+      17,
+      "500"
+     ],
+     "etiqueta": "sigues debiendo"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "contra la tarjeta",
+   "contador": "tarjeta |$24",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "$950",
+     "x": 50,
+     "y": 40,
+     "tam": 14,
+     "color": "principal",
+     "en": [
+      18,
+      "950"
+     ],
+     "sale": [
+      19,
+      "tarjeta"
+     ],
+     "etiqueta": "por $500"
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 27,
+     "y": 28,
+     "tam": 32,
+     "etiqueta": "tarjeta al 21%",
+     "en": [
+      19,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$24",
+     "x": 27,
+     "y": 68,
+     "tam": 11,
+     "color": "verde",
+     "en": [
+      20,
+      "24"
+     ],
+     "etiqueta": "tarjeta"
+    },
+    {
+     "que": "cifra",
+     "texto": "$450",
+     "x": 73,
+     "y": 68,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      20,
+      "semanas"
+     ],
+     "etiqueta": "día de pago"
+    },
+    {
+     "que": "sello",
+     "texto": "18 VECES MÁS",
+     "color": "rojo",
+     "x": 73,
+     "y": 30,
+     "en": [
+      21,
+      "veces"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "qué hacer",
+   "contador": "pregunta |APR",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 40,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 3,
+     "en": [
+      22,
+      "Ahora"
+     ],
+     "cambia": {
+      "en": [
+       25,
+       "firmes"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto es el APR y el total?",
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      23,
+      "Pregunta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "400%",
+     "x": 74,
+     "y": 45,
+     "tam": 13,
+     "color": "principal",
+     "en": [
+      25,
+      "400"
+     ],
+     "etiqueta": "cerca de"
+    },
+    {
+     "que": "sello",
+     "texto": "NO FIRMES",
+     "color": "rojo",
+     "x": 74,
+     "y": 75,
+     "en": [
+      25,
+      "firmes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "llama",
+   "contador": "pide |un plan",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "la renta",
+     "en": [
+      27,
+      "renta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 68,
+     "tam": 28,
+     "etiqueta": "más días",
+     "en": [
+      28,
+      "días"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 95,
+     "tam": 40,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 1,
+     "en": [
+      26,
+      "Llama"
+     ],
+     "cambia": {
+      "en": [
+       29,
+       "aceptan"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Me da más días para pagar?",
+     "cola": 1,
+     "x": 70,
+     "y": 22,
+     "en": [
+      28,
+      "Pide"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 52,
+     "y": 55,
+     "en": [
+      29,
+      "aceptan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "si ya tienes uno",
+   "contador": "no |renueves",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      30
+     ],
+     "items": [
+      {
+       "texto": "No lo renueves",
+       "en": [
+        30,
+        "renueves"
+       ]
+      },
+      {
+       "texto": "Paga lo que puedas",
+       "en": [
+        31,
+        "Paga"
+       ]
+      },
+      {
+       "texto": "Pide un plan sin cargos",
+       "en": [
+        31,
+        "plan"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 38,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      30
+     ],
+     "cambia": {
+      "en": [
+       31,
+       "plan"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "tu colchón",
+   "contador": "ahorra |$20 por semana",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$500",
+    "etiqueta": "en 25 semanas",
+    "en": [
+     34,
+     "500"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "COLCHÓN",
+    "en": [
+     34,
+     "semanas"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

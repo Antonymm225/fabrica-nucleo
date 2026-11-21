@@ -1,0 +1,108 @@
+{
+ "titulo": "Si te lesionas, el gobierno te paga la renta y nada más",
+ "angulo": "Tu cuerpo es tu herramienta de trabajo, pero el apoyo oficial si no puedes trabajar apenas cubre la renta y te deja sin lo demás.",
+ "explicacion": "Cerca de 1 de cada 4 trabajadores de 20 años quedará incapacitado antes de retirarse. Si pasa, el seguro por discapacidad del Seguro Social paga en promedio unos $1,580 al mes. La renta promedio en el país ya es $1,487. Eso te deja $93 para comida, troca, luz y los niños. Un IUL con beneficios en vida puede darte acceso a parte del dinero si te da una enfermedad crónica, crítica o terminal, según las condiciones de la póliza.",
+ "datos": [
+  {
+   "dato": "Proporción de jóvenes de 20 años que quedarán incapacitados antes de los 67 (aprox. 1 de cada 4)",
+   "valor": 25,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/disabilityfacts/materials/pdf/poster-9.pdf"
+  },
+  {
+   "dato": "Pago mensual promedio del seguro por discapacidad del Seguro Social (SSDI) a un trabajador, 2025",
+   "valor": 1580,
+   "unidad": "$",
+   "fuente": "https://www.collinsprice.com/average-ssdi-monthly-benefit-amount-in-2025/"
+  },
+  {
+   "dato": "Renta bruta mediana mensual en EE.UU., 2024 (Censo, ACS)",
+   "valor": 1487,
+   "unidad": "$",
+   "fuente": "https://zolve.com/blog/cost-of-living-in-usa/"
+  },
+  {
+   "dato": "Gasto promedio mensual de un hogar en EE.UU., 2024 (BLS)",
+   "valor": 6545,
+   "unidad": "$",
+   "fuente": "https://financefirst.co/reports/cost-of-living-budget-pressure-2026"
+  },
+  {
+   "dato": "Crecimiento máximo anual del IUL según la ficha (tope, no garantizado)",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://ficha-interna-iul"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que sobra del pago por discapacidad después de la renta, por mes",
+   "expresion": "1580-1487",
+   "resultado": 93
+  },
+  {
+   "descripcion": "Pago por discapacidad en un año",
+   "expresion": "1580*12",
+   "resultado": 18960
+  },
+  {
+   "descripcion": "Renta en un año",
+   "expresion": "1487*12",
+   "resultado": 17844
+  },
+  {
+   "descripcion": "Lo que sobra en un año después de la renta",
+   "expresion": "18960-17844",
+   "resultado": 1116
+  },
+  {
+   "descripcion": "Hueco mensual entre el gasto promedio del hogar y el pago por discapacidad",
+   "expresion": "6545-1580",
+   "resultado": 4965
+  },
+  {
+   "descripcion": "Total aportado al IUL: $300 al mes ($3,600 al año) por 20 años",
+   "expresion": "3600*20",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Valor proyectado al año 20 con 10% (tope), aporte al inicio de cada año",
+   "expresion": "round(3600*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 226809.0
+  },
+  {
+   "descripcion": "Crecimiento proyectado sobre lo aportado (escenario tope del 10%)",
+   "expresion": "round(3600*((1.1**20-1)/0.1)*1.1-72000,2)",
+   "resultado": 154809.0
+  }
+ ],
+ "consejo": "Haz esta cuenta esta semana: suma lo que gasta tu casa al mes y réstale $1,580. Ese número es lo que le faltaría a tu familia si no puedes trabajar. Luego pide una cotización de IUL con beneficios en vida y pregunta qué enfermedades cubre, cuánto puedes adelantar y qué cuesta cada año.",
+ "que_no_decir": [
+  "Que el IUL te va a dar 10% seguro cada año. Es un tope y no está garantizado.",
+  "Que vas a tener $226,809. Es una proyección en el mejor caso, no una promesa.",
+  "Que el IUL reemplaza el seguro por discapacidad o el seguro del trabajo.",
+  "Que cualquier enfermedad o lesión activa el beneficio. Depende de las condiciones de la póliza.",
+  "Que el Seguro Social no te va a pagar nada. Sí paga, pero poco.",
+  "Que 1 de cada 4 te va a pasar a ti. Es un promedio, no una predicción.",
+  "Que no hay cargos ni costos dentro de la póliza."
+ ],
+ "con_iul": true
+}

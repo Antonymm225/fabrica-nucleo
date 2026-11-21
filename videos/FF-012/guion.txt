@@ -1,0 +1,46 @@
+# FF-012 · Finanzas Familiares · EST-01 · La tasa que el dealer te sube
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio de préstamo de carro usado (Q2 2026) = 11.19 % · https://www.experian.com/blogs/ask-experian/used-car-loan-rates/
+# Fuente: Monto promedio de préstamo de carro usado = 27852 $ · https://www.experian.com/blogs/ask-experian/average-car-payment/
+# Fuente: Plazo promedio de préstamo de carro usado = 67.9 meses · https://www.experian.com/blogs/ask-experian/average-car-payment/
+# Fuente: Parte aproximada del interés extra (recargo) que se queda el dealer = 75 % · https://www.nber.org/system/files/working_papers/w28136/w28136.pdf
+# Fuente: El CFPB explica que el dealer puede subir la tasa sobre la tasa base del prestamista (reserva del dealer) = 1 boletín · https://www.autoremarketing.com/ar/financial/cfpb-bulletin-targets-dealer-reserve-recaps-potential-discriminatory-practices/
+# BLOQUE 1
+Tu *pago mensual* no te dice todo.
+Ahí el dealer te esconde más de [$1,600|mil seiscientos dólares].
+Se llama la *tasa escondida*.
+Al final te digo qué *preguntarle* al vendedor.
+Cuando financias en el *dealer*,
+él manda tu solicitud a un *prestamista*.
+El prestamista le da una *tasa base*.
+Pero el dealer puede *subírtela*,
+y quedarse con parte del *interés extra*.
+Imagina una *troca* de [$27,852|veintisiete mil ochocientos cincuenta y dos dólares].
+Financiada a *cinco años*.
+La tasa base es [9.19%|nueve punto diecinueve por ciento].
+El dealer te la sube *dos puntos*,
+y te queda en [11.19%|once punto diecinueve por ciento].
+Tú solo ves el *pago mensual*.
+Son [$581|quinientos ochenta y un dólares] contra [$608|seiscientos ocho dólares] al *mes*.
+Una diferencia de casi [$28|veintiocho dólares].
+Parece *poquito*, ¿verdad?
+Pero son *cinco años* de pagos.
+Y lo *peor* viene ahora.
+El dealer se queda *cerca del* [75%|setenta y cinco por ciento] del *extra*.
+En total, [$1,648|mil seiscientos cuarenta y ocho dólares] *de más*.
+Eso es más de un *mes de renta*,
+o dos meses de *gasolina* para la obra.
+Ahora, ¿cómo lo *evitas*?
+Antes de ir, pide una *preaprobación*.
+Se la pides a *tu banco*.
+Es *gratis* y te da la tasa por escrito.
+Llévala al dealer y pregunta:
+¿Cuál es el *APR*?
+¿Y cuál es la *tasa base*?
+Si no te mejora tu tasa,
+*firma con tu banco*.
+Compara el *total a pagar*,
+no solo el *pago mensual*.
+Esos [$1,600|mil seiscientos dólares] podrían quedarse en *tu bolsillo*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a financiar su *troca*.

@@ -1,0 +1,780 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: troca usada de $27,852 a cinco años, con tasa base de 9.19% y recargo de dos puntos del dealer. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu pago",
+   "contador": "pagas |lo que ves",
+   "elementos": [
+    {
+     "que": "persona",
+     "id": "yo",
+     "x": 30,
+     "y": 93,
+     "tam": 40,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       1,
+       "1,600"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Solo veo el pago mensual.",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 18,
+     "en": [
+      0,
+      "pago"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$1,600",
+     "x": 72,
+     "y": 58,
+     "tam": 12,
+     "etiqueta": "escondidos",
+     "color": "principal",
+     "en": [
+      1,
+      "1,600"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TASA",
+    "OCULTA"
+   ],
+   "en": [
+    2,
+    "escondida"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "el dealer",
+   "contador": "financias |en el dealer",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "id": "tu",
+     "x": 14,
+     "y": 94,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      4
+     ]
+    },
+    {
+     "que": "persona",
+     "id": "dl",
+     "x": 48,
+     "y": 94,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL DEALER",
+     "en": [
+      4,
+      "dealer"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "bk",
+     "objeto": "banco",
+     "x": 84,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      5,
+      "prestamista"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "dl",
+     "a": "bk",
+     "en": [
+      5,
+      "manda"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "bk",
+     "a": "dl",
+     "en": [
+      6,
+      "tasa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el recargo",
+   "contador": "recargo |del dealer",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "id": "cr",
+     "objeto": "cartera",
+     "x": 26,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "TU DINERO",
+     "en": [
+      7
+     ]
+    },
+    {
+     "que": "persona",
+     "id": "dd",
+     "x": 74,
+     "y": 94,
+     "tam": 38,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL DEALER",
+     "en": [
+      7,
+      "dealer"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¡LA SUBE!",
+     "color": "principal",
+     "tam": 6,
+     "x": 50,
+     "y": 16,
+     "en": [
+      7,
+      "subírtela"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "cr",
+     "a": "dd",
+     "en": [
+      8,
+      "quedarse"
+     ],
+     "hasta": [
+      8,
+      "extra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "préstamo |$27,852",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 30,
+     "y": 38,
+     "tam": 40,
+     "en": [
+      9,
+      "troca"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 27852,
+     "prefijo": "$",
+     "x": 30,
+     "y": 72,
+     "tam": 9,
+     "etiqueta": "el préstamo",
+     "en": [
+      9,
+      "27,852"
+     ],
+     "hasta": [
+      10,
+      "años"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 75,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "5 AÑOS",
+     "en": [
+      10,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "las tasas",
+   "contador": "tasa |11.19%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu préstamo de troca",
+     "en": [
+      11
+     ],
+     "renglones": [
+      {
+       "texto": "Tasa base",
+       "valor": "9.19%",
+       "en": [
+        11,
+        "9.19"
+       ]
+      },
+      {
+       "texto": "Recargo del dealer",
+       "valor": "+2 puntos",
+       "en": [
+        12,
+        "dos"
+       ]
+      },
+      {
+       "texto": "Tasa que te dan",
+       "valor": "11.19%",
+       "en": [
+        13,
+        "11.19"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       12,
+       "puntos"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       13,
+       "11.19"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "cada mes",
+   "contador": "diferencia |$28 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      14
+     ],
+     "cambia": {
+      "en": [
+       16,
+       "28"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 45,
+     "y": 95,
+     "tam": 52,
+     "valor": 581,
+     "max": 608,
+     "prefijo": "$",
+     "etiqueta": "tasa base",
+     "en": [
+      15,
+      "581"
+     ],
+     "hasta": [
+      15,
+      "contra"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 78,
+     "y": 95,
+     "tam": 52,
+     "valor": 608,
+     "max": 608,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "con recargo",
+     "en": [
+      15,
+      "608"
+     ],
+     "hasta": [
+      15,
+      "mes"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$28",
+     "x": 62,
+     "y": 20,
+     "tam": 10,
+     "etiqueta": "al mes",
+     "color": "principal",
+     "en": [
+      16,
+      "28"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "los pagos",
+   "contador": "durante |cinco años",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       18,
+       "pagos"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Será tan poquito?",
+     "piensa": true,
+     "cola": 1,
+     "x": 25,
+     "y": 20,
+     "en": [
+      17,
+      "poquito"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 42,
+     "tam": 38,
+     "etiqueta": "5 AÑOS",
+     "en": [
+      18,
+      "años"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¡Y HAY MÁS!",
+     "color": "principal",
+     "tam": 5,
+     "x": 72,
+     "y": 80,
+     "en": [
+      19,
+      "peor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$1,648",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "75%",
+     "x": 27,
+     "y": 22,
+     "tam": 12,
+     "color": "principal",
+     "etiqueta": "se lo queda el dealer",
+     "en": [
+      20,
+      "75%"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 1648,
+     "prefijo": "$",
+     "x": 73,
+     "y": 22,
+     "tam": 10,
+     "color": "tinta",
+     "etiqueta": "de más",
+     "en": [
+      21,
+      "1,648"
+     ],
+     "hasta": [
+      21,
+      "más"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 27,
+     "y": 68,
+     "tam": 28,
+     "etiqueta": "UN MES DE RENTA",
+     "en": [
+      22,
+      "renta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 73,
+     "y": 68,
+     "tam": 30,
+     "etiqueta": "GASOLINA",
+     "en": [
+      23,
+      "gasolina"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1: tu banco",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "id": "yo",
+     "x": 20,
+     "y": 93,
+     "tam": 38,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      24
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "bco",
+     "objeto": "banco",
+     "x": 74,
+     "y": 38,
+     "tam": 34,
+     "etiqueta": "TU BANCO",
+     "en": [
+      25,
+      "pide"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "bco",
+     "en": [
+      26,
+      "pides"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "GRATIS",
+     "color": "verde",
+     "x": 74,
+     "y": 78,
+     "en": [
+      27,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "pregunta",
+   "contador": "pregunta |clave",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      28
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 93,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL DEALER",
+     "en": [
+      28,
+      "dealer"
+     ],
+     "cambia": {
+      "en": [
+       30,
+       "base"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál es el APR?",
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      29,
+      "APR"
+     ],
+     "sale": [
+      30,
+      "cuál"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y cuál es la tasa base?",
+     "cola": 1,
+     "x": 32,
+     "y": 22,
+     "en": [
+      30,
+      "cuál"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "decide",
+   "contador": [
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      33
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "y": 8,
+     "items": [
+      {
+       "texto": "Si no mejora, firma con tu banco",
+       "en": [
+        31,
+        "mejora"
+       ]
+      },
+      {
+       "texto": "Compara tasa y total a pagar",
+       "en": [
+        33,
+        "total"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 95,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      31
+     ]
+    },
+    {
+     "que": "check",
+     "x": 75,
+     "y": 75,
+     "en": [
+      34,
+      "mensual"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    35
+   ],
+   "capitulo": "el premio",
+   "contador": "podrías |ahorrar",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,600",
+    "etiqueta": "en tu bolsillo",
+    "en": [
+     35,
+     "1,600"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TUYOS",
+    "en": [
+     35,
+     "bolsillo"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+# FF-011 · Finanzas Familiares · EST-01 · El hueco del sueldo
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de jóvenes de 20 años que se incapacitará antes de la edad de retiro (más de 1 de cada 4; se usa 25 como mínimo) = 25 % · https://www.ssa.gov/disabilityfacts/materials/pdf/poster-9.pdf
+# Fuente: Pago mensual promedio del Seguro Social por incapacidad a trabajadores (diciembre 2023) = 1537.13 $ · https://www.ssa.gov/policy/docs/statcomps/di_asr/2023/di_asr23.pdf
+# Fuente: Días de trabajo perdidos en promedio (mediana) por caídas, resbalones y tropiezos en construcción (2019) = 28 días · https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm
+# Fuente: Porcentaje de lesiones no mortales con días fuera del trabajo en construcción privada que fueron caídas, resbalones o tropiezos (2019) = 32.0 % · https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si tu *cuerpo* para, ¿quién paga la casa?
+El *Seguro Social* te paga solo [$1,537|mil quinientos treinta y siete dólares] al mes.
+Se llama el *hueco del sueldo*.
+Y al final te digo cómo *taparlo*.
+Y según el Seguro Social, *uno de cada cuatro*
+jóvenes de veinte años se *incapacitará* antes de retirarse.
+Imagina que ganas [$25|veinticinco dólares] por *hora*.
+Son unos [$4,333|cuatro mil trescientos treinta y tres dólares] al *mes*.
+Te paga solo [35%|treinta y cinco por ciento] de tu *sueldo*.
+Y la *renta* no espera.
+Y lo peor: te faltan [$2,796|dos mil setecientos noventa y seis dólares] al *mes*.
+Una *caída* del techo
+te deja [28|veintiocho] *días* sin trabajar.
+Son [$5,600|cinco mil seiscientos dólares] que *no entran*.
+Pero aquí viene lo que *nadie* te dice.
+Haz esta *cuenta* esta semana.
+Suma lo que gastas al mes,
+y réstale [$1,537|mil quinientos treinta y siete dólares].
+Esa es la *diferencia* que cubres tú.
+Existe el [IUL|i u ele], un *seguro de vida indexado*.
+Si te diagnostican una enfermedad *crónica*,
+*crítica* o terminal, podrías usar dinero *en vida*.
+Sin esperar a que se acabe tu *ahorro*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si aportas cada mes por *mucho tiempo*,
+aportas en total [$48,000|cuarenta y ocho mil dólares].
+Si rinde el tope, *podría* llegar a unos [$150,000|ciento cincuenta mil dólares].
+Es un máximo, no una *promesa*.
+Y si tú faltas, tu *familia* queda protegida.
+Depende de la póliza y de que *te aprueben*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien vive de su *cuerpo*.

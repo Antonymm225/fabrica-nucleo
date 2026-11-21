@@ -1,0 +1,89 @@
+{
+ "titulo": "La tasa que el dealer te sube sin decírtelo",
+ "angulo": "El banco le aprueba al dealer una tasa, pero el dealer puede subírtela y quedarse con la diferencia, y tú solo ves el pago mensual.",
+ "explicacion": "Cuando financias en el dealer, él manda tu solicitud a un prestamista. El prestamista le da una tasa base. El dealer puede subirla y se queda con parte del interés extra. Tú solo ves el pago mensual y no sabes cuánto era la tasa real. Dos puntos de más en una troca usada normal te cuestan más de $1,600 en cinco años.",
+ "datos": [
+  {
+   "dato": "Tasa promedio de préstamo de carro usado (Q2 2026)",
+   "valor": 11.19,
+   "unidad": "%",
+   "fuente": "https://www.experian.com/blogs/ask-experian/used-car-loan-rates/"
+  },
+  {
+   "dato": "Monto promedio de préstamo de carro usado",
+   "valor": 27852,
+   "unidad": "$",
+   "fuente": "https://www.experian.com/blogs/ask-experian/average-car-payment/"
+  },
+  {
+   "dato": "Plazo promedio de préstamo de carro usado",
+   "valor": 67.9,
+   "unidad": "meses",
+   "fuente": "https://www.experian.com/blogs/ask-experian/average-car-payment/"
+  },
+  {
+   "dato": "Parte aproximada del interés extra (recargo) que se queda el dealer",
+   "valor": 75,
+   "unidad": "%",
+   "fuente": "https://www.nber.org/system/files/working_papers/w28136/w28136.pdf"
+  },
+  {
+   "dato": "El CFPB explica que el dealer puede subir la tasa sobre la tasa base del prestamista (reserva del dealer)",
+   "valor": 1,
+   "unidad": "boletín",
+   "fuente": "https://www.autoremarketing.com/ar/financial/cfpb-bulletin-targets-dealer-reserve-recaps-potential-discriminatory-practices/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual a 11.19% (tasa del dealer con recargo de 2 puntos), $27,852 a 60 meses",
+   "expresion": "round(27852*(0.1119/12)/(1-(1+0.1119/12)**-60),2)",
+   "resultado": 608.21
+  },
+  {
+   "descripcion": "Pago mensual a 9.19% (tasa base, sin recargo), $27,852 a 60 meses",
+   "expresion": "round(27852*(0.0919/12)/(1-(1+0.0919/12)**-60),2)",
+   "resultado": 580.73
+  },
+  {
+   "descripcion": "Diferencia por mes",
+   "expresion": "round(608.21-580.73,2)",
+   "resultado": 27.48
+  },
+  {
+   "descripcion": "Total pagado a 11.19% en 60 meses",
+   "expresion": "round(608.21*60,2)",
+   "resultado": 36492.74
+  },
+  {
+   "descripcion": "Total pagado a 9.19% en 60 meses",
+   "expresion": "round(580.73*60,2)",
+   "resultado": 34844.0
+  },
+  {
+   "descripcion": "Interés total a 11.19%",
+   "expresion": "round(608.21*60-27852,2)",
+   "resultado": 8640.74
+  },
+  {
+   "descripcion": "Interés total a 9.19%",
+   "expresion": "round(580.73*60-27852,2)",
+   "resultado": 6992.0
+  },
+  {
+   "descripcion": "Lo que pierdes en 5 años por el recargo de 2 puntos",
+   "expresion": "round(608.21*60-580.73*60,2)",
+   "resultado": 1648.74
+  }
+ ],
+ "consejo": "Antes de ir al dealer, pide una preaprobación a tu banco o a un prestamista en línea. Es gratis y te da una tasa por escrito. Lleva ese número al dealer. Pregunta: '¿Cuál es el APR y cuál es la tasa base del prestamista?' Si no te mejora la tasa de tu preaprobación, firma con tu banco. Compara siempre la tasa (APR) y el total a pagar, no solo el pago mensual.",
+ "que_no_decir": [
+  "Todos los dealers te roban en la tasa",
+  "Con tu banco siempre vas a pagar menos",
+  "Te van a subir exactamente 2 puntos (es un ejemplo, no un promedio oficial)",
+  "Con esto te garantizamos la aprobación o una tasa específica",
+  "Nunca financies en un dealer",
+  "Promesas de ahorro garantizado: el ahorro depende de tu crédito y del prestamista"
+ ],
+ "con_iul": false
+}

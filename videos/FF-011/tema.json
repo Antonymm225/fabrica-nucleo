@@ -1,0 +1,113 @@
+{
+ "titulo": "Si tu cuerpo para, ¿quién paga la casa?",
+ "angulo": "Tu cuerpo es tu herramienta de trabajo, pero el Seguro Social le paga a un trabajador incapacitado solo una parte de lo que ganaba, y no cubre lo que cuesta vivir.",
+ "explicacion": "Según el Seguro Social, más de 1 de cada 4 jóvenes de 20 años se incapacitará antes de retirarse. El pago promedio por incapacidad fue de $1,537.13 al mes en diciembre de 2023. Si ganas $25 por hora, eso es poco más de un tercio de tu sueldo, y la renta y la comida siguen igual. Una caída de un andamio o techo puede dejarte unas 4 semanas sin trabajar, según el promedio de la BLS. Un IUL con beneficios en vida puede darte acceso a dinero si te diagnostican una enfermedad crónica, crítica o terminal, sin esperar a que se acabe tu ahorro.",
+ "datos": [
+  {
+   "dato": "Porcentaje de jóvenes de 20 años que se incapacitará antes de la edad de retiro (más de 1 de cada 4; se usa 25 como mínimo)",
+   "valor": 25,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/disabilityfacts/materials/pdf/poster-9.pdf"
+  },
+  {
+   "dato": "Pago mensual promedio del Seguro Social por incapacidad a trabajadores (diciembre 2023)",
+   "valor": 1537.13,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/policy/docs/statcomps/di_asr/2023/di_asr23.pdf"
+  },
+  {
+   "dato": "Días de trabajo perdidos en promedio (mediana) por caídas, resbalones y tropiezos en construcción (2019)",
+   "valor": 28,
+   "unidad": "días",
+   "fuente": "https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm"
+  },
+  {
+   "dato": "Porcentaje de lesiones no mortales con días fuera del trabajo en construcción privada que fueron caídas, resbalones o tropiezos (2019)",
+   "valor": 32.0,
+   "unidad": "%",
+   "fuente": "https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Sueldo anual de ejemplo: $25 por hora, 40 horas a la semana, 52 semanas (supuesto, no es dato de fuente)",
+   "expresion": "25*40*52",
+   "resultado": 52000
+  },
+  {
+   "descripcion": "Sueldo mensual de ejemplo",
+   "expresion": "round(25*40*52/12,2)",
+   "resultado": 4333.33
+  },
+  {
+   "descripcion": "Lo que falta cada mes si solo recibes el pago promedio del Seguro Social por incapacidad",
+   "expresion": "round(25*40*52/12-1537.13,2)",
+   "resultado": 2796.2
+  },
+  {
+   "descripcion": "Lo que falta en un año",
+   "expresion": "round((25*40*52/12-1537.13)*12,2)",
+   "resultado": 33554.44
+  },
+  {
+   "descripcion": "Porcentaje de tu sueldo que cubre el pago del Seguro Social",
+   "expresion": "round(1537.13/(25*40*52/12)*100,2)",
+   "resultado": 35.47
+  },
+  {
+   "descripcion": "Sueldo perdido en 28 días de trabajo (8 horas por día, $25 por hora; supuesto de días laborales)",
+   "expresion": "25*8*28",
+   "resultado": 5600
+  },
+  {
+   "descripcion": "Total que aportas en 20 años con $200 al mes ($2,400 al año)",
+   "expresion": "2400*20",
+   "resultado": 48000
+  },
+  {
+   "descripcion": "Valor máximo ilustrativo a 20 años si el IUL rinde el tope de 10% anual (aporte de $2,400 al inicio de cada año)",
+   "expresion": "round(2400*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 151206.0
+  },
+  {
+   "descripcion": "Ganancia de interés a 20 años en el escenario del tope de 10%",
+   "expresion": "round(2400*((1.1**20-1)/0.1)*1.1-2400*20,2)",
+   "resultado": 103206.0
+  },
+  {
+   "descripcion": "Valor máximo ilustrativo a 10 años con el tope de 10% (aporte de $2,400 al inicio de cada año)",
+   "expresion": "round(2400*((1.1**10-1)/0.1)*1.1,2)",
+   "resultado": 42074.8
+  }
+ ],
+ "consejo": "Haz esta cuenta esta semana: ¿cuánto gastas al mes en casa, troca y comida? Réstale $1,537, que es el promedio del Seguro Social por incapacidad. Esa es la diferencia que tendrías que cubrir tú. Luego pide a un agente con licencia que te muestre un IUL con beneficios en vida. Pregunta cuánto cuesta el seguro, qué enfermedades cubre y cuánto puedes sacar en vida.",
+ "que_no_decir": [
+  "Que el IUL te da 10% seguro cada año. El 10% es el tope, no una promesa.",
+  "Que el Seguro Social por incapacidad no paga nada. Sí paga, pero el promedio es de $1,537.13 al mes y hay que calificar.",
+  "Que con $200 al mes vas a tener $151,206. Es el máximo ilustrativo; si el índice rinde poco, puede ser menos, y el piso de cero significa que no pierdes por el mercado, pero los costos del seguro sí cuentan.",
+  "Que el IUL es una inversión o que reemplaza a tu seguro médico.",
+  "Que cualquier enfermedad queda cubierta. Los beneficios en vida dependen de la póliza y de que te aprueben.",
+  "Que el sueldo de $25 por hora es el de todos. Es solo un ejemplo.",
+  "Que puedes sacar el dinero sin consecuencias. Los retiros y préstamos pueden bajar el beneficio de muerte y tener costos.",
+  "Que esto es asesoría financiera, fiscal o legal personalizada."
+ ],
+ "con_iul": true
+}

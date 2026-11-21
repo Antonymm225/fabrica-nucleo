@@ -1,0 +1,46 @@
+# FF-013 · Finanzas Familiares · EST-01 · El hueco de tu ingreso
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Proporción de jóvenes de 20 años que quedarán incapacitados antes de los 67 (aprox. 1 de cada 4) = 25 % · https://www.ssa.gov/disabilityfacts/materials/pdf/poster-9.pdf
+# Fuente: Pago mensual promedio del seguro por discapacidad del Seguro Social (SSDI) a un trabajador, 2025 = 1580 $ · https://www.collinsprice.com/average-ssdi-monthly-benefit-amount-in-2025/
+# Fuente: Renta bruta mediana mensual en EE.UU., 2024 (Censo, ACS) = 1487 $ · https://zolve.com/blog/cost-of-living-in-usa/
+# Fuente: Gasto promedio mensual de un hogar en EE.UU., 2024 (BLS) = 6545 $ · https://financefirst.co/reports/cost-of-living-budget-pressure-2026
+# Fuente: Crecimiento máximo anual del IUL según la ficha (tope, no garantizado) = 10 % · https://ficha-interna-iul
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si te lesionas y no puedes trabajar,
+el gobierno te paga la *renta*. Nada más.
+Se llama el *hueco del ingreso*.
+Y al final te digo cómo *taparlo*.
+Cerca de uno de cada *cuatro* trabajadores
+queda *incapacitado* antes de retirarse.
+Tu cuerpo es tu *herramienta* de trabajo.
+Si falla, el Seguro Social paga
+unos [$1,580|mil quinientos ochenta dólares] al *mes*.
+Suena a ayuda, ¿verdad?
+Pero la renta promedio ya es [$1,487|mil cuatrocientos ochenta y siete dólares].
+Te sobran solo [$93|noventa y tres dólares] al *mes*.
+Eso no alcanza ni para el *mandado*.
+Y lo peor: un hogar gasta
+unos [$6,545|seis mil quinientos cuarenta y cinco dólares] al *mes*.
+Te faltan casi [$5,000|cinco mil dólares] cada *mes*.
+Ahora, ¿cómo tapas ese *hueco*?
+Te ayuda un [IUL|i u ele], un *seguro de vida indexado*.
+Si te da una enfermedad *crónica*,
+*crítica* o terminal, puedes usar parte
+del dinero *en vida*, según tu póliza.
+Imagina que, con los años,
+pones [$72,000|setenta y dos mil dólares] en *total*.
+Y tu dinero puede *crecer*,
+*hasta un* [10%|diez por ciento] al año.
+Como tope, podrías llegar a unos
+[$226,000|doscientos veintiséis mil dólares] para tu *retiro*.
+Si el mercado cae, *no pierde*
+por esa caída. Tiene *piso cero*.
+Y si tú faltas, tu *familia* queda protegida.
+Esta semana, suma lo que gasta tu casa,
+réstale [$1,580|mil quinientos ochenta dólares] y mira cuánto *falta*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja con su *cuerpo*.

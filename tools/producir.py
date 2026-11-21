@@ -351,14 +351,16 @@ TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero d
 TAREA_IUL = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Elige UN tema nuevo que gire alrededor de uno de sus 3 beneficios: ahorro para el retiro (el dinero que se pierde en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia, o el costo de empezar tarde), protección de la familia si tú faltas (el seguro del trabajo que no alcanza, la familia que depende de tus envíos), o beneficios en vida si te da una enfermedad crónica, crítica o terminal (el que trabaja con su cuerpo). Busca en la web los datos del problema en Estados Unidos (inflación, tasas del banco, depreciación, Seguro Social, etc.) en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero, retiro de hasta medio millón). Calcula las proyecciones con el 10% al año (aporte al inicio de cada año, interés anual), atadas a la edad en que empieza la persona (ej.: empieza a los 30 y llega a los 60). El dinero que se junta no tiene tope; el único tope es el 10% de crecimiento de un año."""
 
 
-def investigar(c, marca, historia, iul=False):
+def investigar(c, marca, historia, iul=False, beneficio=None):
     pedido = f"""Eres investigador de contenido de finanzas personales para la marca "{marca['nombre']}".
 Tono de la marca: {marca['tono']}
 Temas preferidos: {', '.join(marca['temas'])}.
 Audiencia: hispanos en Estados Unidos de 30 a 55 años que trabajan en oficios (roofing, jardinería, construcción). No saben de finanzas.
 
-Temas que la marca YA hizo (no repitas ni el tema ni el ángulo):
+Videos que la marca YA hizo. No repitas ni el tema, ni la idea de fondo, ni el dato del gancho, aunque lo digas con otras palabras. Si tu idea se parece a alguna de esta lista (mismo problema, misma cifra principal o misma salida), descártala y busca otra distinta:
 {chr(10).join('- ' + h for h in historia) or '- (ninguno)'}
+{f"""
+En este video el IUL entra por UN solo beneficio: {beneficio[0]} ({beneficio[1]}). No uses los otros dos como tema central. Y dentro de ese beneficio, busca un problema que NO esté en la lista de arriba.""" if iul and beneficio else ""}
 
 {TAREA_IUL if iul else TAREA_VALOR}
 
@@ -381,6 +383,7 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     if not m: raise RuntimeError("la investigación no devolvió el bloque JSON")
     ficha = json.loads(m[-1])
     ficha["con_iul"] = iul
+    if iul and beneficio: ficha["beneficio_iul"] = beneficio[0]
     if iul: ficha["datos"] = ficha.get("datos", []) + DATOS_IUL
     return ficha
 
@@ -460,11 +463,41 @@ def ejemplos_de(estilo):
 
 
 def historia_de(codigo):
+    """Lo que la marca ya hizo: título, idea de fondo, gancho y si llevó IUL (para no repetir la idea con otras palabras)."""
     hs = []
     for g in sorted(glob.glob(os.path.join(ROOT, "videos", f"{codigo}-*", "guion.txt"))):
-        prim = open(g, encoding="utf-8").readline().strip()
-        hs.append(prim.split("·")[-1].strip() if "·" in prim else prim.lstrip("# "))
+        D = os.path.dirname(g)
+        lin = [l.strip() for l in open(g, encoding="utf-8")]
+        prim = lin[0] if lin else ""
+        titulo = prim.split("·")[-1].strip() if "·" in prim else prim.lstrip("# ")
+        cuerpo = [TAG.sub(r"\1", l).replace("*", "") for l in lin if l and not l.startswith("#")]
+        h = f"{os.path.basename(D)} «{titulo}»"
+        tj = os.path.join(D, "tema.json")
+        if os.path.exists(tj):
+            f = json.load(open(tj, encoding="utf-8"))
+            if f.get("con_iul"): h += f" [IUL: {f.get('beneficio_iul', 'sin clasificar')}]"
+            if f.get("angulo"): h += f" · idea: {f['angulo']}"
+        if cuerpo: h += " · gancho: " + " ".join(cuerpo[:2])
+        hs.append(h)
     return hs
+
+
+BENEFICIOS_IUL = [
+    ("ahorro para el retiro", "el dinero que hoy se pierde o no crece (en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia) o el costo de empezar tarde, contra un ahorro que crece con interés compuesto"),
+    ("protección de la familia si tú faltas", "qué le pasa a la familia (la de aquí o la que depende de tus envíos) si el que trae el dinero falta: el seguro del trabajo que no alcanza o que se pierde al cambiar de patrón"),
+    ("beneficios en vida si te enfermas", "una enfermedad crónica, crítica o terminal que te deja sin poder trabajar, y poder usar parte del beneficio en vida"),
+]
+
+
+def beneficio_iul(codigo):
+    """El beneficio del IUL va rotando: el menos usado hasta ahora (y, en empate, el que no fue el último)."""
+    usados = []
+    for tj in sorted(glob.glob(os.path.join(ROOT, "videos", f"{codigo}-*", "tema.json"))):
+        f = json.load(open(tj, encoding="utf-8"))
+        if f.get("con_iul") and f.get("beneficio_iul"): usados.append(f["beneficio_iul"])
+    nombres = [b[0] for b in BENEFICIOS_IUL]
+    orden = sorted(nombres, key=lambda n: (usados.count(n), n == (usados[-1] if usados else None), nombres.index(n)))
+    return next(b for b in BENEFICIOS_IUL if b[0] == orden[0])
 
 
 def siguiente(codigo):
@@ -510,8 +543,9 @@ def main():
     for _ in range(a.cantidad):
         cod = siguiente(marca["codigo"])
         try:
-            ficha = investigar(c, marca, historia_de(marca["codigo"]), con_iul(cod))
-            print(f"{cod}: tema «{ficha['titulo']}» · {'con IUL' if ficha['con_iul'] else 'puro valor'} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
+            iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
+            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben)
+            print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + ben[0]) if ficha['con_iul'] else 'puro valor'} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
             err = revisar(v["lineas"], esc, ficha, marca) + revisar_aviso(v.get("aviso", ""))

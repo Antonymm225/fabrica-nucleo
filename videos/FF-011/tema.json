@@ -109,5 +109,6 @@
   "Que puedes sacar el dinero sin consecuencias. Los retiros y préstamos pueden bajar el beneficio de muerte y tener costos.",
   "Que esto es asesoría financiera, fiscal o legal personalizada."
  ],
- "con_iul": true
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas"
 }

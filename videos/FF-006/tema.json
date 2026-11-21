@@ -112,5 +112,6 @@
   "El banco es una estafa.",
   "Cifras de $1,073,256 sin aclarar que son una proyección con el tope del 10%."
  ],
- "con_iul": true
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro"
 }

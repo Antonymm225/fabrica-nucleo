@@ -104,5 +104,6 @@
   "Que 1 de cada 4 te va a pasar a ti. Es un promedio, no una predicción.",
   "Que no hay cargos ni costos dentro de la póliza."
  ],
- "con_iul": true
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas"
 }

@@ -109,5 +109,6 @@
   "Que $4,000 al mes o $2,400 al año son cifras reales de todos: son supuestos de ejemplo.",
   "Que no hay costos: el IUL tiene costos y cargos que el agente debe explicar."
  ],
- "con_iul": true
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas"
 }

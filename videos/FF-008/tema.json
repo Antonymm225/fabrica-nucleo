@@ -114,5 +114,6 @@
   "Cifras de sueldo o de hueco como si fueran las de todos (el ejemplo de $4,000 al mes es ilustrativo)",
   "Promesas de cuánto vas a poder retirar, sin explicar que depende de aportes, cargos y tiempo"
  ],
- "con_iul": true
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro"
 }

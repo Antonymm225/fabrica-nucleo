@@ -13,6 +13,12 @@ on:
         description: "Códigos de video separados por coma (ej. FF-001,FF-002)"
         required: true
         default: "FF-001"
+  workflow_call:
+    inputs:
+      videos:
+        description: "Códigos de video separados por coma"
+        required: true
+        type: string
   push:
     branches: [main]
     paths: ["videos/**"]
@@ -21,7 +27,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: render-${{ github.ref }}-${{ github.event.inputs.videos || github.sha }}
+  group: render-${{ inputs.videos || github.sha }}
   cancel-in-progress: false
 
 jobs:
@@ -32,11 +38,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 2
       - id: lista
         name: Qué videos hacer
         env:
-          ENTRADA: ${{ github.event.inputs.videos }}
+          ENTRADA: ${{ inputs.videos }}
           ANTES: ${{ github.event.before }}
         run: |
           if [ -n "$ENTRADA" ]; then
@@ -69,6 +76,8 @@ jobs:
         video: ${{ fromJson(needs.plan.outputs.lista) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:

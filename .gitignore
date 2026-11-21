@@ -23,3 +23,5 @@ credenciales*.json
 videos/*/vo.wav
 videos/*/vo.json
 videos/*/voz/
+
+# Guiones rechazados por la revisión (se guardan para revisar)

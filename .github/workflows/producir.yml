@@ -1,0 +1,74 @@
+# Producir videos de punta a punta en GitHub, sin la PC:
+# Claude (API) elige e investiga el tema → escribe guion y escenas → revisión automática → voz (ElevenLabs) → render.
+# Uso: Actions → "Producir videos" → Run workflow → marca y cantidad.
+# Necesita los Secrets ANTHROPIC_API_KEY y ELEVENLABS_API_KEY.
+name: Producir videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      marca:
+        description: "Marca (nombre del archivo en marcas/, sin .json)"
+        required: true
+        default: "finanzas-familiares"
+      cantidad:
+        description: "Cuántos videos nuevos"
+        required: true
+        default: "1"
+
+permissions:
+  contents: read
+
+jobs:
+  guionista:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    outputs:
+      lista: ${{ steps.escribir.outputs.lista }}
+      videos: ${{ steps.escribir.outputs.videos }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar el SDK de Claude
+        run: python -m pip install -q anthropic
+
+      - name: Tema, guion y escenas con Claude
+        id: escribir
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MARCA: ${{ github.event.inputs.marca }}
+          CANTIDAD: ${{ github.event.inputs.cantidad }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::error::Falta el Secret ANTHROPIC_API_KEY"; exit 1; fi
+          if ! [ -f "marcas/$MARCA.json" ]; then echo "::error::No existe marcas/$MARCA.json"; exit 1; fi
+          python -X utf8 tools/producir.py --marca "$MARCA" --cantidad "$CANTIDAD"
+          LISTA=$(grep '^lista=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2-)
+          echo "videos=$(echo "$LISTA" | jq -r 'join(",")')" >> "$GITHUB_OUTPUT"
+
+      - name: Guardar los guiones en el repo
+        if: always()
+        run: |
+          git config user.name "fabrica-bot"
+          git config user.email "fabrica-bot@users.noreply.github.com"
+          git add videos rechazados 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nada nuevo"; exit 0; fi
+          git commit -m "Guiones nuevos de ${{ github.event.inputs.marca }}: ${{ steps.escribir.outputs.videos }}"
+          git push
+
+  render:
+    needs: guionista
+    if: needs.guionista.outputs.videos != ''
+    permissions:
+      contents: read
+    uses: ./.github/workflows/render.yml
+    with:
+      videos: ${{ needs.guionista.outputs.videos }}
+    secrets: inherit

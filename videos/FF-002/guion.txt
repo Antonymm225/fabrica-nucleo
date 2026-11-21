@@ -1,0 +1,25 @@
+# FF-002 · Finanzas Familiares · EST-01 · La troca a 72 meses
+# Formato: una frase por línea. [mostrado|hablado] para cifras. *palabra* = palabra clave.
+# Cifras verificadas con Python: préstamo de $40,000 al 9% anual.
+# 72 meses: pago $721.02, intereses $11,913.55. 48 meses: pago $995.40, intereses $7,779.28. Diferencia $4,134.27.
+# BLOQUE 1
+Esa troca de [$40,000|cuarenta mil dólares]
+te puede costar casi [$12,000|doce mil] *extra*.
+Se llama el *crédito largo*.
+Te la venden a [72|setenta y dos] meses,
+con un interés del [9%|nueve por ciento] al *año*.
+Pagas [$721|setecientos veintiún dólares] al mes,
+durante *seis años*.
+Y le dejas al banco [$11,914|once mil novecientos catorce] en *intereses*.
+Eso es la *alcancía* de tus hijos,
+un año de *escuela*,
+y parte del enganche de tu *casa*.
+Pero si la pagas en [48|cuarenta y ocho] meses,
+pagas [$995|novecientos noventa y cinco] al mes,
+y solo [$7,779|siete mil setecientos setenta y nueve] de *intereses*.
+Antes de firmar, pregunta el *total a pagar*,
+no solo el *pago mensual*.
+Son más de [$4,000|cuatro mil dólares]
+que se quedan en *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a comprar *troca*.

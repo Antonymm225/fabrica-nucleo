@@ -1,0 +1,41 @@
+{
+  "marca": "finanzas-familiares",
+  "estilo": "EST-01",
+  "musica": "jugueton",
+  "aviso": "Ejemplo: préstamo de $40,000 al 9% anual. Contenido educativo, no es asesoría financiera.",
+  "escenas": [
+    { "tipo": "cifra", "desde": [0], "capitulo": "tu troca", "contador": "precio |$40,000",
+      "objeto": "troca", "valor": 40000, "prefijo": "$", "etiqueta": "precio de la troca",
+      "hasta": [0, "40,000"], "insignia": { "texto": "+$12,000 EXTRA", "en": [1, "extra"] } },
+    { "tipo": "tablero", "desde": [2], "capitulo": "el nombre", "contador": "trampa |1 de 1", "entrada": "destello",
+      "filas": ["CREDITO", "LARGO"], "en": [2, "largo"] },
+    { "tipo": "cifra", "desde": [3], "capitulo": "el ejemplo", "contador": "plazo |72 meses",
+      "objeto": "calendario", "valor": 72, "etiqueta": "meses para pagar",
+      "hasta": [3, "72"], "insignia": { "texto": "9% AL AÑO", "en": [4, "9%"] } },
+    { "tipo": "tiempo", "desde": [5], "capitulo": "opción a", "contador": "pago |$721 al mes",
+      "gafete": { "titulo": "72 MESES", "texto": "$721", "sub": "al mes", "cara": 2 },
+      "meses": { "desde": [6, "durante"], "hasta": [6, "años"], "total": 72, "texto": "6 AÑOS" },
+      "banco": { "en": [7, "banco"], "valor": 11914, "etiqueta": "intereses" } },
+    { "tipo": "colgantes", "desde": [8], "capitulo": "lo que pierdes", "contador": "intereses |-$11,914",
+      "items": [
+        { "objeto": "alcancia", "etiqueta": "ALCANCÍA", "en": [8, "alcancía"], "w": 290 },
+        { "objeto": "escuela", "etiqueta": "ESCUELA", "en": [9, "escuela"], "w": 300, "etiquetaY": 205 },
+        { "objeto": "casa", "etiqueta": "CASA", "en": [10, "casa"], "w": 320, "etiquetaY": 185 }
+      ] },
+    { "tipo": "comparativa", "desde": [11], "capitulo": "opción b", "contador": "plazo |48 meses", "entrada": "cuadritos",
+      "a": { "texto": "A · 72 MESES" }, "b": { "texto": "B · 48 MESES", "en": [11, "48"] },
+      "filas": [
+        { "titulo": "años pagando", "a": 6, "b": 4, "textoA": "6 años", "textoB": "4 años", "en": [12, "995"] },
+        { "titulo": "intereses", "a": 11914, "b": 7779, "textoA": "$11,914", "textoB": "$7,779", "en": [13, "7,779"] }
+      ],
+      "ganador": { "texto": "AHORRAS $4,134", "en": [13, "7,779"] } },
+    { "tipo": "pasos", "desde": [14], "capitulo": "qué hacer",
+      "contador": [ { "en": [14], "texto": "antes de |firmar" } ],
+      "tasas": ["MENSUAL", "TOTAL", "TASA"], "elegida": 1, "primero": "MIRA ESTO", "elegir": [14, "total"] },
+    { "tipo": "oscura", "desde": [16], "capitulo": "tu casa", "contador": "ahorro |+$4,000", "entrada": "corte",
+      "cifra": { "texto": "+$4,000", "etiqueta": "para tu familia", "en": [16, "4,000"] },
+      "cae": { "objeto": "casa", "letrero": "TU CASA", "en": [17, "quedan"] } },
+    { "tipo": "cierre", "desde": [18], "capitulo": "sígueme", "contador": "finanzas |familiares", "entrada": "ola",
+      "nombre": "Finanzas Familiares", "sub": "dinero claro para tu familia", "seguir": [18, "Sígueme"], "compartir": [19, "compártelo"] }
+  ]
+}

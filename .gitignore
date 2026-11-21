@@ -19,3 +19,7 @@ estilos/*/referencia/
 .env
 *.key
 credenciales*.json
+# Voz: la genera GitHub con ElevenLabs (no se sube)
+videos/*/vo.wav
+videos/*/vo.json
+videos/*/voz/

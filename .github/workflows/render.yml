@@ -1,7 +1,9 @@
-# Renderiza videos en las máquinas de GitHub.
-# - A mano: pestaña Actions → "Render de videos" → Run workflow → escribe el código (ej. FF-001, o varios: FF-001,FF-002).
-# - Solo: cada vez que se sube un cambio dentro de videos/<código>/, se renderiza ese video.
-# El MP4 queda en "Artifacts" del run por 1 día (después GitHub lo borra solo). Más adelante se sube directo a Drive.
+# Fábrica de videos en GitHub: voz (ElevenLabs por API) + render (Remotion). Nada corre en la PC.
+# - Solo: cada vez que se sube un cambio dentro de videos/<código>/, se hace ese video.
+# - A mano: pestaña Actions → "Render de videos" → Run workflow → códigos (ej. FF-001,FF-002).
+# Cada video necesita en el repo: videos/<código>/guion.txt y videos/<código>/escenas.json.
+# La voz se guarda en caché según el guion: si el guion no cambia, no se vuelve a pagar a ElevenLabs.
+# El MP4 queda en "Artifacts" del run por 1 día (después GitHub lo borra solo). Más adelante va directo a Drive.
 name: Render de videos
 
 on:
@@ -32,7 +34,7 @@ jobs:
         with:
           fetch-depth: 2
       - id: lista
-        name: Qué videos renderizar
+        name: Qué videos hacer
         env:
           ENTRADA: ${{ github.event.inputs.videos }}
           ANTES: ${{ github.event.before }}
@@ -45,13 +47,13 @@ jobs:
             if git cat-file -e "$BASE^{commit}" 2>/dev/null; then
               CODIGOS=$(git diff --name-only "$BASE" HEAD -- videos | cut -d/ -f2 | sort -u)
             else
-              # primera subida del repo: renderiza todos los videos que vengan en ese commit
+              # primera subida del repo: hace todos los videos que vengan en ese commit
               CODIGOS=$(git ls-tree -r --name-only HEAD -- videos | cut -d/ -f2 | sort -u)
             fi
           fi
           VALIDOS=""
           for c in $CODIGOS; do
-            if [ -f "videos/$c/escenas.json" ] && [ -f "videos/$c/vo.json" ] && [ -f "videos/$c/vo.wav" ]; then VALIDOS="$VALIDOS $c"; else echo "::warning::$c no está completo (falta escenas.json, vo.json o vo.wav)"; fi
+            if [ -f "videos/$c/escenas.json" ] && [ -f "videos/$c/guion.txt" ]; then VALIDOS="$VALIDOS $c"; else echo "::warning::$c no está completo (falta guion.txt o escenas.json)"; fi
           done
           echo "lista=$(printf '%s\n' $VALIDOS | jq -R . | jq -cs 'map(select(length>0))')" >> "$GITHUB_OUTPUT"
 
@@ -88,8 +90,28 @@ jobs:
         working-directory: engine
         run: npm ci --no-audit --no-fund
 
-      - name: Instalar ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Instalar ffmpeg y numpy
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python -m pip install -q numpy
+
+      - name: Caché de la voz (mismo guion y misma voz = no se paga otra vez)
+        id: voz
+        uses: actions/cache@v4
+        with:
+          path: |
+            videos/${{ matrix.video }}/vo.wav
+            videos/${{ matrix.video }}/vo.json
+            videos/${{ matrix.video }}/voz
+          key: voz-${{ matrix.video }}-${{ hashFiles(format('videos/{0}/guion.txt', matrix.video), 'config.json') }}
+
+      - name: Voz con ElevenLabs
+        if: steps.voz.outputs.cache-hit != 'true'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ -z "$ELEVENLABS_API_KEY" ]; then echo "::error::Falta el Secret ELEVENLABS_API_KEY"; exit 1; fi
+          python -X utf8 tools/voz.py "${{ matrix.video }}"
 
       - name: Render ${{ matrix.video }}
         working-directory: engine
@@ -102,12 +124,13 @@ jobs:
           SALIDA: ${{ github.workspace }}/salida
         run: |
           python -X utf8 tools/finalizar.py "${{ matrix.video }}" "${{ matrix.video }}"
+          cp "videos/${{ matrix.video }}/voz/qa.txt" "salida/${{ matrix.video }}_revision_voz.txt" 2>/dev/null || true
           ls -la salida
 
       - name: Guardar MP4 (se borra en 1 día)
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.video }}
-          path: salida/${{ matrix.video }}.mp4
+          path: salida/
           retention-days: 1
           compression-level: 0

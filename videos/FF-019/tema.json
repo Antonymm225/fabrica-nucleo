@@ -1,0 +1,90 @@
+{
+ "titulo": "La tele que pagas tres veces",
+ "angulo": "Te dicen «solo $38 por semana, sin crédito», pero al año terminas pagando casi el triple de lo que cuesta la tele.",
+ "explicacion": "Las tiendas de renta con opción a compra no piden crédito ni enganche. Por eso el pago semanal se ve chiquito. Pero una tele de $660 en la tienda se vuelve $1,976 en un año a $38 por semana. Eso son $1,316 de más, casi 3 veces el precio. Si la compras con una tarjeta normal a 21% y la pagas en 12 meses, pagas unos $737. Y si juntas $38 por semana, la tienes en menos de 18 semanas sin pagar intereses.",
+ "datos": [
+  {
+   "dato": "Precio de una tele en tienda (ejemplo NFCC)",
+   "valor": 660,
+   "unidad": "$",
+   "fuente": "https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/"
+  },
+  {
+   "dato": "Pago semanal de renta con opción a compra por la misma tele",
+   "valor": 38,
+   "unidad": "$",
+   "fuente": "https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/"
+  },
+  {
+   "dato": "Total pagado en un año con renta con opción a compra, sin impuestos ni cargos",
+   "valor": 1976,
+   "unidad": "$",
+   "fuente": "https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/"
+  },
+  {
+   "dato": "Según la FTC, el costo total de comprar así suele ser mucho más alto que el precio en tienda",
+   "valor": 1,
+   "unidad": "afirmación cualitativa (sin cifra)",
+   "fuente": "https://www.ftc.gov/news-events/news/press-releases/2001/07/federal-trade-commission-testifies-rent-own-industry-united-states"
+  },
+  {
+   "dato": "Tasa promedio aproximada de tarjeta de crédito, supuesto para la comparación (verificar la cifra vigente)",
+   "valor": 21,
+   "unidad": "%",
+   "fuente": "https://www.federalreserve.gov/releases/g19/current/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Total pagado en 52 semanas a $38 por semana",
+   "expresion": "38*52",
+   "resultado": 1976
+  },
+  {
+   "descripcion": "Dinero de más frente al precio de tienda",
+   "expresion": "38*52-660",
+   "resultado": 1316
+  },
+  {
+   "descripcion": "Cuántas veces pagas el precio de la tele",
+   "expresion": "round(1976/660, 2)",
+   "resultado": 2.99
+  },
+  {
+   "descripcion": "Pago mensual de la tele de $660 con tarjeta a 21% en 12 meses",
+   "expresion": "round(660*(0.21/12)/(1-(1+0.21/12)**-12), 2)",
+   "resultado": 61.46
+  },
+  {
+   "descripcion": "Total pagado con la tarjeta a 21% en 12 meses",
+   "expresion": "round(660*(0.21/12)/(1-(1+0.21/12)**-12)*12, 2)",
+   "resultado": 737.46
+  },
+  {
+   "descripcion": "Intereses pagados con la tarjeta",
+   "expresion": "round(660*(0.21/12)/(1-(1+0.21/12)**-12)*12-660, 2)",
+   "resultado": 77.46
+  },
+  {
+   "descripcion": "Ahorro de la tarjeta frente a la renta con opción a compra",
+   "expresion": "round(1976-660*(0.21/12)/(1-(1+0.21/12)**-12)*12, 2)",
+   "resultado": 1238.54
+  },
+  {
+   "descripcion": "Semanas para juntar $660 ahorrando $38 por semana",
+   "expresion": "round(660/38, 2)",
+   "resultado": 17.37
+  }
+ ],
+ "consejo": "Antes de firmar una renta con opción a compra, pregunta el «precio total si la compro» y compáralo con el precio de tienda. Si lo necesitas ya, busca una tele usada o reacondicionada, o paga la compra en tienda a plazos, si te lo permiten. Si no, aparta lo mismo que pagarías por semana en una cuenta aparte, y en menos de 18 semanas la compras de contado. Pregunta siempre cuánto pagas en total.",
+ "que_no_decir": [
+  "Que rent-to-own es una estafa ilegal: es legal, solo es muy caro.",
+  "Que la tarjeta de crédito es barata: a 21% también cuesta, y solo conviene si la pagas rápido.",
+  "Que todos los precios y pagos son iguales en todas las tiendas: los números son un ejemplo de la NFCC.",
+  "Prometer que todos van a ahorrar exactamente $1,238.54.",
+  "Recomendar una tienda, una tarjeta o un banco en particular.",
+  "Decir que no hay costos en la tarjeta: hay intereses, y la tasa varía según tu crédito.",
+  "Culpar o avergonzar a quien ya firmó un contrato así."
+ ],
+ "con_iul": false
+}

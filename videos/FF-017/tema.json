@@ -1,0 +1,134 @@
+{
+ "titulo": "El costo escondido de mandar dinero a casa",
+ "angulo": "Mandas $200 a tu familia y crees que el costo es solo el cargo, pero el tipo de cambio malo te cobra otro tanto, y pagar con tarjeta de crédito casi duplica el costo.",
+ "explicacion": "Cuando mandas dinero a México, el costo no es solo el cargo que ves. La empresa también te da un tipo de cambio peor que el real, y ahí se queda otra parte. Con la misma empresa, el mismo monto y el mismo destino, pagar con tarjeta de crédito cuesta casi el doble que pagar con débito o cuenta de banco. Mandando $200 cada mes, la diferencia en un año son más de $93. Y la ley te da 30 minutos para cancelar un envío si te equivocaste.",
+ "datos": [
+  {
+   "dato": "Cargo de Western Union por $200 a México por internet pagando con tarjeta de crédito (oct-dic 2024)",
+   "valor": 11.99,
+   "unidad": "$",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251"
+  },
+  {
+   "dato": "Tipo de cambio que te dan con tarjeta de crédito (pesos por dólar)",
+   "valor": 20.06,
+   "unidad": "pesos por $1",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251"
+  },
+  {
+   "dato": "Costo total publicado por el Banco Mundial al pagar con tarjeta de crédito, envío de $200",
+   "valor": 7.66,
+   "unidad": "%",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251"
+  },
+  {
+   "dato": "Cargo de Western Union por $200 a México por internet pagando con tarjeta de débito",
+   "valor": 4.99,
+   "unidad": "$",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252"
+  },
+  {
+   "dato": "Tipo de cambio que te dan con tarjeta de débito (pesos por dólar)",
+   "valor": 20.14,
+   "unidad": "pesos por $1",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252"
+  },
+  {
+   "dato": "Tipo de cambio de referencia (el real, sin margen)",
+   "valor": 20.4,
+   "unidad": "pesos por $1",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252"
+  },
+  {
+   "dato": "Costo total publicado por el Banco Mundial al pagar con débito, envío de $200",
+   "valor": 3.74,
+   "unidad": "%",
+   "fuente": "https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252"
+  },
+  {
+   "dato": "Costo promedio mundial de mandar $200 en bancos (tercer trimestre de 2025, según el Banco Mundial)",
+   "valor": 14.9,
+   "unidad": "%",
+   "fuente": "https://www.inpay.com/news-and-insights/true-cost-of-remittance/"
+  },
+  {
+   "dato": "Minutos que tienes para cancelar un envío después de pagar (regla del CFPB)",
+   "valor": 30,
+   "unidad": "minutos",
+   "fuente": "https://files.consumerfinance.gov/f/201408_cfpb_compliance-guide_intl-money-transfer-small-entity-compliance-guide.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Dólares que pierdes por el tipo de cambio peor al pagar con tarjeta de crédito, en un envío de $200",
+   "expresion": "round(200*(20.40-20.06)/20.40,2)",
+   "resultado": 3.33
+  },
+  {
+   "descripcion": "Costo total de un envío de $200 con tarjeta de crédito (cargo + pérdida por tipo de cambio)",
+   "expresion": "round(11.99+200*(20.40-20.06)/20.40,2)",
+   "resultado": 15.32
+  },
+  {
+   "descripcion": "Costo como porcentaje del envío con tarjeta de crédito",
+   "expresion": "round((11.99+200*(20.40-20.06)/20.40)/200*100,2)",
+   "resultado": 7.66
+  },
+  {
+   "descripcion": "Dólares que pierdes por el tipo de cambio al pagar con débito, en un envío de $200",
+   "expresion": "round(200*(20.40-20.14)/20.40,2)",
+   "resultado": 2.55
+  },
+  {
+   "descripcion": "Costo total de un envío de $200 con tarjeta de débito (cargo + pérdida por tipo de cambio)",
+   "expresion": "round(4.99+200*(20.40-20.14)/20.40,2)",
+   "resultado": 7.54
+  },
+  {
+   "descripcion": "Costo como porcentaje del envío con débito",
+   "expresion": "round((4.99+200*(20.40-20.14)/20.40)/200*100,2)",
+   "resultado": 3.77
+  },
+  {
+   "descripcion": "Costo en un año mandando $200 cada mes con tarjeta de crédito",
+   "expresion": "round(12*(11.99+200*(20.40-20.06)/20.40),2)",
+   "resultado": 183.84
+  },
+  {
+   "descripcion": "Costo en un año mandando $200 cada mes con débito",
+   "expresion": "round(12*(4.99+200*(20.40-20.14)/20.40),2)",
+   "resultado": 90.48
+  },
+  {
+   "descripcion": "Diferencia en un año entre pagar con crédito y pagar con débito",
+   "expresion": "round(12*(11.99+200*(20.40-20.06)/20.40)-12*(4.99+200*(20.40-20.14)/20.40),2)",
+   "resultado": 93.36
+  },
+  {
+   "descripcion": "Pesos que recibe tu familia por $200 con tarjeta de crédito",
+   "expresion": "round(200*20.06,2)",
+   "resultado": 4012.0
+  },
+  {
+   "descripcion": "Pesos que recibe tu familia por $200 con débito",
+   "expresion": "round(200*20.14,2)",
+   "resultado": 4028.0
+  },
+  {
+   "descripcion": "Costo en dólares de un envío de $200 en un banco al promedio de 14.9%",
+   "expresion": "round(200*0.149,2)",
+   "resultado": 29.8
+  }
+ ],
+ "consejo": "Antes de mandar dinero, compara tres cosas: el cargo, el tipo de cambio y cuántos pesos va a recibir tu familia. No pagues con tarjeta de crédito, mejor usa débito o cuenta de banco. No mandes por tu banco sin comparar, porque suele ser el canal más caro. Pide el resumen antes de pagar, que la ley te lo exige. Si te equivocas, tienes 30 minutos para cancelar mientras el dinero no se haya recogido ni depositado. Si mandas lo mismo cada mes, haz las cuentas una vez al año.",
+ "que_no_decir": [
+  "No decir que una empresa específica es la más barata o la mejor, los precios cambian cada día.",
+  "No decir que 'mandar sin cargo' es gratis: el tipo de cambio puede traer el costo escondido.",
+  "No prometer que ahorrarás exactamente $93.36: depende de la empresa, el monto, el país y el día.",
+  "No decir que los $93.36 aplican a todos los países, los datos son de EE. UU. a México.",
+  "No afirmar que los bancos siempre cobran 14.9%, es un promedio mundial.",
+  "No decir que cancelar siempre es posible: solo dentro de 30 minutos y si el dinero no se ha recogido ni depositado.",
+  "No recomendar cooperativas ni planes del trabajo, ni dar consejos sobre inversiones o seguros."
+ ],
+ "con_iul": false
+}

@@ -1,0 +1,45 @@
+# FF-018 · Finanzas Familiares · EST-01 · El seguro del trabajo no es tuyo
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+El *seguro de vida* de tu trabajo
+deja a tu familia [$450,000|cuatrocientos cincuenta mil dólares] *corto*.
+Y no es tuyo, es del *patrón*.
+Se llama el *seguro del patrón*.
+Al final te digo qué *hacer* hoy.
+Muchos trabajos te dan un *seguro básico*,
+a veces de *una vez* tu sueldo.
+Parece algo, pero se acaba *rápido*.
+Imagina que tu familia necesita [10|diez] años de *ingreso*.
+Eso puede ser [$500,000|quinientos mil dólares].
+Al seguro le faltan [$450,000|cuatrocientos cincuenta mil dólares].
+Ese hueco es años de *renta* y biles.
+Y lo peor: ese seguro *se pierde*.
+Si cambias de patrón, *desaparece*.
+Si te despiden, *desaparece*.
+Si se acaba la *temporada*, también.
+Pero aquí viene lo que *nadie* te dice.
+Hay uno que sí es *tuyo*.
+Es el [IUL|i u ele], un *seguro de vida indexado*.
+Te lo llevas a *cualquier trabajo*.
+Y mientras lo mantengas, tu familia sigue *protegida*.
+Y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si empiezas joven y juntas [$3,600|tres mil seiscientos dólares] al año,
+podrías llegar a unos [$651,000|seiscientos cincuenta y un mil dólares]
+para tu *retiro*, depende de cuándo empieces.
+Si empiezas [10|diez] años después, con lo mismo,
+llegarías a solo unos [$226,000|doscientos veintiséis mil dólares].
+Esperar [10|diez] años te cuesta *más de* [$424,000|cuatrocientos veinticuatro mil dólares].
+Pregunta hoy en tu trabajo:
+¿cuánto paga mi *seguro de vida*?
+¿Y qué pasa si me *voy*?
+Si paga poco o se pierde al *salir*,
+pide que te expliquen un [IUL|i u ele] *propio*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien solo tiene *seguro del trabajo*.

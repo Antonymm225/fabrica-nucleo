@@ -1,0 +1,79 @@
+{
+ "titulo": "El seguro del trabajo se queda con el patrón",
+ "angulo": "Crees que tu familia está protegida por el seguro del trabajo, pero ese seguro es del patrón: casi siempre alcanza para poco y se pierde el día que cambias de trabajo o te despiden.",
+ "explicacion": "Muchos trabajos dan un seguro de vida básico, a veces de una vez tu sueldo. Con $50,000 al año, eso son $50,000 para una familia que necesita años de tu ingreso. Además, ese seguro está atado al empleo: si cambias de patrón, te despiden o se acaba la temporada, puede desaparecer. Un IUL es tuyo, te lo llevas a cualquier trabajo y, mientras lo mantengas, tu familia sigue protegida. Y el dinero que va juntando crece hasta 10% al año, con piso de cero.",
+ "datos": [
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ingreso de 10 años de una persona que gana $50,000 al año (ejemplo de lo que la familia necesitaría)",
+   "expresion": "50000*10",
+   "resultado": 500000.0
+  },
+  {
+   "descripcion": "Hueco si el seguro del trabajo paga 1 vez el sueldo ($50,000) (ejemplo)",
+   "expresion": "50000*10-50000",
+   "resultado": 450000.0
+  },
+  {
+   "descripcion": "Aporte anual de $300 al mes (ejemplo)",
+   "expresion": "300*12",
+   "resultado": 3600.0
+  },
+  {
+   "descripcion": "Total aportado de los 30 a los 60 años (30 años)",
+   "expresion": "3600*30",
+   "resultado": 108000.0
+  },
+  {
+   "descripcion": "Proyección al 10% anual empezando a los 30 y llegando a los 60 (aporte al inicio de cada año)",
+   "expresion": "round(3600*(((1+0.1)**30-1)/0.1)*(1+0.1),2)",
+   "resultado": 651396.33
+  },
+  {
+   "descripcion": "Total aportado de los 40 a los 60 años (20 años)",
+   "expresion": "3600*20",
+   "resultado": 72000.0
+  },
+  {
+   "descripcion": "Proyección al 10% anual empezando a los 40 y llegando a los 60",
+   "expresion": "round(3600*(((1+0.1)**20-1)/0.1)*(1+0.1),2)",
+   "resultado": 226809.0
+  },
+  {
+   "descripcion": "Diferencia por empezar a los 30 en vez de a los 40",
+   "expresion": "round(3600*(((1+0.1)**30-1)/0.1)*(1+0.1)-3600*(((1+0.1)**20-1)/0.1)*(1+0.1),2)",
+   "resultado": 424587.33
+  }
+ ],
+ "consejo": "Pregunta hoy en tu trabajo: ¿cuánto paga mi seguro de vida? ¿Qué pasa con él si me voy o me despiden? Si paga una vez tu sueldo o se pierde al salir, es poco y no es tuyo. Habla con un agente para ver un IUL propio, que te sigue a cualquier trabajo. Pide que te lo expliquen con tu edad y tu presupuesto.",
+ "que_no_decir": [
+  "Que el seguro del trabajo no sirve para nada (sí sirve, pero es corto y no te lo llevas).",
+  "Que el 10% anual está garantizado (es el máximo en un año; el piso es cero).",
+  "Prometer que tendrás $651,396 a los 60 (es una proyección máxima con aporte constante).",
+  "Presentar los $50,000 de sueldo, el seguro de 1 vez el sueldo y los $300 al mes como datos de fuente (son ejemplos).",
+  "Dar cifras de cuántos trabajadores tienen seguro o de costo de funeral sin verificar la fuente.",
+  "Decir que es inversión sin riesgo ni que sustituye todo el plan financiero.",
+  "Asustar con la muerte; hablar de amor y responsabilidad, de papá a papá."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas"
+}

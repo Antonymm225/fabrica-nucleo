@@ -1,0 +1,702 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: envío de $200 al mes a México con datos del Banco Mundial; el costo cambia según empresa, país y día. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu envío",
+   "contador": "extra |$93 al año",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "93"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 70,
+     "y": 40,
+     "tam": 38,
+     "giro": -10,
+     "en": [
+      0,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$93",
+     "x": 66,
+     "y": 70,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      1,
+      "93"
+     ],
+     "etiqueta": "extra"
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "COSTO",
+    "OCULTO"
+   ],
+   "en": [
+    2,
+    "costo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "tu envío",
+   "contador": "mandas |$200 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "$200",
+     "x": 50,
+     "y": 28,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      4,
+      "200"
+     ]
+    },
+    {
+     "id": "fam",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 78,
+     "y": 62,
+     "tam": 30,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      4,
+      "familia"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "fam",
+     "en": [
+      5,
+      "mes"
+     ],
+     "hasta": [
+      6,
+      "termina"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "lo que ves",
+   "contador": "cargo |$11.99",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Envío por tarjeta",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que mandas",
+       "valor": "$200",
+       "en": [
+        7,
+        "Con"
+       ]
+      },
+      {
+       "texto": "Cargo",
+       "valor": "$11.99",
+       "en": [
+        7,
+        "11.99"
+       ]
+      },
+      {
+       "texto": "Tipo de cambio",
+       "valor": "peor",
+       "en": [
+        8,
+        "otro"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       9,
+       "cambio"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "lo escondido",
+   "contador": "cada envío |$15.32",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 25,
+     "y": 22,
+     "tam": 26,
+     "etiqueta": "EMPRESA"
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      10,
+      "peor"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$3.33",
+     "x": 50,
+     "y": 50,
+     "tam": 9,
+     "color": "gris",
+     "etiqueta": "se te va",
+     "en": [
+      11,
+      "3.33"
+     ],
+     "sale": [
+      12,
+      "total"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$15.32",
+     "x": 50,
+     "y": 50,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "cada envío",
+     "en": [
+      12,
+      "15.32"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "crédito o débito",
+   "contador": "costo |casi 8%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 95,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "CRÉDITO"
+    },
+    {
+     "que": "torre",
+     "x": 36,
+     "y": 95,
+     "tam": 50,
+     "valor": 15.32,
+     "max": 15.32,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      13,
+      "Casi"
+     ],
+     "hasta": [
+      13,
+      "mandas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 64,
+     "y": 95,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "DÉBITO",
+     "en": [
+      14,
+      "aquí"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 50,
+     "valor": 7.54,
+     "max": 15.32,
+     "prefijo": "$",
+     "en": [
+      15,
+      "débito"
+     ],
+     "hasta": [
+      15,
+      "7.54"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "mismo envío",
+   "contador": "mismo |envío",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "e",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 25,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "MISMA EMPRESA",
+     "en": [
+      16,
+      "empresa"
+     ]
+    },
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 75,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "MISMO DESTINO",
+     "en": [
+      16,
+      "destino"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "e",
+     "a": "f",
+     "en": [
+      16,
+      "monto"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Solo cambia cómo pagas",
+     "x": 50,
+     "y": 70,
+     "tam": 5.5,
+     "color": "principal",
+     "en": [
+      17,
+      "Solo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    18
+   ],
+   "capitulo": "en un año",
+   "contador": "con crédito |$184",
+   "entrada": "ola",
+   "objeto": "cartera",
+   "valor": 184,
+   "prefijo": "$",
+   "etiqueta": "al año con crédito",
+   "hasta": [
+    18,
+    "184"
+   ],
+   "insignia": {
+    "texto": "débito: $90",
+    "en": [
+     19,
+     "90"
+    ]
+   }
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "la diferencia",
+   "contador": "extra |$93 al año",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$93",
+    "etiqueta": "pierdes al año",
+    "en": [
+     20,
+     "93"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     21,
+     "familia"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       24,
+       "débito"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 20,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "CRÉDITO",
+     "en": [
+      23,
+      "pagues"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      23,
+      "crédito"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 80,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "DÉBITO O BANCO",
+     "en": [
+      24,
+      "débito"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 80,
+     "y": 74,
+     "en": [
+      24,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "compara",
+   "contador": "compara |3 cosas",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      25
+     ],
+     "items": [
+      {
+       "texto": "El cargo",
+       "en": [
+        25,
+        "cargo"
+       ]
+      },
+      {
+       "texto": "El tipo de cambio",
+       "en": [
+        25,
+        "cambio"
+       ]
+      },
+      {
+       "texto": "Los pesos que recibe tu familia",
+       "en": [
+        26,
+        "pesos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      26,
+      "cuántos"
+     ],
+     "cambia": {
+      "en": [
+       27,
+       "gratis"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "pide el resumen",
+   "contador": "pide |resumen",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "Costo escondido",
+     "x": 50,
+     "y": 50,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      28,
+      "costo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      29,
+      "Pide"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Dame el resumen antes de pagar",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 26,
+     "en": [
+      29,
+      "resumen"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 78,
+     "en": [
+      30,
+      "ley"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "si te equivocas",
+   "contador": "cancelas |30 minutos",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       34,
+       "cuentas"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¡Me equivoqué de monto!",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      31,
+      "equivocaste"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "30 min",
+     "x": 50,
+     "y": 47,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "para cancelar",
+     "en": [
+      32,
+      "30"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 80,
+     "y": 80,
+     "tam": 20,
+     "etiqueta": "SIN RECOGER",
+     "en": [
+      33,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,662 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: tele de $660 en tienda contra $38 por semana durante un año, y tarjeta a 21% en 12 meses. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu tele",
+   "contador": "pagas |por semana",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       0,
+       "casi"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 25,
+     "tam": 28,
+     "en": [
+      0,
+      "tele"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$2,000",
+     "x": 70,
+     "y": 62,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      0,
+      "2,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "contador": "se llama |así",
+   "filas": [
+    "RENTA",
+    "COMPRA"
+   ],
+   "en": [
+    2,
+    "opción"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "lo que dicen",
+   "contador": "pago |$38",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "etiqueta": "EL VENDEDOR",
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2
+    },
+    {
+     "que": "globo",
+     "texto": "Solo $38 por semana, sin crédito",
+     "x": 38,
+     "y": 22,
+     "cola": -1,
+     "en": [
+      4,
+      "solo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 93,
+     "tam": 32,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      5,
+      "crédito"
+     ],
+     "cambia": {
+      "en": [
+       6,
+       "verdad"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el precio",
+   "contador": "tele |$660",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 25,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "EN TIENDA"
+    },
+    {
+     "que": "cifra",
+     "texto": "$660",
+     "x": 72,
+     "y": 30,
+     "tam": 11,
+     "en": [
+      7,
+      "660"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 78,
+     "tam": 26,
+     "etiqueta": "UN AÑO",
+     "en": [
+      8,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "en un año",
+   "contador": "total |$1,976",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 1976,
+     "prefijo": "$",
+     "x": 50,
+     "y": 20,
+     "tam": 10,
+     "en": [
+      9,
+      "38"
+     ],
+     "hasta": [
+      10,
+      "1,976"
+     ]
+    },
+    {
+     "que": "grafica",
+     "inicio": 0,
+     "final": 1976,
+     "barras": 12,
+     "desdeTexto": "SEMANA 1",
+     "hastaTexto": "SEMANA 52",
+     "etiqueta": "$38 por semana",
+     "tam": 55,
+     "x": 50,
+     "y": 92,
+     "en": [
+      9,
+      "semana"
+     ],
+     "hasta": [
+      10,
+      "1,976"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "tres veces",
+   "contador": "de más |$1,316",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 22,
+     "y": 95,
+     "tam": 50,
+     "valor": 660,
+     "max": 1976,
+     "prefijo": "$",
+     "etiqueta": "LA TELE",
+     "hasta": [
+      11,
+      "peor"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 1976,
+     "max": 1976,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "LO QUE PAGAS",
+     "en": [
+      11,
+      "pagaste"
+     ],
+     "hasta": [
+      11,
+      "veces"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$1,316",
+     "x": 50,
+     "y": 20,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      12,
+      "1,316"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "muy caro",
+   "contador": "renta |con opción",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "TU QUINCENA"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 75,
+     "y": 30,
+     "tam": 30,
+     "en": [
+      14,
+      "ilegal"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "t",
+     "en": [
+      14,
+      "ilegal"
+     ],
+     "hasta": [
+      15,
+      "evitas"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "MUY CARO",
+     "color": "rojo",
+     "x": 75,
+     "y": 30,
+     "en": [
+      14,
+      "caro"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      16
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      18
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      19
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 14,
+     "en": [
+      16
+     ],
+     "items": [
+      {
+       "texto": "Pregunta el precio total",
+       "en": [
+        16,
+        "Primero"
+       ]
+      },
+      {
+       "texto": "Compáralo con el de tienda",
+       "en": [
+        18,
+        "compáralo"
+       ]
+      },
+      {
+       "texto": "Si urge, busca una usada",
+       "en": [
+        19,
+        "usada"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "con tarjeta",
+   "contador": "tarjeta |21%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tarjeta normal",
+     "en": [
+      20
+     ],
+     "renglones": [
+      {
+       "texto": "Interés al año",
+       "valor": "21%",
+       "en": [
+        20,
+        "21"
+       ]
+      },
+      {
+       "texto": "Plazo",
+       "valor": "12 meses",
+       "en": [
+        21,
+        "meses"
+       ]
+      }
+     ],
+     "total": {
+      "texto": "Pagas en total",
+      "valor": "$737",
+      "en": [
+       22,
+       "737"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       22,
+       "737"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "aun así",
+   "contador": "ahorras |$1,200",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 28,
+     "y": 28,
+     "tam": 28,
+     "giro": -8,
+     "etiqueta": "INTERESES"
+    },
+    {
+     "que": "cifra",
+     "texto": "$77",
+     "x": 72,
+     "y": 32,
+     "tam": 10,
+     "color": "tinta",
+     "en": [
+      24,
+      "77"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       25,
+       "ahorras"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "check",
+     "x": 75,
+     "y": 70,
+     "en": [
+      25,
+      "ahorras"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "la salida",
+   "contador": "juntas |$660",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2
+    },
+    {
+     "id": "a",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 78,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "CUENTA APARTE",
+     "en": [
+      27,
+      "Aparta"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "a",
+     "en": [
+      27,
+      "semana"
+     ],
+     "hasta": [
+      28,
+      "semanas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 78,
+     "y": 72,
+     "tam": 24,
+     "etiqueta": "18 SEMANAS",
+     "en": [
+      28,
+      "18"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    29
+   ],
+   "capitulo": "el premio",
+   "contador": "intereses |$0",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,316",
+    "etiqueta": "que no pagas",
+    "en": [
+     29,
+     "compras"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "TU TELE",
+    "en": [
+     30,
+     "dólar"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "pregunta |el total",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "cambia": {
+      "en": [
+       31,
+       "total"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto pago en total si la compro?",
+     "x": 50,
+     "y": 22,
+     "cola": 1,
+     "en": [
+      31,
+      "firmar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

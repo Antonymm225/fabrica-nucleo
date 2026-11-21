@@ -1,0 +1,49 @@
+# FF-017 · Finanzas Familiares · EST-01 · El costo escondido de mandar dinero a casa
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo de Western Union por $200 a México por internet pagando con tarjeta de crédito (oct-dic 2024) = 11.99 $ · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251
+# Fuente: Tipo de cambio que te dan con tarjeta de crédito (pesos por dólar) = 20.06 pesos por $1 · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251
+# Fuente: Costo total publicado por el Banco Mundial al pagar con tarjeta de crédito, envío de $200 = 7.66 % · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-251
+# Fuente: Cargo de Western Union por $200 a México por internet pagando con tarjeta de débito = 4.99 $ · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252
+# Fuente: Tipo de cambio que te dan con tarjeta de débito (pesos por dólar) = 20.14 pesos por $1 · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252
+# Fuente: Tipo de cambio de referencia (el real, sin margen) = 20.4 pesos por $1 · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252
+# Fuente: Costo total publicado por el Banco Mundial al pagar con débito, envío de $200 = 3.74 % · https://remittanceprices.worldbank.org/service/western-union-united-states-mexico-252
+# Fuente: Costo promedio mundial de mandar $200 en bancos (tercer trimestre de 2025, según el Banco Mundial) = 14.9 % · https://www.inpay.com/news-and-insights/true-cost-of-remittance/
+# Fuente: Minutos que tienes para cancelar un envío después de pagar (regla del CFPB) = 30 minutos · https://files.consumerfinance.gov/f/201408_cfpb_compliance-guide_intl-money-transfer-small-entity-compliance-guide.pdf
+# BLOQUE 1
+Mandar dinero a casa con *tarjeta de crédito*
+te cuesta más de [$93|noventa y tres dólares] *extra* al año.
+Se llama el *costo escondido*.
+Al final te digo cuántos *minutos* tienes para cancelar.
+Imagina que mandas [$200|doscientos dólares] a tu familia
+cada *mes*, a México.
+Ves el *cargo* y piensas que ahí termina.
+Con *tarjeta de crédito*, el cargo es [$11.99|once dólares con noventa y nueve centavos].
+Pero hay *otro cobro* que no ves.
+Es el *tipo de cambio*.
+Te lo dan peor que el *real*.
+Ahí se te van otros [$3.33|tres dólares con treinta y tres centavos].
+En total, cuesta [$15.32|quince dólares con treinta y dos centavos].
+Casi [8%|ocho por ciento] de lo que mandas.
+Pero aquí viene lo que nadie te dice.
+Con *débito*, el mismo envío cuesta [$7.54|siete dólares con cincuenta y cuatro centavos].
+Misma *empresa*, mismo monto, mismo *destino*.
+Solo cambia cómo *pagas*.
+Al año, con *crédito*, pagas unos [$184|ciento ochenta y cuatro dólares].
+Con *débito*, unos [$90|noventa dólares].
+La diferencia: más de [$93|noventa y tres dólares].
+Eso es una *compra del súper* para tu familia.
+Ahora, ¿cómo lo *evitas*?
+No pagues con *tarjeta de crédito*.
+Usa *débito* o tu cuenta de banco.
+Compara el *cargo*, el *tipo de cambio*,
+y cuántos *pesos* recibe tu familia.
+Y *mandar sin cargo* no es gratis.
+El costo se esconde en el *tipo de cambio*.
+Pide el *resumen* antes de pagar.
+En Estados Unidos, la ley te lo exige.
+¿Y si te equivocaste en el envío?
+Tienes [30|treinta] *minutos* para cancelarlo,
+si nadie lo ha recogido ni depositado.
+Y haz las *cuentas* una vez al año.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien manda dinero a *casa*.

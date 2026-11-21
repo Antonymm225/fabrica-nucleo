@@ -1,0 +1,42 @@
+# FF-019 · Finanzas Familiares · EST-01 · La tele que pagas tres veces
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Precio de una tele en tienda (ejemplo NFCC) = 660 $ · https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/
+# Fuente: Pago semanal de renta con opción a compra por la misma tele = 38 $ · https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/
+# Fuente: Total pagado en un año con renta con opción a compra, sin impuestos ni cargos = 1976 $ · https://www.nfcc.org/blog/why-rent-to-own-is-the-wrong-choice-for-you/
+# Fuente: Según la FTC, el costo total de comprar así suele ser mucho más alto que el precio en tienda = 1 afirmación cualitativa (sin cifra) · https://www.ftc.gov/news-events/news/press-releases/2001/07/federal-trade-commission-testifies-rent-own-industry-united-states
+# Fuente: Tasa promedio aproximada de tarjeta de crédito, supuesto para la comparación (verificar la cifra vigente) = 21 % · https://www.federalreserve.gov/releases/g19/current/
+# BLOQUE 1
+Una tele te puede costar casi [$2,000|dos mil dólares]
+si la pagas *por semana*.
+Se llama renta con *opción a compra*.
+Al final te digo cómo *evitarla*.
+Te dicen: solo [$38|treinta y ocho] por *semana*,
+sin *crédito* y sin enganche.
+Suena fácil, ¿verdad?
+Pero esa tele cuesta [$660|seiscientos sesenta dólares] en *tienda*.
+Veamos qué pasa en *un año*.
+[$38|treinta y ocho] cada *semana*, todo el año,
+son [$1,976|mil novecientos setenta y seis dólares] en total.
+Y lo peor: pagaste *tres veces* la tele.
+Son [$1,316|mil trescientos dieciséis dólares] de *más*.
+Con eso compras casi *otras dos teles*.
+Y no es ilegal, es *muy caro*.
+Ahora, ¿cómo lo evitas?
+Primero, pregunta el *precio total*.
+¿Cuánto pago en *total* si la compro?
+Y compáralo con el precio de *tienda*.
+Si la necesitas ya, busca una *usada*.
+Con una tarjeta normal a [21%|veintiuno por ciento],
+pagada en [12|doce] *meses*,
+pagas unos [$737|setecientos treinta y siete dólares] en total.
+Ojo: la tarjeta también cobra *intereses*.
+Son unos [$77|setenta y siete dólares] de *interés*.
+Y te ahorras más de [$1,200|mil doscientos dólares].
+Ahora sí, lo que te dije al principio.
+Aparta [$38|treinta y ocho] por semana en una *cuenta aparte*,
+y en menos de [18|dieciocho] *semanas*
+compras la tele de *contado*,
+sin pagar un dólar de *intereses*.
+Antes de firmar, pregunta cuánto pagas *en total*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra *a pagos semanales*.

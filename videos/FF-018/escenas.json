@@ -1,0 +1,683 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de $50,000 al año, seguro del trabajo de una vez el sueldo y $3,600 al año desde joven, con crecimiento de hasta 10% anual. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 0,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu seguro",
+   "contador": "te falta |$450,000",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 92,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      0
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "450,000"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 32,
+     "tam": 30,
+     "en": [
+      1,
+      "familia"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-$450,000",
+     "x": 74,
+     "y": 68,
+     "tam": 8,
+     "color": "principal",
+     "etiqueta": "corto",
+     "en": [
+      1,
+      "450,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    3
+   ],
+   "capitulo": "la trampa",
+   "contador": "seguro |del patrón",
+   "filas": [
+    "SEGURO",
+    "PATRON"
+   ],
+   "en": [
+    3,
+    "seguro"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "tu trabajo",
+   "contador": "seguro |básico",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Seguro del trabajo",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "De quién es",
+       "valor": "del patrón",
+       "en": [
+        5,
+        "seguro"
+       ]
+      },
+      {
+       "texto": "Cuánto paga",
+       "valor": "un sueldo",
+       "en": [
+        6,
+        "vez"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       6,
+       "vez"
+      ],
+      "texto": "¡una vez!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      6,
+      "sueldo"
+     ],
+     "cambia": {
+      "en": [
+       7,
+       "rápido"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "lo que falta",
+   "contador": "faltan |$450,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 24,
+     "y": 95,
+     "tam": 40,
+     "valor": 500000,
+     "max": 500000,
+     "etiqueta": "NECESITA",
+     "en": [
+      8,
+      "Imagina"
+     ],
+     "hasta": [
+      9,
+      "500,000"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 76,
+     "y": 95,
+     "tam": 40,
+     "valor": 450000,
+     "max": 500000,
+     "color": "gris",
+     "etiqueta": "TE FALTA",
+     "en": [
+      10,
+      "faltan"
+     ],
+     "hasta": [
+      10,
+      "450,000"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "RENTA Y BILES",
+     "x": 50,
+     "y": 22,
+     "tam": 4.5,
+     "color": "tinta",
+     "en": [
+      11,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "se pierde",
+   "contador": "seguro |del patrón",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      12
+     ],
+     "cambia": {
+      "en": [
+       14,
+       "despiden"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "seg",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "TU SEGURO",
+     "en": [
+      12,
+      "seguro"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "seg",
+     "en": [
+      13,
+      "desaparece"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 72,
+     "tam": 24,
+     "etiqueta": "TEMPORADA",
+     "en": [
+      15,
+      "temporada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "nadie te dice",
+   "contador": "hay uno |tuyo",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 34,
+     "y": 93,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      16
+     ],
+     "cambia": {
+      "en": [
+       17,
+       "tuyo"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si hubiera uno que sea mío?",
+     "piensa": true,
+     "cola": -1,
+     "x": 36,
+     "y": 22,
+     "en": [
+      16,
+      "nadie"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 62,
+     "en": [
+      17,
+      "tuyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "tu iul",
+   "contador": "seguro |indexado",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      18
+     ]
+    },
+    {
+     "id": "iul",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 74,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "TU IUL",
+     "en": [
+      18,
+      "IUL"
+     ]
+    },
+    {
+     "id": "tr",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 74,
+     "y": 70,
+     "tam": 26,
+     "etiqueta": "OTRO TRABAJO",
+     "en": [
+      19,
+      "cualquier"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "iul",
+     "a": "tr",
+     "en": [
+      19,
+      "llevas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 46,
+     "y": 62,
+     "tam": 20,
+     "en": [
+      20,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    21
+   ],
+   "capitulo": "tu dinero",
+   "contador": "crece |hasta 10%",
+   "entrada": "corte",
+   "objeto": "moneda",
+   "valor": 10,
+   "prefijo": "hasta ",
+   "sufijo": "%",
+   "etiqueta": "al año",
+   "hasta": [
+    22,
+    "año"
+   ],
+   "insignia": {
+    "texto": "PISO CERO",
+    "en": [
+     24,
+     "piso"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu retiro",
+   "contador": [
+    {
+     "en": [
+      25
+     ],
+     "texto": "al año |$3,600"
+    },
+    {
+     "en": [
+      26
+     ],
+     "texto": "retiro |$651,000"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 88,
+     "inicio": 3600,
+     "final": 651000,
+     "barras": 30,
+     "desdeTexto": "HOY",
+     "hastaTexto": "TU RETIRO",
+     "etiqueta": "unos $651,000",
+     "en": [
+      25
+     ],
+     "hasta": [
+      26,
+      "651,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "empezar antes",
+   "contador": "después |$226,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TEMPRANO",
+     "en": [
+      28
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 40,
+     "y": 95,
+     "tam": 55,
+     "valor": 651000,
+     "max": 651000,
+     "en": [
+      28
+     ],
+     "hasta": [
+      28,
+      "mismo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 63,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "DESPUÉS",
+     "en": [
+      28,
+      "después"
+     ],
+     "cambia": {
+      "en": [
+       29,
+       "solo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 87,
+     "y": 95,
+     "tam": 55,
+     "valor": 226000,
+     "max": 651000,
+     "color": "gris",
+     "en": [
+      29,
+      "llegarías"
+     ],
+     "hasta": [
+      29,
+      "226,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "esperar cuesta",
+   "contador": "esperas |10 años",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$424,000",
+    "etiqueta": "por esperar 10 años",
+    "en": [
+     30,
+     "424,000"
+    ]
+   },
+   "cae": {
+    "objeto": "calendario",
+    "letrero": "ESPERAR",
+    "en": [
+     30,
+     "años"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "qué hacer",
+   "contador": "pregunta |hoy",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      31
+     ],
+     "items": [
+      {
+       "texto": "Pregunta en tu trabajo",
+       "en": [
+        31,
+        "Pregunta"
+       ]
+      },
+      {
+       "texto": "¿Cuánto paga mi seguro?",
+       "en": [
+        32,
+        "cuánto"
+       ]
+      },
+      {
+       "texto": "¿Qué pasa si me voy?",
+       "en": [
+        33,
+        "voy"
+       ]
+      },
+      {
+       "texto": "Si es poco, no es tuyo",
+       "en": [
+        34,
+        "pierde"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "tu decisión",
+   "contador": "asesor |certificado",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      35
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Quiero uno que sea mío",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      35,
+      "pide"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 80,
+     "y": 45,
+     "tam": 22,
+     "en": [
+      35,
+      "IUL"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 80,
+     "y": 78,
+     "en": [
+      36,
+      "asesor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

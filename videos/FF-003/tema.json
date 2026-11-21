@@ -1,0 +1,83 @@
+{
+ "titulo": "Tu ahorro dormido en el banco grande",
+ "angulo": "Guardar $5,000 en la cuenta de ahorros normal te paga $19.50 al año, y la misma plata en una cuenta segura en línea te paga $200.",
+ "explicacion": "Muchos papás guardan el dinero de la escuela de los niños o de emergencias en la cuenta de ahorros del banco de la esquina. Ese banco paga en promedio 0.39% al año, y algunos pagan casi nada. Las cuentas de ahorro de alto rendimiento, en bancos en línea, pagan cerca de 4%. Siguen asegurados por la FDIC hasta $250,000, igual que el banco de siempre. Es el mismo dinero y el mismo riesgo, pero en cinco años la diferencia pasa de $1,000.",
+ "datos": [
+  {
+   "dato": "Tasa promedio nacional de cuentas de ahorro (FDIC), noviembre 2026",
+   "valor": 0.39,
+   "unidad": "%",
+   "fuente": "https://www.fool.com/money/research/average-savings-account-interest-rate/"
+  },
+  {
+   "dato": "Tasa aproximada de las mejores cuentas de ahorro de alto rendimiento (Bankrate)",
+   "valor": 4.0,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/banking/savings/good-interest-rate-on-a-savings-account/"
+  },
+  {
+   "dato": "Tasa que pagan algunos de los bancos más grandes en su cuenta de ahorros básica",
+   "valor": 0.01,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/banking/savings/types-of-savings-accounts/"
+  },
+  {
+   "dato": "Cobertura de la FDIC por depositante, por banco (también en bancos en línea)",
+   "valor": 250000,
+   "unidad": "$",
+   "fuente": "https://www.bankrate.com/banking/savings/types-of-savings-accounts/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Interés en 1 año de $5,000 al promedio nacional de 0.39%",
+   "expresion": "round(5000*0.0039,2)",
+   "resultado": 19.5
+  },
+  {
+   "descripcion": "Interés en 1 año de $5,000 al 4%",
+   "expresion": "round(5000*0.04,2)",
+   "resultado": 200.0
+  },
+  {
+   "descripcion": "Diferencia en 1 año entre 4% y 0.39%",
+   "expresion": "round(5000*0.04-5000*0.0039,2)",
+   "resultado": 180.5
+  },
+  {
+   "descripcion": "Interés en 1 año de $5,000 en un banco que paga 0.01%",
+   "expresion": "round(5000*0.0001,2)",
+   "resultado": 0.5
+  },
+  {
+   "descripcion": "Interés ganado en 5 años con $5,000 al 0.39% (se reinvierte)",
+   "expresion": "round(5000*(1+0.0039)**5-5000,2)",
+   "resultado": 98.26
+  },
+  {
+   "descripcion": "Interés ganado en 5 años con $5,000 al 4% (se reinvierte)",
+   "expresion": "round(5000*(1+0.04)**5-5000,2)",
+   "resultado": 1083.26
+  },
+  {
+   "descripcion": "Diferencia en 5 años entre 4% y 0.39%",
+   "expresion": "round((5000*(1.04)**5-5000)-(5000*(1.0039)**5-5000),2)",
+   "resultado": 985.0
+  },
+  {
+   "descripcion": "Interés al mes con $5,000 al 4%, aproximado",
+   "expresion": "round(5000*0.04/12,2)",
+   "resultado": 16.67
+  }
+ ],
+ "consejo": "Esta semana, mira cuánto paga tu cuenta de ahorros (APY) en tu app o en tu estado de cuenta. Si paga menos de 1%, abre una cuenta de ahorro de alto rendimiento en un banco en línea con seguro FDIC. Pide que sea sin cuota mensual y sin mínimo alto. Pasa ahí el dinero de emergencias y de la escuela de los niños, y programa una transferencia automática cada quincena, aunque sean $25. Deja tu cuenta de cheques donde está.",
+ "que_no_decir": [
+  "Te vas a hacer rico con esto.",
+  "La tasa de 4% está garantizada para siempre. Las tasas suben y bajan.",
+  "Todos los bancos en línea son iguales. Revisa que diga Member FDIC.",
+  "Saca todo tu dinero del banco ya.",
+  "Mueve tu dinero a una cuenta de inversión o a la bolsa. Eso es otro tema.",
+  "Recomendar un banco específico como el mejor.",
+  "Los $1,083 de interés son ganancia segura. Es una proyección con una tasa que puede cambiar."
+ ]
+}

@@ -1,0 +1,28 @@
+# FF-003 · Finanzas Familiares · EST-01 · Tu ahorro dormido en el banco
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio nacional de cuentas de ahorro (FDIC), noviembre 2026 = 0.39 % · https://www.fool.com/money/research/average-savings-account-interest-rate/
+# Fuente: Tasa aproximada de las mejores cuentas de ahorro de alto rendimiento (Bankrate) = 4.0 % · https://www.bankrate.com/banking/savings/good-interest-rate-on-a-savings-account/
+# Fuente: Tasa que pagan algunos de los bancos más grandes en su cuenta de ahorros básica = 0.01 % · https://www.bankrate.com/banking/savings/types-of-savings-accounts/
+# Fuente: Cobertura de la FDIC por depositante, por banco (también en bancos en línea) = 250000 $ · https://www.bankrate.com/banking/savings/types-of-savings-accounts/
+# BLOQUE 1
+Tus ahorros *dormidos* en el banco
+te pagan solo [$19.50|diecinueve dólares con cincuenta] al *año*.
+Se llama el *ahorro dormido*.
+Imagina que guardas el dinero
+en la cuenta de ahorros de siempre.
+Ese banco paga [0.39%|cero punto treinta y nueve por ciento] al *año*.
+En [5|cinco] *años*, ganas solo [$98|noventa y ocho dólares].
+Esa plata es la *alcancía* de emergencias,
+la *escuela* de tus hijos,
+y la seguridad de tu *casa*.
+Pero hay cuentas *en línea* que pagan [4%|cuatro por ciento].
+Con el mismo dinero, ganas [$200|doscientos dólares] al *año*.
+Siguen *aseguradas* hasta [$250,000|doscientos cincuenta mil dólares],
+igual que tu banco de siempre.
+Esta semana, mira cuánto paga tu *cuenta*.
+Si paga casi nada,
+busca una cuenta en línea *con seguro*.
+Son [$985|novecientos ochenta y cinco dólares] más en [5|cinco] años
+para la *escuela* de tus hijos.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene ahorros *dormidos*.

@@ -1,0 +1,215 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un ahorro de $5,000 durante 5 años a 0.39% contra 4% anual; las tasas cambian. Contenido educativo, no es asesoría financiera.",
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu ahorro",
+   "contador": "te pagan |$19.50",
+   "objeto": "alcancia",
+   "valor": 19.5,
+   "prefijo": "$",
+   "etiqueta": "te paga al año",
+   "hasta": [
+    1,
+    "19.50"
+   ],
+   "insignia": {
+    "texto": "CASI NADA",
+    "en": [
+     1,
+     "año"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "el nombre",
+   "contador": "problema |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "AHORRO",
+    "DORMIDO"
+   ],
+   "en": [
+    2,
+    "dormido"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    3
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "tasa |0.39%",
+   "objeto": "banco",
+   "valor": 0.39,
+   "sufijo": "%",
+   "etiqueta": "lo que paga al año",
+   "hasta": [
+    5,
+    "0.39"
+   ],
+   "insignia": {
+    "texto": "SOLO $98",
+    "en": [
+     6,
+     "98"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    7
+   ],
+   "capitulo": "lo que cuidas",
+   "contador": "en cinco años |+$98",
+   "items": [
+    {
+     "objeto": "alcancia",
+     "etiqueta": "ALCANCÍA",
+     "en": [
+      7,
+      "alcancía"
+     ],
+     "w": 290
+    },
+    {
+     "objeto": "escuela",
+     "etiqueta": "ESCUELA",
+     "en": [
+      8,
+      "escuela"
+     ],
+     "w": 300,
+     "etiquetaY": 205
+    },
+    {
+     "objeto": "casa",
+     "etiqueta": "CASA",
+     "en": [
+      9,
+      "casa"
+     ],
+     "w": 320,
+     "etiquetaY": 185
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    10
+   ],
+   "capitulo": "opción b",
+   "contador": "tasa |4%",
+   "objeto": "billete",
+   "valor": 200,
+   "prefijo": "$",
+   "etiqueta": "ganas en un año",
+   "hasta": [
+    11,
+    "200"
+   ],
+   "insignia": {
+    "texto": "4% AL AÑO",
+    "en": [
+     10,
+     "4%"
+    ]
+   }
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    14
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      14
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      15
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      16
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "tasas": [
+    "0.39%",
+    "4%",
+    "0.01%"
+   ],
+   "elegida": 1,
+   "primero": "MEJOR",
+   "elegir": [
+    16,
+    "línea"
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    17
+   ],
+   "capitulo": "tu familia",
+   "contador": "en cinco años |+$985",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$985",
+    "etiqueta": "en cinco años",
+    "en": [
+     17,
+     "985"
+    ]
+   },
+   "cae": {
+    "objeto": "escuela",
+    "letrero": "ESCUELA",
+    "en": [
+     18,
+     "escuela"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    19
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    19,
+    "Sígueme"
+   ],
+   "compartir": [
+    20,
+    "compártelo"
+   ]
+  }
+ ]
+}

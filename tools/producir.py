@@ -12,8 +12,9 @@ import os, re, sys, json, ast, operator, glob, argparse, unicodedata
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELO = "claude-sonnet-5-5"
 TAG = re.compile(r"\[([^|\]]*)\|([^\]]*)\]")
-OBJETOS = {"tarjeta", "alcancia", "casa", "troca", "escuela", "banco", "calendario", "billete", "moneda"}
-TIPOS = {"cifra", "armar", "tablero", "tiempo", "colgantes", "comparativa", "pasos", "oscura", "cierre"}
+OBJETOS = {"tarjeta", "alcancia", "casa", "troca", "escuela", "banco", "calendario", "billete", "moneda", "cartera", "tienda", "hospital", "familia"}
+TIPOS = {"cifra", "armar", "tablero", "oscura", "cierre", "lienzo"}
+ELEMENTOS = {"persona", "objeto", "torre", "cifra", "texto", "globo", "recibo", "celular", "lista", "grafica", "dinero", "flecha", "tacha", "sello", "check"}
 PROHIBIDO = [r"garantiz", r"sin riesgo", r"libre de impuestos", r"hazte rico", r"link en (mi|el) perfil", r"agenda", r"cotiza",
              r"\bvos\b", r"\btenés\b", r"\bcomentá\b", r"criptomoneda", r"bitcoin", r"acciones de", r"\bplata\b", r"\blana\b", r"\bguita\b",
              r"cooperativa", r"seguro de (auto|carro|troca)"]
@@ -37,7 +38,7 @@ DATOS_IUL = [
     {"dato": "Piso del IUL: no pierde por la caída del mercado", "valor": 0, "unidad": "%", "fuente": "https://interno/regla-de-la-marca-iul"},
     {"dato": "Retiro: 'podrías llegar hasta medio millón'", "valor": 500000, "unidad": "$", "fuente": "https://interno/regla-de-la-marca-iul"},
 ]
-REFS = {"en", "desde", "hasta", "armado", "elegir", "alcancia", "seguir", "compartir"}
+REFS = {"en", "desde", "hasta", "armado", "elegir", "alcancia", "seguir", "compartir", "sale"}
 
 
 def norm(s):
@@ -168,6 +169,19 @@ def revisar(lineas, escenas, ficha, marca):
             if t == "tablero":
                 f = e["filas"]
                 if len(f) != 2 or any(not re.fullmatch(r"[A-Z0-9 ]{1,7}", x) for x in f): err.append(f"{d}: filas deben ser 2 palabras en MAYÚSCULAS sin acentos de máximo 7 letras: {f}")
+            if t == "lienzo":
+                els = e.get("elementos")
+                if not isinstance(els, list) or not 1 <= len(els) <= 6: err.append(f"{d}: el lienzo necesita de 1 a 6 elementos")
+                else:
+                    ids = {x.get("id") for x in els if x.get("id")}
+                    for j, x in enumerate(els):
+                        dx = f"{d}.elementos[{j}]"
+                        if x.get("que") not in ELEMENTOS: err.append(f"{dx}: 'que' debe ser uno de {sorted(ELEMENTOS)}")
+                        for k in ("x", "y"):
+                            if k in x and not (isinstance(x[k], (int, float)) and 0 <= x[k] <= 100): err.append(f"{dx}: {k} debe ir de 0 a 100")
+                        for k in ("de", "a", "sobre"):
+                            if k in x and x[k] not in ids: err.append(f"{dx}: '{k}' apunta a un id que no existe: {x[k]}")
+                        if x.get("que") in ("torre", "cifra") and isinstance(x.get("valor"), (int, float)) and not ok(float(x["valor"])): err.append(f"{dx}: el valor {x['valor']} no sale de la ficha")
             if t == "comparativa":
                 for r in e["filas"]:
                     if not float(r["b"]) < float(r["a"]): err.append(f"{d}: en '{r['titulo']}' b debe ser menor que a")
@@ -187,6 +201,8 @@ def revisar(lineas, escenas, ficha, marca):
     tipos = [e.get("tipo") for e in escenas]
     for t in ("tablero", "oscura"):
         if t not in tipos: err.append(f"falta la escena {t}")
+    if tipos.count("lienzo") < 6: err.append(f"usa al menos 6 lienzos diseñados para sus líneas (hay {tipos.count('lienzo')})")
+    if tipos.count("cifra") > 1: err.append("máximo 1 escena 'cifra' por video; lo demás va en lienzos")
     if tipos[-1] != "cierre": err.append("la última escena debe ser cierre")
     elif inicios[-1] != len(lineas) - 2: err.append("el cierre debe empezar en la penúltima línea")
     return err
@@ -273,7 +289,7 @@ Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} p
 
 Escribe el video siguiendo el cerebro de EST-01:
 - "lineas": las líneas del guion, en orden, con el formato [mostrado|hablado] y *clave*.
-- "escenas_json": la lista de escenas como texto JSON (una lista [...] de objetos), con las referencias a palabras que existan en esas líneas.
+- "escenas_json": la lista de escenas como texto JSON (una lista [...] de objetos), con las referencias a palabras que existan en esas líneas. Diséñalas junto con el guion: cada lienzo dibuja lo que dicen sus líneas (personas, torres de monedas, recibos, celular, dinero que vuela, gráficas), sin objetos de relleno.
 - "aviso": una frase corta para abajo de la pantalla: "Ejemplo: <el supuesto del ejemplo>. Contenido educativo, no es asesoría financiera."
 - "titulo": nombre corto del video."""
     msgs = [{"role": "user", "content": pedido}]
@@ -305,6 +321,14 @@ def calificados(minimo=9, maximo=4):
 
 
 def ejemplos_de(estilo):
+    ej = os.path.join(ROOT, "estilos", estilo, "ejemplo_escenas.json")
+    if os.path.exists(ej):
+        d = json.load(open(ej, encoding="utf-8"))
+        txt = ("### Ejemplo de escenas diseñadas con lienzo (video corto viejo: copia cómo se diseñan las escenas para lo que se dice, NO el largo ni el relleno 'alcancía, troca, escuela')\nlineas:\n"
+               + "\n".join(f"{i}: {l}" for i, l in enumerate(d["lineas"])) + "\nescenas:\n" + json.dumps(d["escenas"], ensure_ascii=False))
+        cal = calificados()
+        if cal: txt += "\n\n## Guiones que Antony calificó con 9 o 10 (copia la fuerza del gancho y de la cifra; hoy el video es más largo y con open loop)\n" + "\n\n".join(cal)
+        return txt
     out = []
     for d in sorted(glob.glob(os.path.join(ROOT, "videos", "*"))):
         g, e = os.path.join(d, "guion.txt"), os.path.join(d, "escenas.json")

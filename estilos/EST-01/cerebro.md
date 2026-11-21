@@ -11,6 +11,7 @@ Una trampa o un secreto de dinero del día a día contado en **50 a 85 segundos*
 ## Lo que aprendimos de las calificaciones (rondas 1 y 2)
 - **Gana (9 y 10):** una trampa concreta del día a día con una cifra que duele: "compra ahora, paga después", el gasto hormiga, la llamada falsa del IRS, la tarjeta de tienda, el sobregiro de un café, el enganche que no necesitas, un punto de interés en la casa, empeñar el título de la troca, la llamada para bajar la tasa.
 - **Pierde (0 a 5):** historias sin gancho claro ("mi compadre…"), reglas generales sin trampa (50/30/20), temas de otros seguros (seguro de auto: nunca), y mandar a la gente a alternativas (cooperativas, plan 401(k) del trabajo, plan 529, cuentas de ahorro) justo donde la salida natural es el IUL.
+- **Prohibido el relleno de siempre:** nunca la lista "la troca, la comida, la escuela de tus hijos" ni "eso es la alcancía de tus hijos". Cada video dice lo que se pierde con algo propio de su historia y concreto (ej.: "eso es la renta de octubre", "son dos meses de gasolina para ir a la obra").
 - Menciona **Estados Unidos** cuando caiga natural ("en Estados Unidos…", "el IRS", "aquí en Estados Unidos").
 
 ## El gancho y el open loop (lo más importante)
@@ -50,33 +51,53 @@ Campos comunes de toda escena:
 - `desde`: `[número de línea]`. La primera escena es `[0]`. Las demás van en orden creciente.
 - `capitulo`: 1 a 3 palabras en minúscula, para la franja de arriba ("tu tarjeta", "opción a", "qué hacer").
 - `contador`: texto de la derecha de la franja, con `|` antes de la parte en color: `"deuda |$5,000"`. También puede ser una lista que cambia: `[{"en": [14], "texto": "paso |1 de 2"}, {"en": [15], "texto": "paso |2 de 2"}]`.
-- `entrada` (opcional): `"destello"` en el tablero, `"cuadritos"` en la comparativa, `"corte"` en la oscura y `"ola"` en el cierre.
+- `entrada` (opcional): `"destello"`, `"cuadritos"`, `"corte"` u `"ola"` (la transición al empezar la escena).
 
 **Referencias a palabras:** muchos campos marcan el momento exacto con `[línea, "palabra"]`. La palabra tiene que estar escrita en esa línea. Puede ser solo un pedazo (`"5,000"` encuentra `$5,000`), sin asteriscos. Si el campo es solo `[línea]`, cuenta el comienzo de la línea.
 
-Objetos disponibles: `tarjeta`, `alcancia`, `casa`, `troca`, `escuela`, `banco`, `calendario`, `billete`, `moneda`.
+Objetos disponibles: `tarjeta`, `alcancia`, `casa`, `troca`, `escuela`, `banco`, `calendario`, `billete`, `moneda`, `cartera`, `tienda`, `hospital`, `familia`.
 
-### Catálogo
-1. **cifra**: un número enorme que corre, con un objeto chico arriba y una insignia que aparece después.
-   `objeto`, `valor` (número sin comas), `prefijo` ("$" o nada), `sufijo` (opcional), `etiqueta` (2 a 4 palabras), `hasta` [línea, palabra donde termina de correr], `insignia` {`texto` (máximo 14 caracteres, en MAYÚSCULAS), `en`}.
-2. **armar**: una tarjeta de crédito que se arma pieza por pieza, con barra de avance y un sello que cae. Úsala solo cuando el tema sea una tarjeta.
-   `objeto`: "tarjeta", `armado` [línea, palabra], `barra` (texto corto), `sello` {`texto` (máximo 10 caracteres), `en`}.
-3. **tablero**: letras de aeropuerto que forman el nombre.
-   `filas`: 2 palabras en MAYÚSCULAS, **sin acentos**, de máximo 7 letras cada una. `en`: [línea, palabra].
-4. **tiempo**: un gafete colgado, un calendario que cuenta meses, una barra, y el dinero que se va al banco.
-   `gafete` {`titulo` (máximo 10 caracteres), `texto` (cifra corta, "$721"), `sub` ("al mes"), `cara` 0 a 3}, `meses` {`desde`, `hasta`, `total` (número), `texto` ("6 AÑOS")}, `banco` {`en`, `valor` (número), `etiqueta` ("intereses")}.
-5. **colgantes**: 2 o 3 objetos que caen colgando de hilos, cada uno en su palabra.
-   `items`: [{`objeto`, `etiqueta` (MAYÚSCULAS, máximo 10 caracteres), `en`}], con 2 o 3 items.
-6. **comparativa**: un cuadro A contra B con barras.
-   `a` {`texto` ("A · 72 MESES")}, `b` {`texto`, `en`}, `filas`: 2 filas [{`titulo`, `a` (número), `b` (número **menor** que a), `textoA`, `textoB`, `en`}], `ganador` {`texto` (máximo 16 caracteres, "AHORRAS $4,134"), `en`}.
-7. **pasos**: 3 tarjetas colgando con etiquetas; una se elige, y opcionalmente el ahorro cae a la alcancía.
-   `tasas`: 3 textos cortos (máximo 8 caracteres), `elegida` (0, 1 o 2), `primero` (etiqueta de la elegida, máximo 10 caracteres), `elegir` [línea, palabra], `alcancia` (opcional) [línea, palabra].
-8. **oscura**: el clímax. Escena oscura con reflector: aparece una cifra brillante y cae un objeto con letrero.
-   `cifra` {`texto` ("+$4,000"), `etiqueta`, `en`}, `cae` {`objeto` ("casa" casi siempre), `letrero` (MAYÚSCULAS, máximo 8 caracteres), `en`}.
-9. **cierre**: tarjeta de perfil de la marca, botón de seguir, corazón y compartir. Va siempre al final y cubre las dos últimas líneas.
-   `nombre` (de la marca), `sub` (lema de la marca), `seguir` [línea, "Sígueme"], `compartir` [línea, "compártelo"].
+### Cómo diseñar las escenas (lo visual se diseña junto con el guion)
+Las escenas NO se eligen de un menú. Mientras escribes cada parte del guion, imagina el dibujo que la cuenta y diséñalo con un **lienzo**: pones en pantalla las personas, objetos y cosas que se están diciendo en esas líneas, donde tenga sentido, y cada una entra justo en la palabra que la nombra.
+- Pregúntate en cada escena: **¿qué vería una persona si esto se lo contaran con dibujos?** Si el guion compara a "tú" y "tu amigo", dibuja dos personas, cada una con su torre de monedas. Si el dinero se va al banco, dibuja la cartera y el dinero volando al banco. Si hay un contrato con letra chiquita, dibuja el recibo y marca el renglón. Si es una llamada de estafa, dibuja el celular sonando y el sello "ESTAFA".
+- Lo que se ve tiene que ser **lo que se dice**. Nada de objetos de relleno que no aparecen en esas líneas.
+- **Ninguna escena se parece a la anterior:** cambia la composición (izquierda/derecha, arriba/abajo, una persona, dos personas, un objeto grande, un recibo, una gráfica).
+- Usa **personas** seguido: son la audiencia (trabajadores con gorra, casco o sombrero). Sus caras cuentan la emoción (feliz, preocupado, sorprendido, enojado) y pueden cambiar de cara a media escena.
 
-### Orden recomendado (de 9 a 14 escenas)
-gancho (**cifra** o **armar**) → **tablero** ("Se llama…") → ejemplo (**cifra**, **tiempo** o **comparativa**) → lo que se pierde (**colgantes**) → reenganche (**cifra** o **colgantes**) → la salida (**comparativa** o **pasos**) → clímax (**oscura**) → consejo (**pasos** o **cifra**) → **cierre**.
-Puedes repetir tipos y cambiar el orden, pero **tablero**, **oscura** y **cierre** van siempre, y **ninguna escena puede cubrir más de 4 líneas** (con 30 a 40 líneas necesitas unas 10 a 13 escenas). Varía las entradas (`destello`, `cuadritos`, `corte`, `ola`) para que no se sienta igual.
-En videos con IUL, usa objetos que lo cuenten: `alcancia` para el ahorro que crece, `casa` para la familia protegida, `calendario` para los años del retiro.
+#### El lienzo
+`{"tipo": "lienzo", "desde": [línea], "capitulo": "...", "contador": "...", "elementos": [ ... ]}` con 1 a 6 elementos.
+Coordenadas: `x` de 0 (izquierda) a 100 (derecha) y `y` de 0 (arriba, justo debajo del texto) a 100 (abajo). `tam` = tamaño en % (cada elemento tiene su valor normal; no hace falta ponerlo). `en` = [línea, "palabra"] en que aparece (si falta, aparece al empezar la escena). `entra` (opcional): "aparece", "cae" o "desliza". `sale` (opcional): [línea, "palabra"] en que se va. `id` (opcional) para que otro elemento lo use.
+
+Elementos (`que`):
+- `persona`: `x`, `y` = dónde están los pies (y de 85 a 97), `tam` (alto, normal 34), `cara` ("feliz", "preocupado", "sorprendido", "enojado", "neutro"), `gorro` ("gorra", "casco", "sombrero", "pelo", "nada"), `ropa` (0 a 5), `piel` (0 a 4), `etiqueta` (MAYÚSCULAS, corta: "TÚ", "TU AMIGO", "EL VENDEDOR"), `cambia` {`en`, `cara`} para cambiar de cara.
+- `objeto`: `objeto` (uno de: tarjeta, alcancia, casa, troca, escuela, banco, calendario, billete, moneda, cartera, tienda, hospital, familia), `x`, `y` = centro, `tam` (ancho, normal 30), `giro` (grados), `etiqueta`.
+- `torre`: torre de monedas que crece. `x`, `y` = la base (85 a 97), `valor`, `max` (el valor más grande de la escena, para que las torres se comparen a escala), `prefijo` ("$"), `en` (empieza a crecer), `hasta` (termina), `etiqueta`, `color` ("gris" para la opción mala).
+- `cifra`: un número grande. `texto` ("+$3,000") o `contar: true` con `valor`, `prefijo`, `en` y `hasta` para que corra. `etiqueta`, `color` ("principal", "tinta", "verde", "gris"), `x`, `y`, `tam` (normal 13).
+- `texto`: una frase corta grande (máximo 6 palabras), `texto`, `color`, `tam` (normal 4.5).
+- `globo`: lo que dice o piensa una persona. `texto` (máximo 60 caracteres), `piensa` (true/false), `cola` (-1 apunta a la izquierda, 1 a la derecha), `x`, `y`. Ponlo arriba de la persona que habla (y de 10 a 35).
+- `recibo`: un recibo, contrato o estado de cuenta. `titulo`, `renglones` [{`texto`, `valor` ("$45"), `en`}] (2 a 5), `marca` {`fila` (índice), `en`, `texto` ("¡OJO!")} para encerrar en rojo la letra chiquita, `total` {`texto`, `valor`, `en`}. `x` 50, `y` 5 a 15 (es la parte de arriba).
+- `celular`: `modo` ("llamada" o "mensaje"), `de` ("IRS", "Tu banco", "Número desconocido"), `texto` (para mensaje), `x`, `y` = centro.
+- `lista`: los pasos de la salida. `items` [{`texto` (máximo 40 caracteres), `en`}] (2 a 4), `y` 5 a 25 (es la parte de arriba).
+- `grafica`: barras de monedas que suben o bajan con los años. `inicio` y `final` (números), `barras` (3 a 20, normalmente los años), `desdeTexto` ("HOY"), `hastaTexto` ("EN 30 AÑOS"), `etiqueta`, `en`, `hasta`, `x` 50, `y` = la base (80 a 90).
+- `dinero`: billetes y monedas que vuelan de un elemento a otro. `de` (id), `a` (id), `en`, `hasta`.
+- `flecha`: flecha de un elemento a otro. `de`, `a`, `en`.
+- `tacha`: una X roja sobre un elemento. `sobre` (id), `en`.
+- `sello`: un sello que cae de golpe ("ESTAFA", "TRAMPA", "AHORRAS $4,000"). `texto` (máximo 14 caracteres), `color` ("rojo" o "verde"), `x`, `y`.
+- `check`: una palomita verde grande. `x`, `y`, `en`.
+
+Ejemplo (dos amigos que ahorran, uno empieza tarde):
+`{"tipo":"lienzo","desde":[6],"capitulo":"dos amigos","contador":"ahorran |$3,600 al año","elementos":[{"que":"persona","x":18,"y":95,"etiqueta":"TÚ","cara":"feliz","gorro":"casco","en":[6,"Uno"]},{"que":"torre","x":38,"y":95,"tam":55,"valor":1073000,"max":1073000,"en":[8,"juntar"],"hasta":[8,"1,073,000"]},{"que":"persona","x":64,"y":95,"etiqueta":"TU AMIGO","cara":"neutro","gorro":"gorra","ropa":2,"en":[7,"espera"],"cambia":{"en":[9,"389,000"],"cara":"preocupado"}},{"que":"torre","x":85,"y":95,"tam":55,"valor":389000,"max":1073000,"color":"gris","en":[9,"segundo"],"hasta":[9,"389,000"]}]}`
+
+#### Escenas fijas (además del lienzo)
+- **tablero** (obligatoria, en la línea "Se llama…"): letras de aeropuerto. `filas`: 2 palabras en MAYÚSCULAS, sin acentos, de máximo 7 letras. `en`: [línea, palabra].
+- **oscura** (obligatoria, el clímax): escena oscura con reflector. `cifra` {`texto` ("+$4,000"), `etiqueta`, `en`}, `cae` {`objeto` ("casa", "familia", "alcancia"…), `letrero` (MAYÚSCULAS, máximo 8 caracteres), `en`}.
+- **cierre** (obligatoria, las 2 últimas líneas): `nombre`, `sub`, `seguir` [línea, "Sígueme"], `compartir` [línea, "compártelo"].
+- **cifra** (máximo 1 por video): número enorme que corre con un objeto. `objeto`, `valor`, `prefijo`, `sufijo`, `etiqueta`, `hasta`, `insignia` {`texto`, `en`}.
+- **armar** (solo si el tema es una tarjeta): `objeto` "tarjeta", `armado`, `barra`, `sello` {`texto`, `en`}.
+
+### Reglas de las escenas
+- De 9 a 14 escenas; **ninguna cubre más de 4 líneas**. La primera empieza en la línea 0 y el cierre en la penúltima.
+- **Al menos 6 lienzos** por video, cada uno diseñado para sus líneas.
+- Dos escenas seguidas nunca son del mismo tipo de composición: si una tiene dos personas con torres, la siguiente es otra cosa.
+- Varía las entradas de las escenas (`entrada`: "destello", "cuadritos", "corte", "ola").
+- En videos con IUL, dibuja el IUL con lo que significa: una `grafica` que sube con piso (nunca baja), la `familia` protegida, una persona en el `hospital` que recibe dinero en vida.

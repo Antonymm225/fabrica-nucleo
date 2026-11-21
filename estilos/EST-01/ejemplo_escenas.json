@@ -1,0 +1,406 @@
+{
+ "lineas": [
+  "Pagar *puntual* tu tarjeta",
+  "te puede costar más de [$3,000|tres mil dólares] *extra*.",
+  "Se llama la trampa del *pago mínimo*.",
+  "Imagina que debes [$5,000|cinco mil dólares]",
+  "con un interés del [24%|veinticuatro por ciento] al *año*.",
+  "Si pagas [$150|ciento cincuenta] al mes,",
+  "tardas casi *cinco años* en salir.",
+  "Y le regalas al banco [$3,322|tres mil trescientos veintidós] en *intereses*.",
+  "Eso era la *alcancía* de tus hijos,",
+  "los pagos de la *troca*,",
+  "y los útiles de la *escuela*.",
+  "Pero si subes a [$300|trescientos] al mes,",
+  "sales en *menos de dos años*,",
+  "y pagas solo [$1,143|mil ciento cuarenta y tres].",
+  "Paga primero la tarjeta con *más interés*,",
+  "y lo que te ahorres, a la *alcancía*.",
+  "Son más de [$2,000|dos mil dólares]",
+  "para el enganche de *tu casa*.",
+  "*Sígueme* para más videos de finanzas,",
+  "y compártelo con quien paga *solo el mínimo*."
+ ],
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu tarjeta",
+   "contador": "pagas |a tiempo",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 30,
+     "y": 92,
+     "tam": 40,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "3,000"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 70,
+     "y": 40,
+     "tam": 38,
+     "giro": -10,
+     "en": [
+      0,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$3,000",
+     "x": 68,
+     "y": 75,
+     "tam": 11,
+     "en": [
+      1,
+      "3,000"
+     ],
+     "etiqueta": "extra"
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "PAGO",
+    "MINIMO"
+   ],
+   "en": [
+    2,
+    "mínimo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "deuda |$5,000",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Estado de cuenta",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que debes",
+       "valor": "$5,000",
+       "en": [
+        3,
+        "5,000"
+       ]
+      },
+      {
+       "texto": "Interés al año",
+       "valor": "24%",
+       "en": [
+        4,
+        "24"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       4,
+       "año"
+      ],
+      "texto": "¡ojo!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pago |$150",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 18,
+     "tam": 34,
+     "etiqueta": "tu quincena",
+     "en": [
+      5,
+      "150"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 70,
+     "tam": 36,
+     "etiqueta": "el banco",
+     "en": [
+      6,
+      "cinco"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      6,
+      "cinco"
+     ],
+     "hasta": [
+      7,
+      "intereses"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 3322,
+     "prefijo": "$",
+     "x": 30,
+     "y": 72,
+     "tam": 9,
+     "en": [
+      7,
+      "regalas"
+     ],
+     "hasta": [
+      7,
+      "intereses"
+     ],
+     "etiqueta": "intereses"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "intereses |$3,322",
+   "elementos": [
+    {
+     "id": "a",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 28,
+     "y": 22,
+     "tam": 30,
+     "en": [
+      8,
+      "alcancía"
+     ]
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 45,
+     "tam": 34,
+     "en": [
+      9,
+      "troca"
+     ]
+    },
+    {
+     "id": "e",
+     "que": "objeto",
+     "objeto": "escuela",
+     "x": 32,
+     "y": 75,
+     "tam": 32,
+     "en": [
+      10,
+      "escuela"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "a",
+     "en": [
+      10,
+      "útiles"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "la salida",
+   "contador": "pago |$300",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "pagas $150",
+     "color": "gris",
+     "en": [
+      11
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 38,
+     "y": 95,
+     "tam": 52,
+     "valor": 3322,
+     "max": 3322,
+     "color": "gris",
+     "en": [
+      11
+     ],
+     "hasta": [
+      12,
+      "años"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 64,
+     "y": 95,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "pagas $300",
+     "en": [
+      11,
+      "300"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 85,
+     "y": 95,
+     "tam": 52,
+     "valor": 1143,
+     "max": 3322,
+     "en": [
+      12,
+      "menos"
+     ],
+     "hasta": [
+      13,
+      "1,143"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1 y 2",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 15,
+     "en": [
+      14
+     ],
+     "items": [
+      {
+       "texto": "Paga primero la de más interés",
+       "en": [
+        14,
+        "interés"
+       ]
+      },
+      {
+       "texto": "Lo que ahorres, a la alcancía",
+       "en": [
+        15,
+        "alcancía"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    16
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |$2,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$2,000",
+    "etiqueta": "para tu casa",
+    "en": [
+     16,
+     "2,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     17,
+     "casa"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    18
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    18,
+    "Sígueme"
+   ],
+   "compartir": [
+    19,
+    "compártelo"
+   ]
+  }
+ ]
+}

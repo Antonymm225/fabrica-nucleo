@@ -1,6 +1,7 @@
 import React from "react";
 import { F, T, W, H, Sfx, lin, eo, eio, sp, swing, rnd, money } from "./lib";
 import { Alcancia, Banco, Calendario, Carita, Casa, Check, Escuela, Etiqueta, Hilo, Moneda, S, Sello, Tarjeta, Troca, Billete } from "./objetos";
+import { lienzo, OBJ2 } from "./lienzo";
 
 /* Escenas tipo de EST-01. Cada escena recibe sus parámetros (del JSON del video), el frame local `f`
    y `c`: c.t(línea, palabra) = frame local en que se dice esa palabra; c.e(línea) = fin de la línea; c.d = duración. */
@@ -15,7 +16,7 @@ const OBJ: Record<string, (props: any) => React.ReactElement> = {
   troca: (p) => <Troca {...p} />, escuela: (p) => <Escuela {...p} />, banco: (p) => <Banco {...p} />,
   calendario: (p) => <Calendario {...p} />, billete: (p) => <Billete {...p} />, moneda: (p) => <Moneda {...p} />,
 };
-const Obj: React.FC<{ n: string; p?: P }> = ({ n, p = {} }) => (OBJ[n] ?? OBJ.tarjeta)(p);
+const Obj: React.FC<{ n: string; p?: P }> = ({ n, p = {} }) => (OBJ[n] ?? OBJ2[n] ?? OBJ.tarjeta)(p);
 
 /** Algo que cuelga de un hilo, cae con rebote y se balancea. */
 /** Los hilos salen de un clavito debajo del texto (ANCLA), nunca cruzan las palabras. */
@@ -140,7 +141,7 @@ const cifra = (p: P, f: number, c: Ctx): Out => {
           </g>
         )}
         <g transform={`translate(540 1220) scale(${0.7 + 0.3 * ent})`}>
-          <text textAnchor="middle" fontFamily={F.cifra} fontSize={p.size ?? 290} fill={T.P} filter="url(#brillo)" style={{ filter: `blur(${Math.min(10, vel * 1.6)}px)` }}>{(p.prefijo ?? "") + Math.round(v).toLocaleString("en-US") + (p.sufijo ?? "")}</text>
+          <text textAnchor="middle" fontFamily={F.cifra} fontSize={Math.min(p.size ?? 290, 1000 / Math.max(1, ((p.prefijo ?? "") + Math.round(p.valor).toLocaleString("en-US") + (p.sufijo ?? "")).length * 0.68))} fill={T.P} filter="url(#brillo)" style={{ filter: `blur(${Math.min(10, vel * 1.6)}px)` }}>{(p.prefijo ?? "") + Math.round(v).toLocaleString("en-US") + (p.sufijo ?? "")}</text>
           <text y={90} textAnchor="middle" fontFamily={F.mono} fontWeight={700} fontSize={32} fill={T.K} letterSpacing={6}>{(p.etiqueta ?? "").toUpperCase()}</text>
         </g>
         {p.insignia && (
@@ -407,4 +408,4 @@ const cierre = (p: P, f: number, c: Ctx): Out => {
   };
 };
 
-export const ESCENAS: Record<string, (p: P, f: number, c: Ctx) => Out> = { armar, tablero, cifra, tiempo, colgantes, comparativa, pasos, oscura, cierre };
+export const ESCENAS: Record<string, (p: P, f: number, c: Ctx) => Out> = { armar, tablero, cifra, tiempo, colgantes, comparativa, pasos, oscura, cierre, lienzo };

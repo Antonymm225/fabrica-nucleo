@@ -36,7 +36,7 @@ jobs:
     outputs:
       lista: ${{ steps.lista.outputs.lista }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 2
@@ -75,21 +75,21 @@ jobs:
       matrix:
         video: ${{ fromJson(needs.plan.outputs.lista) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Caché de dependencias (Remotion y su navegador)
         id: cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: engine/node_modules
           key: node-modules-${{ runner.os }}-${{ hashFiles('engine/package-lock.json') }}
@@ -106,7 +106,7 @@ jobs:
 
       - name: Caché de la voz (mismo guion y misma voz = no se paga otra vez)
         id: voz
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             videos/${{ matrix.video }}/vo.wav
@@ -137,7 +137,7 @@ jobs:
           ls -la salida
 
       - name: Guardar MP4 (se borra en 1 día)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.video }}
           path: salida/

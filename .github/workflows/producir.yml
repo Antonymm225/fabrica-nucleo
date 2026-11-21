@@ -33,11 +33,11 @@ jobs:
       lista: ${{ steps.escribir.outputs.lista }}
       videos: ${{ steps.escribir.outputs.videos }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -74,7 +74,7 @@ jobs:
 
       - name: Guiones para revisar (tema, guion, escenas)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: guiones
           path: |

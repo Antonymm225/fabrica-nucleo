@@ -25,7 +25,8 @@ Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunc
 - Dilo así la primera vez: `[IUL|i u ele], un *seguro de vida indexado*`.
 - El crecimiento siempre con "hasta": "tu dinero puede crecer *hasta un* [10%|diez por ciento] al año". Nunca un 10% sin "hasta".
 - La protección: "si el mercado cae, *no pierde* por esa caída. Tiene *piso cero*."
-- Se vale "podrías llegar hasta *medio millón* para tu retiro" y proyecciones con el 10% como tope, siempre con "podría".
+- **El único tope es el crecimiento de un año: hasta un 10%. El piso es 0%.** El dinero que juntas **no tiene tope**: depende de cuánto aportas y de **desde cuándo empiezas**. Nunca llames "tope", "máximo" ni "límite" a una cantidad de dinero (nada de "como tope, podrías llegar a $150,000" ni "Es un tope, no una promesa").
+- Las proyecciones se dicen atadas a cuándo empiezas: "Si empiezas a los [30|treinta] con [$200|doscientos dólares] al mes, a los [60|sesenta] podrías llegar a unos [$434,000|cuatrocientos treinta y cuatro mil]". Calcúlalas con el 10% al año. Se vale "podrías llegar hasta *medio millón* para tu retiro, depende de cuándo empieces".
 - **Nunca** digas "garantizado" ni "no garantizado".
 - **Siempre**, antes del cierre, la línea: `Un *asesor certificado* debe ver tu caso a detalle.`
 - Sin precios del seguro, sin nombres de aseguradoras, sin "cotiza", sin links.
@@ -98,6 +99,7 @@ Ejemplo (dos amigos que ahorran, uno empieza tarde):
 ### Reglas de las escenas
 - De 9 a 14 escenas; **ninguna cubre más de 4 líneas**. La primera empieza en la línea 0 y el cierre en la penúltima.
 - **Al menos 6 lienzos** por video, cada uno diseñado para sus líneas.
+- **Nada se encima:** cada elemento ocupa su propio lugar. Una cifra o un texto nunca va encima de una persona, un objeto, un globo u otra cifra; un sello solo va encima de un objeto, un recibo o el celular. Guía de lugares: personas abajo (y 85 a 97) con su globo arriba (y 10 a 35); cosas a la izquierda (x 20 a 35) y a la derecha (x 65 a 80), nunca dos grandes en la misma mitad y la misma altura; la cifra con etiqueta ocupa casi todo el ancho, así que va sola en su franja (por ejemplo y 40 a 55). La revisión mide cada cosa y rechaza el lienzo si algo se encima o se sube al texto de arriba.
 - **Nunca dejes la pantalla vacía:** en cada lienzo, el primer elemento entra en la primera línea de la escena (o sin `en`), y lo demás se va sumando con las palabras.
 - Las personas van abajo (y de 85 a 97) y los globos arriba de ellas; el recibo y la lista van arriba (y de 5 a 25). No pongas dos cosas grandes en el mismo lugar.
 - Dos escenas seguidas nunca son del mismo tipo de composición: si una tiene dos personas con torres, la siguiente es otra cosa.

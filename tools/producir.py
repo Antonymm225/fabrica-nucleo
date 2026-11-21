@@ -88,6 +88,88 @@ def permitidos(ficha):
     return nums, errores
 
 
+# ---------------------------------------------------------------- acomodo del lienzo (mismas medidas que engine/src/lienzo.tsx)
+W_, Y0_, AH_ = 1080, 520, 1260
+
+
+def _wrap(t, mx):
+    out, cur = [], ""
+    for w in str(t).split():
+        if len((cur + " " + w).strip()) > mx and cur: out.append(cur); cur = w
+        else: cur = (cur + " " + w).strip()
+    return out + ([cur] if cur else [])
+
+
+def caja(e):
+    """Rectángulo (x1, y1, x2, y2) en píxeles que ocupa un elemento del lienzo, o None si no ocupa lugar fijo."""
+    q, tam = e.get("que"), e.get("tam")
+    x, y = W_ * (e.get("x", 50) / 100), Y0_ + AH_ * (e.get("y", 50) / 100)
+    if q == "persona":
+        h = AH_ * (tam or 34) / 100; hw = h * 0.34; c = (x - hw, y - h * 0.95, x + hw, y + (80 if e.get("etiqueta") else 10))
+    elif q == "objeto":
+        w = W_ * (tam or 30) / 100; hw = w / 2; c = (x - hw, y - w * 0.45, x + hw, y + w * 0.45 + (80 if e.get("etiqueta") else 0))
+    elif q == "torre":
+        prop = min(1, e["valor"] / e["max"]) if e.get("max") and isinstance(e.get("valor"), (int, float)) else 1
+        hw = 100; c = (x - hw, y - AH_ * (tam or 45) / 100 * prop - 110, x + hw, y + (75 if e.get("etiqueta") else 10))
+    elif q == "cifra":
+        txt = e.get("texto") or ((e.get("prefijo") or "") + f"{e.get('valor', 0):,.0f}" + (e.get("sufijo") or ""))
+        fs = min(AH_ * (tam or 13) / 100, W_ * 0.9 / max(1, len(txt) * 0.66)); hw = len(txt) * fs * 0.66 / 2
+        c = (x - hw, y - fs * 0.8, x + hw, y + (fs * 0.35 + 45 if e.get("etiqueta") else fs * 0.15))
+    elif q == "texto":
+        fs = AH_ * (tam or 4.5) / 100; L = _wrap(e.get("texto", ""), e.get("ancho", 18)) or [""]
+        hw = max(len(l) for l in L) * fs * 0.56 / 2; c = (x - hw, y - fs, x + hw, y + (len(L) - 1) * fs * 1.1 + fs * 0.3)
+    elif q == "globo":
+        w = W_ * (tam or 74) / 100; hw = w / 2; h = len(_wrap(e.get("texto", ""), 22)) * 58 * 1.2 + 80; c = (x - hw, y - h / 2, x + hw, y + h / 2 + 70)
+    elif q == "recibo":
+        w = W_ * (tam or 80) / 100; hw = w / 2; h = 150 + len(e.get("renglones", [])) * 96 + (120 if e.get("total") else 0) + 22; c = (x - hw, y, x + hw, y + h)
+    elif q == "celular":
+        h = AH_ * (tam or 62) / 100; hw = h / 4; c = (x - hw, y - h / 2, x + hw, y + h / 2)
+    elif q == "lista":
+        w = W_ * (tam or 84) / 100; hw = w / 2; c = (x - hw, y, x + hw, y + len(e.get("items", [])) * 150 + 90)
+    elif q == "grafica":
+        w = W_ * (tam or 84) / 100; hw = w / 2; c = (x - hw, y - AH_ * 0.5 - 170, x + hw, y + (120 if e.get("etiqueta") else 70))
+    elif q == "sello":
+        w = W_ * (tam or 66) / 100; hw = w / 2; c = (x - hw, y - w * 0.2, x + hw, y + w * 0.2)
+    elif q == "check":
+        hw = 85; c = (x - hw, y - hw, x + hw, y + hw)
+    else:
+        return None
+    dx = max(0, hw + 24 - c[0]) - max(0, c[2] - (W_ - hw - 24) + hw - hw) if False else 0
+    # el motor corre el elemento para que no se salga por los lados: aquí igual
+    corr = 0
+    if c[0] < 24: corr = 24 - c[0]
+    elif c[2] > W_ - 24: corr = (W_ - 24) - c[2]
+    return (c[0] + corr, c[1], c[2] + corr, c[3])
+
+
+ENCIMA_OK = {"sello", "check"}          # se ponen encima a propósito (de objetos, personas, recibos o celular)
+TEXTUALES = {"cifra", "texto", "globo", "lista", "recibo", "torre", "grafica"}
+
+
+def acomodo(els, d):
+    """Errores de acomodo de un lienzo: cosas encimadas o fuera del área de dibujo."""
+    err, cajas = [], []
+    for j, e in enumerate(els):
+        c = caja(e)
+        if not c: continue
+        nombre = f"{e.get('que')}" + (f" «{e.get('etiqueta') or e.get('texto') or e.get('objeto') or ''}»"[:40] if (e.get('etiqueta') or e.get('texto') or e.get('objeto')) else "")
+        if c[1] < Y0_ - 30: err.append(f"{d}: {nombre} se sube al texto de arriba (súbelo menos: y más grande)")
+        if c[3] > 1800: err.append(f"{d}: {nombre} se sale por abajo (y más chico o tam más chico)")
+        cajas.append((j, e, c, nombre))
+    for a in range(len(cajas)):
+        for b in range(a + 1, len(cajas)):
+            ja, ea, ca, na = cajas[a]; jb, eb, cb, nb = cajas[b]
+            if ea.get("sale") or eb.get("sale"): continue
+            qa, qb = ea.get("que"), eb.get("que")
+            if (qa in ENCIMA_OK and qb not in TEXTUALES) or (qb in ENCIMA_OK and qa not in TEXTUALES): continue
+            ix = min(ca[2], cb[2]) - max(ca[0], cb[0]); iy = min(ca[3], cb[3]) - max(ca[1], cb[1])
+            if ix <= 0 or iy <= 0: continue
+            menor = min((ca[2] - ca[0]) * (ca[3] - ca[1]), (cb[2] - cb[0]) * (cb[3] - cb[1]))
+            if ix * iy > 0.08 * menor:
+                err.append(f"{d}: {na} y {nb} se enciman; sepáralos (cambia x/y o tam)")
+    return err
+
+
 # ---------------------------------------------------------------- revisión sin IA
 def tokens(linea):
     """Palabras como se ven en pantalla (las cifras entre corchetes cuentan como una)."""
@@ -123,6 +205,9 @@ def revisar(lineas, escenas, ficha, marca):
         if "asesor certificado" not in todo: err.append("falta la línea: Un *asesor certificado* debe ver tu caso a detalle.")
         for i, l in enumerate(lineas):
             if re.search(r"\[10%\|", l) and "hasta" not in l.lower(): err.append(f"línea {i}: el 10% del IUL siempre va con 'hasta': {l}")
+        for i, l in enumerate(lineas):
+            if re.search(r"\btope\b|\bm[aá]xim|\bl[ií]mite\b", l.lower()) and not re.search(r"\[10%\|", l):
+                err.append(f"línea {i}: el único tope es el 10% al año; el dinero no tiene tope (depende de cuándo empiezas): {l}")
     elif tiene_iul:
         err.append("este video es de puro valor: no menciones el IUL ni seguros de vida")
     if len(lineas) >= 2:
@@ -141,6 +226,15 @@ def revisar(lineas, escenas, ficha, marca):
 
     # escenas
     if not isinstance(escenas, list) or not escenas: return err + ["escenas vacías o mal formadas"]
+    def textos(o):
+        if isinstance(o, str): yield o
+        elif isinstance(o, dict):
+            for v in o.values(): yield from textos(v)
+        elif isinstance(o, list):
+            for v in o: yield from textos(v)
+    for s in textos(escenas):
+        if re.search(r"\btope\b|\bm[aá]xim|\bl[ií]mite\b", s.lower()) and "10" not in s:
+            err.append(f"escenas: «{s}»: no llames tope ni máximo a una cantidad de dinero; el único tope es el 10% al año")
     tks = [[norm(t) for t in tokens(l)] for l in lineas]
     def ref(r, donde):
         if not isinstance(r, list) or not r or not isinstance(r[0], int): err.append(f"{donde}: referencia mal escrita {r}"); return None
@@ -183,6 +277,7 @@ def revisar(lineas, escenas, ficha, marca):
                         if len(en) < 2 or not isinstance(en[1], str): return True
                         k = norm(en[1]); pal = [norm(w) for w in tokens(lineas[ini0])]
                         return any(k and k in w for w in pal[:3])
+                    err.extend(acomodo(els, d))
                     if not any(temprano(x) for x in visibles):
                         err.append(f"{d}: la pantalla queda vacía al empezar; al menos un elemento tiene que entrar en las primeras 3 palabras de la línea {ini0} (o sin 'en')")
                     for j, x in enumerate(els):
@@ -246,7 +341,7 @@ def texto(r):
 
 
 TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero del día a día en Estados Unidos con un ejemplo con números que duela (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y una salida práctica. Lo que mejor funciona con esta audiencia: trampas al comprar troca o casa, tarjetas de tienda y "cero por ciento", préstamos caros, cargos del banco, estafas, impuestos del que cobra por contrato, gastos hormiga. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, FTC, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, nada de seguros (ni de vida ni de auto), y no mandes a la gente a cooperativas ni a planes del trabajo."""
-TAREA_IUL = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Elige UN tema nuevo que gire alrededor de uno de sus 3 beneficios: ahorro para el retiro (el dinero que se pierde en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia, o el costo de empezar tarde), protección de la familia si tú faltas (el seguro del trabajo que no alcanza, la familia que depende de tus envíos), o beneficios en vida si te da una enfermedad crónica, crítica o terminal (el que trabaja con su cuerpo). Busca en la web los datos del problema en Estados Unidos (inflación, tasas del banco, depreciación, Seguro Social, etc.) en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero, retiro de hasta medio millón). Calcula las proyecciones con el 10% como tope (aporte al inicio de cada año, interés anual)."""
+TAREA_IUL = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Elige UN tema nuevo que gire alrededor de uno de sus 3 beneficios: ahorro para el retiro (el dinero que se pierde en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia, o el costo de empezar tarde), protección de la familia si tú faltas (el seguro del trabajo que no alcanza, la familia que depende de tus envíos), o beneficios en vida si te da una enfermedad crónica, crítica o terminal (el que trabaja con su cuerpo). Busca en la web los datos del problema en Estados Unidos (inflación, tasas del banco, depreciación, Seguro Social, etc.) en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero, retiro de hasta medio millón). Calcula las proyecciones con el 10% al año (aporte al inicio de cada año, interés anual), atadas a la edad en que empieza la persona (ej.: empieza a los 30 y llega a los 60). El dinero que se junta no tiene tope; el único tope es el 10% de crecimiento de un año."""
 
 
 def investigar(c, marca, historia, iul=False):

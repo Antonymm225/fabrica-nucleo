@@ -1,0 +1,47 @@
+# FF-005 · Finanzas Familiares · EST-01 · El impuesto escondido del contrato
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa de impuesto de trabajador por cuenta propia (12.4% Seguro Social + 2.9% Medicare) = 15.3 % · https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Porcentaje de tu ganancia neta sobre el que se calcula ese impuesto = 92.35 % · https://www.irs.gov/taxtopics/tc554
+# Fuente: Parte que paga un empleado con nómina (la otra mitad la paga el patrón) = 7.65 % · https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Tasa de interés del IRS sobre pagos atrasados (individuos y empresas), trimestre que empieza el 1 de julio de 2026 = 7 % · https://www.federalregister.gov/documents/2026/07/01/2026-13298/quarterly-irs-interest-rates-used-in-calculating-interest-on-overdue-accounts-and-refunds-of-customs
+# Fuente: Fechas de pagos trimestrales 2026: 15 de abril, 15 de junio, 15 de septiembre y 15 de enero de 2027 (4 pagos al año) = 4 pagos al año · https://ustax.tools/estimated-tax-due-dates-2026/
+# BLOQUE 1
+Si cobras *por contrato*,
+ya le debes al IRS más de [$8,000|ocho mil dólares].
+Se llama el impuesto de *cuenta propia*.
+Al final te digo cuánto *apartar* por semana.
+Imagina que te pagan [$60,000|sesenta mil dólares] al *año*.
+Sin descuentos en el *cheque*.
+Se siente bien, ¿verdad?
+Pero ahí está la *trampa*.
+El IRS te cobra [15.3%|quince punto tres por ciento] de *Seguro Social*
+y *Medicare*, sobre casi todo lo que ganas.
+Son casi [$8,500|ocho mil quinientos dólares] al *año*.
+Y todavía falta el *impuesto sobre la renta*.
+Un empleado con nómina paga solo [7.65%|siete punto sesenta y cinco por ciento].
+Su patrón paga *la otra mitad*.
+Tú pagas *las dos mitades*.
+Con [$60,000|sesenta mil dólares], el empleado paga [$4,590|cuatro mil quinientos noventa].
+Tú pagas casi [$3,900|tres mil novecientos] *más*.
+Y lo peor viene en *abril*.
+Llega la cuenta *completa*, de golpe.
+Y si no hiciste *pagos trimestrales*,
+el IRS cobra [7%|siete por ciento] de *interés*.
+Son unos [$600|seiscientos dólares] *extra*.
+Ese dinero era la *renta*,
+la *comida* de tus hijos,
+o los pagos de la *troca*.
+Ahora, ¿cómo lo *evitas*?
+Abre una cuenta de ahorro *aparte*,
+solo para *impuestos*.
+Cada vez que te paguen,
+mueve una parte *antes de gastar*.
+En este ejemplo, son unos [$163|ciento sesenta y tres] por *semana*.
+Eso es solo para *Seguro Social* y Medicare.
+El impuesto sobre la renta va aparte.
+Haz tus pagos *trimestrales* en las fechas del IRS.
+Y revisa tu caso con un *preparador con licencia*.
+Cobrar por contrato *no es malo*,
+pero hay que *planearlo*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra *por contrato*.

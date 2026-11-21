@@ -1,0 +1,95 @@
+{
+ "titulo": "El impuesto escondido del que cobra por contrato (1099)",
+ "angulo": "Te pagan $60,000 limpios y crees que son tuyos, pero antes del impuesto sobre la renta ya le debes al IRS $8,477.73 solo de Seguro Social y Medicare. El patrón en nómina paga la mitad de eso por ti, y tú pagas las dos mitades.",
+ "explicacion": "Si cobras por contrato (1099), nadie te descuenta nada del cheque. Eso se siente bien, pero es una trampa. El IRS te cobra 15.3% de impuesto de trabajador por cuenta propia, que es Seguro Social y Medicare, sobre 92.35% de tu ganancia. Un empleado con nómina paga solo 7.65% y su patrón paga la otra mitad. Si no apartas dinero cada semana, en abril llega la cuenta completa, y además los pagos trimestrales que no hiciste pueden generar un cargo por interés.",
+ "datos": [
+  {
+   "dato": "Tasa de impuesto de trabajador por cuenta propia (12.4% Seguro Social + 2.9% Medicare)",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Porcentaje de tu ganancia neta sobre el que se calcula ese impuesto",
+   "valor": 92.35,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/taxtopics/tc554"
+  },
+  {
+   "dato": "Parte que paga un empleado con nómina (la otra mitad la paga el patrón)",
+   "valor": 7.65,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Tasa de interés del IRS sobre pagos atrasados (individuos y empresas), trimestre que empieza el 1 de julio de 2026",
+   "valor": 7,
+   "unidad": "%",
+   "fuente": "https://www.federalregister.gov/documents/2026/07/01/2026-13298/quarterly-irs-interest-rates-used-in-calculating-interest-on-overdue-accounts-and-refunds-of-customs"
+  },
+  {
+   "dato": "Fechas de pagos trimestrales 2026: 15 de abril, 15 de junio, 15 de septiembre y 15 de enero de 2027 (4 pagos al año)",
+   "valor": 4,
+   "unidad": "pagos al año",
+   "fuente": "https://ustax.tools/estimated-tax-due-dates-2026/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ganancia neta del año sobre la que se cobra el impuesto (92.35% de $60,000)",
+   "expresion": "60000*0.9235",
+   "resultado": 55410.0
+  },
+  {
+   "descripcion": "Impuesto de trabajador por cuenta propia (15.3%) sobre $60,000 de ganancia neta, sin contar el impuesto sobre la renta",
+   "expresion": "round(60000*0.9235*0.153, 2)",
+   "resultado": 8477.73
+  },
+  {
+   "descripcion": "Lo que paga un empleado con nómina con el mismo ingreso de $60,000 (7.65%)",
+   "expresion": "60000*0.0765",
+   "resultado": 4590.0
+  },
+  {
+   "descripcion": "Cuánto más paga el contratista que el empleado, por las dos mitades",
+   "expresion": "round(60000*0.9235*0.153 - 60000*0.0765, 2)",
+   "resultado": 3887.73
+  },
+  {
+   "descripcion": "Interés aproximado a 7% por un año si no pagas ese impuesto a tiempo (estimado simple)",
+   "expresion": "round(60000*0.9235*0.153*0.07, 2)",
+   "resultado": 593.44
+  },
+  {
+   "descripcion": "Total aproximado que enfrenta el que no apartó nada: impuesto más interés",
+   "expresion": "round(60000*0.9235*0.153 + 60000*0.9235*0.153*0.07, 2)",
+   "resultado": 9071.17
+  },
+  {
+   "descripcion": "Cuánto apartar por semana solo para el impuesto de Seguro Social y Medicare (52 semanas)",
+   "expresion": "round(60000*0.9235*0.153/52, 2)",
+   "resultado": 163.03
+  },
+  {
+   "descripcion": "Cuánto apartar por mes solo para ese impuesto",
+   "expresion": "round(60000*0.9235*0.153/12, 2)",
+   "resultado": 706.48
+  },
+  {
+   "descripcion": "Pago por trimestre solo de ese impuesto (4 pagos)",
+   "expresion": "round(60000*0.9235*0.153/4, 2)",
+   "resultado": 2119.43
+  }
+ ],
+ "consejo": "Abre una cuenta de ahorro aparte, solo para impuestos. Cada vez que te paguen, mueve ahí una parte antes de gastar. En el ejemplo de $60,000, solo el Seguro Social y Medicare son unos $163 por semana, y el impuesto sobre la renta va aparte. Por eso muchos contratistas apartan entre 25% y 30%, pero eso es una referencia, no una regla del IRS. Usa la Forma 1040-ES del IRS para hacer tus pagos trimestrales en las fechas que marca el IRS. Si tienes dudas, pide ayuda a un preparador de impuestos con licencia (PTIN) o a un programa gratuito de ayuda con impuestos del IRS (VITA), y revisa tu caso con ellos.",
+ "que_no_decir": [
+  "No digas 'esto es lo que vas a pagar de impuestos en total'. Son $8,477.73 solo de Seguro Social y Medicare, y falta el impuesto sobre la renta.",
+  "No prometas que el interés será exactamente $593.44. Es un estimado simple a 7%, y la tasa cambia cada trimestre.",
+  "No digas que ser contratista es malo ni que debes buscar un empleo con nómina.",
+  "No digas 'el IRS te va a perseguir' ni uses miedo para asustar.",
+  "No prometas que 'te ahorras todo' con deducciones. Los gastos del trabajo sí bajan la ganancia neta, pero deben ser reales y con comprobantes.",
+  "No des una cifra única de 'aparta X%' como regla oficial.",
+  "No digas que 'con efectivo no pasa nada'. El ingreso en efectivo también se declara."
+ ],
+ "con_iul": false
+}

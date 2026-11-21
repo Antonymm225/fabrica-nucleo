@@ -1,0 +1,79 @@
+{
+ "titulo": "El cargo de $35 por una compra de $15",
+ "angulo": "Tu banco puede cobrarte $35 por dejarte pagar un café de $15, y en muchos casos solo te lo cobra si tú aceptaste sin darte cuenta.",
+ "explicacion": "Pasas la tarjeta de débito, no te alcanza el saldo y el banco aprueba la compra. Parece un favor. Pero te cobra un cargo de sobregiro, que en bancos grandes ronda los $35 cada vez. Una compra de $15 termina costándote $50. Las cuentas que aceptaron este servicio pagaron mucho más al año que las que no. Tú puedes decirle al banco que no lo quiere en tu tarjeta de débito.",
+ "datos": [
+  {
+   "dato": "Cargo mediano por sobregiro en bancos grandes (más de $10 mil millones en activos)",
+   "valor": 35,
+   "unidad": "$",
+   "fuente": "https://files.consumerfinance.gov/f/documents/cfpb_overdraft-nsf-report_2023-12.pdf"
+  },
+  {
+   "dato": "Cargo promedio por sobregiro según la encuesta 2025 de Bankrate (aprox.)",
+   "valor": 26,
+   "unidad": "$",
+   "fuente": "https://www.bankrate.com/banking/checking/checking-account-survey/"
+  },
+  {
+   "dato": "Pago anual promedio en cargos por sobregiro y fondos insuficientes, cuentas que aceptaron el servicio (dato del CFPB, de años atrás)",
+   "valor": 260,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/archive/newsroom/prepared-remarks-of-cfpb-director-richard-cordray-on-the-overdraft-data-point-press-call/"
+  },
+  {
+   "dato": "Pago anual promedio en esos cargos, cuentas que no aceptaron el servicio (dato del CFPB, de años atrás)",
+   "valor": 35,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/archive/newsroom/prepared-remarks-of-cfpb-director-richard-cordray-on-the-overdraft-data-point-press-call/"
+  },
+  {
+   "dato": "Congreso derogó en 2025 la regla del CFPB que topaba el cargo en $5 para bancos grandes (ya no hay tope federal)",
+   "valor": 5,
+   "unidad": "$",
+   "fuente": "https://www.congress.gov/crs-product/IN12513"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Costo real de una compra de $15 con cargo de $35",
+   "expresion": "15+35",
+   "resultado": 50
+  },
+  {
+   "descripcion": "El cargo como porcentaje de la compra de $15",
+   "expresion": "round(35/15*100,2)",
+   "resultado": 233.33
+  },
+  {
+   "descripcion": "Cargos en un año si te pasa 3 veces al mes a $35",
+   "expresion": "3*35*12",
+   "resultado": 1260
+  },
+  {
+   "descripcion": "Diferencia al año: cuenta que aceptó el sobregiro vs. la que no",
+   "expresion": "260-35",
+   "resultado": 225
+  },
+  {
+   "descripcion": "Diferencia en 5 años con ese mismo patrón",
+   "expresion": "(260-35)*5",
+   "resultado": 1125
+  },
+  {
+   "descripcion": "Cargos en un año con el promedio de Bankrate ($26), 3 veces al mes",
+   "expresion": "3*26*12",
+   "resultado": 936
+  }
+ ],
+ "consejo": "Hoy mismo entra a tu app o llama al banco y pregunta: 'Mi cuenta tiene sobregiro en la tarjeta de débito? Quiero quitarlo.' Así, si no hay saldo, la compra se rechaza y no pagas el cargo. Pide también alertas de saldo bajo por texto y deja un colchón de $100 en la cuenta corriente. Pregunta si tu banco tiene una cuenta sin cargos por sobregiro. Revisa tu estado de cuenta de los últimos 3 meses y suma cuánto pagaste en cargos.",
+ "que_no_decir": [
+  "Con esto nunca más te van a cobrar (los cheques y pagos automáticos de cuentas todavía pueden generar cargos)",
+  "Todos los bancos cobran $35 (varía; hay bancos que ya lo bajaron o lo quitaron)",
+  "El banco te roba o te estafa (es legal y está en el contrato)",
+  "Los $260 al año son lo que pagas tú (es un promedio de cuentas que aceptaron el servicio)",
+  "Cambia de banco hoy (di que primero revise su caso y compare)",
+  "Cualquier mención de que la ley hoy te protege con un tope de $5 (se eliminó)"
+ ],
+ "con_iul": false
+}

@@ -1,0 +1,42 @@
+# FF-004 · Finanzas Familiares · EST-01 · El cero por ciento que te cobra todo después
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio (APR) de las tarjetas de tienda en 2025: más de 30% (Bankrate) = 30 % · https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/
+# Fuente: Parte aproximada de los saldos con promoción de interés diferido que terminaron con interés retroactivo, según el CFPB (cerca de una quinta parte) = 20 % · https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-the-high-cost-of-retail-credit-cards/
+# BLOQUE 1
+Te dicen [0%|cero por ciento] de *interés*,
+y por quedarte [$600|seiscientos dólares] *corto*,
+te cobran el interés de *todo el año*.
+Al final te digo qué *preguntar* antes de firmar.
+Se llama *interés diferido*.
+Imagina una *sala* a [12|doce] meses.
+La tienda dice *sin intereses*.
+Suena bien, ¿verdad?
+En Estados Unidos es muy *común*.
+Pero el interés corre *en silencio*,
+y la tasa pasa de [30%|treinta por ciento].
+Tú pagas *tu parte* cada mes.
+Parece que vas *bien*.
+Pero en [12|doce] meses solo pagaste [$2,400|dos mil cuatrocientos].
+Y al mes doce te faltan [$600|seiscientos dólares].
+Y lo peor viene *ahora*.
+La tienda te cobra el interés *retroactivo*,
+de todo el año, *de golpe*.
+Son unos [$570|quinientos setenta dólares] extra.
+Debes de golpe unos [$1,170|mil ciento setenta].
+Por la sala pagas unos [$3,570|tres mil quinientos setenta].
+Es casi [19%|diecinueve por ciento] más del precio.
+Eso era la *quincena*,
+los pagos de la *troca*,
+o la comida de tus *hijos*.
+Ahora, ¿cómo lo evitas?
+Antes de firmar, *pregunta*:
+¿Esto es *interés diferido* o cero real?
+Si es diferido, divide el precio entre [11|once].
+Son unos [$273|doscientos setenta y tres] al mes,
+y terminas un *mes antes*.
+Pon el *pago automático* por esa cantidad.
+Si no puedes pagarla completa,
+no la financies en la tienda.
+Ahorra unos meses y paga *de contado*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra *a meses*.

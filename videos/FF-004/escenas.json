@@ -1,0 +1,342 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: una sala a 12 meses sin intereses, con tasa de 30% anual, pagando $2,400 en el año (cifras aproximadas). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu sala",
+   "contador": "te faltan |$600",
+   "objeto": "tarjeta",
+   "valor": 600,
+   "prefijo": "$",
+   "etiqueta": "te faltan al final",
+   "hasta": [
+    1,
+    "600"
+   ],
+   "insignia": {
+    "texto": "TODO EL AÑO",
+    "en": [
+     2,
+     "todo"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "contador": "trampa |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "INTERES",
+    "OCULTO"
+   ],
+   "en": [
+    4,
+    "diferido"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "plazo |12 meses",
+   "objeto": "calendario",
+   "valor": 12,
+   "prefijo": "",
+   "sufijo": " MESES",
+   "etiqueta": "para pagar la sala",
+   "hasta": [
+    5,
+    "12"
+   ],
+   "insignia": {
+    "texto": "SIN INTERESES",
+    "en": [
+     6,
+     "sin"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    9
+   ],
+   "capitulo": "la tasa",
+   "contador": "tasa |30%",
+   "objeto": "moneda",
+   "valor": 30,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "interés al año",
+   "hasta": [
+    10,
+    "30%"
+   ],
+   "insignia": {
+    "texto": "EN SILENCIO",
+    "en": [
+     9,
+     "silencio"
+    ]
+   }
+  },
+  {
+   "tipo": "tiempo",
+   "desde": [
+    11
+   ],
+   "capitulo": "tus pagos",
+   "contador": "pagado |$2,400",
+   "gafete": {
+    "titulo": "TÚ PAGAS",
+    "texto": "$2,400",
+    "sub": "en el año",
+    "cara": 1
+   },
+   "meses": {
+    "desde": [
+     13,
+     "meses"
+    ],
+    "hasta": [
+     14,
+     "doce"
+    ],
+    "total": 12,
+    "texto": "12 MESES"
+   },
+   "banco": {
+    "en": [
+     14,
+     "600"
+    ],
+    "valor": 600,
+    "etiqueta": "te faltan"
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    15
+   ],
+   "capitulo": "el cobro",
+   "contador": "extra |+$570",
+   "objeto": "banco",
+   "valor": 570,
+   "prefijo": "$",
+   "etiqueta": "interés retroactivo",
+   "hasta": [
+    18,
+    "570"
+   ],
+   "insignia": {
+    "texto": "DE GOLPE",
+    "en": [
+     17,
+     "golpe"
+    ]
+   }
+  },
+  {
+   "tipo": "comparativa",
+   "desde": [
+    19
+   ],
+   "capitulo": "la diferencia",
+   "contador": "perdido |$570",
+   "entrada": "cuadritos",
+   "a": {
+    "texto": "A · CON EL ERROR"
+   },
+   "b": {
+    "texto": "B · A TIEMPO",
+    "en": [
+     19,
+     "golpe"
+    ]
+   },
+   "filas": [
+    {
+     "titulo": "debes de golpe",
+     "a": 1170,
+     "b": 0,
+     "textoA": "$1,170",
+     "textoB": "$0",
+     "en": [
+      19,
+      "1,170"
+     ]
+    },
+    {
+     "titulo": "dinero perdido",
+     "a": 570,
+     "b": 0,
+     "textoA": "$570",
+     "textoB": "$0",
+     "en": [
+      21,
+      "19%"
+     ]
+    }
+   ],
+   "ganador": {
+    "texto": "AHORRAS $570",
+    "en": [
+     21,
+     "19%"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "perdido |-$570",
+   "items": [
+    {
+     "objeto": "billete",
+     "etiqueta": "QUINCENA",
+     "en": [
+      22,
+      "quincena"
+     ]
+    },
+    {
+     "objeto": "troca",
+     "etiqueta": "TROCA",
+     "en": [
+      23,
+      "troca"
+     ]
+    },
+    {
+     "objeto": "escuela",
+     "etiqueta": "HIJOS",
+     "en": [
+      24,
+      "hijos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu casa",
+   "contador": "te quedas |+$570",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$570",
+    "etiqueta": "que no pierdes",
+    "en": [
+     26,
+     "pregunta"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     27,
+     "diferido"
+    ]
+   }
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    28
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "tasas": [
+    "12 MESES",
+    "11 MESES",
+    "10 MESES"
+   ],
+   "elegida": 1,
+   "primero": "11",
+   "elegir": [
+    28,
+    "11"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    32
+   ],
+   "capitulo": "otra opción",
+   "contador": "te quedas |$570",
+   "objeto": "alcancia",
+   "valor": 570,
+   "prefijo": "$",
+   "etiqueta": "que no pierdes",
+   "hasta": [
+    34,
+    "contado"
+   ],
+   "insignia": {
+    "texto": "DE CONTADO",
+    "en": [
+     34,
+     "contado"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

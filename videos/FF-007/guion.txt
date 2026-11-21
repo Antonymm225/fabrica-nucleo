@@ -1,0 +1,48 @@
+# FF-007 · Finanzas Familiares · EST-01 · El cargo de $35 por un café
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo mediano por sobregiro en bancos grandes (más de $10 mil millones en activos) = 35 $ · https://files.consumerfinance.gov/f/documents/cfpb_overdraft-nsf-report_2023-12.pdf
+# Fuente: Cargo promedio por sobregiro según la encuesta 2025 de Bankrate (aprox.) = 26 $ · https://www.bankrate.com/banking/checking/checking-account-survey/
+# Fuente: Pago anual promedio en cargos por sobregiro y fondos insuficientes, cuentas que aceptaron el servicio (dato del CFPB, de años atrás) = 260 $ · https://www.consumerfinance.gov/archive/newsroom/prepared-remarks-of-cfpb-director-richard-cordray-on-the-overdraft-data-point-press-call/
+# Fuente: Pago anual promedio en esos cargos, cuentas que no aceptaron el servicio (dato del CFPB, de años atrás) = 35 $ · https://www.consumerfinance.gov/archive/newsroom/prepared-remarks-of-cfpb-director-richard-cordray-on-the-overdraft-data-point-press-call/
+# Fuente: Congreso derogó en 2025 la regla del CFPB que topaba el cargo en $5 para bancos grandes (ya no hay tope federal) = 5 $ · https://www.congress.gov/crs-product/IN12513
+# BLOQUE 1
+Un café puede terminar costándote [$50|cincuenta dólares].
+Tu banco te cobra [$35|treinta y cinco] *extra*,
+y solo si tú dijiste *que sí*.
+Se llama el *sobregiro*.
+Y al final te digo cómo *quitarlo* hoy.
+Pasas tu tarjeta de *débito*.
+No te alcanza el *saldo*.
+Y el banco aprueba la compra.
+Parece un *favor*, ¿verdad?
+Pero te cobra [$35|treinta y cinco] por *cada vez*.
+Tu café ya te costó [$50|cincuenta dólares].
+El *cargo* fue [233%|doscientos treinta y tres por ciento] de tu compra.
+Y lo *peor*…
+Esto casi nunca pasa *una sola vez*.
+Si te pasa [3|tres] veces al mes,
+pagas [$1,260|mil doscientos sesenta dólares] al *año*.
+Eso era el *ahorro* de tus hijos,
+los pagos de la *troca*,
+y los útiles de la *escuela*.
+Y aquí viene lo que *nadie* te dice.
+Las cuentas que aceptaron el *servicio*
+pagaron en promedio [$260|doscientos sesenta] al año.
+Las que dijeron *que no*, solo [$35|treinta y cinco].
+Son [$225|doscientos veinticinco] de diferencia al *año*.
+En [5|cinco] años, [$1,125|mil ciento veinticinco dólares].
+Ese dinero era de *tu familia*.
+Ahora, ¿cómo lo *evitas*?
+Entra a tu app o *llama* al banco.
+Pregunta si tu tarjeta tiene *sobregiro*.
+Y dile que lo quieres *quitar*.
+Así, si no hay saldo,
+la compra se *rechaza*,
+y no pagas *ningún cargo*.
+Ojo: cheques y pagos automáticos *aún* pueden cobrar.
+Pide alertas de saldo bajo por *texto*.
+Deja un *colchón* en tu cuenta corriente.
+Revisa tus últimos *tres meses* de estado de cuenta,
+y suma cuánto pagaste en *cargos*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga con *débito*.

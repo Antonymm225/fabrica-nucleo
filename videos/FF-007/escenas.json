@@ -1,0 +1,378 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: una compra de café con un cargo de sobregiro de $35. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "rayas",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu café",
+   "contador": "café |$50",
+   "objeto": "tarjeta",
+   "valor": 50,
+   "prefijo": "$",
+   "etiqueta": "lo que te cuesta",
+   "hasta": [
+    0,
+    "50"
+   ],
+   "insignia": {
+    "texto": "+$35 DE CARGO",
+    "en": [
+     1,
+     "35"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    3
+   ],
+   "capitulo": "el nombre",
+   "contador": "trampa |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "SOBRE",
+    "GIRO"
+   ],
+   "en": [
+    3,
+    "sobregiro"
+   ]
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    5
+   ],
+   "capitulo": "cómo pasa",
+   "contador": "compra |café",
+   "items": [
+    {
+     "objeto": "tarjeta",
+     "etiqueta": "DÉBITO",
+     "en": [
+      5,
+      "débito"
+     ]
+    },
+    {
+     "objeto": "moneda",
+     "etiqueta": "SALDO",
+     "en": [
+      6,
+      "saldo"
+     ]
+    },
+    {
+     "objeto": "banco",
+     "etiqueta": "BANCO",
+     "en": [
+      7,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    9
+   ],
+   "capitulo": "el cargo",
+   "contador": "cargo |$35",
+   "entrada": "cuadritos",
+   "objeto": "billete",
+   "valor": 233,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "cargo contra compra",
+   "hasta": [
+    11,
+    "233%"
+   ],
+   "insignia": {
+    "texto": "$35 POR VEZ",
+    "en": [
+     9,
+     "35"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    13
+   ],
+   "capitulo": "al año",
+   "contador": "cargos |$1,260",
+   "objeto": "calendario",
+   "valor": 1260,
+   "prefijo": "$",
+   "etiqueta": "cargos en un año",
+   "hasta": [
+    15,
+    "1,260"
+   ],
+   "insignia": {
+    "texto": "3 VECES AL MES",
+    "en": [
+     14,
+     "veces"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    16
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "se va |$1,260",
+   "items": [
+    {
+     "objeto": "alcancia",
+     "etiqueta": "AHORRO",
+     "en": [
+      16,
+      "ahorro"
+     ]
+    },
+    {
+     "objeto": "troca",
+     "etiqueta": "TROCA",
+     "en": [
+      17,
+      "troca"
+     ]
+    },
+    {
+     "objeto": "escuela",
+     "etiqueta": "ESCUELA",
+     "en": [
+      18,
+      "escuela"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    19
+   ],
+   "capitulo": "lo que no dicen",
+   "contador": "promedio |$260",
+   "entrada": "destello",
+   "objeto": "banco",
+   "valor": 260,
+   "prefijo": "$",
+   "etiqueta": "promedio al año",
+   "hasta": [
+    21,
+    "260"
+   ],
+   "insignia": {
+    "texto": "CON SOBREGIRO",
+    "en": [
+     20,
+     "servicio"
+    ]
+   }
+  },
+  {
+   "tipo": "comparativa",
+   "desde": [
+    22
+   ],
+   "capitulo": "la diferencia",
+   "contador": "diferencia |$225",
+   "entrada": "cuadritos",
+   "a": {
+    "texto": "A · CON SOBREGIRO"
+   },
+   "b": {
+    "texto": "B · SIN SOBREGIRO",
+    "en": [
+     22,
+     "dijeron"
+    ]
+   },
+   "filas": [
+    {
+     "titulo": "cargos al año",
+     "a": 260,
+     "b": 35,
+     "textoA": "$260",
+     "textoB": "$35",
+     "en": [
+      22,
+      "35"
+     ]
+    },
+    {
+     "titulo": "lo que recuperas",
+     "a": 1125,
+     "b": 225,
+     "textoA": "$1,125 en 5 años",
+     "textoB": "$225 en 1 año",
+     "en": [
+      23,
+      "diferencia"
+     ]
+    }
+   ],
+   "ganador": {
+    "texto": "AHORRAS $225/AÑO",
+    "en": [
+     23,
+     "225"
+    ]
+   }
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    24
+   ],
+   "capitulo": "tu familia",
+   "contador": "cinco años |+$1,125",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,125",
+    "etiqueta": "en cinco años",
+    "en": [
+     24,
+     "1,125"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     25,
+     "familia"
+    ]
+   }
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "tasas": [
+    "ALERTAS",
+    "LLAMAR",
+    "COLCHÓN"
+   ],
+   "elegida": 1,
+   "primero": "1º",
+   "elegir": [
+    27,
+    "llama"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    30
+   ],
+   "capitulo": "sin cargo",
+   "contador": "cargo |$0",
+   "entrada": "destello",
+   "objeto": "tarjeta",
+   "valor": 35,
+   "prefijo": "$",
+   "etiqueta": "cargo que evitas",
+   "hasta": [
+    32,
+    "cargo"
+   ],
+   "insignia": {
+    "texto": "RECHAZADA",
+    "en": [
+     31,
+     "rechaza"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    34
+   ],
+   "capitulo": "también haz",
+   "contador": "alertas |texto",
+   "items": [
+    {
+     "objeto": "moneda",
+     "etiqueta": "ALERTAS",
+     "en": [
+      34,
+      "alertas"
+     ]
+    },
+    {
+     "objeto": "billete",
+     "etiqueta": "COLCHÓN",
+     "en": [
+      35,
+      "colchón"
+     ]
+    },
+    {
+     "objeto": "calendario",
+     "etiqueta": "3 MESES",
+     "en": [
+      36,
+      "meses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

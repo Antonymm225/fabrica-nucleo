@@ -1,0 +1,358 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: ingreso de $60,000 al año por contrato, solo Seguro Social y Medicare (sin impuesto sobre la renta). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu contrato",
+   "contador": "debes |$8,000",
+   "objeto": "billete",
+   "valor": 8000,
+   "prefijo": "$",
+   "etiqueta": "le debes al IRS",
+   "hasta": [
+    1,
+    "8,000"
+   ],
+   "insignia": {
+    "texto": "POR CONTRATO",
+    "en": [
+     0,
+     "contrato"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "el nombre",
+   "contador": "trampa |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "CUENTA",
+    "PROPIA"
+   ],
+   "en": [
+    2,
+    "propia"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    4
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ingreso |$60,000",
+   "objeto": "billete",
+   "valor": 60000,
+   "prefijo": "$",
+   "etiqueta": "te pagan al año",
+   "hasta": [
+    4,
+    "60,000"
+   ],
+   "insignia": {
+    "texto": "SIN DESCUENTOS",
+    "en": [
+     5,
+     "descuentos"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    8
+   ],
+   "capitulo": "la cuenta",
+   "contador": "impuesto |$8,500",
+   "entrada": "destello",
+   "objeto": "moneda",
+   "valor": 8500,
+   "prefijo": "$",
+   "etiqueta": "Seguro Social y Medicare",
+   "hasta": [
+    10,
+    "8,500"
+   ],
+   "insignia": {
+    "texto": "15.3%",
+    "en": [
+     8,
+     "15.3%"
+    ]
+   }
+  },
+  {
+   "tipo": "comparativa",
+   "desde": [
+    12
+   ],
+   "capitulo": "tú y el patrón",
+   "contador": "dos mitades |tú",
+   "entrada": "cuadritos",
+   "a": {
+    "texto": "TÚ · CONTRATO"
+   },
+   "b": {
+    "texto": "EMPLEADO · NÓMINA",
+    "en": [
+     12,
+     "7.65%"
+    ]
+   },
+   "filas": [
+    {
+     "titulo": "impuesto",
+     "a": 15.3,
+     "b": 7.65,
+     "textoA": "15.3%",
+     "textoB": "7.65%",
+     "en": [
+      12,
+      "7.65%"
+     ]
+    },
+    {
+     "titulo": "al año",
+     "a": 8478,
+     "b": 4590,
+     "textoA": "$8,478",
+     "textoB": "$4,590",
+     "en": [
+      15,
+      "4,590"
+     ]
+    }
+   ],
+   "ganador": {
+    "texto": "PAGAS $3,900 MÁS",
+    "en": [
+     15,
+     "4,590"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    16
+   ],
+   "capitulo": "lo peor",
+   "contador": "de más |$3,900",
+   "entrada": "destello",
+   "objeto": "calendario",
+   "valor": 3900,
+   "prefijo": "$",
+   "etiqueta": "más que un empleado",
+   "hasta": [
+    16,
+    "3,900"
+   ],
+   "insignia": {
+    "texto": "ABRIL",
+    "en": [
+     17,
+     "abril"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    19
+   ],
+   "capitulo": "el interés",
+   "contador": "interés |$600",
+   "objeto": "calendario",
+   "valor": 600,
+   "prefijo": "$",
+   "etiqueta": "interés extra",
+   "hasta": [
+    21,
+    "600"
+   ],
+   "insignia": {
+    "texto": "7% INTERÉS",
+    "en": [
+     20,
+     "7%"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "se va |$600",
+   "items": [
+    {
+     "objeto": "casa",
+     "etiqueta": "RENTA",
+     "en": [
+      22,
+      "renta"
+     ]
+    },
+    {
+     "objeto": "billete",
+     "etiqueta": "COMIDA",
+     "en": [
+      23,
+      "comida"
+     ]
+    },
+    {
+     "objeto": "troca",
+     "etiqueta": "TROCA",
+     "en": [
+      24,
+      "troca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    25
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |2 de 3"
+    }
+   ],
+   "tasas": [
+    "GASTAR",
+    "APARTAR",
+    "OLVIDAR"
+   ],
+   "elegida": 1,
+   "primero": "1º",
+   "elegir": [
+    26,
+    "aparte"
+   ],
+   "alcancia": [
+    27,
+    "impuestos"
+   ]
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    28
+   ],
+   "capitulo": "cada pago",
+   "contador": "paso |3 de 3",
+   "entrada": "cuadritos",
+   "items": [
+    {
+     "objeto": "billete",
+     "etiqueta": "TE PAGAN",
+     "en": [
+      28,
+      "paguen"
+     ]
+    },
+    {
+     "objeto": "alcancia",
+     "etiqueta": "APARTAS",
+     "en": [
+      29,
+      "gastar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "cada semana",
+   "contador": "aparta |$163",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$163",
+    "etiqueta": "por semana",
+    "en": [
+     30,
+     "163"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "APARTADO",
+    "en": [
+     31,
+     "solo"
+    ]
+   }
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    33
+   ],
+   "capitulo": "pagos del IRS",
+   "contador": "pagos |cada trimestre",
+   "tasas": [
+    "ABRIL",
+    "JUNIO",
+    "SEPT."
+   ],
+   "elegida": 0,
+   "primero": "PRIMERO",
+   "elegir": [
+    33,
+    "trimestrales"
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

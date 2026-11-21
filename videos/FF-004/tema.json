@@ -1,0 +1,76 @@
+{
+ "titulo": "El «cero por ciento» de la tienda que te cobra todo después",
+ "angulo": "Pagas el sillón, el refri o las llantas «sin intereses», y por quedarte $600 cortos el último día la tarjeta te cobra intereses de todo el año.",
+ "explicacion": "Muchas tarjetas de tienda ofrecen «0% por 12 meses». Casi siempre es interés diferido, no cero real. El interés corre en silencio todo el año. Si al mes 12 te falta aunque sea un dólar, te cobran el interés de todo el año de golpe. La tasa promedio de estas tarjetas pasa de 30%. El CFPB encontró que cerca de una quinta parte de estos saldos terminó con ese cobro retroactivo.",
+ "datos": [
+  {
+   "dato": "Tasa promedio (APR) de las tarjetas de tienda en 2025: más de 30% (Bankrate)",
+   "valor": 30,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/"
+  },
+  {
+   "dato": "Parte aproximada de los saldos con promoción de interés diferido que terminaron con interés retroactivo, según el CFPB (cerca de una quinta parte)",
+   "valor": 20,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-the-high-cost-of-retail-credit-cards/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: sala de $3,000 a 12 meses. Pago mensual para liquidarla justo en 12 meses",
+   "expresion": "round(3000/12,2)",
+   "resultado": 250.0
+  },
+  {
+   "descripcion": "Pago mensual más seguro: dividir entre 11 meses, para terminar un mes antes",
+   "expresion": "round(3000/11,2)",
+   "resultado": 272.73
+  },
+  {
+   "descripcion": "Lo que pagas en 12 meses si solo das $200 al mes",
+   "expresion": "round(200*12,2)",
+   "resultado": 2400.0
+  },
+  {
+   "descripcion": "Saldo que queda al mes 12 si pagaste $200 al mes",
+   "expresion": "round(3000-200*12,2)",
+   "resultado": 600.0
+  },
+  {
+   "descripcion": "Interés retroactivo aproximado a 30% anual sobre el saldo que fue bajando (suma de saldos de los 12 meses por la tasa mensual)",
+   "expresion": "round(12*(3000+800)/2*(0.30/12),2)",
+   "resultado": 570.0
+  },
+  {
+   "descripcion": "Lo que debes de golpe al mes 12: saldo más interés retroactivo",
+   "expresion": "round(600+570,2)",
+   "resultado": 1170.0
+  },
+  {
+   "descripcion": "Total que terminas pagando por la sala de $3,000 con el error",
+   "expresion": "round(2400+600+570,2)",
+   "resultado": 3570.0
+  },
+  {
+   "descripcion": "Dinero perdido por quedarte corto, frente a pagarla completa",
+   "expresion": "round(3570-3000,2)",
+   "resultado": 570.0
+  },
+  {
+   "descripcion": "Ese dinero perdido como porcentaje del precio",
+   "expresion": "round(570/3000*100,2)",
+   "resultado": 19.0
+  }
+ ],
+ "consejo": "Antes de firmar pregunta: «¿Esto es interés diferido o 0% real?». Si es diferido, divide el precio entre 11 meses, no entre 12. Pon el pago automático por esa cantidad y termina un mes antes. Si no puedes pagarlo completo en el plazo, no lo financies en la tienda. Ahorra unos meses y paga de contado.",
+ "que_no_decir": [
+  "«Es gratis» o «no pagas nada de intereses»",
+  "«Todas las tarjetas de tienda son malas»",
+  "Prometer que el cobro retroactivo siempre te va a pasar",
+  "Dar el interés de $570 como cifra exacta. Es una estimación y cambia según la tarjeta",
+  "Recomendar abrir muchas tarjetas para juntar descuentos",
+  "Recomendar un banco, una tarjeta o un producto en particular"
+ ],
+ "con_iul": false
+}

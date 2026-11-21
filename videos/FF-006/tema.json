@@ -1,0 +1,116 @@
+{
+ "titulo": "El costo de empezar tarde",
+ "angulo": "Esperar 10 años para empezar a ahorrar te ahorra solo $36,000 de aportes, pero te puede costar cientos de miles al final.",
+ "explicacion": "El Seguro Social paga en promedio unos $2,005 al mes. Con eso no vive una familia que depende de un oficio duro. El tiempo trabaja a tu favor si empiezas hoy, y en contra si esperas. Con $300 al mes y el crecimiento tope del 10%, empezar a los 30 y no a los 40 puede dejar más de $683,000 de diferencia. Pones solo $36,000 más, y el resto lo hace el tiempo.",
+ "datos": [
+  {
+   "dato": "Pago mensual promedio del Seguro Social a jubilados (junio 2025)",
+   "valor": 2005.05,
+   "unidad": "$",
+   "fuente": "https://www.northwesternmutual.com/life-and-money/average-social-security-check/"
+  },
+  {
+   "dato": "Tasa promedio nacional de una cuenta de ahorro (FDIC, fines de 2025)",
+   "valor": 0.39,
+   "unidad": "%",
+   "fuente": "https://www.sofi.com/learn/content/average-savings-account-interest-rate/"
+  },
+  {
+   "dato": "Beneficio máximo mensual del Seguro Social al retirarse a edad plena en 2025",
+   "valor": 4018,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Aporte anual con $300 al mes",
+   "expresion": "300*12",
+   "resultado": 3600
+  },
+  {
+   "descripcion": "Seguro Social promedio al año (2,005.05 x 12)",
+   "expresion": "round(2005.05*12, 2)",
+   "resultado": 24060.6
+  },
+  {
+   "descripcion": "Valor a los 65 si empiezas a los 30 (35 años, 10% tope, aporte al inicio de año)",
+   "expresion": "round(3600*((1.1**35-1)/0.1)*1.1, 2)",
+   "resultado": 1073256.5
+  },
+  {
+   "descripcion": "Total aportado empezando a los 30",
+   "expresion": "3600*35",
+   "resultado": 126000
+  },
+  {
+   "descripcion": "Valor a los 65 si empiezas a los 40 (25 años)",
+   "expresion": "round(3600*((1.1**25-1)/0.1)*1.1, 2)",
+   "resultado": 389454.36
+  },
+  {
+   "descripcion": "Total aportado empezando a los 40",
+   "expresion": "3600*25",
+   "resultado": 90000
+  },
+  {
+   "descripcion": "Valor a los 65 si empiezas a los 45 (20 años)",
+   "expresion": "round(3600*((1.1**20-1)/0.1)*1.1, 2)",
+   "resultado": 226809.0
+  },
+  {
+   "descripcion": "Total aportado empezando a los 45",
+   "expresion": "3600*20",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Costo de esperar de los 30 a los 40 (diferencia de valor final)",
+   "expresion": "round(3600*((1.1**35-1)/0.1)*1.1 - 3600*((1.1**25-1)/0.1)*1.1, 2)",
+   "resultado": 683802.14
+  },
+  {
+   "descripcion": "Aportes extra por empezar a los 30 en vez de a los 40",
+   "expresion": "3600*35-3600*25",
+   "resultado": 36000
+  },
+  {
+   "descripcion": "Costo de esperar de los 30 a los 45 (diferencia de valor final)",
+   "expresion": "round(3600*((1.1**35-1)/0.1)*1.1 - 3600*((1.1**20-1)/0.1)*1.1, 2)",
+   "resultado": 846447.5
+  },
+  {
+   "descripcion": "Costo de esperar de los 40 a los 45",
+   "expresion": "round(3600*((1.1**25-1)/0.1)*1.1 - 3600*((1.1**20-1)/0.1)*1.1, 2)",
+   "resultado": 162645.36
+  }
+ ],
+ "consejo": "Empieza ya, aunque sea con poco. Cada año que esperas cuesta más que el anterior. Pide una cotización de IUL a un agente con licencia y pregunta por costos, límites de crecimiento y qué pasa si dejas de pagar.",
+ "que_no_decir": [
+  "Vas a ganar 10% garantizado todos los años.",
+  "Vas a ser millonario.",
+  "El Seguro Social se va a acabar.",
+  "El IUL es una inversión sin riesgo ni costos.",
+  "Puedes sacar medio millón cuando quieras.",
+  "El banco es una estafa.",
+  "Cifras de $1,073,256 sin aclarar que son una proyección con el tope del 10%."
+ ],
+ "con_iul": true
+}

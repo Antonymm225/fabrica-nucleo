@@ -1,0 +1,43 @@
+# FF-006 · Finanzas Familiares · EST-01 · El costo de empezar tarde
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Pago mensual promedio del Seguro Social a jubilados (junio 2025) = 2005.05 $ · https://www.northwesternmutual.com/life-and-money/average-social-security-check/
+# Fuente: Tasa promedio nacional de una cuenta de ahorro (FDIC, fines de 2025) = 0.39 % · https://www.sofi.com/learn/content/average-savings-account-interest-rate/
+# Fuente: Beneficio máximo mensual del Seguro Social al retirarse a edad plena en 2025 = 4018 $ · https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Esperar [10|diez] años para *ahorrar*
+te ahorra solo [$36,000|treinta y seis mil dólares].
+Pero te puede costar más de [$683,000|seiscientos ochenta y tres mil].
+Y al final te enseño dónde puede crecer.
+Se llama *empezar tarde*.
+Imagina dos amigos que ahorran [$3,600|tres mil seiscientos dólares] al año.
+Uno empieza *hoy*.
+El otro espera [10|diez] años para empezar.
+Los dos ahorran hasta su *retiro*.
+Con un crecimiento de *hasta un* [10%|diez por ciento] al año,
+el primero podría juntar [$1,073,000|un millón setenta y tres mil dólares].
+El segundo podría juntar solo [$389,000|trescientos ochenta y nueve mil].
+Y el primero puso solo [$36,000|treinta y seis mil] más.
+Lo demás lo hizo el *tiempo*.
+Pero aquí viene lo que nadie te dice.
+El *Seguro Social* paga en promedio
+unos [$2,005|dos mil cinco] al mes.
+¿Con eso vive una familia entera?
+Eso se va en la *renta*,
+la comida y los *biles*.
+Empieza *hoy*, aunque sea con poco.
+Cada año que esperas cuesta *más*.
+Aquí va lo que te prometí:
+El [IUL|i u ele], un *seguro de vida indexado*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Si tú faltas, protege a tu *familia*.
+Y tiene *beneficios en vida* si te enfermas.
+Podrías llegar hasta [$500,000|medio millón] para tu retiro.
+Un *asesor certificado* debe ver tu caso a detalle.
+Hoy es el año más *barato* para empezar.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien dice *empiezo mañana*.

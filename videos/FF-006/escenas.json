@@ -1,0 +1,297 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: $3,600 al año, con crecimiento tope de 10% anual, empezando hoy o esperando 10 años hasta el retiro; es una proyección, no una promesa. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 0,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "desde": [
+    0
+   ],
+   "capitulo": "esperar",
+   "contador": "costo |$683,000",
+   "objeto": "alcancia",
+   "valor": 683000,
+   "prefijo": "$",
+   "etiqueta": "lo que te cuesta",
+   "hasta": [
+    2,
+    "683,000"
+   ],
+   "insignia": {
+    "texto": "10 AÑOS TARDE",
+    "en": [
+     2,
+     "costar"
+    ]
+   }
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "contador": "trampa |1 de 1",
+   "entrada": "destello",
+   "filas": [
+    "EMPEZAR",
+    "TARDE"
+   ],
+   "en": [
+    4,
+    "tarde"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ahorro |$3,600 al año",
+   "objeto": "calendario",
+   "valor": 3600,
+   "prefijo": "$",
+   "etiqueta": "al año",
+   "hasta": [
+    5,
+    "3,600"
+   ],
+   "insignia": {
+    "texto": "HOY VS 10 AÑOS",
+    "en": [
+     7,
+     "10"
+    ]
+   }
+  },
+  {
+   "tipo": "comparativa",
+   "desde": [
+    9
+   ],
+   "capitulo": "al retirarte",
+   "contador": "diferencia |$683,000",
+   "entrada": "cuadritos",
+   "a": {
+    "texto": "A · EMPIEZA HOY"
+   },
+   "b": {
+    "texto": "B · ESPERA 10 AÑOS",
+    "en": [
+     11,
+     "segundo"
+    ]
+   },
+   "filas": [
+    {
+     "titulo": "al retirarte",
+     "a": 1073000,
+     "b": 389000,
+     "textoA": "$1,073,000",
+     "textoB": "$389,000",
+     "en": [
+      10,
+      "1,073,000"
+     ]
+    },
+    {
+     "titulo": "lo que pones",
+     "a": 126000,
+     "b": 90000,
+     "textoA": "$126,000",
+     "textoB": "$90,000",
+     "en": [
+      12,
+      "36,000"
+     ]
+    }
+   ],
+   "ganador": {
+    "texto": "+$683,000 EXTRA",
+    "en": [
+     12,
+     "más"
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    13
+   ],
+   "capitulo": "seguro social",
+   "contador": "promedio |$2,005",
+   "objeto": "billete",
+   "valor": 2005,
+   "prefijo": "$",
+   "etiqueta": "Seguro Social al mes",
+   "hasta": [
+    16,
+    "2,005"
+   ],
+   "insignia": {
+    "texto": "SEGURO SOCIAL",
+    "en": [
+     16,
+     "mes"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    17
+   ],
+   "capitulo": "lo que se va",
+   "contador": "se va |en lo básico",
+   "items": [
+    {
+     "objeto": "casa",
+     "etiqueta": "RENTA",
+     "en": [
+      18,
+      "renta"
+     ]
+    },
+    {
+     "objeto": "billete",
+     "etiqueta": "BILES",
+     "en": [
+      19,
+      "biles"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "pasos",
+   "desde": [
+    20
+   ],
+   "capitulo": "qué hacer",
+   "contador": "empieza |hoy",
+   "tasas": [
+    "Hoy",
+    "En 10",
+    "Tarde"
+   ],
+   "elegida": 0,
+   "primero": "HOY",
+   "elegir": [
+    20,
+    "hoy"
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    22
+   ],
+   "capitulo": "la salida",
+   "contador": "IUL |hasta 10%",
+   "objeto": "alcancia",
+   "valor": 10,
+   "prefijo": "",
+   "sufijo": "%",
+   "etiqueta": "crecimiento tope",
+   "hasta": [
+    24,
+    "10%"
+   ],
+   "insignia": {
+    "texto": "HASTA UN 10%",
+    "en": [
+     24,
+     "hasta"
+    ]
+   }
+  },
+  {
+   "tipo": "colgantes",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu protección",
+   "contador": "protección |familia",
+   "items": [
+    {
+     "objeto": "moneda",
+     "etiqueta": "PISO CERO",
+     "en": [
+      26,
+      "cero"
+     ]
+    },
+    {
+     "objeto": "casa",
+     "etiqueta": "FAMILIA",
+     "en": [
+      27,
+      "familia"
+     ]
+    },
+    {
+     "objeto": "calendario",
+     "etiqueta": "EN VIDA",
+     "en": [
+      28,
+      "vida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    29
+   ],
+   "capitulo": "tu retiro",
+   "contador": "retiro |hasta $500,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$500,000",
+    "etiqueta": "para tu retiro",
+    "en": [
+     29,
+     "500,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "RETIRO",
+    "en": [
+     29,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "sígueme",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

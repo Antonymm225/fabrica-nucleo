@@ -218,8 +218,10 @@ def llamar(c, **kw):
     """Mensaje a Claude con respaldo automático si el modelo rechaza, y continuación de turnos pausados."""
     msgs = kw.pop("messages")
     for _ in range(5):
-        r = c.beta.messages.create(model=MODELO, max_tokens=16000, messages=msgs,
-                                   betas=["server-side-fallback-2026-07-01"], extra_body={"fallbacks": "default"}, **kw)
+        # Streaming: el guion con sus escenas de lienzo es largo; así no se corta ni se vence la conexión.
+        with c.beta.messages.stream(model=MODELO, max_tokens=64000, messages=msgs,
+                                    betas=["server-side-fallback-2026-07-01"], extra_body={"fallbacks": "default"}, **kw) as s:
+            r = s.get_final_message()
         if r.stop_reason == "pause_turn":
             msgs = msgs + [{"role": "assistant", "content": r.content}]; continue
         if r.stop_reason == "refusal": raise RuntimeError(f"Claude rechazó el pedido: {getattr(r, 'stop_details', None)}")

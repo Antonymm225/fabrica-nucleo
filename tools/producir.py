@@ -211,6 +211,22 @@ def revisar(lineas, escenas, ficha, marca):
         for i, l in enumerate(lineas):
             if re.search(r"\btope\b|\bm[aá]xim|\bl[ií]mite\b", l.lower()) and not re.search(r"\[10%\|", l):
                 err.append(f"línea {i}: el único tope es el 10% al año; el dinero no tiene tope (depende de cuándo empiezas): {l}")
+        ben = ficha.get("beneficio_iul")
+        if ben and ben != RETIRO:
+            n0 = next((i for i, l in enumerate(lineas) if re.search(r"\biul\b|seguro de vida indexado", l.lower())), len(lineas))
+            for i, l in enumerate(lineas):
+                low = l.lower()
+                cerca = " ".join(lineas[max(0, i - 2):i + 3])
+                if i >= n0 and re.search(r"\bretir", low) and "[$" in cerca:
+                    err.append(f"línea {i}: este video es de «{ben}», no de retiro: quita las cuentas de retiro (cuánto juntas, a cuánto llegas): {l}")
+                if re.search(r"\besper(ar|as|a|es)\b.*\[\$|\bempez\w+ .*(despu[eé]s|tarde)", low):
+                    err.append(f"línea {i}: este video es de «{ben}»: no compares empezar antes contra empezar después ni el costo de esperar: {l}")
+            n = next((i for i, l in enumerate(lineas) if re.search(r"\biul\b|seguro de vida indexado", l.lower())), None)
+            if n is not None and sum("[$" in l for l in lineas[n:]) > 1:
+                err.append(f"desde que entra el IUL (línea {n}) hay demasiadas cantidades de dinero: en un video de «{ben}» las cuentas son del problema, y del IUL solo se dice hasta un 10% y piso cero")
+        if ben == RETIRO or not ben:
+            if sum(bool(re.search(r"podr[ií]as? llegar|llegar[ií]as?", l.lower())) for l in lineas) > 2:
+                err.append("hay más de dos proyecciones de retiro: deja una (dos solo si el video compara dos personas o dos edades)")
     elif tiene_iul:
         err.append("este video es de puro valor: no menciones el IUL ni seguros de vida")
     if len(lineas) >= 2:
@@ -368,7 +384,14 @@ def texto(r):
 
 
 TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero del día a día en Estados Unidos con un ejemplo con números que duela (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y una salida práctica. Lo que mejor funciona con esta audiencia: trampas al comprar troca o casa, tarjetas de tienda y "cero por ciento", préstamos caros, cargos del banco, estafas, impuestos del que cobra por contrato, gastos hormiga. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, FTC, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, nada de seguros (ni de vida ni de auto), y no mandes a la gente a cooperativas ni a planes del trabajo."""
-TAREA_IUL = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Elige UN tema nuevo que gire alrededor de uno de sus 3 beneficios: ahorro para el retiro (el dinero que se pierde en el banco, en el colchón, en gastos hormiga, en una troca que se deprecia, o el costo de empezar tarde), protección de la familia si tú faltas (el seguro del trabajo que no alcanza, la familia que depende de tus envíos), o beneficios en vida si te da una enfermedad crónica, crítica o terminal (el que trabaja con su cuerpo). Busca en la web los datos del problema en Estados Unidos (inflación, tasas del banco, depreciación, Seguro Social, etc.) en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero, retiro de hasta medio millón). Calcula las proyecciones con el 10% al año (aporte al inicio de cada año, interés anual), atadas a la edad en que empieza la persona (ej.: empieza a los 30 y llega a los 60). El dinero que se junta no tiene tope; el único tope es el 10% de crecimiento de un año."""
+RETIRO = "ahorro para el retiro"
+
+
+def tarea_iul(beneficio):
+    comun = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Busca en la web los datos del PROBLEMA en Estados Unidos en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero). El dinero que se junta no tiene tope; el único tope es el 10% de crecimiento de un año."""
+    if not beneficio or beneficio[0] == RETIRO:
+        return comun + """ Este video es de ahorro para el retiro: calcula UNA proyección con el 10% al año (aporte al inicio de cada año, interés anual), atada a la edad en que empieza la persona (ej.: empieza a los 30 y llega a los 60). Solo compares empezar antes contra empezar después si esa comparación es el tema del video y no está ya en la lista de videos hechos."""
+    return comun + f""" Este video es de {beneficio[0]}, NO de retiro: todos los datos y cálculos son del problema (cuánto falta, cuánto cuesta, cuánto tiempo). No calcules proyecciones de ahorro ni de retiro, ni cuánto se junta en el IUL, ni el costo de empezar tarde: esas cifras no van en este video."""
 
 
 def investigar(c, marca, historia, iul=False, beneficio=None):
@@ -382,7 +405,7 @@ Videos que la marca YA hizo. No repitas ni el tema, ni la idea de fondo, ni el d
 {f"""
 En este video el IUL entra por UN solo beneficio: {beneficio[0]} ({beneficio[1]}). No uses los otros dos como tema central. Y dentro de ese beneficio, busca un problema que NO esté en la lista de arriba.""" if iul and beneficio else ""}
 
-{TAREA_IUL if iul else TAREA_VALOR}
+{tarea_iul(beneficio) if iul else TAREA_VALOR}
 
 Responde al final con UN bloque ```json con esta forma exacta:
 {{
@@ -404,7 +427,7 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     ficha = json.loads(m[-1])
     ficha["con_iul"] = iul
     if iul and beneficio: ficha["beneficio_iul"] = beneficio[0]
-    if iul: ficha["datos"] = ficha.get("datos", []) + DATOS_IUL
+    if iul: ficha["datos"] = ficha.get("datos", []) + (DATOS_IUL if not beneficio or beneficio[0] == RETIRO else DATOS_IUL[:2])
     return ficha
 
 
@@ -422,7 +445,7 @@ Nombre para el cierre: "{marca['nombre']}". Lema para el cierre (campo sub): "di
 Ficha del tema investigado (las únicas cifras permitidas están en "datos" y "calculos"):
 {json.dumps(ficha, ensure_ascii=False, indent=1)}
 
-Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra" if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
+Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra. El único beneficio de este video es: " + str(ficha.get("beneficio_iul") or "el de la ficha") + ". Los otros dos no se desarrollan" if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
 Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. Gancho fuerte con open loop que se cierra al final.
 
 Escribe el video siguiendo el cerebro de EST-01:

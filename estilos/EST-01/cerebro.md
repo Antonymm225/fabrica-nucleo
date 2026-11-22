@@ -23,11 +23,14 @@ Una trampa o un secreto de dinero del día a día contado en **50 a 85 segundos*
 
 ## El IUL (solo cuando la ficha diga `con_iul: true`)
 Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunca a la fuerza. Gira alrededor de sus 3 beneficios: **ahorro para el retiro**, **protección de la familia** si tú faltas y **beneficios en vida** si te da una enfermedad crónica, crítica o terminal.
+- **Un video, un beneficio.** La ficha dice cuál (`beneficio_iul`) y todo el video gira en eso: el problema, el ejemplo con números y la salida. Los otros dos beneficios no se desarrollan (a lo mucho, una mención de pasada sin cifras).
+- **Las cuentas son del problema, no del IUL.** Del IUL siempre se dice lo mismo: es tuyo, crece *hasta un* 10% al año y tiene *piso cero*. Solo el video de **ahorro para el retiro** lleva una proyección de cuánto podrías juntar. En un video de **protección de la familia** o de **beneficios en vida** no hay proyecciones de retiro, ni "si empiezas a los 30…", ni "esperar diez años te cuesta…": desde que entra el IUL, casi no hay cantidades de dinero.
+- **No remates con otro video.** Cuando ya diste la salida, cierra. No agregues al final un segundo tema (el costo de esperar, otra comparación) para alargar.
 - Dilo así la primera vez: `[IUL|i u ele], un *seguro de vida indexado*`.
 - El crecimiento siempre con "hasta": "tu dinero puede crecer *hasta un* [10%|diez por ciento] al año". Nunca un 10% sin "hasta".
 - La protección: "si el mercado cae, *no pierde* por esa caída. Tiene *piso cero*."
 - **El único tope es el crecimiento de un año: hasta un 10%. El piso es 0%.** El dinero que juntas **no tiene tope**: depende de cuánto aportas y de **desde cuándo empiezas**. Nunca llames "tope", "máximo" ni "límite" a una cantidad de dinero (nada de "como tope, podrías llegar a $150,000" ni "Es un tope, no una promesa").
-- Las proyecciones se dicen atadas a cuándo empiezas: "Si empiezas a los [30|treinta] con [$200|doscientos dólares] al mes, a los [60|sesenta] podrías llegar a unos [$434,000|cuatrocientos treinta y cuatro mil]". Calcúlalas con el 10% al año. Se vale "podrías llegar hasta *medio millón* para tu retiro, depende de cuándo empieces".
+- En el video de retiro, la proyección se dice atada a cuándo empiezas (una sola; dos únicamente si el video compara dos personas o dos edades): "Si empiezas a los [30|treinta] con [$200|doscientos dólares] al mes, a los [60|sesenta] podrías llegar a unos [$434,000|cuatrocientos treinta y cuatro mil]". Calcúlalas con el 10% al año. Se vale "podrías llegar hasta *medio millón* para tu retiro, depende de cuándo empieces".
 - **Nunca** digas "garantizado" ni "no garantizado", ni la palabra "promesa" ("es una promesa", "no es una promesa", "es un máximo, no una promesa"). Tampoco en las escenas ni en el aviso. Nada de frases para curarte en salud: eso lo cubre la línea del asesor.
 - **Siempre**, antes del cierre, la línea: `Un *asesor certificado* debe ver tu caso a detalle.`
 - Sin precios del seguro, sin nombres de aseguradoras, sin "cotiza", sin links.

@@ -1,0 +1,596 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: módem rentado de $15 al mes contra uno propio de $200 durante cinco años; cada plan es distinto. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu internet",
+   "contador": "renta |$15 al mes",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      0
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "veces"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "x4",
+     "x": 68,
+     "y": 45,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "veces",
+     "en": [
+      1,
+      "veces"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "el secreto",
+   "contador": "tres |palabras",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      2
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuáles son esas tres palabras?",
+     "piensa": true,
+     "cola": 1,
+     "x": 50,
+     "y": 22,
+     "en": [
+      2,
+      "tres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "RENTA",
+    "MODEM"
+   ],
+   "en": [
+    4,
+    "módem"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "tu recibo",
+   "contador": "renta |$15 al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Recibo de internet",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Renta del módem",
+       "valor": "$15",
+       "en": [
+        5,
+        "15"
+       ]
+      },
+      {
+       "texto": "Uno propio",
+       "valor": "$200",
+       "en": [
+        7,
+        "200"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       5,
+       "cargo"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      6,
+      "Aquí"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    8
+   ],
+   "capitulo": "la cuenta",
+   "contador": "renta |$15 al mes",
+   "entrada": "ola",
+   "objeto": "calendario",
+   "valor": 13,
+   "prefijo": "",
+   "sufijo": " meses",
+   "etiqueta": "y ya lo pagaste",
+   "hasta": [
+    9,
+    "completo"
+   ],
+   "insignia": {
+    "texto": "PAGADO",
+    "en": [
+     9,
+     "completo"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "lo que no dicen",
+   "contador": "nunca es |tuyo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      11
+     ],
+     "cambia": {
+      "en": [
+       12,
+       "tuyo"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 42,
+     "tam": 30,
+     "etiqueta": "EL PROVEEDOR",
+     "en": [
+      12,
+      "módem"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NO ES TUYO",
+     "color": "rojo",
+     "x": 72,
+     "y": 42,
+     "en": [
+      12,
+      "tuyo"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "t",
+     "en": [
+      13,
+      "devolverlo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "cinco años",
+   "contador": "renta |$900",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 55,
+     "valor": 900,
+     "max": 900,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "5 AÑOS RENTANDO",
+     "en": [
+      14
+     ],
+     "hasta": [
+      15,
+      "900"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 200,
+     "max": 900,
+     "prefijo": "$",
+     "etiqueta": "UNO PROPIO",
+     "en": [
+      16,
+      "aparato"
+     ],
+     "hasta": [
+      16,
+      "200"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    17
+   ],
+   "capitulo": "la diferencia",
+   "contador": "ahorras |hasta $700",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$700",
+    "etiqueta": "según tu plan",
+    "en": [
+     18,
+     "700"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TUYO",
+    "en": [
+     18,
+     "propio"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "depende |de tu plan",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 27,
+     "y": 50,
+     "tam": 34,
+     "etiqueta": "TU GASOLINA",
+     "en": [
+      19
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "A LA OBRA",
+     "en": [
+      20,
+      "Pero"
+     ],
+     "cambia": {
+      "en": [
+       20,
+       "gasolina"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "tres palabras",
+   "contador": "busca |en tu recibo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      21
+     ],
+     "items": [
+      {
+       "texto": "equipo",
+       "en": [
+        22,
+        "equipo"
+       ]
+      },
+      {
+       "texto": "módem",
+       "en": [
+        22,
+        "módem"
+       ]
+      },
+      {
+       "texto": "gateway",
+       "en": [
+        22,
+        "gateway"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      23,
+      "Busca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1 de 2",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 4,
+     "en": [
+      24
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Sirve con mi proveedor?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      25,
+      "módem"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 55,
+     "tam": 30,
+     "etiqueta": "TU MÓDEM",
+     "en": [
+      26,
+      "Compra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |2 de 2",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      27
+     ],
+     "items": [
+      {
+       "texto": "Llama y quita el cargo",
+       "en": [
+        27,
+        "Llama"
+       ]
+      },
+      {
+       "texto": "Devuelve el rentado",
+       "en": [
+        28,
+        "Devuelve"
+       ]
+      },
+      {
+       "texto": "Guarda el comprobante",
+       "en": [
+        28,
+        "comprobante"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 75,
+     "y": 80,
+     "tam": 22,
+     "etiqueta": "REVISA",
+     "en": [
+      29,
+      "Dos"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 25,
+     "y": 78,
+     "en": [
+      29,
+      "salga"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "ojo",
+   "contador": "si ya lo |incluye",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      30
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EQUIPO INCLUIDO",
+     "color": "verde",
+     "tam": 5,
+     "x": 70,
+     "y": 40,
+     "en": [
+      30,
+      "incluyen"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 70,
+     "y": 65,
+     "en": [
+      31,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+# FF-027 · Finanzas Familiares · EST-01 · Cosignar no es dar referencia
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio de préstamo de carro usado en EE.UU. (Experian, 2T 2026) = 11.19 % · https://www.experian.com/blogs/ask-experian/used-car-loan-rates/
+# Fuente: Porcentaje de cosignatarios que tuvo que pagar parte o todo el préstamo porque el deudor no pagó (encuesta CreditCards.com) = 38 % · https://jeannieburlowski.com/2017/07/24/why-you-should-never-cosign-a-student-loan/
+# Fuente: La regla de la FTC (16 CFR 444.3) dice que el cosignatario puede deber el monto completo y que el acreedor puede cobrarle sin intentar primero con el deudor = 100 % · https://www.ftc.gov/business-guidance/resources/complying-credit-practices-rule
+# Fuente: Guía de la FTC sobre las obligaciones de cosignar un préstamo = 100 % · https://consumer.ftc.gov/articles/cosigning-loan-faqs
+# BLOQUE 1
+Firmar por tu sobrino no es dar *referencia*.
+Es deberle al banco la *troca completa*.
+Al final te digo cuántos *pagos*
+tienes que apartar antes de *firmar*.
+Se llama la *deuda doble*.
+Tu sobrino no califica para una *troca usada*.
+Te pide que *cosignes*, que firmes con él.
+Tú piensas: es solo mi *nombre*.
+Pero firmar te hace *deudor*, igual que él.
+Digamos una *troca usada*, a cinco años,
+con *pagos* de [$546|quinientos cuarenta y seis] al mes.
+Él paga [12|doce] meses y *deja de pagar*.
+Ahora el banco te *llama* a ti.
+Y no tiene que *perseguirlo* a él primero.
+En Estados Unidos, te puede cobrar *directo*.
+Todavía se deben casi [$21,000|veintiún mil dólares] de la *troca*.
+Y esto es lo que *nadie* te dice:
+los atrasos salen en *tu crédito*.
+Y pueden usar contra ti la *demanda*
+o el *embargo de sueldo*, igual que a él.
+En una encuesta, el [38%|treinta y ocho por ciento]
+de los que firmaron terminó *pagando*
+parte o todo el *préstamo*.
+Eso no es *referencia*. Es tu deuda.
+Ahora sí, lo que te *prometí*:
+Aparta *tres pagos* antes de firmar,
+unos [$1,638|mil seiscientos treinta y ocho dólares].
+Pídele acceso en línea a la *cuenta*,
+y pon alertas de *atraso* en tu teléfono.
+Y hazte esta *pregunta*:
+¿Puedo pagar *yo solo* todo el préstamo?
+Si te duele, *no firmes*.
+Otra salida: ayúdale con el *enganche*,
+para que pida un préstamo más *chico*.
+Y si ayudas, piensa que quizá no *vuelva*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a *cosignar*.

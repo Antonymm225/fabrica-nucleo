@@ -1,0 +1,654 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: $220 por día, 5 días de 10 horas (50 horas a la semana). Aplica si eres empleado y no estás exento. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "pago por día",
+   "contador": "pago |por día",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "cinco"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "$220 POR DÍA",
+     "en": [
+      0,
+      "día"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "5 semanas",
+     "x": 72,
+     "y": 62,
+     "tam": 8,
+     "color": "principal",
+     "etiqueta": "te deben al año",
+     "en": [
+      1,
+      "semanas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la cuenta",
+   "contador": "al final |a quién llamar",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 1,
+     "piel": 2
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto me deben?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      2,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Llamada gratis",
+     "x": 72,
+     "y": 60,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      4,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "HORAS",
+    "EXTRA"
+   ],
+   "en": [
+    5,
+    "horas"
+   ],
+   "entrada": "ola"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "lo que crees",
+   "contador": "ganas |por día",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "cambia": {
+      "en": [
+       7,
+       "Pero"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Gano por día, no hay horas extra",
+     "piensa": true,
+     "cola": -1,
+     "x": 32,
+     "y": 22,
+     "en": [
+      6,
+      "cree"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 62,
+     "tam": 26,
+     "etiqueta": "POR DÍA",
+     "en": [
+      6,
+      "día"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "la ley",
+   "contador": "después de |40 horas",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "40 horas",
+     "x": 50,
+     "y": 30,
+     "tam": 12,
+     "color": "tinta",
+     "etiqueta": "a la semana"
+    },
+    {
+     "que": "texto",
+     "texto": "te deben la mitad extra",
+     "x": 50,
+     "y": 66,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      10,
+      "mitad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ganas |$1,100",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Tu semana de trabajo",
+     "en": [
+      11
+     ],
+     "renglones": [
+      {
+       "texto": "Ganas por día",
+       "valor": "$220",
+       "en": [
+        11,
+        "220"
+       ]
+      },
+      {
+       "texto": "Horas por día",
+       "valor": "10",
+       "en": [
+        12,
+        "10"
+       ]
+      },
+      {
+       "texto": "Horas a la semana",
+       "valor": "50",
+       "en": [
+        13,
+        "50"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       13,
+       "horas"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Ganas a la semana",
+      "valor": "$1,100",
+      "en": [
+       14,
+       "1,100"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "tu tarifa real",
+   "contador": "tarifa |$22 por hora",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 30,
+     "y": 20,
+     "tam": 24,
+     "etiqueta": "GANAS $1,100",
+     "en": [
+      15
+     ]
+    },
+    {
+     "id": "r",
+     "que": "cifra",
+     "texto": "$22",
+     "x": 62,
+     "y": 50,
+     "tam": 10,
+     "color": "verde",
+     "etiqueta": "por hora",
+     "en": [
+      16,
+      "22"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "r",
+     "en": [
+      16,
+      "tarifa"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 4,
+     "en": [
+      15,
+      "cuenta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "lo que no te dicen",
+   "contador": "te deben |$11 por hora",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 3,
+     "etiqueta": "EL PATRÓN"
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 0,
+     "piel": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      17,
+      "aquí"
+     ],
+     "cambia": {
+      "en": [
+       19,
+       "11"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Ya pagué tu hora",
+     "piensa": false,
+     "cola": -1,
+     "x": 22,
+     "y": 12,
+     "en": [
+      18,
+      "patrón"
+     ],
+     "sale": [
+      19,
+      "debe"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y mi mitad extra?",
+     "piensa": false,
+     "cola": 1,
+     "x": 78,
+     "y": 32,
+     "en": [
+      19,
+      "debe"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "el total",
+   "contador": "te deben |$5,500",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$5,500",
+    "etiqueta": "en un año",
+    "en": [
+     21,
+     "5,500"
+    ]
+   },
+   "cae": {
+    "objeto": "billete",
+    "letrero": "TUYO",
+    "en": [
+     21,
+     "año"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "puedes reclamar",
+   "contador": "reclamas |2 años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 3
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 24,
+     "y": 32,
+     "tam": 28,
+     "etiqueta": "HASTA 2 AÑOS",
+     "en": [
+      22,
+      "reclamar"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 32,
+     "en": [
+      22,
+      "legal"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "con daños",
+   "contador": "daños |iguales",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 52,
+     "valor": 11000,
+     "max": 22000,
+     "prefijo": "$",
+     "etiqueta": "TE DEBEN",
+     "color": "gris",
+     "en": [
+      24,
+      "patrón"
+     ],
+     "hasta": [
+      24,
+      "11,000"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 52,
+     "valor": 22000,
+     "max": 22000,
+     "prefijo": "$",
+     "etiqueta": "CON DAÑOS",
+     "en": [
+      25,
+      "cantidad"
+     ],
+     "hasta": [
+      26,
+      "22,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      27
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "items": [
+      {
+       "texto": "Anota hora de entrada y de salida",
+       "en": [
+        27,
+        "Anota"
+       ]
+      },
+      {
+       "texto": "Incluye cargar la troca y el manejo",
+       "en": [
+        28,
+        "Incluye"
+       ]
+      },
+      {
+       "texto": "Guarda fotos de tus talones",
+       "en": [
+        29,
+        "fotos"
+       ]
+      }
+     ],
+     "en": [
+      27
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      27
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "llama gratis",
+   "contador": "llama |gratis",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "piel": 2
+    },
+    {
+     "que": "texto",
+     "texto": "Depto. del Trabajo",
+     "x": 50,
+     "y": 22,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      31,
+      "Departamento"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Salarios y Horas",
+     "x": 50,
+     "y": 42,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      32,
+      "Salarios"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,676 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: cobrar tu retiro antes de tiempo con un impuesto supuesto de 22%; IUL con $2,400 al año hasta el retiro, con crecimiento de hasta 10% al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu retiro",
+   "contador": "cobras |tu retiro",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "tercio"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 30,
+     "tam": 32,
+     "etiqueta": "tu retiro",
+     "en": [
+      0,
+      "retiro"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "1/3",
+     "x": 68,
+     "y": 68,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "para el IRS",
+     "en": [
+      1,
+      "tercio"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "RETIRO",
+    "ANTES"
+   ],
+   "en": [
+    4,
+    "anticipado"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "plan |de retiro",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 16,
+     "y": 60,
+     "tam": 22,
+     "etiqueta": "tu retiro"
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "en": [
+      7,
+      "cobras"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Necesito efectivo",
+     "piensa": false,
+     "cola": 1,
+     "x": 74,
+     "y": 22,
+     "en": [
+      7,
+      "necesitas"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "1 de cada 3",
+     "color": "principal",
+     "x": 74,
+     "y": 46,
+     "en": [
+      8,
+      "tres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "lo que cobran",
+   "contador": "te cobran |de más",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Si cobras antes de tiempo",
+     "en": [
+      9
+     ],
+     "renglones": [
+      {
+       "texto": "Impuesto normal",
+       "valor": "22%",
+       "en": [
+        11,
+        "22%"
+       ]
+      },
+      {
+       "texto": "Penalidad extra",
+       "valor": "$1,000",
+       "en": [
+        12,
+        "1,000"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       12,
+       "penalidad"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      9,
+      "Estados"
+     ],
+     "cambia": {
+      "en": [
+       11,
+       "impuesto"
+      ],
+      "cara": "enojado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "lo que te llega",
+   "contador": "te llega |$6,800",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "$2,200",
+     "x": 50,
+     "y": 26,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "impuesto",
+     "en": [
+      13
+     ],
+     "sale": [
+      14,
+      "Solo"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 24,
+     "y": 95,
+     "tam": 44,
+     "valor": 6800,
+     "max": 6800,
+     "prefijo": "$",
+     "etiqueta": "te llega",
+     "en": [
+      14,
+      "Solo"
+     ],
+     "hasta": [
+      14,
+      "6,800"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 76,
+     "y": 95,
+     "tam": 44,
+     "valor": 3200,
+     "max": 6800,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "perdiste",
+     "en": [
+      15,
+      "Perdiste"
+     ],
+     "hasta": [
+      15,
+      "3,200"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "lo peor",
+   "contador": "por hora |el doble",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "POR HORA",
+     "cambia": {
+      "en": [
+       18,
+       "doble"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "ASALARIADO",
+     "en": [
+      18,
+      "asalariados"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "x2",
+     "x": 50,
+     "y": 50,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      18,
+      "doble"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "el motor",
+   "contador": "pierdes |$3,200",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1
+    },
+    {
+     "que": "globo",
+     "texto": "Era mi retiro",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      19,
+      "motor"
+     ]
+    },
+    {
+     "id": "m",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 72,
+     "y": 45,
+     "tam": 26,
+     "etiqueta": "tus $3,200",
+     "en": [
+      19,
+      "dólares"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "dejan de crecer",
+     "color": "gris",
+     "x": 72,
+     "y": 76,
+     "tam": 5,
+     "en": [
+      21,
+      "dejan"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "m",
+     "en": [
+      21,
+      "crecer"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "qué decir",
+   "contador": [
+    {
+     "en": [
+      22
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "Quiero pasarlo a otra cuenta de retiro, sin cobrarlo",
+     "piensa": false,
+     "cola": -1,
+     "x": 62,
+     "y": 24,
+     "en": [
+      23,
+      "Quiero"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 78,
+     "y": 62,
+     "en": [
+      24,
+      "cobrarlo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "dejarlo ahí",
+     "color": "verde",
+     "x": 72,
+     "y": 82,
+     "tam": 5,
+     "en": [
+      25,
+      "dejarlo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "el IUL",
+   "contador": "crece |hasta 10%",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "IUL, seguro indexado",
+     "color": "principal",
+     "x": 66,
+     "y": 14,
+     "tam": 4.5,
+     "en": [
+      27,
+      "IUL"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "hasta 10%",
+     "etiqueta": "al año",
+     "x": 66,
+     "y": 42,
+     "tam": 10,
+     "color": "verde",
+     "en": [
+      29,
+      "10%"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 62,
+     "y": 76,
+     "en": [
+      28,
+      "tuyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "piso cero",
+   "contador": "piso |0%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 50,
+     "y": 52,
+     "tam": 34
+    },
+    {
+     "que": "texto",
+     "texto": "si el mercado cae",
+     "color": "gris",
+     "x": 50,
+     "y": 16,
+     "en": [
+      30,
+      "mercado"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PISO CERO",
+     "color": "verde",
+     "x": 50,
+     "y": 52,
+     "en": [
+      31,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "tu retiro",
+   "contador": "ahorras |$2,400 al año",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 2400,
+     "final": 260000,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "AL RETIRO",
+     "etiqueta": "$2,400 al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      32
+     ],
+     "hasta": [
+      32,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    33
+   ],
+   "capitulo": "el premio",
+   "contador": "podrías |$260,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$260,000",
+    "etiqueta": "podrías llegar a",
+    "en": [
+     33,
+     "260,000"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     34,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "tu caso",
+   "contador": "habla con |un asesor",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 30,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 30,
+     "tam": 24,
+     "etiqueta": "cuánto aportas",
+     "en": [
+      35,
+      "cuánto"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 78,
+     "y": 30,
+     "tam": 24,
+     "etiqueta": "cuándo empiezas",
+     "en": [
+      36,
+      "cuándo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 70,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 4,
+     "piel": 2,
+     "etiqueta": "ASESOR",
+     "en": [
+      37,
+      "asesor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

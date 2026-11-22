@@ -1,0 +1,50 @@
+# FF-028 · Finanzas Familiares · EST-01 · Tu retiro cobrado a medias
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje promedio de participantes que se llevan el 401(k) en efectivo al dejar el trabajo (Vanguard, How America Saves) = 33 % · https://www.cnn.com/2024/10/09/investing/changing-jobs-cashing-out-401k/index.html
+# Fuente: Impuesto adicional por retiro anticipado antes de los 59½ años = 10 % · https://taxmap.irs.gov/taxmap2018/taxtp/Tt550_18-008.htm
+# Fuente: Los trabajadores por hora cobran su 401(k) al salir aproximadamente el doble que los asalariados (veces) = 2 veces · https://www.thestreet.com/retirement/morgan-stanley-401k-cash-out-trap-job-exit
+# Fuente: Tasa de impuesto federal supuesta para el ejemplo (supuesto de la marca, verificar contra las tablas del IRS) = 22 % · https://www.irs.gov/filing/federal-income-tax-rates-and-brackets
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si cobraste tu *retiro* al cambiar de trabajo,
+el *IRS* se quedó con casi *un tercio*.
+Al final te digo la *frase exacta*
+que dices *en vez* de pedir el cheque.
+Se llama el *retiro anticipado*.
+Digamos que cobras *diez mil dólares*
+de tu plan de retiro del *trabajo anterior*.
+Lo cobras porque necesitas el *efectivo*.
+Casi *uno de cada tres* hace lo mismo.
+Aquí en *Estados Unidos*, si lo cobras
+*antes de jubilarte*, te cobran una *penalidad*.
+Más el *impuesto* normal, digamos [22%|veintidós por ciento].
+Son [$1,000|mil dólares] de *penalidad*
+y [$2,200|dos mil doscientos dólares] de *impuesto*.
+¿Y cuánto te llega? Solo [$6,800|seis mil ochocientos dólares].
+Perdiste [$3,200|tres mil doscientos dólares] en *un día*.
+Y aquí viene lo que nadie te dice:
+los trabajadores *por hora* lo cobran
+el *doble* que los asalariados.
+Esos dólares eran el *motor* de tu retiro,
+porque ya estaban *trabajando* por ti.
+Cuando los cobras, *dejan de crecer*.
+Ahora sí, la *frase exacta*:
+«*Quiero pasarlo* a otra cuenta de retiro,
+*sin cobrarlo*.»
+O pregunta si puedes *dejarlo ahí*.
+Y si empiezas a ahorrar *aparte*,
+pregunta por el [IUL|a yu el], un *seguro de vida indexado*.
+Es *tuyo*, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Si empiezas hoy con [$2,400|dos mil cuatrocientos dólares] al año,
+podrías llegar a unos [$260,000|doscientos sesenta mil dólares]
+para tu *retiro*.
+Lo que juntas *depende* de cuánto aportas
+y de *desde cuándo* empiezas.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a *cobrar su retiro*.

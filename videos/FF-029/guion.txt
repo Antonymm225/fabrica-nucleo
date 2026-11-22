@@ -1,0 +1,45 @@
+# FF-029 · Finanzas Familiares · EST-01 · El pago por día y las horas extra
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Horas por semana después de las cuales la ley federal exige horas extra (FLSA) = 40 horas · https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay
+# Fuente: Las horas extra se pagan a tiempo y medio de la tarifa real; si ya te pagaron todas las horas con un monto fijo, falta la mitad extra (la tarifa real se saca dividiendo lo ganado entre las horas trabajadas) = 50 % extra sobre la tarifa real (si ya te pagaron la tarifa normal) · https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay
+# Fuente: Años que puedes reclamar sueldo atrasado en general (3 si la violación fue intencional) = 2 años · https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa
+# Fuente: Se puede recuperar el sueldo atrasado más una cantidad igual como daños (liquidated damages) = 100 % extra sobre lo que te deben · https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa
+# Fuente: Ejemplo del video (supuesto): pago por día = 220 $ por día · https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay
+# Fuente: Las protecciones de la FLSA aplican sin importar ciudadanía ni estatus migratorio = 1 sí (1 = aplica) · https://www.federalregister.gov/documents/2024/01/10/2024-00067/employee-or-independent-contractor-classification-under-the-fair-labor-standards-act
+# BLOQUE 1
+Si te pagan *por día*,
+puede que te deban *cinco semanas* al año.
+Hay una *cuenta* que casi nadie hace.
+Y al final te digo *a qué oficina*
+llamar gratis, en español.
+Se llama *horas extra* que no te pagan.
+Mucha gente cree que ganar *por día*
+quita las horas extra. Pero *no*.
+Si eres empleado y pasas de [40|cuarenta] *horas*,
+la ley federal dice que te deben
+la *mitad extra* de tu tarifa real.
+Digamos que ganas [$220|doscientos veinte dólares] al día.
+Trabajas cinco días, [10|diez] horas diarias.
+Son [50|cincuenta] horas a la semana.
+Ganas [$1,100|mil cien dólares] a la semana.
+Ahora sí, la *cuenta*: divídelo entre [50|cincuenta].
+Tu tarifa real es [$22|veintidós dólares] la hora.
+Pero aquí viene lo que nadie te dice:
+el patrón ya te pagó la tarifa normal,
+pero todavía te debe [$11|once dólares] por hora.
+Son [10|diez] horas extra: [$110|ciento diez dólares] a la semana.
+En un año, [$5,500|cinco mil quinientos dólares].
+Y esto es legal: puedes reclamar
+hasta [2|dos] años atrás,
+y el patrón puede deber [$11,000|once mil dólares]
+más una cantidad *igual* como daños.
+En este ejemplo, hasta [$22,000|veintidós mil dólares].
+Anota cada día cuándo *empiezas* y *terminas*.
+Incluye cargar la troca y manejar entre obras.
+Guarda fotos de tus *talones de pago*.
+Ahora sí, a quién llamar, gratis y en español:
+el Departamento del *Trabajo*,
+la oficina de *Salarios y Horas*.
+La ley aplica sin importar tu *estatus migratorio*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien gana *por día*.

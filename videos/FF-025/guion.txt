@@ -1,0 +1,41 @@
+# FF-025 · Finanzas Familiares · EST-01 · El módem que ya pagaste
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Renta mensual del módem en Xfinity y Cox = 15 $ · https://clark.com/internet/buying-renting-modem-internet-bill/
+# Fuente: Precio máximo de comprar tu propio módem y router (combo) = 200 $ · https://tvinternetusa.com/resources/rent-vs-buy-modem-router
+# Fuente: Cargo mensual por router Wi-Fi (Advanced WiFi) en Spectrum, que incluye el módem gratis = 10 $ · https://www.internetproviders.ai/blog/spectrum-equipment-guide/
+# Fuente: Años de vida útil que se usan como ejemplo para el aparato = 5 años · https://clark.com/internet/buying-renting-modem-internet-bill/
+# BLOQUE 1
+¿Cuántas veces has pagado *el mismo módem*?
+Si lo rentas, pueden ser más de [4|cuatro] *veces*.
+Al final te digo las *tres palabras*
+que buscas en tu *recibo* para quitarlo.
+Se llama la *renta del módem*.
+Es un cargo chiquito, de [$15|quince dólares] al *mes*.
+Aquí en *Estados Unidos*, muchos proveedores lo cobran.
+Y ese aparato cuesta menos de [$200|doscientos dólares].
+Haz la cuenta: [$15|quince dólares] por [13|trece] *meses*.
+Ya pagaste el *aparato completo*.
+Y sigues pagando *todos los meses*.
+Pero aquí viene lo que *nadie te dice*:
+ese módem nunca fue *tuyo*.
+Si cancelas, tienes que *devolverlo*.
+En un año, pagas [$180|ciento ochenta dólares].
+En cinco años, [$900|novecientos dólares].
+Por un aparato de [$200|doscientos dólares].
+O sea, lo pagaste más de [4|cuatro] *veces*.
+Comprando uno propio, ahorras hasta unos [$700|setecientos dólares].
+Depende de tu *proveedor* y de tu plan.
+Pero es mucha *gasolina* para ir a la obra.
+Ahora sí, las *tres palabras* del recibo:
+*equipo*, *módem* y *gateway*.
+Busca una línea con alguna de ellas.
+Si pagas [$10|diez dólares] o [$15|quince dólares],
+revisa qué *módem* sirve con tu proveedor.
+Compra uno propio y *actívalo*.
+Llama para que te quiten el *cargo*.
+Devuelve el rentado y guarda el *comprobante*.
+Dos meses después, revisa que ya no salga.
+Pero ojo: algunos planes ya incluyen el *equipo*.
+Si el tuyo lo incluye, *no compres nada*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *renta su módem*.

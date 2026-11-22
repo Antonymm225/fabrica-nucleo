@@ -1,0 +1,643 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: el precio de un seguro de vida depende de tu edad, tu salud y el monto; el IUL puede crecer hasta un 10% al año con piso cero. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 2,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu seguro",
+   "contador": "seguro |de vida",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "encima"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Seguro de vida... ¡carísimo!",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      0,
+      "cuesta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 52,
+     "tam": 30,
+     "giro": -8,
+     "etiqueta": "lo que imaginas",
+     "en": [
+      1,
+      "muy"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tu familia",
+   "contador": "sin |protección",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "fam",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 50,
+     "tam": 44
+    },
+    {
+     "que": "sello",
+     "texto": "SIN NADA",
+     "color": "rojo",
+     "x": 50,
+     "y": 50,
+     "en": [
+      3,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "lo que sigue",
+   "contador": "tres |datos",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "TRES DATOS",
+     "color": "principal",
+     "x": 50,
+     "y": 28,
+     "tam": 8,
+     "en": [
+      4,
+      "Al"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "= TU PRECIO REAL",
+     "color": "tinta",
+     "x": 50,
+     "y": 50,
+     "tam": 6,
+     "en": [
+      5,
+      "precio"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      5,
+      "cambian"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "PRECIO",
+    "FALSO"
+   ],
+   "en": [
+    6,
+    "precio"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el precio falso",
+   "contador": "lo que |imaginas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "bil",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 20,
+     "y": 60,
+     "tam": 24
+    },
+    {
+     "que": "persona",
+     "x": 58,
+     "y": 95,
+     "tam": 42,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      7,
+      "imaginas"
+     ],
+     "cambia": {
+      "en": [
+       9,
+       "preguntas"
+      ],
+      "cara": "neutro"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Eso es para gente con dinero",
+     "piensa": true,
+     "cola": 1,
+     "x": 58,
+     "y": 20,
+     "en": [
+      8,
+      "Piensas"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "bil",
+     "en": [
+      7,
+      "real"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "si faltas",
+   "contador": "tu |sueldo",
+   "elementos": [
+    {
+     "id": "car",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "tu sueldo"
+    },
+    {
+     "id": "fam3",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 76,
+     "y": 38,
+     "tam": 32,
+     "etiqueta": "tu familia",
+     "en": [
+      10,
+      "familia"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "car",
+     "a": "fam3",
+     "en": [
+      10,
+      "vive"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "car",
+     "en": [
+      11,
+      "faltas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      11,
+      "sin"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "precio real",
+   "contador": "calculas |de más",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Seguro de vida",
+     "en": [
+      12
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que imaginas",
+       "valor": "¡mucho!",
+       "en": [
+        13,
+        "calcula"
+       ]
+      },
+      {
+       "texto": "El precio real",
+       "valor": "menos",
+       "en": [
+        13,
+        "más"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       13,
+       "más"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "en": [
+      12,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "mañana",
+   "contador": "llega |la renta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "mañana"
+    },
+    {
+     "id": "cas",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 80,
+     "y": 68,
+     "tam": 26,
+     "etiqueta": "la renta",
+     "en": [
+      14,
+      "renta"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 95,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "nada",
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      15,
+      "familia"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN SUELDO",
+     "color": "rojo",
+     "x": 80,
+     "y": 68,
+     "en": [
+      16,
+      "sueldo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |indexado",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "color": "principal",
+     "x": 50,
+     "y": 16,
+     "tam": 9,
+     "en": [
+      17,
+      "Una"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "seguro de vida indexado",
+     "color": "tinta",
+     "x": 50,
+     "y": 36,
+     "tam": 4.5,
+     "en": [
+      18,
+      "seguro"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 72,
+     "tam": 34,
+     "etiqueta": "protegida",
+     "en": [
+      19,
+      "familia"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 82,
+     "y": 70,
+     "en": [
+      19,
+      "protegida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "cómo crece",
+   "contador": "hasta |10% al año",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 1,
+     "final": 10,
+     "barras": 10,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      20
+     ],
+     "hasta": [
+      21,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "piso cero",
+   "contador": "piso |0%",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "0%",
+    "etiqueta": "piso cero",
+    "en": [
+     22,
+     "cae"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "SEGURA",
+    "en": [
+     23,
+     "piso"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "los datos",
+   "contador": "tres |datos",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      24
+     ],
+     "items": [
+      {
+       "texto": "Tu edad",
+       "en": [
+        25,
+        "edad"
+       ]
+      },
+      {
+       "texto": "Tu salud",
+       "en": [
+        25,
+        "salud"
+       ]
+      },
+      {
+       "texto": "El monto que dejas",
+       "en": [
+        26,
+        "monto"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 40,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      27,
+      "precio"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 78,
+     "y": 80,
+     "en": [
+      27,
+      "real"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "qué hacer",
+   "contador": "decide |con el real",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "Ya sé mi precio",
+     "piensa": false,
+     "cola": 1,
+     "x": 24,
+     "y": 14,
+     "en": [
+      28,
+      "número"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 94,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "ASESOR",
+     "en": [
+      29,
+      "asesor"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Vemos tu caso",
+     "piensa": false,
+     "cola": -1,
+     "x": 76,
+     "y": 32,
+     "en": [
+      29,
+      "caso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    30
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    30,
+    "Sígueme"
+   ],
+   "compartir": [
+    31,
+    "compártelo"
+   ]
+  }
+ ]
+}

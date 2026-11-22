@@ -1,0 +1,85 @@
+{
+ "titulo": "Cosignar no es dar referencia",
+ "angulo": "Mucha gente cree que cosignar es solo 'prestar tu nombre', pero desde el día uno la deuda completa también es tuya, y el banco te puede cobrar a ti primero sin tocar al pariente.",
+ "explicacion": "Tu sobrino no califica para una troca usada y te pide que firmes con él. Tú piensas que es como dar una referencia. No lo es: eres deudor igual que él. Si deja de pagar, el banco te puede cobrar a ti directo, sin perseguirlo primero. Puede reportar los atrasos en tu crédito y usar contra ti los mismos métodos de cobro que contra él, como demanda o embargo de sueldo. En una encuesta de CreditCards.com, 38% de los cosignatarios terminó pagando parte o todo el préstamo.",
+ "datos": [
+  {
+   "dato": "Tasa promedio de préstamo de carro usado en EE.UU. (Experian, 2T 2026)",
+   "valor": 11.19,
+   "unidad": "%",
+   "fuente": "https://www.experian.com/blogs/ask-experian/used-car-loan-rates/"
+  },
+  {
+   "dato": "Porcentaje de cosignatarios que tuvo que pagar parte o todo el préstamo porque el deudor no pagó (encuesta CreditCards.com)",
+   "valor": 38,
+   "unidad": "%",
+   "fuente": "https://jeannieburlowski.com/2017/07/24/why-you-should-never-cosign-a-student-loan/"
+  },
+  {
+   "dato": "La regla de la FTC (16 CFR 444.3) dice que el cosignatario puede deber el monto completo y que el acreedor puede cobrarle sin intentar primero con el deudor",
+   "valor": 100,
+   "unidad": "%",
+   "fuente": "https://www.ftc.gov/business-guidance/resources/complying-credit-practices-rule"
+  },
+  {
+   "dato": "Guía de la FTC sobre las obligaciones de cosignar un préstamo",
+   "valor": 100,
+   "unidad": "%",
+   "fuente": "https://consumer.ftc.gov/articles/cosigning-loan-faqs"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual de una troca usada de $25,000 a 60 meses y 11.19%",
+   "expresion": "round(25000*(0.1119/12)/(1-(1+0.1119/12)**-60),2)",
+   "resultado": 545.93
+  },
+  {
+   "descripcion": "Total que se paga en 60 meses",
+   "expresion": "round(545.93*60,2)",
+   "resultado": 32755.8
+  },
+  {
+   "descripcion": "Intereses totales del préstamo",
+   "expresion": "round(545.93*60-25000,2)",
+   "resultado": 7755.8
+  },
+  {
+   "descripcion": "Saldo que queda si el pariente paga 12 meses y luego deja de pagar (la deuda que te cae a ti)",
+   "expresion": "round(25000*(1+0.1119/12)**12-545.93*(((1+0.1119/12)**12-1)/(0.1119/12)),2)",
+   "resultado": 21047.71
+  },
+  {
+   "descripcion": "Lo que habría pagado el pariente en el primer año",
+   "expresion": "round(545.93*12,2)",
+   "resultado": 6551.16
+  },
+  {
+   "descripcion": "Costo de solo 3 pagos atrasados que te tocarían a ti",
+   "expresion": "round(545.93*3,2)",
+   "resultado": 1637.79
+  }
+ ],
+ "consejo": "Antes de firmar, hazte esta pregunta: ¿puedo pagar yo solo todo el préstamo sin que me duela? Si la respuesta es no, no firmes. Si firmas, pídele al pariente que te dé acceso en línea a la cuenta del préstamo para ver los pagos. Configura alertas de atraso a tu correo y a tu teléfono. Aparta de antemano el equivalente a 3 pagos (unos $1,638) como colchón. Una alternativa sin firmar es ayudarle con el enganche, para que pida un préstamo más chico y más fácil de aprobar. Si de todos modos vas a ayudar, trátalo como dinero que quizá no vuelva.",
+ "que_no_decir": [
+  "Que cosignar es solo dar una referencia o prestar el nombre",
+  "Que nunca hay que cosignar para nadie",
+  "Que el 38% de las veces el pariente no paga (la cifra es de una encuesta, no una ley)",
+  "Que siempre se daña el crédito del cosignatario",
+  "Que la tasa de 11.19% es la que le tocará a esa persona (es un promedio)",
+  "Prometer que se puede salir del préstamo fácil cuando quieras",
+  "Dar consejo legal específico o prometer lo que pasará en tu estado"
+ ],
+ "con_iul": false,
+ "territorio": "familia y dinero",
+ "ganchos_recientes": [
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada."
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "titulo": "La renta del módem que ya pagaste varias veces",
+ "angulo": "Por rentar el módem de $15 al mes, en 13 meses ya pagaste el aparato completo, y sigues pagando años por algo que ya es 'tuyo' pero no lo es.",
+ "explicacion": "Muchos proveedores de internet cobran cerca de $15 al mes por rentar el módem o el módem con router. Se ve chico en el recibo, pero en poco más de un año ya pagaste lo que cuesta comprar uno propio (menos de $200). Si lo rentas 5 años, pagas $900 por un aparato de $200. Y nunca es tuyo: si cancelas, lo devuelves. Primero revisa tu recibo, porque algunos planes ya incluyen el equipo, y en Spectrum el cargo de $10 es solo por el router Wi-Fi.",
+ "datos": [
+  {
+   "dato": "Renta mensual del módem en Xfinity y Cox",
+   "valor": 15,
+   "unidad": "$",
+   "fuente": "https://clark.com/internet/buying-renting-modem-internet-bill/"
+  },
+  {
+   "dato": "Precio máximo de comprar tu propio módem y router (combo)",
+   "valor": 200,
+   "unidad": "$",
+   "fuente": "https://tvinternetusa.com/resources/rent-vs-buy-modem-router"
+  },
+  {
+   "dato": "Cargo mensual por router Wi-Fi (Advanced WiFi) en Spectrum, que incluye el módem gratis",
+   "valor": 10,
+   "unidad": "$",
+   "fuente": "https://www.internetproviders.ai/blog/spectrum-equipment-guide/"
+  },
+  {
+   "dato": "Años de vida útil que se usan como ejemplo para el aparato",
+   "valor": 5,
+   "unidad": "años",
+   "fuente": "https://clark.com/internet/buying-renting-modem-internet-bill/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Renta del módem en un año",
+   "expresion": "15*12",
+   "resultado": 180
+  },
+  {
+   "descripcion": "Renta del módem en 2 años",
+   "expresion": "15*24",
+   "resultado": 360
+  },
+  {
+   "descripcion": "Renta del módem en 5 años (60 meses)",
+   "expresion": "15*60",
+   "resultado": 900
+  },
+  {
+   "descripcion": "Meses para que la renta iguale el precio de comprar uno de $200",
+   "expresion": "round(200/15, 2)",
+   "resultado": 13.33
+  },
+  {
+   "descripcion": "Ahorro en 5 años comprando uno de $200 en vez de rentar",
+   "expresion": "15*60-200",
+   "resultado": 700
+  },
+  {
+   "descripcion": "Cuántas veces pagas el aparato en 5 años rentando",
+   "expresion": "round(900/200, 2)",
+   "resultado": 4.5
+  },
+  {
+   "descripcion": "Ahorro en 2 años comprando uno de $200",
+   "expresion": "15*24-200",
+   "resultado": 160
+  },
+  {
+   "descripcion": "Router Wi-Fi de Spectrum en un año",
+   "expresion": "10*12",
+   "resultado": 120
+  },
+  {
+   "descripcion": "Router Wi-Fi de Spectrum en 5 años",
+   "expresion": "10*60",
+   "resultado": 600
+  }
+ ],
+ "consejo": "Abre tu recibo de internet y busca una línea que diga 'equipo', 'módem', 'gateway' o 'Wi-Fi'. Si pagas $10 o $15 al mes, pregunta en la página de tu proveedor qué módem y router son compatibles. Compra uno propio, actívalo y llama para quitar el cargo. Luego devuelve el aparato rentado y guarda el comprobante. Dos meses después, revisa que el cargo ya no salga. Si tu plan ya incluye el equipo gratis, no compres nada.",
+ "que_no_decir": [
+  "Que todos los proveedores cobran renta (Spectrum incluye el módem y muchos planes de fibra incluyen el equipo)",
+  "Que ahorrarás exactamente $700 (depende de tu proveedor, del precio del aparato y de cuántos años lo uses)",
+  "Que el módem propio nunca falla o que no hay riesgo (si falla, tú lo arreglas o lo reemplazas)",
+  "Compra cualquier módem barato (tiene que ser compatible con tu proveedor y tu velocidad)",
+  "Que el proveedor te está robando o estafando",
+  "Devuelve el equipo y ya (guarda el comprobante de devolución)"
+ ],
+ "con_iul": false,
+ "territorio": "servicios del hogar",
+ "ganchos_recientes": [
+  "Mandar dinero a casa con tarjeta de crédito / te cuesta más de $93 extra al año. / Se llama el costo escondido. / Al final te digo cuántos minutos tienes para cancelar.",
+  "El seguro de vida de tu trabajo / deja a tu familia $450,000 corto. / Y no es tuyo, es del patrón. / Se llama el seguro del patrón.",
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo."
+ ]
+}

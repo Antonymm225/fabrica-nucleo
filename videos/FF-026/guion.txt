@@ -1,0 +1,37 @@
+# FF-026 · Finanzas Familiares · EST-01 · El precio que imaginas
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+¿Cuánto crees que cuesta un *seguro de vida*?
+La mayoría adivina *muy por encima*.
+Y por adivinar mal,
+muchas familias se quedan con *nada*.
+Al final te digo los *tres datos*
+que cambian tu *precio real*.
+Se llama el *precio falso*.
+Es el que imaginas, no el *real*.
+Piensas: eso es para gente con *dinero*.
+Entonces nunca *preguntas*.
+Y la familia que vive de tu *sueldo*
+queda sin *nada* si tú faltas.
+Y aquí viene lo que *nadie te dice*:
+quien calcula a ojo, casi siempre *calcula de más*.
+Mañana llega la *renta* del mes.
+Tu familia la tiene que pagar *sola*.
+Con tu sueldo, ya no *cuentan*.
+Una salida es el [IUL|a yu el],
+un *seguro de vida indexado*.
+Si faltas, tu familia queda *protegida*.
+Es tuyo, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Y si el mercado cae, *no pierde*.
+Tiene *piso cero*.
+Ahora sí, los *tres datos*:
+tu *edad*, tu *salud*
+y el *monto* que quieres dejar.
+Con eso te dan el precio *real*.
+Decide con ese número, no con el *imaginado*.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cree que *no le alcanza*.

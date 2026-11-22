@@ -1,0 +1,107 @@
+{
+ "titulo": "El pago por día y las horas extra que no te pagan",
+ "angulo": "Creen que ganar 'por día' o 'por trabajo' quita las horas extra, pero la ley federal dice que si pasas de 40 horas a la semana te deben la mitad extra de tu tarifa real. Si no te la pagan, el patrón puede deber el doble.",
+ "explicacion": "Mucha gente en roofing, jardinería y construcción gana una cantidad fija por día. Si ganas $220 al día, trabajas 5 días y haces 10 horas diarias, trabajas 50 horas a la semana. Tu tarifa real es $22 por hora, porque se divide todo lo que ganaste entre todas las horas trabajadas. Por las 10 horas extra, el patrón ya te pagó la tarifa normal dentro del día, pero todavía te debe la mitad extra: $11 por hora, o $110 a la semana. Si te los deben, puedes reclamar hasta 2 años atrás (3 si fue a propósito), más una cantidad igual como daños. Eso puede duplicar lo que te deben, y la ley aplica sin importar tu estatus migratorio.",
+ "datos": [
+  {
+   "dato": "Horas por semana después de las cuales la ley federal exige horas extra (FLSA)",
+   "valor": 40,
+   "unidad": "horas",
+   "fuente": "https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay"
+  },
+  {
+   "dato": "Las horas extra se pagan a tiempo y medio de la tarifa real; si ya te pagaron todas las horas con un monto fijo, falta la mitad extra (la tarifa real se saca dividiendo lo ganado entre las horas trabajadas)",
+   "valor": 50,
+   "unidad": "% extra sobre la tarifa real (si ya te pagaron la tarifa normal)",
+   "fuente": "https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay"
+  },
+  {
+   "dato": "Años que puedes reclamar sueldo atrasado en general (3 si la violación fue intencional)",
+   "valor": 2,
+   "unidad": "años",
+   "fuente": "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa"
+  },
+  {
+   "dato": "Se puede recuperar el sueldo atrasado más una cantidad igual como daños (liquidated damages)",
+   "valor": 100,
+   "unidad": "% extra sobre lo que te deben",
+   "fuente": "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa"
+  },
+  {
+   "dato": "Ejemplo del video (supuesto): pago por día",
+   "valor": 220,
+   "unidad": "$ por día",
+   "fuente": "https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay"
+  },
+  {
+   "dato": "Las protecciones de la FLSA aplican sin importar ciudadanía ni estatus migratorio",
+   "valor": 1,
+   "unidad": "sí (1 = aplica)",
+   "fuente": "https://www.federalregister.gov/documents/2024/01/10/2024-00067/employee-or-independent-contractor-classification-under-the-fair-labor-standards-act"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que ganas a la semana: 5 días a $220",
+   "expresion": "220*5",
+   "resultado": 1100
+  },
+  {
+   "descripcion": "Horas trabajadas a la semana: 5 días de 10 horas",
+   "expresion": "10*5",
+   "resultado": 50
+  },
+  {
+   "descripcion": "Tarifa real por hora",
+   "expresion": "round(1100/50,2)",
+   "resultado": 22.0
+  },
+  {
+   "descripcion": "Mitad extra por hora (la parte que falta)",
+   "expresion": "round(22*0.5,2)",
+   "resultado": 11.0
+  },
+  {
+   "descripcion": "Lo que te deben por semana: 10 horas extra por $11",
+   "expresion": "round(11*(50-40),2)",
+   "resultado": 110.0
+  },
+  {
+   "descripcion": "Lo que te deben en un año (50 semanas)",
+   "expresion": "round(110*50,2)",
+   "resultado": 5500.0
+  },
+  {
+   "descripcion": "Lo que te deben en 2 años",
+   "expresion": "round(110*50*2,2)",
+   "resultado": 11000.0
+  },
+  {
+   "descripcion": "Con una cantidad igual como daños (2 años)",
+   "expresion": "round(110*50*2*2,2)",
+   "resultado": 22000.0
+  }
+ ],
+ "consejo": "Anota cada día la hora en que empiezas y la hora en que terminas, incluyendo cargar la troca y el manejo entre obras. Guarda fotos de tus talones de pago, mensajes y mapas. Si tu patrón te paga 'por día' y pasas de 40 horas, llama gratis al Departamento del Trabajo (Wage and Hour Division) al 1-866-487-9243, que atiende en español. Pregunta también por la agencia de tu estado, porque algunos estados pagan más. No necesitas decir tu estatus migratorio para reclamar el sueldo del trabajo que ya hiciste.",
+ "que_no_decir": [
+  "Que todos los que ganan por día tienen derecho a horas extra: depende de si eres empleado y no estás exento.",
+  "Que seguro vas a recibir el doble: los daños iguales son lo normal, pero el juez o el patrón pueden argumentar buena fe.",
+  "Que el patrón es un ladrón: puede ser que no sepa la regla.",
+  "Que puedes reclamar sin límite de años: son 2 años, o 3 si fue a propósito.",
+  "Que es consejo legal o promesa de ganar el caso.",
+  "Que las horas extra se pagan solo por trabajar sábado o domingo: la ley federal cuenta las horas de la semana, no el día.",
+  "Cifras de $5,500 o $22,000 como si fueran de cualquier persona: son un ejemplo con supuestos."
+ ],
+ "con_iul": false,
+ "territorio": "trabajo y sueldo",
+ "ganchos_recientes": [
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque."
+ ]
+}

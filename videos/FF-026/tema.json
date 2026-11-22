@@ -1,0 +1,40 @@
+{
+ "titulo": "El seguro que crees que no puedes pagar",
+ "angulo": "La mayoría cree que el seguro de vida cuesta varias veces más de lo que cuesta de verdad, y por esa creencia muchas familias se quedan sin protección.",
+ "explicacion": "Mucha gente no tiene seguro de vida porque cree que es carísimo. Cuando le preguntan cuánto cuesta, calcula un precio muy por encima del real. Así, la familia que depende de tu sueldo queda sin nada si tú faltas. El primer paso es ver el precio real, no el que imaginas. PENDIENTE: confirmar las cifras con fuentes antes de producir.",
+ "datos": [
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [],
+ "consejo": "Cotiza tu protección esta semana para saber el precio real. Decide con ese número, no con lo que te imaginas. Luego pregunta cómo un seguro de vida indexado (IUL) puede cubrir a tu familia.",
+ "que_no_decir": [
+  "No uses ninguna cifra de costo o de porcentaje hasta verificarla con fuente.",
+  "No prometas que el seguro cuesta X dólares para todos. El precio depende de edad, salud y monto.",
+  "No digas que el IUL es lo más barato. Pesa más que un seguro a término.",
+  "No prometas rendimientos garantizados del IUL. El máximo es 10% al año y el piso es cero.",
+  "No uses miedo ni culpa. Habla de papá a papá."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "ganchos_recientes": [
+  "El seguro de vida de tu trabajo / deja a tu familia $450,000 corto. / Y no es tuyo, es del patrón. / Se llama el seguro del patrón.",
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo."
+ ]
+}

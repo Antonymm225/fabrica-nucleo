@@ -685,6 +685,8 @@ def revisar_existente(cod):
 
 
 def anotar(idea, estado, nota=None):
+    if estado in ("rechazado", "error") and not idea.get("notas", "").startswith("reintento"):
+        estado, nota = "pendiente", f"reintento (la primera vez: {nota})"
     try: ideas.marcar(idea["fila"], estado, nota)
     except Exception as x: print(f"::warning::No se pudo marcar la fila {idea['fila']} como {estado}: {str(x)[:200]}")
 
@@ -692,14 +694,18 @@ def anotar(idea, estado, nota=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--marca"); ap.add_argument("--cantidad", type=int, default=1); ap.add_argument("--revisar")
+    ap.add_argument("--hasta", default="", help="último código que se permite hacer (tope del modo automático), ej. FF-090")
     ap.add_argument("--solo-hoja", action="store_true", help="solo ideas de la hoja; si no hay pendientes, termina sin hacer nada")
     a = ap.parse_args()
     if a.revisar: sys.exit(0 if all(revisar_existente(x) for x in a.revisar.split(",")) else 1)
     marca = json.load(open(os.path.join(ROOT, "marcas", a.marca + ".json"), encoding="utf-8")); marca["slug"] = a.marca
-    c = cliente(); hechos = []; intentos = 0
+    c = cliente(); hechos = []; intentos = 0; tope = False
     ejemplos = ejemplos_de(marca["estilo"])
     for _ in range(a.cantidad):
-        cod = siguiente(marca["codigo"]); idea = None; intentos += 1
+        cod = siguiente(marca["codigo"]); idea = None
+        if a.hasta and int(cod.rsplit("-", 1)[1]) > int(a.hasta.rsplit("-", 1)[1]):
+            print(f"::notice::Se llegó al tope ({a.hasta}): el modo automático no hace más videos."); tope = True; break
+        intentos += 1
         antes = dict(GASTO)
         try:
             if ideas.activa():
@@ -745,7 +751,7 @@ def main():
     if out: open(out, "a").write("lista=" + json.dumps(hechos) + "\n")
     print("hechos:", hechos)
     print(f"Consumo total de Claude en este lote: {GASTO['entrada']:,} tokens de entrada + {GASTO['cache']:,} de caché, {GASTO['salida']:,} de salida, {GASTO['busquedas']} búsquedas web")
-    if not hechos and not (a.solo_hoja and intentos <= 1): sys.exit(1)
+    if not hechos and not tope and not (a.solo_hoja and intentos <= 1): sys.exit(1)
 
 
 if __name__ == "__main__":

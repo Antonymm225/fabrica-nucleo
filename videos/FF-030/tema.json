@@ -1,0 +1,111 @@
+{
+ "titulo": "Sin seguro sale más caro",
+ "angulo": "Crees que no pagar seguro te ahorra dinero, pero el día que faltas tu familia paga la cuenta completa y casi la mitad de las familias siente el golpe en menos de 6 meses.",
+ "explicacion": "Todos pagamos por el seguro de vida, con prima o sin ella. Si lo tienes, pagas una cuota pequeña cada mes. Si no lo tienes, tu familia paga después, de golpe y sin tu sueldo. Según LIMRA, 47% de los hogares sentiría el golpe en menos de 6 meses si falta el que trae el dinero, y 27% lo sentiría en el primer mes. Solo 29% aguantaría más de dos años. Un ejemplo con $50,000 de sueldo muestra que la cuota de varios años es una fracción de lo que se pierde.",
+ "datos": [
+  {
+   "dato": "Porcentaje de hogares que sentiría el impacto financiero en 6 meses o menos si muere quien trae el dinero (LIMRA 2025)",
+   "valor": 47,
+   "unidad": "%",
+   "fuente": "https://www.limra.com/siteassets/newsroom/liam/2026/2026-barometer-member-pr-toolkit.pdf"
+  },
+  {
+   "dato": "Porcentaje de hogares que sentiría el impacto en un mes o menos (LIMRA 2025)",
+   "valor": 27,
+   "unidad": "%",
+   "fuente": "https://www.everlylife.com/blog/data-shows-when-families-feel-financial-impact"
+  },
+  {
+   "dato": "Porcentaje de familias que podría mantenerse estable más de 2 años sin el ingreso principal",
+   "valor": 29,
+   "unidad": "%",
+   "fuente": "https://www.limra.com/siteassets/newsroom/liam/2026/2026-barometer-member-pr-toolkit.pdf"
+  },
+  {
+   "dato": "Más de la mitad de los estadounidenses cree que el seguro de vida cuesta hasta 3 veces lo que cuesta de verdad (LIMRA 2021). Dato de apoyo, no para el gancho.",
+   "valor": 3,
+   "unidad": "veces",
+   "fuente": "https://www.limra.com/en/newsroom/industry-trends/2021/you-know-you-need-it.-lets-talk-about-life-insurance/"
+  },
+  {
+   "dato": "Porcentaje de adultos que dice que su familia estaría poco o nada segura económicamente si el que trae el dinero muere hoy (LIMRA 2025)",
+   "valor": 40,
+   "unidad": "%",
+   "fuente": "https://www.bestmoney.com/life-insurance/learn-more/life-insurance-vs-social-security-survivor-benefits-study"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "SUPUESTO DE EJEMPLO: sueldo de $50,000 al año durante 20 años de crianza que la familia perdería",
+   "expresion": "50000*20",
+   "resultado": 1000000
+  },
+  {
+   "descripcion": "SUPUESTO: protección de 10 veces el sueldo anual (regla práctica, no es dato de fuente)",
+   "expresion": "50000*10",
+   "resultado": 500000
+  },
+  {
+   "descripcion": "SUPUESTO A VERIFICAR CON COTIZACIÓN REAL: prima de $40 al mes durante 20 años",
+   "expresion": "40*12*20",
+   "resultado": 9600
+  },
+  {
+   "descripcion": "Prima total como porcentaje de la protección de $500,000",
+   "expresion": "round(9600/500000*100,2)",
+   "resultado": 1.92
+  },
+  {
+   "descripcion": "Cuántas veces cabe lo pagado de prima en la protección",
+   "expresion": "round(500000/9600,2)",
+   "resultado": 52.08
+  },
+  {
+   "descripcion": "SUPUESTO: gastos fijos de $3,500 al mes que siguen corriendo durante 6 meses sin tu sueldo",
+   "expresion": "3500*6",
+   "resultado": 21000
+  },
+  {
+   "descripcion": "Sueldo que dejas de traer en 6 meses (referencia al plazo de LIMRA)",
+   "expresion": "50000/12*6",
+   "resultado": 25000
+  }
+ ],
+ "consejo": "Haz esta cuenta con tu propio sueldo: multiplícalo por 10 para tener una meta de protección. Pide una cotización real a un agente con licencia, para tu edad y tu salud, y compárala con lo que perdería tu familia. Si tu familia depende de tu ingreso, o de tus envíos a casa, pregunta por un seguro de vida indexado (IUL) que sea tuyo, no del patrón, y que no se pierda si cambias de trabajo.",
+ "que_no_decir": [
+  "No inventes la prima: usa solo una cotización real y di que depende de edad y salud.",
+  "No digas que 'el seguro sale gratis' ni que 'te conviene sí o sí'. Lo que se compara son las cuentas, no la promesa.",
+  "No repitas el funeral de $8,300, los $255 del Seguro Social ni el 'seguro del trabajo' de los videos anteriores.",
+  "No prometas que el IUL crece 10% todos los años: ese es el máximo de un año, y el piso es cero.",
+  "No hables de ahorro, retiro ni de cuánto junta el IUL en este video.",
+  "No asustes con la muerte. Habla de la familia que se queda con la cuenta.",
+  "No presentes el sueldo de $50,000, los 20 años ni la regla de 10 veces como estadística. Son un ejemplo."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "Tener un seguro de vida es más barato que no tenerlo",
+ "gancho_pedido": "Tener un seguro de vida es más barato que no tenerlo. Te explico por qué.",
+ "ganchos_recientes": [
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina"
+ ]
+}

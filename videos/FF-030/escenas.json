@@ -1,0 +1,626 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de $50,000 al año, cuota de $40 al mes durante 20 años y protección de 10 veces el sueldo; la cuota real depende de tu edad y salud. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 0,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu familia",
+   "contador": "seguro |de vida",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "barato"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 80,
+     "y": 28,
+     "tam": 26,
+     "en": [
+      0,
+      "vida"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 48,
+     "y": 55,
+     "tam": 20,
+     "etiqueta": "TU SUELDO",
+     "en": [
+      3,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "× ?",
+     "x": 80,
+     "y": 64,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      3,
+      "multiplicas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "COSTO",
+    "OCULTO"
+   ],
+   "en": [
+    4,
+    "oculto"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la cuota",
+   "contador": "tu cuota |chica",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "CADA MES",
+     "en": [
+      6,
+      "mensual"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 75,
+     "y": 68,
+     "tam": 14,
+     "etiqueta": "CUOTA CHICA",
+     "en": [
+      7,
+      "chica"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "si no hay",
+   "contador": "paga |tu familia",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 45,
+     "tam": 34,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      8
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 45,
+     "tam": 28,
+     "etiqueta": "TU SUELDO",
+     "en": [
+      9,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "c",
+     "en": [
+      9,
+      "sueldo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el golpe",
+   "contador": "familias |sin sueldo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 20,
+     "y": 95,
+     "tam": 55,
+     "valor": 47,
+     "max": 47,
+     "etiqueta": "47% EN 6 MESES",
+     "en": [
+      10,
+      "Estados"
+     ],
+     "hasta": [
+      11,
+      "meses"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 50,
+     "y": 95,
+     "tam": 55,
+     "valor": 27,
+     "max": 47,
+     "etiqueta": "27% EN 1 MES",
+     "color": "gris",
+     "en": [
+      12,
+      "27%"
+     ],
+     "hasta": [
+      12,
+      "mes"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 80,
+     "y": 95,
+     "tam": 55,
+     "valor": 29,
+     "max": 47,
+     "etiqueta": "29% +2 AÑOS",
+     "en": [
+      13,
+      "29%"
+     ],
+     "hasta": [
+      13,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "gastos fijos",
+   "contador": "gastos |sin parar",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "GASTOS FIJOS",
+     "en": [
+      14,
+      "gastos"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 21000,
+     "prefijo": "$",
+     "x": 72,
+     "y": 64,
+     "tam": 9,
+     "etiqueta": "EN 6 MESES",
+     "color": "principal",
+     "en": [
+      15,
+      "meses"
+     ],
+     "hasta": [
+      16,
+      "21,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "la cuenta",
+   "contador": "cuota |$40 al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Seguro de vida (ejemplo)",
+     "en": [
+      18
+     ],
+     "renglones": [
+      {
+       "texto": "Cuota del seguro",
+       "valor": "chica",
+       "en": [
+        18,
+        "cuota"
+       ]
+      },
+      {
+       "texto": "Cuota al mes",
+       "valor": "$40",
+       "en": [
+        19,
+        "40"
+       ]
+      }
+     ],
+     "total": {
+      "texto": "Suma en la crianza",
+      "valor": "$9,600",
+      "en": [
+       20,
+       "9,600"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "las cuentas",
+   "contador": "cuota |vs. familia",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 20,
+     "y": 95,
+     "tam": 55,
+     "valor": 9600,
+     "max": 1000000,
+     "etiqueta": "TU CUOTA",
+     "en": [
+      21
+     ],
+     "hasta": [
+      21,
+      "salud"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      22,
+      "sin"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 80,
+     "y": 95,
+     "tam": 55,
+     "valor": 1000000,
+     "max": 1000000,
+     "color": "gris",
+     "etiqueta": "LO QUE PIERDE",
+     "en": [
+      22,
+      "familia"
+     ],
+     "hasta": [
+      23,
+      "1,000,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "la salida",
+   "contador": "tuyo |sigue contigo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 40,
+     "tam": 34
+    },
+    {
+     "que": "texto",
+     "texto": "SEGURO INDEXADO",
+     "x": 72,
+     "y": 22,
+     "tam": 4,
+     "color": "principal",
+     "en": [
+      25,
+      "seguro"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TUYO",
+     "en": [
+      26,
+      "tuyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "piso cero",
+   "contador": "piso |cero",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 85,
+     "inicio": 20,
+     "final": 100,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "SUBE, NO BAJA",
+     "etiqueta": "HASTA 10% AL AÑO",
+     "en": [
+      28
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO",
+     "x": 50,
+     "y": 14,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      30,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "la cuenta",
+   "contador": "tu sueldo |× 10",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      31
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 36,
+     "tam": 26,
+     "etiqueta": "TU SUELDO",
+     "en": [
+      31,
+      "multiplicación"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "× 10",
+     "x": 72,
+     "y": 68,
+     "tam": 11,
+     "color": "verde",
+     "en": [
+      32,
+      "10"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    33
+   ],
+   "capitulo": "la meta",
+   "contador": "protección |$500,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$500,000",
+    "etiqueta": "protección",
+    "en": [
+     33,
+     "500,000"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     33,
+     "protección"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "siguiente paso",
+   "contador": "tu familia |protegida",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aplica a tu IUL",
+     "x": 28,
+     "y": 48
+    },
+    {
+     "id": "lk",
+     "que": "texto",
+     "texto": "EL LINK",
+     "x": 72,
+     "y": 22,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lk",
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 62,
+     "tam": 30,
+     "en": [
+      37,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

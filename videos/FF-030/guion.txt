@@ -1,0 +1,50 @@
+# FF-030 · Finanzas Familiares · EST-01 · Sin seguro sale más caro
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de hogares que sentiría el impacto financiero en 6 meses o menos si muere quien trae el dinero (LIMRA 2025) = 47 % · https://www.limra.com/siteassets/newsroom/liam/2026/2026-barometer-member-pr-toolkit.pdf
+# Fuente: Porcentaje de hogares que sentiría el impacto en un mes o menos (LIMRA 2025) = 27 % · https://www.everlylife.com/blog/data-shows-when-families-feel-financial-impact
+# Fuente: Porcentaje de familias que podría mantenerse estable más de 2 años sin el ingreso principal = 29 % · https://www.limra.com/siteassets/newsroom/liam/2026/2026-barometer-member-pr-toolkit.pdf
+# Fuente: Más de la mitad de los estadounidenses cree que el seguro de vida cuesta hasta 3 veces lo que cuesta de verdad (LIMRA 2021). Dato de apoyo, no para el gancho. = 3 veces · https://www.limra.com/en/newsroom/industry-trends/2021/you-know-you-need-it.-lets-talk-about-life-insurance/
+# Fuente: Porcentaje de adultos que dice que su familia estaría poco o nada segura económicamente si el que trae el dinero muere hoy (LIMRA 2025) = 40 % · https://www.bestmoney.com/life-insurance/learn-more/life-insurance-vs-social-security-survivor-benefits-study
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tener *seguro de vida*
+es más barato que *no tenerlo*.
+Al final te digo por cuánto
+multiplicas *tu sueldo* para proteger a tu familia.
+Se llama el *costo oculto*.
+Todos pagamos el *seguro de vida*.
+Con cuota mensual, o sin ella.
+Si lo tienes, pagas una cuota *chica*.
+Si no, paga *tu familia*,
+de golpe y sin tu *sueldo*.
+En Estados Unidos, [47%|cuarenta y siete por ciento] de las familias
+sienten el golpe en menos de [6|seis] *meses*.
+Y [27%|veintisiete por ciento] lo siente en el *primer mes*.
+Solo [29%|veintinueve por ciento] aguanta *más de dos años*.
+Y lo peor: los *gastos fijos* no paran.
+En [6|seis] meses de renta, biles y comida,
+son [$21,000|veintiún mil dólares] sin tu *cheque*.
+Y tu cheque de esos meses era [$25,000|veinticinco mil].
+Ahora compara con la *cuota*.
+Una cuota de unos [$40|cuarenta dólares] al mes,
+durante la crianza, suma [$9,600|nueve mil seiscientos].
+Tu cuota real *depende* de tu edad y salud.
+Pero sin tu sueldo, tu familia pierde
+[$1,000,000|un millón de dólares] en ese mismo tiempo.
+La salida es un [IUL|a yu el],
+un *seguro de vida indexado*.
+Es *tuyo*, no del patrón,
+y si cambias de trabajo, *sigue contigo*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año,
+y si el mercado cae, *no pierdes*.
+Tiene *piso cero*.
+Ahora sí, la *multiplicación*:
+tu sueldo del año por [10|diez].
+Con ese cheque, son [$500,000|quinientos mil] de *protección*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja sin *seguro de vida*.

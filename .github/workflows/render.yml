@@ -3,7 +3,7 @@
 # - A mano: pestaña Actions → "Render de videos" → Run workflow → códigos (ej. FF-001,FF-002).
 # Cada video necesita en el repo: videos/<código>/guion.txt y videos/<código>/escenas.json.
 # La voz se guarda en caché según el guion: si el guion no cambia, no se vuelve a pagar a ElevenLabs.
-# El MP4 queda en "Artifacts" del run por 1 día (después GitHub lo borra solo). Más adelante va directo a Drive.
+# El MP4 se sube solo a Google Drive (Fábrica de Videos / marca / mes) y además queda en "Artifacts" del run por 1 día.
 name: Render de videos
 
 on:
@@ -143,3 +143,30 @@ jobs:
           path: salida/
           retention-days: 1
           compression-level: 0
+
+  drive:
+    name: Subir a Google Drive
+    needs: render
+    if: ${{ !cancelled() && needs.render.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Traer los MP4 de esta corrida
+        uses: actions/download-artifact@v6
+        with:
+          path: entrega
+
+      - name: Subir a Drive (Fábrica de Videos / marca / mes)
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: python -X utf8 tools/drive.py entrega

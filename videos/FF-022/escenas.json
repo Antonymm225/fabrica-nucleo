@@ -1,0 +1,684 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: cheque de $3,000 y te piden devolver $2,500. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "rayas",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu app",
+   "contador": "app |disponible",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "dinero"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "Tu banco",
+     "que": "celular",
+     "modo": "mensaje",
+     "de": "Tu banco",
+     "texto": "Fondos disponibles",
+     "x": 72,
+     "y": 42,
+     "en": [
+      0,
+      "app"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la pregunta",
+   "contador": "falta |1 pregunta",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué le pregunto al banco?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      2,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 74,
+     "y": 62,
+     "tam": 32,
+     "etiqueta": "EL BANCO",
+     "en": [
+      3,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "CHEQUE",
+    "FALSO"
+   ],
+   "en": [
+    4,
+    "cheque"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el cheque",
+   "contador": "cheque |$3,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Cheque que te mandan",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Por un trabajo",
+       "valor": "$3,000",
+       "en": [
+        5,
+        "3,000"
+       ]
+      },
+      {
+       "texto": "Un pago de más",
+       "valor": "¿?",
+       "en": [
+        7,
+        "pago"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       7,
+       "más"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      6,
+      "Dice"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "devuelves",
+   "contador": "devuelves |$2,500",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 18,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       10,
+       "500"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "pat",
+     "que": "persona",
+     "x": 82,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 4,
+     "piel": 2,
+     "etiqueta": "EL PATRÓN",
+     "en": [
+      8,
+      "pide"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$2,500",
+     "x": 50,
+     "y": 25,
+     "tam": 9,
+     "color": "tinta",
+     "etiqueta": "devuelves",
+     "en": [
+      8,
+      "2,500"
+     ],
+     "sale": [
+      10,
+      "quedas"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "pat",
+     "en": [
+      9,
+      "transferencia"
+     ],
+     "hasta": [
+      9,
+      "regalo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$500",
+     "x": 50,
+     "y": 48,
+     "tam": 9,
+     "color": "verde",
+     "etiqueta": "te quedas",
+     "en": [
+      10,
+      "500"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "tu app",
+   "contador": "app |fondos",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "Tu banco",
+     "que": "celular",
+     "modo": "mensaje",
+     "de": "Tu banco",
+     "texto": "Fondos disponibles",
+     "x": 28,
+     "y": 40,
+     "en": [
+      12
+     ]
+    },
+    {
+     "que": "check",
+     "x": 74,
+     "y": 40,
+     "en": [
+      12,
+      "dinero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿Y el cheque?",
+     "color": "gris",
+     "x": 50,
+     "y": 80,
+     "tam": 5,
+     "en": [
+      13,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "la ley",
+   "contador": "la ley |obliga",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 25,
+     "y": 40,
+     "tam": 32,
+     "etiqueta": "EL BANCO",
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Lo exige la ley",
+     "color": "principal",
+     "x": 75,
+     "y": 20,
+     "tam": 4.5,
+     "en": [
+      14,
+      "ley"
+     ]
+    },
+    {
+     "id": "p",
+     "que": "persona",
+     "x": 75,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      15,
+      "soltarte"
+     ],
+     "cambia": {
+      "en": [
+       17,
+       "confirmar"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "dinero",
+     "de": "b",
+     "a": "p",
+     "en": [
+      15,
+      "soltarte"
+     ],
+     "hasta": [
+      15,
+      "rápido"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "semanas después",
+   "contador": "cheque |falso",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Aviso del banco",
+     "en": [
+      18
+     ],
+     "renglones": [
+      {
+       "texto": "El cheque es falso",
+       "valor": "¡Falso!",
+       "en": [
+        18,
+        "falso"
+       ]
+      },
+      {
+       "texto": "Te cobramos el cheque",
+       "valor": "-$3,000",
+       "en": [
+        19,
+        "3,000"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       19,
+       "completos"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "en": [
+      19,
+      "cobra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "el golpe",
+   "contador": "pierdes |$2,500",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$2,500",
+    "etiqueta": "ya no regresan",
+    "en": [
+     20,
+     "2,500"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "VACIA",
+    "en": [
+     21,
+     "regresan"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "si gastaste",
+   "contador": "debes |$3,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2
+    },
+    {
+     "que": "globo",
+     "texto": "¡Era la renta del mes!",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 18,
+     "en": [
+      22,
+      "renta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "-$3,000",
+     "x": 62,
+     "y": 47,
+     "tam": 11,
+     "color": "principal",
+     "etiqueta": "debes al banco",
+     "en": [
+      23,
+      "3,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "la regla",
+   "contador": "regla |no mandes",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "Número desconocido",
+     "que": "celular",
+     "modo": "mensaje",
+     "de": "Número desconocido",
+     "texto": "Devuelve una parte",
+     "x": 28,
+     "y": 40,
+     "en": [
+      24
+     ]
+    },
+    {
+     "id": "car",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "tu dinero",
+     "en": [
+      25,
+      "comprador"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "ESTAFA",
+     "color": "rojo",
+     "x": 28,
+     "y": 40,
+     "en": [
+      26,
+      "estafa"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "car",
+     "en": [
+      27,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "la pregunta",
+   "contador": "pregunta |exacta",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Este cheque ya fue pagado definitivamente?",
+     "piensa": false,
+     "cola": -1,
+     "x": 33,
+     "y": 20,
+     "en": [
+      29,
+      "cheque"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 68,
+     "tam": 26,
+     "etiqueta": "EL BANCO",
+     "en": [
+      28,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 86,
+     "y": 36,
+     "en": [
+      30,
+      "confirmado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "qué hacer",
+   "contador": "qué hacer |hoy",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      31
+     ],
+     "items": [
+      {
+       "texto": "Llama al banco hoy",
+       "en": [
+        31,
+        "llama"
+       ]
+      },
+      {
+       "texto": "Di que sospechas fraude",
+       "en": [
+        32,
+        "sospechas"
+       ]
+      },
+      {
+       "texto": "Repórtalo a la FTC",
+       "en": [
+        32,
+        "FTC"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 78,
+     "tam": 26,
+     "en": [
+      33,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+# FF-023 · Finanzas Familiares · EST-01 · El colchón que se encoge
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Lo que compra hoy 1 dólar de 1995, en centavos (poder de compra: 45.15% del de 1995). Fuente: calculadora de inflación con datos del CPI del BLS = 45.15 % · https://www.in2013dollars.com/us/inflation/1995
+# Fuente: Aumento acumulado de precios en EE. UU. de 1995 a hoy (31 años) = 121.46 % · https://www.in2013dollars.com/us/inflation/1995?amount=1
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu dinero en *efectivo* nunca baja de número,
+pero ya perdió *más de la mitad*.
+Al final te digo las *tres cosas*
+que pides *por escrito* antes de firmar.
+Se llama el *colchón que se encoge*.
+Guardar efectivo parece lo más *seguro*.
+El número del billete *nunca baja*.
+Pero cada año compra *menos*.
+En Estados Unidos, un dólar de hace *décadas*
+hoy compra solo [45|cuarenta y cinco] *centavos*.
+Si guardaste *diez mil dólares* en efectivo
+desde esa *época*,
+hoy tendrías el poder de compra
+de unos [$4,515|cuatro mil quinientos quince].
+Y lo peor: el billete *sigue ahí*,
+nadie te cobró *nada*,
+y aun así perdiste [$5,485|cinco mil cuatrocientos ochenta y cinco].
+El efectivo sirve para el mes.
+Pero para tu *retiro*, no.
+Para ganarle a los precios,
+tu dinero tiene que *crecer*.
+Una salida es el [IUL|a yu el],
+un *seguro de vida indexado*.
+Es tuyo, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Si empiezas *joven* y aportas parejo cada mes,
+sin saltarte *ninguno*,
+podrías *llegar*
+a unos [$434,000|cuatrocientos treinta y cuatro mil] para tu *retiro*.
+De eso, tú pones solo [$72,000|setenta y dos mil].
+Lo demás es *crecimiento*.
+Y depende de *cuándo empiezas*.
+Ahora sí, las *tres cosas* que pides:
+la *tasa* de crecimiento, el *piso* y los *costos*.
+Pídelas *por escrito*, sin prisa.
+Un *asesor certificado* debe ver tu caso a detalle.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien guarda su dinero en *efectivo*.

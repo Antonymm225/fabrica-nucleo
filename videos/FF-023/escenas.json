@@ -1,0 +1,621 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: aportes de doscientos dólares al mes durante treinta años, con crecimiento de hasta un 10% anual. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu efectivo",
+   "contador": "tu dinero |en efectivo",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       1,
+       "mitad"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 78,
+     "y": 38,
+     "tam": 26,
+     "giro": -8,
+     "en": [
+      0,
+      "efectivo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SE ENCOGE",
+     "x": 78,
+     "y": 68,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      1,
+      "perdió"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué pido por escrito?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 18,
+     "en": [
+      2,
+      "tres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "COLCHON",
+    "ENCOGE"
+   ],
+   "en": [
+    4,
+    "colchón"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "lo seguro",
+   "contador": "billete |igual",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       7,
+       "menos"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 28,
+     "y": 38,
+     "tam": 34,
+     "giro": 6,
+     "etiqueta": "SIGUE IGUAL",
+     "en": [
+      6,
+      "billete"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "COMPRA MENOS",
+     "x": 28,
+     "y": 70,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      7,
+      "compra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "un dólar",
+   "contador": "dólar |de antes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 24,
+     "y": 20,
+     "tam": 24,
+     "etiqueta": "HACE DÉCADAS"
+    },
+    {
+     "id": "m",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 76,
+     "y": 20,
+     "tam": 22,
+     "etiqueta": "HOY",
+     "en": [
+      9,
+      "hoy"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "m",
+     "en": [
+      9,
+      "hoy"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "45¢",
+     "x": 50,
+     "y": 58,
+     "tam": 14,
+     "color": "principal",
+     "etiqueta": "COMPRA HOY",
+     "en": [
+      9,
+      "45"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "tu ahorro",
+   "contador": "tu efectivo |se encoge",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 26,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "TU EFECTIVO",
+     "en": [
+      10
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 74,
+     "y": 95,
+     "tam": 55,
+     "valor": 4515,
+     "max": 5485,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "HOY COMPRA",
+     "en": [
+      12,
+      "hoy"
+     ],
+     "hasta": [
+      13,
+      "4,515"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$5,485",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 95,
+     "tam": 30,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       16,
+       "perdiste"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¡Mi billete sigue ahí!",
+     "piensa": false,
+     "cola": -1,
+     "x": 32,
+     "y": 20,
+     "en": [
+      14,
+      "billete"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 5485,
+     "prefijo": "$",
+     "x": 66,
+     "y": 48,
+     "tam": 12,
+     "color": "principal",
+     "etiqueta": "PERDISTE",
+     "en": [
+      16,
+      "perdiste"
+     ],
+     "hasta": [
+      16,
+      "5,485"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el efectivo",
+   "contador": "efectivo |sirve",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 27,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "EL MES"
+    },
+    {
+     "que": "check",
+     "x": 27,
+     "y": 76,
+     "en": [
+      17,
+      "sirve"
+     ]
+    },
+    {
+     "id": "a",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 73,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "TU RETIRO",
+     "en": [
+      18,
+      "retiro"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "a",
+     "en": [
+      18,
+      "no"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "hay que crecer",
+   "contador": "tu dinero |crece",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 85,
+     "inicio": 1,
+     "final": 10,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CRECE",
+     "etiqueta": "QUE CREZCA",
+     "en": [
+      19
+     ],
+     "hasta": [
+      20,
+      "crecer"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |de vida",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "x": 50,
+     "y": 12,
+     "tam": 9,
+     "color": "principal"
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 50,
+     "y": 40,
+     "tam": 26,
+     "etiqueta": "TUYO",
+     "en": [
+      23,
+      "tuyo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "10%",
+     "x": 50,
+     "y": 74,
+     "tam": 12,
+     "color": "verde",
+     "etiqueta": "HASTA, AL AÑO",
+     "en": [
+      24,
+      "10%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "piso cero",
+   "contador": "piso |cero",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       26,
+       "piso"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si cae el mercado?",
+     "piensa": true,
+     "cola": -1,
+     "x": 36,
+     "y": 22,
+     "en": [
+      25,
+      "mercado"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "0%",
+     "x": 68,
+     "y": 55,
+     "tam": 14,
+     "color": "verde",
+     "etiqueta": "PISO",
+     "en": [
+      26,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "tu retiro",
+   "contador": "aportas |cada mes",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 20,
+     "y": 24,
+     "tam": 24,
+     "etiqueta": "EMPIEZAS"
+    },
+    {
+     "id": "m",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 80,
+     "y": 24,
+     "tam": 22,
+     "etiqueta": "CADA MES",
+     "en": [
+      27,
+      "aportas"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "m",
+     "en": [
+      28,
+      "saltarte"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SIN FALTAR",
+     "x": 50,
+     "y": 62,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      28,
+      "ninguno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "tu retiro",
+   "contador": "podrías llegar |$434,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$434,000",
+    "etiqueta": "podrías llegar",
+    "en": [
+     30,
+     "434,000"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     32,
+     "crecimiento"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "qué pedir",
+   "contador": "pide |tres cosas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      34
+     ],
+     "items": [
+      {
+       "texto": "La tasa de crecimiento",
+       "en": [
+        35,
+        "tasa"
+       ]
+      },
+      {
+       "texto": "El piso",
+       "en": [
+        35,
+        "piso"
+       ]
+      },
+      {
+       "texto": "Los costos",
+       "en": [
+        35,
+        "costos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

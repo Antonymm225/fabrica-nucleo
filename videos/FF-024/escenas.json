@@ -1,0 +1,604 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: trabajo con costo de $10,000, recargo de 20% y 20 trabajos al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu precio",
+   "contador": "recargo |20%",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "ganando"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Costo más 20%, y listo.",
+     "piensa": false,
+     "cola": -1,
+     "x": 34,
+     "y": 22,
+     "en": [
+      0,
+      "costo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 55,
+     "tam": 30,
+     "etiqueta": "¿GANAS 20%?",
+     "en": [
+      1,
+      "ganando"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "el número",
+   "contador": "tu costo |÷ ?",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2
+    },
+    {
+     "que": "cifra",
+     "texto": "÷ ?",
+     "color": "principal",
+     "x": 50,
+     "y": 42,
+     "tam": 14,
+     "etiqueta": "TU COSTO",
+     "en": [
+      2,
+      "número"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "RECARGO",
+    "MARGEN"
+   ],
+   "en": [
+    4,
+    "recargo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "tu trabajo",
+   "contador": "costo |$10,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 36,
+     "tam": 32,
+     "etiqueta": "EL TRABAJO",
+     "en": [
+      6,
+      "trabajo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$10,000",
+     "x": 68,
+     "y": 70,
+     "tam": 9,
+     "etiqueta": "tu costo",
+     "en": [
+      6,
+      "10,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "tu precio",
+   "contador": "cobras |$12,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu precio",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Tu costo",
+       "valor": "$10,000",
+       "en": [
+        7
+       ]
+      },
+      {
+       "texto": "Recargo 20%",
+       "valor": "$2,000",
+       "en": [
+        7,
+        "20%"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       9,
+       "Parece"
+      ],
+      "texto": "¿20%?"
+     },
+     "total": {
+      "texto": "Cobras",
+      "valor": "$12,000",
+      "en": [
+       7,
+       "cobras"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el truco",
+   "contador": "margen |sobre el cobro",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "cb",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 28,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "LO QUE COBRAS",
+     "en": [
+      10
+     ]
+    },
+    {
+     "id": "gs",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "LO QUE GASTAS",
+     "en": [
+      11,
+      "gastas"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "gs",
+     "en": [
+      11,
+      "gastas"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "16.67%",
+     "color": "principal",
+     "x": 50,
+     "y": 72,
+     "tam": 11,
+     "etiqueta": "NO ES 20%",
+     "en": [
+      13,
+      "16.67"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "cada trabajo",
+   "contador": "lo repites |siempre",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 40,
+     "tam": 28,
+     "etiqueta": "CADA TRABAJO",
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 70,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "cambia": {
+      "en": [
+       15,
+       "culpa"
+      ],
+      "cara": "preocupado"
+     },
+     "en": [
+      14,
+      "lo"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Así me enseñaron...",
+     "piensa": true,
+     "cola": -1,
+     "x": 70,
+     "y": 20,
+     "en": [
+      15,
+      "culpa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "la cuenta",
+   "contador": "divide |entre 0.80",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      16
+     ],
+     "items": [
+      {
+       "texto": "Divide tu costo entre 0.80",
+       "en": [
+        17,
+        "divide"
+       ]
+      },
+      {
+       "texto": "$10,000 ÷ 0.80 = $12,500",
+       "en": [
+        19,
+        "12,500"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "tu ganancia",
+   "contador": "ganas |$2,500",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "SUMAS 20%",
+     "en": [
+      20
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 38,
+     "y": 95,
+     "tam": 50,
+     "valor": 2000,
+     "max": 2500,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      20
+     ],
+     "hasta": [
+      20,
+      "sí"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 64,
+     "y": 95,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "ENTRE 0.80",
+     "en": [
+      20,
+      "quedan"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 50,
+     "valor": 2500,
+     "max": 2500,
+     "prefijo": "$",
+     "en": [
+      20,
+      "quedan"
+     ],
+     "hasta": [
+      20,
+      "2,500"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "el premio",
+   "contador": "extra |$500",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$500",
+    "etiqueta": "más por trabajo",
+    "en": [
+     22,
+     "500"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TUYOS",
+    "en": [
+     24,
+     "tuyos"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "al año",
+   "contador": "20 trabajos |al año",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "20 TRABAJOS"
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 75,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "EN LA MESA",
+     "en": [
+      26,
+      "mesa"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 10000,
+     "prefijo": "$",
+     "x": 50,
+     "y": 70,
+     "tam": 11,
+     "etiqueta": "QUE DEJABAS",
+     "en": [
+      26,
+      "serían"
+     ],
+     "hasta": [
+      26,
+      "10,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |1 de 4"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |2 de 4"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "paso |3 de 4"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |4 de 4"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "Súmale 25% a tu costo, no 20%",
+       "en": [
+        28,
+        "Súmale"
+       ]
+      },
+      {
+       "texto": "Decide cuánto quieres quedarte",
+       "en": [
+        29,
+        "decide"
+       ]
+      },
+      {
+       "texto": "Cuenta todo como costo",
+       "en": [
+        30,
+        "todo"
+       ]
+      },
+      {
+       "texto": "Usa tu calculadora cada vez",
+       "en": [
+        31,
+        "calculadora"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

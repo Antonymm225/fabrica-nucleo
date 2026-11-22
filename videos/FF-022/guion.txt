@@ -1,0 +1,42 @@
+# FF-022 · Finanzas Familiares · EST-01 · El cheque que ya cayó
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Parte del depósito que el banco debe dejarte disponible al siguiente día hábil (Regulación CC, ajuste 2025; verificar vigente) = 275 $ · https://www.federalreserve.gov/newsevents/pressreleases/bcreg20250306a.htm
+# Fuente: Monto del cheque falso del ejemplo (ilustrativo) = 3000 $ · https://consumer.ftc.gov/articles/fake-check-scams
+# Fuente: Monto que el 'patrón' te pide devolver en el ejemplo (ilustrativo) = 2500 $ · https://consumer.ftc.gov/articles/fake-check-scams
+# BLOQUE 1
+Si tu app dice que el cheque *ya cayó*,
+todavía *no es tu dinero*.
+Al final te doy la *pregunta exacta*
+que le haces a tu *banco*.
+Se llama el *cheque falso*.
+Alguien te deposita un cheque de [$3,000|tres mil dólares].
+Dice que es por un *trabajo*,
+un equipo, o un *pago de más*.
+Y te pide devolver [$2,500|dos mil quinientos dólares]
+por transferencia o *tarjetas de regalo*.
+Tú te quedas con [$500|quinientos dólares].
+Suena a *buen trato*, ¿verdad?
+Al día siguiente, tu app ya muestra *el dinero*.
+Pero aquí viene lo que *nadie te dice*.
+La ley obliga al banco
+a soltarte el dinero *rápido*.
+No porque el cheque sea *bueno*.
+Soltar el dinero no es *confirmar*.
+Semanas después, el banco descubre que es *falso*.
+Y te cobra los [$3,000|tres mil dólares] *completos*.
+Pero los [$2,500|dos mil quinientos dólares] que mandaste,
+esos ya *no regresan*.
+Y si gastaste los [$500|quinientos dólares] en la renta,
+quedas debiendo [$3,000|tres mil dólares] al *banco*.
+Un trabajo de verdad *nunca* te pide devolver dinero.
+Un comprador de verdad, tampoco.
+Si te piden devolver algo, es *estafa*.
+No mandes *nada* hasta que el banco confirme.
+Ahora sí, la *pregunta exacta*:
+¿Este cheque ya fue *pagado definitivamente*?
+*Disponible* no es *confirmado*.
+Si ya depositaste, llama al banco hoy.
+Dile que sospechas *fraude*, y repórtalo a la FTC.
+Cuida el dinero de *tu familia*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien recibe *cheques* de extraños.

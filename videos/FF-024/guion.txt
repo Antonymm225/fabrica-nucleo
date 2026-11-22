@@ -1,0 +1,41 @@
+# FF-024 · Finanzas Familiares · EST-01 · El 20% que no es 20%
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Margen real de un recargo (markup) de 20% sobre el costo = 16.67 % · https://grandyassociates.com/blog/markup-vs-margin-what-every-contractor-gets-wrong/
+# Fuente: Margen real de un recargo (markup) de 30% sobre el costo (aprox. 23%) = 23.08 % · https://skillmammoth.com/blog/markup-vs-margin
+# Fuente: Fórmula del precio: costo dividido entre (1 menos el margen que quieres) = 20 % · https://contractorcfo.org/articles/markup-vs-margin-explained
+# Fuente: Tasa del impuesto de autoempleo sobre la ganancia neta (2025), que se paga sobre lo que realmente ganas = 15.3 % · https://www.irs.gov/publications/p334
+# BLOQUE 1
+Si cobras tus trabajos *costo más* [20%|veinte por ciento],
+no estás ganando [20%|veinte por ciento].
+Al final te digo el *número exacto*
+por el que divides tu *costo*.
+Se llama confundir *recargo* con *margen*.
+Aquí en Estados Unidos, es un error *común*.
+Mira un trabajo que te cuesta [$10,000|diez mil dólares].
+Le sumas [20%|veinte por ciento] y cobras [$12,000|doce mil dólares].
+Te quedan [$2,000|dos mil dólares] de *ganancia*.
+Parece [20%|veinte por ciento], ¿verdad?
+Pero el porcentaje se mide sobre *lo que cobras*,
+no sobre lo que *gastas*.
+[$2,000|dos mil dólares] entre [$12,000|doce mil dólares]
+es solo [16.67%|dieciséis punto sesenta y siete por ciento].
+Y lo peor: lo repites en *cada trabajo*.
+Y no es tu culpa, así te enseñaron.
+Ahora sí, el *número exacto*:
+divide tu costo entre [0.80|cero punto ochenta].
+[$10,000|diez mil dólares] entre [0.80|cero punto ochenta]
+te da [$12,500|doce mil quinientos dólares].
+Ahí sí te quedan [$2,500|dos mil quinientos dólares],
+que es el [20%|veinte por ciento] *de verdad*.
+Son [$500|quinientos dólares] más por *trabajo*.
+Y no se los quitas a nadie:
+ya eran *tuyos*.
+Con [20|veinte] trabajos así al año,
+serían [$10,000|diez mil dólares] que dejabas en la *mesa*.
+Es dinero que ya *trabajaste*.
+Súmale [25%|veinticinco por ciento] a tu costo, no [20%|veinte por ciento].
+Antes de dar tu precio, decide cuánto quieres *quedarte*.
+Cuenta *todo*: material, ayudantes, gasolina y herramientas.
+Haz la cuenta en tu *calculadora*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra *por trabajo*.

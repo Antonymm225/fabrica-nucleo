@@ -1,0 +1,94 @@
+{
+ "titulo": "El 20% que en realidad es 16%",
+ "angulo": "Le sumas 20% a tus costos para ganar 20%, pero solo te quedas con 16.67% del cobro, porque el porcentaje se calcula sobre el precio y no sobre tu costo.",
+ "explicacion": "Cotizas así: costo del trabajo más 20%. Parece justo. Pero el margen se mide sobre lo que cobras, no sobre lo que gastas. Con un trabajo que te cuesta $10,000, cobras $12,000 y ganas $2,000. Eso es 16.67% del cobro, no 20%. Para ganar 20% de verdad, divides tu costo entre 0.80 y cobras $12,500. Son $500 más por trabajo, y no se los quitas a nadie: ya eran tuyos.",
+ "datos": [
+  {
+   "dato": "Margen real de un recargo (markup) de 20% sobre el costo",
+   "valor": 16.67,
+   "unidad": "%",
+   "fuente": "https://grandyassociates.com/blog/markup-vs-margin-what-every-contractor-gets-wrong/"
+  },
+  {
+   "dato": "Margen real de un recargo (markup) de 30% sobre el costo (aprox. 23%)",
+   "valor": 23.08,
+   "unidad": "%",
+   "fuente": "https://skillmammoth.com/blog/markup-vs-margin"
+  },
+  {
+   "dato": "Fórmula del precio: costo dividido entre (1 menos el margen que quieres)",
+   "valor": 20,
+   "unidad": "%",
+   "fuente": "https://contractorcfo.org/articles/markup-vs-margin-explained"
+  },
+  {
+   "dato": "Tasa del impuesto de autoempleo sobre la ganancia neta (2025), que se paga sobre lo que realmente ganas",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/publications/p334"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Precio cobrado con 20% de recargo sobre un costo de $10,000",
+   "expresion": "10000*(1+0.20)",
+   "resultado": 12000.0
+  },
+  {
+   "descripcion": "Ganancia en ese trabajo",
+   "expresion": "10000*0.20",
+   "resultado": 2000.0
+  },
+  {
+   "descripcion": "Margen real (% del cobro) con recargo de 20%",
+   "expresion": "round(2000/12000*100,2)",
+   "resultado": 16.67
+  },
+  {
+   "descripcion": "Precio correcto para ganar 20% del cobro",
+   "expresion": "round(10000/(1-0.20),2)",
+   "resultado": 12500.0
+  },
+  {
+   "descripcion": "Ganancia real al cobrar $12,500",
+   "expresion": "round(10000/(1-0.20)-10000,2)",
+   "resultado": 2500.0
+  },
+  {
+   "descripcion": "Dinero que dejas en la mesa por trabajo",
+   "expresion": "round(10000/(1-0.20)-10000*(1+0.20),2)",
+   "resultado": 500.0
+  },
+  {
+   "descripcion": "Lo que dejas en la mesa con 20 trabajos al año",
+   "expresion": "round(500*20,2)",
+   "resultado": 10000
+  },
+  {
+   "descripcion": "Recargo necesario para ganar 20% del cobro (en %)",
+   "expresion": "round(0.20/(1-0.20)*100,2)",
+   "resultado": 25.0
+  }
+ ],
+ "consejo": "Antes de cotizar, decide cuánto quieres quedarte de cada $100 que cobras. Divide tu costo entre (1 menos ese porcentaje). Para quedarte 20%, divide entre 0.80, o sea, súmale 25% a tu costo, no 20%. Haz esa cuenta con tu calculadora del celular en cada cotización. Cuenta como costo todo: material, ayudantes, gasolina y herramientas que se desgastan.",
+ "que_no_decir": [
+  "No prometas que con esto ganarán exactamente 20% o 25% de todo: depende de que el costo esté bien calculado.",
+  "No digas que el cliente va a aceptar el precio más alto: eso no se puede garantizar.",
+  "No lo presentes como asesoría de impuestos: la ganancia pagará impuesto de autoempleo (15.3%) y de renta aparte.",
+  "No digas que todos los contratistas cotizan mal: es un error común, no de todos.",
+  "No inventes que es una regla del IRS: es una fórmula de negocio.",
+  "No uses la palabra 'garantizado' ni prometas cifras de ganancia anual: los $10,000 son un ejemplo con 20 trabajos de $10,000 de costo."
+ ],
+ "con_iul": false,
+ "territorio": "negocio propio",
+ "ganchos_recientes": [
+  "Uno de cada cuatro trabajadores / se incapacita antes de retirarse. / Y el Seguro Social paga menos de la mitad. / Al final te digo cómo cubrir ese hueco.",
+  "Mandar dinero a casa con tarjeta de crédito / te cuesta más de $93 extra al año. / Se llama el costo escondido. / Al final te digo cuántos minutos tienes para cancelar.",
+  "El seguro de vida de tu trabajo / deja a tu familia $450,000 corto. / Y no es tuyo, es del patrón. / Se llama el seguro del patrón.",
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco.",
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar."
+ ]
+}

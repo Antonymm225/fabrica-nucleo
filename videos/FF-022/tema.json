@@ -1,0 +1,74 @@
+{
+ "titulo": "El cheque que 'ya cayó' y rebota después",
+ "angulo": "Tu app dice 'fondos disponibles' porque la ley obliga al banco a soltarte el dinero rápido, no porque el cheque sea bueno; semanas después el banco te cobra el cheque completo.",
+ "explicacion": "Te depositan un cheque de $3,000 por un 'trabajo', un 'equipo' o un 'pago de más'. Te piden que devuelvas $2,500 por Zelle, transferencia o tarjetas de regalo y que te quedes con $500. La app muestra el dinero en uno o dos días porque la regla de disponibilidad de fondos de la Reserva Federal obliga al banco a soltarlo rápido. Pero soltar el dinero no es lo mismo que confirmar el cheque. Cuando el banco descubre que es falso, te reversa los $3,000, y los $2,500 que mandaste ya no regresan.",
+ "datos": [
+  {
+   "dato": "Parte del depósito que el banco debe dejarte disponible al siguiente día hábil (Regulación CC, ajuste 2025; verificar vigente)",
+   "valor": 275,
+   "unidad": "$",
+   "fuente": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20250306a.htm"
+  },
+  {
+   "dato": "Monto del cheque falso del ejemplo (ilustrativo)",
+   "valor": 3000,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/articles/fake-check-scams"
+  },
+  {
+   "dato": "Monto que el 'patrón' te pide devolver en el ejemplo (ilustrativo)",
+   "valor": 2500,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/articles/fake-check-scams"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que parece que ganas (cheque menos lo que devuelves)",
+   "expresion": "3000-2500",
+   "resultado": 500
+  },
+  {
+   "descripcion": "Lo que realmente pierdes de tu bolsillo si no gastaste nada (el banco reversa el cheque, tú ya mandaste el dinero)",
+   "expresion": "0-2500",
+   "resultado": -2500
+  },
+  {
+   "descripcion": "Tu saldo si además gastaste los $500 'sobrantes' en renta o comida (queda sobregirado)",
+   "expresion": "0-2500-500",
+   "resultado": -3000
+  },
+  {
+   "descripcion": "Cuánto del cheque el banco debe soltarte el primer día aunque el cheque sea falso (ejemplo)",
+   "expresion": "3000-275",
+   "resultado": 2725
+  },
+  {
+   "descripcion": "Porcentaje del cheque que perdiste de tu dinero real",
+   "expresion": "round(2500/3000*100,2)",
+   "resultado": 83.33
+  }
+ ],
+ "consejo": "Si alguien te manda un cheque y te pide devolver parte o comprar algo, es estafa. Un trabajo o comprador de verdad nunca te pide devolver dinero. No mandes nada hasta que el banco confirme que el cheque fue pagado definitivamente. 'Disponible' no es 'confirmado'. Si ya depositaste, llama al banco, dile que sospechas de fraude y repórtalo en ReportFraud.ftc.gov.",
+ "que_no_decir": [
+  "Que la app mostrando el dinero significa que el cheque es bueno",
+  "Cifras de pérdidas de la FTC sin confirmarlas",
+  "Que el banco siempre te va a devolver el dinero",
+  "Que existe un plazo exacto en que rebota (puede tardar semanas)",
+  "Que el monto de $275 es fijo para siempre (verificar vigente)",
+  "Prometer que recuperarás lo que ya mandaste",
+  "Recomendar un banco, cooperativa o plan del trabajo específico"
+ ],
+ "con_iul": false,
+ "territorio": "estafas",
+ "ganchos_recientes": [
+  "Si cambias tu troca y todavía la debes, / el dealer te suma $7,214 de deuda vieja. / Se llama estar al revés. / Debes más de lo que vale tu troca.",
+  "Te cobran $350 por algo / que tú puedes hacer gratis con tu casa. / Al final te digo cómo. / Se llama el pago quincenal.",
+  "Uno de cada cuatro trabajadores / se incapacita antes de retirarse. / Y el Seguro Social paga menos de la mitad. / Al final te digo cómo cubrir ese hueco.",
+  "Mandar dinero a casa con tarjeta de crédito / te cuesta más de $93 extra al año. / Se llama el costo escondido. / Al final te digo cuántos minutos tienes para cancelar.",
+  "El seguro de vida de tu trabajo / deja a tu familia $450,000 corto. / Y no es tuyo, es del patrón. / Se llama el seguro del patrón.",
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia."
+ ]
+}

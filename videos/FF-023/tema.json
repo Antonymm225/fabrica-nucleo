@@ -1,0 +1,85 @@
+{
+ "titulo": "El colchón que se encoge",
+ "angulo": "Guardar dinero en efectivo parece lo más seguro, pero en 30 años el dólar pierde más de la mitad de lo que compra, y el número del billete nunca baja.",
+ "explicacion": "Mucha gente guarda efectivo porque cree que así no pierde nada. El billete sigue siendo de $100, pero cada año compra menos. Con los precios de EE. UU., 1 dólar de 1995 hoy compra lo que compraban 45 centavos. Si guardas $10,000 en efectivo, hoy tendrías el poder de compra de unos $4,515. Para que tu dinero le gane a los precios, tiene que crecer. Una proyección con un IUL, que crece hasta un 10% al año y tiene piso de cero, muestra cómo pasa eso con aportes constantes.",
+ "datos": [
+  {
+   "dato": "Lo que compra hoy 1 dólar de 1995, en centavos (poder de compra: 45.15% del de 1995). Fuente: calculadora de inflación con datos del CPI del BLS",
+   "valor": 45.15,
+   "unidad": "%",
+   "fuente": "https://www.in2013dollars.com/us/inflation/1995"
+  },
+  {
+   "dato": "Aumento acumulado de precios en EE. UU. de 1995 a hoy (31 años)",
+   "valor": 121.46,
+   "unidad": "%",
+   "fuente": "https://www.in2013dollars.com/us/inflation/1995?amount=1"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Poder de compra de $10,000 guardados en efectivo desde 1995, medido en dólares de hoy",
+   "expresion": "10000*0.4515",
+   "resultado": 4515.0
+  },
+  {
+   "descripcion": "Lo que pierde en poder de compra ese efectivo",
+   "expresion": "10000-10000*0.4515",
+   "resultado": 5485.0
+  },
+  {
+   "descripcion": "Total aportado si empiezas a los 35 y pones $200 al mes ($2,400 al año) hasta los 65 (30 años), en el colchón",
+   "expresion": "2400*30",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Proyección ilustrativa al 10% anual: $2,400 al inicio de cada año, interés anual, de los 35 a los 65",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1,2)",
+   "resultado": 434264.22
+  },
+  {
+   "descripcion": "Parte de la proyección que es crecimiento y no aportes",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1-2400*30,2)",
+   "resultado": 362264.22
+  }
+ ],
+ "consejo": "No dejes tu ahorro de largo plazo en efectivo. Define cuánto puedes apartar cada mes (aunque sean $200) y ponlo donde pueda crecer. Pregunta por un seguro de vida indexado (IUL) para el retiro. Pide ver el plan por escrito: la tasa máxima, el piso y los costos.",
+ "que_no_decir": [
+  "Que los $434,264.22 están garantizados. Es una proyección al máximo de 10% todos los años.",
+  "Que el IUL siempre rinde 10%. Es el máximo de un año, y el piso es 0%.",
+  "Que el dinero en el banco es mala idea. Para emergencias y gastos del mes sirve.",
+  "Que la inflación va a ser igual en los próximos 30 años. El dato es del pasado.",
+  "Que el IUL es una inversión sin riesgo ni costos. Tiene cargos y condiciones.",
+  "Que guardar dinero en efectivo es lo mismo que tenerlo en el banco, o que el banco paga $19.50 (ya está en FF-003)."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "ganchos_recientes": [
+  "Te cobran $350 por algo / que tú puedes hacer gratis con tu casa. / Al final te digo cómo. / Se llama el pago quincenal.",
+  "Uno de cada cuatro trabajadores / se incapacita antes de retirarse. / Y el Seguro Social paga menos de la mitad. / Al final te digo cómo cubrir ese hueco.",
+  "Mandar dinero a casa con tarjeta de crédito / te cuesta más de $93 extra al año. / Se llama el costo escondido. / Al final te digo cuántos minutos tienes para cancelar.",
+  "El seguro de vida de tu trabajo / deja a tu familia $450,000 corto. / Y no es tuyo, es del patrón. / Se llama el seguro del patrón.",
+  "Una tele te puede costar casi $2,000 / si la pagas por semana. / Se llama renta con opción a compra. / Al final te digo cómo evitarla.",
+  "Cobrar tu cheque en la tienda de cambio / te cuesta $1,560 al año. / Se llama el cargo por cheque. / Y al final te enseño cómo evitarlo.",
+  "Pagaste Seguro Social toda tu vida, / y cuando faltas, tu familia recibe solo $255. / Se llama el pago único. / Al final te digo cómo cubrir la diferencia.",
+  "Si tu app dice que el cheque ya cayó, / todavía no es tu dinero. / Al final te doy la pregunta exacta / que le haces a tu banco."
+ ]
+}

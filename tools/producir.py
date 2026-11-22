@@ -8,6 +8,7 @@ Deja por video: videos/<CÓDIGO>/tema.json, guion.txt, escenas.json.
 Escribe en $GITHUB_OUTPUT: lista=["FF-003", ...] con los que pasaron la revisión.
 Necesita ANTHROPIC_API_KEY (Secret en GitHub)."""
 import os, re, sys, json, ast, operator, glob, argparse, unicodedata
+import ideas
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELO = "claude-sonnet-5-5"
@@ -469,7 +470,7 @@ def tarea_iul(beneficio):
     return comun + f""" Este video es de {beneficio[0]}, NO de retiro: todos los datos y cálculos son del problema (cuánto falta, cuánto cuesta, cuánto tiempo). No calcules proyecciones de ahorro ni de retiro, ni cuánto se junta en el IUL, ni el costo de empezar tarde: esas cifras no van en este video."""
 
 
-def investigar(c, marca, historia, iul=False, beneficio=None, terr=None, cod=None):
+def investigar(c, marca, historia, iul=False, beneficio=None, terr=None, cod=None, idea=None):
     pedido = f"""Eres investigador de contenido de finanzas personales para la marca "{marca['nombre']}".
 Tono de la marca: {marca['tono']}
 Temas preferidos: {', '.join(marca['temas'])}.
@@ -485,6 +486,10 @@ En este video el IUL entra por UN solo beneficio: {beneficio[0]} ({beneficio[1]}
 Este video cae en el territorio: {terr[0]} ({terr[1]}). Elige dentro de ese territorio el tema MÁS interesante: uno que la gente no conozca, que le pase a esta audiencia y que dé para un gancho que frene el scroll. No elijas lo primero que se te ocurra: piensa 6 temas posibles y quédate con el que más sorprende.""" if terr and not iul else ""}
 
 El tema tiene que traer una SORPRESA de verdad: un dato que la gente cree al revés, una regla que casi nadie conoce, un derecho que no saben que tienen o una cuenta que sale mucho peor de lo que imaginan. "Esto cuesta caro" no es sorpresa. En "angulo" escribe esa sorpresa en una frase.
+
+{f"""
+IMPORTANTE: el tema de este video YA ESTÁ DECIDIDO por el equipo y no se cambia: «{idea['tematica']}».{(" Gancho pedido: «" + idea['gancho'] + "».") if idea.get('gancho') else ""}
+No elijas otro tema ni lo cambies por uno parecido. Tu trabajo es DESARROLLARLO: buscar los datos reales en Estados Unidos, armar el ejemplo con números que lo demuestre y la salida práctica. La lista de videos ya hechos solo sirve para no repetir las mismas cifras ni el mismo ejemplo. En "titulo" pon un nombre corto para esta idea.""" if idea else ""}
 
 Responde al final con UN bloque ```json con esta forma exacta:
 {{
@@ -507,6 +512,9 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     ficha["con_iul"] = iul
     if iul and beneficio: ficha["beneficio_iul"] = beneficio[0]
     if iul and cod: ficha["cta_iul"] = cta_iul(cod)
+    if idea:
+        ficha["idea"] = idea["tematica"]
+        if idea.get("gancho"): ficha["gancho_pedido"] = idea["gancho"]
     if terr and not iul: ficha["territorio"] = terr[0]
     if iul: ficha["datos"] = ficha.get("datos", []) + (DATOS_IUL if not beneficio or beneficio[0] == RETIRO else DATOS_IUL[:2])
     return ficha
@@ -529,6 +537,7 @@ Ficha del tema investigado (las únicas cifras permitidas están en "datos" y "c
 
 Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra. El único beneficio de este video es: " + str(ficha.get("beneficio_iul") or "el de la ficha") + ". Los otros dos no se desarrollan. Las 4 líneas antes de *Sígueme* son la llamada a la acción, copiada tal cual: " + " / ".join(CTA_IUL.get(ficha.get("cta_iul") or "", [])) if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
 Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. 
+{("La idea del video la decidió el equipo: «" + ficha["idea"] + "». No la cambies. ") if ficha.get("idea") else ""}{("Gancho pedido por el equipo: «" + ficha["gancho_pedido"] + "». Ábrelo con ese gancho (puedes pulir las palabras y partirlo en líneas, sin cambiar la idea); los 8 candidatos son variaciones de él.") if ficha.get("gancho_pedido") else ""}
 Ganchos de los últimos videos de la marca (no repitas su molde ni su forma de abrir; este tiene que sonar distinto):
 {chr(10).join('- ' + g for g in ficha.get("ganchos_recientes", [])) or '- (ninguno)'}
 
@@ -661,6 +670,11 @@ def revisar_existente(cod):
     return not e
 
 
+def anotar(idea, estado, nota=None):
+    try: ideas.marcar(idea["fila"], estado, nota)
+    except Exception as x: print(f"::warning::No se pudo marcar la fila {idea['fila']} como {estado}: {str(x)[:200]}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--marca"); ap.add_argument("--cantidad", type=int, default=1); ap.add_argument("--revisar")
@@ -670,13 +684,22 @@ def main():
     c = cliente(); hechos = []
     ejemplos = ejemplos_de(marca["estilo"])
     for _ in range(a.cantidad):
-        cod = siguiente(marca["codigo"])
+        cod = siguiente(marca["codigo"]); idea = None
         try:
-            iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
-            terr = None if iul else territorio(marca["codigo"])
-            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben, terr, cod)
+            if ideas.activa():
+                try: idea = ideas.tomar(marca, cod)
+                except Exception as x: print(f"::warning::No se pudo leer la hoja de ideas ({str(x)[:200]}); la fábrica elige el tema")
+            if idea:
+                iul = idea["con_iul"]; terr = None
+                ben = next((b for b in BENEFICIOS_IUL if b[0] == idea["beneficio"]), None) if iul else None
+                print(f"{cod}: idea de la hoja (fila {idea['fila']})")
+            else:
+                if ideas.activa(): print(f"::warning::{cod}: no hay ideas pendientes en la hoja; la fábrica eligió el tema")
+                iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
+                terr = None if iul else territorio(marca["codigo"])
+            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben, terr, cod, idea)
             ficha["ganchos_recientes"] = ganchos_recientes(marca["codigo"])
-            print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + ben[0]) if ficha['con_iul'] else 'puro valor · ' + terr[0]} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
+            print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + (ben[0] if ben else '')) if ficha['con_iul'] else 'puro valor' + (' · ' + terr[0] if terr else '')} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
             err = revisar(v["lineas"], esc, ficha, marca) + revisar_aviso(v.get("aviso", ""))
@@ -690,11 +713,14 @@ def main():
                 print(f"::error::{cod} no pasó la revisión:"); [print("  -", x) for x in err]
                 D = os.path.join(ROOT, "rechazados"); os.makedirs(D, exist_ok=True)
                 json.dump({"ficha": ficha, "video": v, "errores": err}, open(os.path.join(D, cod + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                if idea: anotar(idea, "rechazado", err[0])
                 continue
             guardar(cod, marca, ficha, v, esc); hechos.append(cod)
+            if idea: anotar(idea, "hecho")
             print(f"{cod}: listo «{v['titulo']}» · {len(v['lineas'])} líneas · {len(esc)} escenas")
         except Exception as x:
             print(f"::error::{cod} falló: {x}")
+            if idea: anotar(idea, "error", x)
     out = os.environ.get("GITHUB_OUTPUT")
     if out: open(out, "a").write("lista=" + json.dumps(hechos) + "\n")
     print("hechos:", hechos)

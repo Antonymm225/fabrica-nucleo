@@ -48,6 +48,9 @@ jobs:
         id: escribir
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
           MARCA: ${{ github.event.inputs.marca }}
           CANTIDAD: ${{ github.event.inputs.cantidad }}
         run: |

@@ -1,0 +1,27 @@
+# Crea (si no existe) la hoja privada "Ideas de videos" en Google Drive, dentro de "Fábrica de Videos".
+name: Hoja de ideas
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["tools/ideas.py"]
+
+permissions:
+  contents: read
+
+jobs:
+  hoja:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Crear o revisar la hoja
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: python -X utf8 tools/ideas.py crear

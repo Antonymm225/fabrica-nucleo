@@ -103,6 +103,9 @@ def main():
             nombre = limpio(f"{cod} - {'(IUL) ' if iul else ''}{titulo}".rstrip(" -")) + ".mp4"
             link, reemplazo = subir(tk, ruta, nombre, cache[marca])
             print(f"{cod}: {'reemplazado' if reemplazo else 'subido'} en {RAIZ}/{mes}/{marca}/{nombre}")
+            try:
+                import ideas; ideas.enlazar(cod, link)
+            except Exception as x: print(f"::warning::{cod}: no se anotó el enlace en la hoja de ideas: {str(x)[:200]}")
             lineas.append(f"- [{nombre}]({link}) · {RAIZ} / {mes} / {marca}")
         except Exception as x:
             fallos += 1

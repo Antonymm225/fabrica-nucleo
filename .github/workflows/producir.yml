@@ -2,6 +2,8 @@
 # Claude (API) elige e investiga el tema → escribe guion y escenas → revisión automática → voz (ElevenLabs) → render.
 # Uso: Actions → "Producir videos" → Run workflow → marca y cantidad.
 # También arranca solo cuando se sube un cambio a pedido.json ({"marca": "...", "cantidad": N}).
+# Y solo, cada 2 horas: toma un lote de ideas pendientes de la hoja privada "Ideas de videos" (automatico.json
+# dice la marca, el tamaño del lote y si está activo). Sin ideas pendientes no hace nada ni gasta nada.
 # Necesita los Secrets ANTHROPIC_API_KEY y ELEVENLABS_API_KEY.
 name: Producir videos
 
@@ -19,6 +21,13 @@ on:
   push:
     branches: [main]
     paths: ["pedido.json"]
+  schedule:
+    - cron: "17 */2 * * *"
+
+# Un lote a la vez: si uno sigue corriendo, el siguiente espera (así dos lotes no usan el mismo código de video).
+concurrency:
+  group: producir-videos
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -54,12 +63,16 @@ jobs:
           MARCA: ${{ github.event.inputs.marca }}
           CANTIDAD: ${{ github.event.inputs.cantidad }}
         run: |
-          if [ -z "$MARCA" ]; then MARCA=$(jq -r '.marca' pedido.json); CANTIDAD=$(jq -r '.cantidad' pedido.json); fi
+          MODO=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "$(jq -r '.activo' automatico.json)" != "true" ]; then echo "::notice::El modo automático está apagado (automatico.json)"; echo "videos=" >> "$GITHUB_OUTPUT"; exit 0; fi
+            MARCA=$(jq -r '.marca' automatico.json); CANTIDAD=$(jq -r '.lote' automatico.json); MODO="--solo-hoja"
+          elif [ -z "$MARCA" ]; then MARCA=$(jq -r '.marca' pedido.json); CANTIDAD=$(jq -r '.cantidad' pedido.json); fi
           echo "marca=$MARCA" >> "$GITHUB_OUTPUT"
           echo "Pedido: $CANTIDAD videos de $MARCA"
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::error::Falta el Secret ANTHROPIC_API_KEY"; exit 1; fi
           if ! [ -f "marcas/$MARCA.json" ]; then echo "::error::No existe marcas/$MARCA.json"; exit 1; fi
-          python -X utf8 tools/producir.py --marca "$MARCA" --cantidad "$CANTIDAD"
+          python -X utf8 tools/producir.py --marca "$MARCA" --cantidad "$CANTIDAD" $MODO
           LISTA=$(grep '^lista=' "$GITHUB_OUTPUT" | tail -1 | cut -d= -f2-)
           echo "videos=$(echo "$LISTA" | jq -r 'join(",")')" >> "$GITHUB_OUTPUT"
 

@@ -385,6 +385,19 @@ def cliente():
     return anthropic.Anthropic()
 
 
+GASTO = {"entrada": 0, "cache": 0, "salida": 0, "busquedas": 0}
+
+
+def sumar(r):
+    u = getattr(r, "usage", None)
+    if not u: return
+    GASTO["entrada"] += (getattr(u, "input_tokens", 0) or 0) + (getattr(u, "cache_creation_input_tokens", 0) or 0)
+    GASTO["cache"] += getattr(u, "cache_read_input_tokens", 0) or 0
+    GASTO["salida"] += getattr(u, "output_tokens", 0) or 0
+    st = getattr(u, "server_tool_use", None)
+    GASTO["busquedas"] += (getattr(st, "web_search_requests", 0) or 0) if st else 0
+
+
 def llamar(c, **kw):
     """Mensaje a Claude con respaldo automático si el modelo rechaza, y continuación de turnos pausados."""
     msgs = kw.pop("messages")
@@ -393,6 +406,7 @@ def llamar(c, **kw):
         with c.beta.messages.stream(model=MODELO, max_tokens=64000, messages=msgs,
                                     betas=["server-side-fallback-2026-07-01"], extra_body={"fallbacks": "default"}, **kw) as s:
             r = s.get_final_message()
+        sumar(r)
         if r.stop_reason == "pause_turn":
             msgs = msgs + [{"role": "assistant", "content": r.content}]; continue
         if r.stop_reason == "refusal": raise RuntimeError(f"Claude rechazó el pedido: {getattr(r, 'stop_details', None)}")
@@ -678,13 +692,15 @@ def anotar(idea, estado, nota=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--marca"); ap.add_argument("--cantidad", type=int, default=1); ap.add_argument("--revisar")
+    ap.add_argument("--solo-hoja", action="store_true", help="solo ideas de la hoja; si no hay pendientes, termina sin hacer nada")
     a = ap.parse_args()
     if a.revisar: sys.exit(0 if all(revisar_existente(x) for x in a.revisar.split(",")) else 1)
     marca = json.load(open(os.path.join(ROOT, "marcas", a.marca + ".json"), encoding="utf-8")); marca["slug"] = a.marca
-    c = cliente(); hechos = []
+    c = cliente(); hechos = []; intentos = 0
     ejemplos = ejemplos_de(marca["estilo"])
     for _ in range(a.cantidad):
-        cod = siguiente(marca["codigo"]); idea = None
+        cod = siguiente(marca["codigo"]); idea = None; intentos += 1
+        antes = dict(GASTO)
         try:
             if ideas.activa():
                 try: idea = ideas.tomar(marca, cod)
@@ -693,6 +709,8 @@ def main():
                 iul = idea["con_iul"]; terr = None
                 ben = next((b for b in BENEFICIOS_IUL if b[0] == idea["beneficio"]), None) if iul else None
                 print(f"{cod}: idea de la hoja (fila {idea['fila']})")
+            elif a.solo_hoja:
+                print("::notice::No hay más ideas pendientes en la hoja: el lote termina aquí."); break
             else:
                 if ideas.activa(): print(f"::warning::{cod}: no hay ideas pendientes en la hoja; la fábrica eligió el tema")
                 iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
@@ -718,13 +736,16 @@ def main():
             guardar(cod, marca, ficha, v, esc); hechos.append(cod)
             if idea: anotar(idea, "hecho")
             print(f"{cod}: listo «{v['titulo']}» · {len(v['lineas'])} líneas · {len(esc)} escenas")
+            g = {k: GASTO[k] - antes[k] for k in GASTO}
+            print(f"{cod}: consumo de Claude ({MODELO}): {g['entrada']:,} tokens de entrada + {g['cache']:,} de caché, {g['salida']:,} de salida, {g['busquedas']} búsquedas web")
         except Exception as x:
             print(f"::error::{cod} falló: {x}")
             if idea: anotar(idea, "error", x)
     out = os.environ.get("GITHUB_OUTPUT")
     if out: open(out, "a").write("lista=" + json.dumps(hechos) + "\n")
     print("hechos:", hechos)
-    if not hechos: sys.exit(1)
+    print(f"Consumo total de Claude en este lote: {GASTO['entrada']:,} tokens de entrada + {GASTO['cache']:,} de caché, {GASTO['salida']:,} de salida, {GASTO['busquedas']} búsquedas web")
+    if not hechos and not (a.solo_hoja and intentos <= 1): sys.exit(1)
 
 
 if __name__ == "__main__":

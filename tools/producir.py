@@ -209,7 +209,12 @@ def revisar(lineas, escenas, ficha, marca):
             for m in re.finditer(r"\[IUL\|([^\]]*)\]", l, re.I):
                 if m.group(1).strip().lower() != "a yu el": err.append(f"línea {i}: IUL se escribe IUL y se pronuncia 'a yu el': [IUL|a yu el]")
             if re.search(r"\bIUL\b", TAG.sub("", l)): err.append(f"línea {i}: IUL siempre va como [IUL|a yu el] para que se pronuncie bien: {l}")
-        if "asesor certificado" not in todo: err.append("falta la línea: Un *asesor certificado* debe ver tu caso a detalle.")
+        cta = CTA_IUL.get(ficha.get("cta_iul") or "")
+        if cta:
+            if [l.strip() for l in lineas[-6:-2]] != cta:
+                err.append("las 4 líneas antes de *Sígueme* deben ser la llamada a la acción, copiada tal cual: " + " / ".join(cta))
+            if sum("asesor certificado" in l.lower() for l in lineas) > 1: err.append("el asesor certificado se menciona una sola vez: en la llamada a la acción")
+        elif "asesor certificado" not in todo: err.append("falta la línea: Un *asesor certificado* debe ver tu caso a detalle.")
         for i, l in enumerate(lineas):
             if re.search(r"\[10%\|", l) and "hasta" not in l.lower(): err.append(f"línea {i}: el 10% del IUL siempre va con 'hasta': {l}")
         for i, l in enumerate(lineas):
@@ -231,6 +236,8 @@ def revisar(lineas, escenas, ficha, marca):
         if ben == RETIRO or not ben:
             if sum(bool(re.search(r"podr[ií]as? llegar|llegar[ií]as?", l.lower())) for l in lineas) > 2:
                 err.append("hay más de dos proyecciones de retiro: deja una (dos solo si el video compara dos personas o dos edades)")
+    elif re.search(r"\blink\b|biograf|\bcomenta\b", todo):
+        err.append("este video es de puro valor: sin link, sin 'comenta' y sin biografía; cierra solo con Sígueme y compártelo")
     elif tiene_iul:
         err.append("este video es de puro valor: no menciones el IUL ni seguros de vida")
     if lineas:
@@ -438,6 +445,22 @@ def ganchos_recientes(codigo, n=8):
 
 RETIRO = "ahorro para el retiro"
 
+CTA_IUL = {
+    "comenta": ["Comenta la palabra [IUL|a yu el]",
+                "y te mando el *link*.",
+                "Un *asesor certificado* ve tu caso a detalle",
+                "y busca la mejor *opción* para tu familia."],
+    "biografia": ["Si quieres aplicar a un [IUL|a yu el],",
+                  "te dejo el *link* en mi biografía.",
+                  "Un *asesor certificado* ve tu caso a detalle",
+                  "y busca la mejor *opción* para tu familia."],
+}
+
+
+def cta_iul(cod):
+    """Las dos llamadas a la acción se van alternando entre los videos con IUL."""
+    return "comenta" if int(cod.rsplit("-", 1)[1]) % 5 == 1 else "biografia"
+
 
 def tarea_iul(beneficio):
     comun = """Tarea: este video lleva el IUL (seguro de vida indexado) como la salida natural del problema. Busca en la web los datos del PROBLEMA en Estados Unidos en fuentes serias. Para el IUL no busques nada: sus cifras ya están en la ficha (crece hasta un 10% al año, piso cero). El dinero que se junta no tiene tope; el único tope es el 10% de crecimiento de un año."""
@@ -446,7 +469,7 @@ def tarea_iul(beneficio):
     return comun + f""" Este video es de {beneficio[0]}, NO de retiro: todos los datos y cálculos son del problema (cuánto falta, cuánto cuesta, cuánto tiempo). No calcules proyecciones de ahorro ni de retiro, ni cuánto se junta en el IUL, ni el costo de empezar tarde: esas cifras no van en este video."""
 
 
-def investigar(c, marca, historia, iul=False, beneficio=None, terr=None):
+def investigar(c, marca, historia, iul=False, beneficio=None, terr=None, cod=None):
     pedido = f"""Eres investigador de contenido de finanzas personales para la marca "{marca['nombre']}".
 Tono de la marca: {marca['tono']}
 Temas preferidos: {', '.join(marca['temas'])}.
@@ -483,6 +506,7 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     ficha = json.loads(m[-1])
     ficha["con_iul"] = iul
     if iul and beneficio: ficha["beneficio_iul"] = beneficio[0]
+    if iul and cod: ficha["cta_iul"] = cta_iul(cod)
     if terr and not iul: ficha["territorio"] = terr[0]
     if iul: ficha["datos"] = ficha.get("datos", []) + (DATOS_IUL if not beneficio or beneficio[0] == RETIRO else DATOS_IUL[:2])
     return ficha
@@ -503,7 +527,7 @@ Nombre para el cierre: "{marca['nombre']}". Lema para el cierre (campo sub): "di
 Ficha del tema investigado (las únicas cifras permitidas están en "datos" y "calculos"):
 {json.dumps(ficha, ensure_ascii=False, indent=1)}
 
-Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra. El único beneficio de este video es: " + str(ficha.get("beneficio_iul") or "el de la ficha") + ". Los otros dos no se desarrollan" if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
+Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra. El único beneficio de este video es: " + str(ficha.get("beneficio_iul") or "el de la ficha") + ". Los otros dos no se desarrollan. Las 4 líneas antes de *Sígueme* son la llamada a la acción, copiada tal cual: " + " / ".join(CTA_IUL.get(ficha.get("cta_iul") or "", [])) if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
 Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. 
 Ganchos de los últimos videos de la marca (no repitas su molde ni su forma de abrir; este tiene que sonar distinto):
 {chr(10).join('- ' + g for g in ficha.get("ganchos_recientes", [])) or '- (ninguno)'}
@@ -650,7 +674,7 @@ def main():
         try:
             iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
             terr = None if iul else territorio(marca["codigo"])
-            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben, terr)
+            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben, terr, cod)
             ficha["ganchos_recientes"] = ganchos_recientes(marca["codigo"])
             print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + ben[0]) if ficha['con_iul'] else 'puro valor · ' + terr[0]} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)

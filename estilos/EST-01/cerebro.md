@@ -55,8 +55,12 @@ Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunc
 - **El único tope es el crecimiento de un año: hasta un 10%. El piso es 0%.** El dinero que juntas **no tiene tope**: depende de cuánto aportas y de **desde cuándo empiezas**. Nunca llames "tope", "máximo" ni "límite" a una cantidad de dinero (nada de "como tope, podrías llegar a $150,000" ni "Es un tope, no una promesa").
 - En el video de retiro, la proyección se dice atada a cuándo empiezas (una sola; dos únicamente si el video compara dos personas o dos edades): "Si empiezas a los [30|treinta] con [$200|doscientos dólares] al mes, a los [60|sesenta] podrías llegar a unos [$434,000|cuatrocientos treinta y cuatro mil]". Calcúlalas con el 10% al año. Se vale "podrías llegar hasta *medio millón* para tu retiro, depende de cuándo empieces".
 - **Nunca** digas "garantizado" ni "no garantizado", ni la palabra "promesa" ("es una promesa", "no es una promesa", "es un máximo, no una promesa"). Tampoco en las escenas ni en el aviso. Nada de frases para curarte en salud: eso lo cubre la línea del asesor.
-- **Siempre**, antes del cierre, la línea: `Un *asesor certificado* debe ver tu caso a detalle.`
-- Sin precios del seguro, sin nombres de aseguradoras, sin "cotiza", sin links.
+- **La llamada a la acción (solo en videos con IUL).** Son 4 líneas fijas, justo antes de `*Sígueme*`. El pedido dice cuál de las dos toca y se copia **tal cual**, sin cambiarle palabras:
+  - *Comenta:* `Comenta la palabra [IUL|a yu el]` / `y te mando el *link*.` / `Un *asesor certificado* ve tu caso a detalle` / `y busca la mejor *opción* para tu familia.`
+  - *Biografía:* `Si quieres aplicar a un [IUL|a yu el],` / `te dejo el *link* en mi biografía.` / `Un *asesor certificado* ve tu caso a detalle` / `y busca la mejor *opción* para tu familia.`
+  - El asesor certificado se menciona solo ahí, una vez. Antes de la llamada a la acción el video ya pagó su open loop.
+  - Dibújala en un lienzo propio: un `celular` con un `globo` que diga "IUL" (comenta) o un `celular` con una `flecha` al link (biografía), y la `familia`.
+- Sin precios del seguro, sin nombres de aseguradoras, sin "cotiza". El link solo aparece en la llamada a la acción.
 - Cuando `con_iul` es falso, no menciones el IUL ni seguros: el video es de puro valor.
 
 ## Reglas del guion
@@ -69,7 +73,7 @@ Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunc
 - **Cifras:** se escriben como `[$5,000|cinco mil dólares]`: lo de la izquierda se ve y lo de la derecha se lee **con letras**. Porcentajes: `[24%|veinticuatro por ciento]`. Meses o años: `[72|setenta y dos]`. Ningún dígito fuera de los corchetes.
 - **Cada cifra tiene que salir de la ficha del tema** (sus datos o sus cálculos). Puedes redondear con "casi", "más de" o "unos", pero sin alejarte más de 10% del valor real.
 - **Palabra clave:** 1 a 3 palabras seguidas entre asteriscos: `*pago mínimo*`. Va resaltada en color. No la pongas en cifras ni en todas las líneas: en la mitad de las líneas basta.
-- **Prohibido:** "garantizado", "sin riesgo", "libre de impuestos", "hazte rico", "link en mi perfil", "agenda tu cita", "cotiza", nombres de bancos, apps o empresas reales, consejos de acciones o criptomonedas, cooperativas, seguro de auto, miedo exagerado.
+- **Prohibido:** "garantizado", "sin riesgo", "libre de impuestos", "hazte rico", "link en mi perfil" (el link solo va en la llamada a la acción de los videos con IUL), "agenda tu cita", "cotiza", nombres de bancos, apps o empresas reales, consejos de acciones o criptomonedas, cooperativas, seguro de auto, miedo exagerado.
 
 ## Escenas
 El video se arma con escenas. Cada escena empieza en una línea (`desde`) y dura hasta que empieza la siguiente. Debes cubrir todas las líneas, en orden.

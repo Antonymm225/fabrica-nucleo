@@ -1,4 +1,4 @@
-"""Sube los MP4 terminados a Google Drive, ordenados: Fábrica de Videos / <Marca> / <año-mes> / <código> - <título>.mp4
+"""Sube los MP4 terminados a Google Drive, ordenados: Fábrica de Videos / <año-mes> / <Marca> / <código> - <título>.mp4
 
 Uso: python tools/drive.py <carpeta con los mp4>
 Necesita los Secrets GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET y GDRIVE_REFRESH_TOKEN (permiso drive.file:
@@ -99,11 +99,11 @@ def main():
         cod = os.path.splitext(os.path.basename(ruta))[0]
         try:
             marca, titulo, iul = datos_de(cod)
-            if marca not in cache: cache[marca] = carpeta(tk, mes, carpeta(tk, limpio(marca), raiz))
+            if marca not in cache: cache[marca] = carpeta(tk, limpio(marca), carpeta(tk, mes, raiz))
             nombre = limpio(f"{cod} - {'(IUL) ' if iul else ''}{titulo}".rstrip(" -")) + ".mp4"
             link, reemplazo = subir(tk, ruta, nombre, cache[marca])
-            print(f"{cod}: {'reemplazado' if reemplazo else 'subido'} en {RAIZ}/{marca}/{mes}/{nombre}")
-            lineas.append(f"- [{nombre}]({link}) · {RAIZ} / {marca} / {mes}")
+            print(f"{cod}: {'reemplazado' if reemplazo else 'subido'} en {RAIZ}/{mes}/{marca}/{nombre}")
+            lineas.append(f"- [{nombre}]({link}) · {RAIZ} / {mes} / {marca}")
         except Exception as x:
             fallos += 1
             print(f"::error::{cod} no se pudo subir a Drive: {x}")

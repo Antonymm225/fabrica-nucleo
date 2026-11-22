@@ -1,0 +1,110 @@
+{
+ "titulo": "El depósito que tu casero te debe doble",
+ "angulo": "Si el casero se queda con tu depósito por desgaste normal, no solo te lo debe: en Texas la ley le puede cobrar el triple más $100 y tus gastos de abogado.",
+ "explicacion": "No hay una ley federal del depósito: cada estado pone sus reglas. En casi todos, el casero puede descontar renta que debes o daños que tú causaste, pero no el desgaste normal (pintura gastada, alfombra vieja, marcas pequeñas). Tiene un plazo corto para devolverte el dinero o mandarte una lista detallada de descuentos. Si no cumple, o se queda con dinero que no podía, en Texas puede deber $100 más el triple de lo retenido y tus honorarios de abogado. Tu mejor arma es el papel: dirección nueva por escrito, fotos al salir y una carta de reclamo.",
+ "datos": [
+  {
+   "dato": "Texas: cargo fijo a un casero que retiene el depósito de mala fe",
+   "valor": 100,
+   "unidad": "$",
+   "fuente": "https://law.justia.com/codes/texas/property-code/title-8/chapter-92/subchapter-c/section-92-109/"
+  },
+  {
+   "dato": "Texas: veces que paga la parte retenida injustamente (mala fe)",
+   "valor": 3,
+   "unidad": "veces",
+   "fuente": "https://law.justia.com/codes/texas/property-code/title-8/chapter-92/subchapter-c/section-92-109/"
+  },
+  {
+   "dato": "Texas: días para devolver el depósito o dar lista de descuentos",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://flatfeelandlord.com/blog/texas-property-code-92-103-30-day-security-deposit-return-clock"
+  },
+  {
+   "dato": "California: días para devolver el depósito o mandar lista de descuentos",
+   "valor": 21,
+   "unidad": "días",
+   "fuente": "https://saclaw.org/resource_library/security-deposits/"
+  },
+  {
+   "dato": "California: veces el depósito que se puede pedir de daños si hubo mala fe",
+   "valor": 2,
+   "unidad": "veces",
+   "fuente": "https://saclaw.org/resource_library/security-deposits/"
+  },
+  {
+   "dato": "Florida: días que tiene el inquilino para objetar por escrito un descuento",
+   "valor": 15,
+   "unidad": "días",
+   "fuente": "https://www.flsenate.gov/laws/statutes/2012/83.49"
+  },
+  {
+   "dato": "Ejemplo: depósito pagado",
+   "valor": 1500,
+   "unidad": "$",
+   "fuente": "https://www.apartmentlist.com/renter-life/what-is-a-security-deposit"
+  },
+  {
+   "dato": "Ejemplo: monto retenido por desgaste normal (supuesto del video)",
+   "valor": 1200,
+   "unidad": "$",
+   "fuente": "https://riooapp.com/blog/texas-security-deposit-laws-property-managers"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Texas: multa por mala fe = $100 + 3 veces los $1,200 retenidos",
+   "expresion": "100+3*1200",
+   "resultado": 3700
+  },
+  {
+   "descripcion": "Texas: total que el casero debe = los $1,200 retenidos + la multa (sin contar honorarios de abogado)",
+   "expresion": "1200+100+3*1200",
+   "resultado": 4900
+  },
+  {
+   "descripcion": "Texas: cuánto más que lo retenido puede deber",
+   "expresion": "(1200+100+3*1200)-1200",
+   "resultado": 3700
+  },
+  {
+   "descripcion": "Texas: veces lo retenido que puede deber en total",
+   "expresion": "round((1200+100+3*1200)/1200,2)",
+   "resultado": 4.08
+  },
+  {
+   "descripcion": "California: total con mala fe = $1,200 + 2 veces $1,200",
+   "expresion": "1200+2*1200",
+   "resultado": 3600
+  },
+  {
+   "descripcion": "Depósito que sí te devolverían del ejemplo si el casero descontara solo lo justo (supuesto: $300 de daño real)",
+   "expresion": "1500-300",
+   "resultado": 1200
+  }
+ ],
+ "consejo": "Antes de irte: toma fotos y video con fecha de cada cuarto y pide por escrito la inspección de salida. Al entregar las llaves, manda tu dirección nueva por escrito (carta o correo, guarda copia o recibo). Cuenta los días que tu estado le da al casero. Si no te devuelve el dinero o te manda descuentos por desgaste normal, manda una carta de reclamo citando la ley de tu estado, con fecha límite de 10 días. Si no responde, demanda en la corte de reclamos menores (small claims), donde no necesitas abogado. Busca la regla de tu estado en el sitio de la fiscalía general (Attorney General) o en la ayuda legal gratuita local.",
+ "que_no_decir": [
+  "No decir que en todo Estados Unidos el casero debe el triple: la multa de Texas no aplica en otros estados.",
+  "No prometer que vas a ganar ni que vas a cobrar la multa: la mala fe se tiene que probar, salvo la presunción de Texas cuando pasa el plazo.",
+  "No decir que el casero nunca puede descontar: sí puede por renta debida y daños más allá del uso normal.",
+  "No decir que no pagues el último mes de renta para cobrarte el depósito: puede causar un desalojo y una deuda.",
+  "No dar consejo legal personalizado; invitar a revisar la ley de su estado o a buscar ayuda legal gratuita.",
+  "No olvidar que en Texas el plazo de 30 días solo arranca si diste tu dirección nueva por escrito.",
+  "No usar las mismas cifras de otros videos de la marca."
+ ],
+ "con_iul": false,
+ "idea": "El depósito de la renta que el dueño no te devuelve: qué puede descontar y qué no, y cómo reclamarlo",
+ "gancho_pedido": "Si tu casero se quedó con tu depósito, puede que te deba más que el depósito.",
+ "ganchos_recientes": [
+  "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+  "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia."
+ ]
+}

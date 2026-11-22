@@ -1,0 +1,725 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: contrato de $1,600 financiado a cinco años con 10% anual (supuesto del ejemplo; las cifras de reparto vienen de un experto de la industria). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el papel",
+   "contador": "vendedor |gana",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL VENDEDOR"
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 30,
+     "y": 30,
+     "tam": 24,
+     "etiqueta": "EL PAPEL",
+     "en": [
+      0,
+      "papel"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 74,
+     "y": 62,
+     "tam": 34,
+     "etiqueta": "LA TROCA",
+     "en": [
+      1,
+      "troca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "cuatro preguntas",
+   "contador": "preguntas |4",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 94,
+     "tam": 36,
+     "cara": "enojado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL VENDEDOR"
+    },
+    {
+     "que": "texto",
+     "texto": "4 PREGUNTAS",
+     "x": 28,
+     "y": 50,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      2,
+      "cuatro"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡No preguntes!",
+     "cola": -1,
+     "x": 70,
+     "y": 22,
+     "en": [
+      3,
+      "quiere"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "contador": "garantía |extendida",
+   "filas": [
+    "PAPEL",
+    "EXTRA"
+   ],
+   "en": [
+    4,
+    "garantía"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "contrato |$1,600",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 50,
+     "y": 28,
+     "tam": 32,
+     "etiqueta": "TU TROCA"
+    },
+    {
+     "que": "cifra",
+     "texto": "$1,600",
+     "x": 50,
+     "y": 66,
+     "tam": 11,
+     "color": "principal",
+     "etiqueta": "LA GARANTÍA",
+     "en": [
+      8,
+      "1,600"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el vendedor",
+   "contador": "se queda |$800",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Contrato de servicio",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Precio del contrato",
+       "valor": "$1,600",
+       "en": [
+        10
+       ]
+      },
+      {
+       "texto": "Se queda el vendedor",
+       "valor": "$800",
+       "en": [
+        10,
+        "800"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       11,
+       "mitad"
+      ],
+      "texto": "¡LA MITAD!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      10,
+      "vendedor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "a dónde va",
+   "contador": "queda |$400",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 20,
+     "y": 95,
+     "tam": 55,
+     "valor": 800,
+     "max": 800,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "EL VENDEDOR",
+     "hasta": [
+      12,
+      "empresa"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 50,
+     "y": 95,
+     "tam": 55,
+     "valor": 400,
+     "max": 800,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "LA EMPRESA",
+     "en": [
+      12,
+      "gana"
+     ],
+     "hasta": [
+      12,
+      "400"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 80,
+     "y": 95,
+     "tam": 55,
+     "valor": 400,
+     "max": 800,
+     "prefijo": "$",
+     "etiqueta": "TU TROCA",
+     "en": [
+      13,
+      "reparar"
+     ],
+     "hasta": [
+      13,
+      "400"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "25%",
+     "x": 50,
+     "y": 18,
+     "tam": 8,
+     "color": "verde",
+     "etiqueta": "PARA REPARAR",
+     "en": [
+      14,
+      "25%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo peor",
+   "contador": "préstamo |troca",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 27,
+     "y": 32,
+     "tam": 30,
+     "etiqueta": "TU TROCA"
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 64,
+     "tam": 30,
+     "etiqueta": "EL BANCO",
+     "en": [
+      17,
+      "intereses"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "t",
+     "a": "b",
+     "en": [
+      17,
+      "intereses"
+     ],
+     "hasta": [
+      17,
+      "dinero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "el préstamo",
+   "contador": "pagas |$2,039",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Préstamo de la troca",
+     "en": [
+      18
+     ],
+     "renglones": [
+      {
+       "texto": "Contrato de servicio",
+       "valor": "$1,600",
+       "en": [
+        18
+       ]
+      },
+      {
+       "texto": "Interés al año",
+       "valor": "10%",
+       "en": [
+        18,
+        "10"
+       ]
+      },
+      {
+       "texto": "Pago al mes",
+       "valor": "$34",
+       "en": [
+        19,
+        "34"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       18,
+       "anual"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Pagas en total",
+      "valor": "$2,039",
+      "en": [
+       20,
+       "2,000"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    21
+   ],
+   "capitulo": "los intereses",
+   "contador": "intereses |$440",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$440",
+    "etiqueta": "solo en intereses",
+    "en": [
+     21,
+     "440"
+    ]
+   },
+   "cae": {
+    "objeto": "troca",
+    "letrero": "REPARAR",
+    "en": [
+     22,
+     "reparaciones"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "tu quincena",
+   "contador": "sale de |tu bolsillo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 30,
+     "y": 94,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "piel": 2,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       24,
+       "arregla"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 45,
+     "tam": 26,
+     "etiqueta": "TU QUINCENA",
+     "en": [
+      23,
+      "quincena"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Y no arregla nada!",
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      24,
+      "arregla"
+     ],
+     "sale": [
+      25,
+      "Ahora"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Cuatro preguntas",
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      25,
+      "cuatro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué preguntar",
+   "contador": [
+    {
+     "en": [
+      26
+     ],
+     "texto": "pregunta |1 de 4"
+    },
+    {
+     "en": [
+      27
+     ],
+     "texto": "pregunta |2 de 4"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "pregunta |3 de 4"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "pregunta |4 de 4"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      26
+     ],
+     "items": [
+      {
+       "texto": "¿Qué cubre y qué excluye?",
+       "en": [
+        26,
+        "cubre"
+       ]
+      },
+      {
+       "texto": "¿Quién respalda el contrato?",
+       "en": [
+        27,
+        "respalda"
+       ]
+      },
+      {
+       "texto": "¿Se cancela con reembolso?",
+       "en": [
+        28,
+        "cancelar"
+       ]
+      },
+      {
+       "texto": "¿Cuánto sube mi pago mensual?",
+       "en": [
+        29,
+        "pago"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "antes de firmar",
+   "contador": [
+    {
+     "en": [
+      30
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "piel": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "cal",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 55,
+     "tam": 22,
+     "etiqueta": "ESE DÍA",
+     "en": [
+      31,
+      "firmes"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cal",
+     "en": [
+      31,
+      "mismo"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Lo voy a pensar",
+     "cola": 1,
+     "x": 28,
+     "y": 16,
+     "en": [
+      32,
+      "piensas"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 52,
+     "y": 80,
+     "en": [
+      32,
+      "negocia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "qué hacer",
+   "contador": "ahorro |para reparar",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 38,
+     "tam": 28,
+     "etiqueta": "CADA MES"
+    },
+    {
+     "id": "t2",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 75,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "REPARACIONES",
+     "en": [
+      33,
+      "aparta"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "t2",
+     "en": [
+      33,
+      "cada"
+     ],
+     "hasta": [
+      34,
+      "reparaciones"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "piel": 2,
+     "en": [
+      34,
+      "tus"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+# FF-034 · Finanzas Familiares · EST-01 · El papel que más le deja al vendedor
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Margen típico del vendedor sobre un contrato de servicio, según experto citado por Car Talk = 50 % · https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide
+# Fuente: Precio del contrato de ejemplo usado por Car Talk = 1600 $ · https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide
+# Fuente: Parte del contrato que se queda el vendedor en ese ejemplo = 800 $ · https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide
+# Fuente: Ganancia de la empresa del contrato en ese ejemplo = 400 $ · https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide
+# Fuente: Dinero que queda para reparaciones en ese ejemplo = 400 $ · https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide
+# BLOQUE 1
+El vendedor gana más con un *papel*
+que con la *troca* que te vendió.
+Al final te digo las *cuatro preguntas*
+que él no quiere que le hagas.
+Se llama *garantía extendida*.
+Pero casi siempre es un *contrato de servicio*
+que tú pagas *aparte*.
+Aquí en Estados Unidos te lo ofrecen.
+Digamos que cuesta [$1,600|mil seiscientos dólares].
+Según un experto de la industria,
+el vendedor se queda unos [$800|ochocientos dólares].
+La mitad *del contrato* es para él.
+La empresa del contrato gana [$400|cuatrocientos dólares].
+Y para reparar tu troca, solo quedan [$400|cuatrocientos dólares].
+Es solo [25%|veinticinco por ciento] de lo que pagaste.
+Y esto no es lo *peor*.
+Si lo metes al *préstamo* de la troca,
+pagas *intereses* sobre todo ese dinero.
+Digamos *cinco años* al [10%|diez por ciento] anual.
+Pagas [$34|treinta y cuatro dólares] más cada *mes*.
+En total, pagas más de [$2,000|dos mil dólares].
+Solo en *intereses*, son unos [$440|cuatrocientos cuarenta dólares].
+Más de lo que queda para *reparaciones*.
+Eso sale de tu *quincena*,
+y no arregla ni un *tornillo*.
+Ahora sí, las *cuatro preguntas*:
+Uno: ¿qué *cubre* y qué excluye?
+Dos: ¿quién *respalda* el contrato?
+Tres: ¿lo puedo *cancelar* con reembolso?
+Cuatro: ¿cuánto sube mi *pago mensual*?
+Pídele el precio *por escrito*,
+y no firmes ese *mismo día*.
+Dile que lo piensas, casi siempre *se negocia*.
+Y si dudas, aparta cada mes
+lo que costaría para tus *reparaciones*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a comprar *una troca*.

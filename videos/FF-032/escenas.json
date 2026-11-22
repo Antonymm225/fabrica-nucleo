@@ -1,0 +1,706 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: compra de $3,000 con tarjeta al 22% anual, pagando solo el mínimo (intereses del mes más 1% del saldo). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu tarjeta",
+   "contador": "pagas |el mínimo",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 92,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      0,
+      "Pagando"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 40,
+     "y": 32,
+     "tam": 28,
+     "giro": -8,
+     "en": [
+      0,
+      "compra"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "escuela",
+     "x": 72,
+     "y": 32,
+     "tam": 28,
+     "en": [
+      1,
+      "gradúe"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 93,
+     "tam": 26,
+     "etiqueta": "TU HIJO",
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 3,
+     "en": [
+      1,
+      "hijo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "los años",
+   "contador": "tardas |15 años",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       3,
+       "dónde"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "15 años",
+     "x": 50,
+     "y": 42,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "pagando el mínimo",
+     "en": [
+      2,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "tu estado",
+   "contador": "estado |de cuenta",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Estado de cuenta",
+     "en": [
+      4
+     ],
+     "renglones": [
+      {
+       "texto": "Años solo el mínimo",
+       "valor": "15",
+       "en": [
+        4,
+        "estado"
+       ]
+      },
+      {
+       "texto": "Pago que lo cambia",
+       "valor": "¿?",
+       "en": [
+        4,
+        "exacto"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       4,
+       "cuenta"
+      ],
+      "texto": "¡AQUÍ!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "ropa": 2,
+     "en": [
+      4,
+      "exacto"
+     ],
+     "cambia": {
+      "en": [
+       5,
+       "años"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "contador": "se llama |el mínimo",
+   "filas": [
+    "PAGO",
+    "MINIMO"
+   ],
+   "en": [
+    6,
+    "mínimo"
+   ],
+   "entrada": "ola"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "la compra",
+   "contador": "compra |$3,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      7,
+      "Compras"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 80,
+     "y": 50,
+     "tam": 22,
+     "en": [
+      7,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$3,000",
+     "x": 80,
+     "y": 74,
+     "tam": 8,
+     "color": "tinta",
+     "en": [
+      7,
+      "3,000"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Solo $85 al mes. ¡Fácil!",
+     "piensa": true,
+     "cola": 1,
+     "x": 28,
+     "y": 18,
+     "en": [
+      8,
+      "85"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "primer pago",
+   "contador": "intereses |$55",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Primer pago mínimo",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Intereses del mes",
+       "valor": "$55",
+       "en": [
+        10,
+        "55"
+       ]
+      },
+      {
+       "texto": "Tasa al año",
+       "valor": "22%",
+       "en": [
+        11,
+        "22"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       11,
+       "puros"
+      ],
+      "texto": "¡INTERÉS!"
+     },
+     "total": {
+      "texto": "Pago mínimo",
+      "valor": "$85",
+      "en": [
+       10,
+       "pago"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el truco",
+   "contador": "mínimo |baja",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 85,
+     "final": 25,
+     "barras": 12,
+     "desdeTexto": "$85",
+     "hastaTexto": "SE ALARGA",
+     "etiqueta": "tu pago mínimo",
+     "x": 50,
+     "y": 85,
+     "en": [
+      12,
+      "Aquí"
+     ],
+     "hasta": [
+      15,
+      "alarga"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "al final",
+   "contador": "pagas |$7,400",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 7433,
+     "max": 7433,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "pagas",
+     "en": [
+      16,
+      "pagas"
+     ],
+     "hasta": [
+      16,
+      "7,400"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 3000,
+     "max": 7433,
+     "prefijo": "$",
+     "etiqueta": "costó",
+     "en": [
+      17,
+      "costó"
+     ],
+     "hasta": [
+      17,
+      "3,000"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "DOS VECES Y MEDIA",
+     "color": "principal",
+     "x": 50,
+     "y": 18,
+     "tam": 5,
+     "en": [
+      18,
+      "dos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "al banco",
+   "contador": "intereses |$4,400",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 22,
+     "tam": 32,
+     "etiqueta": "tu quincena",
+     "en": [
+      19,
+      "Son"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 74,
+     "y": 62,
+     "tam": 36,
+     "etiqueta": "el banco",
+     "en": [
+      19,
+      "intereses"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      19,
+      "intereses"
+     ],
+     "hasta": [
+      20,
+      "banco"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 4433,
+     "prefijo": "$",
+     "x": 28,
+     "y": 68,
+     "tam": 9,
+     "etiqueta": "intereses",
+     "color": "principal",
+     "en": [
+      19,
+      "más"
+     ],
+     "hasta": [
+      19,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      21
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      23
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      21
+     ],
+     "items": [
+      {
+       "texto": "Toma tu primer mínimo: $85",
+       "en": [
+        22,
+        "mínimo"
+       ]
+      },
+      {
+       "texto": "Súbelo a $115 al mes",
+       "en": [
+        23,
+        "súbelo"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 4,
+     "en": [
+      21,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "pago fijo",
+   "contador": "pago fijo |$115",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      24,
+      "Ponlo"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Pago fijo: $115 al mes",
+     "piensa": false,
+     "cola": -1,
+     "x": 74,
+     "y": 16,
+     "en": [
+      24,
+      "automático"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 24,
+     "y": 52,
+     "tam": 24,
+     "etiqueta": "3 AÑOS",
+     "en": [
+      26,
+      "terminas"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 24,
+     "y": 86,
+     "en": [
+      26,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    27
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |$3,300",
+   "entrada": "cuadritos",
+   "cifra": {
+    "texto": "+$3,300",
+    "etiqueta": "menos intereses",
+    "en": [
+     28,
+     "3,300"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     28,
+     "ahorras"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "tu número",
+   "contador": "tu número |de años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Estado de cuenta",
+     "en": [
+      29
+     ],
+     "renglones": [
+      {
+       "texto": "Años solo el mínimo",
+       "valor": "15",
+       "en": [
+        30,
+        "cuántos"
+       ]
+      },
+      {
+       "texto": "Total que pagas",
+       "valor": "$7,400",
+       "en": [
+        31,
+        "total"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       30,
+       "años"
+      ],
+      "texto": "¡AQUÍ!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "en": [
+      32,
+      "Si"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$20",
+     "x": 72,
+     "y": 70,
+     "tam": 8,
+     "etiqueta": "extra",
+     "en": [
+      32,
+      "20"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    33
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    33,
+    "Sígueme"
+   ],
+   "compartir": [
+    34,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "titulo": "La colecta no paga el mes que sigue",
+ "angulo": "La colecta de los compañeros y vecinos casi nunca cubre ni el funeral completo, y la casa sigue gastando unos $6,440 al mes que nadie junta.",
+ "explicacion": "Cuando alguien muere, la gente se une y hace una colecta. Eso es bonito, pero una colecta típica junta unos $2,640. Una cremación cuesta $6,280 de mediana. Y después del funeral siguen la renta, la troca, la luz y la comida, que en un hogar promedio suman unos $6,440 al mes. El Seguro Social solo da $255 de pago único por muerte. Un seguro de vida es la forma de que la familia no dependa de la generosidad de otros.",
+ "datos": [
+  {
+   "dato": "Promedio recaudado por funeral o memorial en GoFundMe (125,000 colectas, $330 millones)",
+   "valor": 2640,
+   "unidad": "$",
+   "fuente": "https://funeraldirectordaily.com/gofundme-tailors-for-funeral-memorial-asks/"
+  },
+  {
+   "dato": "Costo mediano de un funeral con cremación en EE. UU. (2023)",
+   "valor": 6280,
+   "unidad": "$",
+   "fuente": "https://content.nfda.org/news/statistics"
+  },
+  {
+   "dato": "Gasto anual promedio de un hogar en EE. UU. (2023)",
+   "valor": 77280,
+   "unidad": "$",
+   "fuente": "https://www.bls.gov/news.release/archives/cesan_09252024.htm"
+  },
+  {
+   "dato": "Pago único de Seguro Social por muerte",
+   "valor": 255,
+   "unidad": "$",
+   "fuente": "https://www.experian.com/blogs/ask-experian/what-are-social-security-survivors-benefits/"
+  },
+  {
+   "dato": "Adultos que dicen que su familia tendría problemas para pagar gastos en 6 meses si faltara quien trae el dinero (LIMRA 2025)",
+   "valor": 47,
+   "unidad": "%",
+   "fuente": "https://www.limra.com/siteassets/newsroom/liam/2025/2025_facts_about_life_insurance.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Gasto mensual promedio de un hogar",
+   "expresion": "round(77280/12,2)",
+   "resultado": 6440.0
+  },
+  {
+   "descripcion": "Lo que falta para pagar una cremación con una colecta promedio",
+   "expresion": "round(6280-2640,2)",
+   "resultado": 3640.0
+  },
+  {
+   "descripcion": "Lo que necesita la familia el primer mes: cremación más gastos del hogar",
+   "expresion": "round(6280+77280/12,2)",
+   "resultado": 12720.0
+  },
+  {
+   "descripcion": "Hueco del primer mes después de una colecta promedio",
+   "expresion": "round(6280+77280/12-2640,2)",
+   "resultado": 10080.0
+  },
+  {
+   "descripcion": "Gastos de 6 meses de un hogar promedio",
+   "expresion": "round(77280/12*6,2)",
+   "resultado": 38640.0
+  },
+  {
+   "descripcion": "Fracción de un mes de gastos que cubre la colecta promedio",
+   "expresion": "round(2640/(77280/12),2)",
+   "resultado": 0.41
+  }
+ ],
+ "consejo": "Pregúntate: si yo falto mañana, ¿qué paga la renta del mes que sigue? No dejes la respuesta en una colecta. Suma lo que gasta tu casa en un mes y multiplícalo por los meses que quieres cubrir. Cotiza un seguro de vida indexado (IUL) para que tu familia tenga un dinero seguro desde el primer día. Sigue aceptando la ayuda de los compañeros, pero como apoyo y no como plan.",
+ "que_no_decir": [
+  "Que las colectas no sirven o que la gente no ayuda",
+  "Que la colecta siempre junta $2,640: es un promedio de GoFundMe y cada caso cambia",
+  "Que $6,440 al mes es lo que gasta tu familia: es el promedio nacional, y cada hogar debe sacar su propia cuenta",
+  "Prometer cuánto crece o cuánto se junta en el IUL, o hablar de retiro",
+  "Decir que el IUL es la única forma de proteger a la familia, o que es una inversión sin riesgo",
+  "Asustar con la muerte o culpar al papá por no tener seguro",
+  "Repetir la cifra de $8,300 del funeral con entierro, el pago de $255 como gancho principal, o la cifra del seguro del trabajo $450,000, que ya se usaron en otros videos"
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "La colecta entre compañeros y vecinos cuando alguien muere: alcanza para el funeral, no para el mes siguiente",
+ "gancho_pedido": "La colecta junta para el funeral. No para la renta del mes que sigue.",
+ "ganchos_recientes": [
+  "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número"
+ ]
+}

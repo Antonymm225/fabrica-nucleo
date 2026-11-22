@@ -1,0 +1,41 @@
+# FF-032 · Finanzas Familiares · EST-01 · El mínimo que dura hasta la graduación
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio (APR) de tarjetas que cobran intereses, 2024-2025 (rango 22%-23%, uso el 22%) = 22 % · https://www.federalreserve.gov/releases/g19/current/
+# Fuente: Mínimo típico: intereses del mes más 1% del saldo (algunos bancos usan hasta 3%) = 1 % · https://www.consumerfinance.gov/ask-cfpb/what-is-a-minimum-payment-on-a-credit-card-en-1237/
+# Fuente: Compra del ejemplo = 3000 $ · https://www.federalreserve.gov/releases/g19/current/
+# BLOQUE 1
+Pagando solo el *mínimo*, esa compra
+la terminas cuando tu hijo se *gradúe*.
+Sí, son [15|quince] *años*.
+Al final te digo dónde sale ese número
+en tu *estado de cuenta*, y el *pago exacto*
+que lo baja a [3|tres] *años*.
+Se llama el *mínimo que baja*.
+Compras algo de [$3,000|tres mil dólares] con la tarjeta.
+El primer mes, el *mínimo* es de [$85|ochenta y cinco].
+Parece *fácil*, ¿verdad?
+Pero casi [$55|cincuenta y cinco] de ese pago
+son puros *intereses*, al [22%|veintidós por ciento] anual.
+Aquí viene lo que nadie te dice:
+el *mínimo* baja conforme baja tu saldo.
+Por eso nunca se siente *pesado*,
+y la deuda se *alarga* y se alarga.
+Al final pagas más de [$7,400|siete mil cuatrocientos dólares]
+por algo que costó [$3,000|tres mil dólares].
+Eso es pagar *dos veces* y media tu compra.
+Son más de [$4,400|cuatro mil cuatrocientos] en *intereses*,
+pura *renta* de muchos meses regalada al banco.
+Ahora sí, el *pago exacto*.
+Toma tu primer *mínimo*, [$85|ochenta y cinco],
+y súbelo a [$115|ciento quince] al mes.
+Ponlo *automático* y no lo bajes,
+aunque el *mínimo* baje.
+Así la terminas en [3|tres] *años*, no en quince.
+Pagas unos [$4,125|cuatro mil ciento veinticinco] en total,
+y te ahorras más de [$3,300|tres mil trescientos].
+Para ver tus años, abre tu *estado de cuenta*.
+Abajo dice cuántos *años* tardas pagando el mínimo
+y cuánto pagas *en total*.
+Si no te alcanza, empieza con [$20|veinte] *extra*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga *solo el mínimo*.

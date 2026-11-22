@@ -1,0 +1,49 @@
+# FF-033 · Finanzas Familiares · EST-01 · La colecta no paga el mes que sigue
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Promedio recaudado por funeral o memorial en GoFundMe (125,000 colectas, $330 millones) = 2640 $ · https://funeraldirectordaily.com/gofundme-tailors-for-funeral-memorial-asks/
+# Fuente: Costo mediano de un funeral con cremación en EE. UU. (2023) = 6280 $ · https://content.nfda.org/news/statistics
+# Fuente: Gasto anual promedio de un hogar en EE. UU. (2023) = 77280 $ · https://www.bls.gov/news.release/archives/cesan_09252024.htm
+# Fuente: Pago único de Seguro Social por muerte = 255 $ · https://www.experian.com/blogs/ask-experian/what-are-social-security-survivors-benefits/
+# Fuente: Adultos que dicen que su familia tendría problemas para pagar gastos en 6 meses si faltara quien trae el dinero (LIMRA 2025) = 47 % · https://www.limra.com/siteassets/newsroom/liam/2025/2025_facts_about_life_insurance.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+La *colecta* de tus compañeros paga el funeral.
+La renta del mes que sigue, *no*.
+El *hueco* es más grande de lo que piensas.
+Al final te digo la cuenta de dos pasos
+que haces con tu *recibo* de la renta.
+Se llama el *hueco* del primer mes.
+Aquí en Estados Unidos, la gente se *une*.
+Una *colecta* típica junta unos [$2,640|dos mil seiscientos cuarenta].
+Una *cremación* cuesta [$6,280|seis mil doscientos ochenta].
+O sea, ni el *funeral* se paga completo.
+Y lo peor viene *después*.
+En un hogar *promedio*, la renta, la troca,
+la luz y la comida suman
+unos [$6,440|seis mil cuatrocientos cuarenta] al *mes*.
+Funeral más casa, el *primer mes*,
+y la *colecta* apenas cubre una parte.
+Faltan más de [$10,000|diez mil dólares] en *ese mes*.
+Son más de *mes y medio* de gastos.
+Y tu familia abriendo los *biles* sin tu sueldo.
+Sigue aceptando la ayuda de tus *compañeros*,
+pero como *apoyo*, no como plan.
+Para que tu familia no dependa de *favores*,
+existe el [IUL|a yu el], un *seguro de vida indexado*.
+Si tú faltas, tu familia recibe un dinero
+desde el *primer día*, sin esperar a nadie.
+Es tuyo, y crece *hasta un* [10%|diez por ciento] al año.
+Y si el mercado cae, *no pierde* por eso.
+Tiene *piso cero*.
+Ahora sí, la *cuenta* de dos pasos.
+Uno: con tu recibo de la renta,
+suma lo que gasta tu *casa* al mes.
+Dos: multiplícalo por los *meses* que quieres cubrir.
+Ese es el número que tu familia *necesita*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien confía todo a una *colecta*.

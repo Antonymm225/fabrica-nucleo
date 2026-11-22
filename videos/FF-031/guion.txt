@@ -1,0 +1,50 @@
+# FF-031 · Finanzas Familiares · EST-01 · El depósito que te deben de más
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Texas: cargo fijo a un casero que retiene el depósito de mala fe = 100 $ · https://law.justia.com/codes/texas/property-code/title-8/chapter-92/subchapter-c/section-92-109/
+# Fuente: Texas: veces que paga la parte retenida injustamente (mala fe) = 3 veces · https://law.justia.com/codes/texas/property-code/title-8/chapter-92/subchapter-c/section-92-109/
+# Fuente: Texas: días para devolver el depósito o dar lista de descuentos = 30 días · https://flatfeelandlord.com/blog/texas-property-code-92-103-30-day-security-deposit-return-clock
+# Fuente: California: días para devolver el depósito o mandar lista de descuentos = 21 días · https://saclaw.org/resource_library/security-deposits/
+# Fuente: California: veces el depósito que se puede pedir de daños si hubo mala fe = 2 veces · https://saclaw.org/resource_library/security-deposits/
+# Fuente: Florida: días que tiene el inquilino para objetar por escrito un descuento = 15 días · https://www.flsenate.gov/laws/statutes/2012/83.49
+# Fuente: Ejemplo: depósito pagado = 1500 $ · https://www.apartmentlist.com/renter-life/what-is-a-security-deposit
+# Fuente: Ejemplo: monto retenido por desgaste normal (supuesto del video) = 1200 $ · https://riooapp.com/blog/texas-security-deposit-laws-property-managers
+# BLOQUE 1
+Si tu casero se quedó con tu *depósito*,
+puede que te deba *más* que el depósito.
+Al final te digo el *papel exacto*
+que mandas el día que *entregas las llaves*.
+Sin ese papel, el casero ni *empieza a contar*.
+Se llama retener *de mala fe*.
+Pagaste [$1,500|mil quinientos dólares] de *depósito*.
+Te mudas, y el casero retiene [$1,200|mil doscientos dólares].
+Dice que es por pintura gastada
+y *alfombra vieja*.
+Eso es *desgaste normal*, no daño.
+Y eso no te lo puede *descontar*.
+Sí puede cobrar *renta que debes*,
+o daños que *tú causaste*.
+Pero aquí viene lo que *nadie te dice*.
+En Texas, si retiene de *mala fe*,
+puede pagar [$100|cien dólares] más
+el *triple* de lo retenido,
+y tus gastos de *abogado*.
+O sea, ya no son solo [$1,200|mil doscientos].
+Te puede deber [$4,900|cuatro mil novecientos dólares], sin contar al *abogado*.
+Ojo: esa multa es de *Texas*.
+En Estados Unidos, cada estado pone sus *reglas*.
+En Texas, el casero tiene [30|treinta] *días*,
+en California, solo [21|veintiún] días.
+Ahora sí, el papel que prometí:
+tu *dirección nueva*, por escrito.
+Sin ella, en Texas, esos días ni *empiezan*.
+Mándala por carta o correo, y guarda *copia*.
+Antes de irte, toma *fotos y video*.
+Si no te paga, manda una *carta de reclamo*
+con fecha límite para *responder*.
+Si no contesta, ve a *reclamos menores*.
+Ahí no necesitas *abogado*.
+Busca tu ley estatal en la *fiscalía general*.
+Y nunca dejes de pagar el *último mes*.
+Eso te puede costar un *desalojo*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien está por *mudarse*.

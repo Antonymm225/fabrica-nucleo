@@ -1,0 +1,165 @@
+{
+ "ficha": {
+  "titulo": "El depósito que el casero te debe doble",
+  "angulo": "Mucha gente cree que si el casero se queda con el depósito, ese dinero se perdió. Pero en varios estados, si lo retiene de mala fe, te puede deber el depósito más dos o tres veces esa cantidad.",
+  "explicacion": "Al mudarte, el casero se queda con tu depósito y tú piensas que no hay nada que hacer. Pero la ley le exige devolverlo o mandarte una lista detallada de descuentos en un plazo corto, de 21 a 30 días en muchos estados. No puede cobrarte el desgaste normal, como la pintura gastada o la alfombra desgastada por el uso. En Texas, si no responde en 30 días, la ley presume mala fe. Si un juez le da la razón al inquilino, el casero puede deber el depósito más multas de dos o tres veces la cantidad retenida, y a veces el abogado.",
+  "datos": [
+   {
+    "dato": "Texas: plazo del casero para devolver el depósito o dar lista de descuentos tras la entrega de la vivienda",
+    "valor": 30,
+    "unidad": "días",
+    "fuente": "https://justicedirect.com/post/texas-security-deposit-law"
+   },
+   {
+    "dato": "Texas: multa fija por retener de mala fe, más tres veces lo retenido y honorarios de abogado",
+    "valor": 100,
+    "unidad": "$",
+    "fuente": "https://justicedirect.com/post/texas-security-deposit-law"
+   },
+   {
+    "dato": "Texas: multiplicador sobre lo retenido injustamente por mala fe",
+    "valor": 3,
+    "unidad": "veces",
+    "fuente": "https://justicedirect.com/post/texas-security-deposit-law"
+   },
+   {
+    "dato": "California: plazo del casero para devolver el depósito o enviar lista de descuentos tras mudarte",
+    "valor": 21,
+    "unidad": "días",
+    "fuente": "https://saclaw.org/resource_library/security-deposits/"
+   },
+   {
+    "dato": "California: multa máxima por mala fe, en veces el depósito, además del depósito",
+    "valor": 2,
+    "unidad": "veces",
+    "fuente": "https://terms.law/FAQ/landlord-tenant/california-security-deposit-faq.html"
+   },
+   {
+    "dato": "Massachusetts: daños de hasta 3 veces el depósito más intereses si el casero incumple la ley",
+    "valor": 3,
+    "unidad": "veces",
+    "fuente": "https://www.mass.gov/info-details/mass-general-laws-c186-ss-15b"
+   },
+   {
+    "dato": "El desgaste normal no se puede cobrar del depósito (ej. alfombra y cortinas gastadas por el uso)",
+    "valor": 0,
+    "unidad": "$",
+    "fuente": "https://dre.ca.gov/files/pdf/2025_Landlord_Tenant_Guide.pdf"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Texas: multa por retener $1,200 de mala fe (100 + 3 veces lo retenido), sin contar abogado",
+    "expresion": "100+3*1200",
+    "resultado": 3700
+   },
+   {
+    "descripcion": "Texas: total posible a tu favor = los $1,200 retenidos + multa",
+    "expresion": "1200+100+3*1200",
+    "resultado": 4900
+   },
+   {
+    "descripcion": "Texas: cuántas veces es ese total frente a lo retenido de $1,200",
+    "expresion": "round((1200+100+3*1200)/1200,2)",
+    "resultado": 4.08
+   },
+   {
+    "descripcion": "California: depósito de $1,500 retenido por completo, máximo posible = depósito + 2 veces el depósito",
+    "expresion": "1500+2*1500",
+    "resultado": 4500
+   },
+   {
+    "descripcion": "California: multa extra máxima sobre los $1,500",
+    "expresion": "2*1500",
+    "resultado": 3000
+   },
+   {
+    "descripcion": "Ejemplo: de un depósito de $1,500, el casero descuenta $900 por pintura y alfombra gastadas (desgaste normal); lo que te quedó por reclamar",
+    "expresion": "1500-600",
+    "resultado": 900
+   }
+  ],
+  "consejo": "Antes de entregar las llaves, toma fotos y video de todo el lugar con fecha, y guarda tu nueva dirección por escrito. Si pasan 21 o 30 días según tu estado y no tienes tu dinero ni una lista de descuentos con costos reales, mándale una carta de demanda por correo certificado. Pide el depósito completo en 10 días y menciona que la ley de tu estado permite multas. Si no responde, ve a la corte de reclamos menores: es barata, no necesitas abogado y es para esto. Busca en el sitio de tu estado o ayuda legal local cuál es el plazo y la multa. Confirma el plazo exacto de tu estado antes de mandar la carta.",
+  "que_no_decir": [
+   "No prometas que siempre vas a recibir doble o triple: la multa depende del estado y de que un juez vea mala fe.",
+   "No digas que el casero no puede descontar nada: sí puede cobrar daños reales, renta atrasada y limpieza si dejaste sucio.",
+   "No des las cifras de Texas, California o Massachusetts como si fueran de todo el país.",
+   "No digas que ya ganaste: la corte decide, y la multa suele ser un máximo.",
+   "No des consejo legal personalizado ni garantices el resultado.",
+   "No digas que 'el casero tiene prohibido cobrar pintura': si dañaste las paredes más allá del uso normal, sí puede cobrarte.",
+   "No sugieras dejar de pagar la última renta para 'cobrarte con el depósito': suele ser ilegal y te puede costar más."
+  ],
+  "con_iul": false,
+  "idea": "El depósito de la renta que el dueño no te devuelve: qué puede descontar y qué no, y cómo reclamarlo",
+  "gancho_pedido": "Si tu casero se quedó con tu depósito, puede que te deba más que el depósito.",
+  "ganchos_recientes": [
+   "Tu dinero en efectivo nunca baja de número, / pero ya perdió más de la mitad. / Al final te digo las tres cosas / que pides por escrito antes de firmar.",
+   "Si cobras tus trabajos costo más 20%, / no estás ganando 20%. / Al final te digo el número exacto / por el que divides tu costo.",
+   "¿Cuántas veces has pagado el mismo módem? / Si lo rentas, pueden ser más de 4 veces. / Al final te digo las tres palabras / que buscas en tu recibo para quitarlo.",
+   "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+   "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+   "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+   "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+   "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia."
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo las dos cosas / que escribes en la carta que no quiere leer.",
+   "Perder tu depósito / a veces te deja ganando más de cuatro veces eso. / Al final te digo la frase exacta / que va en la carta para tu casero.",
+   "Tu casero cuenta con que no reclames. / Por eso se queda con tu depósito sin miedo. / Al final te digo a qué corte vas / y cuánto cuesta ir.",
+   "Dos inquilinos perdieron el mismo depósito. / Uno lo dejó ir y el otro cobró más de cuatro veces eso. / Al final te digo en qué se diferenciaron.",
+   "Desde que entregas las llaves, / tu casero tiene veintiún o treinta días para responderte. / Si se pasa, cambia todo.",
+   "¿Qué pasa si tu casero no te responde en treinta días? / En Texas, la ley ya piensa que actuó de mala fe.",
+   "Hay dinero tuyo en manos de tu casero / y nadie te va a avisar que puedes cobrarlo doble.",
+   "Nunca dejes de pagar la última renta / pensando que te cobras con el depósito. / Al final te digo qué haces en su lugar."
+  ],
+  "gancho_elegido": "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo las dos cosas / que escribes en la carta que no quiere leer. Frena el scroll porque le dice a un inquilino que el dinero que da por perdido puede volver multiplicado, y las dos cosas concretas de la carta lo obligan a quedarse hasta el final.",
+  "titulo": "Tu depósito puede valer más",
+  "lineas": [
+   "Si tu casero se quedó con tu *depósito*,",
+   "puede que te deba *más* que el depósito.",
+   "Al final te digo las *dos cosas*",
+   "que escribes en la *carta* que no quiere leer.",
+   "Se llama retener de *mala fe*.",
+   "Al mudarte, tiene que hacer una de dos:",
+   "devolverte el *depósito* completo,",
+   "o mandarte una *lista* de descuentos.",
+   "Y tiene poco *tiempo*.",
+   "En California, [21|veintiún] *días*.",
+   "En Texas, [30|treinta] *días*.",
+   "Si no responde, la ley presume *mala fe*.",
+   "Y aquí viene lo que nadie te dice:",
+   "no te puede cobrar el *desgaste normal*.",
+   "La *pintura* gastada y la alfombra pisada.",
+   "Un hoyo en la pared, eso *sí*.",
+   "Imagina que en Texas te retuvo el *depósito*.",
+   "Eso puede ser la *renta* del mes que sigue.",
+   "Si un juez ve *mala fe*,",
+   "son [$100|cien dólares] de multa fija,",
+   "más *tres veces* lo que retuvo.",
+   "Solo de multa, [$3,700|tres mil setecientos].",
+   "Con tu depósito, hasta [$4,900|cuatro mil novecientos] en total.",
+   "Más de *cuatro veces* lo que perdiste.",
+   "Y a veces, también paga tu *abogado*.",
+   "Cada estado cambia, y la *corte* decide.",
+   "Antes de entregar las llaves,",
+   "toma *fotos* y video con fecha.",
+   "Y deja tu nueva *dirección* por escrito.",
+   "Y nunca dejes de pagar la *última renta*.",
+   "Ahora sí, las dos cosas de la *carta*:",
+   "Una: pide el depósito completo en [10|diez] *días*.",
+   "Dos: di que la ley permite *multas*.",
+   "Mándala por *correo certificado*.",
+   "Si no responde, ve a *reclamos menores*.",
+   "Es barata y no necesitas *abogado*.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien perdió su *depósito*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"tu depósito\",\"contador\":\"depósito |retenido\",\"elementos\":[{\"que\":\"persona\",\"x\":26,\"y\":92,\"tam\":36,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[1,\"más\"],\"cara\":\"sorprendido\"}},{\"que\":\"objeto\",\"objeto\":\"casa\",\"x\":72,\"y\":34,\"tam\":32,\"etiqueta\":\"TU CASERO\",\"en\":[0,\"casero\"]},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":72,\"y\":74,\"tam\":20,\"en\":[1,\"deba\"]}]},{\"tipo\":\"lienzo\",\"desde\":[2],\"capitulo\":\"una carta\",\"contador\":\"dos |cosas\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":70,\"titulo\":\"Carta al casero\",\"en\":[2],\"renglones\":[{\"texto\":\"Cosa número uno\",\"valor\":\"?\",\"en\":[2,\"dos\"]},{\"texto\":\"Cosa número dos\",\"valor\":\"?\",\"en\":[2,\"cosas\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"enojado\",\"gorro\":\"sombrero\",\"etiqueta\":\"TU CASERO\",\"en\":[3,\"quiere\"]}]},{\"tipo\":\"tablero\",\"desde\":[4],\"capitulo\":\"el nombre\",\"filas\":[\"MALA\",\"FE\"],\"en\":[4,\"mala\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[5],\"capitulo\":\"la ley\",\"contador\":\"casero |debe\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"c\",\"que\":\"persona\",\"x\":20,\"y\":92,\"tam\":32,\"cara\":\"neutro\",\"gorro\":\"sombrero\",\"etiqueta\":\"EL CASERO\",\"en\":[5]},{\"id\":\"t\",\"que\":\"persona\",\"x\":80,\"y\":92,\"tam\":32,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"en\":[6,\"devolverte\"]},{\"que\":\"dinero\",\"de\":\"c\",\"a\":\"t\",\"en\":[6,\"devolverte\"],\"hasta\":[6,\"completo\"]},{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":60,\"titulo\":\"Lista de descuentos\",\"en\":[7,\"lista\"],\"renglones\":[{\"texto\":\"Daños reales\",\"valor\":\"con costo\",\"en\":[7,\"descuentos\"]},{\"texto\":\"Limpieza\",\"valor\":\"con costo\",\"en\":[7,\"descuentos\"]}]}]},{\"tipo\":\"lienzo\",\"desde\":[8],\"capitulo\":\"el plazo\",\"contador\":\"plazo |corto\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":27,\"y\":38,\"tam\":26,\"etiqueta\":\"CALIFORNIA\",\"en\":[8,\"poco\"]},{\"que\":\"cifra\",\"texto\":\"21 días\",\"x\":27,\"y\":74,\"tam\":9,\"color\":\"tinta\",\"en\":[9,\"21\"]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":73,\"y\":38,\"tam\":26,\"etiqueta\":\"TEXAS\",\"en\":[10,\"Texas\"]},{\"que\":\"cifra\",\"texto\":\"30 días\",\"x\":73,\"y\":74,\"tam\":9,\"color\":\"tinta\",\"en\":[10,\"30\"]},{\"que\":\"sello\",\"texto\":\"MALA FE\",\"color\":\"rojo\",\"x\":73,\"y\":38,\"en\":[11,\"mala\"]}]},{\"tipo\":\"lienzo\",\"desde\":[12],\"capitulo\":\"desgaste normal\",\"contador\":\"desgaste |normal\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":72,\"titulo\":\"Descuentos del casero\",\"en\":[12],\"renglones\":[{\"texto\":\"Pintura gastada\",\"valor\":\"$0\",\"en\":[14,\"pintura\"]},{\"texto\":\"Alfombra pisada\",\"valor\":\"$0\",\"en\":[14,\"alfombra\"]},{\"texto\":\"Hoyo en la pared\",\"valor\":\"Sí\",\"en\":[15,\"hoyo\"]}],\"marca\":{\"fila\":2,\"en\":[15,\"sí\"],\"texto\":\"¡SÍ PUEDE!\"}},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"sorprendido\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"en\":[13,\"cobrar\"]}]},{\"tipo\":\"lienzo\",\"desde\":[16],\"capitulo\":\"el ejemplo\",\"contador\":\"casero |en Texas\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":92,\"tam\":32,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\"},{\"que\":\"objeto\",\"objeto\":\"casa\",\"x\":72,\"y\":30,\"tam\":26,\"etiqueta\":\"TEXAS\",\"en\":[16,\"Texas\"]},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":72,\"y\":70,\"tam\":20,\"etiqueta\":\"TU DEPÓSITO\",\"en\":[16,\"depósito\"]}]},{\"tipo\":\"lienzo\",\"desde\":[18],\"capitulo\":\"si hay mala fe\",\"contador\":\"juez |mala fe\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":78,\"titulo\":\"Si el juez ve mala fe\",\"en\":[18],\"renglones\":[{\"texto\":\"Multa fija\",\"valor\":\"$100\",\"en\":[19,\"100\"]},{\"texto\":\"Tres veces lo retenido\",\"valor\":\"x3\",\"en\":[20,\"tres\"]}],\"total\":{\"texto\":\"Solo de multa\",\"valor\":\"$3,700\",\"en\":[21,\"3,700\"]}},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"en\":[20,\"retuvo\"]}]},{\"tipo\":\"oscura\",\"desde\":[22],\"capitulo\":\"lo que puedes\",\"contador\":\"hasta |$4,900\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"+$4,900\",\"etiqueta\":\"hasta, en Texas\",\"en\":[22,\"4,900\"]},\"cae\":{\"objeto\":\"casa\",\"letrero\":\"TU RENTA\",\"en\":[23,\"cuatro\"]}},{\"tipo\":\"lienzo\",\"desde\":[24],\"capitulo\":\"depende\",\"contador\":\"decide |la corte\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"persona\",\"x\":25,\"y\":92,\"tam\":34,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"en\":[24],\"cambia\":{\"en\":[25,\"corte\"],\"cara\":\"neutro\"}},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":80,\"y\":72,\"tam\":20,\"etiqueta\":\"ABOGADO\",\"en\":[24,\"abogado\"]},{\"que\":\"globo\",\"texto\":\"Depende del estado\",\"piensa\":true,\"cola\":-1,\"x\":30,\"y\":15,\"en\":[25,\"estado\"]}]},{\"tipo\":\"lienzo\",\"desde\":[26],\"capitulo\":\"antes de irte\",\"contador\":\"antes de |irte\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"casa\",\"x\":80,\"y\":38,\"tam\":24,\"etiqueta\":\"ENTREGA\",\"en\":[26]},{\"que\":\"texto\",\"texto\":\"Fotos con fecha\",\"color\":\"principal\",\"x\":24,\"y\":45,\"tam\":3.8,\"en\":[27,\"fotos\"]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":24,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"en\":[28,\"deja\"]},{\"que\":\"sello\",\"texto\":\"NO LA SALTES\",\"color\":\"rojo\",\"x\":82,\"y\":42,\"en\":[29,\"última\"]}]},{\"tipo\":\"lienzo\",\"desde\":[30],\"capitulo\":\"la carta\",\"contador\":\"carta |en 2 pasos\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":72,\"titulo\":\"CARTA AL CASERO\",\"en\":[30],\"renglones\":[{\"texto\":\"Devuélveme mi depósito\",\"valor\":\"10 días\",\"en\":[31,\"depósito\"]},{\"texto\":\"La ley permite multas\",\"valor\":\"multas\",\"en\":[32,\"multas\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"feliz\",\"gorro\":\"pelo\",\"etiqueta\":\"TÚ\",\"en\":[30,\"cosas\"]},{\"que\":\"sello\",\"texto\":\"CERTIFICADA\",\"color\":\"verde\",\"x\":70,\"y\":20,\"en\":[33,\"correo\"]}]},{\"tipo\":\"lienzo\",\"desde\":[34],\"capitulo\":\"qué hacer\",\"contador\":\"corte |barata\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":25,\"y\":92,\"tam\":34,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\"},{\"que\":\"texto\",\"texto\":\"Reclamos menores\",\"color\":\"principal\",\"x\":72,\"y\":30,\"tam\":4.5,\"en\":[34,\"reclamos\"]},{\"que\":\"check\",\"x\":72,\"y\":62,\"en\":[35,\"barata\"]}]},{\"tipo\":\"cierre\",\"desde\":[36],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[36,\"Sígueme\"],\"compartir\":[37,\"compártelo\"]}]",
+  "aviso": "Ejemplo: casero en Texas que retiene el depósito de mala fe; el plazo y la multa cambian según el estado y decide el juez. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 10 (lienzo): texto «Fotos con fecha» y sello «NO LA SALTES» se enciman; sepáralos (cambia x/y o tam)"
+ ]
+}

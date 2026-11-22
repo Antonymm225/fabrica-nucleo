@@ -1,0 +1,97 @@
+{
+ "titulo": "El papel que más le deja al vendedor",
+ "angulo": "En un contrato de servicio de $1,600, según un experto de la industria, el vendedor se queda con unos $800, y solo unos $400 quedan para pagar reparaciones.",
+ "explicacion": "Lo que te venden como 'garantía extendida' casi siempre es un contrato de servicio que tú pagas aparte. Según un experto citado por Car Talk, el vendedor típicamente le suma un 50% al precio. De un contrato de $1,600, el vendedor se queda unos $800 y la empresa del contrato gana otros $400. Quedan unos $400 para reparaciones, o sea 25% de lo que pagaste. Si lo metes al préstamo de la troca, también pagas intereses sobre todo ese dinero.",
+ "datos": [
+  {
+   "dato": "Margen típico del vendedor sobre un contrato de servicio, según experto citado por Car Talk",
+   "valor": 50,
+   "unidad": "%",
+   "fuente": "https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide"
+  },
+  {
+   "dato": "Precio del contrato de ejemplo usado por Car Talk",
+   "valor": 1600,
+   "unidad": "$",
+   "fuente": "https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide"
+  },
+  {
+   "dato": "Parte del contrato que se queda el vendedor en ese ejemplo",
+   "valor": 800,
+   "unidad": "$",
+   "fuente": "https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide"
+  },
+  {
+   "dato": "Ganancia de la empresa del contrato en ese ejemplo",
+   "valor": 400,
+   "unidad": "$",
+   "fuente": "https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide"
+  },
+  {
+   "dato": "Dinero que queda para reparaciones en ese ejemplo",
+   "valor": 400,
+   "unidad": "$",
+   "fuente": "https://www.cartalk.com/extended-warranties/understanding-extended-warranties-insiders-guide"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que se queda el vendedor de un contrato de $1,600 (50%)",
+   "expresion": "1600*0.5",
+   "resultado": 800.0
+  },
+  {
+   "descripcion": "Lo que queda para reparaciones después del vendedor y la empresa del contrato",
+   "expresion": "1600-800-400",
+   "resultado": 400.0
+  },
+  {
+   "descripcion": "Porcentaje de tu dinero que va a reparaciones",
+   "expresion": "round(400/1600*100,2)",
+   "resultado": 25.0
+  },
+  {
+   "descripcion": "Pago mensual si metes $1,600 al préstamo a 60 meses y 10% anual (tasa supuesta)",
+   "expresion": "round(1600*(0.1/12)/(1-(1+0.1/12)**-60),2)",
+   "resultado": 34.0
+  },
+  {
+   "descripcion": "Total pagado por el contrato financiado a 60 meses y 10% (supuesto)",
+   "expresion": "round(1600*(0.1/12)/(1-(1+0.1/12)**-60)*60,2)",
+   "resultado": 2039.72
+  },
+  {
+   "descripcion": "Intereses extra por financiar el contrato (supuesto)",
+   "expresion": "round(1600*(0.1/12)/(1-(1+0.1/12)**-60)*60-1600,2)",
+   "resultado": 439.72
+  },
+  {
+   "descripcion": "Intereses que pagas por financiar el contrato, comparados con lo que queda para reparaciones ($400)",
+   "expresion": "round(1600*(0.1/12)/(1-(1+0.1/12)**-60)*60-1600-400,2)",
+   "resultado": 39.72
+  }
+ ],
+ "consejo": "Cuando te ofrezcan el contrato de servicio, no firmes ese día. Pídele el precio por escrito y pregunta qué cubre y qué excluye. Pregunta también quién lo respalda, si lo puedes cancelar con reembolso, y cuánto sube tu pago mensual y tu préstamo si lo metes. Dile que lo piensas, porque casi siempre el precio se negocia. Si no estás seguro, aparta cada mes lo que costaría el contrato en una cuenta de ahorros aparte para reparaciones. Revisa en la web de la FTC y de tu estado qué reglas aplican.",
+ "que_no_decir": [
+  "No digas que las garantías extendidas siempre son estafa. Algunas personas sí las usan y les sirven.",
+  "No presentes $800 y $400 como cifras exactas de todos los contratos. Son un ejemplo típico de un experto de la industria.",
+  "No afirmes que la tasa de 10% y los 60 meses son datos oficiales. Son supuestos del ejemplo, a menos que los verifiques.",
+  "No lo llames 'seguro' ni recomiendes comprar o dejar de comprar un seguro. Es un contrato de servicio.",
+  "No prometas reembolso total ni cancelación fácil sin revisar el contrato y las reglas de tu estado.",
+  "No repitas la cifra de la troca de $40,000 a 72 meses ni el tema de la tasa que sube el dealer. Ya están en FF-002 y FF-012.",
+  "No digas que la troca no se va a descomponer ni que reparar sale gratis."
+ ],
+ "con_iul": false,
+ "idea": "La garantía extendida que te venden con la troca: cuánto gana el vendedor y cuándo no conviene",
+ "gancho_pedido": "El vendedor gana más con un papel que con la troca.",
+ "ganchos_recientes": [
+  "¿Cuánto crees que cuesta un seguro de vida? / La mayoría adivina muy por encima. / Y por adivinar mal, / muchas familias se quedan con nada.",
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos"
+ ]
+}

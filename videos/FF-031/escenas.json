@@ -1,0 +1,621 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: depósito de $1,500 con $1,200 retenidos por desgaste normal, con la regla de Texas. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu depósito",
+   "contador": "casero |tiene tu dinero",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "más"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "TU CASERO",
+     "en": [
+      0,
+      "casero"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 68,
+     "tam": 22,
+     "etiqueta": "TU DEPÓSITO",
+     "en": [
+      0,
+      "depósito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "un papel",
+   "contador": "un papel |clave",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 2
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué papel será?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      2,
+      "papel"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 50,
+     "tam": 32,
+     "etiqueta": "SUS DÍAS",
+     "en": [
+      4,
+      "casero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "contador": "retención |mala fe",
+   "filas": [
+    "MALA",
+    "FE"
+   ],
+   "en": [
+    5,
+    "mala"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "depósito |$1,500",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu depósito",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Depósito pagado",
+       "valor": "$1,500",
+       "en": [
+        6,
+        "1,500"
+       ]
+      },
+      {
+       "texto": "Retenido por desgaste",
+       "valor": "$1,200",
+       "en": [
+        7,
+        "1,200"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       7,
+       "1,200"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "desgaste normal",
+   "contador": "desgaste |normal",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 24,
+     "y": 34,
+     "tam": 28,
+     "etiqueta": "PINTURA GASTADA"
+    },
+    {
+     "que": "texto",
+     "texto": "alfombra vieja",
+     "x": 76,
+     "y": 18,
+     "tam": 4,
+     "color": "principal",
+     "en": [
+      9,
+      "alfombra"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NORMAL",
+     "color": "verde",
+     "x": 24,
+     "y": 38,
+     "en": [
+      10,
+      "normal"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 76,
+     "y": 72,
+     "tam": 24,
+     "etiqueta": "SU DESCUENTO",
+     "en": [
+      11,
+      "eso"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      11,
+      "descontar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "lo que sí",
+   "contador": "sí puede |descontar",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 26,
+     "y": 35,
+     "tam": 30,
+     "etiqueta": "RENTA QUE DEBES"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 74,
+     "y": 35,
+     "tam": 30,
+     "giro": 8,
+     "etiqueta": "DAÑOS TUYOS",
+     "en": [
+      13,
+      "daños"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 75,
+     "en": [
+      13,
+      "causaste"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "en Texas |mala fe",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 52,
+     "tam": 30,
+     "etiqueta": "EL CASERO",
+     "en": [
+      14,
+      "aquí"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EN TEXAS",
+     "x": 50,
+     "y": 14,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      15,
+      "Texas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "lo que paga",
+   "contador": "puede pagar |más",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      16
+     ],
+     "items": [
+      {
+       "texto": "Multa fija de $100",
+       "en": [
+        16,
+        "100"
+       ]
+      },
+      {
+       "texto": "El triple de lo retenido",
+       "en": [
+        17,
+        "triple"
+       ]
+      },
+      {
+       "texto": "Tus gastos de abogado",
+       "en": [
+        18,
+        "abogado"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    19
+   ],
+   "capitulo": "la cuenta",
+   "contador": "te debe |$4,900",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$4,900",
+    "etiqueta": "sin contar abogado",
+    "en": [
+     20,
+     "4,900"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "CASERO",
+    "en": [
+     20,
+     "abogado"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "cada estado",
+   "contador": "plazos |por estado",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "TEXAS"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 75,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "CALIFORNIA",
+     "en": [
+      24,
+      "California"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "30 días",
+     "x": 25,
+     "y": 68,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      23,
+      "30"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "21 días",
+     "x": 75,
+     "y": 68,
+     "tam": 9,
+     "color": "tinta",
+     "en": [
+      24,
+      "21"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu papel",
+   "contador": "tu papel |por escrito",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Mi dirección nueva es esta.",
+     "x": 28,
+     "y": 40
+    },
+    {
+     "id": "d",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "30 DÍAS",
+     "en": [
+      27,
+      "días"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "d",
+     "en": [
+      27,
+      "empiezan"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 72,
+     "en": [
+      28,
+      "copia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "qué hacer",
+   "contador": "reclamo |paso a paso",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "Fotos y video con fecha",
+       "en": [
+        29,
+        "fotos"
+       ]
+      },
+      {
+       "texto": "Carta de reclamo",
+       "en": [
+        30,
+        "carta"
+       ]
+      },
+      {
+       "texto": "Con fecha límite para responder",
+       "en": [
+        31,
+        "fecha"
+       ]
+      },
+      {
+       "texto": "Corte de reclamos menores",
+       "en": [
+        32,
+        "reclamos"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "cuidado",
+   "contador": "último mes |no lo dejes",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       35,
+       "nunca"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Aquí no ocupo abogado",
+     "cola": -1,
+     "x": 28,
+     "y": 16,
+     "en": [
+      33,
+      "Ahí"
+     ]
+    },
+    {
+     "id": "m",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 78,
+     "y": 62,
+     "tam": 24,
+     "etiqueta": "ÚLTIMO MES",
+     "en": [
+      35,
+      "último"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "DESALOJO",
+     "color": "rojo",
+     "x": 78,
+     "y": 62,
+     "en": [
+      36,
+      "desalojo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

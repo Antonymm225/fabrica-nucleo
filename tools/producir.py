@@ -204,7 +204,11 @@ def revisar(lineas, escenas, ficha, marca):
     todo = " ".join(lineas).lower()
     tiene_iul = bool(re.search(r"\biul\b|seguro de vida indexado", todo))
     if ficha.get("con_iul"):
-        if not tiene_iul: err.append("este video lleva IUL: preséntalo como [IUL|i u ele], un *seguro de vida indexado*")
+        if not tiene_iul: err.append("este video lleva IUL: preséntalo como [IUL|a yu el], un *seguro de vida indexado*")
+        for i, l in enumerate(lineas):
+            for m in re.finditer(r"\[IUL\|([^\]]*)\]", l, re.I):
+                if m.group(1).strip().lower() != "a yu el": err.append(f"línea {i}: IUL se escribe IUL y se pronuncia 'a yu el': [IUL|a yu el]")
+            if re.search(r"\bIUL\b", TAG.sub("", l)): err.append(f"línea {i}: IUL siempre va como [IUL|a yu el] para que se pronuncie bien: {l}")
         if "asesor certificado" not in todo: err.append("falta la línea: Un *asesor certificado* debe ver tu caso a detalle.")
         for i, l in enumerate(lineas):
             if re.search(r"\[10%\|", l) and "hasta" not in l.lower(): err.append(f"línea {i}: el 10% del IUL siempre va con 'hasta': {l}")
@@ -229,6 +233,16 @@ def revisar(lineas, escenas, ficha, marca):
                 err.append("hay más de dos proyecciones de retiro: deja una (dos solo si el video compara dos personas o dos edades)")
     elif tiene_iul:
         err.append("este video es de puro valor: no menciones el IUL ni seguros de vida")
+    if lineas:
+        l0 = lineas[0].lower().lstrip("¿¡* ")
+        if re.match(r"imagina|hoy te|hoy vamos|sab[ií]as que|en este video|hola\b", l0):
+            err.append(f"el gancho no puede empezar con «{lineas[0]}»: la primera línea ya es el golpe (la persona, lo que le pasa y por qué le importa)")
+        loop = [(i, l) for i, l in enumerate(lineas[:7]) if "al final" in l.lower()]
+        if not loop: err.append("falta el open loop en las primeras 7 líneas: 'Al final te digo…' + algo concreto que la persona no pueda adivinar")
+        for i, l in loop:
+            resto = l.lower().replace("*", "")
+            if re.search(r"al final te (digo|enseño|muestro|cuento) (c[oó]mo|qu[eé]) (evitarl[oa]s?|hacer|salir|hacerlo|solucionarlo|arreglarlo)( hoy)?\W*$", resto):
+                err.append(f"línea {i}: el open loop es genérico («{l}»). Promete algo concreto que no se pueda adivinar: la frase exacta, el número, el papel, el paso, la pregunta")
     if len(lineas) >= 2:
         if "sígueme" not in lineas[-2].lower(): err.append("la penúltima línea debe empezar el cierre con *Sígueme*")
         if "compártelo" not in lineas[-1].lower(): err.append("la última línea debe decir 'compártelo'")
@@ -383,7 +397,45 @@ def texto(r):
     return "\n".join(b.text for b in r.content if b.type == "text")
 
 
-TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero del día a día en Estados Unidos con un ejemplo con números que duela (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y una salida práctica. Lo que mejor funciona con esta audiencia: trampas al comprar troca o casa, tarjetas de tienda y "cero por ciento", préstamos caros, cargos del banco, estafas, impuestos del que cobra por contrato, gastos hormiga. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, FTC, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, nada de seguros (ni de vida ni de auto), y no mandes a la gente a cooperativas ni a planes del trabajo."""
+TAREA_VALOR = """Tarea: elige UN tema nuevo: una trampa o un secreto de dinero del día a día en Estados Unidos con un ejemplo con números que duela (una comparación A contra B donde la gente pierde dinero sin darse cuenta) y una salida práctica. Busca en la web datos actuales de Estados Unidos (tasas promedio, precios, reglas) en fuentes serias (Reserva Federal, CFPB, IRS, FTC, Census, Bankrate, NerdWallet, Experian, Kelley Blue Book). Nada de inversiones en acciones ni criptomonedas, nada de seguros (ni de vida ni de auto), y no mandes a la gente a cooperativas ni a planes del trabajo."""
+TERRITORIOS = [
+    ("trabajo y sueldo", "horas extra que no te pagan, cobrar por contrato (1099) contra cobrar con cheque de nómina, robo de salario, el patrón que te paga en efectivo, lo que vale de verdad tu hora"),
+    ("impuestos", "el reembolso, el ITIN, los créditos por hijos que la gente deja en la mesa, el preparador que te cobra de más, las multas por no declarar, lo que el que cobra por contrato puede descontar"),
+    ("crédito y puntaje", "cómo se arma el puntaje, errores en el reporte, ser aval de alguien, cerrar una tarjeta vieja, cuánto cuesta un puntaje bajo en una casa o una troca"),
+    ("casa y renta", "el depósito que no te devuelven, los cargos escondidos de la renta, rentar contra comprar, los costos de cierre, el seguro hipotecario, refinanciar"),
+    ("troca y transporte", "el financiamiento del dealer, la garantía extendida, deber más de lo que vale, el préstamo a 84 meses, vender por tu cuenta contra dejarla a cuenta"),
+    ("deudas y cobradores", "el pago mínimo, la deuda vieja que revive si pagas, lo que un cobrador no puede hacer, consolidar, la cuenta médica que se puede negociar"),
+    ("banco y cargos", "sobregiros, cargos mensuales, cajeros de otra red, cheques detenidos, dinero parado sin ganar nada"),
+    ("estafas", "la llamada falsa, el trabajo falso, el mensaje del paquete, el falso notario o consultor de migración, la inversión de un conocido, el cheque que rebota después"),
+    ("compras y tiendas", "a meses sin intereses, la garantía que no sirve, comprar a pagos semanales, las suscripciones que se renuevan solas, el precio por unidad"),
+    ("negocio propio", "el que trabaja por su cuenta: separar el dinero del negocio, cobrar lo justo por un trabajo, las herramientas, la licencia, cotizar sin perder"),
+    ("servicios del hogar", "el plan de teléfono, la luz, el internet, el cable, los cargos que nadie revisa en el recibo y cómo bajarlos con una llamada"),
+    ("ahorro y emergencias", "el fondo de emergencia, las tandas, el dinero en el colchón, la inflación, pedir prestado a la familia"),
+    ("familia y dinero", "prestarle a un pariente, las cuentas en pareja, lo que cuesta un hijo, los quince años o la boda a crédito, poner a alguien en tu cuenta"),
+    ("envíos y dinero entre países", "mandar dinero, el tipo de cambio, construir casa allá desde aquí, quién es dueño de lo que compras allá"),
+]
+
+
+def territorio(codigo):
+    """Temas variados: toca el territorio menos usado (y en empate, el que sigue en la lista)."""
+    usados = []
+    for tj in sorted(glob.glob(os.path.join(ROOT, "videos", f"{codigo}-*", "tema.json"))):
+        f = json.load(open(tj, encoding="utf-8"))
+        if f.get("territorio"): usados.append(f["territorio"])
+    nombres = [x[0] for x in TERRITORIOS]
+    n = len(glob.glob(os.path.join(ROOT, "videos", f"{codigo}-*")))
+    orden = sorted(nombres, key=lambda x: (usados.count(x), (nombres.index(x) - n) % len(nombres)))
+    return next(x for x in TERRITORIOS if x[0] == orden[0])
+
+
+def ganchos_recientes(codigo, n=8):
+    out = []
+    for g in sorted(glob.glob(os.path.join(ROOT, "videos", f"{codigo}-*", "guion.txt")))[-n:]:
+        cuerpo = [TAG.sub(r"\1", l.strip()).replace("*", "") for l in open(g, encoding="utf-8") if l.strip() and not l.startswith("#")]
+        out.append(" / ".join(cuerpo[:4]))
+    return out
+
+
 RETIRO = "ahorro para el retiro"
 
 
@@ -394,7 +446,7 @@ def tarea_iul(beneficio):
     return comun + f""" Este video es de {beneficio[0]}, NO de retiro: todos los datos y cálculos son del problema (cuánto falta, cuánto cuesta, cuánto tiempo). No calcules proyecciones de ahorro ni de retiro, ni cuánto se junta en el IUL, ni el costo de empezar tarde: esas cifras no van en este video."""
 
 
-def investigar(c, marca, historia, iul=False, beneficio=None):
+def investigar(c, marca, historia, iul=False, beneficio=None, terr=None):
     pedido = f"""Eres investigador de contenido de finanzas personales para la marca "{marca['nombre']}".
 Tono de la marca: {marca['tono']}
 Temas preferidos: {', '.join(marca['temas'])}.
@@ -406,6 +458,10 @@ Videos que la marca YA hizo. No repitas ni el tema, ni la idea de fondo, ni el d
 En este video el IUL entra por UN solo beneficio: {beneficio[0]} ({beneficio[1]}). No uses los otros dos como tema central. Y dentro de ese beneficio, busca un problema que NO esté en la lista de arriba.""" if iul and beneficio else ""}
 
 {tarea_iul(beneficio) if iul else TAREA_VALOR}
+{f"""
+Este video cae en el territorio: {terr[0]} ({terr[1]}). Elige dentro de ese territorio el tema MÁS interesante: uno que la gente no conozca, que le pase a esta audiencia y que dé para un gancho que frene el scroll. No elijas lo primero que se te ocurra: piensa 6 temas posibles y quédate con el que más sorprende.""" if terr and not iul else ""}
+
+El tema tiene que traer una SORPRESA de verdad: un dato que la gente cree al revés, una regla que casi nadie conoce, un derecho que no saben que tienen o una cuenta que sale mucho peor de lo que imaginan. "Esto cuesta caro" no es sorpresa. En "angulo" escribe esa sorpresa en una frase.
 
 Responde al final con UN bloque ```json con esta forma exacta:
 {{
@@ -427,12 +483,14 @@ Reglas de los cálculos: solo números y + - * / ** ( ) round(). Calcula todo lo
     ficha = json.loads(m[-1])
     ficha["con_iul"] = iul
     if iul and beneficio: ficha["beneficio_iul"] = beneficio[0]
+    if terr and not iul: ficha["territorio"] = terr[0]
     if iul: ficha["datos"] = ficha.get("datos", []) + (DATOS_IUL if not beneficio or beneficio[0] == RETIRO else DATOS_IUL[:2])
     return ficha
 
 
-ESQUEMA = {"type": "object", "additionalProperties": False, "required": ["titulo", "lineas", "escenas_json", "aviso"],
-           "properties": {"titulo": {"type": "string"}, "lineas": {"type": "array", "items": {"type": "string"}},
+ESQUEMA = {"type": "object", "additionalProperties": False, "required": ["ganchos", "gancho_elegido", "titulo", "lineas", "escenas_json", "aviso"],
+           "properties": {"ganchos": {"type": "array", "items": {"type": "string"}}, "gancho_elegido": {"type": "string"},
+                          "titulo": {"type": "string"}, "lineas": {"type": "array", "items": {"type": "string"}},
                           "escenas_json": {"type": "string"}, "aviso": {"type": "string"}}}
 
 
@@ -446,9 +504,13 @@ Ficha del tema investigado (las únicas cifras permitidas están en "datos" y "c
 {json.dumps(ficha, ensure_ascii=False, indent=1)}
 
 Este video {"LLEVA el IUL (con_iul: true): sigue la sección del IUL del cerebro al pie de la letra. El único beneficio de este video es: " + str(ficha.get("beneficio_iul") or "el de la ficha") + ". Los otros dos no se desarrollan" if ficha.get("con_iul") else "es de PURO VALOR (con_iul: false): no menciones el IUL ni seguros"}.
-Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. Gancho fuerte con open loop que se cierra al final.
+Largo: de {LINEAS[0]} a {LINEAS[1]} líneas y de {PALABRAS[0]} a {PALABRAS[1]} palabras habladas. 
+Ganchos de los últimos videos de la marca (no repitas su molde ni su forma de abrir; este tiene que sonar distinto):
+{chr(10).join('- ' + g for g in ficha.get("ganchos_recientes", [])) or '- (ninguno)'}
 
 Escribe el video siguiendo el cerebro de EST-01:
+- "ganchos": PRIMERO escribe 8 ganchos candidatos (las dos primeras líneas + el open loop), cada uno de un tipo distinto de los del cerebro.
+- "gancho_elegido": el más fuerte de los 8 y, en una frase, por qué frena el scroll de esta audiencia. Ese es el que abre "lineas".
 - "lineas": las líneas del guion, en orden, con el formato [mostrado|hablado] y *clave*.
 - "escenas_json": la lista de escenas como texto JSON (una lista [...] de objetos), con las referencias a palabras que existan en esas líneas. Diséñalas junto con el guion: cada lienzo dibuja lo que dicen sus líneas (personas, torres de monedas, recibos, celular, dinero que vuela, gráficas), sin objetos de relleno.
 - "aviso": una frase corta para abajo de la pantalla: "Ejemplo: <el supuesto del ejemplo>. Contenido educativo, no es asesoría financiera."
@@ -587,8 +649,10 @@ def main():
         cod = siguiente(marca["codigo"])
         try:
             iul = con_iul(cod); ben = beneficio_iul(marca["codigo"]) if iul else None
-            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben)
-            print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + ben[0]) if ficha['con_iul'] else 'puro valor'} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
+            terr = None if iul else territorio(marca["codigo"])
+            ficha = investigar(c, marca, historia_de(marca["codigo"]), iul, ben, terr)
+            ficha["ganchos_recientes"] = ganchos_recientes(marca["codigo"])
+            print(f"{cod}: tema «{ficha['titulo']}» · {('con IUL · ' + ben[0]) if ficha['con_iul'] else 'puro valor · ' + terr[0]} · {len(ficha.get('datos', []))} datos · {len(ficha.get('calculos', []))} cálculos")
             v = escribir(c, marca, ficha, ejemplos)
             esc = json.loads(v["escenas_json"]) if isinstance(v.get("escenas_json"), str) else []
             err = revisar(v["lineas"], esc, ficha, marca) + revisar_aviso(v.get("aviso", ""))

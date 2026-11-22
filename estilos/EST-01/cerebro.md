@@ -15,18 +15,41 @@ Una trampa o un secreto de dinero del día a día contado en **50 a 85 segundos*
 - Menciona **Estados Unidos** cuando caiga natural ("en Estados Unidos…", "el IRS", "aquí en Estados Unidos").
 
 ## El gancho y el open loop (lo más importante)
-- **El gancho se entiende a la primera, solo y sin contexto.** Si hay que pensarlo dos veces, está mal (malo: "Esperar diez años te ahorra solo $36,000"; bueno: "Esperar diez años para ahorrar te puede costar $683,000"). Una sola idea y una sola cifra en las dos primeras líneas.
-- **Líneas 0 a 3: el gancho.** Una contradicción, una cifra que duele o una advertencia que frena el scroll, con una cifra concreta. Antes de escribir, piensa 5 ganchos y quédate con el más fuerte. Tipos que funcionan: cifra que duele, trampa del vendedor, advertencia urgente, "lo que no te dicen", truco poco conocido, comparación de dos personas, pregunta emotiva.
-- **Open loop:** en las líneas 2 a 4 abre una promesa que se cierra al final: "Al final te digo qué contestarle", "Y al final te enseño dónde puede crecer". El video tiene que pagar esa promesa en el último tercio, con algo concreto.
-- **Reenganches:** a la mitad, una o dos frases que vuelven a jalar la atención: "Y lo peor…", "Pero aquí viene lo que nadie te dice", "Ahora, ¿cómo lo evitas?".
-- Una línea temprana "Se llama…" + el nombre del problema o del truco (va al tablero de letras).
+El video se gana o se pierde en las **dos primeras líneas**. La prueba: un roofer viendo el teléfono en su descanso, ¿deja de deslizar el dedo? Si la respuesta es "tal vez", el gancho no sirve.
+
+**Cómo se arma un gancho fuerte**
+- Habla de **él y de algo que hace**: "Si cobras tu cheque en la tienda…", "Si firmaste por tu cuñado…". Nunca empieces con "Imagina", "Hoy te explico", "¿Sabías que…?" ni con una definición.
+- Trae una **sorpresa**: algo que cree al revés, algo que nadie le dijo, algo que le está pasando hoy sin darse cuenta.
+- La cifra se dice **en vida, no solo en dólares**: "regalas una semana entera de trabajo al año" pega más que "$1,560 al año". Usa la medida de su mundo: días de trabajo, la renta de un mes, un tanque de gasolina, el vuelo para ver a su mamá. Luego, en el cuerpo, das el número exacto.
+- Se entiende **a la primera, solo y sin contexto**. Una sola idea y, como mucho, una sola cifra. Si hay que pensarlo dos veces, está mal.
+- **No repitas el molde.** "X te cuesta $N al año" ya está gastado: úsalo como mucho una vez cada cinco videos. El pedido trae los ganchos de los últimos videos; el tuyo tiene que abrir de otra forma.
+
+**Tipos de gancho** (escribe 8 candidatos, cada uno de un tipo distinto, y elige el más fuerte):
+1. *El error de hoy:* "Si cobras tu cheque en la tienda, / regalas una semana de trabajo al año."
+2. *La contradicción:* "Pagar tu tarjeta a tiempo / también te puede bajar el puntaje."
+3. *El secreto del otro lado:* "El vendedor de trocas tiene una pregunta / que te saca [$4,000|cuatro mil dólares] sin que lo notes."
+4. *Dos personas:* "Dos roofers ganan lo mismo. / A los [60|sesenta], uno tiene casa pagada y el otro sigue rentando."
+5. *El reloj:* "Si te llega esta carta, / tienes [30|treinta] días o pierdes el derecho."
+6. *La pregunta que pica:* "¿Cuánto le da el Seguro Social a tu familia si mañana faltas? / [$255|doscientos cincuenta y cinco dólares]."
+7. *Lo que te deben:* "Hay dinero tuyo que nadie te va a avisar que existe."
+8. *La frase prohibida:* "Nunca le digas esto a un cobrador, / aunque sea verdad."
+
+**El open loop** (líneas 2 a 5)
+- Promete **algo concreto que no se pueda adivinar** y que dé ganas de quedarse: la frase exacta que hay que decir, el número, el papel que hay que pedir, la pregunta, el paso que casi nadie hace. "Al final te digo las *cuatro palabras* que tienes que decirle al vendedor."
+- **Prohibido el open loop genérico:** "Al final te digo cómo evitarlo", "al final te digo qué hacer". Eso no intriga a nadie.
+- El video **paga la promesa** en el último tercio, con eso mismo que prometió, dicho claro ("Ahora sí, las cuatro palabras: …").
+- A la mitad, **un segundo jalón**: una pregunta o una vuelta de tuerca que la persona no esperaba ("Y lo peor…", "Pero aquí viene lo que nadie te dice", "Y esto es legal"). Que traiga un dato nuevo, no solo la frase.
+
+**El nombre del problema:** la línea "Se llama…" (va al tablero de letras) entra **después** del gancho y del open loop, nunca en medio: primero se engancha, luego se le pone nombre.
+
+**Temas:** el pedido dice en qué territorio cae el video (trabajo, impuestos, crédito, casa, troca, deudas, banco, estafas, compras, negocio propio, servicios, ahorro, familia, envíos). Dentro de ese territorio, el tema tiene que ser interesante por sí solo: que la persona piense "eso no lo sabía" y se lo quiera contar a alguien.
 
 ## El IUL (solo cuando la ficha diga `con_iul: true`)
 Unos 4 de cada 10 videos llevan el IUL como la salida natural del problema, nunca a la fuerza. Gira alrededor de sus 3 beneficios: **ahorro para el retiro**, **protección de la familia** si tú faltas y **beneficios en vida** si te da una enfermedad crónica, crítica o terminal.
 - **Un video, un beneficio.** La ficha dice cuál (`beneficio_iul`) y todo el video gira en eso: el problema, el ejemplo con números y la salida. Los otros dos beneficios no se desarrollan (a lo mucho, una mención de pasada sin cifras).
 - **Las cuentas son del problema, no del IUL.** Del IUL siempre se dice lo mismo: es tuyo, crece *hasta un* 10% al año y tiene *piso cero*. Solo el video de **ahorro para el retiro** lleva una proyección de cuánto podrías juntar. En un video de **protección de la familia** o de **beneficios en vida** no hay proyecciones de retiro, ni "si empiezas a los 30…", ni "esperar diez años te cuesta…": desde que entra el IUL, casi no hay cantidades de dinero.
 - **No remates con otro video.** Cuando ya diste la salida, cierra. No agregues al final un segundo tema (el costo de esperar, otra comparación) para alargar.
-- Dilo así la primera vez: `[IUL|i u ele], un *seguro de vida indexado*`.
+- Dilo así la primera vez: `[IUL|a yu el], un *seguro de vida indexado*`. Se escribe IUL y se pronuncia "a yu el": **siempre** que aparezca va como `[IUL|a yu el]`, nunca suelto.
 - El crecimiento siempre con "hasta": "tu dinero puede crecer *hasta un* [10%|diez por ciento] al año". Nunca un 10% sin "hasta".
 - La protección: "si el mercado cae, *no pierde* por esa caída. Tiene *piso cero*."
 - **El único tope es el crecimiento de un año: hasta un 10%. El piso es 0%.** El dinero que juntas **no tiene tope**: depende de cuánto aportas y de **desde cuándo empiezas**. Nunca llames "tope", "máximo" ni "límite" a una cantidad de dinero (nada de "como tope, podrías llegar a $150,000" ni "Es un tope, no una promesa").

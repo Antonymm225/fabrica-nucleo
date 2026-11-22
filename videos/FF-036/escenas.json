@@ -1,0 +1,712 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: troca de $52,000 más $4,000 de cargos, préstamo de $56,000 a 84 meses al 9%, sin enganche; la troca pierde 20% el primer año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu troca",
+   "contador": "pagas |puntual",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       2,
+       "debes"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 26,
+     "tam": 34,
+     "en": [
+      0,
+      "troca"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 68,
+     "tam": 24,
+     "etiqueta": "CADA MES",
+     "en": [
+      0,
+      "mes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "pide |por escrito",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Tu préstamo",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Pago al mes",
+       "valor": "$900",
+       "en": [
+        3,
+        "número"
+       ]
+      },
+      {
+       "texto": "Debes en el mes 12",
+       "valor": "¿?",
+       "en": [
+        4,
+        "escrito"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       4,
+       "firmar"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      4,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "DEUDA",
+    "REVES"
+   ],
+   "en": [
+    5,
+    "revés"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "préstamo |$56,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 26,
+     "y": 24,
+     "tam": 32,
+     "en": [
+      6,
+      "troca"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$52,000",
+     "x": 72,
+     "y": 24,
+     "tam": 9,
+     "en": [
+      6,
+      "52,000"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$56,000",
+     "x": 72,
+     "y": 48,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      7,
+      "56,000"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 26,
+     "y": 72,
+     "tam": 26,
+     "etiqueta": "84 MESES AL 9%",
+     "en": [
+      8,
+      "meses"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$900/mes",
+     "x": 72,
+     "y": 76,
+     "tam": 9,
+     "en": [
+      9,
+      "900"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el hueco",
+   "contador": "año |1",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       11,
+       "pierde"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Manejable? Sí, por ahora.",
+     "piensa": true,
+     "cola": 1,
+     "x": 50,
+     "y": 22,
+     "en": [
+      10,
+      "manejable"
+     ],
+     "sale": [
+      11,
+      "Pero"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 18,
+     "y": 95,
+     "tam": 50,
+     "valor": 41600,
+     "max": 49984,
+     "prefijo": "$",
+     "etiqueta": "LA TROCA",
+     "en": [
+      12,
+      "vale"
+     ],
+     "hasta": [
+      12,
+      "41,600"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 82,
+     "y": 95,
+     "tam": 50,
+     "valor": 49984,
+     "max": 49984,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TU DEUDA",
+     "en": [
+      13,
+      "debes"
+     ],
+     "hasta": [
+      13,
+      "50,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    14
+   ],
+   "capitulo": "el hueco",
+   "contador": "hueco |$8,384",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$8,384",
+    "etiqueta": "debes de más",
+    "en": [
+     14,
+     "8,384"
+    ]
+   },
+   "cae": {
+    "objeto": "troca",
+    "letrero": "HUECO",
+    "en": [
+     14,
+     "más"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "los intereses",
+   "contador": "al inicio |interés",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "TU PAGO",
+     "en": [
+      15
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 62,
+     "tam": 34,
+     "etiqueta": "EL BANCO",
+     "en": [
+      16,
+      "pago"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      16,
+      "pago"
+     ],
+     "hasta": [
+      17,
+      "lento"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "la deuda baja lento",
+     "color": "gris",
+     "x": 30,
+     "y": 84,
+     "en": [
+      17,
+      "lento"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "si pasa algo",
+   "contador": "hueco |tu bolsillo",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       20,
+       "bolsillo"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 28,
+     "tam": 34,
+     "giro": -12,
+     "en": [
+      18,
+      "chocas"
+     ]
+    },
+    {
+     "id": "w",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 72,
+     "tam": 26,
+     "etiqueta": "TU BOLSILLO",
+     "en": [
+      20,
+      "bolsillo"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "t",
+     "a": "w",
+     "en": [
+      20,
+      "sale"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "la mitad",
+   "contador": "a la |mitad",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 49984,
+     "final": 32358,
+     "barras": 8,
+     "desdeTexto": "AÑO 1",
+     "hastaTexto": "LA MITAD",
+     "etiqueta": "lo que debes",
+     "hasta": [
+      24,
+      "más"
+     ],
+     "x": 50,
+     "y": 85
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1 de 3",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 4
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "ENGANCHE 20%",
+     "en": [
+      25,
+      "enganche"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$11,200",
+     "x": 72,
+     "y": 56,
+     "tam": 9,
+     "en": [
+      26,
+      "11,200"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 75,
+     "y": 87,
+     "en": [
+      28,
+      "vale"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "el plazo",
+   "contador": "plazo |más corto",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 26,
+     "tam": 30,
+     "etiqueta": "CINCO AÑOS"
+    },
+    {
+     "id": "t2",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 30,
+     "tam": 32,
+     "en": [
+      31,
+      "troca"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t2",
+     "en": [
+      31,
+      "cara"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 48,
+     "y": 93,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "en": [
+      30,
+      "alcanza"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      33
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      32
+     ],
+     "items": [
+      {
+       "texto": "Pide tasa en tu banco primero",
+       "en": [
+        32,
+        "tasa"
+       ]
+      },
+      {
+       "texto": "Pide por escrito: debes en mes 12",
+       "en": [
+        33,
+        "escrito"
+       ]
+      },
+      {
+       "texto": "Compáralo con lo que vale tu troca",
+       "en": [
+        35,
+        "valer"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      33,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    36
+   ],
+   "capitulo": "si ya firmaste",
+   "contador": "paga |extra",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 5,
+     "cambia": {
+      "en": [
+       37,
+       "extra"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "t3",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 35,
+     "tam": 34,
+     "en": [
+      36,
+      "firmaste"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "t3",
+     "en": [
+      37,
+      "extra"
+     ],
+     "hasta": [
+      37,
+      "mes"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "MENOS HUECO",
+     "color": "verde",
+     "x": 72,
+     "y": 35,
+     "en": [
+      37,
+      "capital"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

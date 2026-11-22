@@ -1,0 +1,105 @@
+{
+ "titulo": "El adelanto de tu propio reembolso",
+ "angulo": "Te 'adelantan' un dinero que el IRS normalmente te deposita en unos 21 días, y entre intereses, cargos y la preparación pagas cientos de dólares por esa espera.",
+ "explicacion": "Tu preparador de impuestos te ofrece un adelanto de tu reembolso para que salgas con dinero el mismo día. Algunos adelantos dicen 0% de interés, pero otros cobran hasta 36% anual y a veces suman un cargo de mercadeo. Con e-file y depósito directo, el IRS normalmente paga en unos 21 días. En el ejemplo, un adelanto de $2,500 por 32 días cuesta $113.85 entre interés y cargo, que equivale a casi 52% al año. Si además pagas $236 por preparar una declaración que podías hacer gratis con Free File (si tu ingreso califica), pierdes cerca de $350 por esperar unas semanas.",
+ "datos": [
+  {
+   "dato": "Tasa (APR) de adelantos de reembolso con interés en preparadores independientes (Refund Advantage)",
+   "valor": 36,
+   "unidad": "%",
+   "fuente": "https://www.refund-advantage.com/taxpayer-advance-loan/"
+  },
+  {
+   "dato": "Ejemplo del programa: adelanto de $2,500 por 32 días; total a pagar $2,578.90",
+   "valor": 2578.9,
+   "unidad": "$",
+   "fuente": "https://www.refund-advantage.com/taxpayer-advance-loan/"
+  },
+  {
+   "dato": "Cargo de mercadeo por adelanto aprobado en temporada con refund transfer",
+   "valor": 34.95,
+   "unidad": "$",
+   "fuente": "https://www.refund-advantage.com/taxpayer-advance-loan/"
+  },
+  {
+   "dato": "Algunos adelantos (ej. TurboTax Refund Advance) son de 0% APR y sin cargos; otros en la lista de NerdWallet llegan a 35.99%",
+   "valor": 35.99,
+   "unidad": "%",
+   "fuente": "https://www.nerdwallet.com/personal-loans/learn/tax-refund-loans-give-cash-now-to-early-filers"
+  },
+  {
+   "dato": "Con e-file y depósito directo el IRS normalmente emite el reembolso en este plazo",
+   "valor": 21,
+   "unidad": "días",
+   "fuente": "https://www.newsnationnow.com/business/your-money/how-long-to-get-tax-refund/"
+  },
+  {
+   "dato": "Tarifa base promedio de un preparador por una declaración 1040 básica (NATP, temporada 2026)",
+   "valor": 236,
+   "unidad": "$",
+   "fuente": "https://www.britannica.com/money/cost-to-file-taxes"
+  },
+  {
+   "dato": "Free File: declarar gratis si tu ingreso bruto ajustado es de este monto o menos (confirmar tope vigente en irs.gov/freefile)",
+   "valor": 84000,
+   "unidad": "$",
+   "fuente": "https://www.britannica.com/money/cost-to-file-taxes"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Interés de un adelanto de $2,500 al 36% por 32 días",
+   "expresion": "round(2500*0.36*32/365,2)",
+   "resultado": 78.9
+  },
+  {
+   "descripcion": "Costo total del adelanto: interés más cargo de mercadeo de $34.95",
+   "expresion": "round(78.90+34.95,2)",
+   "resultado": 113.85
+  },
+  {
+   "descripcion": "Tasa anual equivalente real con el cargo incluido (32 días)",
+   "expresion": "round(113.85/2500*365/32*100,2)",
+   "resultado": 51.94
+  },
+  {
+   "descripcion": "Costo del adelanto más la preparación promedio de $236",
+   "expresion": "round(113.85+236,2)",
+   "resultado": 349.85
+  },
+  {
+   "descripcion": "Ese total como porcentaje de los $2,500 adelantados",
+   "expresion": "round(349.85/2500*100,2)",
+   "resultado": 13.99
+  },
+  {
+   "descripcion": "Costo si esperas ~21 días con e-file, depósito directo y Free File",
+   "expresion": "round(0*1,2)",
+   "resultado": 0.0
+  }
+ ],
+ "consejo": "Antes de aceptar un adelanto, pregunta tres cosas: ¿cuál es la tasa anual (APR)?, ¿qué cargos tiene además del interés?, ¿cuánto cobran por preparar la declaración? Revisa si calificas para Free File en irs.gov/freefile y declara tú gratis. Pide depósito directo y e-file, y espera unos 21 días. Si el apuro es real, pregunta primero por un adelanto de 0% y pide por escrito cuánto pagas en total.",
+ "que_no_decir": [
+  "Que todos los adelantos cobran 36% o más: algunos son de 0% APR",
+  "Que el IRS te paga siempre en 21 días: es lo normal, no una garantía, y puede tardar más",
+  "Que nunca conviene pagar a un preparador: si tu declaración es compleja, puede valer la pena",
+  "Prometer que Free File le sirve a todos: depende del ingreso",
+  "Dar cifras de tarifas de H&R Block o Jackson Hewitt como definitivas sin verificarlas",
+  "Que el adelanto es ilegal o una estafa",
+  "Prometer cuánto reembolso va a recibir alguien",
+  "Usar el mismo ejemplo de otros videos de la marca, como los $3,000, $12,000 o el 391% del préstamo de día de pago"
+ ],
+ "con_iul": false,
+ "idea": "El adelanto del reembolso que ofrece el preparador de impuestos: cuánto te cobran por tu propio dinero",
+ "gancho_pedido": "Te prestan tu propio reembolso, y te cobran por eso.",
+ "ganchos_recientes": [
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy."
+ ]
+}

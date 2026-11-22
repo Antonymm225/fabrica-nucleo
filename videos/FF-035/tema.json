@@ -1,0 +1,60 @@
+{
+ "titulo": "Los 5 meses sin cheque",
+ "angulo": "Crees que si el cuerpo falla el gobierno te cubre desde el primer día, pero la ley hace que el Seguro Social por incapacidad no pague nada durante los primeros 5 meses.",
+ "explicacion": "Si te lesionas la espalda o te dan un diagnóstico serio, no llega un cheque al día siguiente. Por ley, el Seguro Social por incapacidad empieza a pagar hasta el sexto mes completo después de que comenzó la incapacidad. Son 5 meses donde la renta, la troca y la comida siguen llegando y no entra nada. Ese hueco lo cubren tus ahorros, tus tarjetas o tu familia. Un seguro de vida indexado con beneficios en vida te permite usar parte del beneficio si te da una enfermedad crónica, crítica o terminal, justo en ese hueco.",
+ "datos": [
+  {
+   "dato": "Meses de espera antes de que el Seguro Social por incapacidad empiece a pagar (el beneficio inicia el sexto mes completo)",
+   "valor": 5,
+   "unidad": "meses",
+   "fuente": "https://www.ssa.gov/disability/professionals/bluebook/general-info.htm"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Gastos de la casa durante los 5 meses de espera, con un supuesto de $4,000 al mes (ejemplo ilustrativo, no es dato de fuente)",
+   "expresion": "4000*5",
+   "resultado": 20000
+  },
+  {
+   "descripcion": "Porcentaje del año sin ningún cheque de incapacidad",
+   "expresion": "round(5/12*100, 2)",
+   "resultado": 41.67
+  }
+ ],
+ "consejo": "Haz la cuenta de tu casa: multiplica lo que gastas al mes por 5. Ese es el hueco que tendrías que cubrir si tu cuerpo falla. Pregunta por un seguro de vida con beneficios en vida para enfermedad crónica, crítica o terminal, para que una parte del beneficio te llegue cuando no puedes trabajar. Pide que te expliquen cuánto puedes usar y qué condiciones tiene.",
+ "que_no_decir": [
+  "No prometas que el IUL paga desde el primer día ni que cubre cualquier lesión: los beneficios en vida aplican a enfermedad crónica, crítica o terminal, según la póliza.",
+  "No des cifras de aprobación, de tiempo de trámite ni de compensación al trabajador sin verificarlas en fuente oficial.",
+  "No presentes los $4,000 al mes como dato real: es un ejemplo.",
+  "No digas que el Seguro Social no paga nunca: sí paga, pero después de la espera.",
+  "No hables de rendimientos, de ahorro para el retiro ni de cuánto se junta en el IUL."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "El que trabaja con su cuerpo (roofing, construcción, jardinería): qué pasa con el ingreso si el cuerpo falla",
+ "gancho_pedido": "Tu espalda es tu herramienta más cara, y no tiene refacción.",
+ "ganchos_recientes": [
+  "Firmar por tu sobrino no es dar referencia. / Es deberle al banco la troca completa. / Al final te digo cuántos pagos / tienes que apartar antes de firmar.",
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas."
+ ]
+}

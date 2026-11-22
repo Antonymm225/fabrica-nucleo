@@ -1,0 +1,163 @@
+{
+ "titulo": "84 meses: la troca vale menos que tu deuda",
+ "angulo": "Pagas puntual cada mes y aun así, durante toda la primera mitad del préstamo de 84 meses, debes más de lo que tu troca vale en el mercado.",
+ "explicacion": "Una troca pierde valor rápido el primer año, pero un préstamo a 84 meses baja muy lento porque al inicio casi todo el pago son intereses. Ejemplo: financias $56,000 (troca de $52,000 más impuestos y cargos) a 84 meses y 9%, con $0 de enganche. Pagas $900.99 al mes. Al año debes $49,984 y la troca vale unos $41,600, así que debes $8,384 de más. Si te roban la troca, la chocas o necesitas venderla en esa etapa, el hueco lo pagas tú de tu bolsillo. Con 20% de enganche ($11,200), en el mes 12 ya debes menos de lo que vale la troca.",
+ "datos": [
+  {
+   "dato": "Supuesto del ejemplo (no verificado): precio de la troca nueva",
+   "valor": 52000,
+   "unidad": "$",
+   "fuente": "https://www.kbb.com/car-news/"
+  },
+  {
+   "dato": "Supuesto del ejemplo (no verificado): impuestos y cargos financiados (aprox. 7.7%)",
+   "valor": 4000,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/consumer-tools/auto-loans/"
+  },
+  {
+   "dato": "Supuesto del ejemplo (no verificado): tasa anual del préstamo",
+   "valor": 9,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/loans/auto-loans/average-car-loan-interest-rates/"
+  },
+  {
+   "dato": "Supuesto del ejemplo (no verificado): la troca pierde 20% de su valor el primer año y 10% cada año siguiente",
+   "valor": 20,
+   "unidad": "%",
+   "fuente": "https://www.kbb.com/car-news/"
+  },
+  {
+   "dato": "Plazo del préstamo del ejemplo",
+   "valor": 84,
+   "unidad": "meses",
+   "fuente": "https://www.consumerfinance.gov/consumer-tools/auto-loans/"
+  },
+  {
+   "dato": "Dato confirmado, ya usado en FF-014 (solo contexto, no usar como gancho): deuda promedio de quienes cambian su troca debiendo más de lo que vale, 4T 2025",
+   "valor": 7214,
+   "unidad": "$",
+   "fuente": "https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual a 84 meses, $56,000 al 9%",
+   "expresion": "56000*(0.09/12)/(1-(1+0.09/12)**-84)",
+   "resultado": 900.99
+  },
+  {
+   "descripcion": "Total pagado en 84 meses",
+   "expresion": "(56000*(0.09/12)/(1-(1+0.09/12)**-84))*84",
+   "resultado": 75683.02
+  },
+  {
+   "descripcion": "Intereses totales a 84 meses",
+   "expresion": "(56000*(0.09/12)/(1-(1+0.09/12)**-84))*84-56000",
+   "resultado": 19683.02
+  },
+  {
+   "descripcion": "Saldo que debes al mes 12",
+   "expresion": "56000*(1+0.09/12)**12-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**12-1)/(0.09/12)",
+   "resultado": 49984.0
+  },
+  {
+   "descripcion": "Valor de la troca al año 1",
+   "expresion": "52000*0.8*0.9**0",
+   "resultado": 41600.0
+  },
+  {
+   "descripcion": "Hueco al mes 12: lo que debes menos lo que vale",
+   "expresion": "(56000*(1+0.09/12)**12-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**12-1)/(0.09/12))-52000*0.8*0.9**0",
+   "resultado": 8384.0
+  },
+  {
+   "descripcion": "Saldo que debes al mes 24",
+   "expresion": "56000*(1+0.09/12)**24-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**24-1)/(0.09/12)",
+   "resultado": 43403.65
+  },
+  {
+   "descripcion": "Valor de la troca al año 2",
+   "expresion": "52000*0.8*0.9**1",
+   "resultado": 37440.0
+  },
+  {
+   "descripcion": "Hueco al mes 24",
+   "expresion": "(56000*(1+0.09/12)**24-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**24-1)/(0.09/12))-52000*0.8*0.9**1",
+   "resultado": 5963.65
+  },
+  {
+   "descripcion": "Saldo que debes al mes 42 (la mitad del préstamo)",
+   "expresion": "56000*(1+0.09/12)**42-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**42-1)/(0.09/12)",
+   "resultado": 32357.84
+  },
+  {
+   "descripcion": "Valor de la troca al mes 42 (3.5 años)",
+   "expresion": "52000*0.8*0.9**2.5",
+   "resultado": 31966.83
+  },
+  {
+   "descripcion": "Hueco al mes 42: casi en cero, pero todavía debes más",
+   "expresion": "(56000*(1+0.09/12)**42-(56000*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**42-1)/(0.09/12))-52000*0.8*0.9**2.5",
+   "resultado": 391.01
+  },
+  {
+   "descripcion": "Pago mensual a 48 meses, mismo préstamo",
+   "expresion": "56000*(0.09/12)/(1-(1+0.09/12)**-48)",
+   "resultado": 1393.56
+  },
+  {
+   "descripcion": "Intereses totales a 48 meses",
+   "expresion": "56000*(0.09/12)/(1-(1+0.09/12)**-48)*48-56000",
+   "resultado": 10890.99
+  },
+  {
+   "descripcion": "Intereses que te ahorras con 48 meses en vez de 84",
+   "expresion": "((56000*(0.09/12)/(1-(1+0.09/12)**-84))*84-56000)-(56000*(0.09/12)/(1-(1+0.09/12)**-48)*48-56000)",
+   "resultado": 8792.03
+  },
+  {
+   "descripcion": "Enganche del 20% sobre $56,000",
+   "expresion": "56000*0.2",
+   "resultado": 11200.0
+  },
+  {
+   "descripcion": "Pago mensual a 84 meses con $11,200 de enganche (préstamo de $44,800)",
+   "expresion": "44800*(0.09/12)/(1-(1+0.09/12)**-84)",
+   "resultado": 720.79
+  },
+  {
+   "descripcion": "Saldo al mes 12 con enganche de 20%",
+   "expresion": "44800*(1+0.09/12)**12-(44800*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**12-1)/(0.09/12)",
+   "resultado": 39987.2
+  },
+  {
+   "descripcion": "Cuánto vale la troca por encima de lo que debes al mes 12 con enganche de 20%",
+   "expresion": "41600-(44800*(1+0.09/12)**12-(44800*(0.09/12)/(1-(1+0.09/12)**-84))*((1+0.09/12)**12-1)/(0.09/12))",
+   "resultado": 1612.8
+  }
+ ],
+ "consejo": "Antes de firmar, pregunta cuánto vas a deber en el mes 12 y compáralo con lo que valdrá la troca. Pon al menos 20% de enganche. Pide el préstamo en 60 meses o menos, o escoge una troca más barata que sí puedas pagar así. Si no te alcanza el pago a 60 meses, es señal de que esa troca es muy cara para ti. Antes de ir al dealer, pide una tasa a tu banco para comparar. Si ya firmaste a 84 meses, paga un poco extra al capital cada mes para cerrar el hueco más rápido.",
+ "que_no_decir": [
+  "No decir que a la mitad exacta del préstamo ya debes mucho más: con estos números el hueco al mes 42 es de solo unos $391. Decir que durante toda la primera mitad debes más.",
+  "No presentar $56,000, 9% ni 20% de depreciación como cifras oficiales o promedio nacional hasta verificarlas con KBB, Edmunds, Experian o Bankrate.",
+  "No repetir los $40,000 a 72 meses de FF-002 ni los $7,214 de FF-014.",
+  "No prometer que con 20% de enganche nunca vas a deber más de lo que vale la troca: depende de la marca, el uso y el mercado.",
+  "No decir que el préstamo a 84 meses es ilegal o una estafa. Es legal, pero es riesgoso.",
+  "No dar a entender que sabes cuánto va a valer la troca en el futuro.",
+  "No recomendar cooperativas, planes del trabajo ni seguros como salida."
+ ],
+ "con_iul": false,
+ "idea": "El préstamo de troca a 84 meses: deber más de lo que vale la troca",
+ "gancho_pedido": "A la mitad del préstamo vas a deber más de lo que vale tu troca.",
+ "ganchos_recientes": [
+  "Si cobraste tu retiro al cambiar de trabajo, / el IRS se quedó con casi un tercio. / Al final te digo la frase exacta / que dices en vez de pedir el cheque.",
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses."
+ ]
+}

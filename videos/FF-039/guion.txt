@@ -1,0 +1,46 @@
+# FF-039 · Finanzas Familiares · EST-01 · El adelanto de tu propio reembolso
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa (APR) de adelantos de reembolso con interés en preparadores independientes (Refund Advantage) = 36 % · https://www.refund-advantage.com/taxpayer-advance-loan/
+# Fuente: Ejemplo del programa: adelanto de $2,500 por 32 días; total a pagar $2,578.90 = 2578.9 $ · https://www.refund-advantage.com/taxpayer-advance-loan/
+# Fuente: Cargo de mercadeo por adelanto aprobado en temporada con refund transfer = 34.95 $ · https://www.refund-advantage.com/taxpayer-advance-loan/
+# Fuente: Algunos adelantos (ej. TurboTax Refund Advance) son de 0% APR y sin cargos; otros en la lista de NerdWallet llegan a 35.99% = 35.99 % · https://www.nerdwallet.com/personal-loans/learn/tax-refund-loans-give-cash-now-to-early-filers
+# Fuente: Con e-file y depósito directo el IRS normalmente emite el reembolso en este plazo = 21 días · https://www.newsnationnow.com/business/your-money/how-long-to-get-tax-refund/
+# Fuente: Tarifa base promedio de un preparador por una declaración 1040 básica (NATP, temporada 2026) = 236 $ · https://www.britannica.com/money/cost-to-file-taxes
+# Fuente: Free File: declarar gratis si tu ingreso bruto ajustado es de este monto o menos (confirmar tope vigente en irs.gov/freefile) = 84000 $ · https://www.britannica.com/money/cost-to-file-taxes
+# BLOQUE 1
+Te prestan *tu propio reembolso*,
+y te cobran por *eso*.
+Al final te digo las *tres letras*
+que él no te lee *en voz alta*.
+Se llama el *adelanto* del reembolso.
+Tu preparador te dice: sales con dinero *hoy*.
+Suena a ayuda, ¿*verdad*?
+Pero el IRS te lo paga normalmente
+con *depósito directo* en unos [21|veintiún] días.
+Esa espera es la que *te cobran*.
+Digamos un adelanto de [$2,500|dos mil quinientos dólares]
+por [32|treinta y dos] *días*.
+Con interés de [36%|treinta y seis por ciento] al *año*,
+son [$78.90|setenta y ocho dólares con noventa centavos] de *interés*.
+Más un *cargo de mercadeo*: [$34.95|treinta y cuatro dólares con noventa y cinco centavos].
+Y aquí viene lo que *nadie te dice*.
+Con todo y cargo, pagas [$113.85|ciento trece dólares con ochenta y cinco centavos].
+Eso ya es casi [52%|cincuenta y dos por ciento] *al año*.
+Son semanas de *gasolina* para ir a la obra.
+Y todavía te cobran la *preparación*:
+en promedio, [$236|doscientos treinta y seis dólares].
+Cuando podías declarar *gratis*
+con [Free File|fri fail], si tu ingreso califica.
+Entre adelanto y preparación,
+pierdes cerca de [$350|trescientos cincuenta dólares]
+por esperar *unas semanas*.
+Ahora sí, las tres letras: [APR|a pe erre].
+Es la *tasa anual*. Pídela por escrito.
+Pregunta también qué *otros cargos* hay,
+y cuánto cobran por *preparar* tu declaración.
+Algunos adelantos son de [0%|cero por ciento],
+pero primero *pregunta*, y luego firmas.
+Si no hay apuro, pide *depósito directo*
+y espera tus [21|veintiún] *días*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a *declarar impuestos*.

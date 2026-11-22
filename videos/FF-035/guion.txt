@@ -1,0 +1,45 @@
+# FF-035 · Finanzas Familiares · EST-01 · Los cinco meses sin cheque
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Meses de espera antes de que el Seguro Social por incapacidad empiece a pagar (el beneficio inicia el sexto mes completo) = 5 meses · https://www.ssa.gov/disability/professionals/bluebook/general-info.htm
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu *espalda* es tu herramienta más cara,
+y no tiene *refacción*.
+Si se lastima, el Seguro Social
+no te paga nada en [5|cinco] *meses*.
+Al final te digo qué *número* multiplicas
+para medir tu *hueco*.
+Se llama los *cinco meses* sin cheque.
+Un lunes te *lastimas* en la obra.
+Piensas que el *gobierno* te cubre.
+Pero el Seguro Social por *incapacidad*
+empieza a pagar hasta el *sexto mes* completo.
+Y aquí viene lo que *nadie* te dice:
+durante ese tiempo no entra *nada*.
+Pero la *renta* sigue llegando,
+y el bil de la *luz* también.
+Pongamos los gastos normales de tu casa.
+Son [5|cinco] *meses* sin un cheque.
+En un ejemplo, eso suma
+[$20,000|veinte mil dólares] que *no entran*.
+Ese hueco lo cubren tus *ahorros*,
+tus *tarjetas* o tu familia.
+Para ese hueco hay un [IUL|a yu el],
+un *seguro de vida indexado*.
+Si te da una enfermedad *crónica*,
+*crítica* o terminal,
+puedes usar parte del beneficio *en vida*,
+según las condiciones de tu *póliza*.
+Es *tuyo*, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, tiene *piso cero*.
+Ahora sí, la *cuenta* de un paso:
+lo que gastas al mes, por [5|cinco].
+Ese es el *hueco* que debes cubrir.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja con su *cuerpo*.

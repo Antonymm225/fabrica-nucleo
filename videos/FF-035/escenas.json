@@ -1,0 +1,613 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: gastos de la casa de $4,000 al mes durante 5 meses (supuesto ilustrativo, no es dato de fuente). Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu espalda",
+   "contador": "herramienta |más cara",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 30,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "refacción"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "sin refacción",
+     "x": 70,
+     "y": 45,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      1,
+      "refacción"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "seguro social",
+   "contador": "espera |5 meses",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 22,
+     "y": 58,
+     "tam": 26,
+     "etiqueta": "5 MESES",
+     "en": [
+      3,
+      "5"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto hueco?",
+     "piensa": true,
+     "cola": 1,
+     "x": 72,
+     "y": 20,
+     "en": [
+      5,
+      "hueco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "el problema",
+   "filas": [
+    "SIN",
+    "CHEQUE"
+   ],
+   "en": [
+    6,
+    "cheque"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el lunes",
+   "contador": "lunes |te lastimas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       8,
+       "cubre"
+      ],
+      "cara": "neutro"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¡Mi espalda!",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      7,
+      "lastimas"
+     ],
+     "sale": [
+      8,
+      "Piensas"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "El gobierno me cubre",
+     "piensa": true,
+     "cola": 1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      8,
+      "gobierno"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "EL GOBIERNO",
+     "en": [
+      8,
+      "gobierno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "la ley",
+   "contador": "cheque |mes seis",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Seguro Social",
+     "en": [
+      9
+     ],
+     "renglones": [
+      {
+       "texto": "Meses 1 al 5",
+       "valor": "$0",
+       "en": [
+        10,
+        "pagar"
+       ]
+      },
+      {
+       "texto": "Mes 6",
+       "valor": "Empieza",
+       "en": [
+        10,
+        "sexto"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       12,
+       "nada"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      11,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "los gastos",
+   "contador": "gastos |siguen",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 24,
+     "tam": 28,
+     "etiqueta": "LA RENTA",
+     "en": [
+      13,
+      "renta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 24,
+     "tam": 28,
+     "etiqueta": "LA LUZ",
+     "en": [
+      14,
+      "luz"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SIGUEN LLEGANDO",
+     "x": 50,
+     "y": 66,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      14,
+      "también"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "el hueco",
+   "contador": "hueco |$20,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 26,
+     "tam": 28,
+     "etiqueta": "5 MESES"
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 20000,
+     "prefijo": "$",
+     "x": 50,
+     "y": 70,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      17,
+      "suma"
+     ],
+     "hasta": [
+      18,
+      "20,000"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NO ENTRAN",
+     "color": "rojo",
+     "x": 50,
+     "y": 26,
+     "en": [
+      18,
+      "entran"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "quién paga",
+   "contador": "hueco |$20,000",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 18,
+     "y": 35,
+     "tam": 24,
+     "etiqueta": "AHORROS",
+     "en": [
+      19,
+      "ahorros"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 50,
+     "y": 35,
+     "tam": 24,
+     "etiqueta": "TARJETAS",
+     "en": [
+      20,
+      "tarjetas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 82,
+     "y": 35,
+     "tam": 24,
+     "etiqueta": "FAMILIA",
+     "en": [
+      20,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |en vida",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "x": 70,
+     "y": 18,
+     "tam": 8,
+     "color": "principal",
+     "en": [
+      21,
+      "IUL"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 70,
+     "y": 58,
+     "tam": 30,
+     "en": [
+      23,
+      "enfermedad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "en vida",
+   "contador": "usas |parte",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "h",
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 28,
+     "y": 38,
+     "tam": 30
+    },
+    {
+     "id": "p",
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      25,
+      "usar"
+     ],
+     "cambia": {
+      "en": [
+       25,
+       "vida"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "dinero",
+     "de": "h",
+     "a": "p",
+     "en": [
+      25,
+      "beneficio"
+     ],
+     "hasta": [
+      26,
+      "póliza"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "tu dinero",
+   "contador": "hasta |10% al año",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 100,
+     "final": 110,
+     "barras": 6,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN UN AÑO",
+     "etiqueta": "hasta 10%",
+     "x": 50,
+     "y": 85,
+     "en": [
+      27
+     ],
+     "hasta": [
+      29,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "tu hueco |$20,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "mes x 5",
+    "etiqueta": "es tu hueco",
+    "en": [
+     31,
+     "por"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     32,
+     "cubrir"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "siguiente paso",
+   "contador": "link |en biografía",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Tu link aquí",
+     "x": 25,
+     "y": 45
+    },
+    {
+     "id": "l",
+     "que": "texto",
+     "texto": "LINK",
+     "x": 72,
+     "y": 20,
+     "tam": 7,
+     "color": "principal",
+     "en": [
+      34,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "l",
+     "en": [
+      34,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 65,
+     "tam": 28,
+     "en": [
+      36,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,648 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: papá con dos hijos con seguro social y un ingreso de trabajo normal. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu nombre",
+   "contador": "dinero |del IRS",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 50,
+     "y": 36,
+     "tam": 36,
+     "etiqueta": "A TU NOMBRE",
+     "en": [
+      0,
+      "dinero"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "en": [
+      1,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tus hijos",
+   "contador": "sin |cobrar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 94,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 52,
+     "tam": 30,
+     "en": [
+      2,
+      "hijos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SIN COBRAR",
+     "x": 28,
+     "y": 12,
+     "color": "principal",
+     "en": [
+      3,
+      "cobrar"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué papel será?",
+     "piensa": true,
+     "cola": 1,
+     "x": 75,
+     "y": 22,
+     "en": [
+      4,
+      "papel"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "CREDITO",
+    "HIJOS"
+   ],
+   "en": [
+    6,
+    "crédito"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "lo que creen",
+   "contador": "hasta |2024",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       9,
+       "seguro"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Con ITIN no se cobra",
+     "piensa": false,
+     "cola": -1,
+     "x": 22,
+     "y": 24,
+     "en": [
+      7,
+      "ITIN"
+     ],
+     "sale": [
+      8,
+      "Pero"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "HASTA 2024",
+     "en": [
+      8,
+      "2024"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 68,
+     "tam": 26,
+     "etiqueta": "SSN DEL HIJO",
+     "en": [
+      9,
+      "seguro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "dos |hijos",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "PAPÁ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 64,
+     "tam": 30,
+     "en": [
+      10,
+      "hijos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "DOS HIJOS",
+     "x": 50,
+     "y": 20,
+     "color": "verde",
+     "en": [
+      11,
+      "oficio"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "por hijo",
+   "contador": "hasta |$1,700",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 92,
+     "tam": 48,
+     "valor": 1700,
+     "max": 1700,
+     "prefijo": "$",
+     "etiqueta": "HIJO 1",
+     "en": [
+      12,
+      "parte"
+     ],
+     "hasta": [
+      13,
+      "1,700"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 68,
+     "y": 92,
+     "tam": 48,
+     "valor": 1700,
+     "max": 1700,
+     "prefijo": "$",
+     "etiqueta": "HIJO 2",
+     "en": [
+      13,
+      "por"
+     ],
+     "hasta": [
+      13,
+      "hijo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EN EFECTIVO",
+     "x": 50,
+     "y": 10,
+     "color": "verde",
+     "en": [
+      12,
+      "efectivo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    14
+   ],
+   "capitulo": "sin cobrar",
+   "contador": "hasta |$3,400",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$3,400",
+    "etiqueta": "sin cobrar",
+    "en": [
+     14,
+     "3,400"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "LA RENTA",
+    "en": [
+     15,
+     "renta"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "sin aviso",
+   "contador": "el IRS |no avisa",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra"
+    },
+    {
+     "id": "IRS",
+     "que": "celular",
+     "modo": "mensaje",
+     "de": "IRS",
+     "texto": "Sin mensajes nuevos",
+     "x": 24,
+     "y": 60,
+     "tam": 24,
+     "en": [
+      17,
+      "IRS"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y mi aviso?",
+     "piensa": true,
+     "cola": 1,
+     "x": 76,
+     "y": 16,
+     "en": [
+      17,
+      "ningún"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN AVISO",
+     "color": "rojo",
+     "x": 24,
+     "y": 60,
+     "en": [
+      17,
+      "aviso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "el reloj",
+   "contador": "plazo |3 años",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 68,
+     "y": 38,
+     "tam": 36,
+     "etiqueta": "3 AÑOS",
+     "en": [
+      18,
+      "pedir"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "en": [
+      19,
+      "presentaste"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SE VENCE",
+     "color": "rojo",
+     "x": 68,
+     "y": 38,
+     "en": [
+      20,
+      "pedirlo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "desde 2025",
+   "contador": "regla |nueva",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "DESDE 2025",
+     "en": [
+      21,
+      "desde"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "SEGURO SOCIAL",
+     "en": [
+      22,
+      "seguro"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "QUIEN DECLARA",
+     "en": [
+      22,
+      "quien"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "solo ITIN",
+   "contador": "crédito |$500",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "SOLO CON ITIN",
+     "x": 50,
+     "y": 10,
+     "color": "tinta"
+    },
+    {
+     "que": "cifra",
+     "texto": "$500",
+     "x": 50,
+     "y": 38,
+     "tam": 11,
+     "color": "principal",
+     "etiqueta": "por dependiente",
+     "en": [
+      24,
+      "500"
+     ]
+    },
+    {
+     "id": "bi",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 50,
+     "y": 80,
+     "tam": 22,
+     "etiqueta": "EN EFECTIVO",
+     "en": [
+      26,
+      "devuelve"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "bi",
+     "en": [
+      26,
+      "efectivo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "el papel",
+   "contador": "forma |1040-X",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Declaración enmendada",
+     "en": [
+      27,
+      "Ahora"
+     ],
+     "renglones": [
+      {
+       "texto": "Se llama",
+       "valor": "Enmendada",
+       "en": [
+        28,
+        "enmendada"
+       ]
+      },
+      {
+       "texto": "Forma",
+       "valor": "1040-X",
+       "en": [
+        29,
+        "forma"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       29,
+       "1040-X"
+      ],
+      "texto": "¡ESTE!"
+     }
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 82,
+     "en": [
+      29,
+      "forma"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "qué hacer",
+   "contador": "qué llevar |y dónde",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      30,
+      "Pídela"
+     ],
+     "items": [
+      {
+       "texto": "Pídela en VITA, ayuda gratis del IRS",
+       "en": [
+        30,
+        "VITA"
+       ]
+      },
+      {
+       "texto": "Seguro social de tus hijos",
+       "en": [
+        31,
+        "seguro"
+       ]
+      },
+      {
+       "texto": "Tu ITIN y tus comprobantes",
+       "en": [
+        32,
+        "ITIN"
+       ]
+      },
+      {
+       "texto": "Ellos revisan si te toca",
+       "en": [
+        33,
+        "revisan"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      33,
+      "toca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

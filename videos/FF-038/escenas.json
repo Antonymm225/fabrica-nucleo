@@ -1,0 +1,701 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: $200 al mes de los 30 a los 60, con 10% al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cheque",
+   "contador": "cheque |de retiro",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "apenas"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 24,
+     "tam": 24,
+     "etiqueta": "TU CHEQUE",
+     "en": [
+      0,
+      "Seguro"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 66,
+     "tam": 26,
+     "etiqueta": "LA RENTA",
+     "en": [
+      1,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la pregunta",
+   "contador": "apartas |al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       3,
+       "apartar"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto debo apartar?",
+     "piensa": true,
+     "cola": 1,
+     "x": 28,
+     "y": 24,
+     "en": [
+      2,
+      "cuántos"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "DESDE HOY",
+     "en": [
+      3,
+      "desde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el problema",
+   "filas": [
+    "HUECO",
+    "RETIRO"
+   ],
+   "en": [
+    4,
+    "hueco"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la cuenta",
+   "contador": "te sobran |$218",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Un mes de retiro",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Cheque promedio",
+       "valor": "$2,008",
+       "en": [
+        5,
+        "2,008"
+       ]
+      },
+      {
+       "texto": "Renta mediana",
+       "valor": "-$1,790",
+       "en": [
+        6,
+        "1,790"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       6,
+       "renta"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Te sobran",
+      "valor": "$218",
+      "en": [
+       7,
+       "218"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "lo que sobra",
+   "contador": [
+    {
+     "en": [
+      8
+     ],
+     "texto": "te sobran |$218"
+    },
+    {
+     "en": [
+      10
+     ],
+     "texto": "te sobran |$9"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       11,
+       "sobran"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 84,
+     "y": 16,
+     "tam": 15,
+     "etiqueta": "TUS $218",
+     "en": [
+      8,
+      "luz"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 80,
+     "y": 62,
+     "tam": 20,
+     "etiqueta": "TRES CUARTOS",
+     "en": [
+      9,
+      "tres"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y con $9 qué hago?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 32,
+     "en": [
+      11,
+      "sobran"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el recorte",
+   "contador": [
+    {
+     "en": [
+      12
+     ],
+     "texto": "en |2034"
+    },
+    {
+     "en": [
+      14
+     ],
+     "texto": "se paga |81%"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "ropa": 3
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 36,
+     "tam": 30,
+     "etiqueta": "AÑO 2034",
+     "en": [
+      13,
+      "2034"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "81%",
+     "x": 28,
+     "y": 74,
+     "tam": 9,
+     "color": "gris",
+     "en": [
+      14,
+      "81"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "no alcanza",
+   "contador": "cheque |$1,627",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 1627,
+     "max": 1790,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TU CHEQUE",
+     "en": [
+      15,
+      "cheque"
+     ],
+     "hasta": [
+      15,
+      "1,627"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 1790,
+     "max": 1790,
+     "prefijo": "$",
+     "etiqueta": "LA RENTA",
+     "en": [
+      15,
+      "promedio"
+     ],
+     "hasta": [
+      15,
+      "1,627"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "No alcanza",
+     "color": "principal",
+     "x": 50,
+     "y": 22,
+     "tam": 7,
+     "en": [
+      16,
+      "alcanza"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      17
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      18
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      19
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      17
+     ],
+     "items": [
+      {
+       "texto": "Resta tu renta de tu cheque",
+       "en": [
+        17,
+        "renta"
+       ]
+      },
+      {
+       "texto": "Mira cuánto te queda",
+       "en": [
+        18,
+        "queda"
+       ]
+      },
+      {
+       "texto": "Junta tu propio dinero",
+       "en": [
+        19,
+        "propio"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       19,
+       "juntar"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "la opción",
+   "contador": "crece |hasta 10%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 92,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 4
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 70,
+     "y": 22,
+     "tam": 22,
+     "etiqueta": "TUYO",
+     "en": [
+      20,
+      "seguro"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "hasta 10%",
+     "x": 68,
+     "y": 55,
+     "tam": 8,
+     "color": "verde",
+     "en": [
+      22,
+      "hasta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "piso cero",
+   "contador": "piso |0%",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 100,
+     "final": 400,
+     "barras": 10,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "tu dinero",
+     "tam": 60,
+     "x": 50,
+     "y": 90,
+     "en": [
+      23,
+      "Si"
+     ],
+     "hasta": [
+      25,
+      "dije"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Piso cero: no pierdes",
+     "color": "verde",
+     "x": 50,
+     "y": 6,
+     "tam": 4.5,
+     "en": [
+      24,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    26
+   ],
+   "capitulo": "tu retiro",
+   "contador": "ahorras |$200 al mes",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$434,000",
+    "etiqueta": "podrías llegar",
+    "en": [
+     28,
+     "434,000"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     28,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "el tiempo",
+   "contador": "tú pusiste |$72,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 26,
+     "y": 95,
+     "tam": 50,
+     "valor": 72000,
+     "max": 434000,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TÚ PUSISTE",
+     "en": [
+      29,
+      "De"
+     ],
+     "hasta": [
+      29,
+      "72,000"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 434000,
+     "max": 434000,
+     "prefijo": "$",
+     "etiqueta": "AL FINAL",
+     "en": [
+      30,
+      "demás"
+     ],
+     "hasta": [
+      30,
+      "crecimiento"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Más tiempo, más dinero",
+     "color": "verde",
+     "x": 50,
+     "y": 20,
+     "tam": 5,
+     "en": [
+      31,
+      "trabaja"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "tu paso",
+   "contador": "link |en biografía",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está el link",
+     "x": 28,
+     "y": 48,
+     "en": [
+      32,
+      "Si"
+     ]
+    },
+    {
+     "id": "lnk",
+     "que": "texto",
+     "texto": "LINK",
+     "color": "principal",
+     "x": 72,
+     "y": 24,
+     "tam": 6,
+     "en": [
+      33,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lnk",
+     "en": [
+      33,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 68,
+     "tam": 30,
+     "en": [
+      35,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

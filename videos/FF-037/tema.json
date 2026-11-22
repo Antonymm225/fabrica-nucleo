@@ -1,0 +1,114 @@
+{
+ "titulo": "El crédito por hijos que tu ITIN sí pudo cobrar",
+ "angulo": "Mucha gente cree que con ITIN no se cobra el crédito por hijos, pero hasta el año fiscal 2024 lo que importaba era el SSN del hijo, y hay 3 años para reclamarlo; desde 2025 la regla cambió.",
+ "explicacion": "El IRS no te manda aviso de los créditos que no reclamaste. Hasta el año fiscal 2024, un padre con ITIN podía reclamar el Crédito Tributario por Hijos si el hijo tenía SSN válido para trabajar. La parte que te devuelven en efectivo llega hasta $1,700 por hijo, y es el 15% de lo que ganaste arriba de $2,500. Un hogar con dos hijos y $32,000 de ingreso puede dejar $3,400 sin cobrar. Para pedir un reembolso de años pasados tienes 3 años desde que presentaste tu declaración. Desde el año fiscal 2025 la ley pide SSN válido en el contribuyente. Si solo hay ITIN, queda el crédito de $500 por dependiente, que solo baja el impuesto y no se devuelve en efectivo.",
+ "datos": [
+  {
+   "dato": "Crédito Tributario por Hijos 2025, por hijo menor de 17 con SSN",
+   "valor": 2200,
+   "unidad": "$",
+   "fuente": "https://www.congress.gov/crs-product/R41873"
+  },
+  {
+   "dato": "Parte reembolsable máxima (Additional Child Tax Credit) por hijo, 2025",
+   "valor": 1700,
+   "unidad": "$",
+   "fuente": "https://www.congress.gov/crs-product/R41873"
+  },
+  {
+   "dato": "Fórmula del reembolso: porcentaje de ingreso ganado arriba del umbral",
+   "valor": 15,
+   "unidad": "%",
+   "fuente": "https://www.congress.gov/crs-product/R41873"
+  },
+  {
+   "dato": "Umbral de ingreso ganado a partir del cual cuenta el 15%",
+   "valor": 2500,
+   "unidad": "$",
+   "fuente": "https://www.congress.gov/crs-product/R41873"
+  },
+  {
+   "dato": "Crédito por otros dependientes (dependiente con ITIN), no reembolsable",
+   "valor": 500,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/tin/itin/individual-taxpayer-identification-number-itin"
+  },
+  {
+   "dato": "Plazo para reclamar reembolso con Form 1040-X desde que presentaste la declaración original",
+   "valor": 36,
+   "unidad": "meses",
+   "fuente": "https://www.irs.gov/taxtopics/tc308"
+  },
+  {
+   "dato": "Desde 2025 se exige SSN válido para trabajar en el contribuyente (o en un cónyuge si declaran juntos) para el crédito por hijos",
+   "valor": 1,
+   "unidad": "SSN requerido",
+   "fuente": "https://www.congress.gov/crs-product/R48312"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Reembolso por la fórmula del 15%, familia con ingreso ganado de $32,000 (antes del tope por hijos)",
+   "expresion": "round(0.15*(32000-2500),2)",
+   "resultado": 4425.0
+  },
+  {
+   "descripcion": "Tope de la parte reembolsable para 2 hijos con SSN ($1,700 cada uno)",
+   "expresion": "2*1700",
+   "resultado": 3400
+  },
+  {
+   "descripcion": "Dinero que recibe la familia que sí reclama (el menor entre fórmula y tope)",
+   "expresion": "min(round(0.15*(32000-2500),2), 2*1700)",
+   "resultado": 3400
+  },
+  {
+   "descripcion": "Dinero que deja sin cobrar la familia que no declara ni reclama (A contra B)",
+   "expresion": "3400-0",
+   "resultado": 3400
+  },
+  {
+   "descripcion": "Crédito por otros dependientes para 2 dependientes en 2025 (solo baja el impuesto, no se devuelve)",
+   "expresion": "2*500",
+   "resultado": 1000
+  },
+  {
+   "descripcion": "Crédito por hijos completo de 2 hijos para una familia que sí cumple la regla de SSN en 2025",
+   "expresion": "2*2200",
+   "resultado": 4400
+  },
+  {
+   "descripcion": "Diferencia entre ese crédito completo y el crédito de $500 por dependiente en 2025",
+   "expresion": "2*2200-2*500",
+   "resultado": 3400
+  },
+  {
+   "descripcion": "Reembolso por hijo con el mismo ingreso de $32,000 y un solo hijo (la fórmula no limita)",
+   "expresion": "min(round(0.15*(32000-2500),2), 1700)",
+   "resultado": 1700
+  }
+ ],
+ "consejo": "Junta los SSN de tus hijos, tu ITIN y tus comprobantes de ingreso (W-2, 1099 o registro de pagos). Revisa qué años declaraste. Si fue 2024 o antes y no reclamaste el crédito por tus hijos con SSN, pide en VITA (preparación de impuestos gratis del IRS) o con un preparador con PTIN que revise si te toca una declaración enmendada (Form 1040-X) antes de que se cumplan los 3 años. Para 2025 en adelante, pregunta qué crédito te queda según tus números de identificación. Si tu hijo no tiene SSN, pregunta por el ITIN del dependiente.",
+ "que_no_decir": [
+  "No prometas que todas las familias con ITIN reciben $3,400 ni ninguna cantidad fija",
+  "No digas que con ITIN siempre se cobra el crédito por hijos; desde 2025 cambió y se pide SSN válido en el contribuyente",
+  "No digas que el IRS 'te debe' ese dinero ni que es 'dinero gratis'",
+  "No digas que el crédito de $500 por dependiente se devuelve en efectivo; solo baja el impuesto que debes",
+  "No recomiendes notarios ni gente que cobra un porcentaje del reembolso",
+  "No des consejos migratorios ni digas que declarar no afecta tu situación migratoria",
+  "No digas que el plazo de 3 años es igual para todos; depende de cuándo presentaste o si nunca declaraste"
+ ],
+ "con_iul": false,
+ "idea": "Créditos por hijos y dinero del IRS que muchas familias con ITIN no reclaman",
+ "gancho_pedido": "Hay dinero del IRS con tu nombre que nadie te va a avisar que existe.",
+ "ganchos_recientes": [
+  "Si te pagan por día, / puede que te deban cinco semanas al año. / Hay una cuenta que casi nadie hace. / Y al final te digo a qué oficina",
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto"
+ ]
+}

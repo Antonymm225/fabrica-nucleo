@@ -1,0 +1,116 @@
+{
+ "titulo": "El cheque que paga la renta y ya",
+ "angulo": "Pagaste Seguro Social toda la vida y el cheque promedio apenas paga la renta promedio (te sobran $218), y si se recorta en 2034 ni eso.",
+ "explicacion": "El cheque promedio de retiro del Seguro Social es de unos $2,008 al mes. La renta mediana en el país es de $1,790. Eso te deja unos $218 para comida, luz, gasolina, teléfono y medicinas. Si necesitas una casa de 3 cuartos para la familia (renta de $1,999), te sobran $9. Si en 2034 se paga solo 81% de lo prometido, el cheque promedio baja a $1,626.73 y ya no alcanza ni para la renta. La salida es juntar tu propio dinero desde hoy: con $200 al mes desde los 30 hasta los 60, un IUL con crecimiento máximo de 10% al año podría llegar a $434,264.22, de los cuales tú pusiste $72,000.",
+ "datos": [
+  {
+   "dato": "Cheque promedio mensual de retiro del Seguro Social (agosto 2025)",
+   "valor": 2008.31,
+   "unidad": "$",
+   "fuente": "https://www.seniorliving.org/finance/social-security/statistics/"
+  },
+  {
+   "dato": "Renta mediana pedida en EE. UU. (agosto 2025)",
+   "valor": 1790,
+   "unidad": "$",
+   "fuente": "https://www.redfin.com/news/rental-tracker-august-2025/"
+  },
+  {
+   "dato": "Renta mediana pedida para apartamentos de 3+ cuartos (abril 2025)",
+   "valor": 1999,
+   "unidad": "$",
+   "fuente": "https://www.redfin.com/news/rental-tracker-april-2025/"
+  },
+  {
+   "dato": "Porcentaje de beneficios programados que se podría pagar después de que se agoten las reservas (2034)",
+   "valor": 81,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/oact/TR/2025/II_A_highlights.html"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que sobra del cheque promedio después de la renta mediana",
+   "expresion": "round(2008.31-1790,2)",
+   "resultado": 218.31
+  },
+  {
+   "descripcion": "Lo que sobra del cheque promedio después de renta de 3+ cuartos",
+   "expresion": "round(2008.31-1999,2)",
+   "resultado": 9.31
+  },
+  {
+   "descripcion": "Cheque promedio mensual si se paga solo 81%",
+   "expresion": "round(2008.31*0.81,2)",
+   "resultado": 1626.73
+  },
+  {
+   "descripcion": "Diferencia contra la renta mediana con el cheque recortado (negativo = falta)",
+   "expresion": "round(2008.31*0.81-1790,2)",
+   "resultado": -163.27
+  },
+  {
+   "descripcion": "Cheque promedio al año",
+   "expresion": "round(2008.31*12,2)",
+   "resultado": 24099.72
+  },
+  {
+   "descripcion": "Aporte total de $200 al mes durante 30 años (de los 30 a los 60)",
+   "expresion": "2400*30",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Dinero acumulado a los 60 con $2,400 al año al inicio de cada año, 10% anual, 30 años",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1,2)",
+   "resultado": 434264.22
+  },
+  {
+   "descripcion": "Crecimiento ganado sobre lo aportado",
+   "expresion": "round(2400*((1.1**30-1)/0.1)*1.1-72000,2)",
+   "resultado": 362264.22
+  }
+ ],
+ "consejo": "Haz la cuenta de tu renta o hipoteca de hoy y réstala de $2,008: eso es lo que te quedaría. Decide cuánto quieres tener aparte del Seguro Social y empieza a ahorrar una cantidad fija cada mes desde ahora. Pregunta por un IUL como una opción para ese ahorro: crece hasta 10% al año, con piso de cero, y el dinero que juntas no tiene tope.",
+ "que_no_decir": [
+  "Que el Seguro Social 'no paga ni la renta': con el promedio sí la paga, y lo que sobra es poco",
+  "Que el Seguro Social se va a acabar o desaparecer: en 2034 se seguiría pagando cerca de 81%",
+  "Que el 10% está garantizado: es el máximo de un año, y el piso es cero",
+  "Que $434,264.22 es una promesa: es una proyección con 10% todos los años",
+  "Que el cheque promedio es lo que tú vas a cobrar: depende de tu historial de sueldo y de la edad en que cobres",
+  "Repetir el gasto total mensual de $6,440 ni la cifra de $1,537 de incapacidad de videos anteriores",
+  "Que el IUL es una inversión en bolsa o que sustituye todo tu plan de retiro"
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "El cheque promedio del Seguro Social contra lo que cuesta vivir un mes en Estados Unidos",
+ "gancho_pedido": "El cheque promedio del Seguro Social no paga ni la renta.",
+ "ganchos_recientes": [
+  "Tener seguro de vida / es más barato que no tenerlo. / Al final te digo por cuánto / multiplicas tu sueldo para proteger a tu familia.",
+  "Si tu casero se quedó con tu depósito, / puede que te deba más que el depósito. / Al final te digo el papel exacto / que mandas el día que entregas las llaves.",
+  "Pagando solo el mínimo, esa compra / la terminas cuando tu hijo se gradúe. / Sí, son 15 años. / Al final te digo dónde sale ese número",
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar."
+ ]
+}

@@ -1,0 +1,49 @@
+# FF-036 · Finanzas Familiares · EST-01 · La troca que vale menos que tu deuda
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Supuesto del ejemplo (no verificado): precio de la troca nueva = 52000 $ · https://www.kbb.com/car-news/
+# Fuente: Supuesto del ejemplo (no verificado): impuestos y cargos financiados (aprox. 7.7%) = 4000 $ · https://www.consumerfinance.gov/consumer-tools/auto-loans/
+# Fuente: Supuesto del ejemplo (no verificado): tasa anual del préstamo = 9 % · https://www.bankrate.com/loans/auto-loans/average-car-loan-interest-rates/
+# Fuente: Supuesto del ejemplo (no verificado): la troca pierde 20% de su valor el primer año y 10% cada año siguiente = 20 % · https://www.kbb.com/car-news/
+# Fuente: Plazo del préstamo del ejemplo = 84 meses · https://www.consumerfinance.gov/consumer-tools/auto-loans/
+# Fuente: Dato confirmado, ya usado en FF-014 (solo contexto, no usar como gancho): deuda promedio de quienes cambian su troca debiendo más de lo que vale, 4T 2025 = 7214 $ · https://www.cnbc.com/2026/03/30/negative-equity-trade-ins-car-buyers.html
+# BLOQUE 1
+Pagas tu troca *puntual* cada mes,
+y a la mitad del préstamo
+todavía debes más de lo que *vale*.
+Al final te digo el número exacto
+que pides *por escrito* antes de firmar.
+Se llama la *deuda al revés*.
+Compras una troca de [$52,000|cincuenta y dos mil dólares].
+Con impuestos y cargos, financias [$56,000|cincuenta y seis mil].
+A [84|ochenta y cuatro] meses, al [9%|nueve por ciento].
+Sin *enganche*. Pagas unos [$900|novecientos dólares] al mes.
+Suena *manejable*, ¿verdad?
+Pero la troca pierde valor *rápido*.
+Al primer año, solo vale [$41,600|cuarenta y un mil seiscientos].
+Y tú todavía debes casi [$50,000|cincuenta mil].
+O sea, debes [$8,384|ocho mil trescientos ochenta y cuatro] de *más*.
+Pero aquí viene lo que *nadie* te dice:
+al inicio, buena parte del pago es *interés*,
+por eso la deuda baja tan *lento*.
+Si la chocas o te la roban,
+o necesitas venderla en ese momento,
+ese hueco sale de *tu bolsillo*.
+Son meses de trabajo solo para *tapar un hueco*.
+Y no es solo el primer año.
+Y a la mitad del préstamo,
+todavía debes unos [$400|cuatrocientos dólares] de *más*.
+Primero: pon [20%|veinte por ciento] de *enganche*.
+Sobre [$56,000|cincuenta y seis mil] son [$11,200|once mil doscientos dólares].
+Con eso, en el mes [12|doce]
+ya debes menos de lo que vale.
+Segundo: pide un plazo de *cinco años* o menos.
+Si no te alcanza el pago así,
+esa troca es muy *cara* para ti.
+Tercero: pide una tasa a tu banco primero.
+Ahora sí, el número que pides *por escrito*:
+cuánto vas a deber en el mes [12|doce].
+Compáralo con lo que *podría valer* tu troca.
+Si ya firmaste a [84|ochenta y cuatro] meses,
+paga un poco extra *al capital* cada mes.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien financia su *troca nueva*.

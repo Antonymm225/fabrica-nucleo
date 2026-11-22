@@ -1,0 +1,48 @@
+# FF-038 · Finanzas Familiares · EST-01 · El cheque que paga la renta y ya
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cheque promedio mensual de retiro del Seguro Social (agosto 2025) = 2008.31 $ · https://www.seniorliving.org/finance/social-security/statistics/
+# Fuente: Renta mediana pedida en EE. UU. (agosto 2025) = 1790 $ · https://www.redfin.com/news/rental-tracker-august-2025/
+# Fuente: Renta mediana pedida para apartamentos de 3+ cuartos (abril 2025) = 1999 $ · https://www.redfin.com/news/rental-tracker-april-2025/
+# Fuente: Porcentaje de beneficios programados que se podría pagar después de que se agoten las reservas (2034) = 81 % · https://www.ssa.gov/oact/TR/2025/II_A_highlights.html
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Pagaste *Seguro Social* toda tu vida,
+y el cheque apenas paga la *renta*.
+Al final te digo cuántos dólares al mes
+tienes que *apartar* tú, desde hoy.
+Se llama el *hueco del retiro*.
+El cheque promedio es de [$2,008|dos mil ocho dólares] al mes.
+La renta mediana del país es [$1,790|mil setecientos noventa].
+Te sobran apenas [$218|doscientos dieciocho dólares].
+Con eso pagas luz, gasolina y *medicinas*.
+Y si tu familia necesita tres cuartos,
+la renta sube a [$1,999|mil novecientos noventa y nueve].
+Te sobran [$9|nueve dólares] en todo el mes.
+Pero aquí viene lo que nadie te dice.
+Si en [2034|dos mil treinta y cuatro] se paga solo
+[81%|ochenta y uno por ciento] de lo programado,
+el cheque promedio baja a [$1,627|mil seiscientos veintisiete].
+Ahí ya no te alcanza *ni para la renta*.
+Haz tu cuenta: resta tu *renta* de [$2,008|dos mil ocho].
+Eso es lo que te *queda*.
+La salida es juntar *tu propio dinero*.
+Una opción: [IUL|a yu el], un *seguro de vida indexado*.
+Es tuyo, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Ahora sí, lo que te dije:
+Si empiezas a los treinta con [$200|doscientos dólares] al mes,
+a los sesenta podrías llegar a unos
+[$434,000|cuatrocientos treinta y cuatro mil] para tu *retiro*.
+De ahí, tú pusiste [$72,000|setenta y dos mil].
+Lo demás lo hizo el *crecimiento*.
+Entre más pronto empiezas, más trabaja *tu dinero*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cuenta con el *Seguro Social*.

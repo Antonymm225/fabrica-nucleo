@@ -1,0 +1,46 @@
+# FF-037 · Finanzas Familiares · EST-01 · El crédito por hijos con ITIN
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Crédito Tributario por Hijos 2025, por hijo menor de 17 con SSN = 2200 $ · https://www.congress.gov/crs-product/R41873
+# Fuente: Parte reembolsable máxima (Additional Child Tax Credit) por hijo, 2025 = 1700 $ · https://www.congress.gov/crs-product/R41873
+# Fuente: Fórmula del reembolso: porcentaje de ingreso ganado arriba del umbral = 15 % · https://www.congress.gov/crs-product/R41873
+# Fuente: Umbral de ingreso ganado a partir del cual cuenta el 15% = 2500 $ · https://www.congress.gov/crs-product/R41873
+# Fuente: Crédito por otros dependientes (dependiente con ITIN), no reembolsable = 500 $ · https://www.irs.gov/tin/itin/individual-taxpayer-identification-number-itin
+# Fuente: Plazo para reclamar reembolso con Form 1040-X desde que presentaste la declaración original = 36 meses · https://www.irs.gov/taxtopics/tc308
+# Fuente: Desde 2025 se exige SSN válido para trabajar en el contribuyente (o en un cónyuge si declaran juntos) para el crédito por hijos = 1 SSN requerido · https://www.congress.gov/crs-product/R48312
+# BLOQUE 1
+Hay dinero del *IRS* con tu nombre
+que nadie te va a *avisar* que existe.
+Si tienes *ITIN* e hijos con seguro social,
+puede que lo hayas dejado *sin cobrar*.
+Al final te digo el *papel exacto*
+y dónde te lo llenan *gratis*.
+Se llama el *crédito por hijos*.
+Mucha gente cree que con *ITIN* no se cobra.
+Pero hasta [2024|dos mil veinticuatro],
+lo que importaba era el *seguro social* del hijo.
+Piensa en un papá con *dos hijos*
+que trabaja todo el año en un *oficio*.
+La parte que te *devuelven en efectivo*
+llega hasta [$1,700|mil setecientos dólares] por *hijo*.
+Con dos hijos, son hasta [$3,400|tres mil cuatrocientos dólares].
+Eso es la *renta* de varios meses.
+Pero aquí viene lo que nadie te dice:
+el *IRS* no te manda ningún aviso.
+Para pedir años pasados, tienes [3|tres] años,
+contados desde que *presentaste* tu declaración.
+Después, ya no puedes *pedirlo*.
+Pero ojo: desde [2025|dos mil veinticinco],
+piden *seguro social* válido en quien declara.
+Si solo hay *ITIN*, queda un crédito
+de [$500|quinientos dólares] por *dependiente*,
+que solo *baja* tu impuesto
+y no se devuelve en *efectivo*.
+Ahora sí, el *papel exacto*:
+se llama *declaración enmendada*,
+forma [1040-X|diez cuarenta equis].
+Pídela en *VITA*, la ayuda gratis del IRS.
+Lleva el *seguro social* de tus hijos,
+tu *ITIN* y tus comprobantes de ingreso.
+Ellos revisan si a ti *te toca*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene hijos e *ITIN*.

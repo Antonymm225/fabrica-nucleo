@@ -1,0 +1,647 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: adelanto de $2,500 por 32 días al 36% anual, más cargo de $34.95. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu reembolso",
+   "contador": "tu reembolso |te cobran",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 36,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 45,
+     "tam": 34,
+     "etiqueta": "TU REEMBOLSO",
+     "en": [
+      0,
+      "reembolso"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "TE COBRAN",
+     "color": "rojo",
+     "x": 70,
+     "y": 45,
+     "en": [
+      1,
+      "cobran"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tres letras",
+   "contador": "papel |tres letras",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu adelanto",
+     "en": [
+      2
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que te prestan",
+       "valor": "??",
+       "en": [
+        2,
+        "letras"
+       ]
+      },
+      {
+       "texto": "Lo que pagas de verdad",
+       "valor": "???",
+       "en": [
+        3,
+        "voz"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       3,
+       "alta"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "TU",
+    "DINERO"
+   ],
+   "en": [
+    4,
+    "adelanto"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la oferta",
+   "contador": "adelanto |hoy mismo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 3,
+     "etiqueta": "PREPARADOR"
+    },
+    {
+     "que": "globo",
+     "texto": "¡Sales con dinero hoy!",
+     "piensa": false,
+     "cola": 1,
+     "x": 26,
+     "y": 22,
+     "en": [
+      5,
+      "sales"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "en": [
+      5,
+      "dice"
+     ],
+     "cambia": {
+      "en": [
+       6,
+       "verdad"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el IRS",
+   "contador": "el IRS |21 días",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 30,
+     "tam": 34,
+     "en": [
+      7,
+      "IRS"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "21 DÍAS",
+     "x": 72,
+     "y": 30,
+     "tam": 10,
+     "color": "verde",
+     "en": [
+      8,
+      "21"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      9,
+      "espera"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "adelanto |$2,500",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Adelanto",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Te prestan",
+       "valor": "$2,500",
+       "en": [
+        10,
+        "2,500"
+       ]
+      },
+      {
+       "texto": "Por cuántos días",
+       "valor": "32",
+       "en": [
+        11,
+        "32"
+       ]
+      },
+      {
+       "texto": "Interés al año",
+       "valor": "36%",
+       "en": [
+        12,
+        "36%"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       12,
+       "año"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 4,
+     "en": [
+      12,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "interés y cargo",
+   "contador": "interés |$78.90",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "TU BOLSILLO"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 78,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "PREPARADOR",
+     "en": [
+      13,
+      "interés"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "t",
+     "en": [
+      13,
+      "son"
+     ],
+     "hasta": [
+      14,
+      "mercadeo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$78.90 + $34.95",
+     "x": 50,
+     "y": 68,
+     "tam": 8,
+     "color": "principal",
+     "etiqueta": "interés + cargo",
+     "en": [
+      14,
+      "mercadeo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "costo real |52%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "$113.85",
+     "x": 50,
+     "y": 28,
+     "tam": 12,
+     "color": "principal",
+     "etiqueta": "costo total",
+     "en": [
+      16,
+      "113.85"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "casi 52% al año",
+     "x": 50,
+     "y": 58,
+     "color": "principal",
+     "tam": 5,
+     "en": [
+      17,
+      "52%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "la preparación",
+   "contador": "preparación |$236",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 24,
+     "y": 26,
+     "tam": 30,
+     "etiqueta": "GASOLINA"
+    },
+    {
+     "que": "cifra",
+     "texto": "$236",
+     "x": 50,
+     "y": 68,
+     "tam": 11,
+     "color": "tinta",
+     "etiqueta": "preparación",
+     "en": [
+      20,
+      "236"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "gratis",
+   "contador": "Free File |gratis",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "GRATIS",
+     "x": 72,
+     "y": 25,
+     "color": "verde",
+     "tam": 8,
+     "en": [
+      21,
+      "gratis"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 58,
+     "en": [
+      22,
+      "califica"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    23
+   ],
+   "capitulo": "el costo",
+   "contador": "pierdes |$350",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$350",
+    "etiqueta": "por esperar",
+    "en": [
+     24,
+     "350"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGO",
+    "en": [
+     25,
+     "esperar"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué preguntar",
+   "contador": [
+    {
+     "en": [
+      26
+     ],
+     "texto": "pregunta |1 de 3"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "pregunta |2 de 3"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "pregunta |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "y": 8,
+     "en": [
+      26
+     ],
+     "items": [
+      {
+       "texto": "Tasa anual (APR), por escrito",
+       "en": [
+        26,
+        "APR"
+       ]
+      },
+      {
+       "texto": "¿Qué otros cargos hay?",
+       "en": [
+        28,
+        "cargos"
+       ]
+      },
+      {
+       "texto": "¿Cuánto cobran por preparar?",
+       "en": [
+        29,
+        "preparar"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "espera |21 días",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto pago en total?",
+     "piensa": false,
+     "cola": 1,
+     "x": 26,
+     "y": 14,
+     "en": [
+      31,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Algunos cobran 0%",
+     "x": 72,
+     "y": 46,
+     "color": "verde",
+     "tam": 4,
+     "en": [
+      30,
+      "0%"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 74,
+     "tam": 22,
+     "etiqueta": "DEPÓSITO",
+     "en": [
+      32,
+      "depósito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

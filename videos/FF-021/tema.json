@@ -1,0 +1,81 @@
+{
+ "titulo": "Los $255 del Seguro Social para tu funeral",
+ "angulo": "Pagaste Seguro Social toda tu vida, y cuando faltas le da a tu familia solo $255, y un funeral cuesta $8,300.",
+ "explicacion": "Si el que trae el dinero falta, lo primero que llega es la cuenta del funeral. El Seguro Social paga un solo pago de $255 al cónyuge o a un hijo, y esa cifra no ha cambiado en décadas. Un funeral con velorio y entierro cuesta una mediana de $8,300. Tu familia tiene que conseguir la diferencia en días, antes de pensar en la renta o en la comida. Para eso sirve un seguro de vida: paga rápido y es dinero para tu familia, no para el patrón.",
+ "datos": [
+  {
+   "dato": "Pago único por muerte que da el Seguro Social al cónyuge o hijo elegible",
+   "valor": 255,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/personal-record/when-someone-dies/lump-sum-death-payment"
+  },
+  {
+   "dato": "Costo mediano de un funeral para adulto con velorio y entierro (NFDA, 2023)",
+   "valor": 8300,
+   "unidad": "$",
+   "fuente": "https://www.congress.gov/crs-product/R43637"
+  },
+  {
+   "dato": "Costo mediano del funeral con velorio y entierro más bóveda (NFDA, 2023)",
+   "valor": 9995,
+   "unidad": "$",
+   "fuente": "https://www.after.com/articles/how-much-funeral-cost"
+  },
+  {
+   "dato": "Costo mediano del funeral con velorio y cremación (NFDA, 2023)",
+   "valor": 6280,
+   "unidad": "$",
+   "fuente": "https://www.after.com/articles/how-much-funeral-cost"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que falta después del pago del Seguro Social en un funeral con entierro",
+   "expresion": "8300-255",
+   "resultado": 8045
+  },
+  {
+   "descripcion": "Porcentaje del funeral con entierro que cubre el Seguro Social",
+   "expresion": "round(255/8300*100, 2)",
+   "resultado": 3.07
+  },
+  {
+   "descripcion": "Lo que falta con entierro y bóveda",
+   "expresion": "9995-255",
+   "resultado": 9740
+  },
+  {
+   "descripcion": "Lo que falta aun con cremación",
+   "expresion": "6280-255",
+   "resultado": 6025
+  },
+  {
+   "descripcion": "Cuántas veces cabe el pago del Seguro Social en el funeral con entierro",
+   "expresion": "round(8300/255, 2)",
+   "resultado": 32.55
+  }
+ ],
+ "consejo": "Haz la cuenta de lo que tu familia necesitaría la primera semana: funeral, renta y gastos de la casa. Si mandas dinero a familia en otro país, suma también lo que cuesta llevar el cuerpo, si es lo que ustedes querrían. Revisa si tu seguro del trabajo alcanza y si lo conservas al cambiar de patrón. Platica con un agente con licencia sobre un seguro de vida que sea tuyo y que cubra esa cuenta.",
+ "que_no_decir": [
+  "No digas que el Seguro Social no paga nada: paga $255 y solo al cónyuge o a un hijo elegible.",
+  "No digas que el Seguro Social no da otros beneficios a los sobrevivientes: no los cubrimos aquí y pueden existir pensiones mensuales.",
+  "No prometas que el seguro de vida cubre cualquier funeral ni que todos califican: depende de la edad, la salud y la póliza.",
+  "No uses $8,300 como precio fijo: es una mediana nacional y varía por estado y por funeraria.",
+  "No hables de ahorro, retiro ni de cuánto se junta en el IUL: este video es solo de protección de la familia.",
+  "No asustes con la muerte: habla de cuidar a la familia, con tono cálido y de papá a papá."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas"
+}

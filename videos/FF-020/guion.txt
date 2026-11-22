@@ -1,0 +1,44 @@
+# FF-020 · Finanzas Familiares · EST-01 · Cobrar tu cheque te cuesta
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo mínimo típico de una tienda de cambio de cheques, en el extremo bajo del rango = 1 % · https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/
+# Fuente: Cargo típico de una tienda de cambio de cheques, en el extremo alto del rango = 5 % · https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/
+# Fuente: Cargo mínimo por cheque en una tienda de cambio de cheques = 5 $ · https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/
+# Fuente: Costo de una cuenta de cheques gratis abierta en línea = 0 $ · https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/
+# Fuente: Hogares hispanos sin cuenta de banco en 2023 = 9.5 % · https://www.fdic.gov/news/press-releases/2024/fdic-survey-finds-96-percent-us-households-were-banked-2023
+# BLOQUE 1
+Cobrar tu cheque en la *tienda de cambio*
+te cuesta [$1,560|mil quinientos sesenta dólares] al *año*.
+Se llama el *cargo por cheque*.
+Y al final te enseño cómo *evitarlo*.
+Trabajas toda la semana por tu *cheque*.
+Y vas a la tienda porque es *rápido*.
+Imagina un cheque de [$1,000|mil dólares] a la semana.
+La tienda te cobra [3%|tres por ciento] por *cambiarlo*.
+Son [$30|treinta dólares] cada *vez*.
+Parece poco, ¿verdad?
+Pero cobras *cada semana*, todo el año.
+Y son [$1,560|mil quinientos sesenta dólares] que se quedan en la *tienda*.
+Ese dinero no es del *banco*,
+ni de tu *patrón*. Es *tuyo*.
+Y lo peor: en [5|cinco] *años*
+son [$7,800|siete mil ochocientos dólares] *regalados*.
+Con eso pagas el *enganche* de una troca.
+Hay tiendas que cobran hasta [5%|cinco por ciento].
+Ahí son [$2,600|dos mil seiscientos dólares] al *año*.
+Pero aquí viene lo que *nadie te dice*.
+Una cuenta de cheques *gratis*
+te da el mismo dinero, *sin cargo*.
+En Estados Unidos, [9.5%|nueve punto cinco por ciento] de los hogares
+hispanos no tiene *cuenta de banco*.
+Si es tu caso, no eres el único.
+Pero ahora sabes cuánto te *cuesta*.
+Ahora, ¿cómo lo *evitas*?
+Abre una cuenta *sin cargo mensual*.
+Se hace en línea en [10|diez] minutos.
+Pídele a tu patrón el *depósito directo*,
+o deposita tu cheque con la *app del banco*.
+Antes de abrirla, revisa el *cargo mensual*.
+Así cobras tu cheque *completo*.
+Esos [$1,560|mil quinientos sesenta dólares] se quedan en *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *cambia su cheque*.

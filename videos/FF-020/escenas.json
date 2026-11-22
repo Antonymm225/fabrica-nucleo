@@ -1,0 +1,601 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: cheque de $1,000 a la semana con un cargo de 3% durante todo el año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cheque",
+   "contador": "cargo |$1,560 al año",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco"
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 36,
+     "tam": 34,
+     "en": [
+      0,
+      "tienda"
+     ],
+     "etiqueta": "cambio de cheque"
+    },
+    {
+     "que": "cifra",
+     "texto": "-$1,560",
+     "x": 70,
+     "y": 72,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      1,
+      "1,560"
+     ],
+     "etiqueta": "al año"
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "COBRAR",
+    "CHEQUE"
+   ],
+   "en": [
+    2,
+    "cheque"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "tu semana",
+   "contador": "tu cheque |semanal",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "sombrero"
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 30,
+     "y": 26,
+     "tam": 26,
+     "etiqueta": "tu cheque",
+     "en": [
+      4,
+      "cheque"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 76,
+     "y": 42,
+     "tam": 30,
+     "etiqueta": "la tienda",
+     "en": [
+      5,
+      "tienda"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el cargo",
+   "contador": "cargo |3%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Cobrar tu cheque",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Tu cheque",
+       "valor": "$1,000",
+       "en": [
+        6,
+        "1,000"
+       ]
+      },
+      {
+       "texto": "Cargo de la tienda",
+       "valor": "3%",
+       "en": [
+        7,
+        "3%"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       7,
+       "cobra"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Pagas cada vez",
+      "valor": "$30",
+      "en": [
+       8,
+       "30"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "cada semana",
+   "contador": "cobras |cada semana",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       10,
+       "cobras"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 40,
+     "tam": 34,
+     "etiqueta": "cada semana",
+     "en": [
+      10,
+      "semana"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "se te va",
+   "contador": "pierdes |$1,560",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 36,
+     "tam": 28,
+     "etiqueta": "tu cheque"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 78,
+     "y": 36,
+     "tam": 30,
+     "etiqueta": "la tienda",
+     "en": [
+      11,
+      "quedan"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "t",
+     "en": [
+      11,
+      "quedan"
+     ],
+     "hasta": [
+      11,
+      "tienda"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 1560,
+     "prefijo": "$",
+     "x": 50,
+     "y": 74,
+     "tam": 9,
+     "en": [
+      11,
+      "1,560"
+     ],
+     "hasta": [
+      11,
+      "tienda"
+     ],
+     "etiqueta": "cada año"
+    },
+    {
+     "que": "sello",
+     "texto": "ES TUYO",
+     "color": "verde",
+     "x": 22,
+     "y": 36,
+     "en": [
+      13,
+      "tuyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "cinco años",
+   "contador": "regalas |$7,800",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 0,
+     "final": 7800,
+     "barras": 5,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN 5 AÑOS",
+     "etiqueta": "regalados",
+     "x": 50,
+     "y": 88,
+     "en": [
+      14,
+      "peor"
+     ],
+     "hasta": [
+      15,
+      "7,800"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "al cinco",
+   "contador": "cargo |5%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "gorra",
+     "ropa": 3
+    },
+    {
+     "que": "globo",
+     "texto": "¡Hasta el 5% de mi cheque!",
+     "piensa": false,
+     "cola": -1,
+     "x": 32,
+     "y": 22,
+     "en": [
+      17,
+      "tiendas"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$2,600",
+     "x": 72,
+     "y": 62,
+     "tam": 8,
+     "color": "principal",
+     "etiqueta": "al año",
+     "en": [
+      18,
+      "2,600"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "la salida",
+   "contador": "cargo |$0",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "pelo",
+     "ropa": 2,
+     "piel": 2,
+     "cambia": {
+      "en": [
+       21,
+       "sin"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 28,
+     "y": 40,
+     "tam": 34,
+     "etiqueta": "cuenta gratis",
+     "en": [
+      20,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN CARGO",
+     "color": "verde",
+     "x": 28,
+     "y": 40,
+     "en": [
+      21,
+      "cargo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "en Estados Unidos",
+   "contador": "sin cuenta |9.5%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 76,
+     "tam": 30,
+     "etiqueta": "hogares hispanos"
+    },
+    {
+     "que": "cifra",
+     "texto": "9.5%",
+     "x": 50,
+     "y": 32,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "sin cuenta",
+     "en": [
+      22,
+      "9.5%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      26
+     ],
+     "items": [
+      {
+       "texto": "Abre una cuenta sin cargo mensual",
+       "en": [
+        27,
+        "cuenta"
+       ]
+      },
+      {
+       "texto": "Hazlo en línea, son 10 minutos",
+       "en": [
+        28,
+        "línea"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "paso dos",
+   "contador": "depósito |directo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1
+    },
+    {
+     "que": "globo",
+     "texto": "Quiero depósito directo",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 16,
+     "en": [
+      29,
+      "Pídele"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 77,
+     "y": 56,
+     "tam": 28,
+     "etiqueta": "app del banco",
+     "en": [
+      30,
+      "app"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "$0 MENSUAL",
+     "color": "verde",
+     "x": 77,
+     "y": 56,
+     "en": [
+      31,
+      "cargo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "el premio",
+   "contador": "te quedas |$1,560",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,560",
+    "etiqueta": "para tu familia",
+    "en": [
+     33,
+     "1,560"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     33,
+     "casa"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

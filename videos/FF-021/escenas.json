@@ -1,0 +1,622 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: funeral con entierro de $8,300 (mediana nacional, varía por estado) y pago único del Seguro Social de $255. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 3,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu historia",
+   "contador": "recibe |$255",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "solo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 38,
+     "tam": 30,
+     "en": [
+      1,
+      "familia"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$255",
+     "x": 72,
+     "y": 70,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      1,
+      "255"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    2
+   ],
+   "capitulo": "la trampa",
+   "contador": "pago |único",
+   "filas": [
+    "PAGO",
+    "UNICO"
+   ],
+   "en": [
+    2,
+    "único"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el pago",
+   "contador": "Seguro Social |$255",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Seguro Social",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Pago por fallecer",
+       "valor": "$255",
+       "en": [
+        4,
+        "pago"
+       ]
+      },
+      {
+       "texto": "Para cónyuge o hijo",
+       "valor": "único",
+       "en": [
+        4,
+        "cónyuge"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       5,
+       "décadas"
+      ],
+      "texto": "¡igual!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      5,
+      "cifra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el funeral",
+   "contador": "funeral |$8,300",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 22,
+     "y": 95,
+     "tam": 55,
+     "valor": 255,
+     "max": 8300,
+     "prefijo": "$",
+     "color": "gris",
+     "hasta": [
+      6,
+      "funeral"
+     ],
+     "etiqueta": "SEGURO SOCIAL"
+    },
+    {
+     "que": "torre",
+     "x": 75,
+     "y": 95,
+     "tam": 55,
+     "valor": 8300,
+     "max": 8300,
+     "prefijo": "$",
+     "en": [
+      6,
+      "funeral"
+     ],
+     "hasta": [
+      7,
+      "8,300"
+     ],
+     "etiqueta": "FUNERAL"
+    },
+    {
+     "que": "cifra",
+     "texto": "32 veces",
+     "x": 28,
+     "y": 50,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      8,
+      "32"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "la semana",
+   "contador": "la cuenta |llega",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 2
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 22,
+     "y": 38,
+     "tam": 28,
+     "en": [
+      10,
+      "días"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 78,
+     "y": 38,
+     "tam": 28,
+     "en": [
+      11,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    13
+   ],
+   "capitulo": "lo que falta",
+   "contador": "faltan |$8,045",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$8,045",
+    "etiqueta": "faltan",
+    "en": [
+     13,
+     "8,045"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     14,
+     "faltan"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "tu país",
+   "contador": "traslado |si lo quieren",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 75,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "fam",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 25,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "TU PAÍS",
+     "en": [
+      15,
+      "mandas"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "fam",
+     "en": [
+      15,
+      "dinero"
+     ],
+     "hasta": [
+      16,
+      "traslado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la salida",
+   "contador": "protección |familiar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cómo lo evito?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      17,
+      "cómo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 52,
+     "tam": 32,
+     "en": [
+      18,
+      "IUL"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PROTEGIDA",
+     "color": "verde",
+     "x": 72,
+     "y": 52,
+     "en": [
+      19,
+      "seguro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "es tuyo",
+   "contador": "tu seguro |contigo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 28,
+     "y": 38,
+     "tam": 28,
+     "en": [
+      20,
+      "trabajo"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      21,
+      "cambias"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 28,
+     "y": 74,
+     "en": [
+      21,
+      "contigo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "si faltas",
+   "contador": "tu familia |recibe",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 50,
+     "tam": 32,
+     "etiqueta": "TU FAMILIA"
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 50,
+     "tam": 26,
+     "en": [
+      23,
+      "dinero"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "b",
+     "a": "f",
+     "en": [
+      23,
+      "rápido"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "cómo crece",
+   "contador": "piso |cero",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 1,
+     "final": 10,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      24,
+      "crecer"
+     ],
+     "hasta": [
+      24,
+      "año"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Piso cero: nunca baja",
+     "color": "verde",
+     "tam": 5,
+     "x": 50,
+     "y": 12,
+     "en": [
+      26,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      27
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 15,
+     "en": [
+      27
+     ],
+     "items": [
+      {
+       "texto": "Suma funeral, renta y gastos",
+       "en": [
+        27,
+        "Suma"
+       ]
+      },
+      {
+       "texto": "Esa cuenta es tu punto de partida",
+       "en": [
+        28,
+        "punto"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      28,
+      "Esa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "siguiente paso",
+   "contador": "asesor |certificado",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "ASESOR",
+     "en": [
+      29,
+      "asesor"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 38,
+     "tam": 26,
+     "en": [
+      30,
+      "Cuidarlos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    31
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "corte",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    31,
+    "Sígueme"
+   ],
+   "compartir": [
+    32,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "titulo": "Cobrar tu cheque te cuesta",
+ "angulo": "Trabajas toda la semana por tu cheque y la tienda de cambio se queda con una parte cada vez que lo cobras. Una cuenta de cheques gratis te lo deja completo.",
+ "explicacion": "Mucha gente cobra su cheque de nómina en una tienda de cambio de cheques porque es rápido. Pero ese lugar cobra entre 1% y 5% del cheque, con un mínimo de $5. Con un cheque de $1,000 a la semana y un cargo de 3%, pagas $30 cada vez. En un año son $1,560 que no son del banco ni del patrón: son tuyos y se los dejas a la tienda. Una cuenta de cheques gratis con depósito directo te da el mismo dinero sin cargo. Según el FDIC, el 9.5% de los hogares hispanos no tiene cuenta de banco.",
+ "datos": [
+  {
+   "dato": "Cargo mínimo típico de una tienda de cambio de cheques, en el extremo bajo del rango",
+   "valor": 1,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/"
+  },
+  {
+   "dato": "Cargo típico de una tienda de cambio de cheques, en el extremo alto del rango",
+   "valor": 5,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/"
+  },
+  {
+   "dato": "Cargo mínimo por cheque en una tienda de cambio de cheques",
+   "valor": 5,
+   "unidad": "$",
+   "fuente": "https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/"
+  },
+  {
+   "dato": "Costo de una cuenta de cheques gratis abierta en línea",
+   "valor": 0,
+   "unidad": "$",
+   "fuente": "https://www.bankrate.com/banking/checking/how-to-cash-a-check-without-a-bank-account/"
+  },
+  {
+   "dato": "Hogares hispanos sin cuenta de banco en 2023",
+   "valor": 9.5,
+   "unidad": "%",
+   "fuente": "https://www.fdic.gov/news/press-releases/2024/fdic-survey-finds-96-percent-us-households-were-banked-2023"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Cargo por un cheque de $1,000 al 3%",
+   "expresion": "round(1000*0.03, 2)",
+   "resultado": 30.0
+  },
+  {
+   "descripcion": "Cargo en un año (52 cheques) al 3%",
+   "expresion": "round(1000*0.03*52, 2)",
+   "resultado": 1560.0
+  },
+  {
+   "descripcion": "Cargo en un año al 2%",
+   "expresion": "round(1000*0.02*52, 2)",
+   "resultado": 1040.0
+  },
+  {
+   "descripcion": "Cargo en un año al 5%",
+   "expresion": "round(1000*0.05*52, 2)",
+   "resultado": 2600.0
+  },
+  {
+   "descripcion": "Cargo en 5 años al 3%",
+   "expresion": "round(1000*0.03*52*5, 2)",
+   "resultado": 7800.0
+  },
+  {
+   "descripcion": "Dinero que te queda en un año con cuenta gratis frente a cobrar en la tienda al 3%, sobre $52,000 de sueldo",
+   "expresion": "round(1000*52 - (1000*52 - 1000*0.03*52), 2)",
+   "resultado": 1560.0
+  }
+ ],
+ "consejo": "Abre una cuenta de cheques gratis, sin cargo mensual y sin saldo mínimo. Se puede hacer en línea en unos 10 minutos. Pídele a tu patrón el depósito directo, o deposita tu cheque con la app del banco. Así cobras el 100% de tu cheque. Antes de abrirla, revisa que no tenga cargo mensual. Si hoy cobras en tienda, haz la cuenta: tu cheque por 3% por 52 semanas.",
+ "que_no_decir": [
+  "Que todas las tiendas de cambio de cheques son una estafa (son legales y algunas cobran poco)",
+  "Prometer que te aprueban la cuenta sí o sí (algunos bancos revisan tu historial)",
+  "Dar un porcentaje único como si todos cobraran lo mismo (varía de 1% a 5% y por estado)",
+  "Nombrar un banco específico como el mejor",
+  "Decir que cobrar en el banco es siempre gratis (puede cobrar si no eres cliente)",
+  "Sugerir cooperativas o planes del patrón como salida",
+  "Insinuar que quien no tiene cuenta lo hace por no saber (hay quien perdió la confianza en los bancos)"
+ ],
+ "con_iul": false
+}

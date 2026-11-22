@@ -1,0 +1,126 @@
+{
+ "ficha": {
+  "titulo": "El primer prestamista de tu casa",
+  "angulo": "Un prestamista que te aprueba rápido no es el que te da la mejor tasa: medio punto de diferencia en la tasa te cuesta más de $36,000 en una hipoteca.",
+  "explicacion": "Cuando compras casa, muchos firman con el primer prestamista que les contesta, o con el que les recomendó el agente. Pero cada prestamista te puede dar una tasa distinta para el mismo préstamo. En un préstamo de $300,000 a 30 años, medio punto de tasa son unos $101 más cada mes. En 30 años, son más de $36,000. Pedir varias cotizaciones por escrito toma unos días y no te compromete a nada.",
+  "datos": [
+   {
+    "dato": "Tasa promedio de hipoteca fija a 30 años reportada por Freddie Mac (semana de la fuente)",
+    "valor": 7.28,
+    "unidad": "%",
+    "fuente": "https://www.cnn.com/2026/11/19/economy/us-mortgage-rates-rise"
+   },
+   {
+    "dato": "Ahorro promedio en la vida del préstamo al pedir 2 cotizaciones extra, según investigación de Freddie Mac",
+    "valor": 600,
+    "unidad": "$",
+    "fuente": "https://themortgagereports.com/67974/how-to-shop-for-mortgage-rates-in-one-day"
+   },
+   {
+    "dato": "Ahorro de $1,200 o más al pedir 5 cotizaciones, según Freddie Mac",
+    "valor": 1200,
+    "unidad": "$",
+    "fuente": "https://themortgagereports.com/67974/how-to-shop-for-mortgage-rates-in-one-day"
+   },
+   {
+    "dato": "Tasa del ejemplo con otro prestamista (hipotética: medio punto menos que el promedio)",
+    "valor": 6.78,
+    "unidad": "%",
+    "fuente": "https://www.cnn.com/2026/11/19/economy/us-mortgage-rates-rise"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Pago mensual de $300,000 a 30 años con tasa 7.28%",
+    "expresion": "round(300000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)",
+    "resultado": 2052.64
+   },
+   {
+    "descripcion": "Pago mensual de $300,000 a 30 años con tasa 6.78%",
+    "expresion": "round(300000*(0.0678/12)/(1-(1+0.0678/12)**-360),2)",
+    "resultado": 1951.78
+   },
+   {
+    "descripcion": "Diferencia mensual entre las dos tasas",
+    "expresion": "round(300000*(0.0728/12)/(1-(1+0.0728/12)**-360)-300000*(0.0678/12)/(1-(1+0.0678/12)**-360),2)",
+    "resultado": 100.86
+   },
+   {
+    "descripcion": "Diferencia en 5 años (60 pagos)",
+    "expresion": "round((300000*(0.0728/12)/(1-(1+0.0728/12)**-360)-300000*(0.0678/12)/(1-(1+0.0678/12)**-360))*60,2)",
+    "resultado": 6051.38
+   },
+   {
+    "descripcion": "Diferencia en 30 años (360 pagos)",
+    "expresion": "round((300000*(0.0728/12)/(1-(1+0.0728/12)**-360)-300000*(0.0678/12)/(1-(1+0.0678/12)**-360))*360,2)",
+    "resultado": 36308.27
+   },
+   {
+    "descripcion": "Intereses totales a 30 años con tasa 7.28%",
+    "expresion": "round(300000*(0.0728/12)/(1-(1+0.0728/12)**-360)*360-300000,2)",
+    "resultado": 438949.26
+   },
+   {
+    "descripcion": "Intereses totales a 30 años con tasa 6.78%",
+    "expresion": "round(300000*(0.0678/12)/(1-(1+0.0678/12)**-360)*360-300000,2)",
+    "resultado": 402641.0
+   }
+  ],
+  "consejo": "Antes de firmar, pide por escrito el Loan Estimate (Estimado del Préstamo) a por lo menos 3 prestamistas, de preferencia 5, el mismo día y con el mismo tipo de préstamo. Compara la tasa, los costos de cierre y el pago mensual. Ten a la mano tu ITIN o Seguro Social y tus comprobantes de ingresos. Usa la oferta más baja para pedirle a los demás que la igualen. Pedir cotizaciones no te compromete con nadie.",
+  "que_no_decir": [
+   "Que todos los prestamistas dan la misma tasa, o que siempre te irá mejor con uno en particular.",
+   "Que ahorrarás exactamente $36,308: es un ejemplo con tasas hipotéticas y la tasa real depende de tu crédito, tu enganche y el día.",
+   "Que pedir cotizaciones daña tu crédito de forma importante. Varias consultas de hipoteca en un periodo corto normalmente cuentan como una sola, pero no lo prometas sin confirmarlo.",
+   "Que la tasa de 7.28% será la que le toque a cada quien, o que las tasas van a subir o bajar.",
+   "Mencionar prestamistas, bancos o marcas específicas, ni recomendar cooperativas o planes del trabajo."
+  ],
+  "con_iul": false
+ },
+ "video": {
+  "titulo": "El primer prestamista de tu casa",
+  "lineas": [
+   "Medio punto de *tasa* en tu casa",
+   "te puede costar más de [$36,000|treinta y seis mil dólares].",
+   "Se llama *el primer prestamista*.",
+   "Al final te digo qué *pedirle* a cada uno.",
+   "Si compras *casa* en Estados Unidos,",
+   "muchos firman con el primero que *contesta*.",
+   "O con el que te recomendó el *agente*.",
+   "Imagina un préstamo de *trescientos mil dólares*",
+   "a treinta años con tasa de [7.28%|siete punto veintiocho por ciento].",
+   "Pagas [$2,052|dos mil cincuenta y dos] al *mes*.",
+   "Pero otro prestamista te da [6.78%|seis punto setenta y ocho por ciento].",
+   "Es solo *medio punto* menos.",
+   "Y pagas [$1,952|mil novecientos cincuenta y dos] al *mes*.",
+   "Son [$101|ciento un dólares] menos cada *mes*.",
+   "Parece poco, ¿verdad?",
+   "Pero aquí viene lo que *nadie te dice*.",
+   "En treinta años, son más de [$36,000|treinta y seis mil dólares].",
+   "Son *quincenas* enteras que se van al banco.",
+   "Y lo peor: nadie te dijo que *preguntaras*.",
+   "Cada prestamista puede darte una tasa *distinta*.",
+   "Para el mismo préstamo y el mismo *día*.",
+   "Ahora, ¿cómo lo *evitas*?",
+   "Pide por escrito el *Loan Estimate*,",
+   "el *estimado del préstamo*, a tres prestamistas.",
+   "De preferencia a *cinco*, el mismo día.",
+   "Todos con el mismo tipo de *préstamo*.",
+   "Compara tasa, costos de cierre y *pago mensual*.",
+   "Ten a la mano tu *ITIN* o Seguro Social.",
+   "Con dos estimados extra, ahorras unos [$600|seiscientos dólares].",
+   "Con cinco, [$1,200|mil doscientos dólares] o más.",
+   "Usa la oferta más baja para *negociar*.",
+   "Pídele a los demás que la *igualen*.",
+   "Así más de [$36,000|treinta y seis mil dólares] pueden quedarse en *tu casa*.",
+   "Pedir estimados no te *compromete* a nada.",
+   "Eso le pides a cada uno: *estimado por escrito*.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien va a comprar *casa*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"tu casa\",\"contador\":\"tasa |medio punto\",\"elementos\":[{\"que\":\"persona\",\"x\":24,\"y\":92,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[1,\"36,000\"],\"cara\":\"sorprendido\"}},{\"que\":\"objeto\",\"objeto\":\"casa\",\"x\":72,\"y\":28,\"tam\":28,\"en\":[0,\"tasa\"]},{\"que\":\"cifra\",\"texto\":\"$36,000\",\"x\":72,\"y\":60,\"tam\":9,\"color\":\"principal\",\"etiqueta\":\"de más\",\"en\":[1,\"36,000\"]}]},{\"tipo\":\"tablero\",\"desde\":[2],\"capitulo\":\"la trampa\",\"filas\":[\"PRIMER\",\"TRATO\"],\"en\":[2,\"primer\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[4],\"capitulo\":\"firmas rápido\",\"contador\":\"compras |casa\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"casa\",\"x\":22,\"y\":30,\"tam\":28,\"en\":[4,\"casa\"]},{\"que\":\"persona\",\"x\":80,\"y\":94,\"tam\":30,\"cara\":\"neutro\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"en\":[5,\"firman\"]},{\"que\":\"globo\",\"texto\":\"¡Firmo con este!\",\"cola\":1,\"x\":72,\"y\":22,\"en\":[5,\"primero\"]},{\"que\":\"persona\",\"x\":42,\"y\":94,\"tam\":30,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":3,\"etiqueta\":\"EL AGENTE\",\"en\":[6,\"agente\"]}]},{\"tipo\":\"lienzo\",\"desde\":[7],\"capitulo\":\"el ejemplo\",\"contador\":\"préstamo |$300,000\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":8,\"tam\":82,\"titulo\":\"Tu préstamo\",\"en\":[7],\"renglones\":[{\"texto\":\"Préstamo\",\"valor\":\"$300,000\",\"en\":[7,\"trescientos\"]},{\"texto\":\"Plazo\",\"valor\":\"30 años\",\"en\":[8,\"treinta\"]},{\"texto\":\"Tasa\",\"valor\":\"7.28%\",\"en\":[8,\"7.28\"]}],\"marca\":{\"fila\":2,\"en\":[8,\"7.28\"],\"texto\":\"¡OJO!\"},\"total\":{\"texto\":\"Pago al mes\",\"valor\":\"$2,052\",\"en\":[9,\"2,052\"]}}]},{\"tipo\":\"lienzo\",\"desde\":[10],\"capitulo\":\"otra tasa\",\"contador\":\"tasa |medio punto menos\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"persona\",\"x\":24,\"y\":94,\"tam\":32,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"PAGA $2,052\"},{\"que\":\"persona\",\"x\":76,\"y\":94,\"tam\":32,\"cara\":\"feliz\",\"gorro\":\"sombrero\",\"ropa\":2,\"piel\":2,\"etiqueta\":\"PAGA $1,952\",\"en\":[10,\"otro\"]},{\"que\":\"texto\",\"texto\":\"medio punto menos\",\"x\":50,\"y\":40,\"tam\":5,\"color\":\"principal\",\"en\":[11,\"medio\"]}]},{\"tipo\":\"lienzo\",\"desde\":[13],\"capitulo\":\"cada mes\",\"contador\":\"menos |$101 al mes\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":50,\"y\":24,\"tam\":26},{\"que\":\"cifra\",\"texto\":\"$101\",\"x\":50,\"y\":58,\"tam\":14,\"color\":\"principal\",\"etiqueta\":\"menos cada mes\",\"en\":[13,\"101\"]}]},{\"tipo\":\"lienzo\",\"desde\":[15],\"capitulo\":\"lo que no ves\",\"contador\":\"en 30 años |$36,000\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"c\",\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":24,\"y\":24,\"tam\":24,\"etiqueta\":\"tu quincena\"},{\"id\":\"b\",\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":76,\"y\":24,\"tam\":26,\"etiqueta\":\"el banco\",\"en\":[16,\"años\"]},{\"que\":\"cifra\",\"texto\":\"$36,000\",\"x\":50,\"y\":52,\"tam\":11,\"color\":\"principal\",\"etiqueta\":\"de más\",\"en\":[16,\"36,000\"]},{\"que\":\"dinero\",\"de\":\"c\",\"a\":\"b\",\"en\":[17,\"quincenas\"],\"hasta\":[17,\"banco\"]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"enojado\",\"gorro\":\"gorra\",\"en\":[18,\"peor\"]}]},{\"tipo\":\"lienzo\",\"desde\":[19],\"capitulo\":\"cada prestamista\",\"contador\":\"tasas |distintas\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":16,\"y\":94,\"tam\":28,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"etiqueta\":\"OFERTA A\"},{\"que\":\"persona\",\"x\":50,\"y\":94,\"tam\":28,\"cara\":\"neutro\",\"gorro\":\"sombrero\",\"ropa\":1,\"piel\":1,\"etiqueta\":\"OFERTA B\",\"en\":[19,\"tasa\"]},{\"que\":\"persona\",\"x\":84,\"y\":94,\"tam\":28,\"cara\":\"neutro\",\"gorro\":\"casco\",\"ropa\":4,\"piel\":3,\"etiqueta\":\"OFERTA C\",\"en\":[20,\"mismo\"]},{\"que\":\"texto\",\"texto\":\"tasas distintas\",\"x\":50,\"y\":38,\"tam\":5,\"color\":\"principal\",\"en\":[19,\"distinta\"]}]},{\"tipo\":\"lienzo\",\"desde\":[21],\"capitulo\":\"qué hacer\",\"contador\":\"pide |por escrito\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":95,\"tam\":26,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\"},{\"que\":\"recibo\",\"x\":50,\"y\":8,\"tam\":82,\"titulo\":\"Loan Estimate\",\"en\":[22,\"Loan\"],\"renglones\":[{\"texto\":\"Tasa\",\"valor\":\"7.28%\",\"en\":[22,\"Estimate\"]},{\"texto\":\"Costos de cierre\",\"valor\":\"$$\",\"en\":[23,\"préstamo\"]}]}]},{\"tipo\":\"lienzo\",\"desde\":[24],\"capitulo\":\"los pasos\",\"contador\":[{\"en\":[24],\"texto\":\"paso |1 de 4\"},{\"en\":[25],\"texto\":\"paso |2 de 4\"},{\"en\":[26],\"texto\":\"paso |3 de 4\"},{\"en\":[27],\"texto\":\"paso |4 de 4\"}],\"entrada\":\"corte\",\"elementos\":[{\"que\":\"lista\",\"x\":50,\"y\":8,\"en\":[24],\"items\":[{\"texto\":\"Tres prestamistas, mejor cinco\",\"en\":[24,\"cinco\"]},{\"texto\":\"El mismo tipo de préstamo\",\"en\":[25,\"préstamo\"]},{\"texto\":\"Compara tasa, cierre y pago\",\"en\":[26,\"pago\"]},{\"texto\":\"Ten tu ITIN o Seguro Social\",\"en\":[27,\"ITIN\"]}]}]},{\"tipo\":\"lienzo\",\"desde\":[28],\"capitulo\":\"cuánto ahorras\",\"contador\":\"ahorras |$600 a $1,200\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"persona\",\"x\":16,\"y\":95,\"tam\":30,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"etiqueta\":\"DOS EXTRA\"},{\"que\":\"torre\",\"x\":40,\"y\":95,\"tam\":55,\"valor\":600,\"max\":1200,\"prefijo\":\"$\",\"en\":[28,\"ahorras\"],\"hasta\":[28,\"600\"]},{\"que\":\"persona\",\"x\":63,\"y\":95,\"tam\":30,\"cara\":\"feliz\",\"gorro\":\"casco\",\"ropa\":2,\"etiqueta\":\"CINCO\",\"en\":[29,\"cinco\"]},{\"que\":\"torre\",\"x\":87,\"y\":95,\"tam\":55,\"valor\":1200,\"max\":1200,\"prefijo\":\"$\",\"en\":[29,\"cinco\"],\"hasta\":[29,\"1,200\"]}]},{\"tipo\":\"lienzo\",\"desde\":[30],\"capitulo\":\"negocia\",\"contador\":\"oferta |más baja\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"persona\",\"x\":20,\"y\":94,\"tam\":34,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"Tengo una tasa más baja\",\"cola\":1,\"x\":30,\"y\":16,\"en\":[30,\"baja\"]},{\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":80,\"y\":42,\"tam\":26,\"etiqueta\":\"PRESTAMISTA\",\"en\":[31,\"demás\"]},{\"que\":\"check\",\"x\":56,\"y\":68,\"en\":[31,\"igualen\"]}]},{\"tipo\":\"oscura\",\"desde\":[32],\"capitulo\":\"el premio\",\"contador\":\"te quedas |$36,000\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"$36,000\",\"etiqueta\":\"en tu casa\",\"en\":[32,\"36,000\"]},\"cae\":{\"objeto\":\"casa\",\"letrero\":\"TU CASA\",\"en\":[32,\"casa\"]}},{\"tipo\":\"cierre\",\"desde\":[35],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[35,\"Sígueme\"],\"compartir\":[36,\"compártelo\"]}]",
+  "aviso": "Ejemplo: préstamo de $300,000 a 30 años, con tasa de 7.28% contra 6.78% (hipotética). Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 2 (lienzo): objeto «casa» y globo «¡Firmo con este!» se enciman; sepáralos (cambia x/y o tam)"
+ ]
+}

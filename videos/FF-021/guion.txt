@@ -1,0 +1,42 @@
+# FF-021 · Finanzas Familiares · EST-01 · Los $255 del Seguro Social
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Pago único por muerte que da el Seguro Social al cónyuge o hijo elegible = 255 $ · https://www.ssa.gov/personal-record/when-someone-dies/lump-sum-death-payment
+# Fuente: Costo mediano de un funeral para adulto con velorio y entierro (NFDA, 2023) = 8300 $ · https://www.congress.gov/crs-product/R43637
+# Fuente: Costo mediano del funeral con velorio y entierro más bóveda (NFDA, 2023) = 9995 $ · https://www.after.com/articles/how-much-funeral-cost
+# Fuente: Costo mediano del funeral con velorio y cremación (NFDA, 2023) = 6280 $ · https://www.after.com/articles/how-much-funeral-cost
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Pagaste *Seguro Social* toda tu vida,
+y cuando faltas, tu familia recibe *solo* [$255|doscientos cincuenta y cinco dólares].
+Se llama el *pago único*.
+Al final te digo cómo *cubrir* la diferencia.
+Un solo pago, para el *cónyuge* o un hijo.
+Y esa cifra no ha cambiado en *décadas*.
+En Estados Unidos, un *funeral* con entierro
+cuesta en promedio [$8,300|ocho mil trescientos dólares].
+Es más de [32|treinta y dos] *veces*
+lo que paga el *Seguro Social*.
+Y lo peor: la cuenta llega en *días*.
+Antes de pensar en la *renta*,
+o en la comida de *esta semana*.
+Tu familia tiene que conseguir [$8,045|ocho mil cuarenta y cinco dólares]
+que *faltan*, y rápido.
+Si mandas dinero a tu *país*,
+suma también el *traslado*, si lo quieren.
+Ahora, ¿cómo lo *evitas*?
+Para eso sirve el [IUL|i u ele],
+un *seguro de vida indexado*.
+Es *tuyo*, no del trabajo.
+Si cambias de patrón, sigue *contigo*.
+Si faltas, tu familia puede recibir
+*dinero rápido* para esa cuenta.
+Puede crecer *hasta un* [10%|diez por ciento] al año,
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Suma funeral, renta y gastos de la *primera semana*.
+Esa cuenta es tu *punto de partida*.
+Un *asesor certificado* debe ver tu caso a detalle.
+Cuidarlos hoy es *tranquilidad* mañana.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien sostiene a su *familia*.

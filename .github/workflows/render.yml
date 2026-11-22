@@ -160,7 +160,7 @@ jobs:
           python-version: "3.12"
 
       - name: Traer los MP4 de esta corrida
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           path: entrega
 

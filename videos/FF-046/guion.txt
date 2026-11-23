@@ -1,0 +1,47 @@
+# FF-046 · Finanzas Familiares · EST-01 · La cuenta del hospital es una oferta
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Adultos en EE. UU. con alguna deuda por cuentas médicas o dentales = 41 % · https://www.kff.org/health-costs/kff-health-care-debt-survey/
+# Fuente: Deuda médica total en EE. UU. (en miles de millones de dólares) = 220 $ miles de millones · https://www.aha.org/testimony/2024-07-10-aha-senate-statement-what-can-congress-do-end-medical-debt-crisis-america
+# Fuente: Adultos con deuda médica que pagan $2,000 o más = 48 % · https://www.commonwealthfund.org/publications/surveys/2024/nov/state-health-insurance-coverage-us-2024-biennial-survey
+# Fuente: Adultos con deuda médica cuya deuda viene de una estadía en el hospital (la mitad) = 50 % · https://www.commonwealthfund.org/publications/surveys/2024/nov/state-health-insurance-coverage-us-2024-biennial-survey
+# Fuente: Ley federal 501(r): los hospitales sin fines de lucro deben tener política de ayuda financiera por escrito y no cobrarle a quien califica más que lo que se factura normalmente a pacientes con seguro = 1 regla · https://www.federalregister.gov/documents/2014/12/31/2014-30525/additional-requirements-for-charitable-hospitals-community-health-needs-assessments-for-charitable
+# Fuente: Los hospitales deben publicar precios de servicios que se pueden comparar (hasta 300 servicios, regla de transparencia de CMS) = 300 servicios · https://healthbillcentral.com/blog/how-to-negotiate-medical-bills
+# Fuente: Estimación de cuentas médicas con errores, hasta (cifra de un grupo de defensores de facturación, de blog de consejos; decir con cuidado) = 80 % · https://healthbillcentral.com/blog/how-to-negotiate-medical-bills
+# Fuente: Compañías de crédito no reportan deudas médicas en cobranza menores de $500 ni las ya pagadas (política voluntaria; la regla federal que lo prohibía fue anulada en julio de 2025) = 500 $ · https://www.bhfs.com/insight/federal-court-vacates-cfpbs-medical-debt-rule-finds-fcra-preempts-state-laws/
+# BLOQUE 1
+La cuenta del *hospital* no es un precio.
+Es una *oferta*.
+Al final te digo la *frase exacta*
+que le dices a *facturación* para pagar menos.
+Se llama *precio de lista*.
+Es lo que cobran si nadie *pregunta*.
+Ese número se *negocia* todos los días.
+Y a ti nadie te lo *dice*.
+Digamos que te llega una *cuenta* enorme
+por tu *estadía* en el hospital.
+Muchos la pasan a una *tarjeta*
+y pagan unos [$411|cuatrocientos once] al mes
+durante casi *dos años*.
+Terminas pagando casi [$9,900|nueve mil novecientos].
+Eso son casi [$1,900|mil novecientos] solo de *intereses*.
+Pero aquí viene lo que *nadie te dice*:
+los hospitales sin fines de lucro
+tienen por ley una *ayuda financiera* por escrito.
+Y a quien califica no le pueden cobrar
+más de lo que cobran *normalmente*.
+Ahora sí, la *frase exacta*.
+Llama a *facturación* y di:
+«Quiero mi *cuenta detallada*, por escrito.»
+Revisa cada cargo, porque puede haber *errores*.
+Segundo: pregunta por la *ayuda financiera*
+y pide la *solicitud*.
+Tercero: si no calificas, pide *descuento*
+y un plan de pagos *sin intereses*.
+Y mientras negocias, pide que no
+la manden a *cobranza*.
+Mira, con un *descuento* de ejemplo,
+tu cuenta baja a [$5,600|cinco mil seiscientos].
+En casi dos años, son [$233|doscientos treinta y tres] al mes.
+Contra la tarjeta, te quedan más de [$4,000|cuatro mil].
+*Sígueme* para más videos de finanzas,
+y compártelo con quien salió del *hospital*.

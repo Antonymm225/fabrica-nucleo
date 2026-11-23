@@ -1,0 +1,120 @@
+{
+ "titulo": "La cuenta del hospital es una oferta",
+ "angulo": "El monto que ves en la cuenta del hospital es precio de lista, no lo que tienes que pagar: puedes pedir el detalle, la ayuda financiera y un plan de pagos sin intereses, y casi nadie lo pide.",
+ "explicacion": "La cuenta que llega a tu casa es un precio de lista, y las aseguradoras lo negocian a la baja todos los días. Tú también puedes pedir tres cosas, en este orden: la cuenta detallada, la ayuda financiera del hospital y un plan de pagos. Los hospitales sin fines de lucro están obligados por ley federal a tener una política de ayuda financiera por escrito. A quien califica no le pueden cobrar más de lo que normalmente se le cobra a un paciente con seguro. Si pagas la cuenta completa con tarjeta, los intereses te cuestan miles de dólares. Si negocias, pagas menos y sin intereses.",
+ "datos": [
+  {
+   "dato": "Adultos en EE. UU. con alguna deuda por cuentas médicas o dentales",
+   "valor": 41,
+   "unidad": "%",
+   "fuente": "https://www.kff.org/health-costs/kff-health-care-debt-survey/"
+  },
+  {
+   "dato": "Deuda médica total en EE. UU. (en miles de millones de dólares)",
+   "valor": 220,
+   "unidad": "$ miles de millones",
+   "fuente": "https://www.aha.org/testimony/2024-07-10-aha-senate-statement-what-can-congress-do-end-medical-debt-crisis-america"
+  },
+  {
+   "dato": "Adultos con deuda médica que pagan $2,000 o más",
+   "valor": 48,
+   "unidad": "%",
+   "fuente": "https://www.commonwealthfund.org/publications/surveys/2024/nov/state-health-insurance-coverage-us-2024-biennial-survey"
+  },
+  {
+   "dato": "Adultos con deuda médica cuya deuda viene de una estadía en el hospital (la mitad)",
+   "valor": 50,
+   "unidad": "%",
+   "fuente": "https://www.commonwealthfund.org/publications/surveys/2024/nov/state-health-insurance-coverage-us-2024-biennial-survey"
+  },
+  {
+   "dato": "Ley federal 501(r): los hospitales sin fines de lucro deben tener política de ayuda financiera por escrito y no cobrarle a quien califica más que lo que se factura normalmente a pacientes con seguro",
+   "valor": 1,
+   "unidad": "regla",
+   "fuente": "https://www.federalregister.gov/documents/2014/12/31/2014-30525/additional-requirements-for-charitable-hospitals-community-health-needs-assessments-for-charitable"
+  },
+  {
+   "dato": "Los hospitales deben publicar precios de servicios que se pueden comparar (hasta 300 servicios, regla de transparencia de CMS)",
+   "valor": 300,
+   "unidad": "servicios",
+   "fuente": "https://healthbillcentral.com/blog/how-to-negotiate-medical-bills"
+  },
+  {
+   "dato": "Estimación de cuentas médicas con errores, hasta (cifra de un grupo de defensores de facturación, de blog de consejos; decir con cuidado)",
+   "valor": 80,
+   "unidad": "%",
+   "fuente": "https://healthbillcentral.com/blog/how-to-negotiate-medical-bills"
+  },
+  {
+   "dato": "Compañías de crédito no reportan deudas médicas en cobranza menores de $500 ni las ya pagadas (política voluntaria; la regla federal que lo prohibía fue anulada en julio de 2025)",
+   "valor": 500,
+   "unidad": "$",
+   "fuente": "https://www.bhfs.com/insight/federal-court-vacates-cfpbs-medical-debt-rule-finds-fcra-preempts-state-laws/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Supuesto: cuenta del hospital de $8,000. Pago mensual si la pasas a una tarjeta al 21% anual (supuesto) a 24 meses",
+   "expresion": "round(8000*(0.21/12)/(1-(1+0.21/12)**-24),2)",
+   "resultado": 411.09
+  },
+  {
+   "descripcion": "Total pagado con la tarjeta en 24 meses",
+   "expresion": "round(8000*(0.21/12)/(1-(1+0.21/12)**-24)*24,2)",
+   "resultado": 9866.04
+  },
+  {
+   "descripcion": "Intereses pagados a la tarjeta por la cuenta de $8,000",
+   "expresion": "round(8000*(0.21/12)/(1-(1+0.21/12)**-24)*24-8000,2)",
+   "resultado": 1866.04
+  },
+  {
+   "descripcion": "Cuenta con descuento supuesto de 30% por ayuda financiera o pago de contado",
+   "expresion": "round(8000*(1-0.30),2)",
+   "resultado": 5600.0
+  },
+  {
+   "descripcion": "Cuánto te ahorra el descuento de 30%",
+   "expresion": "round(8000*0.30,2)",
+   "resultado": 2400.0
+  },
+  {
+   "descripcion": "Pago mensual con plan del hospital sin intereses a 24 meses sobre la cuenta ya descontada",
+   "expresion": "round(5600/24,2)",
+   "resultado": 233.33
+  },
+  {
+   "descripcion": "Diferencia total entre pagar con tarjeta la cuenta completa y pagar la cuenta descontada con plan sin intereses",
+   "expresion": "round(8000*(0.21/12)/(1-(1+0.21/12)**-24)*24-5600,2)",
+   "resultado": 4266.04
+  },
+  {
+   "descripcion": "Diferencia mensual entre tarjeta y plan del hospital",
+   "expresion": "round(8000*(0.21/12)/(1-(1+0.21/12)**-24)-5600/24,2)",
+   "resultado": 177.76
+  }
+ ],
+ "consejo": "Antes de pagar o de pasar la cuenta a una tarjeta, haz tres cosas por orden. Una: llama a facturación y pide por escrito la cuenta detallada, con cada cargo y su código, y revisa si hay errores o cobros repetidos. Dos: pregunta si el hospital tiene política de ayuda financiera (caridad) y pide la solicitud. Los hospitales sin fines de lucro la tienen por ley. Tres: si no calificas, pide un descuento por pago de contado y un plan de pagos sin intereses, y pregunta si pueden mandarte el acuerdo por escrito. Mientras negocias, pide que no manden la cuenta a cobranza. Si ya pasó, también puedes negociar con el cobrador.",
+ "que_no_decir": [
+  "No prometer que todos consiguen 30%, 50% u 80% de descuento: el 30% es un ejemplo.",
+  "No decir que la cuenta se borra o que no hay que pagar nada: depende del ingreso y de la política del hospital.",
+  "No decir que los errores están en 80% de las cuentas como un hecho. Es una estimación de un grupo de defensores de facturación.",
+  "No decir que la deuda médica ya no aparece en el reporte de crédito: la regla federal fue anulada en julio de 2025 y solo hay políticas voluntarias de las compañías de crédito.",
+  "No dar consejo legal ni decir que el hospital está obligado a dar descuento a todos: la ley de ayuda financiera aplica a hospitales sin fines de lucro y a quienes califican.",
+  "No recomendar pasar la cuenta del hospital a una tarjeta de crédito ni usar préstamos de día de pago.",
+  "No mencionar seguros ni cooperativas."
+ ],
+ "con_iul": false,
+ "idea": "La cuenta del hospital se puede negociar: pedir el detalle, el descuento y el plan de pagos",
+ "gancho_pedido": "La cuenta del hospital no es un precio. Es una oferta.",
+ "ganchos_recientes": [
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo."
+ ]
+}

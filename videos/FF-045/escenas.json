@@ -1,0 +1,665 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: apartar $2,300 al año durante treinta años, con crecimiento de hasta 10% al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 3,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu contrato",
+   "contador": "cobras |por contrato",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "retiro"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 22,
+     "tam": 26,
+     "etiqueta": "POR CONTRATO",
+     "en": [
+      0,
+      "cobras"
+     ]
+    },
+    {
+     "id": "alc1",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 72,
+     "y": 60,
+     "tam": 28,
+     "en": [
+      1,
+      "ahorra"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "alc1",
+     "en": [
+      1,
+      "retiro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "con plan",
+   "contador": "plan |del trabajo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "CON PLAN"
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 72,
+     "y": 20,
+     "tam": 24,
+     "en": [
+      2,
+      "patrón"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+2 semanas",
+     "x": 72,
+     "y": 50,
+     "tam": 8,
+     "color": "verde",
+     "etiqueta": "de sueldo",
+     "en": [
+      3,
+      "semanas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 83,
+     "tam": 20,
+     "etiqueta": "¿QUÉ DÍA?",
+     "en": [
+      4,
+      "día"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "RETIRO",
+    "CALLADO"
+   ],
+   "en": [
+    6,
+    "retiro"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "con nómina",
+   "contador": "patrón |aparta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "car4",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "CHEQUE",
+     "en": [
+      7,
+      "Con"
+     ]
+    },
+    {
+     "id": "alc4",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 76,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "RETIRO",
+     "en": [
+      7,
+      "aparta"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "car4",
+     "a": "alc4",
+     "en": [
+      7,
+      "aparta"
+     ],
+     "hasta": [
+      8,
+      "notas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "CON NÓMINA",
+     "en": [
+      7,
+      "nómina"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "por contrato",
+   "contador": "sin plan |ni descuento",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "POR CONTRATO",
+     "cambia": {
+      "en": [
+       11,
+       "simplemente"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "alc5",
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 72,
+     "y": 55,
+     "tam": 28,
+     "en": [
+      9,
+      "plan"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "alc5",
+     "en": [
+      10,
+      "descuento"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y mi retiro?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      10,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "plan |$2,300 al año",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu año",
+     "en": [
+      12
+     ],
+     "renglones": [
+      {
+       "texto": "Plan del trabajo",
+       "valor": "$2,300",
+       "en": [
+        13,
+        "2,300"
+       ]
+      },
+      {
+       "texto": "Por contrato",
+       "valor": "$0",
+       "en": [
+        13,
+        "sin"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       13,
+       "sin"
+      ],
+      "texto": "¡NADA!"
+     },
+     "total": {
+      "texto": "Cada mes",
+      "valor": "$192",
+      "en": [
+       14,
+       "192"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "nadie te dice",
+   "contador": "dejó de |crecer",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 93,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "mon7",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 28,
+     "y": 50,
+     "tam": 26,
+     "etiqueta": "DINERO QUIETO",
+     "en": [
+      15,
+      "Pero"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si hubiera crecido?",
+     "piensa": true,
+     "cola": -1,
+     "x": 70,
+     "y": 22,
+     "en": [
+      16,
+      "crecer"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la salida",
+   "contador": "IUL |hasta 10% al año",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 88,
+     "inicio": 2300,
+     "final": 416000,
+     "barras": 10,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN 30 AÑOS",
+     "etiqueta": "IUL con piso",
+     "en": [
+      17,
+      "Hay"
+     ],
+     "hasta": [
+      20,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "piso cero",
+   "contador": "si cae |no pierdes",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 4,
+     "cambia": {
+      "en": [
+       22,
+       "piso"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "check",
+     "x": 28,
+     "y": 78,
+     "en": [
+      21,
+      "pierdes"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "0%",
+     "x": 30,
+     "y": 42,
+     "tam": 11,
+     "color": "verde",
+     "etiqueta": "piso",
+     "en": [
+      22,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "si empiezas",
+   "contador": "$2,300 |al año",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "EMPIEZAS JOVEN"
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 22,
+     "y": 36,
+     "tam": 18,
+     "etiqueta": "$2,300 AL AÑO",
+     "en": [
+      23,
+      "2,300"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 416000,
+     "max": 416000,
+     "prefijo": "$",
+     "etiqueta": "AL FINAL",
+     "en": [
+      23,
+      "empiezas"
+     ],
+     "hasta": [
+      24,
+      "unos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu retiro",
+   "contador": "podrías llegar |a $416,000",
+   "entrada": "destello",
+   "cifra": {
+    "texto": "+$416,000",
+    "etiqueta": "para tu retiro",
+    "en": [
+     25,
+     "416,000"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     25,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "el día exacto",
+   "contador": "día de |pago",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "k12",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "DÍA DE PAGO",
+     "en": [
+      28,
+      "Ahora"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      29,
+      "día"
+     ]
+    },
+    {
+     "id": "m12",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 72,
+     "y": 34,
+     "tam": 20,
+     "etiqueta": "TU PARTE",
+     "en": [
+      30,
+      "Aparta"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "k12",
+     "a": "m12",
+     "en": [
+      30,
+      "Aparta"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 28,
+     "y": 72,
+     "en": [
+      29,
+      "pagan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "da el paso",
+   "contador": "link |en la biografía",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está el link",
+     "x": 28,
+     "y": 40
+    },
+    {
+     "id": "lnk",
+     "que": "texto",
+     "texto": "LINK",
+     "color": "principal",
+     "x": 28,
+     "y": 82,
+     "tam": 6,
+     "en": [
+      32,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lnk",
+     "en": [
+      32,
+      "biografía"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 55,
+     "tam": 36,
+     "en": [
+      34,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

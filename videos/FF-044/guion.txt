@@ -1,0 +1,49 @@
+# FF-044 · Finanzas Familiares · EST-01 · La frase que frena al cobrador
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Máximo de llamadas del cobrador por la misma deuda en 7 días seguidos antes de presumirse acoso (Regla F) = 7 llamadas · https://www.consumerfinance.gov/rules-policy/regulations/1006/14/
+# Fuente: Hora más temprana permitida para llamar, hora local del deudor = 8 a.m. · https://www.consumerfinance.gov/rules-policy/regulations/1006/6/
+# Fuente: Hora más tarde permitida para llamar, hora local del deudor = 9 p.m. · https://www.consumerfinance.gov/rules-policy/regulations/1006/6/
+# Fuente: Daños adicionales máximos por demanda individual contra un cobrador que viola la FDCPA, más daños reales y honorarios de abogado = 1000 $ · https://www.law.cornell.edu/uscode/text/15/1692k
+# Fuente: Días que tienes para disputar la deuda por escrito después del primer aviso del cobrador (validación) = 30 días · https://www.consumerfinance.gov/rules-policy/regulations/1006/34/
+# BLOQUE 1
+Un cobrador *tiene que* dejar de llamarte
+al trabajo si le dices *una frase*.
+Al final te digo la frase *exacta*,
+palabra por palabra, para que la *uses*.
+Se llama la *llamada abusiva*.
+Crees que el cobrador *manda*,
+y que tienes que aguantar todo.
+Pero en Estados Unidos, la *ley federal*
+le pone *límites* al cobrador.
+No puede llamarte antes de las [8 a.m.|ocho de la mañana],
+ni después de las [9 p.m.|nueve de la noche].
+Esas [11|once] horas del día son *tuyas*.
+Y no puede hablar de tu deuda
+con tu *patrón*.
+Digamos que te llama [3|tres] veces al día
+al *trabajo*, de lunes a viernes.
+Son [15|quince] llamadas por *semana*.
+La ley solo le permite [7|siete].
+Se pasó [8|ocho] llamadas *cada semana*.
+En un mes son [60|sesenta] llamadas,
+y solo le tocaban [28|veintiocho].
+Más de [7|siete] llamadas en [7|siete] días
+ya se presume *acoso*.
+Y aquí viene lo que *nadie* te dice:
+si el cobrador rompe la ley,
+te puede deber hasta [$1,000|mil dólares] a *ti*,
+más los gastos de tu *abogado*.
+Ahora sí, la frase *exacta*:
+«Mi *empleador* no permite
+estas llamadas en el trabajo».
+Dila con calma, y *anota* la fecha,
+la hora y el nombre de quien llamó.
+Para frenar las llamadas,
+manda una *carta* por escrito, por correo certificado,
+y guarda *copia*.
+En tus primeros [30|treinta] días,
+pide por escrito que *comprueben* la deuda.
+La deuda no *desaparece*,
+pero ahora tú pones las *reglas*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien recibe llamadas de *cobradores*.

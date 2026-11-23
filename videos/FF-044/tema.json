@@ -1,0 +1,102 @@
+{
+ "titulo": "La frase que frena al cobrador",
+ "angulo": "Casi nadie sabe que un cobrador no puede llamarte al trabajo si le dices que tu patrón no lo permite, y que si se pasa de las reglas te puede deber dinero a ti.",
+ "explicacion": "Crees que el cobrador manda y que tienes que aguantar las llamadas. No es así. La ley federal (FDCPA y la Regla F del CFPB) le pone límites. No puede llamarte antes de las 8 a.m. ni después de las 9 p.m., y no puede hablar de tu deuda con tu patrón. Si le dices «Mi empleador no permite estas llamadas en el trabajo», debe dejar de llamarte ahí. Además, más de 7 llamadas en 7 días por la misma deuda se presume acoso, y si rompe la ley puede deberte hasta $1,000 más tus gastos de abogado. Aun así, la deuda no desaparece. Lo que cambia es que tú pones las reglas.",
+ "datos": [
+  {
+   "dato": "Máximo de llamadas del cobrador por la misma deuda en 7 días seguidos antes de presumirse acoso (Regla F)",
+   "valor": 7,
+   "unidad": "llamadas",
+   "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/14/"
+  },
+  {
+   "dato": "Hora más temprana permitida para llamar, hora local del deudor",
+   "valor": 8,
+   "unidad": "a.m.",
+   "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/6/"
+  },
+  {
+   "dato": "Hora más tarde permitida para llamar, hora local del deudor",
+   "valor": 9,
+   "unidad": "p.m.",
+   "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/6/"
+  },
+  {
+   "dato": "Daños adicionales máximos por demanda individual contra un cobrador que viola la FDCPA, más daños reales y honorarios de abogado",
+   "valor": 1000,
+   "unidad": "$",
+   "fuente": "https://www.law.cornell.edu/uscode/text/15/1692k"
+  },
+  {
+   "dato": "Días que tienes para disputar la deuda por escrito después del primer aviso del cobrador (validación)",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/34/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: cobrador que llama 3 veces al día al trabajo, de lunes a viernes, llamadas por semana",
+   "expresion": "3*5",
+   "resultado": 15
+  },
+  {
+   "descripcion": "Llamadas por semana que se pasan del límite de 7",
+   "expresion": "3*5-7",
+   "resultado": 8
+  },
+  {
+   "descripcion": "Llamadas en 4 semanas con ese ritmo",
+   "expresion": "3*5*4",
+   "resultado": 60
+  },
+  {
+   "descripcion": "Máximo permitido en 4 semanas con el límite de 7 por semana",
+   "expresion": "7*4",
+   "resultado": 28
+  },
+  {
+   "descripcion": "Llamadas de más en 4 semanas",
+   "expresion": "3*5*4-7*4",
+   "resultado": 32
+  },
+  {
+   "descripcion": "Porcentaje de las llamadas que sobrepasan el límite",
+   "expresion": "round((3*5-7)/(3*5)*100, 2)",
+   "resultado": 53.33
+  },
+  {
+   "descripcion": "Horas del día en que sí se puede llamar (de 8 a.m. a 9 p.m.)",
+   "expresion": "21-8",
+   "resultado": 13
+  },
+  {
+   "descripcion": "Horas del día en que NO se puede llamar",
+   "expresion": "24-(21-8)",
+   "resultado": 11
+  }
+ ],
+ "consejo": "Si te llaman al trabajo, di esta frase: «Mi empleador no permite estas llamadas en el trabajo». Anota la fecha, la hora y el nombre de quien llamó. Para frenar todas las llamadas, manda una carta por escrito pidiendo que dejen de contactarte, por correo certificado y guarda copia. En los primeros 30 días, pide también por escrito que te comprueben la deuda. Si siguen llamando después de eso, reporta la queja gratis en consumerfinance.gov/complaint y consulta con un abogado de ayuda legal. Muchos casos de la FDCPA se llevan sin que pagues por adelantado, porque la ley hace que el cobrador pague los honorarios.",
+ "que_no_decir": [
+  "«La deuda se borra si le mandas la carta.» La deuda sigue ahí.",
+  "«Con esa frase ya no te pueden demandar.» Sí pueden demandarte.",
+  "«Te van a pagar $1,000 seguro.» Es un máximo y lo decide un juez.",
+  "«Nunca más te van a llamar.» La carta escrita frena casi todo contacto, pero con excepciones.",
+  "«No pagues nada.» No des consejo de pagar o no pagar. Di que revisen si la deuda es suya y que disputen por escrito.",
+  "No mezclar con el tema del pago de $5 que revive la deuda (FF-042).",
+  "No dar cifras de leyes estatales como si fueran federales."
+ ],
+ "con_iul": false,
+ "idea": "Lo que un cobrador de deudas no puede hacer por ley y la frase para que deje de llamarte",
+ "gancho_pedido": "Un cobrador tiene que dejar de llamarte al trabajo si le dices una frase.",
+ "ganchos_recientes": [
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón."
+ ]
+}

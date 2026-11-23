@@ -1,0 +1,125 @@
+{
+ "titulo": "Nadie aparta tu retiro",
+ "angulo": "Cuando trabajas por contrato, no hay patrón que aparte una parte de tu cheque para tu retiro, y el dinero que dejas de recibir cada año se acumula en silencio durante 30 años.",
+ "explicacion": "En un trabajo con nómina, el patrón muchas veces aparta dinero para tu retiro y lo descuenta del cheque sin que tú hagas nada. Por contrato, no hay plan en el trabajo, no hay aportación del patrón y no hay descuento automático. Nadie te avisa y nadie te cobra, así que el retiro simplemente no ocurre. El plan del trabajo promedio le agrega cerca de 4.6% de tu sueldo; en $50,000 al año son $2,300. Si empiezas a los 30 y juntas esos $2,300 tú mismo cada año hasta los 60, con un 10% anual (el máximo de un año, no una promesa) llegas a unos $416,170.",
+ "datos": [
+  {
+   "dato": "Porcentaje de trabajadores del sector privado con acceso a un plan de retiro en su trabajo (marzo 2026). Esta cifra mide empleados con nómina, no contratistas",
+   "valor": 72,
+   "unidad": "%",
+   "fuente": "https://www.bls.gov/opub/ted/2026/retirement-benefits-were-available-to-72-percent-of-private-industry-workers-in-march-2026.htm"
+  },
+  {
+   "dato": "Porcentaje de trabajadores del sector privado que participan en un plan de retiro en su trabajo (marzo 2026)",
+   "valor": 52,
+   "unidad": "%",
+   "fuente": "https://www.bls.gov/opub/ted/2026/retirement-benefits-were-available-to-72-percent-of-private-industry-workers-in-march-2026.htm"
+  },
+  {
+   "dato": "Valor promedio del match que prometen los planes 401(k) de Vanguard, como % del sueldo",
+   "valor": 4.6,
+   "unidad": "%",
+   "fuente": "https://corporate.vanguard.com/content/dam/corp/research/pdf/how_america_saves_report_2025.pdf"
+  },
+  {
+   "dato": "Aportación total promedio al retiro (trabajador más patrón) en planes de Vanguard, como % del sueldo",
+   "valor": 12.0,
+   "unidad": "%",
+   "fuente": "https://corporate.vanguard.com/content/dam/corp/research/pdf/how_america_saves_report_2025.pdf"
+  },
+  {
+   "dato": "Pew: los trabajadores independientes tienen mucha menos probabilidad que los tradicionales de contar con plan de retiro en el trabajo, y por eso no reciben match ni la inscripción automática",
+   "valor": 0,
+   "unidad": "% (dato cualitativo; no se encontró cifra exacta)",
+   "fuente": "https://www.pew.org/en/research-and-analysis/issue-briefs/2019/06/how-well-are-independent-workers-prepared-for-retirement"
+  },
+  {
+   "dato": "Límite 2025 de un Solo 401(k) para quien trabaja por su cuenta: aportación como empleado (más lo que se puede sumar como patrón, hasta $70,000 en total)",
+   "valor": 23500,
+   "unidad": "$",
+   "fuente": "https://www.bluej.com/answer/are-there-irs-limits-on-solo-401-k-contributions-for-2025"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que un patrón promedio aportaría al año con un match de 4.6% sobre un sueldo de $50,000",
+   "expresion": "round(50000*0.046,2)",
+   "resultado": 2300.0
+  },
+  {
+   "descripcion": "Esa cantidad al mes",
+   "expresion": "round(50000*0.046/12,2)",
+   "resultado": 191.67
+  },
+  {
+   "descripcion": "Total aportado de los 30 a los 60 (30 años, $2,300 al año)",
+   "expresion": "round(2300*30,2)",
+   "resultado": 69000.0
+  },
+  {
+   "descripcion": "Valor a los 60 años con 10% anual, aporte al inicio de cada año, 30 años",
+   "expresion": "round(2300*1.1*((1.1**30-1)/0.1),2)",
+   "resultado": 416169.88
+  },
+  {
+   "descripcion": "Parte que es interés compuesto (valor final menos lo aportado)",
+   "expresion": "round(2300*1.1*((1.1**30-1)/0.1)-2300*30,2)",
+   "resultado": 347169.88
+  },
+  {
+   "descripcion": "Aportación total promedio de 12% sobre $50,000 al año",
+   "expresion": "round(50000*0.12,2)",
+   "resultado": 6000.0
+  },
+  {
+   "descripcion": "Esa aportación total al mes",
+   "expresion": "round(50000*0.12/12,2)",
+   "resultado": 500.0
+  }
+ ],
+ "consejo": "Como contratista, tú eres tu propio departamento de retiro. Lo primero es apartar tu parte el mismo día que te pagan, aunque sean $192 al mes, y no esperar a que sobre algo. Después pregunta qué cuenta te conviene: un Solo 401(k), un SEP IRA o un seguro de vida indexado (IUL) que crece hasta un 10% al año con piso de cero. El IUL no tiene tope de dinero acumulado; el único tope es el 10% de crecimiento de un año. Habla con un agente licenciado para ver costos y cifras reales.",
+ "que_no_decir": [
+  "No prometas que vas a ganar 10% cada año: es el máximo de un año, y puede ser menos, incluso cero.",
+  "No digas que $416,170 está garantizado: es una proyección.",
+  "No digas que los contratistas no tienen ninguna opción: sí existen cuentas para ellos (Solo 401(k), SEP IRA).",
+  "No uses la cifra de $8,477.73 de Seguro Social ni el sueldo de $60,000: ya salieron en FF-005.",
+  "No compares empezar a los 30 contra empezar a los 40: ya se hizo en FF-006.",
+  "No hables del 40% del Seguro Social ni de 2034: ya salieron en FF-008 y FF-038.",
+  "No digas que 'nadie' es literal: Nadie lo hace por ti, pero tú sí puedes hacerlo por tu cuenta.",
+  "No presentes el IUL como la única solución ni como inversión en bolsa.",
+  "No uses la cifra de acceso (72%) como si midiera a contratistas: el estudio de BLS cuenta empleados con nómina."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "El que cobra por contrato toda la vida: nadie aparta para su retiro",
+ "gancho_pedido": "Si cobras por contrato, nadie está ahorrando para tu retiro. Nadie.",
+ "ganchos_recientes": [
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses."
+ ]
+}

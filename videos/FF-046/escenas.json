@@ -1,0 +1,734 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: cuenta de $8,000, tarjeta al 21% anual a 24 meses y descuento supuesto de 30%. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "hospital |oferta",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 24,
+     "y": 42,
+     "tam": 28
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       3,
+       "pagar"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "OFERTA",
+     "x": 24,
+     "y": 72,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      1,
+      "oferta"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y la frase exacta?",
+     "piensa": true,
+     "cola": -1,
+     "x": 74,
+     "y": 18,
+     "en": [
+      2,
+      "frase"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el problema",
+   "contador": "es una |oferta",
+   "filas": [
+    "PRECIO",
+    "LISTA"
+   ],
+   "en": [
+    4,
+    "precio"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "nadie te dice",
+   "contador": "precio |de lista",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       7,
+       "dice"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 76,
+     "y": 68,
+     "tam": 24,
+     "etiqueta": "LO QUE COBRAN",
+     "en": [
+      5,
+      "cobran"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si pido pagar menos?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 16,
+     "en": [
+      6,
+      "negocia"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SE NEGOCIA",
+     "x": 76,
+     "y": 40,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      6,
+      "negocia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "cuenta |enorme",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Cuenta del hospital",
+     "en": [
+      8
+     ],
+     "renglones": [
+      {
+       "texto": "Estadía en el hospital",
+       "valor": "$$$",
+       "en": [
+        9,
+        "estadía"
+       ]
+      },
+      {
+       "texto": "Detalle de cargos",
+       "valor": "nada",
+       "en": [
+        9,
+        "hospital"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       9,
+       "hospital"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      8,
+      "cuenta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "la tarjeta",
+   "contador": "pago |$411 al mes",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco"
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 24,
+     "tam": 30,
+     "giro": -8,
+     "en": [
+      10,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$411",
+     "x": 72,
+     "y": 52,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      11,
+      "411"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 80,
+     "tam": 20,
+     "etiqueta": "DOS AÑOS",
+     "en": [
+      12,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "lo que pagas",
+   "contador": "pagas |$9,900",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 24,
+     "tam": 28,
+     "etiqueta": "TU QUINCENA",
+     "en": [
+      13
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 24,
+     "tam": 30,
+     "etiqueta": "LA TARJETA",
+     "en": [
+      13,
+      "pagando"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      13,
+      "pagando"
+     ],
+     "hasta": [
+      14,
+      "intereses"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 9866,
+     "prefijo": "$",
+     "x": 50,
+     "y": 60,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      13,
+      "Terminas"
+     ],
+     "hasta": [
+      13,
+      "9,900"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "$1,900 de intereses",
+     "x": 50,
+     "y": 84,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      14,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "la ley",
+   "contador": "ayuda |por ley",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Ayuda financiera",
+     "en": [
+      15
+     ],
+     "renglones": [
+      {
+       "texto": "Hospital sin lucro",
+       "valor": "sí",
+       "en": [
+        16,
+        "hospitales"
+       ]
+      },
+      {
+       "texto": "Ayuda por escrito",
+       "valor": "por ley",
+       "en": [
+        17,
+        "ayuda"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       17,
+       "escrito"
+      ],
+      "texto": "¡PÍDELA!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "en": [
+      15,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "si calificas",
+   "contador": "cobro |normal",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 3,
+     "etiqueta": "SI CALIFICAS",
+     "cambia": {
+      "en": [
+       19,
+       "normalmente"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "SOLO LO NORMAL",
+     "x": 50,
+     "y": 24,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      18,
+      "cobrar"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 80,
+     "y": 66,
+     "en": [
+      19,
+      "normalmente"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "paso uno",
+   "contador": "paso |1 de 3",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 78,
+     "y": 58,
+     "tam": 26,
+     "etiqueta": "FACTURACIÓN",
+     "en": [
+      21,
+      "facturación"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Quiero mi cuenta detallada, por escrito.",
+     "piensa": false,
+     "cola": -1,
+     "x": 45,
+     "y": 22,
+     "en": [
+      22,
+      "Quiero"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "ERRORES",
+     "color": "rojo",
+     "x": 78,
+     "y": 58,
+     "en": [
+      23,
+      "errores"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      24
+     ],
+     "items": [
+      {
+       "texto": "Pide la ayuda financiera",
+       "en": [
+        24,
+        "ayuda"
+       ]
+      },
+      {
+       "texto": "Pide la solicitud",
+       "en": [
+        25,
+        "solicitud"
+       ]
+      },
+      {
+       "texto": "Pide descuento de contado",
+       "en": [
+        26,
+        "descuento"
+       ]
+      },
+      {
+       "texto": "Plan de pagos sin intereses",
+       "en": [
+        27,
+        "intereses"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 88,
+     "en": [
+      27,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "cobranza",
+   "contador": "pide |que no",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4
+    },
+    {
+     "que": "globo",
+     "texto": "Que no la manden a cobranza.",
+     "piensa": false,
+     "cola": -1,
+     "x": 32,
+     "y": 18,
+     "en": [
+      28,
+      "pide"
+     ]
+    },
+    {
+     "id": "cob",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 76,
+     "y": 62,
+     "tam": 26,
+     "etiqueta": "COBRANZA",
+     "en": [
+      29,
+      "manden"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cob",
+     "en": [
+      29,
+      "cobranza"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "con descuento",
+   "contador": "cuenta |$5,600",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 25,
+     "y": 95,
+     "tam": 52,
+     "valor": 9866,
+     "max": 9866,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TARJETA",
+     "en": [
+      30,
+      "Mira"
+     ],
+     "hasta": [
+      30,
+      "descuento"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 52,
+     "valor": 5600,
+     "max": 9866,
+     "prefijo": "$",
+     "etiqueta": "CON PLAN",
+     "en": [
+      31,
+      "baja"
+     ],
+     "hasta": [
+      31,
+      "5,600"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$233 al mes",
+     "x": 50,
+     "y": 22,
+     "tam": 9,
+     "color": "verde",
+     "en": [
+      32,
+      "233"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    33
+   ],
+   "capitulo": "lo que te queda",
+   "contador": "ahorras |$4,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$4,000",
+    "etiqueta": "te quedan",
+    "en": [
+     33,
+     "4,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU RENTA",
+    "en": [
+     33,
+     "quedan"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

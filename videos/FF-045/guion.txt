@@ -1,0 +1,49 @@
+# FF-045 · Finanzas Familiares · EST-01 · Nadie aparta tu retiro
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de trabajadores del sector privado con acceso a un plan de retiro en su trabajo (marzo 2026). Esta cifra mide empleados con nómina, no contratistas = 72 % · https://www.bls.gov/opub/ted/2026/retirement-benefits-were-available-to-72-percent-of-private-industry-workers-in-march-2026.htm
+# Fuente: Porcentaje de trabajadores del sector privado que participan en un plan de retiro en su trabajo (marzo 2026) = 52 % · https://www.bls.gov/opub/ted/2026/retirement-benefits-were-available-to-72-percent-of-private-industry-workers-in-march-2026.htm
+# Fuente: Valor promedio del match que prometen los planes 401(k) de Vanguard, como % del sueldo = 4.6 % · https://corporate.vanguard.com/content/dam/corp/research/pdf/how_america_saves_report_2025.pdf
+# Fuente: Aportación total promedio al retiro (trabajador más patrón) en planes de Vanguard, como % del sueldo = 12.0 % · https://corporate.vanguard.com/content/dam/corp/research/pdf/how_america_saves_report_2025.pdf
+# Fuente: Pew: los trabajadores independientes tienen mucha menos probabilidad que los tradicionales de contar con plan de retiro en el trabajo, y por eso no reciben match ni la inscripción automática = 0 % (dato cualitativo; no se encontró cifra exacta) · https://www.pew.org/en/research-and-analysis/issue-briefs/2019/06/how-well-are-independent-workers-prepared-for-retirement
+# Fuente: Límite 2025 de un Solo 401(k) para quien trabaja por su cuenta: aportación como empleado (más lo que se puede sumar como patrón, hasta $70,000 en total) = 23500 $ · https://www.bluej.com/answer/are-there-irs-limits-on-solo-401-k-contributions-for-2025
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si cobras por *contrato*,
+nadie ahorra para tu *retiro*. Nadie.
+Cada año, un patrón con plan
+puede sumar *más de dos semanas* de sueldo.
+Al final te digo el *día exacto*
+en que tienes que apartar tu parte.
+Se llama el *retiro callado*.
+Con nómina, el patrón aparta
+y tú ni lo *notas*.
+Por *contrato*, no hay plan en el trabajo.
+No hay descuento, y nadie te avisa.
+Entonces el retiro simplemente *no ocurre*.
+Un plan normal del trabajo te sumaría
+[$2,300|dos mil trescientos] al *año*, sin que lo pidas.
+Son unos [$192|ciento noventa y dos] al *mes*.
+Pero aquí viene lo que *nadie* te dice:
+ese dinero también *dejó de crecer*.
+Hay una *salida*: un [IUL|a yu el],
+un *seguro de vida indexado*.
+Es tuyo, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Si empiezas joven y apartas [$2,300|dos mil trescientos] al año,
+después de treinta años podrías llegar a unos
+[$416,000|cuatrocientos dieciséis mil] para tu *retiro*.
+Y tú solo habrás puesto [$69,000|sesenta y nueve mil].
+Depende de cuándo empieces.
+Ahora sí, el *día exacto*:
+el mismo día que te *pagan*.
+Aparta tu parte *primero*, antes de la renta.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra por *contrato*.

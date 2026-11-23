@@ -1,0 +1,683 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: cobrador que llama 3 veces al día al trabajo, de lunes a viernes. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el cobrador",
+   "contador": "te llama |al trabajo",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "frase"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "celular",
+     "modo": "llamada",
+     "x": 80,
+     "y": 62,
+     "tam": 20,
+     "en": [
+      0,
+      "llamarte"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál será la frase?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 14,
+     "en": [
+      2,
+      "frase"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "LLAMADA",
+    "ABUSIVA"
+   ],
+   "en": [
+    4,
+    "llamada"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "lo que crees",
+   "contador": "el cobrador |manda",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       8,
+       "límites"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 92,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL COBRADOR",
+     "en": [
+      5,
+      "cobrador"
+     ],
+     "cambia": {
+      "en": [
+       8,
+       "límites"
+      ],
+      "cara": "neutro"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¡Contesta ya!",
+     "cola": -1,
+     "x": 74,
+     "y": 24,
+     "en": [
+      5,
+      "manda"
+     ],
+     "sale": [
+      7,
+      "Pero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LEY FEDERAL",
+     "color": "principal",
+     "x": 50,
+     "y": 47,
+     "en": [
+      7,
+      "federal"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "las horas",
+   "contador": "llamar |8 a 9",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "Nunca antes de 8 a.m.",
+     "color": "tinta",
+     "x": 50,
+     "y": 14,
+     "en": [
+      9,
+      "8"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Ni después de 9 p.m.",
+     "color": "tinta",
+     "x": 50,
+     "y": 27,
+     "en": [
+      10,
+      "9"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Las otras 11 horas: tuyas",
+     "color": "verde",
+     "x": 50,
+     "y": 40,
+     "en": [
+      11,
+      "11"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "tu patrón",
+   "contador": "tu deuda |es tuya",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "llamada",
+     "x": 50,
+     "y": 40,
+     "tam": 22,
+     "en": [
+      12,
+      "hablar"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 92,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      12,
+      "tu"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cel",
+     "en": [
+      13,
+      "patrón"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "llamadas |3 al día",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "celular",
+     "modo": "llamada",
+     "x": 28,
+     "y": 26,
+     "tam": 20
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       16,
+       "15"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "3 al día",
+     "color": "tinta",
+     "x": 28,
+     "y": 68,
+     "en": [
+      14,
+      "3"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "15 por semana",
+     "color": "principal",
+     "x": 28,
+     "y": 84,
+     "en": [
+      16,
+      "15"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el límite",
+   "contador": "máximo |7 por semana",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 55,
+     "valor": 7,
+     "max": 15,
+     "prefijo": "",
+     "etiqueta": "LA LEY",
+     "en": [
+      17,
+      "ley"
+     ],
+     "hasta": [
+      17,
+      "7"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 15,
+     "max": 15,
+     "prefijo": "",
+     "color": "gris",
+     "etiqueta": "LLAMÓ",
+     "en": [
+      18,
+      "pasó"
+     ],
+     "hasta": [
+      18,
+      "semana"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "8 de más",
+     "color": "tinta",
+     "x": 50,
+     "y": 22,
+     "en": [
+      18,
+      "8"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "en un mes",
+   "contador": "llamadas |60",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Llamadas en un mes",
+     "en": [
+      19
+     ],
+     "renglones": [
+      {
+       "texto": "Las que hizo",
+       "valor": "60",
+       "en": [
+        19,
+        "60"
+       ]
+      },
+      {
+       "texto": "Las permitidas",
+       "valor": "28",
+       "en": [
+        20,
+        "28"
+       ]
+      },
+      {
+       "texto": "Más de 7 en 7 días",
+       "valor": "Acoso",
+       "en": [
+        21,
+        "Más"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       22,
+       "acoso"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    23
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "a tu favor |hasta $1,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,000",
+    "etiqueta": "hasta, a tu favor",
+    "en": [
+     25,
+     "1,000"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "PARA TI",
+    "en": [
+     26,
+     "abogado"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "la frase",
+   "contador": "frase |exacta",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "Mi empleador no permite estas llamadas en el trabajo",
+     "cola": -1,
+     "x": 55,
+     "y": 22,
+     "en": [
+      28,
+      "empleador"
+     ]
+    },
+    {
+     "que": "celular",
+     "modo": "llamada",
+     "x": 80,
+     "y": 64,
+     "tam": 20,
+     "en": [
+      27,
+      "frase"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 56,
+     "y": 80,
+     "en": [
+      29,
+      "trabajo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "qué anotar",
+   "contador": "anota |todo",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Fecha, hora y nombre de quien llamó",
+     "x": 72,
+     "y": 45,
+     "en": [
+      30,
+      "fecha"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "la carta",
+   "contador": "correo |certificado",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 80,
+     "titulo": "Carta al cobrador",
+     "en": [
+      32
+     ],
+     "renglones": [
+      {
+       "texto": "Que dejen de llamarme",
+       "valor": "Por escrito",
+       "en": [
+        32
+       ]
+      },
+      {
+       "texto": "Envío",
+       "valor": "Certificado",
+       "en": [
+        33,
+        "correo"
+       ]
+      },
+      {
+       "texto": "Me quedo con",
+       "valor": "Copia",
+       "en": [
+        34,
+        "copia"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 84,
+     "en": [
+      34,
+      "copia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "tú pones reglas",
+   "contador": "deuda |sigue",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "30 DÍAS"
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       38,
+       "reglas"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "check",
+     "x": 25,
+     "y": 72,
+     "en": [
+      36,
+      "comprueben"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "La deuda sigue ahí",
+     "color": "gris",
+     "x": 72,
+     "y": 40,
+     "en": [
+      37,
+      "deuda"
+     ],
+     "sale": [
+      38,
+      "pero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Tú pones las reglas",
+     "color": "verde",
+     "x": 72,
+     "y": 40,
+     "en": [
+      38,
+      "tú"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    39
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    39,
+    "Sígueme"
+   ],
+   "compartir": [
+    40,
+    "compártelo"
+   ]
+  }
+ ]
+}

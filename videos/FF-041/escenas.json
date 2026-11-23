@@ -1,0 +1,758 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo de troca a 60 meses, con tasa supuesta de 9% (reporte limpio) contra 14% (con error). Estudio del FTC de 2012. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu reporte",
+   "contador": "error |ajeno",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 80,
+     "titulo": "Tu reporte de crédito",
+     "en": [
+      0
+     ],
+     "renglones": [
+      {
+       "texto": "Pagos a tiempo",
+       "valor": "OK",
+       "en": [
+        0,
+        "reporte"
+       ]
+      },
+      {
+       "texto": "Cuenta que no es tuya",
+       "valor": "¿?",
+       "en": [
+        0,
+        "error"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       1,
+       "tuyo"
+      ],
+      "texto": "¡ERROR!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      1,
+      "pagas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la página",
+   "contador": "página |gratis",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      2
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál es la página gratis?",
+     "piensa": true,
+     "cola": -1,
+     "x": 34,
+     "y": 22,
+     "en": [
+      2,
+      "página"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "GRATIS",
+     "color": "verde",
+     "x": 72,
+     "y": 55,
+     "tam": 7,
+     "en": [
+      3,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "ERROR",
+    "REPORTE"
+   ],
+   "en": [
+    4,
+    "error"
+   ],
+   "entrada": "cuadritos"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "qué tan común",
+   "contador": "error |1 de 5",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 12,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 0,
+     "piel": 1,
+     "en": [
+      5,
+      "estudio"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 31,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "piel": 2,
+     "en": [
+      5,
+      "gobierno"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 0,
+     "en": [
+      6,
+      "una"
+     ],
+     "cambia": {
+      "en": [
+       7,
+       "error"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 69,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 3,
+     "en": [
+      6,
+      "cada"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 88,
+     "y": 93,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 2,
+     "en": [
+      6,
+      "cinco"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "1 de 5",
+     "etiqueta": "con un error",
+     "x": 50,
+     "y": 40,
+     "tam": 12,
+     "en": [
+      6,
+      "personas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "tu tasa",
+   "contador": "error |1 de 20",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "piel": 1,
+     "en": [
+      8
+     ],
+     "cambia": {
+      "en": [
+       9,
+       "tasa"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "1 de 20",
+     "etiqueta": "sube tu tasa",
+     "x": 68,
+     "y": 45,
+     "tam": 10,
+     "color": "principal",
+     "en": [
+      9,
+      "uno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "no lo ves",
+   "contador": "tasa |más alta",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 84,
+     "y": 94,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 3,
+     "en": [
+      10
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Por qué mi tasa es tan alta?",
+     "piensa": false,
+     "cola": 1,
+     "x": 62,
+     "y": 16,
+     "en": [
+      11,
+      "tasa"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 20,
+     "y": 55,
+     "tam": 24,
+     "en": [
+      12,
+      "troca"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 76,
+     "tam": 20,
+     "en": [
+      12,
+      "casa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "reporte limpio",
+   "contador": "tasa |9%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Reporte limpio",
+     "en": [
+      13
+     ],
+     "renglones": [
+      {
+       "texto": "Préstamo",
+       "valor": "Troca",
+       "en": [
+        13,
+        "troca"
+       ]
+      },
+      {
+       "texto": "Plazo",
+       "valor": "60 meses",
+       "en": [
+        14,
+        "60"
+       ]
+      },
+      {
+       "texto": "Tasa al año",
+       "valor": "9%",
+       "en": [
+        15,
+        "9"
+       ]
+      }
+     ],
+     "total": {
+      "texto": "Pago al mes",
+      "valor": "$519",
+      "en": [
+       16,
+       "519"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      14,
+      "reporte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "con el error",
+   "contador": "tasa |14%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 12,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "SIN ERROR",
+     "en": [
+      17
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 38,
+     "y": 95,
+     "tam": 46,
+     "valor": 519,
+     "max": 582,
+     "prefijo": "$",
+     "etiqueta": "$519 al mes",
+     "en": [
+      17,
+      "pon"
+     ],
+     "hasta": [
+      17,
+      "error"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 62,
+     "y": 95,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "CON ERROR",
+     "en": [
+      18,
+      "dan"
+     ],
+     "cambia": {
+      "en": [
+       19,
+       "582"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 88,
+     "y": 95,
+     "tam": 46,
+     "valor": 582,
+     "max": 582,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "$582 al mes",
+     "en": [
+      18,
+      "14"
+     ],
+     "hasta": [
+      19,
+      "582"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que pagas",
+   "contador": "de más |$63 al mes",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 26,
+     "tam": 30,
+     "etiqueta": "tu quincena",
+     "en": [
+      20
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 74,
+     "y": 60,
+     "tam": 32,
+     "etiqueta": "el banco",
+     "en": [
+      20,
+      "dólares"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      20,
+      "dólares"
+     ],
+     "hasta": [
+      21,
+      "ajeno"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$63",
+     "etiqueta": "cada mes",
+     "x": 26,
+     "y": 68,
+     "tam": 9,
+     "en": [
+      20,
+      "63"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "extra |$3,765",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$3,765",
+    "etiqueta": "en cinco años",
+    "en": [
+     22,
+     "3,765"
+    ]
+   },
+   "cae": {
+    "objeto": "troca",
+    "letrero": "7 PAGOS",
+    "en": [
+     23,
+     "troca"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1 de 3",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "AnnualCreditReport.com",
+     "color": "verde",
+     "x": 40,
+     "y": 28,
+     "tam": 4
+    },
+    {
+     "que": "check",
+     "x": 25,
+     "y": 52,
+     "en": [
+      26,
+      "oficial"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      27,
+      "Baja"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "3 burós",
+     "x": 25,
+     "y": 80,
+     "tam": 8,
+     "en": [
+      27,
+      "tres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "disputa",
+   "contador": "paso |2 de 3",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 94,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      29
+     ],
+     "cambia": {
+      "en": [
+       31,
+       "investigar"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Esa cuenta no es mía.",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      30,
+      "error"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 52,
+     "tam": 30,
+     "etiqueta": "30 DÍAS",
+     "en": [
+      31,
+      "30"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "lo que sigue",
+   "contador": "paso |3 de 3",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      32
+     ],
+     "items": [
+      {
+       "texto": "Guarda tus pruebas",
+       "en": [
+        32,
+        "pruebas"
+       ]
+      },
+      {
+       "texto": "Disputa solo lo que no es tuyo",
+       "en": [
+        33,
+        "tuyo"
+       ]
+      },
+      {
+       "texto": "No pagues por reparación",
+       "en": [
+        34,
+        "reparación"
+       ]
+      },
+      {
+       "texto": "Hazlo tú, gratis",
+       "en": [
+        35,
+        "gratis"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      35,
+      "Tú"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

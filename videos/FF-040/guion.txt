@@ -1,0 +1,50 @@
+# FF-040 · Finanzas Familiares · EST-01 · Quién le manda a tu mamá
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Remesas familiares recibidas por El Salvador, Guatemala, Honduras y Nicaragua en 2023 (miles de millones de dólares) = 42 $ miles de millones · https://ticotimes.net/2024/04/10/central-americas-lifeline-record-family-remittances
+# Fuente: Remesas como porcentaje del PIB de Honduras = 27 % · https://ticotimes.net/2024/04/10/central-americas-lifeline-record-family-remittances
+# Fuente: Remesas como porcentaje del PIB de El Salvador = 24 % · https://ticotimes.net/2024/04/10/central-americas-lifeline-record-family-remittances
+# Fuente: Remesas como porcentaje del PIB de Guatemala (casi) = 20 % · https://ticotimes.net/2024/04/10/central-americas-lifeline-record-family-remittances
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si mañana faltas,
+¿quién le manda a tu *mamá*?
+Tu familia cuenta con tu *envío* de cada mes,
+y ese envío se corta *el mismo día*.
+Al final te digo el *nombre exacto*
+del papel que lo puede seguir *mandando*,
+y la *pregunta* que debes hacer por escrito.
+Se llama *depender de uno*.
+Digamos que mandas [$4,800|cuatro mil ochocientos dólares] al año.
+Para tu mamá ya es *presupuesto*:
+la renta de su casa,
+las *medicinas*, la luz.
+En Honduras, cerca de [27%|veintisiete por ciento]
+de toda la economía viene de *envíos*.
+En El Salvador, son [24%|veinticuatro por ciento].
+Pero ese envío depende de *una persona*.
+Y aquí viene lo que *nadie* te dice.
+El seguro del trabajo es *del patrón*,
+casi siempre es poco,
+y se pierde si *cambias de patrón*.
+Tampoco piensa en quien vive de *tus envíos*.
+Son [5|cinco] años hasta que *tu hermano*
+termine la escuela: [$24,000|veinticuatro mil dólares].
+La salida es un [IUL|a yu el],
+un *seguro de vida indexado*.
+Si tú faltas, paga a quien *nombres*.
+Ahora sí, el nombre exacto del papel:
+se llama *beneficiario*, y ahí va tu mamá.
+Y esta es la *pregunta* por escrito:
+¿mi mamá cobra *viviendo fuera* de Estados Unidos?
+Así tu familia no se queda *sin apoyo*.
+El [IUL|a yu el] es *tuyo*,
+y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde*.
+Tiene *piso cero*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien le manda a su *mamá*.

@@ -1,0 +1,47 @@
+# FF-041 · Finanzas Familiares · EST-01 · El error que no es tuyo
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de consumidores con al menos un error confirmado en un reporte de crédito (estudio del FTC, 2012) = 21 % · https://www.ftc.gov/news-events/news/press-releases/2013/02/ftc-study-five-percent-consumers-had-errors-their-credit-reports-could-result-less
+# Fuente: Porcentaje de consumidores con un error que pudo ponerlos en un nivel de riesgo peor y subirles el costo del crédito (FTC, 2012) = 5 % · https://www.ftc.gov/news-events/news/press-releases/2013/02/ftc-study-five-percent-consumers-had-errors-their-credit-reports-could-result-less
+# Fuente: Días que normalmente tiene el buró para investigar una disputa (ley FCRA) = 30 días · https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/
+# Fuente: Tasa supuesta (ejemplo) con reporte limpio, préstamo de troca a 60 meses = 9 % · https://www.experian.com/blogs/ask-experian/average-car-payment/
+# Fuente: Tasa supuesta (ejemplo) con el error en el reporte, mismo préstamo = 14 % · https://www.experian.com/blogs/ask-experian/average-car-payment/
+# Fuente: Reportes gratis cada semana en los tres burós (Equifax, Experian, TransUnion) = 52 reportes por buró al año · https://www.annualcreditreport.com
+# BLOQUE 1
+Hay un *error* en tu reporte de crédito
+que no es tuyo, y lo *pagas* tú.
+Al final te digo la *página exacta*,
+la única que es *gratis*.
+Se llama *error de reporte*.
+Un estudio del gobierno en Estados Unidos
+encontró que una de cada cinco *personas*
+tenía al menos un *error* ahí.
+Y una de cada veinte
+tenía uno que le podía subir la *tasa*.
+Y lo peor: tú nunca lo *ves*.
+Solo ves una tasa *más alta*
+cuando pides una *troca* o una casa.
+Piensa en el préstamo de tu *troca*
+a [60|sesenta] meses, con tu reporte *limpio*.
+La tasa es [9%|nueve por ciento],
+pagas [$519|quinientos diecinueve] al *mes*.
+Ahora pon el *error* en tu reporte.
+Te dan [14%|catorce por ciento] de *tasa*.
+Pagas [$582|quinientos ochenta y dos] al *mes*.
+Son [$63|sesenta y tres] dólares *de más*,
+cada mes, por un error *ajeno*.
+En cinco años, son [$3,765|tres mil setecientos sesenta y cinco].
+Más de siete pagos de tu *troca*,
+regalados por algo que *no hiciste*.
+Ahora sí, la página: [AnnualCreditReport.com|annual credit report punto com].
+Es la única *oficial* y gratis.
+Baja tus reportes de los *tres burós*,
+y puedes hacerlo gratis cada *semana*.
+Revisa tu nombre, tus cuentas y *pagos tardíos*.
+Si ves un error, *dispútalo* gratis.
+El buró tiene [30|treinta] días para *investigar*.
+Guarda tus *pruebas*.
+Solo disputa lo que *no es tuyo*.
+Y nunca pagues por *reparación de crédito*.
+Tú mismo lo haces *gratis*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien siempre paga *puntual*.

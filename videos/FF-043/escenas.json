@@ -1,0 +1,718 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de $1,100 por semana y 12 semanas sin cobrar. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 1,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el infarto",
+   "contador": "infarto |sin cobrar",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 36,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "quiebra"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 72,
+     "y": 28,
+     "tam": 30,
+     "en": [
+      0,
+      "infarto"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 66,
+     "tam": 24,
+     "etiqueta": "SIN COBRAR",
+     "en": [
+      1,
+      "meses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la pregunta",
+   "contador": "al final |la pregunta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 38,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál es la pregunta?",
+     "piensa": true,
+     "cola": 1,
+     "x": 50,
+     "y": 24,
+     "en": [
+      2,
+      "pregunta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el problema",
+   "filas": [
+    "HUECO",
+    "CHEQUE"
+   ],
+   "en": [
+    4,
+    "hueco"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "los infartos",
+   "contador": "al año |805,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 50,
+     "y": 16,
+     "tam": 22,
+     "en": [
+      5
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 805000,
+     "x": 50,
+     "y": 46,
+     "tam": 11,
+     "en": [
+      5,
+      "805,000"
+     ],
+     "hasta": [
+      6,
+      "infartos"
+     ],
+     "etiqueta": "infartos al año",
+     "color": "principal"
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      6,
+      "gente"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "tu seguro",
+   "contador": "seguro |$9,200",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu seguro médico",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Tú pagas hasta aquí",
+       "valor": "$9,200",
+       "en": [
+        8,
+        "9,200"
+       ]
+      },
+      {
+       "texto": "Luego paga tu seguro",
+       "valor": "SÍ",
+       "en": [
+        9,
+        "bolsillo"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       9,
+       "bolsillo"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "tu sueldo",
+   "contador": "sueldo |sin seguro",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      10
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 26,
+     "tam": 28,
+     "etiqueta": "TU SUELDO",
+     "en": [
+      10,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "c",
+     "en": [
+      11,
+      "cobras"
+     ]
+    },
+    {
+     "id": "cal",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 76,
+     "y": 26,
+     "tam": 28,
+     "etiqueta": "12 SEMANAS",
+     "en": [
+      12,
+      "ley"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN PAGO",
+     "color": "rojo",
+     "x": 76,
+     "y": 30,
+     "en": [
+      13,
+      "pago"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "sueldo |$1,100",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      14
+     ],
+     "cambia": {
+      "en": [
+       15,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Piden 1,250 horas",
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      14,
+      "1,250"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 80,
+     "y": 48,
+     "tam": 22,
+     "etiqueta": "$1,100 SEMANA",
+     "en": [
+      16,
+      "1,100"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 76,
+     "tam": 20,
+     "etiqueta": "12 SEMANAS",
+     "en": [
+      17,
+      "12"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "la cuenta",
+   "contador": "sueldo |$13,200",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 42,
+     "valor": 13200,
+     "max": 13200,
+     "prefijo": "$",
+     "etiqueta": "SUELDO PERDIDO",
+     "en": [
+      18,
+      "dejas"
+     ],
+     "hasta": [
+      18,
+      "13,200"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 42,
+     "valor": 9200,
+     "max": 13200,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TU BOLSILLO",
+     "en": [
+      19
+     ],
+     "hasta": [
+      19,
+      "hospital"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$4,000",
+     "x": 50,
+     "y": 25,
+     "tam": 9,
+     "etiqueta": "más que el hospital",
+     "color": "principal",
+     "en": [
+      19,
+      "4,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que falta",
+   "contador": "suman |$22,400",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 18,
+     "tam": 22,
+     "etiqueta": "LA RENTA",
+     "en": [
+      20
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 75,
+     "y": 18,
+     "tam": 22,
+     "etiqueta": "SIN CHEQUE",
+     "en": [
+      21,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$22,400",
+     "x": 50,
+     "y": 48,
+     "tam": 10,
+     "etiqueta": "hospital + sueldo",
+     "color": "principal",
+     "en": [
+      21,
+      "22,400"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "37%",
+     "x": 50,
+     "y": 76,
+     "tam": 10,
+     "etiqueta": "sin ahorro",
+     "color": "gris",
+     "en": [
+      22,
+      "37%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      23
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      23
+     ],
+     "cambia": {
+      "en": [
+       24,
+       "semanas"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuántas semanas aguanto?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      24,
+      "semanas"
+     ],
+     "sale": [
+      25,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      25,
+      "patrón"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Tengo seguro de incapacidad a corto plazo?",
+     "cola": -1,
+     "x": 40,
+     "y": 20,
+     "en": [
+      26,
+      "tengo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "la salida",
+   "contador": "opción |IUL",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      27
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "CASI NUNCA HAY",
+     "color": "principal",
+     "tam": 5,
+     "x": 62,
+     "y": 15,
+     "en": [
+      27,
+      "casi"
+     ],
+     "sale": [
+      28,
+      "existe"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 75,
+     "y": 52,
+     "tam": 28,
+     "etiqueta": "IUL TUYO",
+     "en": [
+      28,
+      "IUL"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PISO CERO",
+     "color": "verde",
+     "x": 75,
+     "y": 52,
+     "en": [
+      30,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    31
+   ],
+   "capitulo": "en vida",
+   "contador": "beneficio |en vida",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "EN VIDA",
+    "etiqueta": "parte del beneficio",
+    "en": [
+     32,
+     "vida"
+    ]
+   },
+   "cae": {
+    "objeto": "hospital",
+    "letrero": "CALIFICA",
+    "en": [
+     32,
+     "califica"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "tu link",
+   "contador": "link |en biografía",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está tu link",
+     "x": 28,
+     "y": 50,
+     "en": [
+      34
+     ]
+    },
+    {
+     "id": "lnk",
+     "que": "texto",
+     "texto": "LINK EN BIO",
+     "color": "principal",
+     "tam": 5,
+     "x": 74,
+     "y": 24,
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lnk",
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 70,
+     "tam": 26,
+     "en": [
+      37,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

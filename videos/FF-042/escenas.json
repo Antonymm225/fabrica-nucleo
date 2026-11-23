@@ -1,0 +1,630 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: deuda vieja de $1,800 y un pago de $5; los costos de la demanda son un supuesto. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "rayas",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "la trampa",
+   "contador": "pagas |$5",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       3,
+       "demandar"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "cob",
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "nada",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "COBRADOR",
+     "en": [
+      0,
+      "cobrador"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "cob",
+     "en": [
+      0,
+      "cobrador"
+     ],
+     "hasta": [
+      1,
+      "deuda"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¡LA REVIVE!",
+     "x": 50,
+     "y": 30,
+     "color": "principal",
+     "en": [
+      2,
+      "revivir"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "qué decir",
+   "contador": "la frase |exacta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 38,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 1
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué le digo?",
+     "piensa": true,
+     "cola": 1,
+     "x": 50,
+     "y": 22,
+     "en": [
+      4,
+      "digo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LA FRASE EXACTA",
+     "x": 50,
+     "y": 45,
+     "color": "principal",
+     "en": [
+      4,
+      "frase"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "DEUDA",
+    "ZOMBI"
+   ],
+   "en": [
+    6,
+    "zombi"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "deuda vieja",
+   "contador": "deuda |$1,800",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Deuda vieja",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que debes",
+       "valor": "$1,800",
+       "en": [
+        7,
+        "1,800"
+       ]
+      },
+      {
+       "texto": "Plazo para demandar",
+       "valor": "vencido",
+       "en": [
+        8,
+        "prescribió"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       10,
+       "demandar"
+      ],
+      "texto": "¡ojo!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      9,
+      "cobrador"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "el pago",
+   "contador": "plazo |reinicia",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "COBRADOR"
+    },
+    {
+     "que": "globo",
+     "texto": "Mándame solo $5",
+     "piensa": false,
+     "cola": -1,
+     "x": 72,
+     "y": 24,
+     "en": [
+      11,
+      "Mándame"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 55,
+     "tam": 30,
+     "etiqueta": "plazo nuevo",
+     "en": [
+      13,
+      "estados"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "la demanda",
+   "contador": "pago |$5",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 55,
+     "valor": 5,
+     "max": 1800,
+     "prefijo": "$",
+     "hasta": [
+      15,
+      "5"
+     ],
+     "etiqueta": "tu pago"
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 1800,
+     "max": 1800,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      16,
+      "1,800"
+     ],
+     "hasta": [
+      16,
+      "completos"
+     ],
+     "etiqueta": "la demanda"
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    17
+   ],
+   "capitulo": "lo que arriesgas",
+   "contador": "arriesgas |$2,200",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$2,200",
+    "etiqueta": "lo que arriesgas",
+    "en": [
+     17,
+     "2,200"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "DEMANDA",
+    "en": [
+     17,
+     "demanda"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "tu crédito",
+   "contador": "cobranza |7 años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco"
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 28,
+     "y": 35,
+     "tam": 30,
+     "etiqueta": "tu crédito",
+     "en": [
+      18,
+      "crédito"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "7 AÑOS",
+     "x": 72,
+     "y": 38,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      19,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que debes",
+   "contador": "debes |$1,795",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 1795,
+     "prefijo": "$",
+     "x": 50,
+     "y": 42,
+     "tam": 12,
+     "color": "gris",
+     "etiqueta": "todavía debes",
+     "en": [
+      20,
+      "debes"
+     ],
+     "hasta": [
+      20,
+      "1,795"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "qué hacer",
+   "contador": "no |pagues",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cart",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "tu dinero"
+    },
+    {
+     "que": "tacha",
+     "sobre": "cart",
+     "en": [
+      21,
+      "pagues"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "en": [
+      21,
+      "nada"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "No confirmo nada",
+     "piensa": false,
+     "cola": -1,
+     "x": 72,
+     "y": 18,
+     "en": [
+      22,
+      "confirmes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      23
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      23
+     ],
+     "items": [
+      {
+       "texto": "Pide la validación por escrito",
+       "en": [
+        23,
+        "validación"
+       ]
+      },
+      {
+       "texto": "Tienes 30 días para disputarla",
+       "en": [
+        24,
+        "días"
+       ]
+      },
+      {
+       "texto": "Manda carta certificada",
+       "en": [
+        25,
+        "carta"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "casco"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "la frase",
+   "contador": "cobro |en pausa",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 94,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco"
+    },
+    {
+     "que": "globo",
+     "texto": "Envíame la validación por escrito.",
+     "piensa": false,
+     "cola": 1,
+     "x": 38,
+     "y": 24,
+     "en": [
+      27,
+      "Envíame"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "COBRO EN PAUSA",
+     "x": 74,
+     "y": 50,
+     "color": "verde",
+     "en": [
+      28,
+      "pausar"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 74,
+     "y": 74,
+     "en": [
+      28,
+      "pausar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "último pago",
+   "contador": "si ya |prescribió",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "ÚLTIMO PAGO"
+    },
+    {
+     "que": "sello",
+     "texto": "NO LA REVIVAS",
+     "color": "verde",
+     "x": 28,
+     "y": 38,
+     "en": [
+      30,
+      "revivas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 94,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      29,
+      "revisa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    31
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    31,
+    "Sígueme"
+   ],
+   "compartir": [
+    32,
+    "compártelo"
+   ]
+  }
+ ]
+}

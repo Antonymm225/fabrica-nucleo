@@ -1,0 +1,692 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: envío de $4,800 al año durante cinco años, hasta que un hermano termine la escuela. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu familia",
+   "contador": "si faltas |hoy",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Quién le manda a mamá?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 24,
+     "en": [
+      0,
+      "mañana"
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 74,
+     "y": 55,
+     "tam": 34,
+     "etiqueta": "TU MAMÁ",
+     "en": [
+      1,
+      "mamá"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tu envío",
+   "contador": "envío |cada mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 76,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      2,
+      "familia"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 24,
+     "y": 28,
+     "tam": 24,
+     "etiqueta": "TU ENVÍO",
+     "en": [
+      2,
+      "envío"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "b",
+     "a": "c",
+     "en": [
+      2,
+      "cada"
+     ],
+     "hasta": [
+      2,
+      "mes"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      3,
+      "corta"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      3,
+      "corta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "un papel",
+   "contador": "un solo |nombre",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Un solo papel",
+     "en": [
+      4
+     ],
+     "renglones": [
+      {
+       "texto": "Nombre exacto",
+       "valor": "¿?",
+       "en": [
+        4,
+        "nombre"
+       ]
+      },
+      {
+       "texto": "Pregunta por escrito",
+       "valor": "¿?",
+       "en": [
+        6,
+        "pregunta"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       5,
+       "papel"
+      ],
+      "texto": "¿CUÁL?"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 26,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      5,
+      "seguir"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    7
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "DEPENDE",
+    "UNO"
+   ],
+   "en": [
+    7,
+    "depender"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "envío |$4,800 al año",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "$4,800",
+     "x": 50,
+     "y": 22,
+     "tam": 11,
+     "etiqueta": "al año",
+     "color": "principal",
+     "en": [
+      8,
+      "4,800"
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 78,
+     "y": 75,
+     "tam": 28,
+     "etiqueta": "TU MAMÁ",
+     "en": [
+      9,
+      "mamá"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "c",
+     "en": [
+      9,
+      "presupuesto"
+     ],
+     "hasta": [
+      11,
+      "luz"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "renta, medicinas y luz",
+     "x": 50,
+     "y": 48,
+     "color": "tinta",
+     "en": [
+      10,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "los envíos",
+   "contador": "remesas |27% y 24%",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "27%",
+     "x": 50,
+     "y": 18,
+     "tam": 10,
+     "etiqueta": "HONDURAS",
+     "color": "principal",
+     "en": [
+      12,
+      "Honduras"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "24%",
+     "x": 50,
+     "y": 47,
+     "tam": 10,
+     "etiqueta": "EL SALVADOR",
+     "color": "tinta",
+     "en": [
+      14,
+      "Salvador"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      15,
+      "depende"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "seguro del trabajo",
+   "contador": "seguro |del patrón",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 75,
+     "y": 92,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       19,
+       "pierde"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "p",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 26,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "DEL PATRÓN",
+     "en": [
+      17,
+      "patrón"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "POCO",
+     "x": 26,
+     "y": 62,
+     "tam": 6,
+     "color": "gris",
+     "en": [
+      18,
+      "poco"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "p",
+     "en": [
+      19,
+      "pierde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "si faltas",
+   "contador": "envíos |$24,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$24,000",
+    "etiqueta": "5 años de envíos",
+    "en": [
+     22,
+     "24,000"
+    ]
+   },
+   "cae": {
+    "objeto": "escuela",
+    "letrero": "SE CORTA",
+    "en": [
+     22,
+     "escuela"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |de vida",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "IUL: seguro de vida",
+     "x": 50,
+     "y": 14,
+     "color": "principal"
+    },
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 76,
+     "y": 58,
+     "tam": 34,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      24,
+      "seguro"
+     ]
+    },
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      25,
+      "tú"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "f",
+     "en": [
+      25,
+      "paga"
+     ],
+     "hasta": [
+      25,
+      "nombres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "el papel",
+   "contador": "un solo |nombre",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Beneficiario",
+     "en": [
+      26
+     ],
+     "renglones": [
+      {
+       "texto": "Se llama",
+       "valor": "Beneficiario",
+       "en": [
+        27,
+        "beneficiario"
+       ]
+      },
+      {
+       "texto": "Un solo nombre",
+       "valor": "Tu mamá",
+       "en": [
+        27,
+        "mamá"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       27,
+       "mamá"
+      ],
+      "texto": "¡AQUÍ!"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 28,
+     "y": 85,
+     "tam": 22,
+     "en": [
+      27,
+      "mamá"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 82,
+     "en": [
+      27,
+      "mamá"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "confirma",
+   "contador": "pide |por escrito",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Mi mamá cobra viviendo fuera de Estados Unidos?",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 24,
+     "en": [
+      28,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 76,
+     "y": 50,
+     "tam": 28,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      30,
+      "familia"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 80,
+     "en": [
+      30,
+      "apoyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "el IUL",
+   "contador": "crece |hasta 10%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "10%",
+     "x": 50,
+     "y": 17,
+     "tam": 9,
+     "etiqueta": "hasta, al año",
+     "color": "verde",
+     "en": [
+      31,
+      "IUL"
+     ]
+    },
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 88,
+     "inicio": 1,
+     "final": 6,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "piso cero",
+     "en": [
+      33,
+      "mercado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "aplica",
+   "contador": "link |en biografía",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aplica aquí",
+     "x": 28,
+     "y": 50
+    },
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 76,
+     "y": 62,
+     "tam": 32,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      36,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "f",
+     "en": [
+      36,
+      "link"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    39
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    39,
+    "Sígueme"
+   ],
+   "compartir": [
+    40,
+    "compártelo"
+   ]
+  }
+ ]
+}

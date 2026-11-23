@@ -1,0 +1,40 @@
+# FF-042 · Finanzas Familiares · EST-01 · El pago de $5 que revive la deuda
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Días para disputar por escrito después de recibir el aviso de validación; el cobrador debe pausar el cobro hasta verificar la deuda = 30 días · https://www.consumerfinance.gov/ask-cfpb/what-information-does-a-debt-collector-have-to-give-me-about-the-debt-en-331/
+# Fuente: Años que una cobranza permanece en tu reporte de crédito, contados desde el primer pago fallado (pagarla no reinicia ese plazo) = 7 años · https://www.experian.com/blogs/ask-experian/credit-education/report-basics/how-and-when-collections-are-removed-from-a-credit-report/
+# Fuente: La Regulación F prohíbe que un cobrador demande o amenace con demandar por una deuda prescrita (1 = sí la prohíbe) = 1 regla · https://files.consumerfinance.gov/f/documents/cfpb_regulation-f-time-barred-debt_advisory-opinion_2023-04.pdf
+# Fuente: En algunos estados, un pago parcial o un reconocimiento escrito de la deuda puede reiniciar el plazo para demandar (depende del estado) = 1 regla · https://getoutofdebt.org/261513/collector-calling-old-debt-time-barred-what-to-do-right-now
+# BLOQUE 1
+Nunca le pagues [$5|cinco dólares] *a un cobrador*
+por una *deuda vieja*.
+Ese pago puede *revivir* la deuda,
+y ahora sí te pueden *demandar*.
+Al final te digo la *frase exacta*
+que sí puedes decirle al *cobrador*.
+Se llama la deuda *zombi*.
+Supón que debes [$1,800|mil ochocientos dólares].
+La deuda es vieja y ya *prescribió*.
+O sea, el cobrador te puede *llamar*,
+pero no te puede *demandar*.
+Un día te dice: «Mándame solo [$5|cinco dólares].»
+Parece *nada*, ¿verdad?
+Pero en *algunos estados*, ese pago
+reinicia el *plazo* para demandarte.
+Y ya no son [$5|cinco dólares]:
+te demandan por los [$1,800|mil ochocientos] *completos*.
+Con los costos de la demanda, arriesgas [$2,200|dos mil doscientos dólares].
+Y lo peor: tu crédito *no se limpia*.
+La cobranza sigue [7|siete] *años* en tu reporte.
+Pagas [$5|cinco], y todavía debes [$1,795|mil setecientos noventa y cinco].
+Entonces, primero, *no pagues* nada por teléfono.
+Tampoco prometas pagar, ni confirmes que es *tuya*.
+Pide el aviso de *validación* por escrito.
+Tienes [30|treinta] *días* para disputarla
+con una *carta certificada*.
+Ahora sí, la *frase exacta*:
+«Envíame la *validación* por escrito.»
+Mientras verifica, tiene que *pausar* el cobro.
+Luego revisa cuándo fue tu *último pago*.
+Si ya prescribió en tu estado, *no la revivas*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene una *deuda vieja*.

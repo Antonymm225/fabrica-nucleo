@@ -1,0 +1,107 @@
+{
+ "titulo": "Los meses sin cobrar después de un infarto",
+ "angulo": "El hospital tiene un tope de lo que te puede cobrar el seguro médico, pero la renta, la troca y la comida no tienen tope y siguen llegando cada mes que no cobras.",
+ "explicacion": "Cada año en Estados Unidos hay unos 805,000 infartos, y muchos son de gente que todavía trabaja. Tu seguro médico tiene un máximo de gasto al año (en planes ACA 2025, $9,200 para una persona). Tu sueldo no tiene seguro: si no trabajas, no cobras. La ley FMLA te guarda el puesto hasta 12 semanas, pero sin pago, y no todos califican. Con un sueldo de $1,100 por semana, 12 semanas sin cobrar pesan más que el tope del hospital.",
+ "datos": [
+  {
+   "dato": "Infartos al año en Estados Unidos (CDC) - VERIFICAR",
+   "valor": 805000,
+   "unidad": "infartos",
+   "fuente": "https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html"
+  },
+  {
+   "dato": "Máximo de gasto de bolsillo al año, plan ACA 2025, una persona - VERIFICAR",
+   "valor": 9200,
+   "unidad": "$",
+   "fuente": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/"
+  },
+  {
+   "dato": "Semanas de permiso FMLA que protegen el puesto pero NO pagan - VERIFICAR",
+   "valor": 12,
+   "unidad": "semanas",
+   "fuente": "https://www.dol.gov/agencies/whd/fmla"
+  },
+  {
+   "dato": "Horas trabajadas en 12 meses que exige FMLA para calificar - VERIFICAR",
+   "valor": 1250,
+   "unidad": "horas",
+   "fuente": "https://www.dol.gov/agencies/whd/fmla/employee-protections"
+  },
+  {
+   "dato": "Porcentaje de adultos que NO cubriría un gasto de emergencia de $400 solo con efectivo (Reserva Federal, SHED, aprox.) - VERIFICAR",
+   "valor": 37,
+   "unidad": "%",
+   "fuente": "https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm"
+  },
+  {
+   "dato": "EJEMPLO ilustrativo (no es dato de fuente): sueldo semanal de un trabajador de oficio",
+   "valor": 1100,
+   "unidad": "$",
+   "fuente": "https://www.bls.gov/oes/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Sueldo que dejas de cobrar en 12 semanas (ejemplo $1,100 por semana)",
+   "expresion": "1100*12",
+   "resultado": 13200
+  },
+  {
+   "descripcion": "Gasto máximo del seguro médico + sueldo perdido en 12 semanas",
+   "expresion": "9200+1100*12",
+   "resultado": 22400
+  },
+  {
+   "descripcion": "Parte de esa cuenta que es sueldo sin cobrar, en %",
+   "expresion": "round(13200/22400*100, 2)",
+   "resultado": 58.93
+  },
+  {
+   "descripcion": "Lo que falta si tienes $2,000 ahorrados",
+   "expresion": "22400-2000",
+   "resultado": 20400
+  },
+  {
+   "descripcion": "Diferencia: sueldo perdido en 12 semanas menos el tope del hospital",
+   "expresion": "13200-9200",
+   "resultado": 4000
+  }
+ ],
+ "consejo": "Antes de que pase algo, haz la cuenta: cuántas semanas aguanta tu familia sin tu cheque. Pregunta en tu trabajo si hay seguro de incapacidad a corto plazo (casi nunca hay en oficios o contratos). Si no hay, platica con un agente con licencia sobre un seguro de vida indexado (IUL) con beneficios en vida. Con una enfermedad crónica, crítica o terminal te deja usar parte del beneficio mientras vives, para cubrir esos meses sin cobrar.",
+ "que_no_decir": [
+  "No prometas que el IUL paga desde el primer día ni que cubre todos los gastos.",
+  "No digas que el beneficio en vida aplica a cualquier enfermedad. Depende de la póliza y de que la enfermedad califique.",
+  "No digas 'el hospital es lo de menos'. Los gastos médicos sí pesan; el punto es que el sueldo perdido no tiene tope.",
+  "No presentes el sueldo de $1,100 por semana como dato oficial. Es un ejemplo.",
+  "No des cifras de crecimiento ni de ahorro del IUL en este video.",
+  "No digas que el infarto siempre te deja sin trabajar 12 semanas. Cada caso es distinto.",
+  "No digas que FMLA aplica a todos: hay requisitos de antigüedad, horas y tamaño de la empresa."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "Un infarto o una enfermedad grave: lo que quiebra a la familia son los meses sin cobrar, no solo el hospital",
+ "gancho_pedido": "Un infarto no siempre te mata. Lo que te quiebra son los meses sin cobrar.",
+ "ganchos_recientes": [
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar."
+ ]
+}

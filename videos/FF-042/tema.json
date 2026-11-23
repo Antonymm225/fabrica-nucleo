@@ -1,0 +1,76 @@
+{
+ "titulo": "El pago de $5 que revive la deuda",
+ "angulo": "Crees que un pago pequeño solo calma al cobrador, pero en algunos estados puede reiniciar el plazo para demandarte por toda la deuda y no borra nada de tu crédito.",
+ "explicacion": "Una deuda vieja puede estar prescrita: el cobrador puede llamarte, pero no puede demandarte ni amenazar con demandarte. Si le das un pago pequeño o reconoces por escrito que debes, en algunos estados el plazo empieza de nuevo. Entonces puedes pasar de una deuda que no te pueden cobrar en la corte a una que sí, por el monto completo. Además, el pago no acorta los 7 años que la cobranza dura en tu reporte de crédito. Antes de pagar nada, pide la validación por escrito y confirma si la deuda ya prescribió en tu estado.",
+ "datos": [
+  {
+   "dato": "Días para disputar por escrito después de recibir el aviso de validación; el cobrador debe pausar el cobro hasta verificar la deuda",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/what-information-does-a-debt-collector-have-to-give-me-about-the-debt-en-331/"
+  },
+  {
+   "dato": "Años que una cobranza permanece en tu reporte de crédito, contados desde el primer pago fallado (pagarla no reinicia ese plazo)",
+   "valor": 7,
+   "unidad": "años",
+   "fuente": "https://www.experian.com/blogs/ask-experian/credit-education/report-basics/how-and-when-collections-are-removed-from-a-credit-report/"
+  },
+  {
+   "dato": "La Regulación F prohíbe que un cobrador demande o amenace con demandar por una deuda prescrita (1 = sí la prohíbe)",
+   "valor": 1,
+   "unidad": "regla",
+   "fuente": "https://files.consumerfinance.gov/f/documents/cfpb_regulation-f-time-barred-debt_advisory-opinion_2023-04.pdf"
+  },
+  {
+   "dato": "En algunos estados, un pago parcial o un reconocimiento escrito de la deuda puede reiniciar el plazo para demandar (depende del estado)",
+   "valor": 1,
+   "unidad": "regla",
+   "fuente": "https://getoutofdebt.org/261513/collector-calling-old-debt-time-barred-what-to-do-right-now"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo hipotético: veces que la deuda de $1,800 es mayor que el pago de $5",
+   "expresion": "round(1800/5, 2)",
+   "resultado": 360.0
+  },
+  {
+   "descripcion": "El pago de $5 es este porcentaje de la deuda de $1,800",
+   "expresion": "round(5/1800*100, 2)",
+   "resultado": 0.28
+  },
+  {
+   "descripcion": "Lo que sigue debiéndose tras pagar $5 de una deuda de $1,800",
+   "expresion": "1800-5",
+   "resultado": 1795
+  },
+  {
+   "descripcion": "Con el plazo reiniciado, lo que se arriesga: $1,800 de deuda más $400 hipotéticos de costos y cargos de la demanda",
+   "expresion": "1800+400",
+   "resultado": 2200
+  }
+ ],
+ "consejo": "No pagues, ni prometas pagar, ni confirmes por teléfono que la deuda es tuya. Pide el aviso de validación por escrito y, dentro de 30 días, mándale una carta certificada para disputarla y pedir verificación. Después confirma la fecha de tu último pago y el plazo de prescripción de tu estado. Si ya prescribió, no la revivas. Si no ha prescrito y quieres arreglarla, haz un acuerdo por escrito antes de pagar. Revisa tu reporte gratis en annualcreditreport.com.",
+ "que_no_decir": [
+  "Nunca digas que un pago siempre revive la deuda: depende del estado.",
+  "No prometas que la deuda desaparece o que no tienes que hacer nada.",
+  "No digas que pagar limpia tu crédito: la cobranza sigue 7 años.",
+  "No digas que el cobrador no puede llamarte: sí puede, solo no puede demandar ni amenazar con demandar.",
+  "No des el plazo de prescripción como una cifra fija para todo el país.",
+  "No presentes los $1,800 ni los $400 como datos oficiales: son un ejemplo.",
+  "No des consejo legal individual: recomienda consultar ayuda legal gratuita para casos específicos."
+ ],
+ "con_iul": false,
+ "idea": "La deuda vieja que revive si le haces un pago pequeño al cobrador",
+ "gancho_pedido": "Nunca le pagues cinco dólares a un cobrador por una deuda vieja.",
+ "ganchos_recientes": [
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis."
+ ]
+}

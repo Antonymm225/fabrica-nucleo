@@ -1,0 +1,167 @@
+{
+ "ficha": {
+  "titulo": "La frase que saca al cobrador de tu trabajo",
+  "angulo": "Para que el cobrador deje de llamarte al trabajo no necesitas abogado ni carta: basta decirle que tu patrón no permite esas llamadas, pero para que deje de contactarte del todo sí necesitas escribirlo.",
+  "explicacion": "La ley prohíbe que un cobrador te contacte en el trabajo si sabe o tiene razón para saber que tu patrón no lo permite. Eso se lo puedes decir de palabra, en una llamada. Además, el cobrador no puede llamarte más de 7 veces en 7 días por la misma deuda, ni antes de las 8 a.m. ni después de las 9 p.m. Para que deje de contactarte por completo, esa petición sí va por escrito, con una carta modelo gratis del CFPB. Si el cobrador se pasa de la raya, puedes demandarlo y cobrar hasta $1,000 más los gastos de abogado. Y ojo: pedirle que pare no borra la deuda.",
+  "datos": [
+   {
+    "dato": "Máximo de llamadas por deuda antes de que se presuma acoso (Regulación F, regla 7 en 7)",
+    "valor": 7,
+    "unidad": "llamadas en 7 días",
+    "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/14/"
+   },
+   {
+    "dato": "Días que dura la presunción: tampoco puede llamar dentro de 7 días después de haber hablado contigo de esa deuda",
+    "valor": 7,
+    "unidad": "días",
+    "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/14/"
+   },
+   {
+    "dato": "Hora más temprana permitida para llamar (hora local tuya)",
+    "valor": 8,
+    "unidad": "a.m.",
+    "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/6/"
+   },
+   {
+    "dato": "Hora más tardía permitida para llamar (hora local tuya)",
+    "valor": 21,
+    "unidad": "hora (9 p.m.)",
+    "fuente": "https://www.consumerfinance.gov/rules-policy/regulations/1006/6/"
+   },
+   {
+    "dato": "Daños legales máximos que puedes pedir en una demanda individual por la FDCPA, además de daños reales y gastos de abogado",
+    "valor": 1000,
+    "unidad": "$",
+    "fuente": "https://www.law.cornell.edu/uscode/text/15/1692k"
+   },
+   {
+    "dato": "Días para disputar la deuda por escrito después de recibir el aviso de validación y obligar al cobrador a verificarla",
+    "valor": 30,
+    "unidad": "días",
+    "fuente": "https://www.consumerfinance.gov/consumer-tools/debt-collection/"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Un cobrador que te llama 3 veces al día, 5 días a la semana, hace llamadas por semana",
+    "expresion": "3*5",
+    "resultado": 15
+   },
+   {
+    "descripcion": "Llamadas por semana que se pasan del límite de 7 (presunción de acoso)",
+    "expresion": "3*5-7",
+    "resultado": 8
+   },
+   {
+    "descripcion": "Llamadas por mes (4 semanas) a ese ritmo, contra el máximo que presume la ley",
+    "expresion": "3*5*4",
+    "resultado": 60
+   },
+   {
+    "descripcion": "Máximo de llamadas en 4 semanas según la regla 7 en 7",
+    "expresion": "7*4",
+    "resultado": 28
+   },
+   {
+    "descripcion": "Llamadas de más en 4 semanas frente al límite",
+    "expresion": "3*5*4-7*4",
+    "resultado": 32
+   },
+   {
+    "descripcion": "Horas del día permitidas para llamarte (de 8 a.m. a 9 p.m.)",
+    "expresion": "21-8",
+    "resultado": 13
+   },
+   {
+    "descripcion": "Horas del día en las que no te pueden llamar",
+    "expresion": "24-(21-8)",
+    "resultado": 11
+   }
+  ],
+  "consejo": "1) Si te llaman al trabajo, di con calma: 'Mi patrón no permite que reciba estas llamadas aquí. No me llamen a este número.' Anota la fecha, la hora y el nombre de quien llamó. 2) Si quieres que paren del todo, manda una carta por correo certificado con recibo. Usa la carta modelo gratis del CFPB y guarda copia. 3) Si no reconoces la deuda, o el monto no cuadra, dispútala por escrito dentro de los 30 días del aviso de validación. 4) Si siguen llamando después de que les avisaste, presenta una queja en consumerfinance.gov y en la FTC, y consulta a un abogado de consumidor o a ayuda legal gratuita. Muchos cobran solo si ganan y el cobrador puede tener que pagar sus honorarios. 5) Recuerda que pedirles que paren no cancela la deuda. Ellos todavía pueden demandarte, así que si te llega una demanda, responde dentro del plazo de la corte.",
+  "que_no_decir": [
+   "No prometas que la deuda desaparece o que ya no la debes",
+   "No digas que el cobrador nunca puede llamarte al trabajo: solo no puede si sabe que tu patrón lo prohíbe",
+   "No digas que con la frase por teléfono ya paran todo: para frenar todo contacto hace falta carta escrita",
+   "No prometas que vas a ganar $1,000: es un máximo que decide el juez, no un pago seguro",
+   "No des consejo legal específico ni digas 'demanda ya': recomienda consultar un abogado de consumidor",
+   "No repitas la idea de no pagar $5 a un cobrador de deudas viejas (FF-042) ni la de corregir errores en el reporte de crédito (FF-041)",
+   "No digas que ignorar al cobrador o una demanda es buena idea"
+  ],
+  "con_iul": false,
+  "idea": "Lo que un cobrador de deudas no puede hacer por ley y la frase para que deje de llamarte",
+  "gancho_pedido": "Un cobrador tiene que dejar de llamarte al trabajo si le dices una frase.",
+  "ganchos_recientes": [
+   "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+   "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+   "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+   "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+   "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+   "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+   "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+   "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón."
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Si contestas el teléfono en la obra / y es un cobrador, no cuelgues todavía. / Al final te digo la frase que lo saca de tu trabajo.",
+   "Te llaman al trabajo por una deuda, / y aun así la ley está de tu lado. / Al final te digo las palabras exactas.",
+   "Hay una frase que el cobrador no quiere oír. / Si la dices, tiene que dejar de llamarte al trabajo. / Al final te la digo completa.",
+   "Dos roofers deben lo mismo. / A uno lo llaman al trabajo cada día, al otro nunca. / La diferencia es una sola frase.",
+   "Si un cobrador te llama más de siete veces en siete días, / ya se pasó de la raya. / Y hay una frase para que pare en tu trabajo.",
+   "¿A qué horas no te puede llamar un cobrador? / Y hay una frase que lo saca de tu trabajo. / Al final te la digo.",
+   "Tienes un derecho que nadie te avisa: / un cobrador no puede llamarte donde trabajas / si dices una frase.",
+   "Nunca le digas al cobrador dónde trabajas. / Mejor dile una sola frase, la que te voy a dar."
+  ],
+  "gancho_elegido": "Un cobrador tiene que dejar de llamarte al trabajo si le dices una frase: frena el scroll porque habla de algo que le pasa hoy (el cobrador llamando en plena chamba) y promete una solución que parece imposible, solo decir una frase, sin abogado ni carta.",
+  "titulo": "La frase que saca al cobrador de tu trabajo",
+  "lineas": [
+   "Un cobrador tiene que dejar de llamarte",
+   "al trabajo si le dices una *frase*.",
+   "No necesitas abogado ni *carta* para eso.",
+   "Al final te digo las *palabras exactas*,",
+   "y el *papel* que sí lo frena todo.",
+   "Se llama *acoso de cobranza*.",
+   "Digamos que debes una *tarjeta* vieja.",
+   "Y el *cobrador* te llama [3|tres] veces al día,",
+   "[5|cinco] días a la *semana*.",
+   "Son [15|quince] llamadas por *semana*.",
+   "La *regla*: [7|siete] llamadas en [7|siete] días.",
+   "Tú recibes [8|ocho] llamadas de *más*.",
+   "En un mes, son [60|sesenta] *llamadas*,",
+   "contra [28|veintiocho] que marca la *regla*.",
+   "Pero aquí viene lo que *nadie* te dice.",
+   "Tampoco puede llamarte antes de las [8 a.m.|ocho de la mañana],",
+   "ni después de las [9 p.m.|nueve de la noche].",
+   "Son [11|once] horas en que *no puede* llamarte.",
+   "Y al *trabajo* no puede llamarte",
+   "si sabe que tu *patrón* no lo permite.",
+   "Y no hace falta *abogado* para pedirlo.",
+   "Lo dices tú, en la *llamada*.",
+   "Ahora sí, las *palabras exactas*, con calma:",
+   "*Mi patrón no permite* estas llamadas aquí.",
+   "No me llamen a este *número*.",
+   "Anota la fecha, la hora y el *nombre*.",
+   "Pero por teléfono solo frenas el *trabajo*.",
+   "Y ahora el *papel* que frena todo:",
+   "una *carta* por correo certificado,",
+   "y guarda *copia* para ti.",
+   "Usa la carta modelo *gratis* del [CFPB|ce efe pe be].",
+   "Si el cobrador se pasa de la raya,",
+   "puedes pedir hasta [$1,000|mil dólares] en *demanda*.",
+   "Eso lo decide un *juez*; consulta a un *abogado*.",
+   "Y ojo: pedir que pare *no borra la deuda*.",
+   "Si no reconoces el *monto*, dispútalo por escrito",
+   "en los [30|treinta] días del *aviso*.",
+   "*Nunca ignores* una demanda de la corte.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien recibe llamadas de *cobradores*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"el cobrador\",\"contador\":\"llamadas |al trabajo\",\"elementos\":[{\"que\":\"persona\",\"x\":26,\"y\":93,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[2,\"necesitas\"],\"cara\":\"sorprendido\"}},{\"que\":\"celular\",\"modo\":\"llamada\",\"x\":78,\"y\":58,\"tam\":24,\"en\":[0,\"cobrador\"]},{\"que\":\"globo\",\"texto\":\"¿Cuál frase?\",\"piensa\":true,\"cola\":1,\"x\":26,\"y\":14,\"en\":[1,\"frase\"]}]},{\"tipo\":\"lienzo\",\"desde\":[3],\"capitulo\":\"dos cosas\",\"contador\":\"te digo |dos cosas\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"texto\",\"texto\":\"1. La frase exacta\",\"color\":\"principal\",\"x\":50,\"y\":22,\"tam\":5,\"en\":[3]},{\"que\":\"texto\",\"texto\":\"2. El papel que frena todo\",\"color\":\"tinta\",\"x\":50,\"y\":40,\"tam\":5,\"en\":[4,\"papel\"]},{\"que\":\"persona\",\"x\":50,\"y\":94,\"tam\":26,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":2,\"cambia\":{\"en\":[4,\"frena\"],\"cara\":\"preocupado\"}}]},{\"tipo\":\"tablero\",\"desde\":[5],\"capitulo\":\"la trampa\",\"filas\":[\"ACOSO\",\"COBRO\"],\"en\":[5,\"acoso\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[6],\"capitulo\":\"el ejemplo\",\"contador\":\"llamadas |3 al día\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":28,\"y\":94,\"tam\":30,\"cara\":\"enojado\",\"gorro\":\"sombrero\",\"ropa\":1,\"etiqueta\":\"TÚ\"},{\"que\":\"objeto\",\"objeto\":\"tarjeta\",\"x\":28,\"y\":28,\"tam\":28,\"etiqueta\":\"deuda vieja\",\"en\":[6,\"tarjeta\"]},{\"que\":\"celular\",\"modo\":\"llamada\",\"x\":74,\"y\":36,\"tam\":24,\"en\":[7,\"cobrador\"]},{\"que\":\"cifra\",\"texto\":\"3 al día\",\"x\":74,\"y\":82,\"tam\":8,\"en\":[7,\"3\"]}]},{\"tipo\":\"lienzo\",\"desde\":[9],\"capitulo\":\"el conteo\",\"contador\":\"por semana |15 llamadas\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":82,\"titulo\":\"Llamadas por semana\",\"en\":[9],\"renglones\":[{\"texto\":\"Te llaman\",\"valor\":\"15\",\"en\":[9,\"15\"]},{\"texto\":\"La regla presume acoso\",\"valor\":\"7\",\"en\":[10,\"7\"]},{\"texto\":\"Llamadas de más\",\"valor\":\"8\",\"en\":[11,\"8\"]}],\"marca\":{\"fila\":2,\"en\":[11,\"más\"],\"texto\":\"¡OJO!\"}},{\"que\":\"persona\",\"x\":50,\"y\":96,\"tam\":22,\"cara\":\"enojado\",\"gorro\":\"casco\",\"ropa\":3,\"cambia\":{\"en\":[11,\"8\"],\"cara\":\"sorprendido\"}}]},{\"tipo\":\"lienzo\",\"desde\":[12],\"capitulo\":\"al mes\",\"contador\":\"en un mes |60 llamadas\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"torre\",\"x\":26,\"y\":95,\"tam\":55,\"valor\":60,\"max\":60,\"color\":\"gris\",\"etiqueta\":\"TE LLAMAN\",\"en\":[12],\"hasta\":[12,\"llamadas\"]},{\"que\":\"torre\",\"x\":74,\"y\":95,\"tam\":55,\"valor\":28,\"max\":60,\"etiqueta\":\"LA REGLA\",\"en\":[13,\"contra\"],\"hasta\":[13,\"regla\"]}]},{\"tipo\":\"lienzo\",\"desde\":[15],\"capitulo\":\"los horarios\",\"contador\":\"sin llamadas |11 horas\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":24,\"cara\":\"sorprendido\",\"gorro\":\"gorra\",\"ropa\":4,\"cambia\":{\"en\":[17,\"11\"],\"cara\":\"feliz\"}},{\"que\":\"cifra\",\"texto\":\"8 a.m.\",\"x\":50,\"y\":22,\"tam\":9,\"etiqueta\":\"no antes\",\"color\":\"principal\",\"en\":[15,\"8\"]},{\"que\":\"cifra\",\"texto\":\"9 p.m.\",\"x\":50,\"y\":46,\"tam\":9,\"etiqueta\":\"no después\",\"color\":\"tinta\",\"en\":[16,\"9\"]}]},{\"tipo\":\"lienzo\",\"desde\":[18],\"capitulo\":\"en el trabajo\",\"contador\":\"tu patrón |dice no\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":94,\"tam\":32,\"cara\":\"neutro\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[21,\"dices\"],\"cara\":\"feliz\"}},{\"id\":\"cel\",\"que\":\"celular\",\"modo\":\"llamada\",\"x\":50,\"y\":42,\"tam\":24,\"en\":[18,\"trabajo\"]},{\"que\":\"persona\",\"x\":78,\"y\":94,\"tam\":32,\"cara\":\"enojado\",\"gorro\":\"sombrero\",\"ropa\":3,\"piel\":2,\"etiqueta\":\"TU PATRÓN\",\"en\":[19,\"patrón\"]},{\"que\":\"tacha\",\"sobre\":\"cel\",\"en\":[19,\"permite\"]}]},{\"tipo\":\"lienzo\",\"desde\":[22],\"capitulo\":\"la frase\",\"contador\":\"di |con calma\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"persona\",\"x\":30,\"y\":94,\"tam\":34,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"Mi patrón no permite estas llamadas aquí.\",\"cola\":-1,\"x\":36,\"y\":22,\"en\":[23,\"Mi\"],\"sale\":[24,\"No\"]},{\"que\":\"globo\",\"texto\":\"No me llamen a este número.\",\"cola\":-1,\"x\":36,\"y\":22,\"en\":[24,\"No\"],\"sale\":[25,\"Anota\"]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":78,\"y\":55,\"tam\":24,\"etiqueta\":\"FECHA Y HORA\",\"en\":[25,\"fecha\"]}]},{\"tipo\":\"lienzo\",\"desde\":[26],\"capitulo\":\"qué hacer\",\"contador\":[{\"en\":[26],\"texto\":\"paso |1 de 2\"},{\"en\":[27],\"texto\":\"paso |2 de 2\"}],\"entrada\":\"destello\",\"elementos\":[{\"que\":\"lista\",\"x\":50,\"y\":10,\"en\":[26],\"items\":[{\"texto\":\"Por teléfono: frenas el trabajo\",\"en\":[26,\"teléfono\"]},{\"texto\":\"Para frenar todo: una carta\",\"en\":[27,\"papel\"]},{\"texto\":\"Correo certificado\",\"en\":[28,\"certificado\"]},{\"texto\":\"Guarda copia\",\"en\":[29,\"copia\"]}]}]},{\"tipo\":\"lienzo\",\"desde\":[30],\"capitulo\":\"la carta\",\"contador\":\"carta |gratis\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":78,\"titulo\":\"Carta del CFPB\",\"en\":[30],\"renglones\":[{\"texto\":\"Carta modelo\",\"valor\":\"Gratis\",\"en\":[30,\"carta\"]},{\"texto\":\"Correo certificado\",\"valor\":\"Con recibo\",\"en\":[30,\"CFPB\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":96,\"tam\":20,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"ropa\":2,\"en\":[30,\"gratis\"]}]},{\"tipo\":\"oscura\",\"desde\":[31],\"capitulo\":\"si se pasa\",\"contador\":\"demanda |hasta $1,000\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"hasta $1,000\",\"etiqueta\":\"lo decide un juez\",\"en\":[32,\"1,000\"]},\"cae\":{\"objeto\":\"cartera\",\"letrero\":\"DERECHO\",\"en\":[32,\"demanda\"]}},{\"tipo\":\"lienzo\",\"desde\":[34],\"capitulo\":\"tu deuda\",\"contador\":[{\"en\":[34],\"texto\":\"la deuda |sigue\"},{\"en\":[35],\"texto\":\"disputa |30 días\"}],\"entrada\":\"ola\",\"elementos\":[{\"id\":\"deuda\",\"que\":\"objeto\",\"objeto\":\"tarjeta\",\"x\":17,\"y\":20,\"tam\":20,\"etiqueta\":\"tu deuda\",\"en\":[34]},{\"que\":\"sello\",\"texto\":\"NO BORRA\",\"color\":\"rojo\",\"x\":17,\"y\":20,\"en\":[34,\"borra\"]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":17,\"y\":62,\"tam\":22,\"etiqueta\":\"30 DÍAS\",\"en\":[35,\"monto\"]},{\"que\":\"persona\",\"x\":78,\"y\":94,\"tam\":32,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"ropa\":2,\"etiqueta\":\"TÚ\",\"en\":[35,\"reconoces\"]},{\"que\":\"globo\",\"texto\":\"¿Es mío?\",\"piensa\":true,\"cola\":1,\"x\":72,\"y\":22,\"en\":[35,\"monto\"]}]},{\"tipo\":\"cierre\",\"desde\":[38],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[38,\"Sígueme\"],\"compartir\":[39,\"compártelo\"]}]",
+  "aviso": "Ejemplo: un cobrador que llama 3 veces al día, 5 días a la semana. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 12 (lienzo): objeto «tu deuda» y globo «¿Es mío?» se enciman; sepáralos (cambia x/y o tam)",
+  "escena 12 (lienzo): sello «NO BORRA» y globo «¿Es mío?» se enciman; sepáralos (cambia x/y o tam)"
+ ]
+}

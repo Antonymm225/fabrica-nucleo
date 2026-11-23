@@ -1,0 +1,51 @@
+# FF-043 · Finanzas Familiares · EST-01 · Los meses sin cobrar después de un infarto
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Infartos al año en Estados Unidos (CDC) - VERIFICAR = 805000 infartos · https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html
+# Fuente: Máximo de gasto de bolsillo al año, plan ACA 2025, una persona - VERIFICAR = 9200 $ · https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/
+# Fuente: Semanas de permiso FMLA que protegen el puesto pero NO pagan - VERIFICAR = 12 semanas · https://www.dol.gov/agencies/whd/fmla
+# Fuente: Horas trabajadas en 12 meses que exige FMLA para calificar - VERIFICAR = 1250 horas · https://www.dol.gov/agencies/whd/fmla/employee-protections
+# Fuente: Porcentaje de adultos que NO cubriría un gasto de emergencia de $400 solo con efectivo (Reserva Federal, SHED, aprox.) - VERIFICAR = 37 % · https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+# Fuente: EJEMPLO ilustrativo (no es dato de fuente): sueldo semanal de un trabajador de oficio = 1100 $ · https://www.bls.gov/oes/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Un infarto no siempre te *mata*.
+Lo que te quiebra son los *meses sin cobrar*.
+Al final te digo la *pregunta* exacta
+que le tienes que hacer a tu *patrón*.
+Se llama el *hueco del cheque*.
+En Estados Unidos hay unos [805,000|ochocientos cinco mil]
+*infartos* al año, muchos en gente que trabaja.
+Tu seguro médico *deja de cobrarte*
+cuando pagas [$9,200|nueve mil doscientos dólares] en el año,
+de *tu bolsillo*, en muchos planes.
+Pero tu sueldo no tiene *seguro*.
+Si no trabajas, *no cobras*.
+La ley [FMLA|efe eme ele a] te guarda el *puesto*
+hasta [12|doce] semanas, pero *sin pago*.
+Y piden [1,250|mil doscientas cincuenta] horas trabajadas para *calificar*.
+Pero aquí viene lo que *nadie te dice*.
+Ejemplo: ganas [$1,100|mil cien dólares] a la *semana*.
+En [12|doce] semanas sin cobrar,
+dejas de ganar [$13,200|trece mil doscientos dólares].
+Son [$4,000|cuatro mil dólares] más que lo que pagas al *hospital*.
+Y la *renta* llega igual, cada mes.
+Hospital y sueldo juntos suman [$22,400|veintidós mil cuatrocientos].
+[37%|treinta y siete por ciento] de adultos no cubre una *emergencia*.
+Antes de que pase, haz la *cuenta*:
+¿cuántas semanas aguanta tu familia sin *cheque*?
+Ahora sí, la *pregunta* para tu patrón:
+¿tengo seguro de *incapacidad* a corto plazo?
+En oficios y contratos, casi nunca *hay*.
+Y si no hay, existe el [IUL|a yu el],
+un *seguro de vida indexado*.
+Es tuyo y tiene *piso cero*.
+Si tu enfermedad es *crónica, crítica o terminal*
+y *califica*, usas parte del beneficio *en vida*
+para cubrir esos *meses sin cobrar*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien vive de su *cheque semanal*.

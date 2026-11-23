@@ -1,0 +1,97 @@
+{
+ "titulo": "El error que no es tuyo",
+ "angulo": "Pagas siempre puntual y aun así puedes pagar más por un error ajeno en tu reporte, y corregirlo es gratis.",
+ "explicacion": "Un estudio del FTC encontró que 1 de cada 5 personas tenía al menos un error en su reporte de crédito. Cerca de 1 de cada 20 tenía un error que le podía subir la tasa de interés. Tú no ves ese error: solo ves una tasa más alta cuando pides una troca o una casa. Puedes bajar tu reporte gratis cada semana en AnnualCreditReport.com y disputar el error sin pagar nada. El buró tiene unos 30 días para investigar.",
+ "datos": [
+  {
+   "dato": "Porcentaje de consumidores con al menos un error confirmado en un reporte de crédito (estudio del FTC, 2012)",
+   "valor": 21,
+   "unidad": "%",
+   "fuente": "https://www.ftc.gov/news-events/news/press-releases/2013/02/ftc-study-five-percent-consumers-had-errors-their-credit-reports-could-result-less"
+  },
+  {
+   "dato": "Porcentaje de consumidores con un error que pudo ponerlos en un nivel de riesgo peor y subirles el costo del crédito (FTC, 2012)",
+   "valor": 5,
+   "unidad": "%",
+   "fuente": "https://www.ftc.gov/news-events/news/press-releases/2013/02/ftc-study-five-percent-consumers-had-errors-their-credit-reports-could-result-less"
+  },
+  {
+   "dato": "Días que normalmente tiene el buró para investigar una disputa (ley FCRA)",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/"
+  },
+  {
+   "dato": "Tasa supuesta (ejemplo) con reporte limpio, préstamo de troca a 60 meses",
+   "valor": 9,
+   "unidad": "%",
+   "fuente": "https://www.experian.com/blogs/ask-experian/average-car-payment/"
+  },
+  {
+   "dato": "Tasa supuesta (ejemplo) con el error en el reporte, mismo préstamo",
+   "valor": 14,
+   "unidad": "%",
+   "fuente": "https://www.experian.com/blogs/ask-experian/average-car-payment/"
+  },
+  {
+   "dato": "Reportes gratis cada semana en los tres burós (Equifax, Experian, TransUnion)",
+   "valor": 52,
+   "unidad": "reportes por buró al año",
+   "fuente": "https://www.annualcreditreport.com"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual de $25,000 a 60 meses con tasa 9% (reporte limpio)",
+   "expresion": "round(25000*(0.09/12)/(1-(1+0.09/12)**-60),2)",
+   "resultado": 518.96
+  },
+  {
+   "descripcion": "Pago mensual de $25,000 a 60 meses con tasa 14% (por el error)",
+   "expresion": "round(25000*(0.14/12)/(1-(1+0.14/12)**-60),2)",
+   "resultado": 581.71
+  },
+  {
+   "descripcion": "Diferencia en el pago mensual",
+   "expresion": "round(581.71-518.96,2)",
+   "resultado": 62.75
+  },
+  {
+   "descripcion": "Intereses totales con 9%",
+   "expresion": "round(518.96*60-25000,2)",
+   "resultado": 6137.6
+  },
+  {
+   "descripcion": "Intereses totales con 14%",
+   "expresion": "round(581.71*60-25000,2)",
+   "resultado": 9902.6
+  },
+  {
+   "descripcion": "Costo extra total en 5 años por el error (diferencia mensual por 60 meses)",
+   "expresion": "round(62.75*60,2)",
+   "resultado": 3765.0
+  }
+ ],
+ "consejo": "Antes de pedir troca, casa o tarjeta, entra a AnnualCreditReport.com (el único sitio oficial y gratis) y baja tus reportes de los tres burós. Revisa nombre, direcciones, cuentas que no son tuyas, deudas ya pagadas y pagos tardíos que no fueron. Si encuentras un error, dispútalo gratis en línea o por carta con el buró y con la compañía que lo reportó, y guarda las pruebas. Si no lo corrigen, puedes quejarte en consumerfinance.gov/complaint. No pagues a empresas de «reparación de crédito» por esto: tú puedes hacerlo gratis.",
+ "que_no_decir": [
+  "Que 1 de cada 5 tiene un error que le baja el puntaje (el 21% es de errores confirmados, no todos cambian el puntaje)",
+  "Que el error siempre te sube la tasa 5 puntos (el 9% contra 14% es solo un ejemplo supuesto)",
+  "Que te garantizamos que el buró borrará el error o que tu puntaje subirá",
+  "Que dispute todo, incluso deudas que sí son tuyas y reales",
+  "Que una empresa de reparación de crédito lo arregla más rápido",
+  "Cifras del FTC como actuales: el estudio es de 2012, hay que decir «un estudio del FTC»"
+ ],
+ "con_iul": false,
+ "idea": "Errores en el reporte de crédito: qué tan comunes son, cuánto cuestan y cómo se corrigen gratis",
+ "gancho_pedido": "Tu reporte de crédito puede tener un error que no es tuyo, y lo estás pagando tú.",
+ "ganchos_recientes": [
+  "La colecta de tus compañeros paga el funeral. / La renta del mes que sigue, no. / El hueco es más grande de lo que piensas. / Al final te digo la cuenta de dos pasos",
+  "El vendedor gana más con un papel / que con la troca que te vendió. / Al final te digo las cuatro preguntas / que él no quiere que le hagas.",
+  "Tu espalda es tu herramienta más cara, / y no tiene refacción. / Si se lastima, el Seguro Social / no te paga nada en 5 meses.",
+  "Pagas tu troca puntual cada mes, / y a la mitad del préstamo / todavía debes más de lo que vale. / Al final te digo el número exacto",
+  "Hay dinero del IRS con tu nombre / que nadie te va a avisar que existe. / Si tienes ITIN e hijos con seguro social, / puede que lo hayas dejado sin cobrar.",
+  "Pagaste Seguro Social toda tu vida, / y el cheque apenas paga la renta. / Al final te digo cuántos dólares al mes / tienes que apartar tú, desde hoy.",
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día."
+ ]
+}

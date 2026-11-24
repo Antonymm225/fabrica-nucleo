@@ -1,0 +1,100 @@
+{
+ "titulo": "El papel dice contratista, la ley mira quién manda",
+ "angulo": "Crees que eres contratista porque firmaste un papel que lo dice, pero el IRS ignora el papel y mira quién controla tu trabajo: horario, herramientas y órdenes.",
+ "explicacion": "Para el IRS, el nombre del contrato no decide nada. Mira tres cosas: quién controla cómo trabajas (horario, órdenes, método), quién controla el dinero (herramientas, gastos, si puedes tener ganancia o pérdida) y cómo es la relación (trabajo continuo, parte del negocio del patrón). Si el patrón te dice a qué hora llegas, qué herramientas usas y cómo hacerlo, tal vez eres empleado. Si te clasificaron mal como contratista, pagas las dos mitades de Seguro Social y Medicare en vez de una. En un trabajo de $52,000 al año, eso son unos $3,369 de más. Puedes pedirle gratis al IRS que decida tu caso con el Formulario SS-8, y en tu declaración puedes pagar solo tu mitad con el Formulario 8919.",
+ "datos": [
+  {
+   "dato": "Tasa de impuesto de autoempleo (Seguro Social 12.4% + Medicare 2.9%) que paga un contratista",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/taxtopics/tc554"
+  },
+  {
+   "dato": "Parte de Seguro Social y Medicare que paga el empleado (el patrón paga la otra mitad)",
+   "valor": 7.65,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/understanding-employment-taxes"
+  },
+  {
+   "dato": "Porción de las ganancias sobre la que se calcula el impuesto de autoempleo",
+   "valor": 92.35,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/taxtopics/tc554"
+  },
+  {
+   "dato": "Categorías que mira el IRS para decidir si eres empleado: control de comportamiento, control financiero y relación entre las partes",
+   "valor": 3,
+   "unidad": "categorías",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee"
+  },
+  {
+   "dato": "El Formulario 8919 sirve para reportar el impuesto de Seguro Social y Medicare no retenido y pagar solo la parte del empleado",
+   "valor": 7.65,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/forms-pubs/about-form-8919"
+  },
+  {
+   "dato": "Formulario SS-8: el IRS determina gratis si eres empleado o contratista",
+   "valor": 0,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/forms-pubs/about-form-ss-8"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago anual de un trabajador que gana $1,000 por semana",
+   "expresion": "1000*52",
+   "resultado": 52000
+  },
+  {
+   "descripcion": "Impuesto de autoempleo como 'contratista' (92.35% de $52,000 por 15.3%)",
+   "expresion": "round(52000*0.9235*0.153,2)",
+   "resultado": 7347.37
+  },
+  {
+   "descripcion": "Impuesto que pagaría como empleado (solo su mitad, 7.65%)",
+   "expresion": "round(52000*0.0765,2)",
+   "resultado": 3978.0
+  },
+  {
+   "descripcion": "Diferencia al año: lo que pierdes por estar mal clasificado, antes de la deducción de la mitad del impuesto de autoempleo",
+   "expresion": "round(52000*0.9235*0.153-52000*0.0765,2)",
+   "resultado": 3369.37
+  },
+  {
+   "descripcion": "Esa diferencia por semana",
+   "expresion": "round((52000*0.9235*0.153-52000*0.0765)/52,2)",
+   "resultado": 64.8
+  },
+  {
+   "descripcion": "Esa diferencia en 3 años con el mismo patrón",
+   "expresion": "round((52000*0.9235*0.153-52000*0.0765)*3,2)",
+   "resultado": 10108.1
+  }
+ ],
+ "consejo": "Haz una lista rápida: ¿Te dice a qué hora llegas, cómo hacer el trabajo o qué herramientas usar? ¿Trabajas solo para él, todo el año? Si la respuesta es sí, guarda tus recibos y mensajes. Después revisa el Formulario SS-8 del IRS, que es gratis y sirve para pedir que decidan tu caso. En tu declaración de impuestos, pregunta a un preparador de confianza si te sirve el Formulario 8919 para pagar solo tu mitad. También puedes revisar con el departamento del trabajo de tu estado si tienes derecho a otros beneficios de empleado, como el desempleo.",
+ "que_no_decir": [
+  "No digas que el patrón siempre está cometiendo un delito: la clasificación depende de los hechos de cada caso",
+  "No prometas que el IRS o el estado te van a dar la razón ni cuánto vas a recuperar",
+  "No digas que si firmaste el contrato ya no puedes hacer nada",
+  "No digas que ser empleado siempre es mejor que ser contratista: hay contratistas reales con libertad de verdad",
+  "No digas que dejes de pagar impuestos ni que tires el contrato por tu cuenta",
+  "No amenaces ni aconsejes demandar al patrón sin consultar a un profesional o a la agencia del trabajo",
+  "No repitas el ejemplo de $60,000 ni la cifra de $8,477.73 del video de contrato (FF-005)",
+  "No lo conviertas en un video de horas extra (FF-029) ni de retiro (FF-045)",
+  "No des como cifra fija los $3,369: es un estimado sin la deducción de la mitad del impuesto de autoempleo ni otros ajustes"
+ ],
+ "con_iul": false,
+ "idea": "Contratista o empleado: las señales de que tu patrón te tiene mal clasificado y lo que pierdes",
+ "gancho_pedido": "Si tu patrón te dice a qué hora llegas, tal vez no eres contratista.",
+ "ganchos_recientes": [
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas."
+ ]
+}

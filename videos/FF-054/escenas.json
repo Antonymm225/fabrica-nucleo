@@ -1,0 +1,625 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: funeral típico de aquí más traslado mínimo a México, con precios de funerarias de Houston que hoy pueden variar. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 0,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu tierra",
+   "contador": "cuenta |aparte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 25,
+     "tam": 30,
+     "en": [
+      0,
+      "tierra"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 70,
+     "y": 70,
+     "tam": 22,
+     "etiqueta": "CUENTA APARTE",
+     "en": [
+      1,
+      "cuenta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "al final",
+   "contador": "dos |preguntas",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué tengo que preguntar?",
+     "piensa": true,
+     "cola": 1,
+     "x": 28,
+     "y": 24,
+     "en": [
+      2,
+      "dos"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 74,
+     "y": 60,
+     "tam": 26,
+     "etiqueta": "HOY",
+     "en": [
+      3,
+      "hoy"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "contador": "traer |el cuerpo",
+   "filas": [
+    "TRAER",
+    "CUERPO"
+   ],
+   "en": [
+    4,
+    "cuerpo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la cuenta",
+   "contador": "paga |antes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 25,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "LA FAMILIA"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 75,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "FUNERARIA",
+     "en": [
+      7,
+      "familia"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "f",
+     "a": "t",
+     "en": [
+      7,
+      "paga"
+     ],
+     "hasta": [
+      7,
+      "cuerpo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EN DÍAS",
+     "color": "principal",
+     "x": 50,
+     "y": 68,
+     "tam": 6,
+     "en": [
+      8,
+      "días"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "los precios",
+   "contador": "desde |$3,500",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 84,
+     "titulo": "Funerarias de Houston",
+     "renglones": [
+      {
+       "texto": "Traslado a México",
+       "valor": "$3,500",
+       "en": [
+        10,
+        "3,500"
+       ]
+      },
+      {
+       "texto": "A Centroamérica",
+       "valor": "$4,000",
+       "en": [
+        11,
+        "4,000"
+       ]
+      },
+      {
+       "texto": "Funeral de aquí",
+       "valor": "aparte",
+       "en": [
+        12,
+        "funeral"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       12,
+       "aquí"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "en": [
+      11,
+      "desde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "las familias",
+   "contador": "no pueden |3 de 10",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "LA FAMILIA"
+    },
+    {
+     "que": "cifra",
+     "texto": "3 de 10",
+     "x": 50,
+     "y": 32,
+     "tam": 12,
+     "color": "principal",
+     "etiqueta": "no pueden pagar",
+     "en": [
+      14,
+      "3"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 76,
+     "y": 76,
+     "tam": 22,
+     "etiqueta": "COLECTA",
+     "en": [
+      16,
+      "colectas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la suma",
+   "contador": "funeral |$8,300",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 52,
+     "valor": 8300,
+     "max": 8300,
+     "prefijo": "$",
+     "etiqueta": "FUNERAL AQUÍ",
+     "en": [
+      17,
+      "funeral"
+     ],
+     "hasta": [
+      17,
+      "8,300"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 74,
+     "y": 95,
+     "tam": 52,
+     "valor": 3500,
+     "max": 8300,
+     "prefijo": "$",
+     "etiqueta": "TRASLADO",
+     "en": [
+      18,
+      "traslado"
+     ],
+     "hasta": [
+      18,
+      "México"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    19
+   ],
+   "capitulo": "el golpe",
+   "contador": "en días |$11,800",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$11,800",
+    "etiqueta": "en pocos días",
+    "en": [
+     19,
+     "11,800"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     19,
+     "total"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      21
+     ],
+     "texto": "preguntas |hoy"
+    },
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |extra"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra"
+    },
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 6,
+     "items": [
+      {
+       "texto": "Funeraria: ¿cuánto cuesta hoy?",
+       "en": [
+        22,
+        "cuesta"
+       ]
+      },
+      {
+       "texto": "Consulado: ¿qué ayuda dan?",
+       "en": [
+        23,
+        "ayuda"
+       ]
+      },
+      {
+       "texto": "Dinero a la mano, sin colectas",
+       "en": [
+        24,
+        "colectas"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |de vida",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "IUL: seguro de vida indexado",
+     "cola": -1,
+     "x": 34,
+     "y": 22,
+     "en": [
+      25,
+      "IUL"
+     ]
+    },
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 78,
+     "y": 62,
+     "tam": 30,
+     "etiqueta": "PROTEGIDA",
+     "en": [
+      27,
+      "familia"
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 48,
+     "y": 66,
+     "tam": 20,
+     "en": [
+      28,
+      "dinero"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "f",
+     "en": [
+      28,
+      "dinero"
+     ],
+     "hasta": [
+      28,
+      "mano"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "tu seguro",
+   "contador": "crece |hasta 10%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "hasta 10%",
+     "x": 50,
+     "y": 18,
+     "tam": 9,
+     "color": "verde",
+     "etiqueta": "al año",
+     "en": [
+      29
+     ]
+    },
+    {
+     "que": "grafica",
+     "inicio": 1,
+     "final": 3,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "tam": 60,
+     "x": 50,
+     "y": 92,
+     "en": [
+      30,
+      "hasta"
+     ],
+     "hasta": [
+      32,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "tu familia",
+   "contador": "despedida |en paz",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 46,
+     "y": 55,
+     "tam": 40
+    },
+    {
+     "que": "check",
+     "x": 80,
+     "y": 30,
+     "en": [
+      33,
+      "despide"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "siguiente paso",
+   "contador": "asesor |certificado",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está el link",
+     "x": 28,
+     "y": 52
+    },
+    {
+     "id": "l",
+     "que": "texto",
+     "texto": "EL LINK",
+     "color": "principal",
+     "x": 72,
+     "y": 26,
+     "tam": 6,
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "l",
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 68,
+     "tam": 26,
+     "en": [
+      37,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

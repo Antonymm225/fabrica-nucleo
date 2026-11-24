@@ -1,0 +1,52 @@
+# FF-052 · Finanzas Familiares · EST-01 · La edad del Seguro Social contra tus rodillas
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Edad completa de retiro del Seguro Social para nacidos en 1960 o después = 67 años · https://www.ussfcu.org/media-center/advisors-corner/post.html?cId=108905&title=62-67-or-70-when-to-claim-social-security-and-how-it-affects-your-benefits
+# Fuente: Porcentaje del beneficio completo que recibes si cobras a los 62 (reducción de 30% de por vida) = 70 % · https://www.ussfcu.org/media-center/advisors-corner/post.html?cId=108905&title=62-67-or-70-when-to-claim-social-security-and-how-it-affects-your-benefits
+# Fuente: Edad mediana de retiro (por incapacidad) en un estudio longitudinal con techadores, de Países Bajos, no de EE. UU. = 58 años · https://www.researchgate.net/publication/41175514_Impact_of_Musculoskeletal_and_Medical_Conditions_on_Disability_Retirement-A_Longitudinal_Study_Among_Construction_Roofers
+# Fuente: Trabajadores con dolor de espalda en trabajos físicamente exigentes y posturas incómodas: más probabilidad de retirarse antes de tiempo (Welch et al., 2010) = 300 % · https://www.researchgate.net/publication/41175514_Impact_of_Musculoskeletal_and_Medical_Conditions_on_Disability_Retirement-A_Longitudinal_Study_Among_Construction_Roofers
+# Fuente: Caídas, resbalones y tropiezos como parte de las lesiones no mortales con días de baja en construcción privada de EE. UU. (2019) = 32.0 % · https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm
+# Fuente: Mediana de días sin trabajar por esas caídas en construcción (2019) = 28 días · https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+El Seguro Social te espera
+hasta los [67|sesenta y siete]. Tus *rodillas*, no.
+Al final te digo cuánto juntas
+ahorrando cada *mes* hasta los [58|cincuenta y ocho].
+Se llama el *hueco* del retiro.
+Si naciste en los años sesenta o después,
+aquí en Estados Unidos tu *edad completa*
+es [67|sesenta y siete]. Puedes cobrar desde los [62|sesenta y dos],
+pero te pagan *para siempre* solo [70%|setenta por ciento].
+Un estudio con *techadores* de Países Bajos
+encontró que la edad típica de retiro
+por *incapacidad* fue [58|cincuenta y ocho].
+Y aquí viene lo que nadie te dice:
+entre tu *cuerpo* y tu cheque completo
+puede haber [9|nueve] años de *hueco*.
+Con un cheque completo de *dos mil* dólares,
+A los [62|sesenta y dos] te llegan solo [$1,400|mil cuatrocientos] al mes.
+Son [$7,200|siete mil doscientos dólares] menos *cada año*,
+y es *de por vida*.
+Cubrir esos [9|nueve] años del *hueco*
+cuesta [$216,000|doscientos dieciséis mil dólares] con ese cheque.
+Eso es la *renta* y los biles.
+Ese hueco lo llena *tu propio ahorro*.
+Aquí entra el [IUL|a yu el],
+un *seguro de vida indexado*.
+Es tuyo, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Ahora sí, la cuenta:
+si empiezas a los [30|treinta] y ahorras *cada mes*,
+a los [58|cincuenta y ocho] podrías llegar
+a unos [$354,000|trescientos cincuenta y cuatro mil].
+Todo depende de *cuándo empieces*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien trabaja en el *techo*.

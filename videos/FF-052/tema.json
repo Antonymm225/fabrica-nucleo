@@ -1,0 +1,127 @@
+{
+ "titulo": "La edad del Seguro Social contra tus rodillas",
+ "angulo": "Para el Seguro Social 'esperar hasta los 67' es una regla de papel, pero tu cuerpo en el techo tiene su propia fecha, y si te retiras antes te pagan de por vida solo el 70%.",
+ "explicacion": "Si naciste en 1960 o después, tu edad completa para el Seguro Social es 67. Puedes cobrar desde los 62, pero te pagan para siempre solo cerca del 70%. Un estudio con techadores encontró que la edad mediana de retiro por incapacidad fue 58, nueve años antes de los 67. Entre el día que el cuerpo dice basta y el día que el cheque llega completo hay un hueco, y ese hueco lo tiene que llenar tu propio ahorro. Ahorrar $200 al mes desde los 30 a un 10% anual (el máximo de un año en un IUL, no una promesa) junta unos $354,314 a los 58.",
+ "datos": [
+  {
+   "dato": "Edad completa de retiro del Seguro Social para nacidos en 1960 o después",
+   "valor": 67,
+   "unidad": "años",
+   "fuente": "https://www.ussfcu.org/media-center/advisors-corner/post.html?cId=108905&title=62-67-or-70-when-to-claim-social-security-and-how-it-affects-your-benefits"
+  },
+  {
+   "dato": "Porcentaje del beneficio completo que recibes si cobras a los 62 (reducción de 30% de por vida)",
+   "valor": 70,
+   "unidad": "%",
+   "fuente": "https://www.ussfcu.org/media-center/advisors-corner/post.html?cId=108905&title=62-67-or-70-when-to-claim-social-security-and-how-it-affects-your-benefits"
+  },
+  {
+   "dato": "Edad mediana de retiro (por incapacidad) en un estudio longitudinal con techadores, de Países Bajos, no de EE. UU.",
+   "valor": 58,
+   "unidad": "años",
+   "fuente": "https://www.researchgate.net/publication/41175514_Impact_of_Musculoskeletal_and_Medical_Conditions_on_Disability_Retirement-A_Longitudinal_Study_Among_Construction_Roofers"
+  },
+  {
+   "dato": "Trabajadores con dolor de espalda en trabajos físicamente exigentes y posturas incómodas: más probabilidad de retirarse antes de tiempo (Welch et al., 2010)",
+   "valor": 300,
+   "unidad": "%",
+   "fuente": "https://www.researchgate.net/publication/41175514_Impact_of_Musculoskeletal_and_Medical_Conditions_on_Disability_Retirement-A_Longitudinal_Study_Among_Construction_Roofers"
+  },
+  {
+   "dato": "Caídas, resbalones y tropiezos como parte de las lesiones no mortales con días de baja en construcción privada de EE. UU. (2019)",
+   "valor": 32.0,
+   "unidad": "%",
+   "fuente": "https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm"
+  },
+  {
+   "dato": "Mediana de días sin trabajar por esas caídas en construcción (2019)",
+   "valor": 28,
+   "unidad": "días",
+   "fuente": "https://www.bls.gov/opub/ted/2021/fatal-and-nonfatal-falls-slips-and-trips-in-the-construction-industry.htm"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Años entre el retiro por cuerpo (58) y la edad completa del Seguro Social (67)",
+   "expresion": "67-58",
+   "resultado": 9
+  },
+  {
+   "descripcion": "Cheque mensual a los 62 si tu beneficio completo ilustrativo fuera $2,000 (70%)",
+   "expresion": "2000*0.70",
+   "resultado": 1400.0
+  },
+  {
+   "descripcion": "Dinero que pierdes cada año de por vida por cobrar a los 62 en vez de a los 67",
+   "expresion": "2000*0.30*12",
+   "resultado": 7200.0
+  },
+  {
+   "descripcion": "Lo que costaría cubrir 9 años (de los 58 a los 67) con $2,000 al mes",
+   "expresion": "2000*12*9",
+   "resultado": 216000
+  },
+  {
+   "descripcion": "Total aportado: $200 al mes ($2,400 al año) de los 30 a los 58 (28 años)",
+   "expresion": "2400*28",
+   "resultado": 67200
+  },
+  {
+   "descripcion": "Proyección a 10% anual, aporte al inicio de cada año, de los 30 a los 58 (28 aportes de $2,400)",
+   "expresion": "round(2400*((1.1**28-1)/0.1)*1.1,2)",
+   "resultado": 354314.23
+  },
+  {
+   "descripcion": "Ganancia de esa proyección sobre lo aportado a los 58",
+   "expresion": "round(2400*((1.1**28-1)/0.1)*1.1-2400*28,2)",
+   "resultado": 287114.23
+  },
+  {
+   "descripcion": "Proyección a 10% anual si el cuerpo aguantara de los 30 a los 67 (37 aportes), solo como referencia",
+   "expresion": "round(2400*((1.1**37-1)/0.1)*1.1,2)",
+   "resultado": 871304.24
+  }
+ ],
+ "consejo": "No cuentes con trabajar hasta los 67 en el techo. Ponle fecha realista a tu cuerpo (58, 60, la que sea) y arma tu propio ahorro para cubrir los años antes de que el Seguro Social pague completo. Empieza hoy, aunque sea $200 al mes, y pide a un agente con licencia que te muestre un IUL con cifras reales para tu edad. Cobrar a los 62 no es mala idea si no queda de otra, pero hay que saber que es 30% menos de por vida.",
+ "que_no_decir": [
+  "No decir que el 58 es la edad de retiro de los roofers en EE. UU.: es un estudio de otro país con techadores.",
+  "No prometer que el IUL da 10% cada año: es el tope de un año, y el piso es cero.",
+  "No decir que $354,314 es seguro ni que alcanza para todo: es una proyección ilustrativa con un beneficio de $2,000 como ejemplo.",
+  "No decir que el Seguro Social se acaba ni que no vas a cobrar nada.",
+  "No decir que cobrar a los 62 siempre es un error.",
+  "No repetir el 40% del sueldo, los $1,537, el recorte de 2034 ni el costo de empezar tarde, que ya están en videos hechos."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "La edad del Seguro Social contra el cuerpo del que trabaja en roofing o construcción",
+ "gancho_pedido": "El Seguro Social te espera hasta los sesenta y siete. Tus rodillas, no.",
+ "ganchos_recientes": [
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador."
+ ]
+}

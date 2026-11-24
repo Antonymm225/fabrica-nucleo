@@ -1,0 +1,580 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de $30 la hora y 40 horas pendientes en el último cheque. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cheque",
+   "contador": "último |cheque",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       2,
+       "casi"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 40,
+     "tam": 30,
+     "en": [
+      1,
+      "fecha"
+     ],
+     "etiqueta": "FECHA LÍMITE"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el mensaje",
+   "contador": "dos |líneas",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Mi último pago, por favor.",
+     "x": 72,
+     "y": 42,
+     "en": [
+      3,
+      "mensaje"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "ULTIMO",
+    "CHEQUE"
+   ],
+   "en": [
+    5,
+    "último"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "la ley",
+   "contador": "federal |sin fecha",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 26,
+     "tam": 24,
+     "etiqueta": "FEDERAL",
+     "en": [
+      6,
+      "ley"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "f",
+     "en": [
+      6,
+      "ninguna"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 74,
+     "y": 26,
+     "tam": 24,
+     "etiqueta": "TU ESTADO",
+     "en": [
+      7,
+      "estado"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "TEXAS",
+     "en": [
+      8,
+      "Texas"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "6 días",
+     "x": 72,
+     "y": 72,
+     "tam": 9,
+     "en": [
+      9,
+      "6"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "renuncias",
+   "contador": "plazo |según estado",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 52,
+     "tam": 22,
+     "etiqueta": "PRÓXIMO PAGO",
+     "en": [
+      10,
+      "renuncias"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 4,
+     "etiqueta": "EL PATRÓN",
+     "en": [
+      11,
+      "California"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Hoy mismo!",
+     "piensa": false,
+     "cola": 1,
+     "x": 76,
+     "y": 14,
+     "en": [
+      12,
+      "mismo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "72 horas",
+     "x": 28,
+     "y": 82,
+     "tam": 9,
+     "en": [
+      13,
+      "72"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "el atraso",
+   "contador": "hasta |30 días",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "CADA DÍA CUENTA",
+     "x": 70,
+     "y": 14,
+     "color": "principal",
+     "en": [
+      15,
+      "atrasa"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 42,
+     "tam": 26,
+     "en": [
+      16,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "30 días",
+     "x": 72,
+     "y": 75,
+     "tam": 9,
+     "en": [
+      17,
+      "30"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "sueldo |$30 la hora",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu último cheque",
+     "en": [
+      18
+     ],
+     "renglones": [
+      {
+       "texto": "Pago por hora",
+       "valor": "$30",
+       "en": [
+        18,
+        "30"
+       ]
+      },
+      {
+       "texto": "Cheque pendiente",
+       "valor": "$1,200",
+       "en": [
+        19,
+        "1,200"
+       ]
+      },
+      {
+       "texto": "Un día de sueldo",
+       "valor": "$240",
+       "en": [
+        20,
+        "240"
+       ]
+      },
+      {
+       "texto": "5 días de atraso",
+       "valor": "$1,200",
+       "en": [
+        21,
+        "1,200"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 3,
+      "en": [
+       21,
+       "extra"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "el máximo",
+   "contador": "hasta |$7,200",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$7,200",
+    "etiqueta": "hasta",
+    "en": [
+     23,
+     "7,200"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGO",
+    "en": [
+     22,
+     "días"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "anota",
+   "contador": "paso |1 de 4",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 52,
+     "tam": 28,
+     "etiqueta": "ANOTA LA FECHA",
+     "en": [
+      26,
+      "fecha"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Despido o renuncia",
+     "piensa": true,
+     "cola": 1,
+     "x": 25,
+     "y": 24,
+     "en": [
+      27,
+      "despido"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "busca",
+   "contador": "paso |2 de 4",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "Busca el plazo de tu estado",
+       "en": [
+        28,
+        "plazo"
+       ]
+      },
+      {
+       "texto": "En la página del Trabajo",
+       "en": [
+        29,
+        "página"
+       ]
+      },
+      {
+       "texto": "Si pasó, escribe al patrón",
+       "en": [
+        30,
+        "mensaje"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "escribe",
+   "contador": "paso |3 de 4",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Mi plazo del último cheque ya venció. Necesito mi pago hoy.",
+     "x": 72,
+     "y": 42,
+     "en": [
+      32,
+      "plazo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "reclama",
+   "contador": "paso |4 de 4",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Reclamo de salarios",
+     "en": [
+      34
+     ],
+     "renglones": [
+      {
+       "texto": "Lo presentas en",
+       "valor": "tu estado",
+       "en": [
+        35,
+        "agencia"
+       ]
+      },
+      {
+       "texto": "En Texas cuesta",
+       "valor": "Gratis",
+       "en": [
+        36,
+        "gratis"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      36,
+      "Texas"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 75,
+     "y": 72,
+     "en": [
+      36,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

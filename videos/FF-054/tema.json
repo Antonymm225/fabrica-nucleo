@@ -1,0 +1,90 @@
+{
+ "titulo": "Traer el cuerpo a casa: la cuenta que nadie guarda",
+ "angulo": "Casi nadie lo planea, pero cuando alguien muere lejos de su país, la familia tiene que juntar miles de dólares en pocos días y 3 de cada 10 familias no pueden pagarlo.",
+ "explicacion": "Si un familiar muere en Estados Unidos y quiere descansar en su tierra, enviar el cuerpo cuesta miles de dólares, sin contar el funeral de aquí. Las funerarias de Houston cobraban desde $3,500 por preparar y enviar el cuerpo a México y desde $4,000 a Centroamérica. Esa cuenta llega en días y se paga antes de enviar el cuerpo. Los consulados calculan que 3 de cada 10 familias no pueden pagarla y tienen que hacer colectas. Un seguro de vida con dinero a la mano le da a la familia ese dinero sin tener que pedirlo.",
+ "datos": [
+  {
+   "dato": "Costo mínimo de preparar y enviar un cuerpo por avión a México (funerarias de Houston, artículo antiguo; verificar precio actual)",
+   "valor": 3500,
+   "unidad": "$",
+   "fuente": "https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php"
+  },
+  {
+   "dato": "Costo mínimo de enviar restos a Centroamérica (mismas funerarias de Houston)",
+   "valor": 4000,
+   "unidad": "$",
+   "fuente": "https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php"
+  },
+  {
+   "dato": "Porcentaje de familias que no pueden pagar el traslado, según funcionarios consulares de México en Houston",
+   "valor": 30,
+   "unidad": "%",
+   "fuente": "https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php"
+  },
+  {
+   "dato": "Cuerpos que regresan a México cada año desde el área de Houston (mínimo del estimado consular)",
+   "valor": 1400,
+   "unidad": "cuerpos",
+   "fuente": "https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php"
+  },
+  {
+   "dato": "Costo del funeral típico en EE. UU. (ya usado en la ficha de FF-021; verificar con NFDA antes de usarlo)",
+   "valor": 8300,
+   "unidad": "$",
+   "fuente": "https://www.nfda.org/news/statistics"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Familias del área de Houston que no pueden pagar el traslado cada año (30% de 1,400 cuerpos)",
+   "expresion": "round(1400*0.30,2)",
+   "resultado": 420.0
+  },
+  {
+   "descripcion": "Diferencia de costo mínimo entre enviar a Centroamérica y a México",
+   "expresion": "round(4000-3500,2)",
+   "resultado": 500.0
+  },
+  {
+   "descripcion": "Ejemplo: funeral típico de aquí más traslado mínimo a México (aún por confirmar con precios actuales)",
+   "expresion": "round(8300+3500,2)",
+   "resultado": 11800.0
+  }
+ ],
+ "consejo": "Habla hoy con tu familia y decide dónde quieres descansar. Pregunta a una funeraria y a tu consulado cuánto cuesta ahora el traslado y qué ayuda dan. Después ten un seguro de vida que pague en efectivo y rápido, para que tu familia no tenga que hacer colectas.",
+ "que_no_decir": [
+  "No decir que repatriar cuesta más que el funeral de aquí sin una fuente actual que lo confirme",
+  "No dar precios de traslado como si fueran fijos: varían según el país, la aerolínea y la funeraria",
+  "No prometer que el consulado paga el traslado",
+  "No decir cuánto se junta en el IUL ni dar cifras de ahorro o retiro",
+  "No presentar los datos de Houston como cifras nacionales ni actuales",
+  "No asustar con la muerte: hablar de proteger a la familia"
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "Traer el cuerpo de un familiar a su país: cuánto cuesta y quién lo paga",
+ "gancho_pedido": "Mandar a alguien a descansar a su tierra cuesta más que el funeral de aquí.",
+ "ganchos_recientes": [
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas"
+ ]
+}

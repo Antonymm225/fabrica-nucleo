@@ -1,0 +1,43 @@
+# FF-055 · Finanzas Familiares · EST-01 · El papel dice contratista
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa de impuesto de autoempleo (Seguro Social 12.4% + Medicare 2.9%) que paga un contratista = 15.3 % · https://www.irs.gov/taxtopics/tc554
+# Fuente: Parte de Seguro Social y Medicare que paga el empleado (el patrón paga la otra mitad) = 7.65 % · https://www.irs.gov/businesses/small-businesses-self-employed/understanding-employment-taxes
+# Fuente: Porción de las ganancias sobre la que se calcula el impuesto de autoempleo = 92.35 % · https://www.irs.gov/taxtopics/tc554
+# Fuente: Categorías que mira el IRS para decidir si eres empleado: control de comportamiento, control financiero y relación entre las partes = 3 categorías · https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee
+# Fuente: El Formulario 8919 sirve para reportar el impuesto de Seguro Social y Medicare no retenido y pagar solo la parte del empleado = 7.65 % · https://www.irs.gov/forms-pubs/about-form-8919
+# Fuente: Formulario SS-8: el IRS determina gratis si eres empleado o contratista = 0 $ · https://www.irs.gov/forms-pubs/about-form-ss-8
+# BLOQUE 1
+Si tu *patrón* te dice a qué hora llegas,
+tal vez no eres *contratista*.
+Aunque el papel que firmaste diga que sí.
+Al final te digo el *formulario* gratis
+que le pide al IRS *decidir* tu caso.
+Se llama estar *mal clasificado*.
+El papel dice *contratista*,
+pero en Estados Unidos el IRS ignora el *nombre*.
+Mira *tres cosas* de tu trabajo.
+Primero, quién te dice *cómo* trabajar.
+A qué hora llegas, qué órdenes sigues.
+Segundo, quién paga las *herramientas*.
+Tercero, si trabajas *solo para él* todo el año.
+Pero aquí viene lo que *nadie* te dice.
+Si te clasificaron mal, pagas *dos mitades*
+del Seguro Social y *Medicare*,
+en vez de una sola.
+Digamos que trabajas *todo el año* igual.
+Cobras [$52,000|cincuenta y dos mil dólares] al *año*.
+Como *contratista*, pagas [15.3%|quince punto tres por ciento] de impuesto.
+Como empleado, solo [7.65%|siete punto sesenta y cinco por ciento].
+La diferencia: unos [$3,300|tres mil trescientos dólares] al *año*.
+Eso son más de *tres semanas* de sueldo.
+Y en tres años, más de [$10,000|diez mil dólares].
+Ahora sí, lo que te prometí.
+Es el *formulario* [SS-8|ese ese ocho],
+gratis, y le pides al IRS que *decida*.
+Hay contratistas de verdad, con libertad *real*.
+Antes, guarda tus *recibos* y mensajes.
+Pregunta a un *preparador* de confianza
+si te sirve *otro formulario*
+para pagar solo tu *mitad*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien firmó como *contratista*.

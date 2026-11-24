@@ -1,0 +1,109 @@
+{
+ "titulo": "El plazo del último cheque",
+ "angulo": "La ley federal no le pone fecha al último cheque: el plazo lo fija tu estado, y en California cada día de atraso le cuesta al patrón un día de tu sueldo.",
+ "explicacion": "Si te despiden o renuncias, crees que el patrón te paga cuando quiera. La ley federal no fija un plazo, así que manda la ley de tu estado. En Texas, si te despiden, el patrón tiene 6 días calendario. Si renuncias, tiene hasta el siguiente día de pago normal. En California, si te despiden, te debe pagar ese mismo día, y si se atrasa puede deberte hasta 30 días de sueldo extra. Si sabes tu fecha límite, sabes cuándo reclamar.",
+ "datos": [
+  {
+   "dato": "Plazo en Texas para pagar el último cheque a quien es despedido (días calendario)",
+   "valor": 6,
+   "unidad": "días",
+   "fuente": "https://www.nolo.com/legal-encyclopedia/final-paycheck-employee-rights-chart-29882.html"
+  },
+  {
+   "dato": "Texas: si renuncias, el patrón paga a más tardar el siguiente día de pago regular (Texas Workforce Commission)",
+   "valor": 1,
+   "unidad": "día de pago",
+   "fuente": "https://www.yahoo.com/news/articles/texas-law-says-long-employer-210051839.html"
+  },
+  {
+   "dato": "California: tope de días de penalización por atraso en el último cheque (Labor Code 203)",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://www.shouselaw.com/ca/labor/labor-code-203/"
+  },
+  {
+   "dato": "California: si te despiden, el pago es inmediato; si renuncias sin avisar, 72 horas",
+   "valor": 72,
+   "unidad": "horas",
+   "fuente": "https://www.hrcloud.com/resources/glossary/final-paycheck-laws-by-state"
+  },
+  {
+   "dato": "Ejemplo: tarifa por hora de un oficio (supuesto del video, no es dato oficial)",
+   "valor": 30,
+   "unidad": "$",
+   "fuente": "https://www.dol.gov/agencies/whd/final-pay"
+  },
+  {
+   "dato": "Ejemplo: horas en un día de trabajo (supuesto del video)",
+   "valor": 8,
+   "unidad": "horas",
+   "fuente": "https://www.dol.gov/agencies/whd/final-pay"
+  },
+  {
+   "dato": "Ejemplo: horas de sueldo pendientes en el último cheque (supuesto del video)",
+   "valor": 40,
+   "unidad": "horas",
+   "fuente": "https://www.dol.gov/agencies/whd/final-pay"
+  },
+  {
+   "dato": "Texas: tiempo para presentar un reclamo de salarios ante la Texas Workforce Commission (verificar antes de publicar)",
+   "valor": 180,
+   "unidad": "días",
+   "fuente": "https://www.twc.texas.gov/jobseekers/how-file-wage-claim"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Sueldo de un día: $30 por hora por 8 horas",
+   "expresion": "30*8",
+   "resultado": 240
+  },
+  {
+   "descripcion": "Cheque final pendiente: 40 horas a $30",
+   "expresion": "40*30",
+   "resultado": 1200
+  },
+  {
+   "descripcion": "California: penalización máxima de 30 días de sueldo",
+   "expresion": "30*240",
+   "resultado": 7200
+  },
+  {
+   "descripcion": "California: total que podría deberte (cheque final más penalización máxima)",
+   "expresion": "1200+7200",
+   "resultado": 8400
+  },
+  {
+   "descripcion": "Cuántas veces es la penalización máxima comparada con el cheque atrasado",
+   "expresion": "round(7200/1200, 2)",
+   "resultado": 6
+  },
+  {
+   "descripcion": "California: penalización si se atrasa 5 días",
+   "expresion": "5*240",
+   "resultado": 1200
+  }
+ ],
+ "consejo": "El día que salgas del trabajo, anota la fecha y cómo salió (despido o renuncia). Busca el plazo de tu estado en dol.gov/agencies/whd/final-pay o en la página de trabajo de tu estado. Si pasa el plazo, mándale al patrón un mensaje por escrito (texto o correo) pidiendo tu pago. Si no te paga, presenta un reclamo de salarios con la agencia laboral de tu estado. En Texas es la Texas Workforce Commission, y el reclamo es gratis.",
+ "que_no_decir": [
+  "No digas que en todo el país el plazo es el mismo: depende del estado.",
+  "No prometas que el patrón siempre te debe una multa: la penalización de California aplica en ciertos casos, y no pasa lo mismo en Texas.",
+  "No digas que te pagan las vacaciones sin saber el estado ni la política escrita de la empresa.",
+  "No des el ejemplo de $8,400 como cifra segura: es un máximo con un sueldo de ejemplo.",
+  "No des asesoría legal ni digas que van a ganar el reclamo.",
+  "No le digas a la gente que se quede sin trabajar o que amenace al patrón."
+ ],
+ "con_iul": false,
+ "idea": "El último cheque cuando te despiden o renuncias: el plazo que tiene el patrón para pagarte",
+ "gancho_pedido": "Si te despiden, tu patrón tiene un plazo para pagarte. Y casi nadie lo sabe.",
+ "ganchos_recientes": [
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58."
+ ]
+}

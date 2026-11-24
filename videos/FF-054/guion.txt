@@ -1,0 +1,50 @@
+# FF-054 · Finanzas Familiares · EST-01 · Traer el cuerpo a casa
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Costo mínimo de preparar y enviar un cuerpo por avión a México (funerarias de Houston, artículo antiguo; verificar precio actual) = 3500 $ · https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php
+# Fuente: Costo mínimo de enviar restos a Centroamérica (mismas funerarias de Houston) = 4000 $ · https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php
+# Fuente: Porcentaje de familias que no pueden pagar el traslado, según funcionarios consulares de México en Houston = 30 % · https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php
+# Fuente: Cuerpos que regresan a México cada año desde el área de Houston (mínimo del estimado consular) = 1400 cuerpos · https://www.chron.com/news/houston-texas/article/Burial-in-Mexico-proves-expensive-for-many-1604363.php
+# Fuente: Costo del funeral típico en EE. UU. (ya usado en la ficha de FF-021; verificar con NFDA antes de usarlo) = 8300 $ · https://www.nfda.org/news/statistics
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Mandar a alguien a descansar a su *tierra*
+es una *cuenta aparte* del funeral de aquí.
+Al final te digo las *dos preguntas*
+que tienes que hacer *hoy*, antes de necesitarlas.
+Se llama *traer el cuerpo* a casa.
+Si un familiar muere aquí en *Estados Unidos*,
+y quiere descansar en su *tierra*,
+la familia paga *antes* de que salga el cuerpo.
+Y esa cuenta llega en *días*, no en meses.
+En Houston, las funerarias cobraban desde
+[$3,500|tres mil quinientos dólares] para *México*,
+y desde [$4,000|cuatro mil dólares] para *Centroamérica*.
+Y eso, sin contar el *funeral* de aquí.
+Pero aquí viene lo que *nadie* te dice:
+los consulados calculan que [3|tres] de cada [10|diez]
+familias *no pueden pagarlo*.
+Y terminan haciendo *colectas*
+Un funeral típico aquí ronda [$8,300|ocho mil trescientos dólares].
+Súmale el *traslado* a México
+y son unos [$11,800|once mil ochocientos dólares] *en total*.
+Los precios cambian según el país y la *funeraria*.
+Ahora sí, las *dos preguntas*.
+A la funeraria: ¿cuánto cuesta *hoy* el traslado?
+Al consulado: ¿qué *ayuda* dan a las familias?
+Después, que el dinero no dependa de *colectas*.
+Para eso existe el [IUL|a yu el],
+un *seguro de vida indexado*.
+Si tú faltas, *protege a tu familia*
+con dinero a la mano.
+Es *tuyo*, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde*:
+tiene *piso cero*.
+Así tu familia se *despide*, no hace colectas.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere descansar en *su tierra*.

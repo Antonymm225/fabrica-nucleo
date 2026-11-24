@@ -1,0 +1,50 @@
+# FF-053 · Finanzas Familiares · EST-01 · El plazo del último cheque
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Plazo en Texas para pagar el último cheque a quien es despedido (días calendario) = 6 días · https://www.nolo.com/legal-encyclopedia/final-paycheck-employee-rights-chart-29882.html
+# Fuente: Texas: si renuncias, el patrón paga a más tardar el siguiente día de pago regular (Texas Workforce Commission) = 1 día de pago · https://www.yahoo.com/news/articles/texas-law-says-long-employer-210051839.html
+# Fuente: California: tope de días de penalización por atraso en el último cheque (Labor Code 203) = 30 días · https://www.shouselaw.com/ca/labor/labor-code-203/
+# Fuente: California: si te despiden, el pago es inmediato; si renuncias sin avisar, 72 horas = 72 horas · https://www.hrcloud.com/resources/glossary/final-paycheck-laws-by-state
+# Fuente: Ejemplo: tarifa por hora de un oficio (supuesto del video, no es dato oficial) = 30 $ · https://www.dol.gov/agencies/whd/final-pay
+# Fuente: Ejemplo: horas en un día de trabajo (supuesto del video) = 8 horas · https://www.dol.gov/agencies/whd/final-pay
+# Fuente: Ejemplo: horas de sueldo pendientes en el último cheque (supuesto del video) = 40 horas · https://www.dol.gov/agencies/whd/final-pay
+# Fuente: Texas: tiempo para presentar un reclamo de salarios ante la Texas Workforce Commission (verificar antes de publicar) = 180 días · https://www.twc.texas.gov/jobseekers/how-file-wage-claim
+# BLOQUE 1
+Cuando te despiden o *renuncias*,
+tu patrón tiene una *fecha límite* para pagarte.
+Él la sabe. Tú, casi *nunca*.
+Al final te digo el *mensaje* de dos líneas
+que le mandas si se pasa de esa fecha.
+Se llama el *último cheque*.
+La ley federal no pone *ninguna fecha*.
+La fecha la pone *tu estado*.
+En *Texas*, si te despiden,
+el patrón tiene [6|seis] *días* para pagarte.
+Si renuncias, tiene hasta tu *siguiente día de pago*.
+En *California* es muy distinto.
+Si te despiden, te paga *ese mismo día*.
+Si renuncias sin avisar, tiene [72|setenta y dos] *horas*.
+Pero aquí viene lo que *nadie* te dice.
+En California, si se atrasa, te puede deber
+un día de sueldo *extra* por cada día,
+hasta [30|treinta] *días*.
+Imagina que ganas [$30|treinta dólares] la hora,
+y te deben [40|cuarenta] horas: [$1,200|mil doscientos dólares].
+Un día de tu sueldo son [$240|doscientos cuarenta].
+Si se atrasa [5|cinco] días: [$1,200|mil doscientos] *extra*.
+Y con los [30|treinta] días completos,
+podrían ser hasta [$7,200|siete mil doscientos].
+No siempre aplica, y en Texas *no es igual*.
+Por eso, el día que *sales*,
+anota la *fecha* y cómo salió:
+*despido* o renuncia.
+Busca el plazo de *tu estado*
+en la página del Departamento del Trabajo.
+Si pasó el plazo, manda un *mensaje por escrito*.
+Ahora sí, las dos líneas:
+«Mi plazo del último cheque ya *venció*.
+Necesito mi pago *hoy*.»
+Si no te paga, presenta un *reclamo de salarios*
+con la agencia laboral de tu estado.
+En Texas, ese reclamo es *gratis*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien acaba de *dejar un trabajo*.

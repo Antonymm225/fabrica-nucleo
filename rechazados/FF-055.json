@@ -1,0 +1,157 @@
+{
+ "ficha": {
+  "titulo": "El papel dice contratista, la ley dice empleado",
+  "angulo": "Lo que decide si eres contratista no es el papel ni el 1099, sino quién manda en cómo, cuándo y con qué herramientas trabajas, y si te clasificaron mal puedes pagar solo tu mitad del Seguro Social y Medicare.",
+  "explicacion": "El IRS no se fija en cómo te llama tu patrón. Se fija en tres cosas: control del comportamiento (te dice horario y cómo hacer el trabajo), control financiero (quién pone herramientas, quién fija el precio, si puedes perder o ganar más) y la relación (trabajas solo para él, sin fecha de fin). Si te ponen horario, te dan las herramientas y trabajas solo para él, tal vez eres empleado aunque te den un 1099. Como falso contratista pagas las dos mitades del Seguro Social y Medicare. Si de verdad eras empleado, puedes pedir una determinación gratis con el Formulario SS-8, o declarar con el Formulario 8919 y pagar solo la parte del empleado. En el ejemplo de $48,000, eso son $3,110.18 menos al año.",
+  "datos": [
+   {
+    "dato": "El IRS agrupa las señales en tres categorías: control del comportamiento, control financiero y relación entre las partes",
+    "valor": 3,
+    "unidad": "categorías",
+    "fuente": "https://www.irs.gov/faqs/small-business-self-employed-other-business/form-1099-nec-independent-contractors/form-1099-nec-independent-contractors-1"
+   },
+   {
+    "dato": "Tasa de impuesto de trabajo por cuenta propia (Seguro Social + Medicare), contratista paga ambas mitades",
+    "valor": 15.3,
+    "unidad": "%",
+    "fuente": "https://www.irs.gov/taxes/self-employment-tax-social-security-and-medicare-taxes"
+   },
+   {
+    "dato": "Parte del empleado en nómina (Seguro Social + Medicare)",
+    "valor": 7.65,
+    "unidad": "%",
+    "fuente": "https://www.irs.gov/forms-pubs/about-form-8919"
+   },
+   {
+    "dato": "Porción del ingreso sobre la que se calcula el impuesto de cuenta propia",
+    "valor": 92.35,
+    "unidad": "%",
+    "fuente": "https://www.irs.gov/taxes/self-employment-tax-social-security-and-medicare-taxes"
+   },
+   {
+    "dato": "Formulario SS-8: patrón o trabajador pueden pedir al IRS una determinación de estatus del trabajador",
+    "valor": 1,
+    "unidad": "formulario",
+    "fuente": "https://www.irs.gov/forms-pubs/about-form-ss-8"
+   },
+   {
+    "dato": "Formulario 8919: el trabajador mal clasificado reporta el Seguro Social y Medicare que no le retuvieron y paga solo su parte",
+    "valor": 1,
+    "unidad": "formulario",
+    "fuente": "https://www.irs.gov/pub/irs-prior/f8919--2025.pdf"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Pago por contrato en el año (ejemplo)",
+    "expresion": "48000",
+    "resultado": 48000
+   },
+   {
+    "descripcion": "Impuesto de cuenta propia como falso contratista (15.3% sobre 92.35% de $48,000)",
+    "expresion": "round(48000*0.9235*0.153,2)",
+    "resultado": 6782.18
+   },
+   {
+    "descripcion": "Lo mismo como empleado (solo tu 7.65%)",
+    "expresion": "round(48000*0.0765,2)",
+    "resultado": 3672.0
+   },
+   {
+    "descripcion": "Diferencia al año por la mala clasificación",
+    "expresion": "round(48000*0.9235*0.153-48000*0.0765,2)",
+    "resultado": 3110.18
+   },
+   {
+    "descripcion": "Diferencia en 5 años si no lo corriges",
+    "expresion": "round((48000*0.9235*0.153-48000*0.0765)*5,2)",
+    "resultado": 15550.9
+   },
+   {
+    "descripcion": "Porcentaje real de tu pago que se va solo en este impuesto como falso contratista",
+    "expresion": "round(48000*0.9235*0.153/48000*100,2)",
+    "resultado": 14.13
+   }
+  ],
+  "consejo": "Haz esta prueba con tu trabajo: ¿te dicen la hora, el cómo y el lugar? ¿Te dan las herramientas? ¿Trabajas solo para ellos, sin fecha de fin? Si contestas sí a varias, apunta tus pruebas (mensajes, horarios, fotos de las herramientas) y pide la determinación gratis con el Formulario SS-8 del IRS. Al declarar impuestos, pregunta a un preparador de impuestos con licencia (EA o CPA) si te toca usar el Formulario 8919. No dejes de declarar tu ingreso. Pide hablar con alguien antes de renunciar o reclamar a tu patrón.",
+  "que_no_decir": [
+   "No prometas que el IRS te va a dar la razón: cada caso se decide por sus hechos.",
+   "No digas que tener 1099 es ilegal. Hay contratistas de verdad.",
+   "No digas que dejes de pagar impuestos o que ignores el 1099.",
+   "No hables de pagarte horas extra ni de demandar al patrón (ya se trató en otro video).",
+   "No repitas la cifra de $60,000 ni de $8,477.73 del video del impuesto escondido.",
+   "No digas que con el Formulario 8919 te ahorras todo el impuesto: solo dejas de pagar la mitad del patrón.",
+   "No des cifras de multas al patrón si no las verificaste.",
+   "No des consejo legal ni de inmigración: recomienda un preparador de impuestos con licencia."
+  ],
+  "con_iul": false,
+  "idea": "Contratista o empleado: las señales de que tu patrón te tiene mal clasificado y lo que pierdes",
+  "gancho_pedido": "Si tu patrón te dice a qué hora llegas, tal vez no eres contratista.",
+  "ganchos_recientes": [
+   "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+   "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+   "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+   "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+   "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+   "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+   "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+   "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas."
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Error de hoy: Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Al final te digo el formulario gratis / con el que le pides al IRS que decida.",
+   "Contradicción: Tu papel dice contratista, / pero si te dicen a qué hora llegas, la ley puede decir empleado. / Al final te digo el formulario gratis que lo decide.",
+   "Secreto del otro lado: Tu patrón sabe algo del papel que te dio, / y tú no. / Al final te digo el formulario gratis con el que el IRS lo revisa.",
+   "Dos personas: Dos roofers hacen lo mismo, con el mismo jefe. / Uno paga una mitad del impuesto, el otro paga las dos. / Al final te digo el formulario gratis que cambia eso.",
+   "El reloj: Si tu jefe te fija la hora de entrada, / ya hay una señal en tu contra. / Al final te digo el formulario que se pide gratis y sin patrón.",
+   "Pregunta que pica: ¿Quién decide si eres contratista: tú, tu patrón o el IRS? / No es el papel. / Al final te digo el formulario gratis que se lo pregunta al IRS.",
+   "Lo que te deben: Hay una mitad de impuesto que tu patrón debió pagar / y la estás pagando tú. / Al final te digo el formulario gratis para pedir que el IRS lo revise.",
+   "Frase prohibida: Nunca digas 'soy contratista' / hasta contestar tres preguntas sobre tu trabajo. / Al final te digo el formulario gratis que lo decide."
+  ],
+  "gancho_elegido": "El de 'el error de hoy': habla directo del roofer o jardinero al que el patrón le fija la hora, le dice que quizá lo clasificaron mal, y promete un formulario con nombre concreto que se paga al final, así que frena el dedo porque le puede estar pasando hoy.",
+  "titulo": "Contratista o empleado",
+  "lineas": [
+   "Si tu patrón te dice *a qué hora llegas*,",
+   "tal vez no eres *contratista*.",
+   "Aunque tu papel diga *otra cosa*.",
+   "Al final te digo el *formulario gratis*",
+   "con el que le pides al IRS que decida.",
+   "Se llama *falso contratista*.",
+   "El IRS no mira *cómo te llaman*.",
+   "Mira [3|tres] *cosas*.",
+   "Una: quién manda en *cómo trabajas*.",
+   "Dos: quién pone las *herramientas* y el precio.",
+   "Tres: si trabajas *solo para él*.",
+   "Si dices que sí a varias,",
+   "tal vez ya eres *empleado*.",
+   "Y aquí viene lo que *nadie te dice*:",
+   "como falso contratista pagas *las dos mitades*",
+   "del *Seguro Social* y Medicare.",
+   "Un roofer que cobra [$48,000|cuarenta y ocho mil dólares] al año",
+   "paga [$6,782|seis mil setecientos ochenta y dos] de *ese impuesto*.",
+   "Como empleado, serían solo [$3,672|tres mil seiscientos setenta y dos].",
+   "Son [$3,110|tres mil ciento diez] de *más* cada año.",
+   "En cinco años, más de [$15,000|quince mil].",
+   "Son varias *rentas* que se van en un papel.",
+   "Primero, *apunta tus pruebas*:",
+   "los *mensajes* con tu horario",
+   "y fotos de las *herramientas*.",
+   "Nunca dejes de *declarar* tu ingreso.",
+   "Ahora sí, el *formulario gratis*:",
+   "el [SS-8|ese ese ocho] del IRS.",
+   "Ahí el IRS revisa *tu caso*.",
+   "Cada caso se decide por sus *hechos*.",
+   "Y pregunta a un *preparador con licencia*",
+   "si te toca el *formulario ocho nueve uno nueve*:",
+   "pagas solo *tu parte*, no la del patrón.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien cobra como *contratista*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"tu patrón\",\"contador\":\"dice |contratista\",\"elementos\":[{\"que\":\"persona\",\"id\":\"yo\",\"x\":25,\"y\":93,\"tam\":36,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[1,\"contratista\"],\"cara\":\"sorprendido\"}},{\"que\":\"persona\",\"x\":74,\"y\":93,\"tam\":36,\"cara\":\"enojado\",\"gorro\":\"sombrero\",\"ropa\":3,\"piel\":1,\"etiqueta\":\"EL PATRÓN\",\"en\":[0,\"patrón\"]},{\"que\":\"globo\",\"texto\":\"¡Mañana llegas a primera hora!\",\"cola\":1,\"x\":72,\"y\":24,\"en\":[0,\"hora\"]}]},{\"tipo\":\"lienzo\",\"desde\":[2],\"capitulo\":\"el papel\",\"contador\":\"papel |contratista\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":8,\"tam\":82,\"titulo\":\"Tu contrato\",\"en\":[2],\"renglones\":[{\"texto\":\"Cómo te llaman\",\"valor\":\"Contratista\",\"en\":[2,\"papel\"]},{\"texto\":\"Quién manda\",\"valor\":\"El patrón\",\"en\":[2,\"otra\"]}],\"marca\":{\"fila\":1,\"en\":[3,\"digo\"],\"texto\":\"¡OJO!\"}},{\"que\":\"persona\",\"x\":20,\"y\":95,\"tam\":24,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":1,\"en\":[3,\"Al\"]},{\"que\":\"texto\",\"texto\":\"Formulario gratis\",\"x\":68,\"y\":80,\"tam\":4.5,\"color\":\"principal\",\"en\":[3,\"formulario\"]}]},{\"tipo\":\"tablero\",\"desde\":[5],\"capitulo\":\"la trampa\",\"filas\":[\"FALSO\",\"CONTRAT\"],\"en\":[5,\"falso\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[6],\"capitulo\":\"el IRS\",\"contador\":\"mira |tres cosas\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":28,\"y\":93,\"tam\":36,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":2,\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"Me dicen contratista\",\"cola\":-1,\"x\":28,\"y\":24,\"en\":[6,\"llaman\"]},{\"que\":\"texto\",\"texto\":\"tres cosas\",\"x\":72,\"y\":50,\"tam\":6,\"color\":\"principal\",\"en\":[7,\"cosas\"]}]},{\"tipo\":\"lienzo\",\"desde\":[8],\"capitulo\":\"las señales\",\"contador\":[{\"en\":[8],\"texto\":\"señal |1 de 3\"},{\"en\":[9],\"texto\":\"señal |2 de 3\"},{\"en\":[10],\"texto\":\"señal |3 de 3\"}],\"entrada\":\"ola\",\"elementos\":[{\"que\":\"lista\",\"x\":50,\"y\":8,\"items\":[{\"texto\":\"Quién manda en cómo trabajas\",\"en\":[8,\"manda\"]},{\"texto\":\"Quién pone herramientas y precio\",\"en\":[9,\"herramientas\"]},{\"texto\":\"Trabajas solo para él\",\"en\":[10,\"solo\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":22,\"cara\":\"neutro\",\"gorro\":\"casco\",\"cambia\":{\"en\":[10,\"solo\"],\"cara\":\"preocupado\"}}]},{\"tipo\":\"lienzo\",\"desde\":[11],\"capitulo\":\"tu caso\",\"contador\":\"eres |¿empleado?\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"persona\",\"x\":26,\"y\":93,\"tam\":36,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[12,\"empleado\"],\"cara\":\"sorprendido\"}},{\"que\":\"check\",\"x\":72,\"y\":32,\"en\":[11,\"varias\"]},{\"que\":\"texto\",\"texto\":\"Empleado\",\"x\":72,\"y\":62,\"tam\":6,\"color\":\"principal\",\"en\":[12,\"empleado\"]}]},{\"tipo\":\"lienzo\",\"desde\":[13],\"capitulo\":\"lo que pagas\",\"contador\":\"pagas |las dos mitades\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":20,\"y\":93,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\"},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":55,\"y\":32,\"tam\":20,\"etiqueta\":\"TU MITAD\",\"en\":[14,\"pagas\"]},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":84,\"y\":32,\"tam\":20,\"etiqueta\":\"LA DE ÉL\",\"en\":[14,\"mitades\"]},{\"que\":\"texto\",\"texto\":\"Seguro Social y Medicare\",\"x\":62,\"y\":70,\"tam\":4,\"color\":\"tinta\",\"en\":[15,\"Seguro\"]}]},{\"tipo\":\"lienzo\",\"desde\":[16],\"capitulo\":\"el ejemplo\",\"contador\":\"pago |$48,000\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":8,\"tam\":82,\"titulo\":\"Pago de contrato al año\",\"en\":[16],\"renglones\":[{\"texto\":\"Tu pago\",\"valor\":\"$48,000\",\"en\":[16,\"48,000\"]},{\"texto\":\"Como falso contratista\",\"valor\":\"$6,782\",\"en\":[17,\"6,782\"]},{\"texto\":\"Como empleado\",\"valor\":\"$3,672\",\"en\":[18,\"3,672\"]}],\"marca\":{\"fila\":1,\"en\":[17,\"impuesto\"],\"texto\":\"¡OJO!\"}},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":22,\"cara\":\"sorprendido\",\"gorro\":\"gorra\",\"ropa\":3}]},{\"tipo\":\"oscura\",\"desde\":[19],\"capitulo\":\"lo que pierdes\",\"contador\":\"pierdes |$3,110\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"-$3,110\",\"etiqueta\":\"de más al año\",\"en\":[19,\"3,110\"]},\"cae\":{\"objeto\":\"cartera\",\"letrero\":\"TU PAGO\",\"en\":[19,\"cada\"]}},{\"tipo\":\"cifra\",\"desde\":[20],\"capitulo\":\"cinco años\",\"contador\":\"cinco años |$15,000\",\"entrada\":\"destello\",\"objeto\":\"casa\",\"valor\":15550,\"prefijo\":\"$\",\"etiqueta\":\"en cinco años\",\"hasta\":[20,\"15,000\"],\"insignia\":{\"texto\":\"varias rentas\",\"en\":[21,\"rentas\"]}},{\"tipo\":\"lienzo\",\"desde\":[22],\"capitulo\":\"qué hacer\",\"contador\":\"paso |1 de 3\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"persona\",\"x\":26,\"y\":93,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"Mañana llegas a primera hora\",\"cola\":-1,\"x\":26,\"y\":24,\"en\":[23,\"mensajes\"]},{\"que\":\"texto\",\"texto\":\"Guarda tus pruebas\",\"x\":74,\"y\":22,\"tam\":4,\"color\":\"principal\",\"en\":[22,\"apunta\"]},{\"que\":\"texto\",\"texto\":\"Fotos de herramientas\",\"x\":74,\"y\":45,\"tam\":4,\"color\":\"tinta\",\"en\":[24,\"fotos\"]},{\"que\":\"texto\",\"texto\":\"Sigue declarando\",\"x\":74,\"y\":68,\"tam\":4,\"color\":\"verde\",\"en\":[25,\"declarar\"]}]},{\"tipo\":\"lienzo\",\"desde\":[26],\"capitulo\":\"qué hacer\",\"contador\":\"paso |2 de 3\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":94,\"tam\":30,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\"},{\"que\":\"cifra\",\"texto\":\"SS-8\",\"x\":50,\"y\":40,\"tam\":13,\"color\":\"principal\",\"etiqueta\":\"formulario gratis\",\"en\":[27,\"SS-8\"]},{\"que\":\"texto\",\"texto\":\"El IRS revisa tu caso\",\"x\":70,\"y\":80,\"tam\":4,\"color\":\"tinta\",\"en\":[28,\"IRS\"]}]},{\"tipo\":\"lienzo\",\"desde\":[30],\"capitulo\":\"qué hacer\",\"contador\":\"paso |3 de 3\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":93,\"tam\":34,\"cara\":\"feliz\",\"gorro\":\"nada\",\"ropa\":4,\"piel\":2,\"etiqueta\":\"PREPARADOR\"},{\"que\":\"persona\",\"x\":76,\"y\":93,\"tam\":34,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":2,\"etiqueta\":\"TÚ\",\"en\":[31,\"toca\"],\"cambia\":{\"en\":[32,\"parte\"],\"cara\":\"feliz\"}},{\"que\":\"globo\",\"texto\":\"¿Me toca el formulario?\",\"cola\":-1,\"x\":76,\"y\":22,\"en\":[31,\"toca\"]},{\"que\":\"texto\",\"texto\":\"Pagas solo tu parte\",\"x\":50,\"y\":45,\"tam\":4,\"color\":\"principal\",\"en\":[32,\"solo\"]}]},{\"tipo\":\"cierre\",\"desde\":[33],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[33,\"Sígueme\"],\"compartir\":[34,\"compártelo\"]}]",
+  "aviso": "Ejemplo: pago por contrato de $48,000 al año, con 15.3% de impuesto de cuenta propia contra 7.65% como empleado. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 10 (lienzo): globo «Mañana llegas a primera hora» y texto «Guarda tus pruebas» se enciman; sepáralos (cambia x/y o tam)"
+ ]
+}

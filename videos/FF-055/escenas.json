@@ -1,0 +1,692 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: trabajador que gana $52,000 al año; la diferencia de unos $3,300 es un estimado y cada caso es distinto. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu patrón",
+   "contador": "papel |contratista",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 95,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "contratista"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 95,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "EL PATRÓN",
+     "en": [
+      0,
+      "patrón"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Mañana llegas a las seis!",
+     "piensa": false,
+     "cola": -1,
+     "x": 70,
+     "y": 22,
+     "en": [
+      0,
+      "hora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "el papel",
+   "contador": "firmaste |un contrato",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu contrato",
+     "en": [
+      2
+     ],
+     "renglones": [
+      {
+       "texto": "Trabajas como",
+       "valor": "Contratista",
+       "en": [
+        2,
+        "papel"
+       ]
+      },
+      {
+       "texto": "Firmado por ti",
+       "valor": "Sí",
+       "en": [
+        2,
+        "firmaste"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       2,
+       "sí"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      3,
+      "formulario"
+     ],
+     "cambia": {
+      "en": [
+       4,
+       "decidir"
+      ],
+      "cara": "neutro"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "PAPEL",
+    "FALSO"
+   ],
+   "en": [
+    5,
+    "clasificado"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el nombre",
+   "contador": "dice |contratista",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "t",
+     "que": "texto",
+     "texto": "CONTRATISTA",
+     "color": "tinta",
+     "x": 50,
+     "y": 28,
+     "tam": 6,
+     "en": [
+      6,
+      "papel"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "nada",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "EL IRS",
+     "en": [
+      7,
+      "IRS"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      7,
+      "ignora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "primero",
+   "contador": "mira |tres cosas",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 95,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "EL PATRÓN"
+    },
+    {
+     "que": "globo",
+     "texto": "Lo haces como yo digo",
+     "piensa": false,
+     "cola": -1,
+     "x": 68,
+     "y": 24,
+     "en": [
+      9,
+      "cómo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 26,
+     "y": 45,
+     "tam": 28,
+     "etiqueta": "TU HORARIO",
+     "en": [
+      10,
+      "hora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "segundo y tercero",
+   "contador": "paso |2 y 3",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 25,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "TUS HERRAMIENTAS",
+     "en": [
+      11,
+      "paga"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 75,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "TODO EL AÑO",
+     "en": [
+      12,
+      "solo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      12,
+      "Tercero"
+     ],
+     "cambia": {
+      "en": [
+       13,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que pagas",
+   "contador": "pagas |dos mitades",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 38,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       16,
+       "una"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 70,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "LA TUYA",
+     "en": [
+      14,
+      "clasificaron"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 70,
+     "y": 60,
+     "tam": 26,
+     "etiqueta": "LA DEL PATRÓN",
+     "en": [
+      14,
+      "mitades"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PAGAS DOBLE",
+     "color": "rojo",
+     "x": 70,
+     "y": 60,
+     "en": [
+      15,
+      "Medicare"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ganas |$52,000 al año",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu año de trabajo",
+     "en": [
+      17
+     ],
+     "renglones": [
+      {
+       "texto": "Cobras al año",
+       "valor": "$52,000",
+       "en": [
+        18,
+        "52,000"
+       ]
+      },
+      {
+       "texto": "Impuesto contratista",
+       "valor": "15.3%",
+       "en": [
+        19,
+        "15.3"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       19,
+       "impuesto"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "dos impuestos",
+   "contador": "7.65% |contra 15.3%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "EMPLEADO"
+    },
+    {
+     "que": "torre",
+     "x": 40,
+     "y": 95,
+     "tam": 55,
+     "valor": 3978,
+     "max": 7347,
+     "prefijo": "$",
+     "en": [
+      20,
+      "empleado"
+     ],
+     "hasta": [
+      20,
+      "7.65"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 63,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "CONTRATISTA",
+     "en": [
+      21,
+      "diferencia"
+     ],
+     "cambia": {
+      "en": [
+       21,
+       "3,300"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 87,
+     "y": 95,
+     "tam": 55,
+     "valor": 7347,
+     "max": 7347,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      21,
+      "diferencia"
+     ],
+     "hasta": [
+      21,
+      "3,300"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$3,300",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$3,300",
+    "etiqueta": "tres semanas",
+    "en": [
+     22,
+     "semanas"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGO",
+    "en": [
+     23,
+     "años"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "la salida",
+   "contador": "formulario |gratis",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Formulario SS-8",
+     "en": [
+      24
+     ],
+     "renglones": [
+      {
+       "texto": "Nombre",
+       "valor": "SS-8",
+       "en": [
+        25,
+        "SS-8"
+       ]
+      },
+      {
+       "texto": "Cuesta",
+       "valor": "$0",
+       "en": [
+        26,
+        "gratis"
+       ]
+      },
+      {
+       "texto": "Decide",
+       "valor": "El IRS",
+       "en": [
+        26,
+        "IRS"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 82,
+     "en": [
+      26,
+      "decida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1 de 3",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "CONTRATISTA REAL",
+     "en": [
+      27
+     ]
+    },
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "Guarda tus recibos",
+       "en": [
+        28,
+        "recibos"
+       ]
+      },
+      {
+       "texto": "Guarda tus mensajes",
+       "en": [
+        28,
+        "mensajes"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |3 de 3",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Otro formulario",
+     "en": [
+      29
+     ],
+     "renglones": [
+      {
+       "texto": "Lo revisas con",
+       "valor": "Preparador",
+       "en": [
+        29,
+        "preparador"
+       ]
+      },
+      {
+       "texto": "Pagas solo",
+       "valor": "tu mitad",
+       "en": [
+        31,
+        "mitad"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 4,
+     "etiqueta": "PREPARADOR",
+     "en": [
+      29,
+      "preparador"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 80,
+     "en": [
+      31,
+      "mitad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    32
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    32,
+    "Sígueme"
+   ],
+   "compartir": [
+    33,
+    "compártelo"
+   ]
+  }
+ ]
+}

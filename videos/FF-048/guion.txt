@@ -1,0 +1,46 @@
+# FF-048 · Finanzas Familiares · EST-01 · El teléfono gratis que sale caro
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Precio del iPhone 16 de 128GB en Apple, con compra normal (referencia del teléfono 'gratis') = 799 $ · https://www.macprices.net/apple-iphone/
+# Fuente: Meses de créditos en la factura para que el teléfono 'gratis' llegue a $0 (ofertas de Verizon) = 36 meses · https://www.knowyourmobile.com/carriers/verizon/verizon-free-phone-deals-explained/
+# Fuente: Plan Unlimited Plus de Verizon, 1 línea, por mes = 80 $ · https://www.whistleout.com/CellPhones/Guides/best-Verizon-cell-phone-plans
+# Fuente: Plan Unlimited Welcome de Verizon, 1 línea, por mes (el más barato con contrato) = 65 $ · https://www.bestphoneplans.net/news/postpaid-vs-prepaid
+# Fuente: Cuánto más barato es un plan prepago (Visible) que el Welcome de Verizon, por mes = 40 $ · https://www.bestphoneplans.net/news/postpaid-vs-prepaid
+# Fuente: El FCC eliminó para Verizon la obligación de desbloquear el teléfono a los 60 días. Esto hace más difícil cambiarte de operador. = 60 días · https://docs.fcc.gov/public/attachments/DA-26-43A1.pdf
+# BLOQUE 1
+El teléfono *gratis* del plan
+es el más *caro* de la tienda.
+Te puede costar más de [$1,100|mil cien dólares] *extra*.
+Antes de firmar, pídele al vendedor *un número*.
+Al final te digo cuál es.
+Se llama *crédito en factura*.
+En *Estados Unidos* lo ofrecen en todas partes.
+No te lo regalan: *te lo descuentan*.
+Te dan un crédito cada mes
+durante [36|treinta y seis] *meses*.
+Son unos [$22|veintidós dólares] al *mes*.
+Pero el teléfono llega a *cero*
+solo si pagas los [36|treinta y seis] completos.
+Y aquí viene lo que *nadie* te dice:
+si te sales en el mes [12|doce],
+pierdes los *créditos* que faltan,
+y debes más de [$500|quinientos dólares].
+Además, estas ofertas piden un *plan caro*.
+Digamos uno de [$80|ochenta dólares] al mes.
+En [36|treinta y seis] meses son [$2,880|dos mil ochocientos ochenta dólares].
+Ahora compra tú el teléfono por [$799|setecientos noventa y nueve dólares],
+y ponle un plan *prepago* de [$25|veinticinco dólares].
+En [36|treinta y seis] meses pagas [$1,699|mil seiscientos noventa y nueve dólares].
+Son [$1,181|mil ciento ochenta y uno] que *te quedas*.
+Eso paga el *vuelo* para ver a tu mamá.
+Ahora sí, el número que *pides*:
+cuánto cuesta el plan *sin la oferta*.
+Multiplícalo por [36|treinta y seis],
+súmale el precio del *teléfono*, y compara.
+Si ya ibas a pagar ese plan
+y te quedas los [36|treinta y seis] meses,
+sí te ahorras unos [$259|doscientos cincuenta y nueve].
+Pero si no *aguantas* todo el contrato,
+mejor no la tomes.
+Y verifica los precios, porque *cambian*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a cambiar de *teléfono*.

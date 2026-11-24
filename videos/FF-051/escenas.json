@@ -1,0 +1,669 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: te piden $395 antes de empezar y el sueldo es de $25 por hora; la pérdida mediana reportada es de $2,250. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el trabajo",
+   "contador": "te piden |dinero",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "cobra"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 70,
+     "y": 40,
+     "tam": 28,
+     "en": [
+      1,
+      "nunca"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "c",
+     "en": [
+      1,
+      "cobra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "una respuesta",
+   "contador": "siete |palabras",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Paga $395 hoy para empezar",
+     "x": 26,
+     "y": 45
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      2,
+      "siete"
+     ],
+     "cambia": {
+      "en": [
+       3,
+       "estafador"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "ESTAFA",
+     "color": "rojo",
+     "x": 26,
+     "y": 45,
+     "en": [
+      3,
+      "huir"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "la pérdida",
+   "contador": "pierdes |5 veces o más",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 395,
+     "max": 2250,
+     "prefijo": "$",
+     "etiqueta": "te piden",
+     "en": [
+      4,
+      "piden"
+     ],
+     "hasta": [
+      4,
+      "395"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 2250,
+     "max": 2250,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "pierdes",
+     "en": [
+      5,
+      "pierdes"
+     ],
+     "hasta": [
+      5,
+      "eso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "EMPLEO",
+    "FALSO"
+   ],
+   "en": [
+    6,
+    "empleo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "la oferta",
+   "contador": "sin |entrevista",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL RECLUTADOR"
+    },
+    {
+     "que": "globo",
+     "texto": "¡Estás contratado!",
+     "piensa": false,
+     "cola": 1,
+     "x": 74,
+     "y": 16,
+     "en": [
+      7,
+      "ofrecen"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      7,
+      "trabajo"
+     ],
+     "cambia": {
+      "en": [
+       8,
+       "pagas"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "para empezar",
+   "contador": "te piden |$395",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 5,
+     "en": [
+      9
+     ],
+     "items": [
+      {
+       "texto": "Uniforme",
+       "en": [
+        9,
+        "uniforme"
+       ]
+      },
+      {
+       "texto": "Chequeo de antecedentes",
+       "en": [
+        9,
+        "chequeo"
+       ]
+      },
+      {
+       "texto": "Un curso",
+       "en": [
+        10,
+        "curso"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$395",
+     "x": 50,
+     "y": 62,
+     "tam": 10,
+     "color": "principal",
+     "etiqueta": "para empezar",
+     "en": [
+      11,
+      "395"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "más cargos",
+   "contador": "te cobran |más",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "MÁS CARGOS",
+     "color": "principal",
+     "x": 72,
+     "y": 16,
+     "tam": 5,
+     "en": [
+      13,
+      "más"
+     ]
+    },
+    {
+     "id": "ch",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 52,
+     "tam": 28,
+     "etiqueta": "CHEQUE",
+     "en": [
+      14,
+      "cheque"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "ch",
+     "en": [
+      15,
+      "devolver"
+     ],
+     "hasta": [
+      15,
+      "parte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    16
+   ],
+   "capitulo": "la pérdida",
+   "contador": "pérdida |$2,250",
+   "entrada": "cuadritos",
+   "objeto": "cartera",
+   "valor": 2250,
+   "prefijo": "$",
+   "etiqueta": "pérdida mediana",
+   "hasta": [
+    17,
+    "2,250"
+   ],
+   "insignia": {
+    "texto": "EN EE. UU.",
+    "en": [
+     16,
+     "Estados"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "tu sueldo",
+   "contador": "pagan |$25 la hora",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 90,
+     "x": 50,
+     "y": 36,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "horas de trabajo",
+     "en": [
+      18,
+      "25"
+     ],
+     "hasta": [
+      19,
+      "horas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 82,
+     "tam": 24,
+     "etiqueta": "+2 SEMANAS",
+     "en": [
+      20,
+      "semanas"
+     ],
+     "sale": [
+      21,
+      "pérdidas"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "3 VECES MÁS",
+     "color": "principal",
+     "x": 50,
+     "y": 82,
+     "tam": 5,
+     "en": [
+      21,
+      "triplicaron"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "empleador real",
+   "contador": "tú pagas |$0",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EMPLEADOR REAL"
+    },
+    {
+     "que": "globo",
+     "texto": "Aquí no pagas nada.",
+     "piensa": false,
+     "cola": -1,
+     "x": 24,
+     "y": 12,
+     "en": [
+      22,
+      "nunca"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      24,
+      "dinero"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Todo por escrito.",
+     "piensa": false,
+     "cola": 1,
+     "x": 76,
+     "y": 32,
+     "en": [
+      25,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      26
+     ],
+     "items": [
+      {
+       "texto": "Busca la página oficial",
+       "en": [
+        26,
+        "página"
+       ]
+      },
+      {
+       "texto": "Ni efectivo ni tarjetas de regalo",
+       "en": [
+        28,
+        "efectivo"
+       ]
+      },
+      {
+       "texto": "No devuelvas dinero de un cheque",
+       "en": [
+        29,
+        "cheque"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 4
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    30
+   ],
+   "capitulo": "la respuesta",
+   "contador": "siete |palabras",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$2,250",
+    "etiqueta": "que no pierdes",
+    "en": [
+     30,
+     "Ahora"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGA",
+    "en": [
+     31,
+     "llamo"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "si ya pagaste",
+   "contador": "llama |hoy mismo",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       35,
+       "FTC"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Si es real, dice sí.",
+     "piensa": false,
+     "cola": -1,
+     "x": 24,
+     "y": 12,
+     "tam": 36,
+     "en": [
+      32,
+      "real"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 76,
+     "y": 72,
+     "tam": 24,
+     "etiqueta": "TU BANCO",
+     "en": [
+      34,
+      "banco"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "b",
+     "en": [
+      34,
+      "llama"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 84,
+     "y": 42,
+     "tam": 12,
+     "en": [
+      35,
+      "FTC"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

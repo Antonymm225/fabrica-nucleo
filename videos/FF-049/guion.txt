@@ -1,0 +1,47 @@
+# FF-049 · Finanzas Familiares · EST-01 · Cuando se enferma uno, dejan de cobrar dos
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de cuidadores familiares que gastan dinero propio cuidando a su ser querido (AARP, encuesta de unos 2,400 cuidadores, 2021) = 75 % · https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/
+# Fuente: Gasto promedio anual de bolsillo de esos cuidadores = 7242 $ · https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/
+# Fuente: Gasto promedio anual de los cuidadores con 2 o más problemas en el trabajo (faltar, cambiar horario), casi el doble = 10525 $ · https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Cuando alguien se *enferma* en casa,
+dejan de *cobrar* dos.
+El enfermo, y el que lo *cuida*.
+Y nadie suma ese *segundo sueldo*.
+Al final te digo las *tres cosas*
+que pides *por escrito* antes de que pase.
+Se llama el golpe de *dos sueldos*.
+Supón que un roofer se *enferma*.
+En [3|tres] meses, deja de *cobrar* [$14,300|catorce mil trescientos].
+Su esposa deja de trabajar *para cuidarlo*.
+Ella deja de cobrar [$10,400|diez mil cuatrocientos].
+Y son *los dos* sin cobrar.
+Eso es [$24,700|veinticuatro mil setecientos dólares] que no *entran*.
+Pero aquí viene lo que *nadie cuenta*.
+El que cuida también *paga de su bolsillo*.
+En Estados Unidos, [75%|setenta y cinco por ciento] de los *cuidadores*
+gastan dinero propio: más de [$7,000|siete mil dólares] al *año*.
+Y mientras, la *renta* y la troca siguen llegando.
+Se van más de [$26,000|veintiséis mil dólares] en [3|tres] *meses*.
+Por eso hay quien se *prepara* antes.
+Con un [IUL|a yu el], un *seguro de vida indexado*,
+si te diagnostican una enfermedad *crónica*,
+*crítica* o terminal,
+puedes usar parte del *beneficio en vida*.
+Y tu pareja no tiene que *dejar de trabajar*
+para tapar el *hueco*.
+Es tuyo y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Ahora sí, las *tres cosas* por escrito:
+Uno, qué enfermedades *califican*.
+Dos, cuánto puedes *sacar*.
+Tres, cómo cambia lo que *recibe tu familia*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *cuida a un enfermo*.

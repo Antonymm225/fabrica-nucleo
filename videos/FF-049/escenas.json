@@ -1,0 +1,735 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un roofer que deja de cobrar $14,300 en tres meses y su esposa, que deja de cobrar $10,400 por cuidarlo. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 1,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "en casa",
+   "contador": "se enferma |uno",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 30,
+     "tam": 30,
+     "en": [
+      0,
+      "Cuando"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "EL ENFERMO",
+     "en": [
+      0,
+      "alguien"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL QUE CUIDA",
+     "en": [
+      2,
+      "cuida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el segundo sueldo",
+   "contador": "tres cosas |por escrito",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "cs",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 28,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "SEGUNDO SUELDO",
+     "en": [
+      3,
+      "Y"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cs",
+     "en": [
+      3,
+      "suma"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 30,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      3,
+      "nadie"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "TRES COSAS",
+     "x": 72,
+     "y": 38,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      4,
+      "tres"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "POR ESCRITO",
+     "x": 72,
+     "y": 58,
+     "tam": 6,
+     "color": "tinta",
+     "en": [
+      5,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "DOS",
+    "SUELDOS"
+   ],
+   "en": [
+    6,
+    "sueldos"
+   ],
+   "entrada": "corte"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ejemplo |dos sueldos",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "EL ROOFER",
+     "en": [
+      7,
+      "Supón"
+     ],
+     "cambia": {
+      "en": [
+       7,
+       "enferma"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$14,300",
+     "x": 22,
+     "y": 24,
+     "tam": 8,
+     "etiqueta": "en 3 meses",
+     "color": "principal",
+     "en": [
+      8,
+      "14,300"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 50,
+     "y": 70,
+     "tam": 14,
+     "en": [
+      7,
+      "enferma"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "SU ESPOSA",
+     "en": [
+      9,
+      "esposa"
+     ],
+     "cambia": {
+      "en": [
+       9,
+       "cuidarlo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$10,400",
+     "x": 78,
+     "y": 24,
+     "tam": 8,
+     "etiqueta": "en 3 meses",
+     "color": "tinta",
+     "en": [
+      10,
+      "10,400"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "dos sueldos",
+   "contador": "sin cobrar |$24,700",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 25,
+     "y": 95,
+     "tam": 50,
+     "valor": 14300,
+     "max": 14300,
+     "prefijo": "$",
+     "etiqueta": "EL ROOFER",
+     "en": [
+      11,
+      "Y"
+     ],
+     "hasta": [
+      11,
+      "dos"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 75,
+     "y": 95,
+     "tam": 50,
+     "valor": 10400,
+     "max": 14300,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "SU ESPOSA",
+     "en": [
+      11,
+      "dos"
+     ],
+     "hasta": [
+      11,
+      "cobrar"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$24,700",
+     "x": 50,
+     "y": 24,
+     "tam": 10,
+     "etiqueta": "que no entran",
+     "color": "principal",
+     "en": [
+      12,
+      "24,700"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "el bolsillo",
+   "contador": "gasta |$7,000 al año",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL QUE CUIDA",
+     "en": [
+      13,
+      "Pero"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 25,
+     "tam": 26,
+     "etiqueta": "SU BOLSILLO",
+     "en": [
+      14,
+      "paga"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "75%",
+     "x": 22,
+     "y": 36,
+     "tam": 8,
+     "etiqueta": "de cuidadores",
+     "color": "principal",
+     "en": [
+      15,
+      "75%"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$7,000",
+     "x": 72,
+     "y": 60,
+     "tam": 8,
+     "etiqueta": "al año",
+     "color": "tinta",
+     "en": [
+      16,
+      "7,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la cuenta",
+   "contador": "tres meses |$26,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "LA RENTA",
+     "en": [
+      17,
+      "Y"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 75,
+     "y": 30,
+     "tam": 34,
+     "etiqueta": "LA TROCA",
+     "en": [
+      17,
+      "troca"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$26,000",
+     "x": 50,
+     "y": 66,
+     "tam": 11,
+     "etiqueta": "en tres meses",
+     "color": "principal",
+     "en": [
+      18,
+      "26,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "antes de enfermar",
+   "contador": "seguro |indexado",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      19,
+      "Por"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "ANTES",
+     "en": [
+      19,
+      "prepara"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SEGURO INDEXADO",
+     "x": 72,
+     "y": 62,
+     "tam": 4.5,
+     "color": "principal",
+     "en": [
+      20,
+      "seguro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "si te enfermas",
+   "contador": "tres casos |en vida",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 6,
+     "en": [
+      21
+     ],
+     "items": [
+      {
+       "texto": "Enfermedad crónica",
+       "en": [
+        21,
+        "crónica"
+       ]
+      },
+      {
+       "texto": "Enfermedad crítica",
+       "en": [
+        22,
+        "crítica"
+       ]
+      },
+      {
+       "texto": "Enfermedad terminal",
+       "en": [
+        22,
+        "terminal"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      21,
+      "si"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 72,
+     "y": 80,
+     "tam": 20,
+     "en": [
+      21,
+      "diagnostican"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    23
+   ],
+   "capitulo": "el beneficio",
+   "contador": "en vida |tu familia",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "EN VIDA",
+    "etiqueta": "beneficio si te enfermas",
+    "en": [
+     23,
+     "beneficio"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     24,
+     "pareja"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "el seguro",
+   "contador": "crece |hasta 10%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 1,
+     "final": 3,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "DESPUÉS",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      26,
+      "Es"
+     ],
+     "hasta": [
+      28,
+      "cero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO",
+     "x": 50,
+     "y": 14,
+     "tam": 6,
+     "color": "verde",
+     "en": [
+      28,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "pide por escrito",
+   "contador": [
+    {
+     "en": [
+      29
+     ],
+     "texto": "por escrito |tres cosas"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "pide |1 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "pide |2 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "pide |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "Qué enfermedades califican",
+       "en": [
+        30,
+        "enfermedades"
+       ]
+      },
+      {
+       "texto": "Cuánto puedes sacar",
+       "en": [
+        31,
+        "sacar"
+       ]
+      },
+      {
+       "texto": "Cómo cambia lo que recibe tu familia",
+       "en": [
+        32,
+        "cómo"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      29,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "da el paso",
+   "contador": "link |en biografía",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Link para aplicar",
+     "x": 28,
+     "y": 42,
+     "en": [
+      33,
+      "Si"
+     ]
+    },
+    {
+     "id": "fam",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 70,
+     "tam": 34,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      36,
+      "familia"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "fam",
+     "en": [
+      34,
+      "link"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

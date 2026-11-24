@@ -1,0 +1,681 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: teléfono de $799 con plan de $80, contra comprarlo y usar un plan prepago de $25, por 36 meses. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el teléfono",
+   "contador": "plan |gratis",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "caro"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 40,
+     "tam": 36,
+     "etiqueta": "GRATIS",
+     "en": [
+      0,
+      "plan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "lo que cuesta",
+   "contador": "de más |$1,100",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "+$1,100",
+     "etiqueta": "extra",
+     "color": "principal",
+     "x": 50,
+     "y": 46,
+     "tam": 12,
+     "en": [
+      2,
+      "1,100"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      3,
+      "vendedor"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿Qué número?",
+     "color": "tinta",
+     "x": 50,
+     "y": 18,
+     "tam": 5,
+     "en": [
+      3,
+      "número"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "CREDITO",
+    "FACTURA"
+   ],
+   "en": [
+    5,
+    "crédito"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "cómo funciona",
+   "contador": "te lo |descuentan",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "t1",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 22,
+     "y": 62,
+     "tam": 26
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      6,
+      "ofrecen"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Gratis!",
+     "piensa": true,
+     "cola": 1,
+     "x": 76,
+     "y": 16,
+     "en": [
+      7,
+      "regalan"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "TRAMPA",
+     "color": "rojo",
+     "x": 22,
+     "y": 62,
+     "en": [
+      7,
+      "descuentan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "el crédito",
+   "contador": "crédito |36 meses",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "36 MESES"
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 22,
+     "prefijo": "$",
+     "x": 50,
+     "y": 66,
+     "tam": 11,
+     "en": [
+      10,
+      "22"
+     ],
+     "hasta": [
+      10,
+      "mes"
+     ],
+     "etiqueta": "crédito al mes",
+     "color": "verde"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "llegar a cero",
+   "contador": "teléfono |$0",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 799,
+     "final": 0,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "MES 36",
+     "etiqueta": "lo que debes",
+     "x": 50,
+     "y": 86,
+     "en": [
+      11
+     ],
+     "hasta": [
+      12,
+      "completos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Solo si pagas todo",
+     "color": "principal",
+     "x": 50,
+     "y": 14,
+     "tam": 5,
+     "en": [
+      12,
+      "solo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "si te sales",
+   "contador": "mes |12",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 95,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       16,
+       "debes"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "id": "cal",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 32,
+     "tam": 30,
+     "etiqueta": "MES 12",
+     "en": [
+      14,
+      "mes"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cal",
+     "en": [
+      15,
+      "créditos"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "DEBES $500",
+     "color": "rojo",
+     "x": 72,
+     "y": 34,
+     "en": [
+      16,
+      "debes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el plan caro",
+   "contador": "plan |$80 al mes",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu plan",
+     "en": [
+      17
+     ],
+     "renglones": [
+      {
+       "texto": "Plan al mes",
+       "valor": "$80",
+       "en": [
+        18,
+        "80"
+       ]
+      },
+      {
+       "texto": "Meses",
+       "valor": "36",
+       "en": [
+        19,
+        "36"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       18,
+       "mes"
+      ],
+      "texto": "¡caro!"
+     },
+     "total": {
+      "texto": "Total",
+      "valor": "$2,880",
+      "en": [
+       19,
+       "2,880"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      19,
+      "son"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "opción b",
+   "contador": "compras |$799",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "PLAN GRATIS"
+    },
+    {
+     "que": "torre",
+     "x": 40,
+     "y": 95,
+     "tam": 55,
+     "valor": 2880,
+     "max": 2880,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      20,
+      "compra"
+     ],
+     "hasta": [
+      20,
+      "teléfono"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 63,
+     "y": 95,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ COMPRAS",
+     "en": [
+      20,
+      "tú"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 87,
+     "y": 95,
+     "tam": 55,
+     "valor": 1699,
+     "max": 2880,
+     "prefijo": "$",
+     "en": [
+      21,
+      "plan"
+     ],
+     "hasta": [
+      22,
+      "1,699"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    23
+   ],
+   "capitulo": "lo que te quedas",
+   "contador": "ahorras |$1,181",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,181",
+    "etiqueta": "que te quedas",
+    "en": [
+     23,
+     "1,181"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "TU MAMÁ",
+    "en": [
+     24,
+     "mamá"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      27
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      25
+     ],
+     "items": [
+      {
+       "texto": "Pide el plan sin la oferta",
+       "en": [
+        25,
+        "número"
+       ]
+      },
+      {
+       "texto": "Multiplícalo por 36 meses",
+       "en": [
+        27,
+        "Multiplícalo"
+       ]
+      },
+      {
+       "texto": "Súmale el teléfono y compara",
+       "en": [
+        28,
+        "súmale"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 88,
+     "tam": 18,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      26,
+      "cuánto"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "para ser justos",
+   "contador": "ahorras |$259",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 95,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       31,
+       "ahorras"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "36 MESES",
+     "en": [
+      30,
+      "36"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$259",
+     "etiqueta": "te ahorras",
+     "color": "verde",
+     "x": 28,
+     "y": 64,
+     "tam": 9,
+     "en": [
+      31,
+      "259"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "la regla",
+   "contador": "contrato |36 meses",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 95,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "t2",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 45,
+     "tam": 34,
+     "etiqueta": "LA OFERTA",
+     "en": [
+      32,
+      "contrato"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Mejor no la tomo.",
+     "piensa": false,
+     "cola": -1,
+     "x": 26,
+     "y": 22,
+     "en": [
+      33,
+      "mejor"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t2",
+     "en": [
+      33,
+      "tomes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

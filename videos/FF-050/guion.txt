@@ -1,0 +1,43 @@
+# FF-050 · Finanzas Familiares · EST-01 · El notario que no es abogado
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tarifa de USCIS para naturalización (N-400) en papel; el formulario es gratis en uscis.gov = 760 $ · https://www.uscis.gov/n-400
+# Fuente: Tarifa de USCIS para el N-400 si lo envías en línea = 710 $ · https://www.uscis.gov/forms/filing-fees
+# Fuente: Cobro de ejemplo (ilustrativo, no es promedio oficial) de un falso 'notario' por llenar el N-400 = 1500 $ · https://consumer.ftc.gov/articles/immigration-scams
+# BLOQUE 1
+Aquí, *notario* no significa lo mismo
+que en tu país.
+Allá es casi un *abogado*.
+Aquí solo confirma que *firmaste*.
+Y hay quien cobra [$1,500|mil quinientos dólares]
+por llenar una forma *gratis*.
+Al final te digo dónde se revisa
+si de verdad te puede *ayudar*.
+Se llama el *falso notario*.
+En Estados Unidos, un *notary public*
+no estudia *leyes* ni es abogado.
+Solo confirma quién *eres*.
+Para firmas, sirve. Para tu *caso*, no.
+Pero se anuncia como *notario*
+para que creas que sí puede.
+Y lo peor viene después.
+Si se equivoca en tu forma,
+USCIS no te devuelve la *tarifa*.
+Y tu caso puede quedar *negado*.
+Hagamos la cuenta.
+El *notario* cobra [$1,500|mil quinientos dólares].
+La *tarifa* del gobierno es [$760|setecientos sesenta dólares],
+la pagas tú *aparte*.
+En total, [$2,260|dos mil doscientos sesenta dólares].
+Si lo niegan y lo repites con abogado,
+ya llevas [$3,020|tres mil veinte dólares].
+Ahora sí, antes de *pagar*, pregunta:
+¿Es usted *abogado* o *representante acreditado*?
+Si no responde claro, *no firmes*.
+Búscalo en la *lista oficial*
+del Departamento de Justicia.
+Para *ayuda gratis*, entra a immigrationlawhelp.org.
+En línea y con esa *ayuda*,
+te ahorras [$1,550|mil quinientos cincuenta dólares].
+Y nunca firmes *nada en blanco*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a un *notario*.

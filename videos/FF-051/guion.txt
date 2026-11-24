@@ -1,0 +1,47 @@
+# FF-051 · Finanzas Familiares · EST-01 · El trabajo que te cobra por empezar
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Pérdida mediana reportada en estafas de negocio y trabajo en 2024 (FTC) = 2250 $ · https://www.kcci.com/article/ftc-fraud-report-2024-record-losses/64177465
+# Fuente: Pérdidas reportadas por estafas de trabajo solo en el primer semestre de 2024 (más de) = 220000000 $ · https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2024/12/paying-get-paid-gamified-job-scams-drive-record-losses
+# Fuente: Las pérdidas por estafas de trabajo aumentaron más de 3 veces de 2020 a 2023 = 3 veces · https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2024/12/paying-get-paid-gamified-job-scams-drive-record-losses
+# Fuente: La FTC dice que los empleadores honestos nunca piden pagar cuotas por adelantado por el trabajo o el equipo, ni pagar con efectivo, Zelle o PayPal = 0 $ · https://consumer.ftc.gov/consumer-alerts/2023/08/scammers-impersonate-well-known-companies-recruit-fake-jobs-linkedin-other-job-platforms
+# Fuente: Ejemplo hipotético: uniforme $185 + chequeo de antecedentes $60 + curso $150 = 395 $ · https://consumer.ftc.gov/consumer-alerts/2023/12/how-spot-latest-job-scams
+# Fuente: Ejemplo hipotético: sueldo de un oficio, por hora = 25 $ · https://consumer.ftc.gov/consumer-alerts/2023/12/how-spot-latest-job-scams
+# BLOQUE 1
+Un trabajo de *verdad*
+nunca te cobra por *empezar*.
+Al final te digo las *siete palabras*
+que hacen huir al *estafador*.
+Si te piden [$395|trescientos noventa y cinco dólares] para empezar,
+pierdes más de *cinco veces* eso.
+Se llama el *empleo falso*.
+Te ofrecen trabajo sin *entrevista real*.
+Y antes del primer día, *pagas*:
+uniforme, chequeo de antecedentes
+y un *curso* para prepararte.
+Total: [$395|trescientos noventa y cinco dólares], solo para *empezar*.
+Pero aquí viene lo que *nadie* te dice.
+Después aparecen *más cargos*,
+o te mandan un *cheque* para «comprar equipo»
+y tienes que devolver una *parte*.
+En Estados Unidos, la pérdida *mediana*
+de estas estafas es [$2,250|dos mil doscientos cincuenta dólares].
+A [$25|veinticinco dólares] la hora,
+son [90|noventa] horas de *trabajo*.
+Más de dos *semanas* de sueldo.
+Las pérdidas por estas estafas se *triplicaron*.
+Un empleador *honesto* nunca te cobra
+por el trabajo, el equipo o el *curso*.
+Si te piden dinero antes de empezar,
+*No pagues*. Pide todo *por escrito*.
+Busca la empresa por su *página oficial*,
+no por el teléfono del *mensaje*.
+Nunca pagues con *efectivo* o tarjetas de regalo.
+Y nunca devuelvas dinero de un *cheque*.
+Ahora sí, las *siete palabras*:
+«Mándame todo por *escrito* y yo *llamo*.»
+Si es real, te dice que *sí*.
+Si es estafa, te *apura* y se enoja.
+Si ya pagaste, llama a tu *banco* hoy mismo,
+y repórtalo a la *FTC*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien busca *trabajo nuevo*.

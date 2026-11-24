@@ -1,0 +1,112 @@
+{
+ "titulo": "El teléfono 'gratis' del plan",
+ "angulo": "El teléfono 'gratis' no te lo regalan: te lo van descontando en 36 pagos pequeños, y si te sales antes o tomas un plan más caro de lo que necesitas, terminas pagando más que si lo compraras tú.",
+ "explicacion": "Un teléfono 'gratis' de operador casi nunca es gratis el primer día. Te dan un crédito en tu factura cada mes durante 36 meses, y el teléfono llega a $0 solo si pagas los 36 meses completos. Si cancelas, cambias de operador o bajas de plan, los créditos se acaban y debes lo que falta del teléfono. Además, estas ofertas suelen exigir un plan caro. Si comparas contra comprar el teléfono desbloqueado y usar un plan prepago barato, la oferta 'gratis' te puede costar más de $1,100 extra en 3 años.",
+ "datos": [
+  {
+   "dato": "Precio del iPhone 16 de 128GB en Apple, con compra normal (referencia del teléfono 'gratis')",
+   "valor": 799,
+   "unidad": "$",
+   "fuente": "https://www.macprices.net/apple-iphone/"
+  },
+  {
+   "dato": "Meses de créditos en la factura para que el teléfono 'gratis' llegue a $0 (ofertas de Verizon)",
+   "valor": 36,
+   "unidad": "meses",
+   "fuente": "https://www.knowyourmobile.com/carriers/verizon/verizon-free-phone-deals-explained/"
+  },
+  {
+   "dato": "Plan Unlimited Plus de Verizon, 1 línea, por mes",
+   "valor": 80,
+   "unidad": "$",
+   "fuente": "https://www.whistleout.com/CellPhones/Guides/best-Verizon-cell-phone-plans"
+  },
+  {
+   "dato": "Plan Unlimited Welcome de Verizon, 1 línea, por mes (el más barato con contrato)",
+   "valor": 65,
+   "unidad": "$",
+   "fuente": "https://www.bestphoneplans.net/news/postpaid-vs-prepaid"
+  },
+  {
+   "dato": "Cuánto más barato es un plan prepago (Visible) que el Welcome de Verizon, por mes",
+   "valor": 40,
+   "unidad": "$",
+   "fuente": "https://www.bestphoneplans.net/news/postpaid-vs-prepaid"
+  },
+  {
+   "dato": "El FCC eliminó para Verizon la obligación de desbloquear el teléfono a los 60 días. Esto hace más difícil cambiarte de operador.",
+   "valor": 60,
+   "unidad": "días",
+   "fuente": "https://docs.fcc.gov/public/attachments/DA-26-43A1.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Crédito mensual en tu factura para un teléfono de $799 en 36 meses",
+   "expresion": "round(799/36,2)",
+   "resultado": 22.19
+  },
+  {
+   "descripcion": "Opción A: teléfono 'gratis' con plan de $80 por 36 meses (pagas solo el plan)",
+   "expresion": "80*36",
+   "resultado": 2880
+  },
+  {
+   "descripcion": "Plan prepago implícito: Welcome $65 menos $40 de ahorro",
+   "expresion": "65-40",
+   "resultado": 25
+  },
+  {
+   "descripcion": "Opción B: comprar el teléfono de $799 y usar plan prepago de $25 por 36 meses",
+   "expresion": "799+25*36",
+   "resultado": 1699
+  },
+  {
+   "descripcion": "Diferencia: lo que cuesta de más la opción 'gratis' contra la opción B en 36 meses",
+   "expresion": "80*36-(799+25*36)",
+   "resultado": 1181
+  },
+  {
+   "descripcion": "Extra que pagas por el plan caro ($80 contra $65) durante 36 meses",
+   "expresion": "(80-65)*36",
+   "resultado": 540
+  },
+  {
+   "descripcion": "Si te sales en el mes 12, lo que debes del teléfono (24 créditos que pierdes)",
+   "expresion": "round(799/36*24,2)",
+   "resultado": 532.67
+  },
+  {
+   "descripcion": "Comparación honesta: comprar el teléfono y quedarte en el plan de $65 por 36 meses",
+   "expresion": "799+65*36",
+   "resultado": 3139
+  },
+  {
+   "descripcion": "Lo que ahorras con la oferta 'gratis' si de todos modos ibas a pagar el plan de $65 y no te sales",
+   "expresion": "799+65*36-80*36",
+   "resultado": 259
+  }
+ ],
+ "consejo": "Antes de aceptar un teléfono 'gratis', haz esta cuenta: (1) pregunta cuánto cuesta el plan sin la oferta y cuánto con ella; (2) multiplica el plan por 36 meses; (3) súmale el precio del teléfono si lo compraras tú; (4) compara. Si no piensas quedarte los 36 meses completos, no la tomes. Otra salida: compra el teléfono desbloqueado, nuevo o reacondicionado, y usa un plan prepago. Así puedes cambiarte cuando quieras.",
+ "que_no_decir": [
+  "No decir que las ofertas de teléfono gratis son siempre una estafa. Si ya ibas a pagar ese plan y te quedas los 36 meses, sí puede salirte un poco más barato (unos $259 en este ejemplo).",
+  "No prometer que el plan prepago de $25 estará disponible o al mismo precio. Los precios cambian, así que hay que verificarlo.",
+  "No decir que el teléfono 'se paga solo' ni que 'no debes nada'. Si te sales antes, debes lo que falta.",
+  "No recomendar un operador específico como el mejor. Solo explicar cómo comparar.",
+  "No decir que el teléfono queda desbloqueado a los 60 días en todos los casos. Esa regla cambió para Verizon.",
+  "No mencionar seguros, cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false,
+ "idea": "El teléfono 'gratis' del plan: cuánto pagas de verdad en los meses del contrato",
+ "gancho_pedido": "El teléfono gratis es el más caro de la tienda.",
+ "ganchos_recientes": [
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco."
+ ]
+}

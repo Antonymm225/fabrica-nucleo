@@ -1,0 +1,104 @@
+{
+ "titulo": "Cuando se enferma uno, dejan de cobrar dos",
+ "angulo": "Cuando alguien se enferma, la cuenta no es solo el hospital: el familiar que lo cuida también deja de cobrar, y la casa pierde dos sueldos y además gasta más.",
+ "explicacion": "Cuando alguien se enferma en casa, casi siempre otro familiar pide días, baja horas o deja de trabajar para cuidarlo. Así la casa pierde el sueldo del enfermo y también el del cuidador. Encima, el cuidador gasta dinero de su bolsillo: según AARP, la mayoría gasta más de $7,000 al año. El golpe grande no es la cuenta del doctor, es la renta y la troca que siguen llegando con la mitad o ninguno de los ingresos. Por eso conviene tener, antes de enfermarte, un seguro de vida con beneficios en vida: si te diagnostican una enfermedad crónica, crítica o terminal, puedes usar parte del beneficio en vida y tu pareja no tiene que dejar de trabajar para tapar el hueco.",
+ "datos": [
+  {
+   "dato": "Porcentaje de cuidadores familiares que gastan dinero propio cuidando a su ser querido (AARP, encuesta de unos 2,400 cuidadores, 2021)",
+   "valor": 75,
+   "unidad": "%",
+   "fuente": "https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/"
+  },
+  {
+   "dato": "Gasto promedio anual de bolsillo de esos cuidadores",
+   "valor": 7242,
+   "unidad": "$",
+   "fuente": "https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/"
+  },
+  {
+   "dato": "Gasto promedio anual de los cuidadores con 2 o más problemas en el trabajo (faltar, cambiar horario), casi el doble",
+   "valor": 10525,
+   "unidad": "$",
+   "fuente": "https://www.aarp.org/caregiving/financial-legal/high-out-of-pocket-costs/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "EJEMPLO HIPOTÉTICO: sueldo del enfermo, $1,100 a la semana, 13 semanas (3 meses) sin cobrar",
+   "expresion": "1100*13",
+   "resultado": 14300
+  },
+  {
+   "descripcion": "EJEMPLO HIPOTÉTICO: sueldo del familiar que deja de trabajar para cuidarlo, $800 a la semana, 13 semanas",
+   "expresion": "800*13",
+   "resultado": 10400
+  },
+  {
+   "descripcion": "Ingreso total que deja de entrar a la casa en 3 meses (dos sueldos)",
+   "expresion": "1100*13+800*13",
+   "resultado": 24700
+  },
+  {
+   "descripcion": "Gasto de bolsillo del cuidador por mes (promedio AARP $7,242 al año)",
+   "expresion": "round(7242/12,2)",
+   "resultado": 603.5
+  },
+  {
+   "descripcion": "Gasto de bolsillo en 3 meses de cuidado",
+   "expresion": "round(7242/12*3,2)",
+   "resultado": 1810.5
+  },
+  {
+   "descripcion": "Golpe total en 3 meses: dos sueldos perdidos más gasto de bolsillo",
+   "expresion": "round(1100*13+800*13+7242/12*3,2)",
+   "resultado": 26510.5
+  },
+  {
+   "descripcion": "Porcentaje del ingreso perdido que corresponde al segundo sueldo, el del cuidador",
+   "expresion": "round(800*13/(1100*13+800*13)*100,2)",
+   "resultado": 42.11
+  },
+  {
+   "descripcion": "Diferencia de gasto anual entre cuidadores con problemas de trabajo y el promedio",
+   "expresion": "10525-7242",
+   "resultado": 3283
+  }
+ ],
+ "consejo": "Habla hoy con un agente de seguros con licencia y pregunta por un seguro de vida indexado (IUL) con beneficios en vida: crece hasta un 10% al año, con piso de cero, y si te diagnostican una enfermedad crónica, crítica o terminal puedes usar parte del beneficio en vida. Pide que te expliquen por escrito qué enfermedades califican, cuánto puedes sacar y cómo afecta lo que le queda a tu familia. Mientras tanto, apunta cuánto gasta tu casa al mes y cuántos meses aguantaría con un solo sueldo.",
+ "que_no_decir": [
+  "No decir que el ejemplo de $1,100 y $800 a la semana es un dato real o promedio: es hipotético.",
+  "No decir que el seguro paga todo ni que cubre cualquier enfermedad: depende de la póliza y de qué enfermedades califican.",
+  "No prometer que el IUL siempre crece 10%: es el máximo de un año, y el piso es cero.",
+  "No decir que el beneficio en vida es dinero extra gratis: lo que uses puede bajar el beneficio que recibe tu familia.",
+  "No usar cifras de retiro, de cuánto se junta en el IUL ni de ahorro a futuro.",
+  "No repetir los datos del Seguro Social por incapacidad ni los '5 meses sin cheque', ni 'uno de cada cuatro se incapacita', ni la cuenta del hospital: ya salieron en otros videos.",
+  "No asustar ni usar la enfermedad de un hijo o la pareja como chantaje emocional."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "Cuando alguien se enferma en casa, otro familiar deja de trabajar para cuidarlo: se pierden dos ingresos",
+ "gancho_pedido": "Cuando alguien se enferma en casa, dejan de trabajar dos.",
+ "ganchos_recientes": [
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número."
+ ]
+}

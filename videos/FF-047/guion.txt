@@ -1,0 +1,50 @@
+# FF-047 · Finanzas Familiares · EST-01 · La casa se queda, el pago también
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Costo mensual mediano de dueños de casa con hipoteca en EE.UU. en 2024 (préstamo, impuestos y seguro de la casa; Censo, ACS) = 2035 $ · https://www.floridarealtors.org/news-media/news-articles/2025/09/census-bureau-cost-homeownership-rising
+# Fuente: Porcentaje del ingreso del hogar que se va en costos de la casa con hipoteca (mediana, 2024) = 21.4 % · https://www.floridarealtors.org/news-media/news-articles/2025/09/census-bureau-cost-homeownership-rising
+# Fuente: Porcentaje de hispanos en EE.UU. que tiene seguro de vida (LIMRA, 2024) = 43 % · https://www.limra.com/siteassets/newsroom/fact-tank/fact-sheets/securing-hispanics-financial-security-through-life-insurance.pdf
+# Fuente: Porcentaje de hispanos que dice necesitar, o necesitar más, seguro de vida (LIMRA, 2024) = 53 % · https://www.limra.com/siteassets/newsroom/fact-tank/fact-sheets/securing-hispanics-financial-security-through-life-insurance.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si faltas, la *casa* se queda con tu familia.
+El *pago* de cada mes también.
+Al final te digo el *papel*
+que tu pareja le tiene que mandar al *banco*.
+Se llama *el pago que sigue*.
+En Estados Unidos, una ley federal
+no deja que el banco exija
+*todo el préstamo* de golpe
+solo porque tú *ya no estás*.
+Buena noticia, pero protege la *casa*,
+no el *pago*.
+El pago sigue llegando cada *mes*,
+aunque tu *sueldo* ya no llegue.
+Entre préstamo, impuestos y seguro,
+una casa típica cuesta [$2,035|dos mil treinta y cinco dólares] al *mes*.
+En un año, son [$24,420|veinticuatro mil cuatrocientos veinte].
+Y aquí viene lo que *nadie* te dice.
+Si tu familia no puede pagar,
+el banco sí puede iniciar la *ejecución hipotecaria*.
+La ley cuida la *casa*,
+pero no pone el *dinero*.
+Son casi [$67|sesenta y siete dólares] cada día sin tu *sueldo*.
+Una salida es un [IUL|a yu el],
+un *seguro de vida indexado*.
+Si faltas, tu familia recibe un dinero
+para *seguir pagando* la casa.
+Es tuyo y crece *hasta un* [10%|diez por ciento] al año,
+y si el mercado cae, tiene *piso cero*.
+Ahora sí, el papel que te dije:
+el *acta de defunción*.
+Tu pareja se la manda a quien cobra,
+para que reconozca a tu familia como *sucesora*.
+Y hoy, suma tu *préstamo*, impuestos y seguro.
+Ese es el pago que tu familia *debe cubrir*.
+Dile a tu pareja dónde está el *préstamo*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga *hipoteca*.

@@ -1,0 +1,73 @@
+{
+ "titulo": "El 'notario' que no es abogado",
+ "angulo": "En tu país un notario es casi un abogado; en Estados Unidos es una persona que solo verifica tu firma, y no puede darte consejo de inmigración ni cobrártelo.",
+ "explicacion": "En Estados Unidos, un notary public solo confirma quién eres y que firmaste. No necesita ser abogado ni estudiar leyes, y no puede aconsejarte sobre tu caso. Aun así, algunos se anuncian como 'notario' para que creas que sí pueden. Te cobran cientos o miles de dólares por llenar formas que son gratis en uscis.gov, y el cargo del gobierno lo pagas tú aparte. Si se equivocan, USCIS no te devuelve la tarifa y tu caso puede quedar negado o abrirte un problema de deportación.",
+ "datos": [
+  {
+   "dato": "Tarifa de USCIS para naturalización (N-400) en papel; el formulario es gratis en uscis.gov",
+   "valor": 760,
+   "unidad": "$",
+   "fuente": "https://www.uscis.gov/n-400"
+  },
+  {
+   "dato": "Tarifa de USCIS para el N-400 si lo envías en línea",
+   "valor": 710,
+   "unidad": "$",
+   "fuente": "https://www.uscis.gov/forms/filing-fees"
+  },
+  {
+   "dato": "Cobro de ejemplo (ilustrativo, no es promedio oficial) de un falso 'notario' por llenar el N-400",
+   "valor": 1500,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/articles/immigration-scams"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Total que pagas con el 'notario' de ejemplo: su cobro más la tarifa de USCIS en papel",
+   "expresion": "1500+760",
+   "resultado": 2260
+  },
+  {
+   "descripcion": "Cuánto pagas de más frente a solo la tarifa de USCIS en papel",
+   "expresion": "1500",
+   "resultado": 1500
+  },
+  {
+   "descripcion": "Porcentaje del cobro del notario sobre la tarifa de USCIS en papel",
+   "expresion": "round(1500/760*100,2)",
+   "resultado": 197.37
+  },
+  {
+   "descripcion": "Total si el caso se niega por un error y lo vuelves a presentar con un abogado u organización, sin reembolso de la tarifa",
+   "expresion": "1500+760+760",
+   "resultado": 3020
+  },
+  {
+   "descripcion": "Ahorro al presentar tú solo en línea con ayuda gratis frente al total con el notario",
+   "expresion": "2260-710",
+   "resultado": 1550
+  }
+ ],
+ "consejo": "Antes de pagar, pregunta: '¿Es usted abogado o representante acreditado por el Departamento de Justicia?'. Revisa la lista de organizaciones reconocidas y representantes acreditados en justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster-state-and-city. Busca ayuda gratis o de bajo costo en immigrationlawhelp.org. Bájate las formas gratis de uscis.gov, no firmes nada en blanco y pide recibo y copia de todo. Si ya te estafaron, repórtalo a la FTC (reportfraud.ftc.gov) y a la fiscalía general de tu estado.",
+ "que_no_decir": [
+  "Que todos los notarios son estafadores. Muchos hacen su trabajo legítimo de firmas.",
+  "Que $1,500 es lo que cobran todos. Es un ejemplo.",
+  "Prometer que con un abogado te aprueban el caso.",
+  "Dar consejo legal sobre el caso de alguien.",
+  "Sugerir que no pague a nadie. Un abogado o representante acreditado sí puede cobrar."
+ ],
+ "con_iul": false,
+ "idea": "El falso notario o consultor de migración: aquí 'notario' no es abogado, cuánto cobran y cómo protegerte",
+ "gancho_pedido": "Aquí, 'notario' no significa lo mismo que en tu país.",
+ "ganchos_recientes": [
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo."
+ ]
+}

@@ -1,0 +1,672 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un falso 'notario' cobra $1,500 por llenar una forma de ciudadanía, más la tarifa de USCIS en papel de $760. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el notario",
+   "contador": "notario |no es abogado",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      0
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Notario? Es casi abogado.",
+     "piensa": true,
+     "cola": 1,
+     "x": 32,
+     "y": 22,
+     "en": [
+      1,
+      "país"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿Notario = abogado?",
+     "color": "principal",
+     "x": 72,
+     "y": 55,
+     "tam": 5,
+     "en": [
+      2,
+      "abogado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el cobro",
+   "contador": "cobro |$1,500",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Forma de ciudadanía",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Cobro del notario",
+       "valor": "$1,500",
+       "en": [
+        4,
+        "1,500"
+       ]
+      },
+      {
+       "texto": "Forma en uscis.gov",
+       "valor": "Gratis",
+       "en": [
+        5,
+        "gratis"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       5,
+       "llenar"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el dato",
+   "contador": "antes de |pagar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 26,
+     "y": 56,
+     "tam": 30,
+     "etiqueta": "NOTARIO",
+     "en": [
+      6
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      6,
+      "dónde"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Será de fiar?",
+     "piensa": true,
+     "cola": -1,
+     "x": 76,
+     "y": 16,
+     "en": [
+      7,
+      "verdad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    8
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "FALSO",
+    "NOTARIO"
+   ],
+   "en": [
+    8,
+    "falso"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "qué es",
+   "contador": "notary |public",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "nada",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "NOTARIO",
+     "en": [
+      9
+     ]
+    },
+    {
+     "id": "e",
+     "que": "objeto",
+     "objeto": "escuela",
+     "x": 26,
+     "y": 36,
+     "tam": 30,
+     "en": [
+      10,
+      "estudia"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "e",
+     "en": [
+      10,
+      "leyes"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "solo verifica tu firma",
+     "color": "principal",
+     "x": 28,
+     "y": 72,
+     "tam": 4.5,
+     "en": [
+      11,
+      "confirma"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el anuncio",
+   "contador": "se anuncia |como notario",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "piel": 1,
+     "etiqueta": "EL NOTARIO",
+     "en": [
+      12
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Soy notario, yo te ayudo.",
+     "piensa": false,
+     "cola": -1,
+     "x": 26,
+     "y": 12,
+     "en": [
+      13,
+      "anuncia"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      12
+     ],
+     "cambia": {
+      "en": [
+       14,
+       "creas"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Entonces sí sabe?",
+     "piensa": true,
+     "cola": 1,
+     "x": 74,
+     "y": 32,
+     "en": [
+      14,
+      "puede"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "el riesgo",
+   "contador": "tarifa |sin reembolso",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 5,
+     "piel": 3,
+     "etiqueta": "TÚ",
+     "en": [
+      15
+     ],
+     "cambia": {
+      "en": [
+       16,
+       "equivoca"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 32,
+     "tam": 28,
+     "etiqueta": "tarifa $760",
+     "en": [
+      17,
+      "USCIS"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      17,
+      "devuelve"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "CASO NEGADO",
+     "color": "principal",
+     "x": 70,
+     "y": 62,
+     "tam": 6,
+     "en": [
+      18,
+      "negado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "la cuenta",
+   "contador": "cobro |$1,500",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "Hagamos la cuenta",
+     "color": "tinta",
+     "x": 50,
+     "y": 12,
+     "tam": 5,
+     "en": [
+      19
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 50,
+     "valor": 1500,
+     "max": 1500,
+     "prefijo": "$",
+     "etiqueta": "EL NOTARIO",
+     "en": [
+      20,
+      "cobra"
+     ],
+     "hasta": [
+      20,
+      "1,500"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 760,
+     "max": 1500,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "GOBIERNO",
+     "en": [
+      21,
+      "tarifa"
+     ],
+     "hasta": [
+      21,
+      "760"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "el total",
+   "contador": [
+    {
+     "en": [
+      23
+     ],
+     "texto": "total |$2,260"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "total |$3,020"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 2260,
+     "prefijo": "$",
+     "x": 50,
+     "y": 22,
+     "tam": 11,
+     "color": "principal",
+     "etiqueta": "con el notario",
+     "en": [
+      23
+     ],
+     "hasta": [
+      23,
+      "2,260"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 3020,
+     "prefijo": "$",
+     "x": 50,
+     "y": 52,
+     "tam": 11,
+     "color": "gris",
+     "etiqueta": "si lo repites",
+     "en": [
+      25,
+      "llevas"
+     ],
+     "hasta": [
+      25,
+      "3,020"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 88,
+     "tam": 14,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      24,
+      "niegan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué hacer",
+   "contador": "pregunta |clave",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      26
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Es usted abogado o acreditado?",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      27,
+      "usted"
+     ],
+     "sale": [
+      28,
+      "responde"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "nada",
+     "ropa": 4,
+     "etiqueta": "EL NOTARIO",
+     "en": [
+      28,
+      "responde"
+     ],
+     "cambia": {
+      "en": [
+       28,
+       "claro"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Eh... bueno... depende.",
+     "piensa": false,
+     "cola": 1,
+     "x": 76,
+     "y": 22,
+     "en": [
+      28,
+      "responde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "dónde buscar",
+   "contador": "ayuda |gratis",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "Lista oficial del Depto. de Justicia",
+       "en": [
+        29,
+        "lista"
+       ]
+      },
+      {
+       "texto": "Ayuda gratis: immigrationlawhelp.org",
+       "en": [
+        31,
+        "entra"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |$1,550",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,550",
+    "etiqueta": "te ahorras",
+    "en": [
+     33,
+     "1,550"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGA",
+    "en": [
+     34,
+     "nunca"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

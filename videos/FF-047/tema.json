@@ -1,0 +1,89 @@
+{
+ "titulo": "La casa se queda, el pago también",
+ "angulo": "La ley federal sí protege la casa de tu familia (el banco no puede exigir todo el préstamo de golpe), pero nadie te perdona el pago: sigue llegando cada mes sin tu sueldo.",
+ "explicacion": "Si faltas, el banco no puede quitarle la casa a tu familia solo porque tú ya no estás. Eso dice una ley federal de 1982, y es buena noticia. Pero la ley protege la casa, no el pago. Si tu familia no paga cada mes, el banco sí puede iniciar la ejecución hipotecaria. El costo mediano de una casa con hipoteca en Estados Unidos es de $2,035 al mes, y eso sigue llegando aunque tu sueldo ya no llegue.",
+ "datos": [
+  {
+   "dato": "Costo mensual mediano de dueños de casa con hipoteca en EE.UU. en 2024 (préstamo, impuestos y seguro de la casa; Censo, ACS)",
+   "valor": 2035,
+   "unidad": "$",
+   "fuente": "https://www.floridarealtors.org/news-media/news-articles/2025/09/census-bureau-cost-homeownership-rising"
+  },
+  {
+   "dato": "Porcentaje del ingreso del hogar que se va en costos de la casa con hipoteca (mediana, 2024)",
+   "valor": 21.4,
+   "unidad": "%",
+   "fuente": "https://www.floridarealtors.org/news-media/news-articles/2025/09/census-bureau-cost-homeownership-rising"
+  },
+  {
+   "dato": "Porcentaje de hispanos en EE.UU. que tiene seguro de vida (LIMRA, 2024)",
+   "valor": 43,
+   "unidad": "%",
+   "fuente": "https://www.limra.com/siteassets/newsroom/fact-tank/fact-sheets/securing-hispanics-financial-security-through-life-insurance.pdf"
+  },
+  {
+   "dato": "Porcentaje de hispanos que dice necesitar, o necesitar más, seguro de vida (LIMRA, 2024)",
+   "valor": 53,
+   "unidad": "%",
+   "fuente": "https://www.limra.com/siteassets/newsroom/fact-tank/fact-sheets/securing-hispanics-financial-security-through-life-insurance.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Costo de la casa en un año, con el costo mensual mediano",
+   "expresion": "2035*12",
+   "resultado": 24420
+  },
+  {
+   "descripcion": "Costo de la casa en 5 años",
+   "expresion": "2035*12*5",
+   "resultado": 122100
+  },
+  {
+   "descripcion": "Costo de la casa en 10 años",
+   "expresion": "2035*12*10",
+   "resultado": 244200
+  },
+  {
+   "descripcion": "Costo de la casa en el primer año después de que faltas (12 meses sin tu sueldo), por día",
+   "expresion": "round(2035*12/365, 2)",
+   "resultado": 66.9
+  }
+ ],
+ "consejo": "Haz la cuenta de tu casa: suma el préstamo, los impuestos de la propiedad y el seguro. Ese total mensual es lo que tu familia necesita cubrir si faltas. Pregunta cuánto cuesta un seguro de vida que cubra ese pago por varios años. Un IUL puede ser una opción: da protección de vida y no se pierde si cambias de trabajo. Dile a tu pareja dónde está el préstamo y cómo se llama la empresa que lo cobra, y que si pasa algo, avise al servicer con el acta de defunción para que reconozca a tu familia como sucesora.",
+ "que_no_decir": [
+  "Que el banco te quita la casa si faltas (la ley federal impide que exija todo el préstamo de golpe solo por tu fallecimiento)",
+  "Que la deuda de la casa se borra cuando faltas",
+  "Que $2,035 es la cuota del banco (es el costo mediano total de poseer la casa, con impuestos y seguro)",
+  "Que la ley protege a tu familia de perder la casa aunque no pague (si no pagan, hay ejecución hipotecaria)",
+  "Prometer rendimientos del IUL o hablar de ahorro para el retiro",
+  "Dar asesoría legal específica por estado: cada caso cambia"
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "Si faltas, la casa se queda con la familia, pero el pago mensual también",
+ "gancho_pedido": "Si faltas, la casa se queda. El pago también.",
+ "ganchos_recientes": [
+  "Te prestan tu propio reembolso, / y te cobran por eso. / Al final te digo las tres letras / que él no te lee en voz alta.",
+  "Si mañana faltas, / ¿quién le manda a tu mamá? / Tu familia cuenta con tu envío de cada mes, / y ese envío se corta el mismo día.",
+  "Hay un error en tu reporte de crédito / que no es tuyo, y lo pagas tú. / Al final te digo la página exacta, / la única que es gratis.",
+  "Nunca le pagues $5 a un cobrador / por una deuda vieja. / Ese pago puede revivir la deuda, / y ahora sí te pueden demandar.",
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos."
+ ]
+}

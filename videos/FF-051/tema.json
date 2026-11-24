@@ -1,0 +1,97 @@
+{
+ "titulo": "El trabajo que te cobra por empezar",
+ "angulo": "Te piden solo $395 para empezar a trabajar, pero la pérdida típica en estas estafas de trabajo es de $2,250: más de 5 veces lo que te pidieron al inicio.",
+ "explicacion": "Te ofrecen trabajo sin entrevista real y te dicen que pagues uniforme, equipo o curso antes del primer día. Piden poco al inicio, por ejemplo $395. Luego aparecen más cargos o te mandan un cheque 'para comprar equipo' que tienes que devolver en parte. La FTC dice que un empleador honesto nunca te pide pagar por el trabajo ni por el equipo, y que no te cobra con efectivo, Zelle o PayPal. La pérdida mediana reportada en estafas de negocio y trabajo fue de $2,250, y los reportes de pérdidas por estafas de trabajo se triplicaron de 2020 a 2023.",
+ "datos": [
+  {
+   "dato": "Pérdida mediana reportada en estafas de negocio y trabajo en 2024 (FTC)",
+   "valor": 2250,
+   "unidad": "$",
+   "fuente": "https://www.kcci.com/article/ftc-fraud-report-2024-record-losses/64177465"
+  },
+  {
+   "dato": "Pérdidas reportadas por estafas de trabajo solo en el primer semestre de 2024 (más de)",
+   "valor": 220000000,
+   "unidad": "$",
+   "fuente": "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2024/12/paying-get-paid-gamified-job-scams-drive-record-losses"
+  },
+  {
+   "dato": "Las pérdidas por estafas de trabajo aumentaron más de 3 veces de 2020 a 2023",
+   "valor": 3,
+   "unidad": "veces",
+   "fuente": "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2024/12/paying-get-paid-gamified-job-scams-drive-record-losses"
+  },
+  {
+   "dato": "La FTC dice que los empleadores honestos nunca piden pagar cuotas por adelantado por el trabajo o el equipo, ni pagar con efectivo, Zelle o PayPal",
+   "valor": 0,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/consumer-alerts/2023/08/scammers-impersonate-well-known-companies-recruit-fake-jobs-linkedin-other-job-platforms"
+  },
+  {
+   "dato": "Ejemplo hipotético: uniforme $185 + chequeo de antecedentes $60 + curso $150",
+   "valor": 395,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/consumer-alerts/2023/12/how-spot-latest-job-scams"
+  },
+  {
+   "dato": "Ejemplo hipotético: sueldo de un oficio, por hora",
+   "valor": 25,
+   "unidad": "$",
+   "fuente": "https://consumer.ftc.gov/consumer-alerts/2023/12/how-spot-latest-job-scams"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Total que te piden 'para empezar' (uniforme + antecedentes + curso)",
+   "expresion": "185+60+150",
+   "resultado": 395
+  },
+  {
+   "descripcion": "Cuántas veces es la pérdida mediana comparada con lo que te pidieron al inicio",
+   "expresion": "round(2250/395,2)",
+   "resultado": 5.7
+  },
+  {
+   "descripcion": "Horas de trabajo a $25 por hora para ganar $2,250",
+   "expresion": "round(2250/25,2)",
+   "resultado": 90.0
+  },
+  {
+   "descripcion": "Ganancia de una semana de 40 horas a $25 por hora",
+   "expresion": "25*40",
+   "resultado": 1000
+  },
+  {
+   "descripcion": "Semanas de trabajo que equivalen a $2,250",
+   "expresion": "round(2250/(25*40),2)",
+   "resultado": 2.25
+  },
+  {
+   "descripcion": "Diferencia entre la pérdida mediana y los $395 iniciales",
+   "expresion": "2250-395",
+   "resultado": 1855
+  }
+ ],
+ "consejo": "Si te piden dinero antes de empezar, para uniforme, equipo, curso o chequeo, no pagues. Pide el trato por escrito y busca a la empresa por su página oficial o su teléfono, no por el que te dieron en el mensaje. Nunca pagues con Zelle, efectivo o tarjetas de regalo, y nunca devuelvas dinero de un cheque que te mandaron. Si ya pagaste, llama a tu banco ese mismo día y reporta en ReportFraud.ftc.gov.",
+ "que_no_decir": [
+  "Que todos los trabajos que piden un chequeo de antecedentes son estafa (a veces el empleador paga el chequeo, pero tú no).",
+  "Que se puede recuperar el dinero seguro.",
+  "Que la pérdida típica es $395: la cifra es un ejemplo hipotético, y el dato real es la mediana de $2,250.",
+  "Que un cheque que 'ya cayó' en tu app es dinero tuyo (ya cubierto en FF-022).",
+  "Que descontar el uniforme del sueldo siempre es ilegal (depende del caso y del sueldo mínimo).",
+  "Nombrar empresas reales como estafadoras."
+ ],
+ "con_iul": false,
+ "idea": "La oferta de trabajo falsa que te pide pagar por equipo, uniforme o curso antes de empezar",
+ "gancho_pedido": "Un trabajo de verdad nunca te cobra por empezar.",
+ "ganchos_recientes": [
+  "Un infarto no siempre te mata. / Lo que te quiebra son los meses sin cobrar. / Al final te digo la pregunta exacta / que le tienes que hacer a tu patrón.",
+  "Un cobrador tiene que dejar de llamarte / al trabajo si le dices una frase. / Al final te digo la frase exacta, / palabra por palabra, para que la uses.",
+  "Si cobras por contrato, / nadie ahorra para tu retiro. Nadie. / Cada año, un patrón con plan / puede sumar más de dos semanas de sueldo.",
+  "La cuenta del hospital no es un precio. / Es una oferta. / Al final te digo la frase exacta / que le dices a facturación para pagar menos.",
+  "Si faltas, la casa se queda con tu familia. / El pago de cada mes también. / Al final te digo el papel / que tu pareja le tiene que mandar al banco.",
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste."
+ ]
+}

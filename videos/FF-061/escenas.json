@@ -1,0 +1,655 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un techo de palabra donde te quedan $1,500 de ganancia si te pagan lo acordado. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "antes de empezar",
+   "contador": "antes de |empezar",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      0,
+      "Nunca"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 36,
+     "tam": 30,
+     "etiqueta": "EL TECHO",
+     "en": [
+      0,
+      "trabajo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "POR ESCRITO",
+     "x": 72,
+     "y": 70,
+     "color": "principal",
+     "tam": 5,
+     "en": [
+      1,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tu ganancia",
+   "contador": "depende |del cliente",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      2,
+      "Sin"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "TU GANANCIA",
+     "en": [
+      2,
+      "ganancia"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si recuerda otro precio?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 24,
+     "en": [
+      3,
+      "recuerde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la palabra",
+   "contador": "dos |letras",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "DOS LETRAS",
+     "x": 50,
+     "y": 38,
+     "color": "principal",
+     "tam": 8
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      6,
+      "pedirle"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    7
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TRATO",
+    "PALABRA"
+   ],
+   "en": [
+    7,
+    "palabra"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ganancia |$1,500",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 20,
+     "tam": 24,
+     "etiqueta": "EL TECHO",
+     "en": [
+      8,
+      "techo"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      9,
+      "Pagas"
+     ],
+     "cambia": {
+      "en": [
+       11,
+       "ganancia"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$1,500",
+     "x": 50,
+     "y": 48,
+     "tam": 11,
+     "color": "verde",
+     "etiqueta": "ganancia",
+     "en": [
+      11,
+      "1,500"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el cliente",
+   "contador": "dice |otro precio",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       13,
+       "precio"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL CLIENTE",
+     "en": [
+      12,
+      "cliente"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Yo recuerdo otro precio, más bajo",
+     "cola": 1,
+     "x": 72,
+     "y": 24,
+     "en": [
+      13,
+      "recuerdo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$1,300",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 55,
+     "valor": 1500,
+     "max": 1500,
+     "prefijo": "$",
+     "etiqueta": "LO ACORDADO",
+     "en": [
+      14
+     ],
+     "hasta": [
+      14,
+      "1,300"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 70,
+     "y": 95,
+     "tam": 55,
+     "valor": 200,
+     "max": 1500,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TE QUEDA",
+     "en": [
+      15,
+      "queda"
+     ],
+     "hasta": [
+      15,
+      "200"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "la ley",
+   "contador": "trato |verbal",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      18,
+      "Pero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SÍ VALE",
+     "x": 72,
+     "y": 45,
+     "color": "verde",
+     "tam": 7,
+     "en": [
+      19,
+      "vale"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cómo pruebo lo que dijimos?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 24,
+     "en": [
+      20,
+      "probar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "un extra",
+   "contador": "sin |aprobar",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 93,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      22,
+      "Peor"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$600",
+     "x": 64,
+     "y": 34,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "día extra",
+     "en": [
+      24,
+      "600"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "+ MATERIAL",
+     "x": 64,
+     "y": 70,
+     "color": "tinta",
+     "tam": 5,
+     "en": [
+      25,
+      "material"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    26
+   ],
+   "capitulo": "el golpe",
+   "contador": "debes |$650",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$650",
+    "etiqueta": "de tu bolsillo",
+    "en": [
+     27,
+     "650"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "VACÍA",
+    "en": [
+     27,
+     "debiendo"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      28
+     ],
+     "texto": "tres |líneas"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "línea |1 de 3"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "línea |2 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "línea |3 de 3"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "Qué incluye el trabajo",
+       "en": [
+        29,
+        "incluye"
+       ]
+      },
+      {
+       "texto": "Precio, anticipo y fecha de pago",
+       "en": [
+        30,
+        "anticipo"
+       ]
+      },
+      {
+       "texto": "Extras: se aprueban por mensaje",
+       "en": [
+        31,
+        "extra"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 20,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "en": [
+      28,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "mándalas",
+   "contador": "responde |ok",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      32,
+      "Mándalas"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Trabajo, precio y extras",
+     "cola": -1,
+     "x": 26,
+     "y": 12,
+     "en": [
+      32,
+      "texto"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL CLIENTE",
+     "en": [
+      33,
+      "conteste"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "ok",
+     "cola": 1,
+     "x": 82,
+     "y": 32,
+     "tam": 10,
+     "en": [
+      33,
+      "ok"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 62,
+     "en": [
+      35,
+      "captura"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    36
+   ],
+   "capitulo": "tu prueba",
+   "contador": "tu |prueba",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 94,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      36,
+      "Con"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "TU PRUEBA",
+     "x": 72,
+     "y": 42,
+     "color": "verde",
+     "tam": 6,
+     "en": [
+      36,
+      "dependes"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 70,
+     "en": [
+      36,
+      "memoria"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

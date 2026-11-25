@@ -1,0 +1,55 @@
+# FF-064 · Finanzas Familiares · EST-01 · El hueco del cheque
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje del sueldo semanal que paga la compensación por incapacidad temporal total en California y Florida (2/3 del sueldo promedio semanal, con tope por estado) = 66.67 % · https://www.shouselaw.com/ca/workerscomp/benefits/temporary-disability/
+# Fuente: Porcentaje del sueldo semanal que paga Texas por incapacidad temporal (con tope; máximo $1,271 por semana para lesiones de oct. 2025 a sep. 2026) = 70 % · https://www.nolo.com/legal-encyclopedia/much-workers-compensation-benefits-texas.html
+# Fuente: Tope semanal máximo en Texas para lesiones de oct. 2025 a sep. 2026 = 1271 $ · https://www.nolo.com/legal-encyclopedia/much-workers-compensation-benefits-texas.html
+# Fuente: Días de espera antes de cobrar el pago por sueldo en Florida (se pagan después solo si la incapacidad pasa de 21 días) = 7 días · https://www.esclaw.com/blog/florida-workers-compensation-waiting-period/
+# Fuente: Días de espera en Texas (se pagan después si la incapacidad pasa de 28 días) = 7 días · https://aihowtoinvest.com/workers-comp/state/texas
+# Fuente: Máximo de semanas de incapacidad temporal en California (dentro de 5 años) = 104 semanas · https://www.shouselaw.com/ca/workerscomp/benefits/temporary-disability/
+# Fuente: Texas es el único estado donde la mayoría de los patrones privados puede elegir no tener seguro de compensación = 1 estado · https://bickerstaffins.com/blog/workers-compensation-benefits/
+# Fuente: Trabajadores de techos (roofers) muertos en el trabajo en 2024 (BLS) = 104 muertes · https://theroofingbrief.com/roofing-safety-fatality-report/
+# Fuente: Tasa de muertes de roofers en 2023, por cada 100,000 trabajadores de tiempo completo (BLS) = 51.8 por 100,000 · https://theroofingbrief.com/roofing-workers-compensation-report/
+# Fuente: Muertes de trabajadores de construcción por caídas, resbalones y tropiezos en 2024 (BLS) = 389 muertes · https://theroofingbrief.com/roofing-safety-fatality-report/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si te caes del *techo*,
+lo que te pagan *no es* tu sueldo completo.
+Y a muchos roofers ni eso les llega.
+Al final te digo la *pregunta* exacta
+que debes mandarle *por escrito* a tu patrón.
+Se llama el *hueco del cheque*.
+Digamos que ganas [$1,200|mil doscientos dólares] por semana.
+Te caes y no puedes *trabajar*.
+Si tu patrón sí tiene el seguro,
+la ley te paga *dos terceras partes*:
+[$800|ochocientos dólares] a la semana.
+Te faltan [$400|cuatrocientos dólares] cada *semana*.
+Pero aquí viene lo que nadie te dice:
+en Texas, casi todo patrón puede *decidir*
+no tener ese seguro.
+Y si cobras por *contrato*,
+casi nunca estás *cubierto*.
+En Florida, esperas [7|siete] días para cobrar.
+En [12|doce] semanas sin trabajar,
+te faltan [$4,800|cuatro mil ochocientos dólares].
+Y la *renta* llega completa.
+Los biles también.
+Ahora sí, la *pregunta*, por mensaje:
+¿Tengo seguro de *compensación*,
+y estoy *cubierto*?
+Y pídele que te conteste *por escrito*.
+Y si te da una enfermedad *grave*,
+ese cheque del trabajo no aplica.
+Para eso existe [IUL|a yu el],
+un *seguro de vida indexado*
+con *beneficios en vida*:
+si te diagnostican algo *crónico*, *crítico* o *terminal*,
+puedes usar parte del beneficio *tú*.
+Es tuyo, y tiene *piso cero*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien sube a *los techos*.

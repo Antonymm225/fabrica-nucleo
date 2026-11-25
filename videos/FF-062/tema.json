@@ -1,0 +1,82 @@
+{
+ "titulo": "El sueldo que nadie le paga a mamá",
+ "angulo": "Tu esposa 'no cobra sueldo', pero si falta, reemplazar lo que hace cuesta cerca de $15,000 al mes, y casi nadie incluye ese hueco en su seguro.",
+ "explicacion": "Quien cuida la casa y los hijos no recibe cheque, así que su trabajo parece gratis. No lo es: Salary.com estima que su equivalente en sueldo de mercado es de unos $184,820 al año. Si ella falta, tú tendrías que pagar niñera, comida, limpieza y transporte, o dejar de trabajar tú. Casi nadie piensa en asegurar a quien no cobra, pero esa es la persona cuya falta más cambia el presupuesto de la casa. Un seguro de vida con IUL le da a la familia dinero para cubrir ese reemplazo sin vaciar tus ahorros.",
+ "datos": [
+  {
+   "dato": "Salario anual equivalente de un padre o madre que se queda en casa, promedio nacional (estimado de Salary.com)",
+   "valor": 184820,
+   "unidad": "$",
+   "fuente": "https://www.psecu.com/learn/the-financial-value-of-stay-at-home-parents"
+  },
+  {
+   "dato": "Horas de trabajo a la semana de un padre o madre en casa, según Salary.com (más de 100)",
+   "valor": 100,
+   "unidad": "horas",
+   "fuente": "https://www.psecu.com/learn/the-financial-value-of-stay-at-home-parents"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Costo mensual de reemplazar el trabajo en casa",
+   "expresion": "round(184820/12,2)",
+   "resultado": 15401.67
+  },
+  {
+   "descripcion": "Costo semanal de reemplazarlo",
+   "expresion": "round(184820/52,2)",
+   "resultado": 3554.23
+  },
+  {
+   "descripcion": "Valor por hora si son 100 horas a la semana",
+   "expresion": "round(184820/(100*52),2)",
+   "resultado": 35.54
+  },
+  {
+   "descripcion": "Costo de reemplazarlo durante 5 años",
+   "expresion": "round(184820*5,2)",
+   "resultado": 924100.0
+  },
+  {
+   "descripcion": "Costo de reemplazarlo durante 10 años",
+   "expresion": "round(184820*10,2)",
+   "resultado": 1848200.0
+  }
+ ],
+ "consejo": "Haz la cuenta en casa: apunta lo que costaría pagar niñera, comida, limpieza y transporte si tu esposa o tu esposo faltara. Pide una cotización de seguro de vida IUL para esa persona también, no solo para quien trae el cheque. Pregunta el costo mensual y cuántos años de ese reemplazo cubriría. Hazlo mientras estén sanos, que es cuando sale más barato.",
+ "que_no_decir": [
+  "Que el estimado de Salary.com es un sueldo real o garantizado: es una estimación de mercado.",
+  "Que tu esposa 'vale' $184,820 como persona: es lo que cuesta reemplazar tareas, no su valor.",
+  "Que el seguro del trabajo no cubre a tu pareja sin verificar cada plan: algunos incluyen un monto pequeño.",
+  "Cifras de BLS u otras fuentes que no se hayan verificado antes de grabar.",
+  "Prometer un rendimiento fijo del IUL: crece hasta un 10% al año con piso de cero, y no hay garantía de llegar al tope.",
+  "Cualquier proyección de ahorro o retiro con el IUL: este video es de protección de la familia."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "El valor del trabajo de quien cuida la casa y los hijos: cuánto costaría reemplazarlo si falta",
+ "gancho_pedido": "Tu esposa no cobra sueldo. ¿Cuánto costaría pagar todo lo que hace?",
+ "ganchos_recientes": [
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde."
+ ]
+}

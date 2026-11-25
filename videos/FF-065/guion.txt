@@ -1,0 +1,44 @@
+# FF-065 · Finanzas Familiares · EST-01 · Los cargos del cierre que sí se negocian
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Los cargos del prestamista (originación) tienen tolerancia cero: no pueden subir entre el Loan Estimate y el cierre (CFPB) = 0 % · https://www.consumerfinance.gov/ask-cfpb/can-my-final-mortgage-costs-increase-from-what-was-on-my-loan-estimate-en-172/
+# Fuente: Servicios que puedes escoger tú (sección C del Loan Estimate): si usas proveedor fuera de la lista del prestamista, no hay tope de aumento. Si usas la lista, el total puede subir hasta 10%. Confirmar en la fuente. = 10 % · https://www.consumerfinance.gov/ask-cfpb/can-my-final-mortgage-costs-increase-from-what-was-on-my-loan-estimate-en-172/
+# Fuente: Concesión máxima del vendedor en préstamo convencional con enganche menor a 10% (Fannie Mae). Confirmar vigencia. = 3 % · https://selling-guide.fanniemae.com/sel/b3-4-2-5/interested-party-contributions-ipcs
+# Fuente: Costos de cierre típicos como porcentaje del préstamo (rango común en Bankrate y NerdWallet: 2% a 5%). Valor de ejemplo, pendiente de verificar. = 3 % · https://www.bankrate.com/mortgages/closing-costs-calculator/
+# BLOQUE 1
+Hay *cargos* al comprar casa
+que se pueden *negociar*, y nadie te lo dice.
+Al final te digo la *frase exacta*
+que le dices al banco para bajarlo.
+Se llama *costos de cierre*.
+El banco te da un papel, el [Loan Estimate|lon estímeit].
+Casi todos lo leen como cuenta *fija*.
+Digamos una casa de [$350,000|trescientos cincuenta mil dólares]
+con [5%|cinco por ciento] de *enganche*.
+Tu préstamo es de [$332,500|trescientos treinta y dos mil quinientos dólares].
+Los *costos de cierre* rondan [3%|tres por ciento]:
+casi [$10,000|diez mil dólares] antes de tener las *llaves*.
+En la *sección A* cobra el banco.
+Esos cargos se pueden *comparar*.
+Pide el mismo papel a [3|tres] bancos.
+Si uno cobra menos que otro,
+la diferencia puede ser [$800|ochocientos dólares].
+Eso *regalas* por no preguntar.
+En la *sección C* escoges tú el título.
+Compara compañías de título y cierre.
+Ahí ahorras [$700|setecientos dólares] más.
+Entre los dos, son [$1,500|mil quinientos dólares].
+Pero aquí viene lo que *nadie* te dice:
+el *vendedor* puede pagar parte de tu cierre.
+No siempre, y hay *topes* según tu préstamo.
+Digamos que cubre [$5,000|cinco mil dólares].
+A ti te tocan casi [$5,000|cinco mil dólares].
+Antes de ofertar, pregúntale a tu *agente*.
+Ahora sí, la *frase exacta* para el banco:
+«Otro banco me cobra menos, ¿puedes *igualarlo*?»
+Díselo al banco con la mejor *oferta*.
+[3|tres] días antes de firmar,
+compara el papel final *renglón por renglón*.
+Preguntar no cuesta *nada*.
+Es dinero que se queda en *tu casa*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere comprar *casa*.

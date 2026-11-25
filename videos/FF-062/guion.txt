@@ -1,0 +1,46 @@
+# FF-062 · Finanzas Familiares · EST-01 · El sueldo que nadie le paga a mamá
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Salario anual equivalente de un padre o madre que se queda en casa, promedio nacional (estimado de Salary.com) = 184820 $ · https://www.psecu.com/learn/the-financial-value-of-stay-at-home-parents
+# Fuente: Horas de trabajo a la semana de un padre o madre en casa, según Salary.com (más de 100) = 100 horas · https://www.psecu.com/learn/the-financial-value-of-stay-at-home-parents
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu esposa *no cobra* sueldo.
+¿Cuánto costaría pagar *todo* lo que hace?
+Al final te digo las *cuatro cosas*
+que tienes que apuntar hoy en *casa*.
+Se llama el *sueldo oculto*.
+Quien cuida la casa y los hijos
+no recibe *cheque* a la quincena,
+así que su trabajo parece *gratis*.
+No lo es. Son unas [100|cien] *horas*
+a la semana, entre hijos, comida y *casa*.
+Pagado como sueldo de *mercado*,
+serían unos [$184,820|ciento ochenta y cuatro mil ochocientos veinte dólares] al *año*.
+Es un estimado, pero te da la *idea*.
+Eso es cerca de [$15,000|quince mil dólares] al *mes*.
+Y aquí viene lo que *nadie* te dice:
+casi nadie *asegura* a quien no cobra.
+Si ella falta, o pagas todo eso,
+o dejas de *trabajar* tú.
+Y no es lo que ella *vale*.
+Es lo que cuesta *reemplazar* sus tareas.
+Ahí entra el [IUL|a yu el],
+un *seguro de vida indexado*.
+Si ella o tú faltan, la familia recibe *dinero*
+para cubrir ese *reemplazo*
+sin vaciar tus *ahorros*.
+Es tuyo y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Ahora sí, las *cuatro cosas* que apuntas:
+niñera, comida, limpieza y *transporte*.
+Escribe cuánto costaría cada una al *mes*.
+Y pregunta cuántos años cubriría el *seguro*.
+Hazlo mientras estén *sanos*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien no asegura a su *esposa*.

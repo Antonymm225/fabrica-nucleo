@@ -1,0 +1,96 @@
+{
+ "titulo": "Los cargos del cierre que sí se negocian",
+ "angulo": "El Loan Estimate parece una cuenta final, pero varios renglones se pueden comparar o negociar, y el vendedor puede pagar parte.",
+ "explicacion": "Al comprar casa te dan un papel llamado Loan Estimate con todos los cargos de cierre. Casi todos lo leen como una cuenta fija. Pero los cargos del prestamista, como originación y suscripción, se pueden negociar, y puedes pedir ofertas de otro banco. Los servicios de la sección C, como el título, los puedes comparar y escoger tú. Además, el vendedor puede pagar parte de tus costos de cierre, dentro de topes. En el ejemplo, preguntar en tres lugares te ahorra cerca de $1,500 a $2,000, y las concesiones del vendedor pueden cubrir mucho más.",
+ "datos": [
+  {
+   "dato": "Los cargos del prestamista (originación) tienen tolerancia cero: no pueden subir entre el Loan Estimate y el cierre (CFPB)",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/can-my-final-mortgage-costs-increase-from-what-was-on-my-loan-estimate-en-172/"
+  },
+  {
+   "dato": "Servicios que puedes escoger tú (sección C del Loan Estimate): si usas proveedor fuera de la lista del prestamista, no hay tope de aumento. Si usas la lista, el total puede subir hasta 10%. Confirmar en la fuente.",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/can-my-final-mortgage-costs-increase-from-what-was-on-my-loan-estimate-en-172/"
+  },
+  {
+   "dato": "Concesión máxima del vendedor en préstamo convencional con enganche menor a 10% (Fannie Mae). Confirmar vigencia.",
+   "valor": 3,
+   "unidad": "%",
+   "fuente": "https://selling-guide.fanniemae.com/sel/b3-4-2-5/interested-party-contributions-ipcs"
+  },
+  {
+   "dato": "Costos de cierre típicos como porcentaje del préstamo (rango común en Bankrate y NerdWallet: 2% a 5%). Valor de ejemplo, pendiente de verificar.",
+   "valor": 3,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/mortgages/closing-costs-calculator/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Préstamo con casa de $350,000 y 5% de enganche",
+   "expresion": "350000*(1-0.05)",
+   "resultado": 332500.0
+  },
+  {
+   "descripcion": "Costos de cierre al 3% del préstamo",
+   "expresion": "332500*0.03",
+   "resultado": 9975.0
+  },
+  {
+   "descripcion": "Ahorro al negociar o comparar cargo del prestamista ($1,800 vs $1,000, ejemplo)",
+   "expresion": "1800-1000",
+   "resultado": 800
+  },
+  {
+   "descripcion": "Ahorro al escoger tú el título y el cierre ($2,400 vs $1,700, ejemplo)",
+   "expresion": "2400-1700",
+   "resultado": 700
+  },
+  {
+   "descripcion": "Ahorro total por preguntar y comparar",
+   "expresion": "800+700",
+   "resultado": 1500
+  },
+  {
+   "descripcion": "Porcentaje de los costos de cierre que se ahorra",
+   "expresion": "round(1500/9975*100,2)",
+   "resultado": 15.04
+  },
+  {
+   "descripcion": "Tope de concesión del vendedor al 3% del precio",
+   "expresion": "350000*0.03",
+   "resultado": 10500.0
+  },
+  {
+   "descripcion": "Costos de cierre que quedarían por pagar tú si el vendedor cubre $5,000",
+   "expresion": "9975-5000",
+   "resultado": 4975
+  }
+ ],
+ "consejo": "Pide Loan Estimates a por lo menos tres prestamistas el mismo día. Ponlos lado a lado y fíjate en la sección A (cargos del prestamista). Dile al mejor: 'Otro banco me cobra menos, ¿puedes igualarlo?'. En la sección C, que son los servicios por los que puedes comparar (título, cierre), llama a otras compañías y escoge tú. Antes de ofertar, pregúntale a tu agente si puedes pedir que el vendedor pague parte de los costos de cierre. Revisa el Closing Disclosure 3 días antes de firmar y compáralo renglón por renglón con el Loan Estimate.",
+ "que_no_decir": [
+  "Todos los cargos de cierre se pueden negociar",
+  "Vas a ahorrar exactamente $1,500 (es un ejemplo, cada caso es distinto)",
+  "El vendedor tiene que pagar tus costos",
+  "Los topes de concesión son iguales para todos los préstamos (FHA, VA y convencional cambian)",
+  "Los impuestos y el seguro prepagado se negocian",
+  "Cifras de promedio nacional sin fuente verificada",
+  "Cualquier consejo sobre seguros o cooperativas"
+ ],
+ "con_iul": false,
+ "idea": "Los costos de cierre al comprar casa: cuáles se pueden negociar y cuánto suman",
+ "gancho_pedido": "Al comprar casa hay cargos que se pueden negociar, y nadie te lo dice.",
+ "ganchos_recientes": [
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta"
+ ]
+}

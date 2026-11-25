@@ -1,0 +1,79 @@
+{
+ "titulo": "Tres líneas antes de empezar",
+ "angulo": "Un trato de palabra sí vale ante la ley, pero si el cliente recuerda otro precio, tú tienes que probar el tuyo, y sin papel casi no hay con qué.",
+ "explicacion": "Un trato de palabra no es ilegal, pero cuando hay pleito gana quien puede probar lo que se dijo. Tres líneas bastan: qué incluye el trabajo, cuánto y cuándo se paga, y cómo se aprueba cualquier extra. Puede ser un mensaje de texto que el cliente conteste con «ok». En el ejemplo, un techo de $6,500 hablado de palabra termina pagándose en $5,200 porque el cliente «recuerda» otro precio. Tus $1,300 de diferencia eran casi toda tu ganancia, y las pierdes sin que nadie te haya robado con mala cara.",
+ "datos": [
+  {
+   "dato": "Límite de reclamos en la corte de justicia de Texas (justice court), donde no necesitas abogado",
+   "valor": 20000,
+   "unidad": "$",
+   "fuente": "https://www.txcourts.gov/programs-services/justice-courts/"
+  },
+  {
+   "dato": "Límite de reclamos menores en California para una persona",
+   "valor": 12500,
+   "unidad": "$",
+   "fuente": "https://selfhelp.courts.ca.gov/small-claims-california"
+  },
+  {
+   "dato": "Pagos desde los que un cliente negocio debe reportarte con Forma 1099-NEC (umbral hasta 2025; verifica el cambio para 2026)",
+   "valor": 600,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/forms-pubs/about-form-1099-nec"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ganancia del techo si te pagan lo acordado: 6500 menos 2400 de material menos 2600 de ayudantes",
+   "expresion": "6500-2400-2600",
+   "resultado": 1500
+  },
+  {
+   "descripcion": "Diferencia si el cliente «recuerda» $5,200",
+   "expresion": "6500-5200",
+   "resultado": 1300
+  },
+  {
+   "descripcion": "Ganancia que te queda después de la disputa",
+   "expresion": "6500-1300-2400-2600",
+   "resultado": 200
+  },
+  {
+   "descripcion": "Porcentaje de tu ganancia que se pierde",
+   "expresion": "round(1300/1500*100,2)",
+   "resultado": 86.67
+  },
+  {
+   "descripcion": "Costo de un día extra de trabajo no autorizado por escrito: 3 ayudantes a $200",
+   "expresion": "3*200",
+   "resultado": 600
+  },
+  {
+   "descripcion": "Ganancia total si hubo extra, material extra de $250 y no te lo pagan, sobre los $200 que ya quedaban",
+   "expresion": "200-600-250",
+   "resultado": -650
+  }
+ ],
+ "consejo": "Antes de tocar herramienta, manda un mensaje de texto con tres líneas: 1) qué incluye el trabajo, 2) precio total, anticipo y fecha de pago, 3) todo extra se aprueba por mensaje antes de hacerlo. Pide que contesten «ok». Guarda la captura de pantalla.",
+ "que_no_decir": [
+  "No digas que un trato de palabra no vale ni es legal: sí puede valer, pero es difícil de probar.",
+  "No prometas que con el mensaje ya ganas un pleito.",
+  "No des consejo legal ni cites leyes de un estado como si fueran de todo el país.",
+  "No uses los $6,500 ni los costos como cifras reales ni típicas: son un ejemplo.",
+  "No presentes los límites de reclamos menores como datos verificados hoy: confírmalos antes de grabar.",
+  "No hables de contratos de seguros, cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false,
+ "idea": "Empezar un trabajo sin nada por escrito: las tres cosas que deben quedar anotadas para que te paguen",
+ "gancho_pedido": "Nunca empieces un trabajo sin estas tres líneas por escrito.",
+ "ganchos_recientes": [
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena."
+ ]
+}

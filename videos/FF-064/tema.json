@@ -1,0 +1,145 @@
+{
+ "titulo": "El cheque del techo",
+ "angulo": "Aunque te lesiones trabajando y sí tengas seguro del trabajo, el cheque no es tu sueldo: paga solo unas dos terceras partes (o 70% en Texas), con tope por estado, y a muchos oficios ni los cubre.",
+ "explicacion": "Si te caes del techo y tu patrón sí tiene seguro de compensación, la ley te paga alrededor de dos terceras partes de tu sueldo semanal, y con un tope del estado. En Texas es el 70%. En Florida hay 7 días de espera antes de que empiece el pago. En Texas casi todo patrón puede decidir no tener este seguro, y si cobras por contrato casi nunca estás cubierto. Las cuentas de la casa (renta, troca, comida) siguen llegando completas, aunque el cheque venga recortado. Por eso hace falta un plan para el hueco entre lo que ganabas y lo que te pagan.",
+ "datos": [
+  {
+   "dato": "Porcentaje del sueldo semanal que paga la compensación por incapacidad temporal total en California y Florida (2/3 del sueldo promedio semanal, con tope por estado)",
+   "valor": 66.67,
+   "unidad": "%",
+   "fuente": "https://www.shouselaw.com/ca/workerscomp/benefits/temporary-disability/"
+  },
+  {
+   "dato": "Porcentaje del sueldo semanal que paga Texas por incapacidad temporal (con tope; máximo $1,271 por semana para lesiones de oct. 2025 a sep. 2026)",
+   "valor": 70,
+   "unidad": "%",
+   "fuente": "https://www.nolo.com/legal-encyclopedia/much-workers-compensation-benefits-texas.html"
+  },
+  {
+   "dato": "Tope semanal máximo en Texas para lesiones de oct. 2025 a sep. 2026",
+   "valor": 1271,
+   "unidad": "$",
+   "fuente": "https://www.nolo.com/legal-encyclopedia/much-workers-compensation-benefits-texas.html"
+  },
+  {
+   "dato": "Días de espera antes de cobrar el pago por sueldo en Florida (se pagan después solo si la incapacidad pasa de 21 días)",
+   "valor": 7,
+   "unidad": "días",
+   "fuente": "https://www.esclaw.com/blog/florida-workers-compensation-waiting-period/"
+  },
+  {
+   "dato": "Días de espera en Texas (se pagan después si la incapacidad pasa de 28 días)",
+   "valor": 7,
+   "unidad": "días",
+   "fuente": "https://aihowtoinvest.com/workers-comp/state/texas"
+  },
+  {
+   "dato": "Máximo de semanas de incapacidad temporal en California (dentro de 5 años)",
+   "valor": 104,
+   "unidad": "semanas",
+   "fuente": "https://www.shouselaw.com/ca/workerscomp/benefits/temporary-disability/"
+  },
+  {
+   "dato": "Texas es el único estado donde la mayoría de los patrones privados puede elegir no tener seguro de compensación",
+   "valor": 1,
+   "unidad": "estado",
+   "fuente": "https://bickerstaffins.com/blog/workers-compensation-benefits/"
+  },
+  {
+   "dato": "Trabajadores de techos (roofers) muertos en el trabajo en 2024 (BLS)",
+   "valor": 104,
+   "unidad": "muertes",
+   "fuente": "https://theroofingbrief.com/roofing-safety-fatality-report/"
+  },
+  {
+   "dato": "Tasa de muertes de roofers en 2023, por cada 100,000 trabajadores de tiempo completo (BLS)",
+   "valor": 51.8,
+   "unidad": "por 100,000",
+   "fuente": "https://theroofingbrief.com/roofing-workers-compensation-report/"
+  },
+  {
+   "dato": "Muertes de trabajadores de construcción por caídas, resbalones y tropiezos en 2024 (BLS)",
+   "valor": 389,
+   "unidad": "muertes",
+   "fuente": "https://theroofingbrief.com/roofing-safety-fatality-report/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: roofero que gana $1,200 por semana. Con 2/3, la compensación semanal es:",
+   "expresion": "round(1200*2/3,2)",
+   "resultado": 800.0
+  },
+  {
+   "descripcion": "Hueco semanal con 2/3 (lo que le falta a su sueldo)",
+   "expresion": "round(1200-1200*2/3,2)",
+   "resultado": 400.0
+  },
+  {
+   "descripcion": "Hueco en 12 semanas sin trabajar con 2/3",
+   "expresion": "round((1200-1200*2/3)*12,2)",
+   "resultado": 4800.0
+  },
+  {
+   "descripcion": "Con la regla de Texas (70%), la compensación semanal es:",
+   "expresion": "round(1200*0.70,2)",
+   "resultado": 840.0
+  },
+  {
+   "descripcion": "Hueco semanal en Texas",
+   "expresion": "round(1200-1200*0.70,2)",
+   "resultado": 360.0
+  },
+  {
+   "descripcion": "Hueco en 12 semanas en Texas",
+   "expresion": "round((1200-1200*0.70)*12,2)",
+   "resultado": 4320.0
+  },
+  {
+   "descripcion": "Sueldo que habría ganado en 12 semanas",
+   "expresion": "round(1200*12,2)",
+   "resultado": 14400.0
+  },
+  {
+   "descripcion": "Lo que le pagan en 12 semanas con 2/3",
+   "expresion": "round(1200*2/3*12,2)",
+   "resultado": 9600.0
+  }
+ ],
+ "consejo": "Antes de subirte a un techo, pregunta por escrito si tu patrón tiene seguro de compensación al trabajador y si tú estás cubierto, sobre todo si cobras por contrato o trabajas en Texas. Saca la cuenta: lo que ganas por semana menos lo que te pagarían (2/3 o 70%) es el hueco que tu casa tiene que cubrir. Para ese hueco, y para accidentes o enfermedades que no cuenta como del trabajo, ve un seguro de vida indexado (IUL) con beneficios en vida: permite usar parte del beneficio si te diagnostican una enfermedad crónica, crítica o terminal. Pide a un agente con licencia que te muestre las condiciones exactas.",
+ "que_no_decir": [
+  "No digas que 'no te pagan nada' si te lesionas en el trabajo: si tu patrón tiene seguro, sí te pagan una parte.",
+  "No prometas que el hueco es de exactamente un tercio del cheque neto: los porcentajes son sobre el sueldo bruto semanal y cada estado tiene su tope, y sus reglas varían.",
+  "No digas que todos los estados pagan 2/3: Texas paga 70% y cada estado tiene tope y días de espera distintos.",
+  "No des consejo legal sobre si eres empleado o contratista: solo di que se pregunte y lo confirme por escrito.",
+  "No digas que el IUL paga por una caída o una lesión en el trabajo: su beneficio en vida es por una enfermedad crónica, crítica o terminal, según las condiciones de la póliza.",
+  "No pongas cifras de ahorro, retiro ni de cuánto crece el IUL en este video."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "Caerte en el trabajo: lo que te pagan mientras no puedes trabajar no es tu sueldo completo",
+ "gancho_pedido": "Si te caes del techo, lo que te pagan no es tu sueldo completo.",
+ "ganchos_recientes": [
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena."
+ ]
+}

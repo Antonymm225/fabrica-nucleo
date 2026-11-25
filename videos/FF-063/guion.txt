@@ -1,0 +1,49 @@
+# FF-063 · Finanzas Familiares · EST-01 · Comprar casa vs rentar
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio de hipoteca fija a 30 años (Freddie Mac, semana del 19 de noviembre de 2026; confirmar la cifra vigente) = 7.28 % · https://www.freddiemac.com/pmms
+# Fuente: Precio de casa usado en el ejemplo, cercano a la mediana nacional (supuesto; verificar con NAR) = 400000 $ · https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales
+# Fuente: Renta mensual de una casa comparable usada en el ejemplo (supuesto; verificar con Census/Realtor.com) = 2000 $ · https://www.census.gov/topics/housing.html
+# Fuente: Impuesto de propiedad anual, cerca del promedio nacional (supuesto; verificar con Tax Foundation) = 0.9 % · https://taxfoundation.org/data/all/state/property-taxes-by-state-county/
+# Fuente: Seguro de la casa anual, aproximado (supuesto; verificar con Bankrate) = 2400 $ · https://www.bankrate.com/insurance/homeowners-insurance/average-cost-of-homeowners-insurance/
+# Fuente: Mantenimiento anual, regla común del 1% del valor de la casa (supuesto; verificar con NerdWallet/Bankrate) = 1 % · https://www.nerdwallet.com/article/mortgages/how-much-to-budget-for-home-maintenance
+# Fuente: Seguro hipotecario (PMI) con enganche menor al 20%, aproximado (supuesto; verificar con CFPB) = 0.5 % · https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/
+# Fuente: Costos de cierre del comprador, típicos (supuesto; verificar con CFPB) = 3 % · https://www.consumerfinance.gov/owning-a-home/
+# Fuente: Costos de vender (agentes y otros), típicos (supuesto; verificar con NAR) = 6 % · https://www.nar.realtor/research-and-statistics
+# Fuente: Enganche del ejemplo (5%) = 20000 $ · https://www.consumerfinance.gov/owning-a-home/
+# BLOQUE 1
+Rentar no es *perder* tu dinero.
+A veces, *comprar* sale más caro.
+Al final te digo cuántos *años*
+tienes que quedarte para que *valga la pena*.
+Se llama el *costo real* de ser dueño.
+Rentas una casa por [$2,000|dos mil dólares].
+Comprar la misma cuesta [$400,000|cuatrocientos mil dólares].
+La *hipoteca* sola es de [$2,600|dos mil seiscientos].
+Parece que sales *ganando*, ¿verdad?
+Pero en Estados Unidos, ser dueño trae *más*:
+impuesto de la casa, *seguro*,
+reparaciones y seguro *hipotecario*.
+En total pagas [$3,592|tres mil quinientos noventa y dos] al *mes*.
+Son casi [$1,600|mil seiscientos] *más* que la renta.
+Y aquí viene lo que *nadie* te dice:
+en cinco años, casi todo es *interés*.
+Son más de [$134,000|ciento treinta y cuatro mil] que se van al *banco*.
+Y si vendes, pagas casi [$28,000|veintiocho mil] *extra*.
+Aunque tu casa suba de *precio*,
+ser dueño [5|cinco] años te cuesta unos
+[$40,000|cuarenta mil] *más* que rentar.
+Eso es más de un *año de renta*.
+Ojo: no digo que rentar *siempre* gane.
+Si te quedas muchos años, comprar *sí* funciona.
+Antes de comprar, suma el costo *real*:
+hipoteca, impuesto y seguro de la casa,
+[1%|uno por ciento] al año para *reparaciones*,
+y seguro hipotecario si das poco *enganche*.
+Compara ese total con tu *renta*.
+Ahora sí, los *años* que te dije:
+Si te mudas antes de [5|cinco] a [7|siete] años,
+rentar suele salir más *barato*.
+Ten ahorrado el *enganche* y un colchón,
+y nunca arregles el techo con *tarjeta*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien piensa *comprar casa*.

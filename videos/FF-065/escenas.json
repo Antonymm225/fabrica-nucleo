@@ -1,0 +1,723 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: casa de $350,000, 5% de enganche y costos de cierre del 3%; los ahorros son de ejemplo. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "comprar casa",
+   "contador": "cargos |negociables",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 80,
+     "y": 38,
+     "tam": 20,
+     "en": [
+      0,
+      "comprar"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NEGOCIABLE",
+     "color": "verde",
+     "x": 80,
+     "y": 40,
+     "en": [
+      1,
+      "negociar"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué le digo?",
+     "piensa": true,
+     "cola": 1,
+     "x": 26,
+     "y": 18,
+     "en": [
+      2,
+      "frase"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 76,
+     "tam": 20,
+     "etiqueta": "EL BANCO",
+     "en": [
+      3,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "COSTOS",
+    "CIERRE"
+   ],
+   "en": [
+    4,
+    "costos"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "tu papel",
+   "contador": "papel |del banco",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Loan Estimate",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Cargos del banco",
+       "valor": "A",
+       "en": [
+        5,
+        "banco"
+       ]
+      },
+      {
+       "texto": "Servicios: título",
+       "valor": "C",
+       "en": [
+        5,
+        "papel"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       6,
+       "fija"
+      ],
+      "texto": "¿FIJA?"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      6,
+      "Casi"
+     ],
+     "cambia": {
+      "en": [
+       6,
+       "fija"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "casa |$350,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 20,
+     "tam": 28,
+     "en": [
+      7,
+      "casa"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "5% de enganche",
+     "color": "tinta",
+     "x": 50,
+     "y": 44,
+     "en": [
+      8,
+      "enganche"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$332,500",
+     "etiqueta": "tu préstamo",
+     "color": "principal",
+     "x": 50,
+     "y": 68,
+     "tam": 11,
+     "en": [
+      9,
+      "332,500"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    10
+   ],
+   "capitulo": "el total",
+   "contador": "cierre |casi $10,000",
+   "entrada": "ola",
+   "objeto": "billete",
+   "valor": 9975,
+   "prefijo": "$",
+   "etiqueta": "costos de cierre",
+   "hasta": [
+    11,
+    "10,000"
+   ],
+   "insignia": {
+    "texto": "3% del préstamo",
+    "en": [
+     10,
+     "3%"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "sección a",
+   "contador": "pide |3 ofertas",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 22,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "BANCO 1"
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "BANCO 2",
+     "en": [
+      13,
+      "cargos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "3 ofertas, el mismo día",
+     "color": "principal",
+     "x": 50,
+     "y": 58,
+     "en": [
+      14,
+      "bancos"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      14,
+      "Pide"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "sección a",
+   "contador": "regalas |$800",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "TU BOLSILLO",
+     "en": [
+      15
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "EL BANCO",
+     "en": [
+      16,
+      "diferencia"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 800,
+     "prefijo": "$",
+     "x": 50,
+     "y": 52,
+     "tam": 10,
+     "color": "principal",
+     "etiqueta": "regalas",
+     "en": [
+      16,
+      "diferencia"
+     ],
+     "hasta": [
+      16,
+      "800"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      17,
+      "regalas"
+     ],
+     "hasta": [
+      17,
+      "preguntar"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      17,
+      "Eso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "sección c",
+   "contador": "ahorras |$700",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Sección C: servicios",
+     "en": [
+      18
+     ],
+     "renglones": [
+      {
+       "texto": "Título",
+       "valor": "compara",
+       "en": [
+        19,
+        "título"
+       ]
+      },
+      {
+       "texto": "Cierre",
+       "valor": "compara",
+       "en": [
+        19,
+        "cierre"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       19,
+       "Compara"
+      ],
+      "texto": "¡TÚ ESCOGES!"
+     },
+     "total": {
+      "texto": "Ahorras",
+      "valor": "$700",
+      "en": [
+       20,
+       "700"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      18,
+      "escoges"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "el vendedor",
+   "contador": "ahorro |$1,500",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       22,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$1,500",
+     "color": "verde",
+     "x": 22,
+     "y": 16,
+     "tam": 9,
+     "en": [
+      21,
+      "1,500"
+     ],
+     "sale": [
+      22,
+      "nadie"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      23,
+      "vendedor"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Yo pago una parte",
+     "piensa": false,
+     "cola": -1,
+     "x": 76,
+     "y": 28,
+     "en": [
+      23,
+      "pagar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    25
+   ],
+   "capitulo": "el premio",
+   "contador": "cubre |$5,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$5,000",
+    "etiqueta": "paga el vendedor",
+    "en": [
+     25,
+     "5,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     26,
+     "tocan"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "tu agente",
+   "contador": "antes |de ofertar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "TU AGENTE",
+     "en": [
+      27,
+      "agente"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Puede pagar el vendedor?",
+     "piensa": false,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      27,
+      "pregúntale"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "la frase",
+   "contador": "tu frase |al banco",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       30,
+       "oferta"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Otro banco me cobra menos, ¿puedes igualarlo?",
+     "piensa": false,
+     "cola": -1,
+     "x": 42,
+     "y": 22,
+     "en": [
+      29,
+      "Otro"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 62,
+     "tam": 28,
+     "etiqueta": "EL BANCO",
+     "en": [
+      28,
+      "banco"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "b",
+     "en": [
+      30,
+      "Díselo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "qué hacer",
+   "contador": "revisa |3 días antes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 6,
+     "en": [
+      31
+     ],
+     "items": [
+      {
+       "texto": "Revisa el papel final 3 días antes",
+       "en": [
+        31,
+        "antes"
+       ]
+      },
+      {
+       "texto": "Compáralo renglón por renglón",
+       "en": [
+        32,
+        "renglón"
+       ]
+      },
+      {
+       "texto": "Pregunta cada cargo",
+       "en": [
+        33,
+        "Preguntar"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 30,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 75,
+     "y": 72,
+     "tam": 22,
+     "en": [
+      34,
+      "casa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

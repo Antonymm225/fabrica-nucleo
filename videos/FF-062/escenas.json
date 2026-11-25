@@ -1,0 +1,681 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de mercado estimado de unos $184,820 al año por el trabajo en casa. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 2,
+  "fondo": "rayas",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu esposa",
+   "contador": "sueldo |$0",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "etiqueta": "TU ESPOSA",
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "en": [
+      0,
+      "esposa"
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "todo"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 30,
+     "tam": 28,
+     "en": [
+      0,
+      "cobra"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "c",
+     "en": [
+      0,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "4 COSAS A APUNTAR",
+     "x": 72,
+     "y": 62,
+     "tam": 4.5,
+     "color": "principal",
+     "en": [
+      2,
+      "cuatro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "SUELDO",
+    "OCULTO"
+   ],
+   "en": [
+    4,
+    "sueldo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "su trabajo",
+   "contador": "cheque |$0",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 32,
+     "tam": 30
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 75,
+     "y": 32,
+     "tam": 30,
+     "en": [
+      5,
+      "hijos"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 50,
+     "y": 70,
+     "tam": 24,
+     "en": [
+      6,
+      "cheque"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      6,
+      "quincena"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PARECE GRATIS",
+     "x": 50,
+     "y": 92,
+     "tam": 4.5,
+     "color": "gris",
+     "en": [
+      7,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "su semana",
+   "contador": "horas |100",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "etiqueta": "ELLA",
+     "cara": "preocupado",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1
+    },
+    {
+     "que": "cifra",
+     "texto": "100",
+     "etiqueta": "horas por semana",
+     "x": 50,
+     "y": 36,
+     "tam": 13,
+     "color": "principal",
+     "en": [
+      8,
+      "100"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el sueldo",
+   "contador": "al mes |$15,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Sueldo de mercado",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Horas por semana",
+       "valor": "100",
+       "en": [
+        10
+       ]
+      },
+      {
+       "texto": "Sueldo por año",
+       "valor": "$184,820",
+       "en": [
+        11,
+        "184,820"
+       ]
+      },
+      {
+       "texto": "Sueldo por mes",
+       "valor": "$15,000",
+       "en": [
+        13,
+        "15,000"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       13,
+       "mes"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que falta",
+   "contador": "asegurada |¿ella?",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "piel": 2
+    },
+    {
+     "que": "globo",
+     "texto": "Yo sí tengo seguro",
+     "piensa": false,
+     "cola": -1,
+     "x": 24,
+     "y": 12
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 30,
+     "etiqueta": "ELLA",
+     "cara": "preocupado",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "en": [
+      14,
+      "nadie"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y ella?",
+     "piensa": true,
+     "cola": 1,
+     "x": 80,
+     "y": 34,
+     "en": [
+      15,
+      "asegura"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "si ella falta",
+   "contador": "pagas |todo",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "PAGAS TODO"
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 78,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "TU TRABAJO",
+     "en": [
+      17,
+      "trabajar"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      17,
+      "tú"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 24,
+     "etiqueta": "ELLA",
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1,
+     "cambia": {
+      "en": [
+       19,
+       "cuesta"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "NO ES SU VALOR",
+     "x": 50,
+     "y": 56,
+     "tam": 4.5,
+     "color": "principal",
+     "en": [
+      18,
+      "vale"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "la salida",
+   "contador": "seguro |IUL",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 50,
+     "y": 58,
+     "tam": 34,
+     "etiqueta": "PROTEGIDA"
+    },
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "x": 50,
+     "y": 22,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      20,
+      "IUL"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SEGURO DE VIDA",
+     "x": 50,
+     "y": 90,
+     "tam": 4.5,
+     "color": "tinta",
+     "en": [
+      21,
+      "vida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "tu familia",
+   "contador": "familia |protegida",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$15,000",
+    "etiqueta": "al mes de reemplazo",
+    "en": [
+     22,
+     "dinero"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     22,
+     "familia"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu dinero",
+   "contador": "piso |cero",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 10,
+     "final": 30,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CADA AÑO",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      25,
+      "tuyo"
+     ],
+     "hasta": [
+      26,
+      "cae"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO",
+     "x": 50,
+     "y": 16,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      27,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "cuatro cosas",
+   "contador": "apunta |hoy",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "1. Niñera",
+       "en": [
+        29,
+        "niñera"
+       ]
+      },
+      {
+       "texto": "2. Comida",
+       "en": [
+        29,
+        "comida"
+       ]
+      },
+      {
+       "texto": "3. Limpieza",
+       "en": [
+        29,
+        "limpieza"
+       ]
+      },
+      {
+       "texto": "4. Transporte",
+       "en": [
+        29,
+        "transporte"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 18,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      28,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      30
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "piel": 2
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 55,
+     "tam": 22,
+     "etiqueta": "AL MES",
+     "en": [
+      30,
+      "mes"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuántos años?",
+     "piensa": false,
+     "cola": -1,
+     "x": 26,
+     "y": 14,
+     "en": [
+      31,
+      "cuántos"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 55,
+     "y": 78,
+     "en": [
+      32,
+      "sanos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "tu familia",
+   "contador": "tu familia |protegida",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aplica a tu IUL aquí",
+     "x": 28,
+     "y": 48
+    },
+    {
+     "id": "lk",
+     "que": "texto",
+     "texto": "LINK",
+     "x": 72,
+     "y": 22,
+     "tam": 7,
+     "color": "principal",
+     "en": [
+      34,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "lk",
+     "en": [
+      34,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 68,
+     "tam": 28,
+     "en": [
+      36,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

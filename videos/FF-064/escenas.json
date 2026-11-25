@@ -1,0 +1,696 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: roofero que gana $1,200 por semana y recibe dos terceras partes por incapacidad temporal. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 4,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu sueldo",
+   "contador": "tu sueldo |recortado",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "sueldo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "EL TECHO",
+     "en": [
+      0,
+      "techo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "sueldo recortado",
+     "x": 72,
+     "y": 62,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      1,
+      "sueldo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "la pregunta",
+   "contador": "una |pregunta",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      3
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Tengo una pregunta para ti",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      3,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      4,
+      "patrón"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "HUECO",
+    "CHEQUE"
+   ],
+   "en": [
+    5,
+    "hueco"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ganas |$1,200",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 80,
+     "titulo": "Tu semana de trabajo",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Sueldo por semana",
+       "valor": "$1,200",
+       "en": [
+        6,
+        "1,200"
+       ]
+      },
+      {
+       "texto": "Te caes del techo",
+       "valor": "¡ay!",
+       "en": [
+        7,
+        "caes"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       7,
+       "trabajar"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      6,
+      "ganas"
+     ],
+     "cambia": {
+      "en": [
+       7,
+       "caes"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el cheque",
+   "contador": "te faltan |$400",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 52,
+     "valor": 1200,
+     "max": 1200,
+     "prefijo": "$",
+     "en": [
+      9
+     ],
+     "hasta": [
+      9,
+      "paga"
+     ],
+     "etiqueta": "TU SUELDO"
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 52,
+     "valor": 800,
+     "max": 1200,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      9,
+      "terceras"
+     ],
+     "hasta": [
+      10,
+      "800"
+     ],
+     "etiqueta": "EL SEGURO"
+    },
+    {
+     "que": "cifra",
+     "texto": "-$400",
+     "x": 50,
+     "y": 20,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "te faltan",
+     "en": [
+      11,
+      "400"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "en Texas",
+   "contador": "en |Texas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 94,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "TU PATRÓN"
+    },
+    {
+     "que": "globo",
+     "texto": "Yo decido no tener seguro",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      13,
+      "decidir"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "TEXAS",
+     "x": 72,
+     "y": 46,
+     "tam": 8,
+     "color": "principal",
+     "en": [
+      13,
+      "Texas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 94,
+     "tam": 30,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      14,
+      "ese"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "por contrato",
+   "contador": "por |contrato",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 80,
+     "titulo": "Trabajo por contrato",
+     "en": [
+      15
+     ],
+     "renglones": [
+      {
+       "texto": "Tu trabajo",
+       "valor": "contrato",
+       "en": [
+        15,
+        "contrato"
+       ]
+      },
+      {
+       "texto": "Seguro del patrón",
+       "valor": "¿cubierto?",
+       "en": [
+        16,
+        "cubierto"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       16,
+       "nunca"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "en": [
+      15,
+      "cobras"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 76,
+     "y": 78,
+     "tam": 22,
+     "etiqueta": "7 DÍAS",
+     "en": [
+      17,
+      "Florida"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    18
+   ],
+   "capitulo": "el hueco",
+   "contador": "te faltan |$4,800",
+   "entrada": "destello",
+   "cifra": {
+    "texto": "-$4,800",
+    "etiqueta": "te faltan",
+    "en": [
+     19,
+     "4,800"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "LA RENTA",
+    "en": [
+     20,
+     "renta"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |por escrito",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      22
+     ],
+     "items": [
+      {
+       "texto": "Mándale un mensaje",
+       "en": [
+        22,
+        "mensaje"
+       ]
+      },
+      {
+       "texto": "¿Tengo seguro? ¿Estoy cubierto?",
+       "en": [
+        23,
+        "compensación"
+       ]
+      },
+      {
+       "texto": "Que te responda por escrito",
+       "en": [
+        25,
+        "escrito"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      24,
+      "cubierto"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "si te enfermas",
+   "contador": "si te |enfermas",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "ch",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 25,
+     "y": 45,
+     "tam": 22,
+     "etiqueta": "EL CHEQUE",
+     "en": [
+      27,
+      "cheque"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "ch",
+     "en": [
+      27,
+      "aplica"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 72,
+     "y": 55,
+     "tam": 30,
+     "en": [
+      26,
+      "enfermedad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "en vida",
+   "contador": "beneficios |en vida",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "p",
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 55,
+     "tam": 26,
+     "etiqueta": "TU IUL",
+     "en": [
+      29,
+      "seguro"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "p",
+     "en": [
+      30,
+      "vida"
+     ],
+     "hasta": [
+      31,
+      "terminal"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 50,
+     "y": 20,
+     "tam": 18,
+     "en": [
+      31,
+      "diagnostican"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "es tuyo",
+   "contador": "piso |cero",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "Es mío, lo uso yo",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 16,
+     "en": [
+      32,
+      "parte"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO",
+     "x": 74,
+     "y": 50,
+     "tam": 7,
+     "color": "verde",
+     "en": [
+      33,
+      "piso"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 74,
+     "y": 76,
+     "en": [
+      33,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "tu familia",
+   "contador": "tu |familia",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "link para aplicar",
+     "x": 28,
+     "y": 45,
+     "en": [
+      34
+     ]
+    },
+    {
+     "id": "f",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 58,
+     "tam": 30,
+     "en": [
+      36,
+      "asesor"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "f",
+     "en": [
+      35,
+      "biografía"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

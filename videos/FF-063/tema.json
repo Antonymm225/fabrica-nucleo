@@ -1,0 +1,163 @@
+{
+ "titulo": "Comprar casa no siempre le gana a la renta",
+ "angulo": "El pago de la hipoteca es solo la mitad de lo que cuesta ser dueño, y si vendes en 5 años la casa te sale unos $40,000 más cara que rentar, aunque la casa suba de precio.",
+ "explicacion": "Rentas una casa por $2,000 y compras una igual por $400,000. Tu hipoteca sola es de $2,600, pero ser dueño también trae impuesto de propiedad, seguro de la casa, reparaciones y seguro hipotecario si pusiste poco de enganche. En total pagas unos $3,592 al mes, contra $2,000 de renta. Además, en los primeros 5 años casi todo tu pago es interés, así que solo te sobra una parte pequeña como dinero tuyo. Si vendes pronto, pierdes también los costos de cierre y de venta. Por eso comprar suele salir bien cuando te quedas muchos años, y mal si te mudas pronto.",
+ "datos": [
+  {
+   "dato": "Tasa promedio de hipoteca fija a 30 años (Freddie Mac, semana del 19 de noviembre de 2026; confirmar la cifra vigente)",
+   "valor": 7.28,
+   "unidad": "%",
+   "fuente": "https://www.freddiemac.com/pmms"
+  },
+  {
+   "dato": "Precio de casa usado en el ejemplo, cercano a la mediana nacional (supuesto; verificar con NAR)",
+   "valor": 400000,
+   "unidad": "$",
+   "fuente": "https://www.nar.realtor/research-and-statistics/housing-statistics/existing-home-sales"
+  },
+  {
+   "dato": "Renta mensual de una casa comparable usada en el ejemplo (supuesto; verificar con Census/Realtor.com)",
+   "valor": 2000,
+   "unidad": "$",
+   "fuente": "https://www.census.gov/topics/housing.html"
+  },
+  {
+   "dato": "Impuesto de propiedad anual, cerca del promedio nacional (supuesto; verificar con Tax Foundation)",
+   "valor": 0.9,
+   "unidad": "%",
+   "fuente": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/"
+  },
+  {
+   "dato": "Seguro de la casa anual, aproximado (supuesto; verificar con Bankrate)",
+   "valor": 2400,
+   "unidad": "$",
+   "fuente": "https://www.bankrate.com/insurance/homeowners-insurance/average-cost-of-homeowners-insurance/"
+  },
+  {
+   "dato": "Mantenimiento anual, regla común del 1% del valor de la casa (supuesto; verificar con NerdWallet/Bankrate)",
+   "valor": 1,
+   "unidad": "%",
+   "fuente": "https://www.nerdwallet.com/article/mortgages/how-much-to-budget-for-home-maintenance"
+  },
+  {
+   "dato": "Seguro hipotecario (PMI) con enganche menor al 20%, aproximado (supuesto; verificar con CFPB)",
+   "valor": 0.5,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/"
+  },
+  {
+   "dato": "Costos de cierre del comprador, típicos (supuesto; verificar con CFPB)",
+   "valor": 3,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/owning-a-home/"
+  },
+  {
+   "dato": "Costos de vender (agentes y otros), típicos (supuesto; verificar con NAR)",
+   "valor": 6,
+   "unidad": "%",
+   "fuente": "https://www.nar.realtor/research-and-statistics"
+  },
+  {
+   "dato": "Enganche del ejemplo (5%)",
+   "valor": 20000,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/owning-a-home/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago de hipoteca (capital + interés) de $380,000 a 7.28% por 30 años",
+   "expresion": "round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)",
+   "resultado": 2600.01
+  },
+  {
+   "descripcion": "Pago mensual total de dueño: hipoteca + impuesto $300 + seguro $200 + mantenimiento $333.33 + PMI $158.33",
+   "expresion": "round((round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)+300+200+333.33+158.33),2)",
+   "resultado": 3591.67
+  },
+  {
+   "descripcion": "Lo que paga el dueño en 60 meses (sin enganche ni cierre)",
+   "expresion": "round((round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)+300+200+333.33+158.33)*60,2)",
+   "resultado": 215500.2
+  },
+  {
+   "descripcion": "Lo que todavía debes del préstamo a los 5 años",
+   "expresion": "round((380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12)),2)",
+   "resultado": 358749.88
+  },
+  {
+   "descripcion": "Interés pagado en 5 años",
+   "expresion": "round(round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)*60-(380000-(380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12))),2)",
+   "resultado": 134750.48
+  },
+  {
+   "descripcion": "Precio de la casa a los 5 años si sube 3% al año",
+   "expresion": "round(400000*1.03**5,2)",
+   "resultado": 463709.63
+  },
+  {
+   "descripcion": "Costos de vender (6%) a ese precio",
+   "expresion": "round(400000*1.03**5*0.06,2)",
+   "resultado": 27822.58
+  },
+  {
+   "descripcion": "Dinero que te queda en mano al vender a los 5 años (casa subió 3% al año)",
+   "expresion": "round(400000*1.03**5*0.94-(380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12)),2)",
+   "resultado": 77137.17
+  },
+  {
+   "descripcion": "Costo neto de ser dueño 5 años (pagos + enganche $20,000 + cierre $12,000 - dinero en mano al vender)",
+   "expresion": "round((round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)+300+200+333.33+158.33)*60+20000+12000-(400000*1.03**5*0.94-(380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12))),2)",
+   "resultado": 170363.03
+  },
+  {
+   "descripcion": "Renta total de 5 años si sube 4% cada año desde $2,000",
+   "expresion": "round((2000*12*(1.04**5-1)/0.04),2)",
+   "resultado": 129991.74
+  },
+  {
+   "descripcion": "Diferencia: ser dueño 5 años cuesta más que rentar (casa sube 3% al año)",
+   "expresion": "round(170363.03-129991.74,2)",
+   "resultado": 40371.29
+  },
+  {
+   "descripcion": "Dinero en mano al vender a los 5 años si la casa NO sube de precio",
+   "expresion": "round(400000*0.94-(380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12)),2)",
+   "resultado": 17250.12
+  },
+  {
+   "descripcion": "Costo neto de ser dueño 5 años si la casa NO sube de precio",
+   "expresion": "round((round(380000*(0.0728/12)/(1-(1+0.0728/12)**-360),2)+300+200+333.33+158.33)*60+32000-(400000*0.94-(380000*(1+0.0728/12)**60-(380000*(0.0728/12)/(1-(1+0.0728/12)**-360))*((1+0.0728/12)**60-1)/(0.0728/12))),2)",
+   "resultado": 230250.08
+  },
+  {
+   "descripcion": "Diferencia mensual entre pago de dueño y renta inicial",
+   "expresion": "round(3591.67-2000,2)",
+   "resultado": 1591.67
+  }
+ ],
+ "consejo": "Antes de comprar, suma el costo REAL mensual: hipoteca + impuesto + seguro de la casa + 1% al año para reparaciones + seguro hipotecario si das menos de 20%. Compara ese total con la renta. Si vas a quedarte menos de 5 a 7 años, rentar suele salir más barato. Si compras, ten ahorrado el enganche, el cierre y un colchón para reparaciones, y no uses tarjeta para arreglar el techo.",
+ "que_no_decir": [
+  "Comprar siempre es mala idea",
+  "Rentar siempre es mejor",
+  "La casa seguro sube de precio",
+  "Tirar el dinero (aplica a rentar, y también a comprar mal)",
+  "Los números exactos son para tu caso (son un ejemplo con supuestos)",
+  "Promesas de ahorro garantizado",
+  "No mencionar que ser dueño construye patrimonio a largo plazo: es cierto si te quedas muchos años",
+  "Que el impuesto te devuelve la diferencia (la mayoría usa la deducción estándar y no deduce el interés)"
+ ],
+ "con_iul": false,
+ "idea": "Rentar contra comprar casa: cuándo comprar sale más caro que rentar",
+ "gancho_pedido": "Pagar renta no es tirar el dinero. A veces comprar sale más caro.",
+ "ganchos_recientes": [
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa."
+ ]
+}

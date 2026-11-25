@@ -1,0 +1,711 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: casa de $400,000 con 5% de enganche, hipoteca a 7.28% por 30 años, renta de $2,000 que sube 4% al año y casa que sube 3% al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "renta o compra",
+   "contador": "renta |o compra",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "caro"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 45,
+     "tam": 36,
+     "en": [
+      1,
+      "comprar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "cuántos años",
+   "contador": "años |¿cuántos?",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      2
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 50,
+     "tam": 34,
+     "en": [
+      2,
+      "años"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuántos años?",
+     "piensa": true,
+     "cola": -1,
+     "x": 72,
+     "y": 22,
+     "en": [
+      3,
+      "quedarte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el problema",
+   "contador": "costo |real",
+   "filas": [
+    "COSTO",
+    "REAL"
+   ],
+   "en": [
+    4,
+    "costo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "casa |$400,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 27,
+     "y": 33,
+     "tam": 28,
+     "etiqueta": "RENTA",
+     "en": [
+      5
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "$2,000 al mes",
+     "color": "verde",
+     "x": 27,
+     "y": 66,
+     "en": [
+      5,
+      "2,000"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 73,
+     "y": 33,
+     "tam": 28,
+     "etiqueta": "COMPRA",
+     "en": [
+      6,
+      "Comprar"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "$400,000",
+     "x": 73,
+     "y": 66,
+     "en": [
+      6,
+      "400,000"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Hipoteca $2,600",
+     "color": "gris",
+     "x": 73,
+     "y": 78,
+     "en": [
+      7,
+      "2,600"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "ser dueño",
+   "contador": "ser dueño |trae más",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       9,
+       "más"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      10
+     ],
+     "items": [
+      {
+       "texto": "Impuesto de la casa",
+       "en": [
+        10,
+        "impuesto"
+       ]
+      },
+      {
+       "texto": "Seguro de la casa",
+       "en": [
+        10,
+        "seguro"
+       ]
+      },
+      {
+       "texto": "Reparaciones",
+       "en": [
+        11,
+        "reparaciones"
+       ]
+      },
+      {
+       "texto": "Seguro hipotecario",
+       "en": [
+        11,
+        "hipotecario"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "pago al mes",
+   "contador": "pago al mes |$3,592",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 55,
+     "valor": 2000,
+     "max": 3592,
+     "prefijo": "$",
+     "etiqueta": "RENTA",
+     "en": [
+      12
+     ],
+     "hasta": [
+      12,
+      "total"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 70,
+     "y": 95,
+     "tam": 55,
+     "valor": 3592,
+     "max": 3592,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "DUEÑO",
+     "en": [
+      12,
+      "pagas"
+     ],
+     "hasta": [
+      12,
+      "3,592"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "+$1,600 al mes",
+     "color": "principal",
+     "x": 50,
+     "y": 15,
+     "tam": 5,
+     "en": [
+      13,
+      "1,600"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "el interés",
+   "contador": "interés |$134,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 20,
+     "tam": 30,
+     "etiqueta": "TU PAGO",
+     "en": [
+      14
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 62,
+     "tam": 34,
+     "etiqueta": "EL BANCO",
+     "en": [
+      15,
+      "casi"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      15,
+      "casi"
+     ],
+     "hasta": [
+      16,
+      "banco"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 134000,
+     "prefijo": "$",
+     "x": 30,
+     "y": 72,
+     "tam": 9,
+     "etiqueta": "intereses",
+     "en": [
+      16,
+      "134,000"
+     ],
+     "hasta": [
+      16,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "al vender",
+   "contador": "al vender |-$28,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      17
+     ],
+     "cambia": {
+      "en": [
+       17,
+       "28,000"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "cv",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 38,
+     "tam": 32,
+     "etiqueta": "SE VENDE",
+     "en": [
+      17,
+      "vendes"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "-$28,000",
+     "color": "rojo",
+     "x": 70,
+     "y": 38,
+     "en": [
+      17,
+      "28,000"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "La casa sube de precio",
+     "color": "verde",
+     "x": 70,
+     "y": 74,
+     "en": [
+      18,
+      "suba"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    19
+   ],
+   "capitulo": "el golpe",
+   "contador": "cuesta más |$40,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$40,000",
+    "etiqueta": "más que rentar",
+    "en": [
+     20,
+     "40,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "CARA",
+    "en": [
+     21,
+     "año"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "no siempre",
+   "contador": "si te quedas |muchos años",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 27,
+     "y": 42,
+     "tam": 34,
+     "etiqueta": "MUCHOS AÑOS",
+     "en": [
+      22
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "etiqueta": "TÚ",
+     "en": [
+      22,
+      "digo"
+     ],
+     "cambia": {
+      "en": [
+       23,
+       "funciona"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "check",
+     "x": 28,
+     "y": 78,
+     "en": [
+      23,
+      "funciona"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "suma todo",
+   "contador": "costo real |al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu costo real al mes",
+     "en": [
+      24
+     ],
+     "renglones": [
+      {
+       "texto": "Hipoteca",
+       "valor": "$2,600",
+       "en": [
+        25,
+        "hipoteca"
+       ]
+      },
+      {
+       "texto": "Impuesto + seguro",
+       "valor": "$500",
+       "en": [
+        25,
+        "seguro"
+       ]
+      },
+      {
+       "texto": "Reparaciones",
+       "valor": "1% al año",
+       "en": [
+        26,
+        "reparaciones"
+       ]
+      },
+      {
+       "texto": "Seguro hipotecario",
+       "valor": "extra",
+       "en": [
+        27,
+        "hipotecario"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 3,
+      "en": [
+       27,
+       "enganche"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "los años",
+   "contador": "la regla |5 a 7 años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      28
+     ],
+     "cambia": {
+      "en": [
+       31,
+       "barato"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto pago de verdad?",
+     "piensa": true,
+     "cola": -1,
+     "x": 75,
+     "y": 22,
+     "en": [
+      28,
+      "Compara"
+     ]
+    },
+    {
+     "id": "cal",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 27,
+     "y": 45,
+     "tam": 34,
+     "etiqueta": "MENOS DE 5-7",
+     "en": [
+      29,
+      "años"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "RENTA GANA",
+     "color": "verde",
+     "x": 27,
+     "y": 45,
+     "en": [
+      31,
+      "barato"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "qué hacer",
+   "contador": "ahorra |antes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "cart",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 28,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "COLCHÓN",
+     "en": [
+      32
+     ]
+    },
+    {
+     "que": "check",
+     "x": 28,
+     "y": 75,
+     "en": [
+      32,
+      "enganche"
+     ]
+    },
+    {
+     "id": "tj",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 40,
+     "tam": 30,
+     "en": [
+      33,
+      "arregles"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "tj",
+     "en": [
+      33,
+      "tarjeta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

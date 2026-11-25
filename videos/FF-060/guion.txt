@@ -1,0 +1,42 @@
+# FF-060 · Finanzas Familiares · EST-01 · El saldo que miente
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa de impuesto de trabajo por cuenta propia (Seguro Social y Medicare) sobre la ganancia neta = 15.3 % · https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Parte de la ganancia neta sobre la que se calcula ese impuesto (92.35%) = 92.35 % · https://www.everlance.com/self-employed-tax-glossary/schedule-c-self-employed-taxes-explained-definition
+# Fuente: El IRS pide reportar ganancia o pérdida del negocio en el Schedule C: ingresos menos gastos del negocio, no el saldo del banco = 1 formulario · https://www.everlance.com/self-employed-tax-glossary/schedule-c-self-employed-taxes-explained-definition
+# Fuente: Supuesto del ejemplo: tramo de impuesto sobre la renta de 12% (soltero, ingreso bajo/medio) = 12 % · https://www.irs.gov/filing/federal-income-tax-rates-and-brackets
+# BLOQUE 1
+Si pagas la *comida* con el dinero del negocio,
+no sabes si estás *ganando*.
+Al final te digo el *movimiento*
+que tienes que hacer cada *quincena*.
+Se llama el *saldo falso*.
+Un *roofero* cobra sus trabajos del mes.
+Paga materiales, ayudantes y *gasolina*.
+Y con la *misma cuenta* paga
+[$2,100|dos mil cien] de comida, luz y *celular*.
+Al final del mes, el saldo *subió* [$700|setecientos].
+Y piensa: ando ganando *poquito*.
+Pero su negocio ganó [$2,800|dos mil ochocientos].
+Cuatro veces más de lo que *ve*.
+Y lo peor: con los recibos *revueltos*,
+se te olvidan gastos *reales* del trabajo.
+Hay gastos que no puedes *comprobar*.
+Digamos [$3,000|tres mil dólares] al año.
+Aquí en Estados Unidos, el *IRS*
+te cobra impuesto por lo que ganó *tu negocio*,
+no por lo que dice tu *banco*.
+Por eso pagas casi [$800|ochocientos] *de más*.
+Es más de una *semana* de ganancia.
+Abre una cuenta solo para tu *negocio*.
+Ahí depositas todos tus *cobros*.
+Y pagas solo materiales, *ayudantes* y gasolina.
+Ahora sí, el *movimiento* de cada quincena:
+muévete un *sueldo fijo*
+a tu cuenta de la casa.
+Con ese sueldo pagas la *comida*.
+Lo que queda en el negocio es tu *ganancia*,
+y de ahí *apartas* para impuestos.
+Así tienes los *recibos* en un solo lugar.
+Un *preparador* con licencia te dice cuánto apartar.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *mezcla sus cuentas*.

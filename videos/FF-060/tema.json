@@ -1,0 +1,100 @@
+{
+ "titulo": "El saldo que miente",
+ "angulo": "El saldo de tu cuenta sube y crees que ganas, pero si ahí también pagas la comida, ese saldo no te dice cuánto ganó tu negocio.",
+ "explicacion": "Un roofero cobra $9,000 en el mes y paga $6,200 de materiales, ayudantes y gasolina. También paga $2,100 de comida, luz, celular y compras de la casa con la misma cuenta. Al final del mes el saldo solo subió $700 y piensa: 'ando ganando poquito'. La verdad es que su negocio ganó $2,800, y de eso le toca separar impuesto. Y como los recibos están revueltos, se le olvidan gastos reales del trabajo que no puede comprobar, y paga impuesto de más.",
+ "datos": [
+  {
+   "dato": "Tasa de impuesto de trabajo por cuenta propia (Seguro Social y Medicare) sobre la ganancia neta",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Parte de la ganancia neta sobre la que se calcula ese impuesto (92.35%)",
+   "valor": 92.35,
+   "unidad": "%",
+   "fuente": "https://www.everlance.com/self-employed-tax-glossary/schedule-c-self-employed-taxes-explained-definition"
+  },
+  {
+   "dato": "El IRS pide reportar ganancia o pérdida del negocio en el Schedule C: ingresos menos gastos del negocio, no el saldo del banco",
+   "valor": 1,
+   "unidad": "formulario",
+   "fuente": "https://www.everlance.com/self-employed-tax-glossary/schedule-c-self-employed-taxes-explained-definition"
+  },
+  {
+   "dato": "Supuesto del ejemplo: tramo de impuesto sobre la renta de 12% (soltero, ingreso bajo/medio)",
+   "valor": 12,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que sube el saldo en el mes (saldo final menos inicial de $3,000)",
+   "expresion": "3000+9000-6200-2100-3000",
+   "resultado": 700
+  },
+  {
+   "descripcion": "Ganancia real del negocio en el mes (cobros menos gastos del negocio)",
+   "expresion": "9000-6200",
+   "resultado": 2800
+  },
+  {
+   "descripcion": "Diferencia entre lo que crees ganar (saldo) y lo que ganó el negocio",
+   "expresion": "2800-700",
+   "resultado": 2100
+  },
+  {
+   "descripcion": "Ganancia real del negocio en un año",
+   "expresion": "(9000-6200)*12",
+   "resultado": 33600
+  },
+  {
+   "descripcion": "Impuesto de Seguro Social y Medicare del año sobre esa ganancia",
+   "expresion": "round(33600*0.9235*0.153,2)",
+   "resultado": 4747.53
+  },
+  {
+   "descripcion": "Gastos del trabajo al año que no puedes comprobar por tener recibos mezclados (ej. $250 al mes)",
+   "expresion": "250*12",
+   "resultado": 3000
+  },
+  {
+   "descripcion": "Impuesto de Seguro Social y Medicare de más por esos $3,000 sin comprobar",
+   "expresion": "round(3000*0.9235*0.153,2)",
+   "resultado": 423.89
+  },
+  {
+   "descripcion": "Impuesto sobre la renta de más por esos $3,000 (tramo 12%)",
+   "expresion": "round(3000*0.12,2)",
+   "resultado": 360.0
+  },
+  {
+   "descripcion": "Total de impuesto de más al año por no poder comprobar $3,000 de gastos",
+   "expresion": "round(3000*(0.9235*0.153+0.12),2)",
+   "resultado": 783.89
+  }
+ ],
+ "consejo": "Abre una cuenta de cheques solo para el negocio. Deposita ahí todos los cobros y paga ahí solo materiales, ayudantes y gasolina del trabajo. Cada semana o cada quincena, muévete un sueldo fijo a tu cuenta de la casa. Con ese sueldo pagas la comida y la renta. Lo que queda en la cuenta del negocio es tu ganancia, y de ahí apartas para impuestos. Así sabes cuánto ganas y tienes los recibos en un solo lugar.",
+ "que_no_decir": [
+  "No prometas que separar las cuentas baja tus impuestos automáticamente.",
+  "No digas que el saldo del banco es tu ganancia ni que es igual a tu ingreso.",
+  "No des el 12% como regla para todos: depende de tu ingreso y de tu estado civil.",
+  "No digas que una cuenta de negocio te protege de demandas ni de deudas. Eso depende de si tienes una LLC u otra figura legal.",
+  "No des consejo legal ni fiscal personal: recomienda un preparador de impuestos con licencia.",
+  "No digas que el IRS exige por ley una cuenta de negocio a un trabajador por cuenta propia. Solo la recomienda."
+ ],
+ "con_iul": false,
+ "idea": "Mezclar el dinero del negocio con el de la casa: por qué no sabes si estás ganando",
+ "gancho_pedido": "Si pagas la comida con el dinero del negocio, no sabes si estás ganando.",
+ "ganchos_recientes": [
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer."
+ ]
+}

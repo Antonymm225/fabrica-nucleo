@@ -1,0 +1,47 @@
+# FF-058 · Finanzas Familiares · EST-01 · Las millas que valen dinero
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tarifa estándar del IRS por milla de negocio en 2026 = 72.5 centavos por milla · https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents
+# Fuente: Tarifa estándar del IRS por milla de negocio en 2025 = 70 centavos por milla · https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents
+# Fuente: Impuesto de autoempleo (Seguro Social 12.4% + Medicare 2.9%) = 15.3 % · https://www.irs.gov/taxes/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Parte de la ganancia neta sobre la que se calcula el impuesto de autoempleo = 92.35 % · https://www.irs.gov/forms-pubs/about-schedule-se-form-1040
+# Fuente: Un lugar de trabajo temporal es el que se espera que dure (y dura) un año o menos; el viaje de la casa a ese lugar es deducible si tienes un trabajo o base principal en otro sitio o tu casa es tu base principal = 12 meses · https://www.irs.gov/publications/p463
+# BLOQUE 1
+Cada *milla* que manejas a la obra
+vale dinero, si la *apuntas*.
+Al final te digo las *cuatro cosas*
+que tienes que escribir *cada día*.
+Se llama la *bitácora de millas*.
+Si cobras por contrato
+y tu *troca* es tu herramienta,
+el IRS te deja restar cada *milla*.
+En [2026|dos mil veintiséis] son [72.5|setenta y dos punto cinco] *centavos*.
+Pero ir a tu taller de siempre
+no cuenta. Eso es *ir al trabajo*.
+Ir a una *obra temporal* sí cuenta,
+esa que dura *un año* o menos.
+Y si tu casa es tu *base*,
+con un espacio solo para tu negocio,
+el viaje de ahí a la obra cuenta.
+Un día de obra, ida y vuelta,
+son [$21.75|veintiún dólares con setenta y cinco] que el IRS te deja *restar*.
+Todo el año, son [6,000|seis mil] *millas*.
+Son [$4,350|cuatro mil trescientos cincuenta dólares] menos de *ingreso* con impuesto.
+Pero aquí viene lo que nadie te dice:
+también baja tu impuesto de *autoempleo*.
+En el tramo de [12%|doce por ciento],
+te ahorras unos [$1,100|mil cien dólares] al año.
+Es dinero que ya *trabajaste*
+y se queda en *tu casa*.
+Pero sin *bitácora*, ese dinero se pierde.
+El IRS pide que la apuntes,
+no que la *recuerdes*.
+Ahora sí, las *cuatro cosas* de cada viaje:
+la *fecha*, a dónde fuiste,
+para qué fuiste, y las *millas*.
+Apunta también tu *odómetro* al empezar el año
+y otra vez al *terminarlo*.
+Si dudas si calificas,
+pregúntale a un *preparador de impuestos* con licencia.
+Esto es para quien trabaja *por su cuenta*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien maneja sin *bitácora*.

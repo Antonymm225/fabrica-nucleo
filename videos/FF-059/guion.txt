@@ -1,0 +1,48 @@
+# FF-059 · Finanzas Familiares · EST-01 · Tus hijos no son tu plan de retiro
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje aproximado de adultos en EE. UU. que son 'generación sándwich' (cuidan hijos y apoyan a un padre mayor). NO VERIFICADO en esta sesión: confirmar en Pew antes de usar = 23 % · https://www.pewresearch.org/short-reads/2022/04/08/more-than-half-of-americans-in-their-40s-are-sandwiched-between-an-aging-parent-and-a-young-adult-child/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu *plan de retiro* no pueden ser tus hijos.
+Mantenerte les quita *cientos de miles* de dólares.
+Te enseño la *cuenta* que tu hijo
+nunca se atreve a hacer.
+Y al final, la *cantidad exacta*
+que pones tú al año para *no cargarlos*.
+Se llama el *retiro ajeno*.
+En Estados Unidos, muchos cuentan con sus *hijos*.
+Digamos que tu hijo te da
+quinientos dólares al *mes* durante veinte años.
+Son *seis mil dólares* al año para él,
+y [$120,000|ciento veinte mil dólares] en total.
+Pero mira lo que *él pierde*.
+Ese mismo dinero, en *su retiro*,
+creciendo hasta un [10%|diez por ciento] al año,
+llegaba a más de [$378,000|trescientos setenta y ocho mil].
+Tú recibes *mucho menos* de lo que él pierde.
+Y aquí viene lo que *nadie* te dice:
+si sigue creciendo hasta sus *sesenta y cinco*,
+serían casi *un millón* de dólares.
+La salida es *ahorrar tú*.
+Y puedes ahorrar en un [IUL|a yu el],
+un *seguro de vida indexado*.
+Tu dinero puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*, y es tuyo.
+Ahora sí, la *cantidad exacta* que pones tú:
+[$3,000|tres mil dólares] al *año*.
+Es la *mitad* de lo que él ponía.
+Desde los *treinta* hasta los sesenta,
+pones [$90,000|noventa mil dólares] en total.
+A los sesenta podrías llegar a más de
+[$542,000|quinientos cuarenta y dos mil] para tu *retiro*.
+Depende de *cuándo empieces* y cuánto aportes.
+Así tus hijos ahorran para *su retiro*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cuenta con sus *hijos*.

@@ -1,0 +1,668 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: 30 millas de ida y vuelta, 200 días al año, 72.5 centavos por milla y tramo de 12%; el ahorro real depende de cada caso. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tus millas",
+   "contador": "cada milla |vale",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "apuntas"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 78,
+     "y": 55,
+     "tam": 26,
+     "en": [
+      0,
+      "manejas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 78,
+     "y": 80,
+     "tam": 14,
+     "en": [
+      1,
+      "dinero"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué tengo que apuntar?",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 16,
+     "en": [
+      2,
+      "cuatro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "el nombre",
+   "contador": "bitácora |de millas",
+   "filas": [
+    "MILLAS",
+    "APUNTES"
+   ],
+   "en": [
+    4,
+    "bitácora"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "la tarifa",
+   "contador": "por milla |72.5¢",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Millas de trabajo",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Trabajas por contrato",
+       "valor": "Sí",
+       "en": [
+        5,
+        "contrato"
+       ]
+      },
+      {
+       "texto": "Tu troca es herramienta",
+       "valor": "Sí",
+       "en": [
+        6,
+        "herramienta"
+       ]
+      },
+      {
+       "texto": "Tarifa por milla 2026",
+       "valor": "72.5¢",
+       "en": [
+        8,
+        "72.5"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       8,
+       "centavos"
+      ],
+      "texto": "¡tu dinero!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "qué cuenta",
+   "contador": "obra |temporal",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 28,
+     "y": 33,
+     "tam": 28,
+     "etiqueta": "TALLER FIJO"
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      10,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 33,
+     "tam": 28,
+     "etiqueta": "OBRA TEMPORAL",
+     "en": [
+      11,
+      "obra"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 82,
+     "y": 66,
+     "en": [
+      11,
+      "sí"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       11,
+       "sí"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "tu casa",
+   "contador": "casa |= base",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 36,
+     "tam": 32,
+     "etiqueta": "TU BASE"
+    },
+    {
+     "que": "texto",
+     "texto": "solo para tu negocio",
+     "color": "tinta",
+     "x": 50,
+     "y": 64,
+     "en": [
+      14,
+      "espacio"
+     ]
+    },
+    {
+     "id": "t2",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 75,
+     "y": 36,
+     "tam": 32,
+     "etiqueta": "LA OBRA",
+     "en": [
+      15,
+      "viaje"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "c",
+     "a": "t2",
+     "en": [
+      15,
+      "ahí"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 86,
+     "en": [
+      15,
+      "cuenta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "por día |$21.75",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 70,
+     "y": 28,
+     "tam": 30,
+     "en": [
+      16,
+      "obra"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "$21.75 al día",
+     "color": "principal",
+     "x": 72,
+     "y": 68,
+     "en": [
+      17,
+      "21.75"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    18
+   ],
+   "capitulo": "al año",
+   "contador": "millas |6,000",
+   "entrada": "corte",
+   "objeto": "troca",
+   "valor": 6000,
+   "prefijo": "",
+   "sufijo": " millas",
+   "etiqueta": "de trabajo al año",
+   "hasta": [
+    18,
+    "millas"
+   ],
+   "insignia": {
+    "texto": "= $4,350",
+    "en": [
+     19,
+     "4,350"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "otro ahorro",
+   "contador": "ahorro |unos $1,100",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "gorra"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y hay otro impuesto?",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 15,
+     "en": [
+      20,
+      "aquí"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 74,
+     "y": 52,
+     "tam": 26,
+     "etiqueta": "AUTOEMPLEO",
+     "en": [
+      21,
+      "autoempleo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "tramo de 12%",
+     "color": "principal",
+     "x": 74,
+     "y": 86,
+     "en": [
+      22,
+      "12%"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "UNOS $1,100",
+     "color": "verde",
+     "x": 74,
+     "y": 52,
+     "en": [
+      23,
+      "1,100"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    24
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |unos $1,100",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$1,100",
+    "etiqueta": "unos, al año",
+    "en": [
+     24,
+     "dinero"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     25,
+     "casa"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "la trampa",
+   "contador": "sin |bitácora",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 76,
+     "y": 58,
+     "tam": 24,
+     "en": [
+      26,
+      "dinero"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      26,
+      "pierde"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Yo me acuerdo de todo.",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 14,
+     "en": [
+      27,
+      "apuntes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "qué apuntar",
+   "contador": "cada viaje |4 datos",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "La fecha",
+       "en": [
+        30,
+        "fecha"
+       ]
+      },
+      {
+       "texto": "A dónde fuiste",
+       "en": [
+        30,
+        "dónde"
+       ]
+      },
+      {
+       "texto": "Para qué fuiste",
+       "en": [
+        31,
+        "qué"
+       ]
+      },
+      {
+       "texto": "Las millas",
+       "en": [
+        31,
+        "millas"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "cada año",
+   "contador": "odómetro |al año",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 40,
+     "tam": 28,
+     "etiqueta": "INICIO DEL AÑO"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 40,
+     "tam": 28,
+     "etiqueta": "FIN DEL AÑO",
+     "en": [
+      33,
+      "terminarlo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "odómetro",
+     "color": "principal",
+     "x": 50,
+     "y": 82,
+     "en": [
+      32,
+      "odómetro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "antes de declarar",
+   "contador": "dudas |preparador",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Mi caso califica?",
+     "piensa": false,
+     "cola": -1,
+     "x": 26,
+     "y": 22,
+     "en": [
+      34,
+      "dudas"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "etiqueta": "PREPARADOR",
+     "en": [
+      35,
+      "preparador"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 60,
+     "en": [
+      36,
+      "cuenta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

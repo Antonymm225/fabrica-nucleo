@@ -1,0 +1,108 @@
+{
+ "titulo": "Las millas a la obra que valen dinero",
+ "angulo": "Casi todos creen que manejar al trabajo nunca se deduce, pero si trabajas por tu cuenta y tu casa es tu base de trabajo, o vas a una obra temporal, esas millas sí cuentan, y el IRS te las paga en menos impuestos solo si las apuntaste el mismo día.",
+ "explicacion": "Si cobras por contrato (1099) y tu troca es tu herramienta, el IRS te deja restar una cantidad por cada milla de trabajo: 72.5 centavos en 2026. Ir de tu casa al taller o a la oficina fija de siempre es 'commute' y no cuenta. Pero ir a una obra temporal (que dura un año o menos) sí cuenta. Y si tu casa es tu base de trabajo (con un espacio solo para el negocio, donde haces cotizaciones y papeles), el viaje de ahí a la obra también cuenta. Con 30 millas de ida y vuelta por 200 días son 6,000 millas, o sea $4,350 menos de ingreso para impuestos, y eso baja tanto el impuesto sobre la renta como el de Seguro Social y Medicare. El truco: sin bitácora, ese dinero se pierde, porque el IRS pide que la apuntes y no que la recuerdes.",
+ "datos": [
+  {
+   "dato": "Tarifa estándar del IRS por milla de negocio en 2026",
+   "valor": 72.5,
+   "unidad": "centavos por milla",
+   "fuente": "https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents"
+  },
+  {
+   "dato": "Tarifa estándar del IRS por milla de negocio en 2025",
+   "valor": 70,
+   "unidad": "centavos por milla",
+   "fuente": "https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents"
+  },
+  {
+   "dato": "Impuesto de autoempleo (Seguro Social 12.4% + Medicare 2.9%)",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/taxes/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Parte de la ganancia neta sobre la que se calcula el impuesto de autoempleo",
+   "valor": 92.35,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040"
+  },
+  {
+   "dato": "Un lugar de trabajo temporal es el que se espera que dure (y dura) un año o menos; el viaje de la casa a ese lugar es deducible si tienes un trabajo o base principal en otro sitio o tu casa es tu base principal",
+   "valor": 12,
+   "unidad": "meses",
+   "fuente": "https://www.irs.gov/publications/p463"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Millas al año: 30 millas ida y vuelta x 200 días de trabajo",
+   "expresion": "30*200",
+   "resultado": 6000
+  },
+  {
+   "descripcion": "Deducción por día de trabajo (30 millas x $0.725)",
+   "expresion": "round(30*0.725,2)",
+   "resultado": 21.75
+  },
+  {
+   "descripcion": "Deducción anual con la tarifa 2026 (6,000 millas x $0.725)",
+   "expresion": "round(6000*0.725,2)",
+   "resultado": 4350.0
+  },
+  {
+   "descripcion": "Ahorro aprox. en impuesto de Seguro Social y Medicare (4,350 x 92.35% x 15.3%)",
+   "expresion": "round(4350*0.9235*0.153,2)",
+   "resultado": 614.64
+  },
+  {
+   "descripcion": "Ahorro aprox. en impuesto sobre la renta si estás en el tramo de 12%",
+   "expresion": "round(4350*0.12,2)",
+   "resultado": 522.0
+  },
+  {
+   "descripcion": "Ahorro total aprox. al año en el tramo de 12% (ver nota: es un estimado)",
+   "expresion": "round(4350*0.9235*0.153+4350*0.12,2)",
+   "resultado": 1136.64
+  },
+  {
+   "descripcion": "Ahorro total aprox. al año en el tramo de 22%",
+   "expresion": "round(4350*0.9235*0.153+4350*0.22,2)",
+   "resultado": 1571.64
+  },
+  {
+   "descripcion": "Millas al año si manejas solo 100 días: 30 x 100",
+   "expresion": "30*100",
+   "resultado": 3000
+  },
+  {
+   "descripcion": "Deducción con solo 100 días de obra lejos (3,000 millas x $0.725)",
+   "expresion": "round(3000*0.725,2)",
+   "resultado": 2175.0
+  }
+ ],
+ "consejo": "Si cobras por contrato, empieza hoy una bitácora de millas: usa una app gratis de millas o una libretita en la troca. Cada viaje de trabajo lleva fecha, a dónde fuiste, para qué y las millas. Apunta el odómetro el 1 de enero y el 31 de diciembre. Guarda también una dirección de obra y el contrato o la factura de cada trabajo. Al hacer tus impuestos, usa la tarifa por milla en vez de guardar recibos de gasolina (no puedes usar los dos). Si tienes duda de si tu caso califica (¿tu casa es tu base? ¿la obra es temporal?), pregúntale a un preparador de impuestos con licencia (CPA o EA) antes de declarar.",
+ "que_no_decir": [
+  "No digas que todas las millas al trabajo se deducen: ir de tu casa a un taller u oficina fija es 'commute' y no cuenta.",
+  "No digas que esto aplica a empleados con W-2: el empleado que el patrón no reembolsa no puede deducir sus millas.",
+  "No prometas $1,136 o $4,350 de ahorro: son ejemplos con 30 millas, 200 días y un tramo de 12%; el ahorro real depende de cada persona.",
+  "No digas 'puedes apuntarlas al final del año de memoria': el IRS pide registros hechos en el momento.",
+  "No digas que se puede deducir la tarifa por milla y además la gasolina: la tarifa ya incluye gasolina, desgaste y seguro.",
+  "No uses el ejemplo de $60,000 de contrato, el pago trimestral ni el tema contratista contra empleado de videos anteriores: aquí solo se habla de las millas.",
+  "No lo vendas como 'truco para pagar menos': es una regla legal que solo funciona con bitácora y con un uso real del vehículo para el negocio.",
+  "No des la cifra como 'tu impuesto baja $4,350': lo que baja es tu ingreso con impuesto en $4,350, y el ahorro es solo una parte de eso."
+ ],
+ "con_iul": false,
+ "idea": "Las millas que manejas a la obra con tu troca: cuánto valen en impuestos si las apuntas",
+ "gancho_pedido": "Cada milla que manejas a la obra vale dinero, si la apuntas.",
+ "ganchos_recientes": [
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas"
+ ]
+}

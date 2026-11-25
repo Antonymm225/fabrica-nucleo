@@ -1,0 +1,47 @@
+# FF-057 · Finanzas Familiares · EST-01 · No hay que morirse para usar tu seguro
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Ventana de tiempo que usa la ley federal (IRC §101(g)) para definir enfermedad terminal = 24 meses · https://hansgoldstein.com/life-insurance/living-benefits/accelerated-death-benefit/
+# Fuente: Ventana mínima de enfermedad terminal que permite California (algunas aseguradoras usan 12 o 24 meses) = 6 meses · https://hansgoldstein.com/life-insurance/living-benefits/accelerated-death-benefit/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+No hay que *morirse*
+para usar un *seguro de vida*.
+Y en casa casi nadie lo sabe.
+Al final te digo las *tres preguntas*
+que le haces a tu póliza *por escrito*.
+Se llama *beneficio en vida*.
+Mucha gente cree que el seguro
+solo paga *cuando faltas*.
+Pero muchas pólizas dejan *adelantar* una parte
+si un doctor te diagnostica
+una enfermedad *terminal*, *crónica* o *crítica*.
+Un roofer con póliza de *un cuarto de millón*.
+Se enferma, y su doctor lo *certifica*.
+Si la póliza deja adelantar *la mitad*,
+puede usar [$125,000|ciento veinticinco mil dólares] *en vida*.
+Son *meses de renta* mientras no trabaja.
+Pero aquí viene lo que *nadie* te dice.
+Lo que adelantas se *resta* después
+de lo que recibe tu *familia*.
+A ellos les quedan [$125,000|ciento veinticinco mil dólares].
+Y cada aseguradora pone sus *propias reglas*.
+La ley federal usa [24|veinticuatro] *meses*
+para definir la enfermedad *terminal*.
+Muchos seguros ni lo traen, o lo cobran *aparte*.
+El [IUL|a yu el], un *seguro de vida indexado*,
+puede incluir *beneficios en vida*, según la póliza.
+Es tuyo, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes*. *Piso cero*.
+Ahora sí, las *tres preguntas* para tu póliza:
+Una: ¿qué *enfermedades* cubre?
+Dos: ¿qué *porcentaje* puedo adelantar?
+Tres: ¿cuánto le *quita* a mi familia?
+Pídele las respuestas a tu agente *por escrito*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga un *seguro de vida*.

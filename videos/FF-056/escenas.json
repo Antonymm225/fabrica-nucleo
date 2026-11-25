@@ -1,0 +1,817 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: soltero, ganancia de cuarenta y ocho mil dólares al año, sin hijos ni gastos de negocio; la tasa de la multa la cambia el IRS cada trimestre. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cheque",
+   "contador": "cobras |por contrato",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "multa"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Yo cobro por contrato",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 16,
+     "en": [
+      0,
+      "contrato"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 76,
+     "y": 60,
+     "tam": 24,
+     "etiqueta": "TRES MESES",
+     "en": [
+      1,
+      "tres"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "MULTA",
+     "color": "rojo",
+     "x": 76,
+     "y": 60,
+     "en": [
+      1,
+      "multa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la promesa",
+   "contador": "apartar |cada semana",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 92,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto aparto?",
+     "piensa": true,
+     "cola": -1,
+     "x": 72,
+     "y": 14,
+     "en": [
+      2,
+      "cuánto"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 50,
+     "tam": 22,
+     "etiqueta": "CADA SEMANA",
+     "en": [
+      2,
+      "semana"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EL AÑO PASADO",
+     "color": "principal",
+     "x": 28,
+     "y": 82,
+     "tam": 4.5,
+     "en": [
+      3,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "contador": "pago |trimestral",
+   "filas": [
+    "CUATRO",
+    "PAGOS"
+   ],
+   "en": [
+    4,
+    "trimestral"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "sin retención",
+   "contador": "retención |cero",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       7,
+       "IRS"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 28,
+     "y": 28,
+     "tam": 24,
+     "etiqueta": "TU CHEQUE",
+     "en": [
+      6,
+      "cobras"
+     ]
+    },
+    {
+     "id": "i",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "IRS",
+     "en": [
+      7,
+      "IRS"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "b",
+     "a": "i",
+     "en": [
+      7,
+      "espera"
+     ],
+     "hasta": [
+      7,
+      "mandes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "las fechas",
+   "contador": [
+    {
+     "en": [
+      8
+     ],
+     "texto": "fecha |1 y 2"
+    },
+    {
+     "en": [
+      9
+     ],
+     "texto": "fecha |3 y 4"
+    }
+   ],
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      8
+     ],
+     "items": [
+      {
+       "texto": "15 de abril",
+       "en": [
+        8,
+        "abril"
+       ]
+      },
+      {
+       "texto": "15 de junio",
+       "en": [
+        8,
+        "junio"
+       ]
+      },
+      {
+       "texto": "15 de septiembre",
+       "en": [
+        9,
+        "septiembre"
+       ]
+      },
+      {
+       "texto": "15 de enero",
+       "en": [
+        9,
+        "enero"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 1
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "impuesto |$10,007",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu año por contrato",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Impuesto del año",
+       "valor": "$10,007",
+       "en": [
+        11,
+        "10,007"
+       ]
+      },
+      {
+       "texto": "Multa",
+       "valor": "$466",
+       "en": [
+        13,
+        "466"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       13,
+       "multa"
+      ],
+      "texto": "¡OJO!"
+     },
+     "total": {
+      "texto": "Pagas en abril",
+      "valor": "$10,473",
+      "en": [
+       13,
+       "multa"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 82,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      12,
+      "abril"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "pagas todo |en abril",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 30,
+     "tam": 30,
+     "etiqueta": "TODO EN ABRIL",
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 92,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 3,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       15,
+       "multa"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "MULTA IGUAL",
+     "color": "rojo",
+     "x": 28,
+     "y": 30,
+     "en": [
+      15,
+      "quita"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "cada pago",
+   "contador": "cada pago |$2,502",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 14,
+     "y": 95,
+     "tam": 45,
+     "valor": 2502,
+     "max": 2502,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "ABRIL",
+     "en": [
+      16,
+      "multa"
+     ],
+     "hasta": [
+      17,
+      "2,502"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 38,
+     "y": 95,
+     "tam": 45,
+     "valor": 2502,
+     "max": 2502,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "JUNIO",
+     "en": [
+      16,
+      "interés"
+     ],
+     "hasta": [
+      17,
+      "2,502"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 62,
+     "y": 95,
+     "tam": 45,
+     "valor": 2502,
+     "max": 2502,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "SEPT.",
+     "en": [
+      16,
+      "cada"
+     ],
+     "hasta": [
+      17,
+      "2,502"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 45,
+     "valor": 2502,
+     "max": 2502,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "ENERO",
+     "en": [
+      16,
+      "pago"
+     ],
+     "hasta": [
+      17,
+      "2,502"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "$2,502 CADA UNO",
+     "color": "principal",
+     "x": 50,
+     "y": 20,
+     "tam": 5,
+     "en": [
+      17,
+      "2,502"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    18
+   ],
+   "capitulo": "la salida",
+   "contador": "apartas |$192",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$192",
+    "etiqueta": "cada semana",
+    "en": [
+     19,
+     "192"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "APARTE",
+    "en": [
+     20,
+     "aparte"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      21
+     ],
+     "texto": "paso |1 y 2"
+    },
+    {
+     "en": [
+      22
+     ],
+     "texto": "paso |3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 92,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "cambia": {
+      "en": [
+       23,
+       "IRS"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 30,
+     "y": 28,
+     "tam": 24,
+     "etiqueta": "TU PAGO",
+     "en": [
+      21,
+      "paguen"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PAGO EN LÍNEA",
+     "color": "principal",
+     "x": 74,
+     "y": 40,
+     "tam": 4.5,
+     "en": [
+      22,
+      "línea"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 72,
+     "en": [
+      23,
+      "oficial"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "año pasado",
+   "contador": "salida |extra",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 92,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       27,
+       "multa"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 20,
+     "y": 62,
+     "tam": 24,
+     "etiqueta": "AÑO PASADO",
+     "en": [
+      24,
+      "número"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Pago eso en cuatro",
+     "piensa": false,
+     "cola": 1,
+     "x": 72,
+     "y": 14,
+     "en": [
+      26,
+      "eso"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN MULTA",
+     "color": "verde",
+     "x": 20,
+     "y": 62,
+     "en": [
+      27,
+      "multa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "si no sabes",
+   "contador": "estimado |conservador",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       29,
+       "sabes"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "AUNQUE GANES MÁS",
+     "color": "verde",
+     "x": 50,
+     "y": 50,
+     "tam": 4.5,
+     "en": [
+      28,
+      "ganes"
+     ]
+    },
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      30,
+      "conservador"
+     ],
+     "items": [
+      {
+       "texto": "Haz un estimado conservador",
+       "en": [
+        30,
+        "conservador"
+       ]
+      },
+      {
+       "texto": "Ajústalo cada trimestre",
+       "en": [
+        31,
+        "trimestre"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "poquito a poco",
+   "contador": "cada trimestre |vs abril",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 93,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 3,
+     "etiqueta": "PREPARADOR"
+    },
+    {
+     "que": "globo",
+     "texto": "Te ayudo con tu caso",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      33,
+      "preparador"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 46,
+     "y": 95,
+     "tam": 45,
+     "valor": 2502,
+     "max": 10473,
+     "prefijo": "$",
+     "etiqueta": "CADA TRIMESTRE",
+     "en": [
+      34,
+      "trimestre"
+     ],
+     "hasta": [
+      34,
+      "menos"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 80,
+     "y": 95,
+     "tam": 45,
+     "valor": 10473,
+     "max": 10473,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "ABRIL",
+     "en": [
+      35,
+      "enorme"
+     ],
+     "hasta": [
+      35,
+      "abril"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

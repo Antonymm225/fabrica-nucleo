@@ -1,0 +1,48 @@
+# FF-056 · Finanzas Familiares · EST-01 · Tu propio patrón: el impuesto cada tres meses
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa de interés que el IRS usa para la multa por pago insuficiente de impuesto estimado (trimestre vigente, cambia cada trimestre) = 7 % · https://www.irs.gov/payments/quarterly-interest-rates
+# Fuente: Impuesto de autoempleo (Seguro Social y Medicare) sobre ganancia neta = 15.3 % · https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Parte de la ganancia neta sobre la que se calcula el impuesto de autoempleo = 92.35 % · https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes
+# Fuente: Debes pagar impuesto estimado si esperas deber al menos esta cantidad al declarar = 1000 $ · https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes
+# Fuente: Puerto seguro: porcentaje del impuesto del año actual que evita la multa si lo pagas a tiempo = 90 % · https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes
+# Fuente: Puerto seguro: porcentaje del impuesto total del año pasado que evita la multa (110% si ingreso bruto ajustado de más de $150,000) = 100 % · https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes
+# Fuente: Deducción estándar 2025, soltero (usada en el ejemplo) = 15750 $ · https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill
+# BLOQUE 1
+Si cobras por *contrato* y no apartas
+cada *tres meses*, en abril pagas con *multa*.
+Al final te digo cuánto apartar *cada semana*,
+y el *número del año pasado* que te salva.
+Se llama el *pago trimestral*,
+cuatro pagos al año.
+Cuando cobras por contrato, nadie te quita *impuestos*.
+Aquí el *IRS* espera que tú los mandes.
+[15|quince] de *abril*, [15|quince] de *junio*,
+[15|quince] de *septiembre* y [15|quince] de *enero*.
+Mira cómo queda un *año completo* por contrato.
+Tu impuesto del año: unos [$10,007|diez mil siete dólares].
+Si no apartaste *nada*, en abril llega esa cuenta,
+más unos [$466|cuatrocientos sesenta y seis dólares] de *multa*.
+Y aquí viene lo que *nadie* te dice:
+pagar todo en abril *no quita* la multa.
+La multa es *interés* por cada pago atrasado.
+Eran cuatro pagos de [$2,502|dos mil quinientos dos dólares] cada uno.
+Ahora sí, lo que te prometí:
+aparta unos [$192|ciento noventa y dos dólares] *cada semana*,
+en una cuenta *aparte* solo para impuestos.
+Cada vez que te paguen, aparta *primero*.
+Paga cada trimestre *en línea*,
+en la página oficial del *IRS*.
+Y ahora el *número del año pasado*:
+mira cuánto fue tu *impuesto total* ese año,
+y paga al menos *eso*, repartido en cuatro.
+Así normalmente no hay *multa*,
+aunque este año *ganes más*.
+Si no sabes cuánto vas a ganar,
+haz un estimado *conservador*
+y ajústalo en el siguiente *trimestre*.
+Si tu caso es complicado,
+consulta a un *preparador de impuestos* con licencia.
+Un poquito *cada trimestre* pesa menos
+que una cuenta enorme en *abril*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra por *contrato*.

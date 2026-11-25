@@ -1,0 +1,726 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un roofero cuyo saldo sube $700 mientras su negocio gana $2,800 al mes, con impuesto de renta de 12% (depende de tu caso). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "negocio |y casa",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "ganando"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "cu",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "TU CUENTA",
+     "en": [
+      0,
+      "dinero"
+     ]
+    },
+    {
+     "id": "co",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 64,
+     "tam": 26,
+     "etiqueta": "COMIDA",
+     "en": [
+      0,
+      "comida"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "cu",
+     "a": "co",
+     "en": [
+      1,
+      "sabes"
+     ],
+     "hasta": [
+      1,
+      "ganando"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "al final",
+   "contador": "te digo |un movimiento",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 27,
+     "y": 38,
+     "tam": 28,
+     "etiqueta": "TU NEGOCIO",
+     "en": [
+      2
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 73,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "CADA QUINCENA",
+     "en": [
+      3,
+      "quincena"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿QUÉ MOVIMIENTO?",
+     "x": 50,
+     "y": 78,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      2,
+      "movimiento"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "SALDO",
+    "FALSO"
+   ],
+   "en": [
+    4,
+    "saldo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "un mes |de trabajo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Cuenta del roofero",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Cobros del mes",
+       "valor": "entra",
+       "en": [
+        5,
+        "cobra"
+       ]
+      },
+      {
+       "texto": "Materiales y gasolina",
+       "valor": "sale",
+       "en": [
+        6,
+        "materiales"
+       ]
+      },
+      {
+       "texto": "Comida, luz, celular",
+       "valor": "$2,100",
+       "en": [
+        8,
+        "2,100"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       8,
+       "celular"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      5,
+      "roofero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el saldo",
+   "contador": "saldo |+$700",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       10,
+       "poquito"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "+$700",
+     "x": 70,
+     "y": 58,
+     "tam": 9,
+     "color": "gris",
+     "etiqueta": "el saldo",
+     "en": [
+      9,
+      "subió"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Ando ganando poquito",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      10,
+      "ganando"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "tu negocio",
+   "contador": "ganó |$2,800",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 22,
+     "y": 95,
+     "tam": 50,
+     "valor": 700,
+     "max": 2800,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "LO QUE VES",
+     "en": [
+      11
+     ],
+     "hasta": [
+      11,
+      "negocio"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 78,
+     "y": 95,
+     "tam": 50,
+     "valor": 2800,
+     "max": 2800,
+     "prefijo": "$",
+     "etiqueta": "TU GANANCIA",
+     "en": [
+      11,
+      "ganó"
+     ],
+     "hasta": [
+      11,
+      "2,800"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      11,
+      "Pero"
+     ],
+     "cambia": {
+      "en": [
+       12,
+       "Cuatro"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "los recibos",
+   "contador": "sin comprobar |gastos",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 3,
+     "en": [
+      13
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y el recibo?",
+     "piensa": true,
+     "cola": -1,
+     "x": 26,
+     "y": 14,
+     "en": [
+      14,
+      "olvidan"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 80,
+     "y": 48,
+     "tam": 16,
+     "etiqueta": "SIN RECIBO",
+     "en": [
+      15,
+      "gastos"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 3000,
+     "prefijo": "$",
+     "x": 72,
+     "y": 78,
+     "tam": 8,
+     "etiqueta": "al año",
+     "color": "principal",
+     "en": [
+      16,
+      "Digamos"
+     ],
+     "hasta": [
+      16,
+      "3,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el IRS",
+   "contador": "te cobran |tu ganancia",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "IRS",
+     "x": 50,
+     "y": 12,
+     "tam": 7,
+     "color": "principal"
+    },
+    {
+     "id": "ne",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 27,
+     "y": 48,
+     "tam": 28,
+     "etiqueta": "TU NEGOCIO",
+     "en": [
+      18,
+      "negocio"
+     ]
+    },
+    {
+     "id": "ba",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 73,
+     "y": 48,
+     "tam": 28,
+     "etiqueta": "TU BANCO",
+     "en": [
+      19,
+      "banco"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "ba",
+     "en": [
+      19,
+      "banco"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 27,
+     "y": 84,
+     "en": [
+      18,
+      "negocio"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "de más |casi $800",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$800",
+    "etiqueta": "de impuesto de más",
+    "en": [
+     20,
+     "800"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "DE MÁS",
+    "en": [
+     21,
+     "semana"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "cuenta nueva",
+   "contador": "cuenta |solo negocio",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "ban",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 40,
+     "tam": 32,
+     "etiqueta": "SOLO NEGOCIO",
+     "en": [
+      22,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "yo",
+     "a": "ban",
+     "en": [
+      23,
+      "depositas"
+     ],
+     "hasta": [
+      23,
+      "cobros"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué pagas",
+   "contador": "pagas |solo tres",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 6,
+     "en": [
+      24
+     ],
+     "items": [
+      {
+       "texto": "Materiales",
+       "en": [
+        24,
+        "materiales"
+       ]
+      },
+      {
+       "texto": "Ayudantes",
+       "en": [
+        24,
+        "ayudantes"
+       ]
+      },
+      {
+       "texto": "Gasolina",
+       "en": [
+        24,
+        "gasolina"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      24,
+      "pagas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 80,
+     "tam": 26,
+     "en": [
+      24,
+      "gasolina"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "cada quincena",
+   "contador": "te pagas |un sueldo fijo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "n",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 24,
+     "y": 38,
+     "tam": 28,
+     "etiqueta": "NEGOCIO",
+     "en": [
+      25
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 76,
+     "y": 38,
+     "tam": 28,
+     "etiqueta": "TU CASA",
+     "en": [
+      26,
+      "sueldo"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "n",
+     "a": "c",
+     "en": [
+      26,
+      "fijo"
+     ],
+     "hasta": [
+      27,
+      "casa"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 4,
+     "en": [
+      28,
+      "sueldo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "tu ganancia",
+   "contador": "ganancia |y recibos",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 6,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "Lo que queda es tu ganancia",
+       "en": [
+        29,
+        "ganancia"
+       ]
+      },
+      {
+       "texto": "De ahí apartas impuestos",
+       "en": [
+        30,
+        "apartas"
+       ]
+      },
+      {
+       "texto": "Recibos en un solo lugar",
+       "en": [
+        31,
+        "recibos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      32,
+      "preparador"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    33
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    33,
+    "Sígueme"
+   ],
+   "compartir": [
+    34,
+    "compártelo"
+   ]
+  }
+ ]
+}

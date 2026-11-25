@@ -1,0 +1,92 @@
+{
+ "titulo": "Tus hijos no son tu plan de retiro",
+ "angulo": "Creemos que mantenernos de viejos es una muestra de amor de los hijos, pero lo que les pedimos les quita cientos de miles de dólares de su propio retiro, y ahorrar nosotros cuesta menos de la mitad.",
+ "explicacion": "Muchos papás cuentan con que los hijos los mantengan en la vejez. Pero cada dólar que el hijo te da hoy es un dólar que deja de crecer para su propio retiro. Si tu hijo te da $500 al mes durante 20 años, entrega $120,000, pero pierde unos $378,000 que habría juntado ahorrando ese mismo dinero. En cambio, si tú ahorras $3,000 al año desde los 30 hasta los 60, pones $90,000 y puedes juntar más de $542,000 con un crecimiento de hasta 10% al año. Ahorrar tú es la forma de no cargarlos.",
+ "datos": [
+  {
+   "dato": "Porcentaje aproximado de adultos en EE. UU. que son 'generación sándwich' (cuidan hijos y apoyan a un padre mayor). NO VERIFICADO en esta sesión: confirmar en Pew antes de usar",
+   "valor": 23,
+   "unidad": "%",
+   "fuente": "https://www.pewresearch.org/short-reads/2022/04/08/more-than-half-of-americans-in-their-40s-are-sandwiched-between-an-aging-parent-and-a-young-adult-child/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que pones tú: $3,000 al año de los 30 a los 60 (30 años)",
+   "expresion": "3000*30",
+   "resultado": 90000
+  },
+  {
+   "descripcion": "Lo que juntas a los 60 si aportas $3,000 al inicio de cada año por 30 años al 10% anual",
+   "expresion": "round(3000*((1.1**30-1)/0.1)*1.1,2)",
+   "resultado": 542830.27
+  },
+  {
+   "descripcion": "Lo que le das tu hijo: $500 al mes durante 20 años (de sus 35 a sus 55)",
+   "expresion": "500*12*20",
+   "resultado": 120000
+  },
+  {
+   "descripcion": "Lo que el hijo habría juntado a los 55 si ahorraba esos $6,000 al año, al inicio de cada año por 20 años al 10%",
+   "expresion": "round(6000*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 378015.0
+  },
+  {
+   "descripcion": "Lo que ese mismo dinero seguiría creciendo hasta los 65 sin más aportes (10 años más al 10%)",
+   "expresion": "round(6000*((1.1**20-1)/0.1)*1.1*1.1**10,2)",
+   "resultado": 980473.56
+  },
+  {
+   "descripcion": "Diferencia: lo que pierde el hijo a los 55 menos lo que te dio",
+   "expresion": "round(6000*((1.1**20-1)/0.1)*1.1-500*12*20,2)",
+   "resultado": 258015.0
+  },
+  {
+   "descripcion": "Cuánto menos pones tú ahorrando solo $3,000 al año, comparado con lo que da tu hijo ($6,000 al año)",
+   "expresion": "6000-3000",
+   "resultado": 3000
+  }
+ ],
+ "consejo": "Habla con tus hijos y con tu pareja hoy, no cuando ya estés grande. Decide una cantidad fija que puedas apartar cada mes para tu retiro, aunque sea pequeña, y empieza este mes. Un seguro de vida indexado (IUL) puede ser el lugar donde la apartes: crece hasta 10% al año, nunca baja de cero por el mercado y no tiene tope de dinero acumulado. Pide a un agente con licencia que te muestre los costos y las condiciones por escrito.",
+ "que_no_decir": [
+  "No prometas que vas a ganar 10% todos los años: es el máximo de un año, no el promedio.",
+  "No digas que tus hijos son malos o que no deben ayudarte: el mensaje es no dejarles toda la carga.",
+  "No uses cifras de Pew o de costos de cuidado sin verificarlas en la fuente.",
+  "No digas que el IUL es una inversión en la bolsa ni que es gratis: es un seguro de vida con costos.",
+  "No compares con empezar antes contra empezar después: ese tema ya está en FF-006.",
+  "No repitas los datos de Seguro Social (40%, 2034, renta promedio) de FF-008 y FF-038."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "Contar con que los hijos te mantengan en la vejez: lo que les cuesta a ellos",
+ "gancho_pedido": "Tu plan de retiro no pueden ser tus hijos.",
+ "ganchos_recientes": [
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva.",
+  "No hay que morirse / para usar un seguro de vida. / Y en casa casi nadie lo sabe. / Al final te digo las tres preguntas",
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día."
+ ]
+}

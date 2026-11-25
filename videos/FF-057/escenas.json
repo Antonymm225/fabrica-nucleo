@@ -1,0 +1,718 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: una póliza que permite adelantar la mitad, o sea $125,000 en vida. Cada póliza tiene sus propias reglas. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 3,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu seguro",
+   "contador": "seguro |de vida",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ, VIVO",
+     "cambia": {
+      "en": [
+       2,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "Sin morirte",
+     "color": "principal",
+     "x": 50,
+     "y": 16,
+     "en": [
+      0
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 80,
+     "y": 62,
+     "tam": 22,
+     "giro": 10,
+     "en": [
+      1,
+      "usar"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 20,
+     "y": 62,
+     "tam": 28,
+     "en": [
+      2,
+      "casa"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "tres preguntas",
+   "contador": "preguntas |3",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu póliza",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Pregunta uno",
+       "valor": "?",
+       "en": [
+        3,
+        "tres"
+       ]
+      },
+      {
+       "texto": "Pregunta dos",
+       "valor": "?",
+       "en": [
+        3,
+        "preguntas"
+       ]
+      },
+      {
+       "texto": "Pregunta tres",
+       "valor": "?",
+       "en": [
+        4,
+        "póliza"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       4,
+       "escrito"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "AVANCE",
+    "VIDA"
+   ],
+   "en": [
+    5,
+    "vida"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "lo que crees",
+   "contador": "seguro |de vida",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       8,
+       "Pero"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "El seguro solo paga si muero",
+     "piensa": true,
+     "cola": 1,
+     "x": 70,
+     "y": 24,
+     "en": [
+      6,
+      "seguro"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 26,
+     "y": 48,
+     "tam": 30,
+     "etiqueta": "DESPUÉS",
+     "en": [
+      7,
+      "faltas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 26,
+     "y": 86,
+     "tam": 18,
+     "giro": -8,
+     "en": [
+      8,
+      "adelantar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "póliza |en vida",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "EL ROOFER",
+     "cambia": {
+      "en": [
+       12,
+       "enferma"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "Terminal, crónica o crítica",
+     "color": "principal",
+     "x": 50,
+     "y": 10,
+     "en": [
+      10,
+      "terminal"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 46,
+     "y": 95,
+     "tam": 50,
+     "valor": 125000,
+     "max": 125000,
+     "prefijo": "$",
+     "etiqueta": "TU ADELANTO",
+     "en": [
+      13,
+      "adelantar"
+     ],
+     "hasta": [
+      13,
+      "mitad"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 76,
+     "y": 95,
+     "tam": 50,
+     "valor": 125000,
+     "max": 125000,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "LA OTRA MITAD",
+     "en": [
+      13,
+      "mitad"
+     ],
+     "hasta": [
+      13,
+      "mitad"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    14
+   ],
+   "capitulo": "en vida",
+   "contador": "adelanto |$125,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$125,000",
+    "etiqueta": "en vida",
+    "en": [
+     14,
+     "125,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "LA RENTA",
+    "en": [
+     15,
+     "renta"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "queda |$125,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "en": [
+      16,
+      "Pero"
+     ],
+     "cambia": {
+      "en": [
+       18,
+       "recibe"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "Se resta después",
+     "color": "principal",
+     "x": 50,
+     "y": 10,
+     "en": [
+      17,
+      "resta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 74,
+     "tam": 28,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      18,
+      "familia"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$125,000",
+     "etiqueta": "les quedan",
+     "color": "principal",
+     "x": 50,
+     "y": 34,
+     "tam": 9,
+     "en": [
+      19,
+      "125,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "las reglas",
+   "contador": "cada póliza |distinta",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "Cada una, sus reglas",
+     "color": "principal",
+     "x": 50,
+     "y": 14,
+     "en": [
+      20
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 55,
+     "tam": 30,
+     "etiqueta": "24 MESES",
+     "en": [
+      21,
+      "24"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 58,
+     "tam": 28,
+     "etiqueta": "COSTO EXTRA",
+     "en": [
+      23,
+      "cobran"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "el iul",
+   "contador": "beneficio |en vida",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "h",
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 74,
+     "y": 46,
+     "tam": 32,
+     "etiqueta": "EN VIDA",
+     "en": [
+      25,
+      "beneficios"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "h",
+     "a": "yo",
+     "en": [
+      25,
+      "vida"
+     ],
+     "hasta": [
+      25,
+      "póliza"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "tu dinero",
+   "contador": "crece |hasta 10%",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 20,
+     "final": 100,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      26,
+      "tuyo"
+     ],
+     "hasta": [
+      27,
+      "año"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Piso cero",
+     "color": "verde",
+     "x": 50,
+     "y": 14,
+     "tam": 6,
+     "en": [
+      28,
+      "Piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "las preguntas",
+   "contador": [
+    {
+     "en": [
+      29
+     ],
+     "texto": "preguntas |3"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "pregunta |1 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "pregunta |2 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "pregunta |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "¿Qué enfermedades cubre?",
+       "en": [
+        30,
+        "enfermedades"
+       ]
+      },
+      {
+       "texto": "¿Qué porcentaje puedo adelantar?",
+       "en": [
+        31,
+        "porcentaje"
+       ]
+      },
+      {
+       "texto": "¿Cuánto le quita a mi familia?",
+       "en": [
+        32,
+        "quita"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "por escrito",
+   "contador": "pídelo |por escrito",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 32,
+     "etiqueta": "TÚ",
+     "cara": "neutro",
+     "gorro": "casco"
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 32,
+     "etiqueta": "TU AGENTE",
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 2
+    },
+    {
+     "que": "globo",
+     "texto": "Dame las respuestas por escrito",
+     "cola": 1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      33,
+      "respuestas"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 62,
+     "en": [
+      33,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "da el paso",
+   "contador": "asesor |certificado",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está tu link",
+     "x": 28,
+     "y": 60,
+     "tam": 26
+    },
+    {
+     "id": "lnk",
+     "que": "texto",
+     "texto": "LINK",
+     "color": "principal",
+     "x": 28,
+     "y": 14,
+     "tam": 6,
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lnk",
+     "en": [
+      35,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 60,
+     "tam": 32,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      37,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "titulo": "Tu propio patrón: el impuesto cada 3 meses",
+ "angulo": "Cuando cobras por contrato nadie te retiene impuestos, así que el IRS espera que tú los pagues cada tres meses, y la multa corre aunque pagues todo en abril.",
+ "explicacion": "Si cobras por contrato, nadie te quita impuestos del pago. El IRS espera que los mandes tú en 4 fechas: 15 de abril, 15 de junio, 15 de septiembre y 15 de enero. Si esperas a abril del año siguiente, pagas todo junto y además una multa que es interés sobre cada pago que no hiciste a tiempo. En el ejemplo de $48,000 de ganancia, debes unos $10,007 al año. Si no apartaste nada, en abril llega esa cuenta más unos $466 de multa. La salida es apartar un poco de cada cheque en una cuenta aparte y mandar el pago trimestral en línea. Hay otra salida: pagar al menos lo que fue tu impuesto total del año pasado, repartido en 4 pagos. Así normalmente no hay multa, aunque este año ganes más.",
+ "datos": [
+  {
+   "dato": "Tasa de interés que el IRS usa para la multa por pago insuficiente de impuesto estimado (trimestre vigente, cambia cada trimestre)",
+   "valor": 7,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/payments/quarterly-interest-rates"
+  },
+  {
+   "dato": "Impuesto de autoempleo (Seguro Social y Medicare) sobre ganancia neta",
+   "valor": 15.3,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Parte de la ganancia neta sobre la que se calcula el impuesto de autoempleo",
+   "valor": 92.35,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "dato": "Debes pagar impuesto estimado si esperas deber al menos esta cantidad al declarar",
+   "valor": 1000,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes"
+  },
+  {
+   "dato": "Puerto seguro: porcentaje del impuesto del año actual que evita la multa si lo pagas a tiempo",
+   "valor": 90,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes"
+  },
+  {
+   "dato": "Puerto seguro: porcentaje del impuesto total del año pasado que evita la multa (110% si ingreso bruto ajustado de más de $150,000)",
+   "valor": 100,
+   "unidad": "%",
+   "fuente": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes"
+  },
+  {
+   "dato": "Deducción estándar 2025, soltero (usada en el ejemplo)",
+   "valor": 15750,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Impuesto de autoempleo sobre $48,000 de ganancia neta",
+   "expresion": "round(48000*0.9235*0.153,2)",
+   "resultado": 6782.18
+  },
+  {
+   "descripcion": "Mitad del impuesto de autoempleo, que se deduce del ingreso",
+   "expresion": "round(6782.18/2,2)",
+   "resultado": 3391.09
+  },
+  {
+   "descripcion": "Ingreso sujeto a impuesto sobre la renta (soltero, deducción estándar 2025)",
+   "expresion": "round(48000-3391.09-15750,2)",
+   "resultado": 28858.91
+  },
+  {
+   "descripcion": "Impuesto sobre la renta (10% hasta $11,925 y 12% el resto)",
+   "expresion": "round(11925*0.10+(28858.91-11925)*0.12,2)",
+   "resultado": 3224.57
+  },
+  {
+   "descripcion": "Impuesto total del año",
+   "expresion": "round(6782.18+3224.57,2)",
+   "resultado": 10006.75
+  },
+  {
+   "descripcion": "Pago trimestral",
+   "expresion": "round(10006.75/4,2)",
+   "resultado": 2501.69
+  },
+  {
+   "descripcion": "Multa aproximada si no pagas nada en el año y pagas todo el 15 de abril (7%, días de atraso de cada trimestre: 365, 304, 212 y 90)",
+   "expresion": "round(2501.69*0.07*(365+304+212+90)/365,2)",
+   "resultado": 465.86
+  },
+  {
+   "descripcion": "Total que pagas en abril: impuesto más multa",
+   "expresion": "round(10006.75+465.86,2)",
+   "resultado": 10472.61
+  },
+  {
+   "descripcion": "Para apartar cada mes",
+   "expresion": "round(10006.75/12,2)",
+   "resultado": 833.9
+  },
+  {
+   "descripcion": "Para apartar cada semana",
+   "expresion": "round(10006.75/52,2)",
+   "resultado": 192.44
+  }
+ ],
+ "consejo": "Abre una cuenta de ahorros aparte solo para impuestos. Cada vez que te paguen, aparta de inmediato cerca de 20 a 25 centavos de cada dólar (en el ejemplo, unos $192 por semana). Paga cada trimestre en línea en IRS.gov/payments o con IRS Direct Pay, usando el Formulario 1040-ES para calcular. Para estar tranquilo, mira cuánto fue tu impuesto total del año pasado en tu declaración y paga al menos eso dividido entre 4. Si ganas más de $150,000, paga el 110%. Si tu primer año fue de poca ganancia o no sabes cuánto vas a ganar, haz un estimado conservador y ajústalo en el siguiente trimestre. Si tu situación es complicada, consulta con un preparador de impuestos con licencia (CPA, EA o preparador registrado).",
+ "que_no_decir": [
+  "No prometas que no habrá multa. Solo se evita si pagas a tiempo lo suficiente (puerto seguro) o si debes menos de $1,000.",
+  "No digas que la multa es enorme. En el ejemplo es de unos $466, y lo que pesa es la cuenta de abril de $10,000.",
+  "No digas que 25% o 20% es la cifra exacta. Es una regla práctica y cada persona es distinta (estado, familia, deducciones).",
+  "No digas que pagar tarde en abril evita la multa. Se cobra por cada trimestre que no pagaste a tiempo.",
+  "No des la tasa de 7% como fija. El IRS la cambia cada trimestre.",
+  "No des el ejemplo como asesoría fiscal personal. Los números usan soltero, deducción estándar 2025, sin crédito por hijos ni deducciones por gastos de negocio.",
+  "No repitas el ejemplo de $60,000 y el Seguro Social de FF-005, ni la idea de que el contrato no tiene retiro (FF-045), ni que el papel diga contratista (FF-055).",
+  "No menciones inversiones, seguros, cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false,
+ "idea": "El pago trimestral de impuestos del que cobra por contrato y la multa por no hacerlo",
+ "gancho_pedido": "Si cobras por contrato y no apartas esto cada tres meses, en abril pagas con multa.",
+ "ganchos_recientes": [
+  "El teléfono gratis del plan / es el más caro de la tienda. / Te puede costar más de $1,100 extra. / Antes de firmar, pídele al vendedor un número.",
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis"
+ ]
+}

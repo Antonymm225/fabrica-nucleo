@@ -1,0 +1,67 @@
+{
+ "titulo": "No hay que morirse para usar tu seguro",
+ "angulo": "Casi todos creen que el seguro de vida solo paga cuando mueres, pero muchas pólizas dejan usar parte del dinero en vida si te diagnostican una enfermedad terminal, crónica o crítica.",
+ "explicacion": "Mucha gente cree que el seguro de vida es solo para el funeral y para la familia después. Pero muchas pólizas traen beneficios en vida: si un doctor certifica una enfermedad terminal, crónica o crítica, puedes adelantar una parte del beneficio. La ley federal usa una ventana de 24 meses para la enfermedad terminal, y esos pagos generalmente no cuentan como ingreso. Cada aseguradora define sus reglas y su porcentaje, así que hay que leer la póliza antes de contar con eso. El dinero que usas en vida se resta de lo que recibe tu familia después.",
+ "datos": [
+  {
+   "dato": "Ventana de tiempo que usa la ley federal (IRC §101(g)) para definir enfermedad terminal",
+   "valor": 24,
+   "unidad": "meses",
+   "fuente": "https://hansgoldstein.com/life-insurance/living-benefits/accelerated-death-benefit/"
+  },
+  {
+   "dato": "Ventana mínima de enfermedad terminal que permite California (algunas aseguradoras usan 12 o 24 meses)",
+   "valor": 6,
+   "unidad": "meses",
+   "fuente": "https://hansgoldstein.com/life-insurance/living-benefits/accelerated-death-benefit/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "EJEMPLO HIPOTÉTICO: parte que se adelanta de una póliza de $250,000 si la aseguradora permite el 50%",
+   "expresion": "250000*0.5",
+   "resultado": 125000.0
+  },
+  {
+   "descripcion": "EJEMPLO HIPOTÉTICO: lo que queda para la familia después de usar ese adelanto",
+   "expresion": "250000-250000*0.5",
+   "resultado": 125000.0
+  }
+ ],
+ "consejo": "Revisa tu póliza, o pregúntale a tu agente por escrito, si tiene beneficios en vida. Pregunta qué enfermedades cubre, qué porcentaje puedes adelantar, si tiene costo extra y cómo afecta lo que recibe tu familia. Si aún no tienes seguro, compara pólizas que incluyan este beneficio.",
+ "que_no_decir": [
+  "Que todos los seguros de vida tienen beneficios en vida: muchos no los traen o los cobran aparte.",
+  "Que el pago nunca paga impuestos: la enfermedad crítica puede ser gravable si no cumple las definiciones.",
+  "Que puedes usar el 100% del seguro en vida: normalmente es solo una parte.",
+  "Que te cubre cualquier enfermedad: cada póliza define cuáles y con qué condiciones.",
+  "Promesas de rendimiento o de cuánto crece el dinero del IUL en este video.",
+  "Cifras de enfermedad o estadísticas que no estén verificadas en fuente oficial."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "El seguro de vida no solo paga cuando mueres: se puede usar parte en vida por enfermedad",
+ "gancho_pedido": "No hay que morirse para usar un seguro de vida.",
+ "ganchos_recientes": [
+  "Cuando alguien se enferma en casa, / dejan de cobrar dos. / El enfermo, y el que lo cuida. / Y nadie suma ese segundo sueldo.",
+  "Aquí, notario no significa lo mismo / que en tu país. / Allá es casi un abogado. / Aquí solo confirma que firmaste.",
+  "Un trabajo de verdad / nunca te cobra por empezar. / Al final te digo las siete palabras / que hacen huir al estafador.",
+  "El Seguro Social te espera / hasta los 67. Tus rodillas, no. / Al final te digo cuánto juntas / ahorrando cada mes hasta los 58.",
+  "Cuando te despiden o renuncias, / tu patrón tiene una fecha límite para pagarte. / Él la sabe. Tú, casi nunca. / Al final te digo el mensaje de dos líneas",
+  "Mandar a alguien a descansar a su tierra / es una cuenta aparte del funeral de aquí. / Al final te digo las dos preguntas / que tienes que hacer hoy, antes de necesitarlas.",
+  "Si tu patrón te dice a qué hora llegas, / tal vez no eres contratista. / Aunque el papel que firmaste diga que sí. / Al final te digo el formulario gratis",
+  "Si cobras por contrato y no apartas / cada tres meses, en abril pagas con multa. / Al final te digo cuánto apartar cada semana, / y el número del año pasado que te salva."
+ ]
+}

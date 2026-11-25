@@ -1,0 +1,50 @@
+# FF-067 · Finanzas Familiares · EST-01 · La casa de allá no te paga cada mes
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de hogares hispanos en EE.UU. con cuenta de retiro (2022, Encuesta de Finanzas del Consumidor de la Reserva Federal) = 33 % · https://nahrep.org/downloads/2024-SHWR-Annual-Report.pdf
+# Fuente: Pago promedio mensual de Seguro Social a jubilados (junio 2025, según datos de la SSA) = 2005.05 $ · https://www.northwesternmutual.com/life-and-money/average-social-security-check/
+# Fuente: Remesas de inmigrantes a México por año, con las que muchos construyen casas (más de $20 mil millones) = 20000000000 $ · https://www.bibliovault.org/BV.landing.epl?ISBN=9780226202952
+# Fuente: El acuerdo de totalización del Seguro Social con México se firmó en 2004 y no está en vigor (consultado a marzo de 2026) = 2004 año de firma · https://www.taxesforexpats.com/country-guides/mexico/us-mexico-tax-treaty.html
+# Fuente: Estudio sobre migrantes mexicanos que construyen casas pensando en retirarse allá = 1 estudio · https://doi.org/10.1177/01979183231170812
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+La casa que construiste *allá*
+no te manda ni un *dólar* al mes.
+Y muchos la hicieron para el *retiro*.
+Al final te digo la *cantidad exacta*
+que tienes que apartar cada *año*.
+Se llama *ingreso cero*.
+Una casa es un lugar para *vivir*.
+Si no la rentas ni la vendes,
+te deposita [$0|cero dólares] cada mes,
+y aun así hay que *mantenerla*.
+Pero aquí viene lo que *nadie* te dice.
+El acuerdo del *Seguro Social* con México
+se firmó en [2004|dos mil cuatro],
+y todavía *no está en vigor*.
+O sea, no cuentes con que esos años
+de trabajo aquí se sumen *allá*.
+Y en *Estados Unidos*, solo [1|uno] de cada [3|tres]
+hogares hispanos tiene *cuenta de retiro*.
+Para muchos, la casa es el *único plan*.
+Sigue con tu casa, es tu *sueño*.
+Pero no la cuentes como tu *ingreso*.
+Una opción que sí crece es el [IUL|a yu el],
+un *seguro de vida indexado*.
+Es *tuyo*, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde*: tiene *piso cero*.
+Ahora sí, la *cantidad exacta*:
+[$3,600|tres mil seiscientos dólares] al año, si empiezas a los cuarenta.
+Hasta el retiro, pones [$90,000|noventa mil dólares]
+de tu *bolsillo*. El resto sería *crecimiento*.
+Y podrías llegar a tener
+unos [$389,000|trescientos ochenta y nueve mil dólares] para tu *retiro*.
+Depende de *cuándo* empieces.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien construye su casa *allá*.

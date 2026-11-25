@@ -1,0 +1,51 @@
+# FF-069 · Finanzas Familiares · EST-01 · Los doce años que le faltan a tu hijo
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Gasto anual promedio por hijo en una familia de ingreso medio, casada y con dos hijos (USDA, datos 2015, sin inflación) = 12980 $ · https://www.usda.gov/about-usda/news/blog/cost-raising-child
+# Fuente: Costo total de criar a un hijo nacido en 2015 desde el nacimiento hasta los 17 años, ingreso medio (sin universidad) = 233610 $ · https://www.usda.gov/about-usda/news/press-releases/2017/01/09/families-projected-spend-average-233610-raising-child-born-2015
+# Fuente: El mismo costo total con inflación proyectada = 284570 $ · https://www.usda.gov/about-usda/news/blog/cost-raising-child
+# Fuente: Porcentaje del gasto por hijo que se va en vivienda (el renglón más grande) = 29 % · https://www.usda.gov/about-usda/news/blog/cost-raising-child
+# Fuente: Porcentaje del gasto por hijo que se va en comida (segundo renglón) = 18 % · https://www.usda.gov/about-usda/news/blog/cost-raising-child
+# Fuente: Los gastos suben con la edad: los adolescentes de 15 a 17 años cuestan en promedio $900 más al año = 900 $ · https://www.usda.gov/about-usda/news/blog/cost-raising-child
+# Fuente: Beneficio mensual promedio de un hijo que recibe Seguro Social por la muerte de un padre (septiembre 2024) = 1100 $ · https://www.ssa.gov/marketing/assets/materials/benefits-children-after-death-of-a-parent.pdf
+# Fuente: Beneficio mensual promedio de todos los niños que reciben Seguro Social (diciembre 2024) = 863 $ · https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.html
+# Fuente: El hijo recibe el 75% del beneficio base del trabajador fallecido = 75 % · https://www.ssa.gov/pubs/EN-05-10084.pdf
+# Fuente: El tope familiar del Seguro Social va de 150% a 180% del beneficio del fallecido; todos los familiares se reparten ese tope = 150 % · https://www.ssa.gov/pubs/EN-05-10084.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu hijo tiene [6|seis] años.
+Le faltan [12|doce] de comida, ropa y escuela.
+Y esos años siguen llegando *cada mes*,
+aunque tú ya no estés para pagarlos.
+Al final te digo el *número exacto*
+que tu familia necesitaría *cada mes*.
+Se llama la *cuenta de lo que falta*.
+En promedio, un hijo cuesta [$12,980|doce mil novecientos ochenta dólares] al *año*.
+Casi [30%|treinta por ciento] se va en la *casa*.
+Son [12|doce] años, o sea [144|ciento cuarenta y cuatro] *meses*.
+Eso suma unos [$155,760|ciento cincuenta y cinco mil setecientos sesenta] por *un solo hijo*.
+Y esa cuenta no incluye la *universidad*.
+Pero aquí viene lo que *nadie* te dice:
+los *adolescentes* cuestan [$900|novecientos dólares] más al año.
+El *Seguro Social* sí puede ayudar a tus hijos,
+si tú tenías *créditos* de trabajo.
+Pero paga solo el [75%|setenta y cinco por ciento] de lo tuyo,
+y se reparte entre *todos* tus hijos.
+El *promedio* es [$1,100|mil cien dólares] al mes,
+y eso no siempre cubre *la casa*
+ni el sueldo que *dejaste de traer*.
+Existe el [IUL|a yu el], un *seguro de vida indexado*.
+Puede dejar un dinero pensado para *esos años*.
+Es *tuyo* y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Ahora sí, el *número exacto*:
+unos [$1,080|mil ochenta dólares] al mes por *cada hijo*,
+multiplicado por los *años que le faltan*.
+Haz la cuenta hoy, *hijo por hijo*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene hijos *pequeños*.

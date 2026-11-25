@@ -1,0 +1,80 @@
+{
+ "titulo": "Préstamo a un familiar: con papel o sin papel",
+ "angulo": "Si le prestas a un familiar y no te paga, el IRS casi no te devuelve nada: un préstamo sin papel se trata como regalo, y aun con papel solo puedes deducir $3,000 al año.",
+ "explicacion": "Prestarle a un hermano o a un primo parece un favor sencillo, pero si no paga, la pérdida es tuya. El IRS no te deja deducir un regalo, y un préstamo de palabra sin pagos ni fechas se parece mucho a un regalo. Aunque tengas un papel firmado, la deuda tiene que quedar totalmente incobrable para deducirla. Entonces cuenta como pérdida de capital a corto plazo, y solo restas $3,000 al año de tus ingresos. En un préstamo de $8,000, aun en el mejor caso, el ahorro en impuestos sería de unos $960 (con una tasa del 12%), y pierdes los otros $7,040. Por eso la salida es práctica: presta solo lo que puedas regalar, ponlo por escrito con monto, pago mensual y fecha, y recibe los pagos por un medio que deje registro.",
+ "datos": [
+  {
+   "dato": "Un préstamo familiar sin papel ni pagos puede tratarse como regalo, y un regalo no se deduce como deuda mala (Pub. 550 del IRS). Una deuda incobrable solo se deduce si es totalmente incobrable, y se reporta como pérdida de capital a corto plazo.",
+   "valor": 3000,
+   "unidad": "$ (límite anual de pérdida de capital que puedes restar de ingresos ordinarios; el resto pasa a años siguientes)",
+   "fuente": "https://www.irs.gov/publications/p550"
+  },
+  {
+   "dato": "Exclusión anual de regalos por persona en 2025: si perdonas o regalas más de esto a una sola persona, tienes que presentar el Formulario 709",
+   "valor": 19000,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/instructions/i709"
+  },
+  {
+   "dato": "El IRS publica cada mes las tasas federales aplicables (AFR) que se usan como referencia para préstamos con intereses bajos o sin intereses entre familiares. Por eso conviene tener un papel y no improvisar.",
+   "valor": 3.03,
+   "unidad": "% (tasa ajustada AFR, referencia de septiembre 2025)",
+   "fuente": "https://www.irs.gov/pub/irs-drop/rr-25-17.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Meses para recuperar un préstamo de $8,000 si te pagan $200 al mes",
+   "expresion": "8000/200",
+   "resultado": 40
+  },
+  {
+   "descripcion": "Años para deducir $8,000 perdidos al ritmo de $3,000 al año (3,000 + 3,000 + 2,000)",
+   "expresion": "round(8000/3000, 2)",
+   "resultado": 2.67
+  },
+  {
+   "descripcion": "Ahorro en impuestos si deduces los $8,000 a una tasa del 12% (mejor caso, con papel y deuda totalmente incobrable)",
+   "expresion": "round(8000*0.12, 2)",
+   "resultado": 960.0
+  },
+  {
+   "descripcion": "Dinero que pierdes de verdad aun en el mejor caso",
+   "expresion": "round(8000-8000*0.12, 2)",
+   "resultado": 7040.0
+  },
+  {
+   "descripcion": "Ahorro de impuestos del primer año con el tope de $3,000 al 12%",
+   "expresion": "round(3000*0.12, 2)",
+   "resultado": 360.0
+  },
+  {
+   "descripcion": "Pago mensual de un préstamo de $5,000 a 25 meses sin intereses, para ponerlo en el papel",
+   "expresion": "round(5000/25, 2)",
+   "resultado": 200.0
+  }
+ ],
+ "consejo": "Antes de prestar, hazte una pregunta: ¿puedo perder esta cantidad completa sin que se me caiga la renta? Si no, presta menos. Si sí, ponlo por escrito en una hoja con la fecha, el monto, el pago mensual, el día de pago y las firmas de los dos. Recibe los pagos por transferencia o Zelle, no en efectivo, para que quede registro. Si el préstamo pasa de $10,000, habla con un preparador de impuestos (CPA o EA) por las reglas de intereses del IRS. Y si ya sabes que no te lo van a devolver, mejor llámalo regalo desde el inicio y deja el trato claro.",
+ "que_no_decir": [
+  "No decir que el préstamo se deduce de los impuestos: no se deduce si no hay papel, y con papel solo hasta $3,000 al año y si la deuda quedó totalmente incobrable.",
+  "No prometer que con un papel firmado te van a pagar o que el IRS te devuelve el dinero.",
+  "No decir que el IRS exige cobrar intereses en cualquier préstamo familiar: eso depende del monto y del caso.",
+  "No dar asesoría legal ni de impuestos personalizada: recomendar un preparador de impuestos.",
+  "No sugerir demandar al familiar como salida principal.",
+  "No hablar mal de pedir prestado en familia: el mensaje es hacerlo claro, no dejar de ayudar.",
+  "No repetir cifras ni ejemplos de videos anteriores (Seguro Social, tarjetas, troca)."
+ ],
+ "con_iul": false,
+ "idea": "Prestarle dinero a un familiar: cómo hacerlo para no perder el dinero ni la relación",
+ "gancho_pedido": "Prestarle a un familiar te puede costar el dinero y el familiar.",
+ "ganchos_recientes": [
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta"
+ ]
+}

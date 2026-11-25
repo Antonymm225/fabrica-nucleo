@@ -1,0 +1,693 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo a un familiar con pagos de $200 al mes y una deducción a tasa del 12% en el mejor caso. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu familiar",
+   "contador": "préstamo |de palabra",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "perder"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TU FAMILIAR",
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      0,
+      "familiar"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 50,
+     "y": 45,
+     "tam": 26,
+     "en": [
+      1,
+      "dinero"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      2,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "antes de prestar",
+   "contador": "la |pregunta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál es la pregunta?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 25,
+     "en": [
+      3,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "LA RENTA",
+     "en": [
+      3,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "SIN",
+    "PAPEL"
+   ],
+   "en": [
+    5,
+    "papel"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "préstamo |a tu hermano",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       7,
+       "firmar"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TU HERMANO",
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "en": [
+      6,
+      "hermano"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Me prestas dinero?",
+     "cola": 1,
+     "x": 76,
+     "y": 22,
+     "en": [
+      6,
+      "pide"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 48,
+     "y": 62,
+     "tam": 24,
+     "etiqueta": "40 MESES",
+     "en": [
+      9,
+      "40"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "para el IRS",
+   "contador": "parece |regalo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "FAMILIAR",
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4
+    },
+    {
+     "id": "r",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 66,
+     "y": 38,
+     "tam": 30,
+     "en": [
+      10,
+      "deja"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "REGALO",
+     "color": "rojo",
+     "x": 66,
+     "y": 38,
+     "en": [
+      11,
+      "regalo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "NO SE DEDUCE",
+     "color": "tinta",
+     "x": 66,
+     "y": 68,
+     "tam": 5,
+     "en": [
+      12,
+      "deduce"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "con papel",
+   "contador": "restas |$3,000 al año",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Deuda incobrable",
+     "en": [
+      13
+     ],
+     "renglones": [
+      {
+       "texto": "Con papel firmado",
+       "valor": "Sí",
+       "en": [
+        14,
+        "firmado"
+       ]
+      },
+      {
+       "texto": "Restas al año",
+       "valor": "$3,000",
+       "en": [
+        15,
+        "3,000"
+       ]
+      },
+      {
+       "texto": "Si es incobrable",
+       "valor": "Solo así",
+       "en": [
+        16,
+        "incobrable"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       15,
+       "año"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "en": [
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "el mejor caso",
+   "contador": "ahorras |$960",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 55,
+     "valor": 960,
+     "max": 7040,
+     "prefijo": "$",
+     "etiqueta": "AHORRAS",
+     "en": [
+      17,
+      "mejor"
+     ],
+     "hasta": [
+      18,
+      "960"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 55,
+     "valor": 7040,
+     "max": 7040,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "PIERDES",
+     "en": [
+      19,
+      "pierdes"
+     ],
+     "hasta": [
+      19,
+      "7,040"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$7,040",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$7,040",
+    "etiqueta": "lo que pierdes",
+    "en": [
+     20,
+     "Eso"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "LA RENTA",
+    "en": [
+     20,
+     "renta"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "la pregunta",
+   "contador": "la |renta",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       23,
+       "caiga"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Puedo perder todo esto?",
+     "piensa": true,
+     "cola": 1,
+     "x": 70,
+     "y": 25,
+     "en": [
+      22,
+      "perder"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 28,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "LA RENTA",
+     "en": [
+      23,
+      "renta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      25
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      24
+     ],
+     "items": [
+      {
+       "texto": "Si no puedes perderlo, presta menos",
+       "en": [
+        24,
+        "menos"
+       ]
+      },
+      {
+       "texto": "Si sí, ponlo por escrito",
+       "en": [
+        25,
+        "escrito"
+       ]
+      },
+      {
+       "texto": "Monto, pago mensual, fecha, firmas",
+       "en": [
+        26,
+        "firmas"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "el papel",
+   "contador": "pago |$200 al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 27,
+     "y": 32,
+     "tam": 24,
+     "etiqueta": "$200 AL MES",
+     "en": [
+      27,
+      "200"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 73,
+     "y": 32,
+     "tam": 26,
+     "etiqueta": "40 MESES",
+     "en": [
+      28,
+      "40"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "SIN INTERESES",
+     "color": "verde",
+     "x": 50,
+     "y": 75,
+     "tam": 6,
+     "en": [
+      28,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "los pagos",
+   "contador": "recibes |con registro",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 45,
+     "tam": 28,
+     "etiqueta": "TU FAMILIAR",
+     "en": [
+      29
+     ]
+    },
+    {
+     "id": "bk",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 75,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "TU CUENTA",
+     "en": [
+      29,
+      "transferencia"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "bk",
+     "en": [
+      29,
+      "transferencia"
+     ],
+     "hasta": [
+      30,
+      "efectivo"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "REGISTRO",
+     "color": "verde",
+     "x": 75,
+     "y": 45,
+     "en": [
+      30,
+      "registro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "claro",
+   "contador": "tu familia |y tu dinero",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco"
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TU FAMILIAR",
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      31,
+      "sabes"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 50,
+     "y": 35,
+     "tam": 22,
+     "etiqueta": "REGALO",
+     "en": [
+      32,
+      "regalo"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 75,
+     "en": [
+      33,
+      "relación"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

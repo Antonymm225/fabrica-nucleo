@@ -1,0 +1,781 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: mandas $800 al mes por 5 años, el terreno con la casa vale $60,000 y son 4 hijos con partes iguales; la ley cambia por país. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu mamá",
+   "contador": "terreno |de mamá",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      0,
+      "Si"
+     ],
+     "cambia": {
+      "en": [
+       1,
+       "tuya"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 42,
+     "tam": 36,
+     "etiqueta": "TERRENO DE MAMÁ",
+     "en": [
+      0,
+      "terreno"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NO ES TUYA",
+     "color": "rojo",
+     "x": 70,
+     "y": 42,
+     "en": [
+      1,
+      "tuya"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "dos papeles",
+   "contador": "faltan |dos papeles",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       5,
+       "mamá"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué me falta pedir?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      2,
+      "nadie"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "EL PRIMER DÓLAR",
+     "en": [
+      3,
+      "primer"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TERRENO",
+    "AJENO"
+   ],
+   "en": [
+    6,
+    "terreno"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "tus envíos",
+   "contador": "envías |$800 al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "TUS ENVÍOS"
+    },
+    {
+     "id": "h",
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 76,
+     "y": 24,
+     "tam": 26,
+     "etiqueta": "LA OBRA",
+     "en": [
+      7,
+      "mandas"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "h",
+     "en": [
+      7,
+      "mandas"
+     ],
+     "hasta": [
+      8,
+      "obra"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 48000,
+     "prefijo": "$",
+     "x": 50,
+     "y": 58,
+     "tam": 11,
+     "en": [
+      9,
+      "Son"
+     ],
+     "hasta": [
+      9,
+      "48,000"
+     ],
+     "etiqueta": "en la obra"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "la ley",
+   "contador": "artículo |886",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Artículo 886 · México",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Quién hizo la obra",
+       "valor": "EL DUEÑO",
+       "en": [
+        11,
+        "dueño"
+       ]
+      },
+      {
+       "texto": "Quién la pagó",
+       "valor": "EL DUEÑO",
+       "en": [
+        12,
+        "artículo"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       12,
+       "886"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      10,
+      "Pero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "sin prueba",
+   "contador": "sin |papel",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       16,
+       "terreno"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 78,
+     "y": 52,
+     "tam": 30,
+     "etiqueta": "TERRENO DE MAMÁ",
+     "en": [
+      13,
+      "obra"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Yo la pagué!",
+     "piensa": false,
+     "cola": 1,
+     "x": 24,
+     "y": 14,
+     "en": [
+      14,
+      "pruebes"
+     ],
+     "sale": [
+      15,
+      "Sin"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN PAPEL",
+     "color": "rojo",
+     "x": 78,
+     "y": 52,
+     "en": [
+      15,
+      "Sin"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "los hermanos",
+   "contador": "herederos |cuatro",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 95,
+     "tam": 24,
+     "etiqueta": "TÚ",
+     "cara": "preocupado",
+     "gorro": "casco"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 32,
+     "tam": 28,
+     "etiqueta": "LA CASA",
+     "en": [
+      17,
+      "aquí"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 38,
+     "y": 95,
+     "tam": 24,
+     "etiqueta": "HERMANO",
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "piel": 1,
+     "en": [
+      18,
+      "cuatro"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 62,
+     "y": 95,
+     "tam": 24,
+     "etiqueta": "HERMANA",
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 2,
+     "en": [
+      18,
+      "hermanos"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 86,
+     "y": 95,
+     "tam": 24,
+     "etiqueta": "HERMANO",
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 4,
+     "piel": 3,
+     "en": [
+      19,
+      "reparte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "todo vale |$60,000",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Lo que vale todo",
+     "en": [
+      20
+     ],
+     "renglones": [
+      {
+       "texto": "Tu casa",
+       "valor": "$48,000",
+       "en": [
+        20,
+        "casa"
+       ]
+      },
+      {
+       "texto": "Más el terreno",
+       "valor": "SUMA",
+       "en": [
+        20,
+        "terreno"
+       ]
+      }
+     ],
+     "total": {
+      "texto": "Todo junto",
+      "valor": "$60,000",
+      "en": [
+       21,
+       "60,000"
+      ]
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      20,
+      "Digamos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "tu parte",
+   "contador": "tu parte |$15,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 95,
+     "tam": 28,
+     "etiqueta": "TÚ",
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       23,
+       "48,000"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "torre",
+     "x": 42,
+     "y": 95,
+     "tam": 52,
+     "valor": 15000,
+     "max": 48000,
+     "color": "gris",
+     "etiqueta": "TU PARTE",
+     "en": [
+      22,
+      "toca"
+     ],
+     "hasta": [
+      22,
+      "15,000"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 80,
+     "y": 95,
+     "tam": 52,
+     "valor": 48000,
+     "max": 48000,
+     "etiqueta": "LO QUE PUSISTE",
+     "en": [
+      23,
+      "pusiste"
+     ],
+     "hasta": [
+      23,
+      "48,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    24
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pierdes |$33,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$33,000",
+    "etiqueta": "lo que pierdes",
+    "en": [
+     24,
+     "33,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "¿TUYA?",
+    "en": [
+     25,
+     "mandaste"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "no es ella",
+   "contador": "la ley |mira papel",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TU MAMÁ",
+     "cara": "feliz",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 1
+    },
+    {
+     "que": "globo",
+     "texto": "Hijo, yo no te quito nada.",
+     "piensa": false,
+     "cola": 1,
+     "x": 25,
+     "y": 20,
+     "en": [
+      27,
+      "quiere"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LA LEY MIRA EL PAPEL",
+     "color": "principal",
+     "tam": 5,
+     "x": 70,
+     "y": 52,
+     "en": [
+      28,
+      "ley"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      29
+     ],
+     "items": [
+      {
+       "texto": "Escritura a tu nombre",
+       "en": [
+        30,
+        "escritura"
+       ]
+      },
+      {
+       "texto": "O donación de tu mamá",
+       "en": [
+        31,
+        "donación"
+       ]
+      },
+      {
+       "texto": "Antes del próximo envío",
+       "en": [
+        32,
+        "Pídelos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "en": [
+      29,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "si no se puede",
+   "contador": "guarda |todo",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 5,
+     "tam": 82,
+     "titulo": "Lo que guardas",
+     "en": [
+      33
+     ],
+     "renglones": [
+      {
+       "texto": "Recibos de envíos",
+       "valor": "GUARDA",
+       "en": [
+        33,
+        "todos"
+       ]
+      },
+      {
+       "texto": "Recibos de materiales",
+       "valor": "GUARDA",
+       "en": [
+        33,
+        "recibos"
+       ]
+      },
+      {
+       "texto": "Contrato por escrito",
+       "valor": "FIRMA",
+       "en": [
+        34,
+        "contrato"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       34,
+       "pagas"
+      ],
+      "texto": "¡CLAVE!"
+     }
+    },
+    {
+     "id": "a",
+     "que": "persona",
+     "x": 26,
+     "y": 95,
+     "tam": 22,
+     "etiqueta": "ABOGADO DE ALLÁ",
+     "cara": "feliz",
+     "gorro": "nada",
+     "ropa": 4,
+     "en": [
+      35,
+      "abogado"
+     ]
+    },
+    {
+     "id": "n",
+     "que": "persona",
+     "x": 74,
+     "y": 95,
+     "tam": 22,
+     "etiqueta": "NOTARIO DE AQUÍ",
+     "cara": "neutro",
+     "gorro": "nada",
+     "ropa": 1,
+     "piel": 2,
+     "en": [
+      36,
+      "notario"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "n",
+     "en": [
+      36,
+      "aquí"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

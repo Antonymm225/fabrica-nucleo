@@ -1,0 +1,76 @@
+{
+ "titulo": "El riesgo que nadie menciona de la tanda",
+ "angulo": "La tanda no cobra intereses, pero el riesgo está en el turno: quien cobra al final presta su dinero sin papel, sin seguro y sin nadie a quien reclamar.",
+ "explicacion": "En una tanda todos ponen la misma cantidad y se turnan para llevarse el total. No hay intereses y casi no hay costo, por eso parece segura. El problema es que funciona solo por confianza. Quien cobra primero ya tiene su dinero, y quien cobra al final es el que más arriesga. Si alguien se sale o el organizador desaparece, no hay contrato ni ley que te devuelva lo que pusiste. Los bancos aseguran tus depósitos, pero esa protección no cubre fraude ni robo, y la tanda ni siquiera es un banco.",
+ "datos": [
+  {
+   "dato": "Estudio con 12 mexicoamericanos en EE.UU.: los riesgos que mencionan son confiar en otros, perder dinero por incumplimiento o robo, y la obligación con el grupo",
+   "valor": 12,
+   "unidad": "personas entrevistadas",
+   "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10242226/"
+  },
+  {
+   "dato": "Si un miembro de una tanda (ROSCA) deja de pagar, no hay recurso legal; solo presión social",
+   "valor": 0,
+   "unidad": "recursos legales",
+   "fuente": "https://www.supermoney.com/encyclopedia/rotating-savings-and-credit-association"
+  },
+  {
+   "dato": "Participar en una tanda no garantiza que se reporte a los burós de crédito (el CFPB explica que los acreedores no están obligados a reportar a todos)",
+   "valor": 0,
+   "unidad": "garantía de historial de crédito",
+   "fuente": "https://ryanoconnellfinance.com/rotating-savings-credit-associations/"
+  },
+  {
+   "dato": "La protección FDIC no cubre fraude ni robo del dinero que junta un organizador (según la OCC, citada en la fuente)",
+   "valor": 0,
+   "unidad": "$ protegidos por FDIC en una tanda",
+   "fuente": "https://ryanoconnellfinance.com/rotating-savings-credit-associations/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: tanda de 10 personas con $200 por semana. Lo que recibe quien cobra (la 'mano')",
+   "expresion": "200*10",
+   "resultado": 2000
+  },
+  {
+   "descripcion": "Lo que pone la persona del turno 10 antes de recibir su mano (9 semanas)",
+   "expresion": "200*9",
+   "resultado": 1800
+  },
+  {
+   "descripcion": "Si el organizador desaparece en la semana 5, lo que ya puso cada persona de los turnos 6 a 10 sin haber cobrado",
+   "expresion": "200*5",
+   "resultado": 1000
+  },
+  {
+   "descripcion": "Dinero perdido por las 5 personas que aún no habían cobrado",
+   "expresion": "5*1000",
+   "resultado": 5000
+  }
+ ],
+ "consejo": "Antes de entrar, hazte tres preguntas. ¿Conozco bien al organizador? ¿Puedo perder lo que pondré sin que me quiebre? ¿Pagamos por un medio que deja registro? Pide la lista escrita de turnos, fechas y montos. Si puedes, escoge un turno temprano, y nunca pongas más de lo que puedas perder. Para el ahorro de fondo, haz tu propia 'tanda' con transferencia automática semanal a una cuenta de ahorros en tu nombre, en un banco asegurado. Así no dependes de nadie y el dinero sigue siendo tuyo.",
+ "que_no_decir": [
+  "No digas que la tanda es una estafa. Es una costumbre con valor cultural y de confianza.",
+  "No prometas que una cuenta de banco siempre rinde más. No tengo la tasa actual verificada.",
+  "No digas que la tanda construye crédito. No está garantizado.",
+  "No digas que la tanda es ilegal. No lo afirman las fuentes.",
+  "No uses el ejemplo de $200 por semana como un caso real. Es ilustrativo.",
+  "No repitas cifras de otros videos (pago mínimo, 72 meses, $19.50, etc.).",
+  "No recomiendes cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false,
+ "idea": "La tanda: no cobra intereses, pero tiene riesgos que nadie menciona",
+ "gancho_pedido": "La tanda no te cobra intereses, pero tiene un riesgo que nadie menciona.",
+ "ganchos_recientes": [
+  "Cada milla que manejas a la obra / vale dinero, si la apuntas. / Al final te digo las cuatro cosas / que tienes que escribir cada día.",
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo."
+ ]
+}

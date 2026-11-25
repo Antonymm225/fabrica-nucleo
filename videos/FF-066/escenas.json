@@ -1,0 +1,719 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: tanda de 10 personas donde todas ponen lo mismo cada semana; es un caso ilustrativo, no real. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "la tanda",
+   "contador": "interés |cero",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       1,
+       "riesgo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 72,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "SIN INTERÉS",
+     "en": [
+      0,
+      "intereses"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "RIESGO",
+     "color": "rojo",
+     "x": 72,
+     "y": 40,
+     "en": [
+      1,
+      "riesgo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "tu turno",
+   "contador": "tu turno |¿cuál?",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 27,
+     "y": 38,
+     "tam": 30,
+     "etiqueta": "TU TURNO",
+     "en": [
+      3,
+      "digo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "TRES PREGUNTAS",
+     "color": "principal",
+     "x": 72,
+     "y": 38,
+     "en": [
+      4,
+      "tres"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "en": [
+      3,
+      "turno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "contador": "la tanda |riesgo",
+   "filas": [
+    "RIESGO",
+    "TURNO"
+   ],
+   "en": [
+    5,
+    "riesgo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "tanda |$2,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tanda semanal",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Personas",
+       "valor": "10",
+       "en": [
+        6,
+        "10"
+       ]
+      },
+      {
+       "texto": "Cada una pone",
+       "valor": "IGUAL",
+       "en": [
+        7,
+        "mismo"
+       ]
+      },
+      {
+       "texto": "Quien cobra recibe",
+       "valor": "$2,000",
+       "en": [
+        8,
+        "2,000"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      8,
+      "lleva"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "parece bien",
+   "contador": "confianza |sin papel",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       12,
+       "problema"
+      ],
+      "cara": "preocupado"
+     },
+     "en": [
+      9,
+      "Suena"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Sin intereses!",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 20,
+     "en": [
+      10,
+      "interés"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 72,
+     "y": 55,
+     "tam": 26,
+     "etiqueta": "CONFIANZA",
+     "en": [
+      11,
+      "confianza"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PROBLEMA",
+     "color": "rojo",
+     "x": 72,
+     "y": 55,
+     "en": [
+      12,
+      "problema"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "sin red",
+   "contador": "contrato |ninguno",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu tanda",
+     "en": [
+      13
+     ],
+     "renglones": [
+      {
+       "texto": "Contrato",
+       "valor": "NO",
+       "en": [
+        13,
+        "contrato"
+       ]
+      },
+      {
+       "texto": "Papel firmado",
+       "valor": "NO",
+       "en": [
+        13,
+        "papel"
+       ]
+      },
+      {
+       "texto": "A quién reclamar",
+       "valor": "NADIE",
+       "en": [
+        14,
+        "reclamar"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       14,
+       "reclamar"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "el último turno",
+   "contador": "pone |$1,800",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "ult",
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TURNO DIEZ",
+     "en": [
+      15,
+      "Ahora"
+     ]
+    },
+    {
+     "id": "t",
+     "que": "torre",
+     "x": 45,
+     "y": 95,
+     "tam": 50,
+     "valor": 1800,
+     "max": 1800,
+     "prefijo": "$",
+     "en": [
+      16,
+      "1,800"
+     ],
+     "hasta": [
+      17,
+      "recibir"
+     ]
+    },
+    {
+     "id": "otros",
+     "que": "persona",
+     "x": 80,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "etiqueta": "LOS DEMÁS",
+     "en": [
+      18,
+      "presta"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "t",
+     "a": "otros",
+     "en": [
+      18,
+      "presta"
+     ],
+     "hasta": [
+      18,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "semana |cinco",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "NADIE TE LO DICE",
+     "color": "principal",
+     "x": 50,
+     "y": 18,
+     "tam": 5
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "ORGANIZADOR",
+     "en": [
+      20,
+      "organizador"
+     ],
+     "sale": [
+      20,
+      "semana"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 4,
+     "etiqueta": "SIN COBRAR",
+     "en": [
+      21,
+      "cobraron"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$1,000",
+     "color": "tinta",
+     "x": 47,
+     "y": 50,
+     "tam": 9,
+     "en": [
+      22,
+      "1,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    23
+   ],
+   "capitulo": "lo que se pierde",
+   "contador": "pierden |$5,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$5,000",
+    "etiqueta": "se esfuman",
+    "en": [
+     24,
+     "5,000"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "PERDIDO",
+    "en": [
+     24,
+     "esfuman"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "las preguntas",
+   "contador": "preguntas |tres",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       29,
+       "quiebre"
+      ],
+      "cara": "preocupado"
+     },
+     "en": [
+      26,
+      "Ahora"
+     ]
+    },
+    {
+     "id": "org",
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 1,
+     "etiqueta": "ORGANIZADOR",
+     "en": [
+      27,
+      "organizador"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Lo conozco bien?",
+     "piensa": true,
+     "cola": 1,
+     "x": 78,
+     "y": 25,
+     "en": [
+      27,
+      "organizador"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 50,
+     "y": 68,
+     "tam": 20,
+     "etiqueta": "LO QUE PONES",
+     "en": [
+      28,
+      "perder"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "pide esto",
+   "contador": "por |escrito",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Lista de la tanda",
+     "en": [
+      30
+     ],
+     "renglones": [
+      {
+       "texto": "Pago con registro",
+       "valor": "SÍ",
+       "en": [
+        30,
+        "registro"
+       ]
+      },
+      {
+       "texto": "Turnos y fechas",
+       "valor": "ESCRITO",
+       "en": [
+        31,
+        "turnos"
+       ]
+      },
+      {
+       "texto": "Montos",
+       "valor": "ESCRITO",
+       "en": [
+        31,
+        "montos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "TURNO TEMPRANO",
+     "en": [
+      32,
+      "turno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "tu propia tanda",
+   "contador": "cada |semana",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "TU PAGO",
+     "en": [
+      33,
+      "Para"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 58,
+     "tam": 32,
+     "etiqueta": "A TU NOMBRE",
+     "en": [
+      34,
+      "transferencia"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      34,
+      "automática"
+     ],
+     "hasta": [
+      35,
+      "nombre"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 75,
+     "tam": 24,
+     "etiqueta": "CADA SEMANA",
+     "en": [
+      34,
+      "semana"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    36
+   ],
+   "capitulo": "sin depender",
+   "contador": "tu dinero |sigue tuyo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "en": [
+      36,
+      "Así"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 58,
+     "tam": 30,
+     "en": [
+      37,
+      "dinero"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 22,
+     "en": [
+      37,
+      "tuyo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "titulo": "La casa en el terreno de mamá",
+ "angulo": "Pagas cada ladrillo desde aquí, pero la ley de muchos países presume que lo construido es de quien tiene el terreno a su nombre, no de quien puso el dinero.",
+ "explicacion": "Mandas dinero años para construir en el terreno de tu mamá. En México, por ejemplo, la ley presume que toda obra en un terreno la hizo el dueño del terreno, salvo que pruebes lo contrario. Sin recibos, sin papel y sin escritura a tu nombre, la casa es parte del terreno. Si tu mamá falta y hay varios hermanos, el terreno con la casa se reparte entre todos, y tu parte puede ser mucho menos de lo que pusiste. La salida es arreglar el papel antes de poner el siguiente dólar.",
+ "datos": [
+  {
+   "dato": "Artículo 886 del Código Civil Federal de México: las obras en un terreno se presumen hechas por el dueño del terreno y a su costa, mientras no se pruebe lo contrario (hay que verificar la regla de tu país o estado)",
+   "valor": 886,
+   "unidad": "artículo",
+   "fuente": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Dinero que mandas en 5 años a $800 al mes para construir",
+   "expresion": "800*12*5",
+   "resultado": 48000
+  },
+  {
+   "descripcion": "Valor de casa más terreno si el terreno vale $12,000 (ejemplo hipotético)",
+   "expresion": "48000+12000",
+   "resultado": 60000
+  },
+  {
+   "descripcion": "Tu parte si tu mamá falta sin testamento y son 4 hijos iguales (25%)",
+   "expresion": "60000*0.25",
+   "resultado": 15000
+  },
+  {
+   "descripcion": "Lo que pierdes frente a lo que pusiste (ejemplo)",
+   "expresion": "48000-15000",
+   "resultado": 33000
+  },
+  {
+   "descripcion": "Porcentaje de tu dinero que se pierde",
+   "expresion": "round(33000/48000*100,2)",
+   "resultado": 68.75
+  }
+ ],
+ "consejo": "Antes de mandar otro dólar, pide que el terreno pase a tu nombre con escritura ante notario de tu país, o que tu mamá firme una donación o venta a tu favor. Si no se puede todavía, guarda todos los recibos de lo que mandas y de los materiales, y haz un contrato por escrito que diga que tú pagas la obra. Consulta a un abogado de allá, no al notario de aquí. Antes de comprar materiales, revisa quiénes más son herederos.",
+ "que_no_decir": [
+  "Que la ley es igual en todos los países: cambia por país, estado y tipo de terreno (ejido, comunal, escritura privada).",
+  "Que la casa 'seguro' se pierde: depende de los papeles, la prueba y la buena fe.",
+  "Que tu familia te va a quitar la casa: no acusar a mamá ni a los hermanos.",
+  "Que un papel firmado aquí con un notario de Estados Unidos sirve allá.",
+  "Dar consejo legal como si fuera definitivo: recomendar abogado local.",
+  "Repetir el tema de FF-067 (la casa no paga cada mes) o los números de FF-040."
+ ],
+ "con_iul": false,
+ "idea": "Construir casa en tu país en un terreno que está a nombre de otro familiar",
+ "gancho_pedido": "Si construyes en el terreno de tu mamá, la casa no es tuya.",
+ "ganchos_recientes": [
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos."
+ ]
+}

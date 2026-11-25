@@ -1,0 +1,151 @@
+{
+ "titulo": "Los doce años que le faltan a tu hijo",
+ "angulo": "Casi nadie cuenta cuántos años le faltan a un hijo: a los 6, son 12 años de gastos que siguen llegando cada mes, y el cheque del Seguro Social para hijos es un promedio que no sigue tus cuentas.",
+ "explicacion": "El USDA calcula que una familia de ingreso medio gasta unos $12,980 al año por hijo en comida, casa, ropa y escuela. Si tu hijo tiene 6 años, le faltan 12 años hasta los 18, o sea 144 meses de gastos. Eso suma unos $155,760 por hijo, sin contar la universidad, y con dos hijos pasa de $311,000. El Seguro Social sí puede pagar a los hijos si el padre falta, pero paga un porcentaje (75%) de lo que te tocaba a ti, y hay un tope por familia. Además, solo aplica si el trabajador tenía créditos de Seguro Social. Esa ayuda no siempre cubre la casa ni lo que dejó de entrar. El seguro de vida indexado puede dejar un dinero pensado para esos 12 años.",
+ "datos": [
+  {
+   "dato": "Gasto anual promedio por hijo en una familia de ingreso medio, casada y con dos hijos (USDA, datos 2015, sin inflación)",
+   "valor": 12980,
+   "unidad": "$",
+   "fuente": "https://www.usda.gov/about-usda/news/blog/cost-raising-child"
+  },
+  {
+   "dato": "Costo total de criar a un hijo nacido en 2015 desde el nacimiento hasta los 17 años, ingreso medio (sin universidad)",
+   "valor": 233610,
+   "unidad": "$",
+   "fuente": "https://www.usda.gov/about-usda/news/press-releases/2017/01/09/families-projected-spend-average-233610-raising-child-born-2015"
+  },
+  {
+   "dato": "El mismo costo total con inflación proyectada",
+   "valor": 284570,
+   "unidad": "$",
+   "fuente": "https://www.usda.gov/about-usda/news/blog/cost-raising-child"
+  },
+  {
+   "dato": "Porcentaje del gasto por hijo que se va en vivienda (el renglón más grande)",
+   "valor": 29,
+   "unidad": "%",
+   "fuente": "https://www.usda.gov/about-usda/news/blog/cost-raising-child"
+  },
+  {
+   "dato": "Porcentaje del gasto por hijo que se va en comida (segundo renglón)",
+   "valor": 18,
+   "unidad": "%",
+   "fuente": "https://www.usda.gov/about-usda/news/blog/cost-raising-child"
+  },
+  {
+   "dato": "Los gastos suben con la edad: los adolescentes de 15 a 17 años cuestan en promedio $900 más al año",
+   "valor": 900,
+   "unidad": "$",
+   "fuente": "https://www.usda.gov/about-usda/news/blog/cost-raising-child"
+  },
+  {
+   "dato": "Beneficio mensual promedio de un hijo que recibe Seguro Social por la muerte de un padre (septiembre 2024)",
+   "valor": 1100,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/marketing/assets/materials/benefits-children-after-death-of-a-parent.pdf"
+  },
+  {
+   "dato": "Beneficio mensual promedio de todos los niños que reciben Seguro Social (diciembre 2024)",
+   "valor": 863,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.html"
+  },
+  {
+   "dato": "El hijo recibe el 75% del beneficio base del trabajador fallecido",
+   "valor": 75,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/pubs/EN-05-10084.pdf"
+  },
+  {
+   "dato": "El tope familiar del Seguro Social va de 150% a 180% del beneficio del fallecido; todos los familiares se reparten ese tope",
+   "valor": 150,
+   "unidad": "%",
+   "fuente": "https://www.ssa.gov/pubs/EN-05-10084.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Años que le faltan a un hijo de 6 años para cumplir 18",
+   "expresion": "18-6",
+   "resultado": 12
+  },
+  {
+   "descripcion": "Meses de gastos que le faltan",
+   "expresion": "12*12",
+   "resultado": 144
+  },
+  {
+   "descripcion": "Gasto de 12 años por UN hijo a $12,980 al año (en dólares de 2015, sin inflación ni universidad)",
+   "expresion": "12*12980",
+   "resultado": 155760
+  },
+  {
+   "descripcion": "Gasto mensual promedio por hijo",
+   "expresion": "round(12980/12,2)",
+   "resultado": 1081.67
+  },
+  {
+   "descripcion": "Gasto de 12 años para dos hijos de 6 años",
+   "expresion": "2*12*12980",
+   "resultado": 311520
+  },
+  {
+   "descripcion": "Lo que sumaría el beneficio promedio de niños ($863 al mes) en 144 meses, por un hijo",
+   "expresion": "863*144",
+   "resultado": 124272
+  },
+  {
+   "descripcion": "Diferencia entre el gasto de 12 años por hijo y esos beneficios, solo de gastos del niño (sin contar renta, troca ni el sueldo que dejó de entrar)",
+   "expresion": "155760-124272",
+   "resultado": 31488
+  },
+  {
+   "descripcion": "Porción de los $12,980 al año que se va en vivienda (29%)",
+   "expresion": "round(12980*0.29,2)",
+   "resultado": 3764.2
+  },
+  {
+   "descripcion": "Porción de los $12,980 al año que se va en comida (18%)",
+   "expresion": "round(12980*0.18,2)",
+   "resultado": 2336.4
+  }
+ ],
+ "consejo": "Cuenta los años que le faltan a cada hijo hasta los 18 y multiplica por unos $1,080 al mes por hijo como mínimo. Ese es el piso de dinero que tu familia necesitaría si tú faltas. Luego pregúntale a un agente con licencia cuánto cuesta un seguro de vida indexado que cubra esos años, y revisa en ssa.gov/myaccount si tienes créditos de Seguro Social y qué le tocaría a tus hijos. Haz la cuenta hoy, porque cada año que pasa baja el número de años pero sube el costo mensual del adolescente.",
+ "que_no_decir": [
+  "No decir que el Seguro Social no paga nada a los hijos: sí paga, si el trabajador tenía créditos, y eso hay que reconocerlo.",
+  "No presentar los $155,760 como cifra exacta de hoy: es un promedio del USDA con datos de 2015, de familias de ingreso medio, y no incluye universidad.",
+  "No prometer que el seguro 'cubre todo' ni que el hijo estará 'resuelto'; el seguro deja un monto elegido, no una garantía de cubrir todos los gastos.",
+  "No dar a entender que todas las familias reciben $1,100 por hijo: es un promedio, y el tope familiar se reparte entre todos los beneficiarios.",
+  "No decir que familias sin SSN o sin créditos de Seguro Social recibirán esos beneficios; depende de cada caso.",
+  "No mezclar cifras de retiro ni de cuánto crece el IUL en este video.",
+  "No asustar con la muerte de forma dramática: tono de papá a papá, con cuentas claras."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "Hijos pequeños: cuántos años de comida, ropa y escuela faltan si el que trae el dinero no está",
+ "gancho_pedido": "Tu hijo tiene seis años. Le faltan doce de comida, ropa y escuela.",
+ "ganchos_recientes": [
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta"
+ ]
+}

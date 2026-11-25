@@ -1,0 +1,47 @@
+# FF-066 · Finanzas Familiares · EST-01 · El riesgo de la tanda
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Estudio con 12 mexicoamericanos en EE.UU.: los riesgos que mencionan son confiar en otros, perder dinero por incumplimiento o robo, y la obligación con el grupo = 12 personas entrevistadas · https://pmc.ncbi.nlm.nih.gov/articles/PMC10242226/
+# Fuente: Si un miembro de una tanda (ROSCA) deja de pagar, no hay recurso legal; solo presión social = 0 recursos legales · https://www.supermoney.com/encyclopedia/rotating-savings-and-credit-association
+# Fuente: Participar en una tanda no garantiza que se reporte a los burós de crédito (el CFPB explica que los acreedores no están obligados a reportar a todos) = 0 garantía de historial de crédito · https://ryanoconnellfinance.com/rotating-savings-credit-associations/
+# Fuente: La protección FDIC no cubre fraude ni robo del dinero que junta un organizador (según la OCC, citada en la fuente) = 0 $ protegidos por FDIC en una tanda · https://ryanoconnellfinance.com/rotating-savings-credit-associations/
+# BLOQUE 1
+La tanda no te cobra *intereses*,
+pero tiene un *riesgo* que nadie menciona.
+Le pega al que cobra *al final*.
+Te digo qué *turno* pedir
+y las *tres preguntas* antes de entrar.
+Se llama el *riesgo del turno*.
+Imagina una tanda de [10|diez] personas.
+Todas ponen lo *mismo* cada semana.
+Quien cobra se lleva [$2,000|dos mil dólares].
+Suena *perfecto*, ¿verdad?
+No hay interés y casi *no cuesta*.
+Es una costumbre que vive de *confianza*.
+Y esa *confianza* es el problema.
+No hay contrato, ni *papel*,
+ni nadie a quien *reclamar*.
+Ahora mira al del turno [10|diez].
+Ese pone [$1,800|mil ochocientos dólares]
+antes de recibir *un solo dólar*.
+O sea, le presta a todos *gratis*.
+Y aquí viene lo que *nadie* te dice.
+Si el organizador desaparece en la semana [5|cinco],
+cada uno de los que no cobraron
+ya puso [$1,000|mil dólares].
+Son [5|cinco] personas,
+[$5,000|cinco mil dólares] que *se esfuman*.
+No hay recurso legal, solo *presión social*.
+Ahora sí, las tres *preguntas*:
+¿Conoces bien al *organizador*?
+¿Puedes perder lo que pondrás
+sin que *te quiebre*?
+¿Pagan por un medio con *registro*?
+Pide la lista escrita: *turnos*, fechas y montos.
+Y si puedes, escoge un *turno temprano*.
+Para tu ahorro fuerte, haz tu propia tanda:
+transferencia *automática* cada semana
+a una cuenta *a tu nombre*.
+Así no dependes de nadie,
+y el dinero sigue siendo *tuyo*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien entra a una *tanda*.

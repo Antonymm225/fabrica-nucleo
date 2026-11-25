@@ -1,0 +1,111 @@
+{
+ "titulo": "La casa de allá no te paga cada mes",
+ "angulo": "Construiste la casa para retirarte, pero una casa no te deposita nada cada mes: mientras no la rentes o la vendas, solo te cuesta mantenerla, y tu país no te paga el Seguro Social que ganaste aquí.",
+ "explicacion": "Muchos migrantes construyen su casa en su país pensando en el retiro, y los estudios sobre las 'casas de remesas' lo confirman. Pero una casa es un lugar para vivir, no un ingreso. Si no vives en ella o no la rentas, no te manda ni un dólar al mes, y aun así hay que mantenerla. Además, el acuerdo del Seguro Social entre Estados Unidos y México se firmó en 2004 y sigue sin estar en vigor, así que no cuentes con que esos años de trabajo se sumen allá. Solo 1 de cada 3 hogares hispanos tiene una cuenta de retiro, así que para muchos la casa es el único plan. Lo que aparta $300 al mes desde los 40 y se invierte con crecimiento sí se convierte en dinero que puedes usar.",
+ "datos": [
+  {
+   "dato": "Porcentaje de hogares hispanos en EE.UU. con cuenta de retiro (2022, Encuesta de Finanzas del Consumidor de la Reserva Federal)",
+   "valor": 33,
+   "unidad": "%",
+   "fuente": "https://nahrep.org/downloads/2024-SHWR-Annual-Report.pdf"
+  },
+  {
+   "dato": "Pago promedio mensual de Seguro Social a jubilados (junio 2025, según datos de la SSA)",
+   "valor": 2005.05,
+   "unidad": "$",
+   "fuente": "https://www.northwesternmutual.com/life-and-money/average-social-security-check/"
+  },
+  {
+   "dato": "Remesas de inmigrantes a México por año, con las que muchos construyen casas (más de $20 mil millones)",
+   "valor": 20000000000,
+   "unidad": "$",
+   "fuente": "https://www.bibliovault.org/BV.landing.epl?ISBN=9780226202952"
+  },
+  {
+   "dato": "El acuerdo de totalización del Seguro Social con México se firmó en 2004 y no está en vigor (consultado a marzo de 2026)",
+   "valor": 2004,
+   "unidad": "año de firma",
+   "fuente": "https://www.taxesforexpats.com/country-guides/mexico/us-mexico-tax-treaty.html"
+  },
+  {
+   "dato": "Estudio sobre migrantes mexicanos que construyen casas pensando en retirarse allá",
+   "valor": 1,
+   "unidad": "estudio",
+   "fuente": "https://doi.org/10.1177/01979183231170812"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Aporte anual si apartas $300 al mes",
+   "expresion": "300*12",
+   "resultado": 3600
+  },
+  {
+   "descripcion": "Total que pones de tu bolsillo de los 40 a los 65 (25 años)",
+   "expresion": "3600*25",
+   "resultado": 90000
+  },
+  {
+   "descripcion": "Proyección al 10% anual (máximo, no garantizado): aporte al inicio de cada año, de los 40 a los 65",
+   "expresion": "round(3600*((1.1**25-1)/0.1)*1.1,2)",
+   "resultado": 389454.36
+  },
+  {
+   "descripcion": "Parte que sería crecimiento (interés compuesto) y no de tu bolsillo",
+   "expresion": "round(3600*((1.1**25-1)/0.1)*1.1-3600*25,2)",
+   "resultado": 299454.36
+  },
+  {
+   "descripcion": "Seguro Social promedio al año (para comparar, no para sumar a la casa)",
+   "expresion": "round(2005.05*12,2)",
+   "resultado": 24060.6
+  },
+  {
+   "descripcion": "Ingreso mensual que te da una casa vacía que no rentas",
+   "expresion": "0",
+   "resultado": 0
+  }
+ ],
+ "consejo": "Sigue con tu casa si es tu sueño, pero no la cuentes como tu plan de ingreso. Decide hoy cuánto necesitas al mes para vivir de viejo. Aparta una cantidad fija, aunque sea $300 al mes, en un plan que crezca con interés compuesto, como el seguro de vida indexado (IUL), que crece hasta 10% al año con piso de cero. Pregunta a un agente con licencia cuánto cuesta en tu caso.",
+ "que_no_decir": [
+  "Que la casa en tu país es mala inversión o que no debes construirla.",
+  "Que vas a ganar 10% todos los años: es el máximo de un año, no lo que te prometen.",
+  "Que el IUL es lo único que sirve para el retiro.",
+  "Que no vas a poder cobrar tu Seguro Social viviendo en otro país: depende del país y de tu caso.",
+  "Cifras de rentas o costos de mantener la casa allá sin fuente verificada.",
+  "Que el seguro 'se paga solo' o que no cuesta nada."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "La casa que construiste en tu país como plan de retiro: no da ingreso mensual",
+ "gancho_pedido": "La casa que construiste allá no te manda dinero cada mes.",
+ "ganchos_recientes": [
+  "Tu plan de retiro no pueden ser tus hijos. / Mantenerte les quita cientos de miles de dólares. / Te enseño la cuenta que tu hijo / nunca se atreve a hacer.",
+  "Si pagas la comida con el dinero del negocio, / no sabes si estás ganando. / Al final te digo el movimiento / que tienes que hacer cada quincena.",
+  "Nunca empieces un trabajo / sin estas tres líneas por escrito. / Sin ellas, tu ganancia depende / de lo que el cliente recuerde.",
+  "Tu esposa no cobra sueldo. / ¿Cuánto costaría pagar todo lo que hace? / Al final te digo las cuatro cosas / que tienes que apuntar hoy en casa.",
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir"
+ ]
+}

@@ -1,0 +1,42 @@
+# FF-068 · Finanzas Familiares · EST-01 · Prestarle a un familiar
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Un préstamo familiar sin papel ni pagos puede tratarse como regalo, y un regalo no se deduce como deuda mala (Pub. 550 del IRS). Una deuda incobrable solo se deduce si es totalmente incobrable, y se reporta como pérdida de capital a corto plazo. = 3000 $ (límite anual de pérdida de capital que puedes restar de ingresos ordinarios; el resto pasa a años siguientes) · https://www.irs.gov/publications/p550
+# Fuente: Exclusión anual de regalos por persona en 2025: si perdonas o regalas más de esto a una sola persona, tienes que presentar el Formulario 709 = 19000 $ · https://www.irs.gov/instructions/i709
+# Fuente: El IRS publica cada mes las tasas federales aplicables (AFR) que se usan como referencia para préstamos con intereses bajos o sin intereses entre familiares. Por eso conviene tener un papel y no improvisar. = 3.03 % (tasa ajustada AFR, referencia de septiembre 2025) · https://www.irs.gov/pub/irs-drop/rr-25-17.pdf
+# BLOQUE 1
+Si le prestas a un familiar *de palabra*,
+puedes perder el dinero y *al familiar*.
+Y el IRS casi no te devuelve *nada*.
+Al final te digo la *pregunta* de la renta
+que debes hacerte antes de prestar.
+Se llama *préstamo sin papel*.
+Tu hermano te pide un *préstamo grande*.
+Le dices que sí, sin firmar *nada*.
+Te promete pagar [$200|doscientos dólares] al mes.
+Son [40|cuarenta] meses *esperando*.
+Pero si un día deja de *pagar*,
+para el IRS eso parece un *regalo*.
+Y un regalo *no se deduce*.
+Pero aquí viene lo que nadie te dice:
+aun con *papel firmado*, solo puedes
+restar [$3,000|tres mil dólares] al *año*.
+Y solo si la deuda es *incobrable*.
+En el mejor caso, con tasa del [12%|doce por ciento],
+ahorras apenas [$960|novecientos sesenta] en *impuestos*.
+Y pierdes [$7,040|siete mil cuarenta] de *tu bolsillo*.
+Eso es la *renta* de varios meses.
+Ahora sí, la *pregunta*:
+¿Puedo perder todo esto sin que
+se me caiga la *renta*?
+Si no, presta *menos*.
+Si sí, ponlo *por escrito*:
+monto, pago mensual, fecha y *firmas*.
+Por ejemplo, [$200|doscientos dólares] al mes,
+durante [40|cuarenta] meses, *sin intereses*.
+Recibe los pagos por *transferencia*,
+no en efectivo, para dejar *registro*.
+Y si sabes que no te van a pagar,
+llámalo *regalo* desde el inicio.
+Así cuidas el dinero y *la relación*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a *prestar dinero*.

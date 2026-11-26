@@ -1,0 +1,46 @@
+# FF-072 · Finanzas Familiares · EST-01 · La cuenta oculta de enfermarte
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tarifa por milla que el IRS permite para viajes médicos en 2025 (piso del costo real de la gasolina y el desgaste) - VERIFICAR en IRS Pub. 502 = 0.21 $ · https://www.irs.gov/publications/p502
+# Fuente: Semanas de permiso federal FMLA sin goce de sueldo para cuidar tu salud - VERIFICAR = 12 semanas · https://www.dol.gov/agencies/whd/fmla
+# Fuente: SUPUESTO del ejemplo, no es dato de estudio: viajes al tratamiento por semana = 3 viajes · https://www.dol.gov/agencies/whd/fmla
+# Fuente: SUPUESTO del ejemplo, no es dato de estudio: sueldo por hora = 25 $ · https://www.dol.gov/agencies/whd/fmla
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+La cuenta más grande de una enfermedad
+*no* te la manda el *hospital*.
+Nadie te avisa que existe.
+Al final te digo las *tres palabras*
+que debes buscar en tu seguro de vida.
+Se llama la *cuenta oculta*.
+Digamos que ganas [$25|veinticinco dólares] por hora,
+y vas al tratamiento tres veces por semana.
+Son [36|treinta y seis] *viajes* en [12|doce] semanas.
+Gasolina y desgaste: más de [$300|trescientos dólares].
+Comida en la calle: [$432|cuatrocientos treinta y dos dólares].
+Hasta aquí parece poco, ¿verdad?
+Pero aquí viene lo que *nadie* te dice:
+Son [36|treinta y seis] días *sin cobrar*,
+o sea, [$7,200|siete mil doscientos dólares] que no entran.
+Eso es casi el [91%|noventa y uno por ciento]
+de todos esos *gastos*.
+Esos días eran tu *renta* y tus biles.
+Y el seguro médico casi nunca lo cubre.
+La ley federal guarda tu puesto [12|doce] semanas,
+pero *sin sueldo*, y no todos califican.
+Por eso importa tu *seguro de vida*.
+Un [IUL|a yu el], un *seguro de vida indexado*,
+es tuyo y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Y si te diagnostican algo serio,
+puedes usar parte del dinero *en vida*.
+Ahora sí, las tres palabras que buscas:
+*crónica*, *crítica* y *terminal*.
+Búscalas en tu póliza *antes* de enfermarte.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien no cobra si *no trabaja*.

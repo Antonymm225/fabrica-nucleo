@@ -1,0 +1,90 @@
+{
+ "titulo": "Los $300 que se renuevan",
+ "angulo": "El préstamo es 'por dos semanas', pero 8 de cada 10 se vuelven a pedir en un mes, y a la séptima renovación los $300 ya te costaron más del doble.",
+ "explicacion": "Pides $300 y te cobran $45 de cargo, que parece poco. Pero a las dos semanas tienes que pagar los $300 completos de un golpe, y muchos no pueden. Entonces renuevas y pagas otros $45, sin bajar nada de la deuda. Después de 7 renovaciones (14 semanas) ya pagaste $315 en cargos, y los $300 siguen ahí. La salida es no renovar: hablar antes con quien te prestó y buscar una forma más barata de cubrir el hueco.",
+ "datos": [
+  {
+   "dato": "Cargo más común del préstamo de día de pago en tienda, por cada $100 prestados",
+   "valor": 15,
+   "unidad": "$",
+   "fuente": "https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans"
+  },
+  {
+   "dato": "Porcentaje de préstamos seguidos por otro préstamo en menos de 30 días",
+   "valor": 80,
+   "unidad": "%",
+   "fuente": "https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans"
+  },
+  {
+   "dato": "Tamaño promedio de un préstamo de día de pago",
+   "valor": 350,
+   "unidad": "$",
+   "fuente": "https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans"
+  },
+  {
+   "dato": "Cargo extra por cada renovación de un préstamo de $350",
+   "valor": 52.5,
+   "unidad": "$",
+   "fuente": "https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Cargo por 2 semanas en un préstamo de $300 ($15 por cada $100)",
+   "expresion": "round(300*15/100, 2)",
+   "resultado": 45.0
+  },
+  {
+   "descripcion": "Cargos acumulados tras 7 renovaciones (14 semanas)",
+   "expresion": "round(45*7, 2)",
+   "resultado": 315.0
+  },
+  {
+   "descripcion": "Total pagado: los $300 más 7 cargos",
+   "expresion": "round(300+45*7, 2)",
+   "resultado": 615.0
+  },
+  {
+   "descripcion": "Cuántas veces el préstamo original pagaste",
+   "expresion": "round((300+45*7)/300, 2)",
+   "resultado": 2.05
+  },
+  {
+   "descripcion": "Semanas de renovación hasta pasar el doble",
+   "expresion": "7*2",
+   "resultado": 14
+  },
+  {
+   "descripcion": "Comparación: interés de $300 en una tarjeta al 24% anual por 3 meses (ejemplo, no promedio)",
+   "expresion": "round(300*(0.24/12)*3, 2)",
+   "resultado": 18.0
+  },
+  {
+   "descripcion": "Diferencia de costo entre renovar 7 veces y la tarjeta del ejemplo",
+   "expresion": "round(45*7-300*(0.24/12)*3, 2)",
+   "resultado": 297.0
+  }
+ ],
+ "consejo": "Antes de firmar, pregúntate: ¿de dónde saco los $345 en dos semanas? Si no lo tienes claro, no lo pidas. Si ya lo tienes, no renueves. Pregunta al prestamista si tu estado ofrece un plan de pago sin cargos extra, y que te lo den por escrito. Llama a las compañías de luz o renta para pedir más plazo, que casi siempre sale más barato. Marca el 211 para ayuda local con gastos urgentes. Si ya te cobraron de más, puedes poner una queja en consumerfinance.gov.",
+ "que_no_decir": [
+  "No digas que todos los préstamos de día de pago son ilegales: en muchos estados son legales.",
+  "No prometas que existe un plan de pago en todos los estados: depende del estado y del prestamista.",
+  "No uses la tarjeta de crédito como solución general: el 24% es solo un ejemplo y cada tarjeta es distinta.",
+  "No digas que 'siempre' se renueva: la cifra es cerca de 8 de cada 10 en 30 días.",
+  "No repitas el ejemplo de $500 ni la cifra de 391% anual del video FF-010.",
+  "No des a entender que la persona es irresponsable por pedirlo."
+ ],
+ "con_iul": false,
+ "idea": "El préstamo de día de pago: cuánto terminas pagando por una cantidad pequeña",
+ "gancho_pedido": "Pedir trescientos dólares prestados te puede costar más del doble.",
+ "ganchos_recientes": [
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras"
+ ]
+}

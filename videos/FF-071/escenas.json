@@ -1,0 +1,713 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: reparación de $1,000 en tarjeta al 30% a 24 meses y llanta de $250 (supuestos). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "la llanta",
+   "contador": "llanta |ponchada",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       2,
+       "sabías"
+      ],
+      "cara": "neutro"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 52,
+     "tam": 38,
+     "en": [
+      0,
+      "llanta"
+     ],
+     "id": "t"
+    },
+    {
+     "que": "globo",
+     "texto": "¿EMERGENCIA?",
+     "piensa": false,
+     "cola": 1,
+     "x": 26,
+     "y": 22,
+     "en": [
+      1,
+      "emergencia"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "YA SABÍAS",
+     "color": "rojo",
+     "x": 72,
+     "y": 52,
+     "en": [
+      2,
+      "gasto"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "tres escalones",
+   "contador": "tu |colchón",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       4,
+       "asuste"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "TRES ESCALONES",
+     "x": 50,
+     "y": 36,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      3,
+      "tres"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "el problema",
+   "filas": [
+    "SIN",
+    "COLCHON"
+   ],
+   "en": [
+    5,
+    "colchón"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "tu troca",
+   "contador": "gastos |de calendario",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 28,
+     "y": 30,
+     "tam": 34,
+     "en": [
+      6,
+      "troca"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LLANTAS",
+     "x": 28,
+     "y": 60,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      6,
+      "llantas"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "FRENOS",
+     "x": 28,
+     "y": 70,
+     "tam": 5,
+     "color": "tinta",
+     "en": [
+      7,
+      "frenos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "BATERÍAS",
+     "x": 28,
+     "y": 80,
+     "tam": 5,
+     "color": "tinta",
+     "en": [
+      7,
+      "baterías"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 52,
+     "tam": 30,
+     "etiqueta": "ya lo sabías",
+     "en": [
+      8,
+      "calendario"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "los números",
+   "contador": "solo |41%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "sombrero"
+    },
+    {
+     "que": "cifra",
+     "texto": "41%",
+     "x": 50,
+     "y": 40,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "de los adultos",
+     "en": [
+      9,
+      "41%"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 76,
+     "y": 80,
+     "tam": 26,
+     "giro": 8,
+     "en": [
+      11,
+      "tarjeta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "reparación |a tarjeta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Reparación en tarjeta",
+     "en": [
+      12
+     ],
+     "renglones": [
+      {
+       "texto": "Reparación",
+       "valor": "$1,000",
+       "en": [
+        12,
+        "reparación"
+       ]
+      },
+      {
+       "texto": "Interés al año",
+       "valor": "30%",
+       "en": [
+        13,
+        "30"
+       ]
+      },
+      {
+       "texto": "Meses para pagar",
+       "valor": "24",
+       "en": [
+        14,
+        "años"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       13,
+       "30"
+      ],
+      "texto": "¡OJO!"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "pagas |$56 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 18,
+     "tam": 34,
+     "etiqueta": "tu quincena",
+     "en": [
+      15,
+      "Pagas"
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 70,
+     "tam": 36,
+     "etiqueta": "el banco",
+     "en": [
+      16,
+      "terminas"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      16,
+      "terminas"
+     ],
+     "hasta": [
+      17,
+      "intereses"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 341,
+     "prefijo": "$",
+     "x": 30,
+     "y": 72,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "de intereses",
+     "en": [
+      17,
+      "341"
+     ],
+     "hasta": [
+      17,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "hasta la chica",
+   "contador": "interés |$42",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 30,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       20,
+       "deja"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "SOLO UNA LLANTA",
+     "x": 50,
+     "y": 18,
+     "tam": 5,
+     "color": "tinta",
+     "en": [
+      19,
+      "llanta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 42,
+     "prefijo": "$",
+     "x": 50,
+     "y": 42,
+     "tam": 11,
+     "color": "principal",
+     "etiqueta": "de intereses",
+     "en": [
+      20,
+      "42"
+     ],
+     "hasta": [
+      20,
+      "intereses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      21
+     ],
+     "texto": "los |tres escalones"
+    },
+    {
+     "en": [
+      22
+     ],
+     "texto": "escalón |1 de 3"
+    },
+    {
+     "en": [
+      23
+     ],
+     "texto": "escalón |2 de 3"
+    },
+    {
+     "en": [
+      24
+     ],
+     "texto": "escalón |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      21
+     ],
+     "items": [
+      {
+       "texto": "Una llanta",
+       "en": [
+        22,
+        "llanta"
+       ]
+      },
+      {
+       "texto": "Una reparación",
+       "en": [
+        23,
+        "reparación"
+       ]
+      },
+      {
+       "texto": "Una semana sin trabajo",
+       "en": [
+        24,
+        "semana"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      22,
+      "Primero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "el colchón",
+   "contador": "semana |$19",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 20,
+     "y": 13,
+     "tam": 16,
+     "etiqueta": "siete días"
+    },
+    {
+     "que": "texto",
+     "texto": "$19 A LA SEMANA",
+     "x": 72,
+     "y": 13,
+     "tam": 4.5,
+     "color": "verde",
+     "en": [
+      26,
+      "19"
+     ]
+    },
+    {
+     "que": "grafica",
+     "inicio": 19,
+     "final": 1000,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN UN AÑO",
+     "etiqueta": "tu colchón",
+     "x": 50,
+     "y": 92,
+     "en": [
+      26,
+      "aparta"
+     ],
+     "hasta": [
+      27,
+      "dólares"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "cuenta aparte",
+   "contador": "cuenta |aparte",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "w",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "día de cobro",
+     "en": [
+      28,
+      "Ponlo"
+     ]
+    },
+    {
+     "id": "bk",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 75,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "cuenta aparte",
+     "en": [
+      28,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "w",
+     "a": "bk",
+     "en": [
+      29,
+      "transferencia"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 82,
+     "en": [
+      29,
+      "automática"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "presupuesto",
+   "contador": "llanta |gasto normal",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "cambia": {
+      "en": [
+       31,
+       "normal"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "PRESUPUESTO",
+     "x": 72,
+     "y": 15,
+     "tam": 4.5,
+     "color": "principal",
+     "en": [
+      30,
+      "presupuesto"
+     ]
+    },
+    {
+     "id": "t2",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 40,
+     "tam": 32,
+     "en": [
+      30,
+      "llanta"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 70,
+     "en": [
+      31,
+      "normal"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "el premio",
+   "contador": "colchón |listo",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$1,000",
+    "etiqueta": "tu colchón",
+    "en": [
+     32,
+     "dólares"
+    ]
+   },
+   "cae": {
+    "objeto": "troca",
+    "letrero": "LLANTA",
+    "en": [
+     33,
+     "llanta"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    34
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    34,
+    "Sígueme"
+   ],
+   "compartir": [
+    35,
+    "compártelo"
+   ]
+  }
+ ]
+}

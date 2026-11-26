@@ -1,0 +1,702 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo de $300 con cargo de $45 cada dos semanas, renovado siete veces. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu préstamo",
+   "contador": "préstamo |$300",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "doble"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 35,
+     "tam": 30,
+     "en": [
+      0,
+      "300"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "x2",
+     "x": 70,
+     "y": 68,
+     "tam": 12,
+     "color": "principal",
+     "en": [
+      1,
+      "doble"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "tu pregunta",
+   "contador": "pregunta |al final",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué le pregunto?",
+     "piensa": true,
+     "cola": 1,
+     "x": 28,
+     "y": 24,
+     "en": [
+      2,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 72,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      3,
+      "prestamista"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "AL FINAL",
+     "x": 72,
+     "y": 80,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      2,
+      "final"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "contador": "renovar |préstamo",
+   "filas": [
+    "RENOVAR",
+    "DEUDA"
+   ],
+   "en": [
+    5,
+    "renovar"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el préstamo",
+   "contador": "cargo |$45",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Préstamo de día de pago",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Pides",
+       "valor": "$300",
+       "en": [
+        8,
+        "300"
+       ]
+      },
+      {
+       "texto": "Cargo por 2 semanas",
+       "valor": "$45",
+       "en": [
+        8,
+        "45"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       9,
+       "poco"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      7,
+      "tiendas"
+     ],
+     "cambia": {
+      "en": [
+       9,
+       "poco"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "dos semanas",
+   "contador": "pagas |$300",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 28,
+     "y": 33,
+     "tam": 30,
+     "etiqueta": "2 SEMANAS",
+     "en": [
+      10
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$300",
+     "x": 72,
+     "y": 40,
+     "tam": 13,
+     "color": "tinta",
+     "en": [
+      11,
+      "300"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "en": [
+      11,
+      "pagar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "renovar",
+   "contador": "renuevas |+$45",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "pelo",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      12,
+      "dicen"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Renueva y paga $45 más",
+     "cola": -1,
+     "x": 72,
+     "y": 22,
+     "en": [
+      12,
+      "renueva"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "NO BAJA",
+     "x": 50,
+     "y": 62,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      13,
+      "baja"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo que no dicen",
+   "contador": "lo piden |8 de 10",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       16,
+       "mes"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "8 de 10",
+     "x": 50,
+     "y": 40,
+     "tam": 15,
+     "color": "principal",
+     "etiqueta": "vuelven a pedir",
+     "en": [
+      15,
+      "8"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "la cuenta",
+   "contador": [
+    {
+     "en": [
+      17
+     ],
+     "texto": "renovaciones |7"
+    },
+    {
+     "en": [
+      19
+     ],
+     "texto": "cargos |$315"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "7 RENOVACIONES",
+     "x": 50,
+     "y": 10,
+     "tam": 5,
+     "color": "principal",
+     "sale": [
+      18,
+      "Son"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "14 SEMANAS",
+     "x": 50,
+     "y": 10,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      18,
+      "14"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 52,
+     "valor": 315,
+     "max": 615,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "CARGOS",
+     "en": [
+      19,
+      "315"
+     ],
+     "hasta": [
+      19,
+      "cargos"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 70,
+     "y": 95,
+     "tam": 52,
+     "valor": 300,
+     "max": 615,
+     "prefijo": "$",
+     "etiqueta": "LO QUE PEDISTE",
+     "en": [
+      20,
+      "300"
+     ],
+     "hasta": [
+      20,
+      "ahí"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    21
+   ],
+   "capitulo": "el golpe",
+   "contador": "pagaste |$615",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$615",
+    "etiqueta": "por $300",
+    "en": [
+     21,
+     "615"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "QUINCENA",
+    "en": [
+     23,
+     "quincena"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "tienes |$345",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿De dónde saco $345?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 16,
+     "en": [
+      25,
+      "dónde"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 66,
+     "tam": 22,
+     "etiqueta": "2 SEMANAS",
+     "en": [
+      26,
+      "semanas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      27
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      28
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      27
+     ],
+     "items": [
+      {
+       "texto": "No lo pidas si no lo tienes claro",
+       "en": [
+        27,
+        "claro"
+       ]
+      },
+      {
+       "texto": "Si ya lo pediste, no renueves",
+       "en": [
+        28,
+        "renueves"
+       ]
+      },
+      {
+       "texto": "Habla con quien te prestó antes",
+       "en": [
+        29,
+        "Habla"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      29,
+      "Habla"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "la pregunta",
+   "contador": "pregunta |clave",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Mi estado ofrece un plan de pago sin cargos?",
+     "cola": 1,
+     "x": 32,
+     "y": 24,
+     "en": [
+      31,
+      "estado"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 76,
+     "y": 60,
+     "tam": 28,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      31,
+      "plan"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "POR ESCRITO",
+     "color": "verde",
+     "x": 76,
+     "y": 60,
+     "en": [
+      32,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "más salidas",
+   "contador": "ayuda |local",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 25,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "LUZ Y RENTA",
+     "en": [
+      34
+     ]
+    },
+    {
+     "que": "check",
+     "x": 25,
+     "y": 66,
+     "en": [
+      35,
+      "barato"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "AYUDA LOCAL",
+     "x": 72,
+     "y": 40,
+     "tam": 5,
+     "color": "verde",
+     "en": [
+      36,
+      "ayuda"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 62,
+     "y": 94,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      37,
+      "gente"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

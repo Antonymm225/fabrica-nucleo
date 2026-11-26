@@ -1,0 +1,151 @@
+{
+ "ficha": {
+  "titulo": "La cuenta que no manda el hospital",
+  "angulo": "Cuando te enfermas por meses, lo que más pesa no es la factura médica: son los días sin cobrar, la gasolina y la comida fuera de casa, que nadie te manda por correo.",
+  "explicacion": "Cuando piensas en una enfermedad larga, piensas en la cuenta del hospital. Pero ir a cada cita cuesta gasolina, comida en la calle y un día sin cobrar. Un estudio en EE. UU. con pacientes de cáncer en ensayos clínicos encontró que los gastos que no son médicos (viaje, comidas, hospedaje, trabajo perdido) se reembolsaron en una mediana de $2,128. En un ejemplo de 36 visitas, el sueldo perdido es la parte más grande de la cuenta, mucho más que la gasolina y la comida. Un beneficio en vida del seguro, si te diagnostican una enfermedad crónica, crítica o terminal, te deja usar parte del dinero para esos gastos que el seguro médico no paga.",
+  "datos": [
+   {
+    "dato": "Mediana de gastos no médicos reembolsados a participantes de ensayos clínicos de cáncer en EE. UU. (viaje, hospedaje, comidas, internet, cuidado de otros). Falta confirmar el período que cubre",
+    "valor": 2128,
+    "unidad": "$",
+    "fuente": "https://www.oncnursingnews.com/view/cancer-trial-participants-reimbursed-a-median-2-128-for-nonmedical-costs"
+   },
+   {
+    "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+    "valor": 10,
+    "unidad": "%",
+    "fuente": "https://interno/regla-de-la-marca-iul"
+   },
+   {
+    "dato": "Piso del IUL: no pierde por la caída del mercado",
+    "valor": 0,
+    "unidad": "%",
+    "fuente": "https://interno/regla-de-la-marca-iul"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "SUPUESTO DE EJEMPLO: millas totales en 36 visitas de 50 millas ida y vuelta",
+    "expresion": "36*50",
+    "resultado": 1800
+   },
+   {
+    "descripcion": "SUPUESTO DE EJEMPLO: gasolina para esas millas (15 millas por galón, $3.50 el galón)",
+    "expresion": "round(1800/15*3.5,2)",
+    "resultado": 420.0
+   },
+   {
+    "descripcion": "SUPUESTO DE EJEMPLO: comida fuera de casa, $12 por visita, 36 visitas",
+    "expresion": "36*12",
+    "resultado": 432
+   },
+   {
+    "descripcion": "SUPUESTO DE EJEMPLO: sueldo perdido, 36 días a $25 por hora, 8 horas por día",
+    "expresion": "36*8*25",
+    "resultado": 7200
+   },
+   {
+    "descripcion": "Gasolina más comida",
+    "expresion": "420+432",
+    "resultado": 852
+   },
+   {
+    "descripcion": "Total de gastos del ejemplo sin contar ninguna factura médica",
+    "expresion": "420+432+7200",
+    "resultado": 8052
+   },
+   {
+    "descripcion": "Parte del total que es sueldo perdido, en %",
+    "expresion": "round(7200/8052*100,2)",
+    "resultado": 89.42
+   },
+   {
+    "descripcion": "Veces que el sueldo perdido es mayor que gasolina más comida",
+    "expresion": "round(7200/852,2)",
+    "resultado": 8.45
+   }
+  ],
+  "consejo": "Antes de que pase, apunta cuánto gastas en un mes normal: casa, troca, comida. Si te diagnostican algo largo, haz la cuenta de lo que cuesta ir a cada cita y de cada día que no cobras, no solo la del hospital. Pregunta si tu póliza de vida tiene beneficios en vida para enfermedad crónica, crítica o terminal. Así tienes dinero para esos gastos que el seguro médico no paga.",
+  "que_no_decir": [
+   "No presentar los números del ejemplo (36 visitas, $25 por hora, gasolina a $3.50) como estadísticas nacionales: son un caso hipotético.",
+   "No decir que $2,128 es lo que gasta todo paciente: es una mediana de reembolsos a participantes de ensayos clínicos de cáncer.",
+   "No prometer que el IUL paga todo ni que cualquier póliza tiene beneficios en vida: depende de la póliza, de las condiciones y de que se cumpla el diagnóstico.",
+   "No decir que el hospital es barato: el punto es que los costos del día a día también pesan.",
+   "No dar cifras de proyecciones de ahorro ni de cuánto se junta en el IUL en este video.",
+   "No repetir los datos de videos anteriores: el hueco del Seguro Social, los 5 meses de espera o el tope del cheque del seguro del trabajo."
+  ],
+  "con_iul": true,
+  "beneficio_iul": "beneficios en vida si te enfermas",
+  "cta_iul": "biografia",
+  "idea": "El costo de una enfermedad larga que no es médico: transporte, comidas, días sin trabajar",
+  "gancho_pedido": "El hospital no es la cuenta más grande cuando alguien se enferma.",
+  "ganchos_recientes": [
+   "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+   "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+   "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+   "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+   "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+   "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+   "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+   "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones"
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Si te enfermas por meses, / vas a pagar algo que el hospital no cobra. / Nadie te lo manda por correo. / Al final te digo tres palabras que buscas en tu póliza de vida.",
+   "El hospital no es la cuenta más grande / cuando alguien se enferma. / Hay otra cuenta que nadie te manda. / Al final te digo las tres palabras que buscas en tu póliza de vida.",
+   "El seguro médico tiene una lista de cosas que no paga. / Ahí caen tu gasolina, tu comida y tus días sin cobrar. / Al final te digo tres palabras que sí abren esa puerta.",
+   "Dos roofers se enferman el mismo mes. / Uno pierde la renta y el otro no. / Al final te digo las tres palabras que tenía el segundo en su póliza.",
+   "Cada cita médica te quita un día de paga. / Y esos días se juntan más rápido de lo que crees. / Al final te digo las tres palabras que buscas en tu póliza.",
+   "¿Cuánto cuesta ir a todas tus citas médicas sin contar el hospital? / Más de ocho mil dólares. / Al final te digo tres palabras que ayudan a cubrirlo.",
+   "Hay dinero tuyo en una póliza de vida que podrías usar en vida. / Casi nadie lo sabe y nadie te avisa. / Al final te digo las tres palabras que lo abren.",
+   "Nunca digas «solo es una cita» / cuando el doctor te dice que va a ser largo. / Al final te digo por qué y qué tres palabras buscar en tu póliza."
+  ],
+  "gancho_elegido": "El hospital no es la cuenta más grande / cuando alguien se enferma. / Hay otra cuenta que nadie te manda. / Al final te digo las tres palabras que buscas en tu póliza de vida. — Frena el scroll porque contradice lo que el trabajador cree (que lo peor es la factura del hospital) y promete algo concreto que no se adivina: tres palabras exactas.",
+  "titulo": "La cuenta que no manda el hospital",
+  "lineas": [
+   "El *hospital* no es la cuenta más grande",
+   "cuando alguien se *enferma*.",
+   "Hay otra cuenta que *nadie* te manda.",
+   "Al final te digo las *tres palabras*",
+   "que buscas en tu *póliza de vida*.",
+   "Se llama el costo *oculto*.",
+   "Te enfermas por *meses*.",
+   "Vas a cada *cita* con el doctor,",
+   "y manejas unas [1,800|mil ochocientas] *millas*.",
+   "*Gasolina* y comida en la *calle*:",
+   "Son [$852|ochocientos cincuenta y dos dólares] en *total*.",
+   "Eso ya duele, ¿verdad?",
+   "Pero *aquí viene* lo que nadie te dice.",
+   "Cada cita es un *día sin cobrar*.",
+   "Ocho horas de trabajo que *no cobras*.",
+   "Son [$7,200|siete mil doscientos dólares] de *sueldo perdido*.",
+   "Es *ocho veces* más que gasolina y comida.",
+   "Y el total, sin *ninguna factura médica*,",
+   "es de [$8,052|ocho mil cincuenta y dos dólares].",
+   "En Estados Unidos, el *seguro médico* no paga eso.",
+   "Ahora sí, las *tres palabras*:",
+   "*beneficios en vida*.",
+   "Si te diagnostican algo *crónico, crítico* o terminal,",
+   "puedes usar parte del dinero *en vida*",
+   "para esos gastos que nadie cubre.",
+   "Eso lo puede traer un [IUL|a yu el],",
+   "un *seguro de vida indexado*.",
+   "Es tuyo, y puede crecer",
+   "*hasta un* [10%|diez por ciento] al año.",
+   "Si el mercado cae, *no pierdes* por esa caída.",
+   "Tiene *piso cero*.",
+   "Si quieres aplicar a un [IUL|a yu el],",
+   "te dejo el *link* en mi biografía.",
+   "Un *asesor certificado* ve tu caso a detalle",
+   "y busca la mejor *opción* para tu familia.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien cobra *por día*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"enfermarte\",\"contador\":\"cuenta |hospital\",\"elementos\":[{\"que\":\"persona\",\"x\":72,\"y\":93,\"tam\":34,\"cara\":\"neutro\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[1,\"enferma\"],\"cara\":\"preocupado\"}},{\"que\":\"objeto\",\"objeto\":\"hospital\",\"x\":28,\"y\":32,\"tam\":34,\"en\":[0,\"hospital\"]},{\"que\":\"texto\",\"texto\":\"NO ES LA MÁS GRANDE\",\"x\":28,\"y\":62,\"tam\":4.5,\"color\":\"principal\",\"en\":[0,\"grande\"]}]},{\"tipo\":\"lienzo\",\"desde\":[2],\"capitulo\":\"otra cuenta\",\"contador\":\"cuenta |oculta\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":50,\"y\":22,\"tam\":28,\"etiqueta\":\"OTRA CUENTA\",\"en\":[2,\"otra\"]},{\"que\":\"texto\",\"texto\":\"TRES PALABRAS\",\"x\":50,\"y\":52,\"tam\":6,\"color\":\"principal\",\"en\":[3,\"tres\"]},{\"que\":\"persona\",\"x\":50,\"y\":94,\"tam\":26,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"ropa\":2,\"en\":[4,\"póliza\"]}]},{\"tipo\":\"tablero\",\"desde\":[5],\"capitulo\":\"el problema\",\"filas\":[\"COSTO\",\"OCULTO\"],\"en\":[5,\"oculto\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[6],\"capitulo\":\"las citas\",\"contador\":\"te enfermas |por meses\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":24,\"y\":92,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"ropa\":1},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":72,\"y\":24,\"tam\":26,\"etiqueta\":\"CADA CITA\",\"en\":[7,\"cita\"]},{\"que\":\"objeto\",\"objeto\":\"troca\",\"x\":72,\"y\":66,\"tam\":28,\"etiqueta\":\"1,800 MILLAS\",\"en\":[8,\"millas\"]}]},{\"tipo\":\"lienzo\",\"desde\":[9],\"capitulo\":\"gasolina y comida\",\"contador\":\"gastos |$852\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"troca\",\"x\":25,\"y\":20,\"tam\":24,\"etiqueta\":\"GASOLINA\",\"en\":[9,\"Gasolina\"]},{\"que\":\"objeto\",\"objeto\":\"tienda\",\"x\":75,\"y\":20,\"tam\":24,\"etiqueta\":\"COMIDA\",\"en\":[9,\"comida\"]},{\"que\":\"cifra\",\"contar\":true,\"valor\":852,\"prefijo\":\"$\",\"x\":50,\"y\":54,\"tam\":13,\"color\":\"principal\",\"etiqueta\":\"en total\",\"en\":[10,\"852\"],\"hasta\":[10,\"total\"]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":24,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":3,\"cambia\":{\"en\":[11,\"duele\"],\"cara\":\"preocupado\"}}]},{\"tipo\":\"lienzo\",\"desde\":[12],\"capitulo\":\"día sin cobrar\",\"contador\":\"cada cita |1 día\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"persona\",\"x\":80,\"y\":96,\"tam\":26,\"cara\":\"sorprendido\",\"gorro\":\"gorra\",\"ropa\":4,\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"¿Y mi paga del día?\",\"piensa\":true,\"cola\":-1,\"x\":72,\"y\":18,\"en\":[13,\"día\"]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":22,\"y\":50,\"tam\":24,\"en\":[13,\"cita\"]},{\"que\":\"sello\",\"texto\":\"SIN PAGA\",\"color\":\"rojo\",\"x\":22,\"y\":50,\"en\":[13,\"cobrar\"]}]},{\"tipo\":\"lienzo\",\"desde\":[14],\"capitulo\":\"la comparación\",\"contador\":\"sueldo |$7,200\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"torre\",\"x\":72,\"y\":95,\"tam\":55,\"valor\":7200,\"max\":7200,\"prefijo\":\"$\",\"etiqueta\":\"SUELDO PERDIDO\",\"en\":[14,\"horas\"],\"hasta\":[15,\"7,200\"]},{\"que\":\"torre\",\"x\":28,\"y\":95,\"tam\":55,\"valor\":852,\"max\":7200,\"prefijo\":\"$\",\"color\":\"gris\",\"etiqueta\":\"GAS Y COMIDA\",\"en\":[16,\"ocho\"],\"hasta\":[16,\"comida\"]},{\"que\":\"texto\",\"texto\":\"OCHO VECES MÁS\",\"x\":50,\"y\":22,\"tam\":5,\"color\":\"principal\",\"en\":[16,\"veces\"]}]},{\"tipo\":\"oscura\",\"desde\":[17],\"capitulo\":\"el total\",\"contador\":\"total |$8,052\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"$8,052\",\"etiqueta\":\"sin factura médica\",\"en\":[18,\"8,052\"]},\"cae\":{\"objeto\":\"cartera\",\"letrero\":\"VACÍA\",\"en\":[17,\"factura\"]}},{\"tipo\":\"lienzo\",\"desde\":[19],\"capitulo\":\"seguro médico\",\"contador\":\"seguro |no paga\",\"entrada\":\"ola\",\"elementos\":[{\"id\":\"h\",\"que\":\"objeto\",\"objeto\":\"hospital\",\"x\":25,\"y\":24,\"tam\":26,\"etiqueta\":\"SEGURO MÉDICO\"},{\"que\":\"tacha\",\"sobre\":\"h\",\"en\":[19,\"paga\"]},{\"que\":\"persona\",\"x\":50,\"y\":94,\"tam\":26,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"cambia\":{\"en\":[21,\"beneficios\"],\"cara\":\"feliz\"}},{\"que\":\"texto\",\"texto\":\"BENEFICIOS EN VIDA\",\"x\":50,\"y\":58,\"tam\":5.5,\"color\":\"principal\",\"en\":[21,\"beneficios\"]}]},{\"tipo\":\"lienzo\",\"desde\":[22],\"capitulo\":\"el beneficio\",\"contador\":\"beneficio |en vida\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"p\",\"que\":\"persona\",\"x\":78,\"y\":92,\"tam\":32,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"ropa\":2,\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[23,\"dinero\"],\"cara\":\"feliz\"}},{\"que\":\"objeto\",\"objeto\":\"hospital\",\"x\":26,\"y\":24,\"tam\":28,\"etiqueta\":\"DIAGNÓSTICO\",\"en\":[22,\"diagnostican\"]},{\"id\":\"c\",\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":26,\"y\":64,\"tam\":24,\"etiqueta\":\"TU DINERO\",\"en\":[23,\"dinero\"]},{\"que\":\"flecha\",\"de\":\"c\",\"a\":\"p\",\"en\":[24,\"gastos\"]}]},{\"tipo\":\"lienzo\",\"desde\":[25],\"capitulo\":\"el IUL\",\"contador\":\"hasta |10% al año\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":26,\"cara\":\"feliz\",\"gorro\":\"casco\",\"ropa\":5},{\"que\":\"cifra\",\"texto\":\"IUL\",\"x\":50,\"y\":22,\"tam\":14,\"color\":\"principal\",\"etiqueta\":\"VIDA INDEXADO\",\"en\":[25,\"IUL\"]},{\"que\":\"cifra\",\"texto\":\"hasta 10%\",\"x\":50,\"y\":50,\"tam\":11,\"color\":\"verde\",\"etiqueta\":\"AL AÑO\",\"en\":[28,\"hasta\"]}]},{\"tipo\":\"lienzo\",\"desde\":[29],\"capitulo\":\"piso cero\",\"contador\":\"piso |0%\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":28,\"y\":93,\"tam\":32,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"ropa\":1,\"etiqueta\":\"TÚ\"},{\"que\":\"globo\",\"texto\":\"Si el mercado cae, yo no pierdo\",\"piensa\":false,\"cola\":1,\"x\":28,\"y\":24,\"en\":[29,\"mercado\"]},{\"que\":\"texto\",\"texto\":\"PISO CERO\",\"x\":72,\"y\":50,\"tam\":7,\"color\":\"principal\",\"en\":[30,\"piso\"]},{\"que\":\"check\",\"x\":72,\"y\":74,\"en\":[30,\"cero\"]}]},{\"tipo\":\"lienzo\",\"desde\":[31],\"capitulo\":\"da el paso\",\"contador\":\"asesor |certificado\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"cel\",\"que\":\"celular\",\"modo\":\"mensaje\",\"texto\":\"Aquí está tu link\",\"x\":28,\"y\":50},{\"id\":\"fam\",\"que\":\"objeto\",\"objeto\":\"familia\",\"x\":72,\"y\":50,\"tam\":32,\"en\":[34,\"mejor\"]},{\"que\":\"flecha\",\"de\":\"cel\",\"a\":\"fam\",\"en\":[34,\"opción\"]}]},{\"tipo\":\"cierre\",\"desde\":[35],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[35,\"Sígueme\"],\"compartir\":[36,\"compártelo\"]}]",
+  "aviso": "Ejemplo: visitas de 50 millas ida y vuelta, gasolina a $3.50 el galón, comida de $12 por visita y un día de ocho horas sin cobrar por cada cita. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 5 (lienzo): persona «TÚ» se sale por abajo (y más chico o tam más chico)"
+ ]
+}

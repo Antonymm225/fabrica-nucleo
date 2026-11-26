@@ -1,0 +1,47 @@
+# FF-073 · Finanzas Familiares · EST-01 · Los $300 que se renuevan
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo más común del préstamo de día de pago en tienda, por cada $100 prestados = 15 $ · https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans
+# Fuente: Porcentaje de préstamos seguidos por otro préstamo en menos de 30 días = 80 % · https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans
+# Fuente: Tamaño promedio de un préstamo de día de pago = 350 $ · https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans
+# Fuente: Cargo extra por cada renovación de un préstamo de $350 = 52.5 $ · https://www.federalregister.gov/documents/2017/11/17/2017-21808/payday-vehicle-title-and-certain-high-cost-installment-loans
+# BLOQUE 1
+Pedir [$300|trescientos dólares] prestados
+te puede costar *más del doble*.
+Al final te digo la *pregunta exacta*
+que le haces al *prestamista*
+antes de firmar.
+Se llama *renovar* el préstamo.
+Es el préstamo de *día de pago*,
+el que ves en *tiendas* de Estados Unidos.
+Pides [$300|trescientos dólares] y te cobran [$45|cuarenta y cinco dólares] de *cargo*.
+Parece poco, ¿verdad?
+Pero a las *dos semanas*
+tienes que pagar los [$300|trescientos dólares] *completos*.
+Si no puedes, te dicen: *renueva*.
+Pagas otros [$45|cuarenta y cinco dólares] y la deuda *no baja*.
+Y aquí viene lo que *nadie te dice*:
+cerca de [8|ocho] de cada [10|diez]
+lo piden *otra vez* en menos de un mes.
+Mira la cuenta con [7|siete] *renovaciones*.
+Son [14|catorce] semanas, [$45|cuarenta y cinco dólares] cada vez.
+Pagaste [$315|trescientos quince dólares] solo en *cargos*.
+Y los [$300|trescientos dólares] siguen *ahí*.
+En total, [$615|seiscientos quince dólares].
+Pagaste *más del doble* de lo que pediste.
+Eso es una *quincena entera* que regalaste.
+Antes de firmar, hazte *una pregunta*:
+¿de dónde saco los [$345|trescientos cuarenta y cinco dólares]
+en *dos semanas*?
+Si no lo tienes claro, *no lo pidas*.
+Si ya lo pediste, *no renueves*.
+Habla con quien te prestó *antes* de que venza.
+Ahora sí, la *pregunta exacta*:
+¿Mi estado ofrece un *plan de pago* sin cargos?
+Y pide que te lo den *por escrito*.
+Depende de tu estado, pero *pregunta*.
+Pide más plazo en la *luz* o la renta.
+Casi siempre sale *más barato*.
+Pregunta también por *ayuda local* en tu ciudad.
+Esto le pasa a mucha gente *trabajadora*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien ya renovó un *préstamo*.

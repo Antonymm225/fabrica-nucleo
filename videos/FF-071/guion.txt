@@ -1,0 +1,44 @@
+# FF-071 · Finanzas Familiares · EST-01 · La llanta que no debería ser emergencia
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Porcentaje de adultos que cubriría una emergencia de $1,000 con sus ahorros (Bankrate 2025; en 2024 era 44%) = 41 % · https://www.fox9.com/news/emergency-savings-americans-2025
+# Fuente: Porcentaje de adultos que podría cubrir un gasto de emergencia de $400 con efectivo o su equivalente (Reserva Federal, SHED 2024) = 63 % · https://blog.siebert.com/how-to-build-an-emergency-fund
+# Fuente: Costo promedio de mantenimiento y reparaciones por milla (AAA 2025), citado por Experian = 0.11 $ · https://www.experian.com/blogs/ask-experian/how-to-budget-for-car-maintenance-and-repairs/
+# Fuente: Presupuesto anual de mantenimiento si manejas 15,000 millas (Experian con datos de AAA) = 1650 $ · https://www.experian.com/blogs/ask-experian/how-to-budget-for-car-maintenance-and-repairs/
+# Fuente: El APR promedio de tarjetas de tienda sigue arriba de 30% (Bankrate 2025). Se usa 30% como supuesto del ejemplo. = 30 % · https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/
+# BLOQUE 1
+Una *llanta ponchada*
+no debería ser una *emergencia*.
+Es un gasto que *ya sabías*.
+Al final te digo los *tres escalones*
+para que la próxima no te *asuste*.
+Se llama vivir *sin colchón*.
+Tu troca gasta *llantas*,
+frenos y *baterías*.
+Eso no es sorpresa, es *calendario*.
+Y en Estados Unidos, solo [41%|cuarenta y uno por ciento]
+pagaría mil dólares de emergencia con *ahorros*.
+Muchos lo pasan a la *tarjeta*.
+Digamos una reparación de mil dólares.
+En una tarjeta al [30%|treinta por ciento],
+pagada en *dos años*.
+Pagas unos [$56|cincuenta y seis dólares] al mes,
+y terminas pagando más de [$1,300|mil trescientos dólares].
+Son [$341|trescientos cuarenta y un dólares] solo de *intereses*.
+Y no hace falta una reparación *grande*.
+Una llanta de doscientos cincuenta dólares
+pagada en un año deja [$42|cuarenta y dos dólares] de *intereses*.
+Ahora sí, los *tres escalones*.
+Primero, una *llanta*: unos doscientos cincuenta dólares.
+Segundo, una *reparación*: unos mil dólares.
+Tercero, una *semana sin trabajo*:
+lo que gasta tu casa en siete días.
+Para armarlo, aparta unos [$19|diecinueve dólares] a la *semana*.
+Así, en un año, juntas mil dólares.
+Ponlo en una cuenta *aparte*,
+con transferencia automática el día de *cobro*.
+Y pon la llanta en tu *presupuesto*,
+como gasto normal, no como *susto*.
+Mil dólares no arreglan todo,
+pero una llanta ya no te *rompe la quincena*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien maneja una *troca vieja*.

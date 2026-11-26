@@ -1,0 +1,96 @@
+{
+ "titulo": "La llanta que no debería ser emergencia",
+ "angulo": "Una llanta ponchada no es una emergencia, es un gasto que ya sabías que iba a llegar, y sin un colchón chico lo pagas con tarjeta y sale más caro.",
+ "explicacion": "Tu troca gasta llantas, frenos y baterías. Eso no es sorpresa, es calendario. Solo 41% de los adultos pagaría $1,000 de emergencia con sus ahorros, así que la mayoría termina en la tarjeta. Una reparación de $1,000 en una tarjeta al 30% pagada en 24 meses te cuesta $341.91 de intereses. Un colchón de $1,000, que se arma con unos $19 a la semana, convierte esa emergencia en un gasto normal.",
+ "datos": [
+  {
+   "dato": "Porcentaje de adultos que cubriría una emergencia de $1,000 con sus ahorros (Bankrate 2025; en 2024 era 44%)",
+   "valor": 41,
+   "unidad": "%",
+   "fuente": "https://www.fox9.com/news/emergency-savings-americans-2025"
+  },
+  {
+   "dato": "Porcentaje de adultos que podría cubrir un gasto de emergencia de $400 con efectivo o su equivalente (Reserva Federal, SHED 2024)",
+   "valor": 63,
+   "unidad": "%",
+   "fuente": "https://blog.siebert.com/how-to-build-an-emergency-fund"
+  },
+  {
+   "dato": "Costo promedio de mantenimiento y reparaciones por milla (AAA 2025), citado por Experian",
+   "valor": 0.11,
+   "unidad": "$",
+   "fuente": "https://www.experian.com/blogs/ask-experian/how-to-budget-for-car-maintenance-and-repairs/"
+  },
+  {
+   "dato": "Presupuesto anual de mantenimiento si manejas 15,000 millas (Experian con datos de AAA)",
+   "valor": 1650,
+   "unidad": "$",
+   "fuente": "https://www.experian.com/blogs/ask-experian/how-to-budget-for-car-maintenance-and-repairs/"
+  },
+  {
+   "dato": "El APR promedio de tarjetas de tienda sigue arriba de 30% (Bankrate 2025). Se usa 30% como supuesto del ejemplo.",
+   "valor": 30,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/credit-cards/news/retail-store-credit-card-survey/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual de una reparación de $1,000 en tarjeta al 30% APR a 24 meses",
+   "expresion": "round(1000*(0.30/12)/(1-(1+0.30/12)**-24),2)",
+   "resultado": 55.91
+  },
+  {
+   "descripcion": "Total pagado por la reparación de $1,000 en 24 meses",
+   "expresion": "round(1000*(0.30/12)/(1-(1+0.30/12)**-24)*24,2)",
+   "resultado": 1341.91
+  },
+  {
+   "descripcion": "Intereses pagados por la reparación de $1,000 en tarjeta",
+   "expresion": "round(1000*(0.30/12)/(1-(1+0.30/12)**-24)*24-1000,2)",
+   "resultado": 341.91
+  },
+  {
+   "descripcion": "Intereses de una llanta de $250 (supuesto) en tarjeta al 30% a 12 meses",
+   "expresion": "round(250*(0.30/12)/(1-(1+0.30/12)**-12)*12-250,2)",
+   "resultado": 42.46
+  },
+  {
+   "descripcion": "Mantenimiento mensual recomendado para 15,000 millas al año",
+   "expresion": "round(1650/12,2)",
+   "resultado": 137.5
+  },
+  {
+   "descripcion": "Ahorro semanal para juntar $1,000 en 52 semanas",
+   "expresion": "round(1000/52,2)",
+   "resultado": 19.23
+  },
+  {
+   "descripcion": "Meses de mantenimiento que cubre un colchón de $1,000",
+   "expresion": "round(1000/137.5,2)",
+   "resultado": 7.27
+  }
+ ],
+ "consejo": "Arma el colchón por escalones, con cosas reales. Primero, una llanta (unos $250). Después, una reparación (unos $1,000). Al final, una semana sin trabajo (lo que gastas en la casa en 7 días). Aparta unos $19 a la semana en una cuenta aparte, con transferencia automática el día de cobro. Pon la llanta en tu presupuesto mensual como gasto normal, no como susto.",
+ "que_no_decir": [
+  "Que con $1,000 ya estás protegido de todo",
+  "Que el APR de 30% o el precio de $250 de la llanta son promedios oficiales (son supuestos del ejemplo)",
+  "Que nunca uses la tarjeta (a veces no queda de otra)",
+  "Prometer un rendimiento o una tasa de cuenta de ahorro específica",
+  "Recomendar inversiones, seguros, cooperativas o planes del trabajo",
+  "Decir que 'todos' los hispanos no tienen ahorros (los datos son de adultos en EE. UU. en general)"
+ ],
+ "con_iul": false,
+ "idea": "El fondo de emergencia medido en cosas reales: una llanta, una semana sin trabajo, una reparación",
+ "gancho_pedido": "Una llanta ponchada no debería ser una emergencia.",
+ "ganchos_recientes": [
+  "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar."
+ ]
+}

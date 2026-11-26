@@ -1,0 +1,109 @@
+{
+ "titulo": "La cuenta que no manda el hospital",
+ "angulo": "Cuando te enfermas por meses, la cuenta más grande no llega del hospital: es la que nadie te manda, los días sin cobrar, la gasolina y la comida fuera de casa.",
+ "explicacion": "Todos piensan en la factura del hospital. Pero ir al tratamiento cuesta gasolina, comida en la calle y días sin trabajar. En un caso de ejemplo, los días sin cobrar son casi 91% de esos gastos. El seguro médico no paga nada de eso. La ley federal (FMLA) te guarda el puesto hasta 12 semanas, pero sin sueldo. Por eso importa tener un seguro de vida que te deje usar parte del dinero en vida si te diagnostican una enfermedad crónica, crítica o terminal.",
+ "datos": [
+  {
+   "dato": "Tarifa por milla que el IRS permite para viajes médicos en 2025 (piso del costo real de la gasolina y el desgaste) - VERIFICAR en IRS Pub. 502",
+   "valor": 0.21,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/publications/p502"
+  },
+  {
+   "dato": "Semanas de permiso federal FMLA sin goce de sueldo para cuidar tu salud - VERIFICAR",
+   "valor": 12,
+   "unidad": "semanas",
+   "fuente": "https://www.dol.gov/agencies/whd/fmla"
+  },
+  {
+   "dato": "SUPUESTO del ejemplo, no es dato de estudio: viajes al tratamiento por semana",
+   "valor": 3,
+   "unidad": "viajes",
+   "fuente": "https://www.dol.gov/agencies/whd/fmla"
+  },
+  {
+   "dato": "SUPUESTO del ejemplo, no es dato de estudio: sueldo por hora",
+   "valor": 25,
+   "unidad": "$",
+   "fuente": "https://www.dol.gov/agencies/whd/fmla"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Viajes al tratamiento en 12 semanas (3 por semana)",
+   "expresion": "3*12",
+   "resultado": 36
+  },
+  {
+   "descripcion": "Millas manejadas (40 millas por viaje)",
+   "expresion": "36*40",
+   "resultado": 1440
+  },
+  {
+   "descripcion": "Gasolina y desgaste al mínimo de la tarifa IRS",
+   "expresion": "round(1440*0.21,2)",
+   "resultado": 302.4
+  },
+  {
+   "descripcion": "Comida fuera de casa ($12 por viaje)",
+   "expresion": "36*12",
+   "resultado": 432
+  },
+  {
+   "descripcion": "Sueldo perdido en los 36 días de tratamiento ($25 x 8 horas)",
+   "expresion": "36*25*8",
+   "resultado": 7200
+  },
+  {
+   "descripcion": "Total de gastos no médicos del ejemplo",
+   "expresion": "round(302.4+432+7200,2)",
+   "resultado": 7934.4
+  },
+  {
+   "descripcion": "Porcentaje de ese total que son días sin cobrar",
+   "expresion": "round(7200/7934.4*100,2)",
+   "resultado": 90.74
+  },
+  {
+   "descripcion": "Sueldo no cobrado si te toca las 12 semanas completas de permiso FMLA sin sueldo",
+   "expresion": "12*40*25",
+   "resultado": 12000
+  }
+ ],
+ "consejo": "Antes de que pase, revisa con un agente si tu seguro de vida tiene beneficios en vida por enfermedad crónica, crítica o terminal, y cuánto de la póliza puedes usar. Mientras tanto, apunta cuántos días al mes necesitarías faltar y cuánto dejas de cobrar. Si ya estás enfermo, pregunta en el hospital por trabajador social, ayuda con transporte y programas de la American Cancer Society (viajes y hospedaje gratis).",
+ "que_no_decir": [
+  "No presentar los números del ejemplo como promedios de estudios: son supuestos.",
+  "No decir que el seguro médico nunca paga transporte: algunos planes sí cubren ciertos traslados.",
+  "No prometer que el IUL paga siempre por enfermedad: depende de la póliza, las condiciones y el porcentaje que permita.",
+  "No decir que el permiso FMLA aplica a todos: pide tiempo en el empleo y un patrón de cierto tamaño, y muchos obreros no califican.",
+  "No inventar el porcentaje de gastos no médicos hasta tener fuente.",
+  "No repetir las cifras de Seguro Social por incapacidad de videos anteriores ni la espera de 5 meses."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "El costo de una enfermedad larga que no es médico: transporte, comidas, días sin trabajar",
+ "gancho_pedido": "El hospital no es la cuenta más grande cuando alguien se enferma.",
+ "ganchos_recientes": [
+  "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+  "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones"
+ ]
+}

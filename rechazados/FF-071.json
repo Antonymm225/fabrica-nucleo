@@ -1,0 +1,176 @@
+{
+ "ficha": {
+  "titulo": "El fondo de emergencia en llantas, no en meses",
+  "angulo": "A la mayoría le dicen que ahorre 'de 3 a 6 meses de gastos' y por eso nunca empiezan, pero la meta que sí se logra es una llanta ($400), y esa sola meta ya te saca de la tarjeta.",
+  "explicacion": "Según la Reserva Federal, 63% de los adultos puede pagar $400 de emergencia con efectivo, así que casi 4 de cada 10 no puede. Pensar en 6 meses de gastos asusta y la gente ni empieza. Mejor mídelo en cosas reales: una llanta (unos $250), una reparación (unos $1,000) y una semana sin trabajo (unos $740 de cuentas). Con $25 a la semana llegas a $400 en 16 semanas, y con una llanta ponchada ya no usas la tarjeta. Una llanta de $250 en tarjeta cuesta poco en intereses (unos $16), pero una reparación de $1,000 sí te cuesta unos $123, y eso te pasa varias veces al año.",
+  "datos": [
+   {
+    "dato": "Adultos en EE. UU. que pueden cubrir una emergencia de $400 con efectivo (SHED 2024, publicado mayo 2025; confirmado en una página secundaria que cita el informe)",
+    "valor": 63,
+    "unidad": "%",
+    "fuente": "https://www.federalreserve.gov/consumerscommunity/shed.htm"
+   },
+   {
+    "dato": "SUPUESTO por verificar: costo de una llanta instalada",
+    "valor": 250,
+    "unidad": "$",
+    "fuente": "supuesto"
+   },
+   {
+    "dato": "SUPUESTO por verificar: reparación de troca típica (frenos, batería, aire)",
+    "valor": 1000,
+    "unidad": "$",
+    "fuente": "supuesto"
+   },
+   {
+    "dato": "SUPUESTO por verificar: tasa anual (APR) de tarjeta de crédito, cercana al promedio que reporta la Fed",
+    "valor": 22,
+    "unidad": "%",
+    "fuente": "supuesto"
+   },
+   {
+    "dato": "SUPUESTO ilustrativo: gastos fijos del hogar al mes (renta, troca, comida, luz)",
+    "valor": 3200,
+    "unidad": "$",
+    "fuente": "supuesto"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Adultos que NO pueden cubrir $400 en efectivo",
+    "expresion": "100-63",
+    "resultado": 37
+   },
+   {
+    "descripcion": "Semanas para juntar $400 ahorrando $25 a la semana",
+    "expresion": "400/25",
+    "resultado": 16.0
+   },
+   {
+    "descripcion": "Semanas para juntar $1,000 (una reparación) con $25 a la semana",
+    "expresion": "1000/25",
+    "resultado": 40.0
+   },
+   {
+    "descripcion": "Gastos de una semana sin trabajo (3,200 al mes entre 4.33 semanas)",
+    "expresion": "round(3200/4.33,2)",
+    "resultado": 739.03
+   },
+   {
+    "descripcion": "Semanas para juntar una semana de gastos con $25 a la semana",
+    "expresion": "round(739.03/25,1)",
+    "resultado": 29.6
+   },
+   {
+    "descripcion": "Pago mensual de una llanta de $250 en tarjeta a 22% en 6 meses",
+    "expresion": "round(250*(0.22/12)/(1-(1+0.22/12)**-6),2)",
+    "resultado": 44.38
+   },
+   {
+    "descripcion": "Intereses totales de la llanta de $250 a 6 meses",
+    "expresion": "round(250*(0.22/12)/(1-(1+0.22/12)**-6)*6-250,2)",
+    "resultado": 16.28
+   },
+   {
+    "descripcion": "Pago mensual de una reparación de $1,000 en tarjeta a 22% en 12 meses",
+    "expresion": "round(1000*(0.22/12)/(1-(1+0.22/12)**-12),2)",
+    "resultado": 93.59
+   },
+   {
+    "descripcion": "Intereses totales de la reparación de $1,000 a 12 meses",
+    "expresion": "round(1000*(0.22/12)/(1-(1+0.22/12)**-12)*12-1000,2)",
+    "resultado": 123.13
+   },
+   {
+    "descripcion": "Si te pasan 2 reparaciones de $1,000 en el año con tarjeta, intereses totales",
+    "expresion": "round(2*123.13,2)",
+    "resultado": 246.26
+   }
+  ],
+  "consejo": "No te pongas la meta de 6 meses. Empieza con la meta de una llanta: $400. Aparta $25 cada semana el mismo día que cobras, en una cuenta aparte que no tenga tarjeta de débito pegada. Cuando llegues a $400, sigue hasta $1,000 (una reparación) y después hasta una semana de tus cuentas, unos $740. Cada vez que uses el fondo, vuelve a llenarlo. Si ya tienes deuda en tarjeta, junta primero los $400 y luego ataca la deuda.",
+  "que_no_decir": [
+   "No digas que los $16 de interés de la llanta te arruinan: es poco, y el punto es no vivir sin colchón.",
+   "No presentes los $250, el 22% ni los $3,200 como datos oficiales: son supuestos a verificar o aclarar en pantalla como ejemplo.",
+   "No prometas que con $400 estás a salvo de todo.",
+   "No repitas el ahorro de $19.50 contra $200 en cuenta en línea, ni el tema del pago mínimo, que ya están en FF-003 y FF-001.",
+   "No recomiendes dónde invertir ni mandes a cooperativas, planes del trabajo o seguros.",
+   "No digas que el 63% sea cifra de este año ni que 'todos' ahorran poco: es 63% en 2024, según la Fed."
+  ],
+  "con_iul": false,
+  "idea": "El fondo de emergencia medido en cosas reales: una llanta, una semana sin trabajo, una reparación",
+  "gancho_pedido": "Una llanta ponchada no debería ser una emergencia.",
+  "ganchos_recientes": [
+   "Rentar no es perder tu dinero. / A veces, comprar sale más caro. / Al final te digo cuántos años / tienes que quedarte para que valga la pena.",
+   "Si te caes del techo, / lo que te pagan no es tu sueldo completo. / Y a muchos roofers ni eso les llega. / Al final te digo la pregunta exacta",
+   "Hay cargos al comprar casa / que se pueden negociar, y nadie te lo dice. / Al final te digo la frase exacta / que le dices al banco para bajarlo.",
+   "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+   "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+   "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+   "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+   "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar."
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Si ahorras pensando en seis meses de gastos, / nunca vas a empezar. / Al final te digo la meta que sí se logra / y en cuántas semanas la juntas.",
+   "Pagar tu tarjeta a tiempo no te salva / si no tienes un colchón para la próxima llanta. / Al final te digo cuántas semanas / necesitas y en qué cuenta guardarlo.",
+   "El que te vende la llanta no te dice / que sin colchón se la cobra tu tarjeta. / Al final te digo en qué cuenta guardar / el dinero para que no lo gastes.",
+   "Dos roofers se ponchan una llanta. / Uno la paga ese día; el otro, con tarjeta. / Al final te digo cuántas semanas / le tomó al primero armar su colchón.",
+   "En unas semanas, una llanta ponchada / deja de ser emergencia. / Al final te digo cuántas son, / y el detalle de la cuenta que evita gastarlo.",
+   "¿Tienes cuatrocientos dólares hoy, en efectivo? / Casi cuatro de cada diez dicen que no. / Al final te digo cuánto apartar / cada semana para llegar.",
+   "Hay una meta de ahorro que nadie te enseñó, / y es más chica que seis meses de gastos. / Al final te digo cuál es / y en cuántas semanas la logras.",
+   "Nunca te pongas la meta de seis meses de gastos. / Por eso casi nadie empieza. / Al final te digo la meta que sí cabe / en tu quincena."
+  ],
+  "gancho_elegido": "Una llanta ponchada / no debería ser una emergencia. / Para casi cuatro de cada diez, sí lo es. / Al final te digo cuántas semanas necesitas, y en qué cuenta guardarlo. Frena el scroll porque habla de algo que le pasa a cualquier trabajador con su troca, la cifra (casi cuatro de cada diez no puede con una llanta) lo hace pensar 'eso soy yo', y el open loop promete un número de semanas y un detalle de la cuenta que no se pueden adivinar.",
+  "titulo": "El fondo de emergencia en llantas",
+  "lineas": [
+   "Una *llanta ponchada*",
+   "no debería ser una *emergencia*.",
+   "Para casi cuatro de cada diez, *sí lo es*.",
+   "Al final te digo *cuántas semanas*",
+   "necesitas, y en qué *cuenta* guardarlo.",
+   "Se llama el *fondo de llanta*.",
+   "Te dicen: ahorra de tres a *seis meses*.",
+   "Eso asusta, y por eso *nadie empieza*.",
+   "Mejor mídelo en cosas *reales*.",
+   "Una *llanta*: unos [$250|doscientos cincuenta dólares].",
+   "Una *reparación*: unos [$1,000|mil dólares].",
+   "Una *semana sin trabajo*: unos [$740|setecientos cuarenta].",
+   "Sin colchón, todo eso se va a la *tarjeta*.",
+   "Y aquí viene lo que *nadie te dice*.",
+   "La llanta en tarjeta deja poco: [$16|dieciséis] de *interés*.",
+   "Pero una *reparación* de [$1,000|mil dólares]",
+   "deja [$123|ciento veintitrés] de *interés*,",
+   "si la pagas en [12|doce] *meses*.",
+   "Y eso te pasa *varias veces* al año.",
+   "Con dos reparaciones, son [$246|doscientos cuarenta y seis].",
+   "Es otra *llanta* regalada al banco.",
+   "Empieza con una sola *meta*:",
+   "[$400|cuatrocientos dólares], una llanta y algo más.",
+   "Ahora sí, el *número exacto*:",
+   "[$25|veinticinco dólares] cada semana, el día que *cobras*.",
+   "En [16|dieciséis] semanas, ya tienes tu *colchón*.",
+   "Y la *cuenta*: aparte, sin tarjeta de débito.",
+   "Así no se te antoja *gastarla*.",
+   "Luego sigue hasta [$1,000|mil dólares], una *reparación*.",
+   "Después, una semana de cuentas: [$740|setecientos cuarenta].",
+   "Si usas el fondo, *vuelve a llenarlo*.",
+   "Si debes en tarjeta, junta *primero* los [$400|cuatrocientos dólares].",
+   "Con eso no estás a salvo de todo,",
+   "pero una *llanta ponchada* ya no te quiebra.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien no tiene *colchón*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"tu troca\",\"contador\":\"llanta |ponchada\",\"elementos\":[{\"que\":\"persona\",\"x\":25,\"y\":92,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[2,\"cuatro\"],\"cara\":\"sorprendido\"}},{\"que\":\"objeto\",\"objeto\":\"troca\",\"x\":72,\"y\":40,\"tam\":36,\"en\":[0,\"llanta\"]},{\"que\":\"sello\",\"texto\":\"EMERGENCIA\",\"color\":\"rojo\",\"x\":72,\"y\":40,\"en\":[1,\"emergencia\"]}]},{\"tipo\":\"lienzo\",\"desde\":[3],\"capitulo\":\"la promesa\",\"contador\":\"tu |plan\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":25,\"y\":30,\"tam\":28,\"etiqueta\":\"cuántas semanas\"},{\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":75,\"y\":30,\"tam\":28,\"etiqueta\":\"la cuenta\",\"en\":[4,\"cuenta\"]},{\"que\":\"texto\",\"texto\":\"¿Cuántas? ¿Dónde?\",\"color\":\"principal\",\"x\":50,\"y\":68,\"tam\":6,\"en\":[4,\"qué\"]}]},{\"tipo\":\"tablero\",\"desde\":[5],\"capitulo\":\"el nombre\",\"filas\":[\"FONDO\",\"LLANTA\"],\"en\":[5,\"llanta\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[6],\"capitulo\":\"la meta\",\"contador\":\"meta |seis meses\",\"entrada\":\"corte\",\"elementos\":[{\"que\":\"persona\",\"x\":28,\"y\":92,\"tam\":34,\"cara\":\"neutro\",\"gorro\":\"casco\",\"cambia\":{\"en\":[7,\"asusta\"],\"cara\":\"preocupado\"}},{\"que\":\"globo\",\"texto\":\"Ahorra de tres a seis meses\",\"piensa\":false,\"cola\":1,\"x\":28,\"y\":25,\"en\":[6,\"ahorra\"]},{\"id\":\"cal\",\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":75,\"y\":55,\"tam\":30,\"en\":[6,\"meses\"]},{\"que\":\"tacha\",\"sobre\":\"cal\",\"en\":[7,\"nadie\"]}]},{\"tipo\":\"lienzo\",\"desde\":[9],\"capitulo\":\"cosas reales\",\"contador\":\"cosas |reales\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":8,\"tam\":82,\"titulo\":\"Cosas reales\",\"en\":[9],\"renglones\":[{\"texto\":\"Una llanta\",\"valor\":\"$250\",\"en\":[9,\"250\"]},{\"texto\":\"Una reparación\",\"valor\":\"$1,000\",\"en\":[10,\"1,000\"]},{\"texto\":\"Semana sin trabajo\",\"valor\":\"$740\",\"en\":[11,\"740\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":24,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":2,\"en\":[9]}]},{\"tipo\":\"lienzo\",\"desde\":[12],\"capitulo\":\"sin colchón\",\"contador\":\"todo va a |tarjeta\",\"entrada\":\"destello\",\"elementos\":[{\"id\":\"c\",\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":25,\"y\":30,\"tam\":28},{\"id\":\"t\",\"que\":\"objeto\",\"objeto\":\"tarjeta\",\"x\":72,\"y\":30,\"tam\":30,\"giro\":-8,\"en\":[12,\"tarjeta\"]},{\"que\":\"dinero\",\"de\":\"c\",\"a\":\"t\",\"en\":[12,\"tarjeta\"],\"hasta\":[13,\"dice\"]},{\"que\":\"persona\",\"x\":50,\"y\":93,\"tam\":28,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"en\":[13,\"nadie\"]}]},{\"tipo\":\"lienzo\",\"desde\":[14],\"capitulo\":\"los intereses\",\"contador\":\"intereses |tarjeta\",\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"torre\",\"x\":25,\"y\":95,\"tam\":55,\"valor\":16,\"max\":123,\"prefijo\":\"$\",\"en\":[14],\"hasta\":[14,\"interés\"],\"etiqueta\":\"llanta\"},{\"que\":\"torre\",\"x\":75,\"y\":95,\"tam\":55,\"valor\":123,\"max\":123,\"prefijo\":\"$\",\"color\":\"gris\",\"en\":[15,\"reparación\"],\"hasta\":[16,\"123\"],\"etiqueta\":\"reparación\"},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":50,\"y\":28,\"tam\":20,\"etiqueta\":\"12 meses\",\"en\":[17,\"12\"]}]},{\"tipo\":\"lienzo\",\"desde\":[18],\"capitulo\":\"dos veces\",\"contador\":\"intereses |$246\",\"entrada\":\"corte\",\"elementos\":[{\"id\":\"c\",\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":25,\"y\":75,\"tam\":26},{\"que\":\"cifra\",\"contar\":true,\"valor\":246,\"prefijo\":\"$\",\"x\":50,\"y\":32,\"tam\":11,\"color\":\"principal\",\"etiqueta\":\"intereses\",\"en\":[19,\"son\"],\"hasta\":[19,\"246\"]},{\"id\":\"b\",\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":75,\"y\":75,\"tam\":26,\"etiqueta\":\"el banco\",\"en\":[19,\"reparaciones\"]},{\"que\":\"dinero\",\"de\":\"c\",\"a\":\"b\",\"en\":[20,\"otra\"],\"hasta\":[20,\"banco\"]}]},{\"tipo\":\"lienzo\",\"desde\":[21],\"capitulo\":\"la salida\",\"contador\":\"primera |meta\",\"elementos\":[{\"que\":\"persona\",\"x\":22,\"y\":93,\"tam\":32,\"cara\":\"feliz\",\"gorro\":\"casco\",\"ropa\":3},{\"que\":\"globo\",\"texto\":\"Mi primera meta: una llanta\",\"piensa\":false,\"cola\":-1,\"x\":28,\"y\":20,\"en\":[21,\"meta\"]},{\"que\":\"texto\",\"texto\":\"$400 de colchón\",\"color\":\"verde\",\"x\":74,\"y\":50,\"tam\":5,\"en\":[22,\"400\"]},{\"que\":\"texto\",\"texto\":\"$25 por semana\",\"color\":\"principal\",\"x\":74,\"y\":68,\"tam\":5,\"en\":[24,\"25\"]}]},{\"tipo\":\"oscura\",\"desde\":[25],\"capitulo\":\"tu colchón\",\"contador\":\"meta |en semanas\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"16\",\"etiqueta\":\"semanas para tu colchón\",\"en\":[25,\"16\"]},\"cae\":{\"objeto\":\"alcancia\",\"letrero\":\"COLCHON\",\"en\":[25,\"colchón\"]}},{\"tipo\":\"lienzo\",\"desde\":[26],\"capitulo\":\"el detalle\",\"contador\":\"cuenta |aparte\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":28,\"y\":30,\"tam\":28,\"etiqueta\":\"cuenta aparte\"},{\"id\":\"t\",\"que\":\"objeto\",\"objeto\":\"tarjeta\",\"x\":72,\"y\":30,\"tam\":28,\"etiqueta\":\"débito\",\"en\":[26,\"débito\"]},{\"que\":\"tacha\",\"sobre\":\"t\",\"en\":[26,\"débito\"]},{\"que\":\"persona\",\"x\":50,\"y\":93,\"tam\":30,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"ropa\":1,\"en\":[27]}]},{\"tipo\":\"lienzo\",\"desde\":[28],\"capitulo\":\"qué sigue\",\"contador\":\"paso |tras paso\",\"elementos\":[{\"que\":\"lista\",\"x\":50,\"y\":8,\"en\":[28],\"items\":[{\"texto\":\"Sigue: $1,000, una reparación\",\"en\":[28,\"1,000\"]},{\"texto\":\"Luego: $740, una semana\",\"en\":[29,\"740\"]},{\"texto\":\"Si lo usas, vuelve a llenarlo\",\"en\":[30,\"llenarlo\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":22,\"cara\":\"feliz\",\"gorro\":\"casco\",\"ropa\":4,\"en\":[28,\"sigue\"]}]},{\"tipo\":\"lienzo\",\"desde\":[31],\"capitulo\":\"tu fondo\",\"contador\":\"primero |tu colchón\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"persona\",\"x\":25,\"y\":93,\"tam\":32,\"cara\":\"neutro\",\"gorro\":\"casco\",\"ropa\":2,\"cambia\":{\"en\":[33,\"quiebra\"],\"cara\":\"feliz\"}},{\"que\":\"objeto\",\"objeto\":\"alcancia\",\"x\":72,\"y\":32,\"tam\":28,\"etiqueta\":\"tu fondo\"},{\"que\":\"texto\",\"texto\":\"Primero tu colchón\",\"color\":\"verde\",\"x\":72,\"y\":62,\"tam\":5,\"en\":[31,\"primero\"]},{\"que\":\"sello\",\"texto\":\"LISTO\",\"color\":\"verde\",\"x\":72,\"y\":32,\"en\":[33,\"ponchada\"]}]},{\"tipo\":\"cierre\",\"desde\":[34],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[34,\"Sígueme\"],\"compartir\":[35,\"compártelo\"]}]",
+  "aviso": "Ejemplo: la llanta de $250, la reparación de $1,000, el interés de 22% y los gastos de $3,200 al mes son supuestos ilustrativos, no datos oficiales. El 63% es de la Reserva Federal (SHED 2024): federalreserve.gov/consumerscommunity/shed.htm. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "dato sin enlace de fuente: SUPUESTO por verificar: costo de una llanta instalada",
+  "dato sin enlace de fuente: SUPUESTO por verificar: reparación de troca típica (frenos, batería, aire)",
+  "dato sin enlace de fuente: SUPUESTO por verificar: tasa anual (APR) de tarjeta de crédito, cercana al promedio que reporta la Fed",
+  "dato sin enlace de fuente: SUPUESTO ilustrativo: gastos fijos del hogar al mes (renta, troca, comida, luz)",
+  "línea 22: la cifra $400 no sale de la ficha del tema (datos o cálculos)",
+  "línea 24: la cifra $25 no sale de la ficha del tema (datos o cálculos)",
+  "línea 31: la cifra $400 no sale de la ficha del tema (datos o cálculos)"
+ ]
+}

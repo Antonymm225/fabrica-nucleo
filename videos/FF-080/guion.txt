@@ -1,0 +1,46 @@
+# FF-080 · Finanzas Familiares · EST-01 · La tarjeta de nómina que te cobra
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Cargo por consultar el saldo en cajero en una tarjeta de nómina (ejemplo de tabla de tarifas de MidFirst) = 1.0 $ · https://www.midfirst.com/payrollterms
+# Fuente: Cargo por usar un cajero internacional en esa misma tarjeta (ejemplo) = 4.0 $ · https://www.midfirst.com/payrollterms
+# Fuente: Supuesto del ejemplo (no verificado): cargo por retiro en cajero fuera de red = 2.0 $ · https://www.consumerfinance.gov/consumer-tools/prepaid-cards/
+# Fuente: Supuesto del ejemplo: sueldo semanal = 900 $ · https://www.bls.gov/
+# Fuente: Semanas por año = 52 semanas · https://www.bls.gov/
+# BLOQUE 1
+Si te pagan en una *tarjeta*,
+puede que te cobren por usar *tu propio sueldo*.
+Al final te digo la *frase exacta*
+que le entregas a *nómina*
+para que te paguen *sin tarjeta*.
+Se llama la *tarjeta de nómina*.
+Tu patrón ya no te da *cheque*.
+Te deposita el sueldo en una *tarjeta*.
+Sacas efectivo en el cajero *equivocado*,
+y te cobran [$2|dos dólares].
+Miras tu saldo en el cajero,
+y te cobran [$1|un dólar] *por mirar*.
+Y si usas un cajero en otro país,
+algunas tarjetas cobran [$4|cuatro dólares].
+Parecen *centavos*, ¿verdad?
+Cobras [$900|novecientos dólares] a la semana.
+Sacas efectivo *dos veces* por semana,
+y revisas tu saldo *tres veces*.
+Son [$364|trescientos sesenta y cuatro] en *cargos* al año.
+Eso son más de [16|dieciséis]
+*horas de trabajo* regaladas.
+En [10|diez] años, son [$3,640|tres mil seiscientos cuarenta].
+Ojo: no todas cobran *igual*.
+Pero aquí viene lo que *nadie te dice*.
+La *ley federal* dice que tu patrón
+no puede *obligarte* a usar
+la tarjeta de *un banco específico*.
+Te debe ofrecer *otra opción*.
+Ahora sí, la *frase exacta*:
+Quiero mi sueldo en *depósito directo*,
+o con *cheque*, no en tarjeta.
+Llévale tu número de *cuenta* y de ruta.
+Mientras tanto, usa solo cajeros de *su red*,
+saca todo el efectivo en *una sola vez*,
+y revisa tu saldo por *internet*.
+Si tu patrón insiste, presenta una *queja*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra en *tarjeta*.

@@ -1,0 +1,627 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: $300 al mes desde los 45 hasta los 60, con crecimiento de hasta 10% al año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 1,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu trabajo",
+   "contador": "trabajo |treinta años",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 36,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 55,
+     "tam": 40,
+     "en": [
+      1,
+      "troca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "a los 45",
+   "contador": "apartas |$300 al mes",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       4,
+       "trescientos"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 70,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "45 AÑOS",
+     "en": [
+      2,
+      "cuarenta"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$300",
+     "x": 70,
+     "y": 64,
+     "tam": 10,
+     "en": [
+      4,
+      "trescientos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "RETIRO",
+    "TARDE"
+   ],
+   "en": [
+    5,
+    "tarde"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "tu troca",
+   "contador": "troca |pierde valor",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 92,
+     "tam": 36,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       8,
+       "pierde"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 28,
+     "y": 40,
+     "tam": 36,
+     "en": [
+      7,
+      "troca"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "VALE MENOS",
+     "color": "rojo",
+     "x": 28,
+     "y": 40,
+     "en": [
+      8,
+      "pierde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "tu retiro",
+   "contador": "retiro |sin apartar",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "Ya es tarde para mí",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      10,
+      "tarde"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 76,
+     "y": 50,
+     "tam": 24,
+     "etiqueta": "RETIRO",
+     "en": [
+      9,
+      "aparta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "tu dinero",
+   "contador": "tiempo |a tu favor",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       14,
+       "ayude"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "m",
+     "que": "objeto",
+     "objeto": "moneda",
+     "x": 27,
+     "y": 36,
+     "tam": 24,
+     "etiqueta": "TU DINERO",
+     "en": [
+      12,
+      "dinero"
+     ]
+    },
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 73,
+     "y": 36,
+     "tam": 24,
+     "etiqueta": "EL TIEMPO",
+     "en": [
+      14,
+      "tiempo"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "m",
+     "a": "c",
+     "en": [
+      14,
+      "ayude"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "aportas |$54,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 48,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "$300 AL MES",
+     "en": [
+      16,
+      "trescientos"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 82,
+     "y": 95,
+     "tam": 50,
+     "valor": 54000,
+     "max": 54000,
+     "prefijo": "$",
+     "etiqueta": "TÚ PONES",
+     "en": [
+      17,
+      "pones"
+     ],
+     "hasta": [
+      17,
+      "54,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "una opción",
+   "contador": "opción |IUL",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       19,
+       "IUL"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Dónde lo guardo?",
+     "piensa": true,
+     "cola": -1,
+     "x": 25,
+     "y": 20,
+     "en": [
+      18,
+      "dónde"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "color": "principal",
+     "x": 74,
+     "y": 45,
+     "tam": 9,
+     "en": [
+      19,
+      "IUL"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "seguro indexado",
+     "color": "tinta",
+     "x": 74,
+     "y": 62,
+     "tam": 3.6,
+     "en": [
+      20,
+      "seguro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "el IUL",
+   "contador": "crece |hasta 10%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "g",
+     "que": "grafica",
+     "inicio": 100,
+     "final": 400,
+     "barras": 10,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON EL TIEMPO",
+     "etiqueta": "PISO CERO",
+     "x": 50,
+     "y": 88,
+     "en": [
+      21,
+      "tuyo"
+     ],
+     "hasta": [
+      24,
+      "cero"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "hasta 10%",
+     "x": 50,
+     "y": 14,
+     "tam": 9,
+     "color": "verde",
+     "en": [
+      22,
+      "hasta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "la cuenta",
+   "contador": "a los 60 |$125,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 3600,
+     "final": 125819,
+     "barras": 15,
+     "desdeTexto": "A LOS 45",
+     "hastaTexto": "A LOS 60",
+     "etiqueta": "$300 AL MES",
+     "x": 50,
+     "y": 88,
+     "hasta": [
+      28,
+      "llegar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    29
+   ],
+   "capitulo": "el resultado",
+   "contador": [
+    {
+     "en": [
+      29
+     ],
+     "texto": "a los 60 |$125,000"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "crecimiento |$70,000"
+    }
+   ],
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$125,000",
+    "etiqueta": "para tu retiro",
+    "en": [
+     29,
+     "125,000"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     29,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      33
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      31
+     ],
+     "items": [
+      {
+       "texto": "Empieza este mes",
+       "en": [
+        31,
+        "Empieza"
+       ]
+      },
+      {
+       "texto": "Aporte fijo",
+       "en": [
+        32,
+        "fijo"
+       ]
+      },
+      {
+       "texto": "Sale solo de tu cuenta",
+       "en": [
+        33,
+        "solo"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      34,
+      "retiro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "el link",
+   "contador": "link |biografía",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Aquí está el link",
+     "x": 28,
+     "y": 55
+    },
+    {
+     "id": "lk",
+     "que": "texto",
+     "texto": "EL LINK",
+     "color": "principal",
+     "x": 72,
+     "y": 22,
+     "tam": 7,
+     "en": [
+      36,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lk",
+     "en": [
+      36,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 66,
+     "tam": 30,
+     "en": [
+      38,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    39
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    39,
+    "Sígueme"
+   ],
+   "compartir": [
+    40,
+    "compártelo"
+   ]
+  }
+ ]
+}

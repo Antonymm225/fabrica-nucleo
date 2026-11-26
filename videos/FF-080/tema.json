@@ -1,0 +1,95 @@
+{
+ "titulo": "La tarjeta de nómina que te cobra por tu sueldo",
+ "angulo": "Te pagan tu sueldo en una tarjeta y hasta por mirar tu saldo te pueden cobrar, pero la ley federal dice que el patrón no te puede obligar a usar una tarjeta de un banco específico.",
+ "explicacion": "Algunos patrones pagan en una tarjeta de nómina en vez de cheque o depósito. Muchas de estas tarjetas cobran por sacar efectivo en ciertos cajeros, por consultar el saldo y en el extranjero. Son centavos que parecen poco, pero se repiten cada semana. Lo que casi nadie sabe: la ley federal (Regulación E) dice que el patrón no puede obligarte a recibir tu sueldo en una tarjeta de una institución específica, así que debe ofrecerte otra opción. Puedes pedir por escrito depósito directo a tu propia cuenta o cheque.",
+ "datos": [
+  {
+   "dato": "Cargo por consultar el saldo en cajero en una tarjeta de nómina (ejemplo de tabla de tarifas de MidFirst)",
+   "valor": 1.0,
+   "unidad": "$",
+   "fuente": "https://www.midfirst.com/payrollterms"
+  },
+  {
+   "dato": "Cargo por usar un cajero internacional en esa misma tarjeta (ejemplo)",
+   "valor": 4.0,
+   "unidad": "$",
+   "fuente": "https://www.midfirst.com/payrollterms"
+  },
+  {
+   "dato": "Supuesto del ejemplo (no verificado): cargo por retiro en cajero fuera de red",
+   "valor": 2.0,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/consumer-tools/prepaid-cards/"
+  },
+  {
+   "dato": "Supuesto del ejemplo: sueldo semanal",
+   "valor": 900,
+   "unidad": "$",
+   "fuente": "https://www.bls.gov/"
+  },
+  {
+   "dato": "Semanas por año",
+   "valor": 52,
+   "unidad": "semanas",
+   "fuente": "https://www.bls.gov/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Cargos por 2 retiros a la semana a $2 cada uno, en un año",
+   "expresion": "2*2*52",
+   "resultado": 208
+  },
+  {
+   "descripcion": "Cargos por consultar saldo 3 veces a la semana a $1, en un año",
+   "expresion": "3*1*52",
+   "resultado": 156
+  },
+  {
+   "descripcion": "Total de cargos al año en el ejemplo",
+   "expresion": "2*2*52+3*1*52",
+   "resultado": 364
+  },
+  {
+   "descripcion": "Sueldo anual bruto del ejemplo",
+   "expresion": "900*52",
+   "resultado": 46800
+  },
+  {
+   "descripcion": "Porcentaje del sueldo que se va en cargos",
+   "expresion": "round((2*2*52+3*1*52)/(900*52)*100, 2)",
+   "resultado": 0.78
+  },
+  {
+   "descripcion": "Horas de trabajo a $22 la hora que se van solo en esos cargos",
+   "expresion": "round((2*2*52+3*1*52)/22, 2)",
+   "resultado": 16.55
+  },
+  {
+   "descripcion": "Cargos en 10 años si no cambias nada",
+   "expresion": "(2*2*52+3*1*52)*10",
+   "resultado": 3640
+  }
+ ],
+ "consejo": "Pregunta en nómina por escrito: 'Quiero que mi sueldo se deposite directo en mi cuenta de cheques o que me paguen con cheque, no en tarjeta'. Lleva tu número de cuenta y ruta. Mientras tanto, lee la hoja de tarifas de tu tarjeta, usa solo los cajeros de su red, saca todo el efectivo en una sola vez y revisa tu saldo en la app o por internet, que normalmente no cuesta. Si el patrón insiste en obligarte, puedes presentar una queja en consumerfinance.gov.",
+ "que_no_decir": [
+  "No digas que todas las tarjetas de nómina cobran cargos: varias tienen opciones gratis dentro de su red.",
+  "No digas que la tarjeta es ilegal: es legal si tú la aceptas y tienes alternativa.",
+  "No prometas que el patrón tiene que darte cheque: debe ofrecerte una opción distinta a una tarjeta de una institución específica, y los detalles dependen del estado.",
+  "No presentes los $364 al año como un cargo oficial de todas las tarjetas: es un ejemplo con supuestos, y los cargos reales los dice la hoja de tarifas de cada tarjeta.",
+  "No des cifras de tarifas promedio nacionales sin verificarlas en la fuente."
+ ],
+ "con_iul": false,
+ "idea": "El sueldo pagado en una tarjeta de nómina: los cargos por sacar y revisar tu propio dinero y cómo pedir otra forma de pago",
+ "gancho_pedido": "Si te pagan en una tarjeta, puede que te cobren por usar tu propio sueldo.",
+ "ganchos_recientes": [
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta"
+ ]
+}

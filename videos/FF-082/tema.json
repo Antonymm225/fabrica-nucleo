@@ -1,0 +1,106 @@
+{
+ "titulo": "Las deudas que sí te sobreviven",
+ "angulo": "Tus hijos no heredan tus deudas, pero las que alguien firmó contigo, la casa y la troca siguen cobrándose a quien quedó atado a ellas.",
+ "explicacion": "Cuando faltas, las deudas que son solo tuyas se pagan con lo que dejas (tu 'estate'). Si no alcanza, el banco pierde y tus hijos no pagan de su bolsillo. Pero hay excepciones. Si alguien cosignó o abrió la tarjeta contigo, esa persona debe todo. En los estados de propiedad comunitaria, como Texas y California, parte de la deuda del matrimonio puede ser también del cónyuge. La casa y la troca tienen garantía: el pago sigue llegando cada mes, y si nadie paga, el banco se puede quedar con ellas.",
+ "datos": [
+  {
+   "dato": "La FTC dice que los familiares normalmente no están obligados a pagar con su dinero las deudas de un pariente fallecido; las paga el 'estate'. Excepción principal: si cosignaron. (Cita vista en una página secundaria; confirmar en consumer.ftc.gov)",
+   "valor": 1,
+   "unidad": "regla",
+   "fuente": "https://consumer.ftc.gov/articles/debts-and-deceased-relatives"
+  },
+  {
+   "dato": "Estados de propiedad comunitaria donde el cónyuge puede responder por deudas del matrimonio (AZ, CA, ID, LA, NV, NM, TX, WA, WI). Confirmar la lista; una página secundaria habló de 10 si se cuenta Alaska, que es opcional.",
+   "valor": 9,
+   "unidad": "estados",
+   "fuente": "https://www.irs.gov/irm/part25/irm_25-018-001"
+  },
+  {
+   "dato": "Mediana de un funeral con velorio y entierro (NFDA 2023). Ya se usó en FF-021, así que solo sirve como contexto y no como cifra principal.",
+   "valor": 8300,
+   "unidad": "$",
+   "fuente": "https://www.nfda.org/news/statistics"
+  },
+  {
+   "dato": "Ley Garn-St Germain: el banco no puede exigir el préstamo completo de golpe cuando la casa pasa a un familiar por la muerte del dueño. Es un dato por confirmar. El pago mensual sigue siendo obligatorio.",
+   "valor": 1,
+   "unidad": "regla",
+   "fuente": "https://www.consumerfinance.gov/ask-cfpb/can-a-mortgage-lender-call-my-loan-due-after-a-death-en-2007/"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo hipotético de Roberto: tarjeta solo suya $9,000 + troca cosignada $24,000 + casa $180,000 + tarjeta conjunta $6,000 = deuda total",
+   "expresion": "9000+24000+180000+6000",
+   "resultado": 219000
+  },
+  {
+   "descripcion": "Deuda que le toca directo a otra persona por haber firmado (troca cosignada + tarjeta conjunta)",
+   "expresion": "24000+6000",
+   "resultado": 30000
+  },
+  {
+   "descripcion": "Parte de la deuda total que es solo de Roberto y se paga con su estate (la tarjeta de $9,000), en %",
+   "expresion": "round(9000/219000*100,2)",
+   "resultado": 4.11
+  },
+  {
+   "descripcion": "Parte de la deuda total que es solo de Roberto y se paga con su estate (la tarjeta de $9,000): el resto es deuda con garantía o con otra firma, en %",
+   "expresion": "round((219000-9000)/219000*100,2)",
+   "resultado": 95.89
+  },
+  {
+   "descripcion": "Pago de la casa de $1,450 al mes durante 12 meses sin el sueldo de Roberto",
+   "expresion": "1450*12",
+   "resultado": 17400
+  },
+  {
+   "descripcion": "Pagos de la casa por 24 meses (hipotético)",
+   "expresion": "1450*24",
+   "resultado": 34800
+  },
+  {
+   "descripcion": "Cantidad que cubriría las deudas firmadas ($30,000) más 24 meses de casa ($34,800)",
+   "expresion": "30000+34800",
+   "resultado": 64800
+  }
+ ],
+ "consejo": "Haz una lista de tus deudas en tres columnas: solo tuyas, firmadas con alguien (cosigner o cuenta conjunta) y con garantía (casa y troca). Dile a quien cosignó cuánto debes. Luego pon un seguro de vida con beneficiario nombrado, para que tu familia pueda pagar lo firmado y seguir con la casa y la troca. En general el pago va directo al beneficiario, no pasa por el estate. Esto varía por estado, así que confírmalo.",
+ "que_no_decir": [
+  "No digas 'tus deudas desaparecen cuando faltas'. Se pagan con lo que dejas, y el banco puede cobrar el estate.",
+  "No digas 'si cosignaste, el banco no te puede cobrar'. Si cosignaste, la deuda también es tuya.",
+  "No digas 'la casa se pierde' sin aclarar que la ley federal ayuda al familiar que hereda, pero el pago sigue.",
+  "No des cifras de propiedad comunitaria o de la ley Garn-St Germain sin confirmar la regla y el estado exacto.",
+  "No prometas que el seguro de vida siempre está protegido de los cobradores en todos los estados.",
+  "No repitas la cifra del funeral de $8,300 como gancho, porque ya se usó en FF-021.",
+  "No des consejo legal. Recomienda hablar con un abogado de sucesiones del estado.",
+  "No uses la cifra del hueco del Seguro Social ni la del seguro del trabajo."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "Tus deudas cuando faltas: cuáles no pasan a la familia y cuáles sí (las que alguien firmó contigo, la casa, la troca)",
+ "gancho_pedido": "Tus deudas no las heredan tus hijos. Pero hay excepciones que nadie te cuenta.",
+ "ganchos_recientes": [
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito."
+ ]
+}

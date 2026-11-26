@@ -1,0 +1,45 @@
+# FF-078 · Finanzas Familiares · EST-01 · Tu reembolso es un préstamo
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Reembolso promedio del IRS, temporada 2025 (al 25 de abril de 2025) = 2945 $ · https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-april-25-2025
+# Fuente: Reembolso promedio con depósito directo, temporada 2025 (al 25 de abril de 2025) = 3023 $ · https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-april-25-2025
+# Fuente: Tasa (APR) promedio de las tarjetas de crédito en 2025, según la Reserva Federal de Nueva York = 22 % · https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1143.pdf
+# Fuente: Si el Estimador de Retenciones del IRS muestra que te retienen de más, puedes bajar la retención entregando un W-4 nuevo a tu patrón = 1 formulario W-4 · https://www.taxpayeradvocate.irs.gov/news/tax-tips/taxtips-use-tax-withholding-estimator-and-take-action-on-your-tax-withholding-now/2025/07/
+# BLOQUE 1
+Tu *reembolso* grande no es un regalo.
+Es un *préstamo* que le hiciste al gobierno.
+Y te lo devuelven sin un *centavo* de interés.
+Al final te digo la *herramienta* gratis
+y el *formulario* que lo arregla.
+Se llama la *retención de más*.
+En cada cheque, te quitan *impuesto*
+de más, por si acaso.
+Y en abril, el IRS te lo *devuelve*.
+El reembolso *promedio* fue de [$2,945|dos mil novecientos cuarenta y cinco dólares].
+Es un promedio del país, no *tu número*.
+Eso son unos [$245|doscientos cuarenta y cinco dólares]
+al mes que *nunca llegaron* a tu bolsillo.
+Casi [$57|cincuenta y siete dólares] cada *semana*,
+y eso es *gasolina* para ir a la obra.
+Pero aquí viene lo que *nadie* te dice.
+Mientras el gobierno usaba tu dinero,
+tú cargabas la *tarjeta* al [22%|veintidós por ciento].
+Y él te pagó [0%|cero por ciento] de *interés*.
+Tenías unos [$1,470|mil cuatrocientos setenta dólares] tuyos prestados.
+Si cubres apuros con *tarjeta*, eso costaría
+unos [$324|trescientos veinticuatro dólares] de *interés*.
+Ahora sí, la *herramienta*:
+el *Estimador de Retenciones* del IRS.
+Es gratis, entras a IRS.gov,
+con tu último *talón de cheque*.
+Si dice que te retienen de más,
+llenas un [W-4|doble u cuatro] nuevo
+y se lo entregas a tu *patrón*.
+Y ese dinero llega en *cada cheque*.
+Con lo que te sobre, arma un *colchón*
+o paga tu *tarjeta*.
+Pero no lo pongas en cero:
+retén lo *justo*, ni más ni menos.
+Revísalo si cambias de *trabajo*,
+te casas o tienes un hijo.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien celebra su *reembolso*.

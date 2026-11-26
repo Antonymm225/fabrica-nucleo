@@ -1,0 +1,48 @@
+# FF-079 · Finanzas Familiares · EST-01 · Treinta años y solo la troca
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Mediana de cuentas de retiro de familias de 55 a 64 años que tienen cuenta (SCF 2022). Falta verificar contra la fuente. = 185000 $ · https://www.federalreserve.gov/publications/files/scf23.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Treinta años de *trabajo*
+no deberían caber en una *troca*.
+A los cuarenta y cinco, todavía no es *tarde*.
+Al final te hago la *cuenta exacta*
+de apartar trescientos dólares al *mes*.
+Se llama la trampa del *retiro tarde*.
+Llevas treinta años dándole al *oficio*,
+y lo único con valor es la *troca*.
+Y la troca *pierde valor* cada año.
+Casi nadie aparta para el *retiro*,
+porque cree que a esa edad ya es *tarde*.
+Pero aquí viene lo que nadie te *dice*:
+tu dinero también *trabaja* por ti.
+No necesitas ganar *más*,
+necesitas que el *tiempo* te ayude.
+Si empiezas a los cuarenta y cinco
+y apartas trescientos dólares al *mes*,
+en quince años pones [$54,000|cincuenta y cuatro mil dólares] de *tu bolsillo*.
+¿Y dónde lo guardas para que *crezca*?
+Una opción es un [IUL|a yu el],
+un *seguro de vida indexado*.
+Es *tuyo*, y tu dinero puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes*
+por esa caída. Tiene *piso cero*.
+Ahora sí, la *cuenta exacta*:
+Empiezas a los cuarenta y cinco,
+con trescientos dólares al *mes*,
+y a los sesenta podrías llegar
+a más de [$125,000|ciento veinticinco mil dólares] para tu *retiro*.
+Más de [$70,000|setenta mil dólares] podrían venir del *crecimiento*.
+Empieza este mes con lo que *puedas*,
+que el aporte sea *fijo*
+y salga solo de tu *cuenta*.
+Que tu retiro sea más que una *troca*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cree que ya es *tarde*.

@@ -1,0 +1,80 @@
+{
+ "titulo": "El reembolso que es tu propio dinero",
+ "angulo": "Celebras un reembolso de casi $3,000 como si fuera un regalo, pero es dinero tuyo que el gobierno usó todo el año sin pagarte nada, mientras tú cargabas deudas con tarjeta al 22%.",
+ "explicacion": "Un reembolso solo significa que de tu cheque se retuvo más impuesto del que debías. El IRS reportó un reembolso promedio de $2,945 en la temporada 2025. Eso son unos $245 al mes que no llegaron a tu bolsillo. Si en el año usas la tarjeta para cubrir un apuro, ese dinero te habría ahorrado intereses del 22%. La salida es corregir tu retención con el Estimador de Retenciones del IRS y entregar un W-4 nuevo, para recibir ese dinero en cada cheque.",
+ "datos": [
+  {
+   "dato": "Reembolso promedio del IRS, temporada 2025 (al 25 de abril de 2025)",
+   "valor": 2945,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-april-25-2025"
+  },
+  {
+   "dato": "Reembolso promedio con depósito directo, temporada 2025 (al 25 de abril de 2025)",
+   "valor": 3023,
+   "unidad": "$",
+   "fuente": "https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-april-25-2025"
+  },
+  {
+   "dato": "Tasa (APR) promedio de las tarjetas de crédito en 2025, según la Reserva Federal de Nueva York",
+   "valor": 22,
+   "unidad": "%",
+   "fuente": "https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1143.pdf"
+  },
+  {
+   "dato": "Si el Estimador de Retenciones del IRS muestra que te retienen de más, puedes bajar la retención entregando un W-4 nuevo a tu patrón",
+   "valor": 1,
+   "unidad": "formulario W-4",
+   "fuente": "https://www.taxpayeradvocate.irs.gov/news/tax-tips/taxtips-use-tax-withholding-estimator-and-take-action-on-your-tax-withholding-now/2025/07/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Dinero extra retenido por mes con un reembolso de $2,945",
+   "expresion": "round(2945/12, 2)",
+   "resultado": 245.42
+  },
+  {
+   "descripcion": "Dinero tuyo que el gobierno tiene prestado en promedio durante el año (se acumula poco a poco, así que es la mitad)",
+   "expresion": "round(2945/2, 2)",
+   "resultado": 1472.5
+  },
+  {
+   "descripcion": "Lo que costaría tener ese promedio prestado en una tarjeta al 22% durante un año",
+   "expresion": "round(2945/2*0.22, 2)",
+   "resultado": 323.9
+  },
+  {
+   "descripcion": "Lo que te paga el gobierno por usar tu dinero (0%) sobre ese promedio",
+   "expresion": "round(2945/2*0, 2)",
+   "resultado": 0.0
+  },
+  {
+   "descripcion": "Dinero extra por semana (52 semanas) si corriges tu retención",
+   "expresion": "round(2945/52, 2)",
+   "resultado": 56.63
+  }
+ ],
+ "consejo": "Entra a IRS.gov y usa el Estimador de Retenciones (Tax Withholding Estimator) con tu último talón de cheque y tu declaración pasada. Si te dice que te retienen de más, llena un W-4 nuevo y entrégaselo a tu patrón. Con lo que te sobre cada cheque, arma un colchón chico o paga tu tarjeta. Revísalo otra vez si cambias de trabajo, te casas o tienes un hijo, para no quedar corto y pagar en abril.",
+ "que_no_decir": [
+  "No digas que el reembolso es dinero perdido o que 'el gobierno te roba'. Es tu dinero y lo recibes de vuelta.",
+  "No prometas que a todos les van a retener de más: el promedio no es tu caso.",
+  "No digas que ponga su W-4 en cero o que no pague impuestos. El objetivo es retener lo justo, no menos.",
+  "No prometas que vas a ahorrar $323.90: es una comparación con una tarjeta al 22%, solo aplica si usas la tarjeta.",
+  "No hables de reembolsos con crédito por hijos ni de adelantos de reembolso, ya se cubrieron en otros videos.",
+  "No des la cifra de $2,945 como lo que te toca a ti: es un promedio nacional de 2025."
+ ],
+ "con_iul": false,
+ "idea": "El reembolso grande de impuestos: es tu propio dinero que le prestaste al gobierno todo el año",
+ "gancho_pedido": "Un reembolso grande no es un regalo. Es un préstamo que le hiciste al gobierno.",
+ "ganchos_recientes": [
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra"
+ ]
+}

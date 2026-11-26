@@ -1,0 +1,659 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: sueldo de $900 a la semana, 2 retiros a $2 y 3 consultas de saldo a $1. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu sueldo",
+   "contador": "te pagan |en tarjeta",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "cobren"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 70,
+     "y": 38,
+     "tam": 36,
+     "giro": -8,
+     "en": [
+      0,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "COBRAN",
+     "color": "rojo",
+     "x": 70,
+     "y": 38,
+     "en": [
+      1,
+      "cobren"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "la frase",
+   "contador": "pedido |a nómina",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 80,
+     "titulo": "Pedido a nómina",
+     "renglones": [
+      {
+       "texto": "Frase exacta",
+       "valor": "???",
+       "en": [
+        2,
+        "frase"
+       ]
+      },
+      {
+       "texto": "Forma de pago",
+       "valor": "sin tarjeta",
+       "en": [
+        4,
+        "tarjeta"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TARJETA",
+    "NOMINA"
+   ],
+   "en": [
+    5,
+    "nómina"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "sin cheque",
+   "contador": "cobro |$2",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "etiqueta": "TÚ",
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       9,
+       "cobran"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "id": "ch",
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 75,
+     "y": 20,
+     "tam": 24,
+     "en": [
+      6,
+      "cheque"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "ch",
+     "en": [
+      6,
+      "cheque"
+     ]
+    },
+    {
+     "id": "tj",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 60,
+     "tam": 26,
+     "en": [
+      7,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "-$2",
+     "color": "rojo",
+     "x": 72,
+     "y": 60,
+     "en": [
+      9,
+      "$2"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "por mirar",
+   "contador": "cobro |$1",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 3
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 40,
+     "tam": 30,
+     "etiqueta": "TU SALDO",
+     "en": [
+      10,
+      "saldo"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "-$1",
+     "color": "rojo",
+     "x": 72,
+     "y": 40,
+     "en": [
+      11,
+      "$1"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "otro país",
+   "contador": "cobro |$4",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 1
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 28,
+     "y": 40,
+     "tam": 34,
+     "etiqueta": "OTRO PAÍS",
+     "en": [
+      12,
+      "otro"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "-$4",
+     "color": "rojo",
+     "x": 28,
+     "y": 40,
+     "en": [
+      13,
+      "$4"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "la cuenta",
+   "contador": "semana |$900",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu semana",
+     "renglones": [
+      {
+       "texto": "Tu sueldo",
+       "valor": "$900",
+       "en": [
+        15,
+        "900"
+       ]
+      },
+      {
+       "texto": "Retiros: 2 por semana",
+       "valor": "$2",
+       "en": [
+        16,
+        "veces"
+       ]
+      },
+      {
+       "texto": "Saldo: 3 por semana",
+       "valor": "$1",
+       "en": [
+        17,
+        "veces"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       16,
+       "efectivo"
+      ],
+      "texto": "¡OJO!"
+     },
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "al año",
+   "contador": "cargos |$364",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 364,
+     "prefijo": "$",
+     "x": 50,
+     "y": 38,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "cargos al año",
+     "en": [
+      18
+     ],
+     "hasta": [
+      18,
+      "cargos"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Más de 16 horas",
+     "x": 50,
+     "y": 62,
+     "color": "tinta",
+     "en": [
+      19,
+      "16"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 4,
+     "en": [
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "diez años |$3,640",
+   "entrada": "ola",
+   "cifra": {
+    "texto": "-$3,640",
+    "etiqueta": "en diez años",
+    "en": [
+     21,
+     "3,640"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TU PAGO",
+    "en": [
+     20,
+     "horas"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que no te dicen",
+   "contador": "la ley |federal",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       23,
+       "nadie"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "No todas cobran igual",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      22,
+      "todas"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "LEY FEDERAL",
+     "x": 72,
+     "y": 50,
+     "color": "principal",
+     "en": [
+      24,
+      "ley"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu derecho",
+   "contador": "tu derecho |otra opción",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 70,
+     "y": 93,
+     "tam": 30,
+     "cara": "enojado",
+     "gorro": "casco",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       27,
+       "opción"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 25,
+     "y": 40,
+     "tam": 28,
+     "etiqueta": "UN BANCO",
+     "en": [
+      26,
+      "tarjeta"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "b",
+     "en": [
+      26,
+      "banco"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 45,
+     "en": [
+      27,
+      "opción"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "qué decir",
+   "contador": "la frase |por escrito",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "items": [
+      {
+       "texto": "Depósito directo a tu cuenta",
+       "en": [
+        29,
+        "depósito"
+       ]
+      },
+      {
+       "texto": "O cheque, no tarjeta",
+       "en": [
+        30,
+        "cheque"
+       ]
+      },
+      {
+       "texto": "Lleva cuenta y número de ruta",
+       "en": [
+        31,
+        "cuenta"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "mientras tanto",
+   "contador": "ahorra |cargos",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "en": [
+      32
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 20,
+     "y": 38,
+     "tam": 24,
+     "etiqueta": "SU RED",
+     "en": [
+      32,
+      "cajeros"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 80,
+     "y": 38,
+     "tam": 24,
+     "etiqueta": "UNA VEZ",
+     "en": [
+      33,
+      "efectivo"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 42,
+     "en": [
+      34,
+      "internet"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "titulo": "El recargo de renta tiene tope",
+ "angulo": "Mucha gente cree que el recargo es lo que diga el contrato, pero en Texas la ley le pone tope (12% de la renta en edificios chicos), no se puede cobrar antes de 2 días completos de atraso, y un recargo diario encima del fijo generalmente no vale.",
+ "explicacion": "Tu contrato dice $50 de recargo más $20 por cada día, y tú lo pagas como ley. En Texas, la ley dice que el recargo no puede pasar de 12% de la renta si el edificio tiene 4 unidades o menos, y de 10% si es más grande. Tampoco pueden cobrarte nada hasta que la renta lleve 2 días completos sin pagar después de la fecha. El recargo se cobra una vez por periodo de renta, y sumar un cobro diario encima del tope generalmente no se sostiene. Cada estado tiene su propia regla, así que revisa la tuya antes de pagar un recargo que parezca inflado.",
+ "datos": [
+  {
+   "dato": "Tope del recargo por renta tardía en Texas, edificios de 4 unidades o menos (Prop. Code §92.019)",
+   "valor": 12,
+   "unidad": "%",
+   "fuente": "https://dallaslandlordlawyer.com/late-fees-rent-acceleration/"
+  },
+  {
+   "dato": "Tope del recargo en Texas, edificios de más de 4 unidades",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://dallaslandlordlawyer.com/late-fees-rent-acceleration/"
+  },
+  {
+   "dato": "Días completos sin pagar que deben pasar en Texas antes de poder cobrar recargo",
+   "valor": 2,
+   "unidad": "días",
+   "fuente": "https://www.shukrentals.com/tools/calculators/maximum-late-fee-texas"
+  },
+  {
+   "dato": "Renta mensual del ejemplo (hipotética)",
+   "valor": 1500,
+   "unidad": "$",
+   "fuente": "https://www.shukrentals.com/tools/calculators/maximum-late-fee-texas"
+  },
+  {
+   "dato": "Recargo del contrato del ejemplo: $50 fijos más $20 por día (hipotético)",
+   "valor": 50,
+   "unidad": "$",
+   "fuente": "https://dallaslandlordlawyer.com/late-fees-rent-acceleration/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Tope legal en Texas con renta de $1,500 (12%)",
+   "expresion": "round(1500*0.12,2)",
+   "resultado": 180.0
+  },
+  {
+   "descripcion": "Tope legal si el edificio es grande (10%)",
+   "expresion": "round(1500*0.10,2)",
+   "resultado": 150.0
+  },
+  {
+   "descripcion": "Lo que cobra el contrato: $50 más $20 por 10 días de atraso",
+   "expresion": "50+20*10",
+   "resultado": 250
+  },
+  {
+   "descripcion": "Cobro de más sobre el tope de 12%",
+   "expresion": "(50+20*10)-round(1500*0.12,2)",
+   "resultado": 70.0
+  },
+  {
+   "descripcion": "Cobro de más si pasa 3 veces en un año",
+   "expresion": "((50+20*10)-round(1500*0.12,2))*3",
+   "resultado": 210.0
+  },
+  {
+   "descripcion": "Porcentaje de la renta que representa el cobro del contrato",
+   "expresion": "round((50+20*10)/1500*100,2)",
+   "resultado": 16.67
+  }
+ ],
+ "consejo": "Antes de pagar un recargo, haz tres cosas. 1) Busca en tu contrato cuánto es el recargo y cuántos días de gracia te da. 2) Busca la regla de tu estado con la palabra «late fee» y el nombre del estado, o en la página de la oficina del fiscal general o de ayuda legal de tu estado. 3) Si el recargo parece más alto que el tope, o te lo cobran antes de tiempo, escríbele al casero por mensaje o correo, pide el desglose y guarda las pruebas. Si el casero no corrige, llama a una oficina de ayuda legal gratuita. Para evitarlo, paga con una transferencia con fecha o un recordatorio el día que cobras.",
+ "que_no_decir": [
+  "No digas que ningún casero puede cobrar recargo: sí puede, dentro de las reglas.",
+  "No digas que todos los estados tienen el mismo tope ni los mismos días de gracia: cambian por estado.",
+  "No prometas que te van a devolver el dinero ni que ganarás un reclamo.",
+  "No le digas a la gente que deje de pagar la renta ni que descuente el recargo por su cuenta: eso puede llevar a un desalojo.",
+  "No presentes el ejemplo de $1,500 como un caso real: es un ejemplo con números inventados.",
+  "No des consejo legal: manda a revisar la ley del estado o a una oficina de ayuda legal gratuita."
+ ],
+ "con_iul": false,
+ "idea": "El cargo por pagar la renta tarde: en muchos estados tiene límite y días de gracia",
+ "gancho_pedido": "El cargo por pagar la renta tarde tiene reglas, y tu casero no te las va a decir.",
+ "ganchos_recientes": [
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina"
+ ]
+}

@@ -1,0 +1,45 @@
+# FF-081 · Finanzas Familiares · EST-01 · El recargo de renta tiene tope
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tope del recargo por renta tardía en Texas, edificios de 4 unidades o menos (Prop. Code §92.019) = 12 % · https://dallaslandlordlawyer.com/late-fees-rent-acceleration/
+# Fuente: Tope del recargo en Texas, edificios de más de 4 unidades = 10 % · https://dallaslandlordlawyer.com/late-fees-rent-acceleration/
+# Fuente: Días completos sin pagar que deben pasar en Texas antes de poder cobrar recargo = 2 días · https://www.shukrentals.com/tools/calculators/maximum-late-fee-texas
+# Fuente: Renta mensual del ejemplo (hipotética) = 1500 $ · https://www.shukrentals.com/tools/calculators/maximum-late-fee-texas
+# Fuente: Recargo del contrato del ejemplo: $50 fijos más $20 por día (hipotético) = 50 $ · https://dallaslandlordlawyer.com/late-fees-rent-acceleration/
+# BLOQUE 1
+Tu casero conoce una *regla* del recargo
+que nunca te va a *contar*.
+Al final te digo el papel
+que le pides *por escrito*.
+Se llama el *tope del recargo*.
+Imagina que pagas [$1,500|mil quinientos dólares] de *renta*.
+Tu contrato dice [$50|cincuenta dólares] de recargo,
+más un cobro por cada *día* tarde.
+Te atrasas [10|diez] días,
+y te cobran [$250|doscientos cincuenta dólares].
+Eso es casi [17%|diecisiete por ciento] de tu *renta*.
+Tú lo pagas porque *firmaste*.
+Pero en Texas, la ley pone un tope.
+El recargo no puede pasar de [12%|doce por ciento]
+en edificios de [4|cuatro] unidades o menos.
+Con tu renta, el tope es [$180|ciento ochenta dólares].
+Y en edificios más grandes, es [10%|diez por ciento].
+Pero aquí viene lo que *nadie* te dice:
+no pueden cobrarte *nada*
+hasta que pasen [2|dos] días *completos*.
+Y un *cobro diario* encima del recargo
+generalmente no se *sostiene*.
+En este ejemplo, son [$70|setenta dólares] de más.
+Si te pasa [3|tres] veces al año,
+son [$210|doscientos diez dólares] que regalaste.
+Ojo: cada *estado* tiene su propia regla.
+Busca *late fee* y el nombre de tu estado.
+Ahora sí, el papel: pídele el *desglose*
+del recargo, por mensaje o correo.
+Y guarda las pruebas.
+Nunca descuentes el recargo *tú solo*,
+eso te puede llevar a un *desalojo*.
+Si el casero no corrige,
+llama a una oficina de *ayuda legal* gratuita.
+Y para evitarlo, paga el día que *cobras*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien paga *renta*.

@@ -1,0 +1,644 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: reembolso promedio del IRS en 2025 de $2,945, un dato nacional que no es necesariamente tu caso. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 0,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu reembolso",
+   "contador": "reembolso |casi $3,000",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       1,
+       "préstamo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 26,
+     "tam": 26,
+     "etiqueta": "REEMBOLSO",
+     "en": [
+      0,
+      "reembolso"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 66,
+     "tam": 28,
+     "etiqueta": "EL GOBIERNO",
+     "en": [
+      1,
+      "gobierno"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SIN INTERÉS",
+     "color": "rojo",
+     "x": 72,
+     "y": 66,
+     "en": [
+      2,
+      "centavo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "lo que sigue",
+   "contador": "al final |2 cosas",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 1
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál será?",
+     "piensa": true,
+     "cola": -1,
+     "x": 50,
+     "y": 16,
+     "en": [
+      4,
+      "formulario"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "HERRAMIENTA GRATIS",
+     "x": 50,
+     "y": 36,
+     "tam": 4,
+     "color": "principal",
+     "en": [
+      3,
+      "herramienta"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "+ UN FORMULARIO",
+     "x": 50,
+     "y": 46,
+     "tam": 4,
+     "color": "tinta",
+     "en": [
+      4,
+      "formulario"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "RETENER",
+    "DEMAS"
+   ],
+   "en": [
+    5,
+    "retención"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "tu cheque",
+   "contador": "te retienen |de más",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "TU CHEQUE",
+     "en": [
+      6
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 75,
+     "y": 50,
+     "tam": 32,
+     "etiqueta": "EL GOBIERNO",
+     "en": [
+      6,
+      "quitan"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      6,
+      "quitan"
+     ],
+     "hasta": [
+      7,
+      "acaso"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "b",
+     "a": "c",
+     "en": [
+      8,
+      "abril"
+     ],
+     "hasta": [
+      8,
+      "devuelve"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      7,
+      "acaso"
+     ],
+     "cambia": {
+      "en": [
+       8,
+       "devuelve"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el promedio",
+   "contador": "promedio |$2,945",
+   "elementos": [
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 2945,
+     "prefijo": "$",
+     "x": 50,
+     "y": 38,
+     "tam": 13,
+     "etiqueta": "PROMEDIO 2025",
+     "color": "principal",
+     "en": [
+      9,
+      "promedio"
+     ],
+     "hasta": [
+      9,
+      "2,945"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "NO ES TU NÚMERO",
+     "color": "gris",
+     "x": 50,
+     "y": 78,
+     "tam": 5,
+     "en": [
+      10,
+      "número"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "cada mes",
+   "contador": "al mes |$245",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       12,
+       "nunca"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$245",
+     "x": 50,
+     "y": 24,
+     "tam": 11,
+     "etiqueta": "AL MES",
+     "color": "verde",
+     "en": [
+      11,
+      "245"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 72,
+     "tam": 32,
+     "etiqueta": "$57 POR SEMANA",
+     "en": [
+      13,
+      "semana"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "lo que no ves",
+   "contador": "tarjeta |22%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "enojado",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 2
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y mi dinero?",
+     "piensa": false,
+     "cola": -1,
+     "x": 22,
+     "y": 14,
+     "en": [
+      15,
+      "nadie"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 82,
+     "y": 48,
+     "tam": 20,
+     "etiqueta": "EL GOBIERNO",
+     "en": [
+      16,
+      "gobierno"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 78,
+     "y": 82,
+     "tam": 22,
+     "giro": -8,
+     "etiqueta": "22%",
+     "en": [
+      17,
+      "tarjeta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "la cuenta",
+   "contador": "interés |$324",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "0%",
+     "x": 50,
+     "y": 24,
+     "tam": 11,
+     "etiqueta": "TE PAGA EL IRS",
+     "color": "gris"
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 66,
+     "tam": 24,
+     "etiqueta": "$1,470 TUYOS",
+     "en": [
+      19,
+      "1,470"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 75,
+     "y": 66,
+     "tam": 26,
+     "giro": 6,
+     "etiqueta": "INTERÉS $324",
+     "en": [
+      21,
+      "324"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "la herramienta",
+   "contador": "paso |1 de 2",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      22
+     ],
+     "items": [
+      {
+       "texto": "Estimador de Retenciones del IRS",
+       "en": [
+        23,
+        "Estimador"
+       ]
+      },
+      {
+       "texto": "Gratis en IRS.gov",
+       "en": [
+        24,
+        "gratis"
+       ]
+      },
+      {
+       "texto": "Ten a la mano tu último talón",
+       "en": [
+        25,
+        "talón"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "casco",
+     "ropa": 2
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "tu patrón",
+   "contador": "paso |2 de 2",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Retienen de más?",
+     "piensa": true,
+     "cola": 1,
+     "x": 25,
+     "y": 16,
+     "en": [
+      26,
+      "retienen"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "W-4 NUEVO",
+     "color": "principal",
+     "x": 72,
+     "y": 42,
+     "tam": 5,
+     "en": [
+      27,
+      "W-4"
+     ]
+    },
+    {
+     "id": "pat",
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 5,
+     "piel": 3,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      28,
+      "patrón"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "pat",
+     "en": [
+      28,
+      "patrón"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    29
+   ],
+   "capitulo": "tu dinero",
+   "contador": "por mes |$245",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$245",
+    "etiqueta": "al mes",
+    "en": [
+     29,
+     "cheque"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "COLCHON",
+    "en": [
+     30,
+     "colchón"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "después",
+   "contador": "revisa |cada cambio",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1
+    },
+    {
+     "que": "globo",
+     "texto": "¿En cero? No.",
+     "piensa": false,
+     "cola": -1,
+     "x": 22,
+     "y": 14,
+     "en": [
+      32,
+      "cero"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 82,
+     "y": 46,
+     "tam": 18,
+     "etiqueta": "REVÍSALO",
+     "en": [
+      34,
+      "Revísalo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 78,
+     "y": 82,
+     "tam": 20,
+     "en": [
+      35,
+      "hijo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    36
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    36,
+    "Sígueme"
+   ],
+   "compartir": [
+    37,
+    "compártelo"
+   ]
+  }
+ ]
+}

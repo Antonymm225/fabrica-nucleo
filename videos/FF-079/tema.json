@@ -1,0 +1,82 @@
+{
+ "titulo": "Treinta años y solo la troca",
+ "angulo": "Llegar tarde al ahorro no es llegar sin nada: a los 45, $300 al mes todavía pueden volverse más de $125,000 a los 60, pero la mayoría cree que ya no vale la pena empezar.",
+ "explicacion": "Muchos trabajadores de oficios pasan 30 años trabajando y lo único con valor que tienen es la troca, que pierde valor cada año. Casi nadie aparta para el retiro porque piensa que a los 45 ya es tarde. Pero un aporte constante de $300 al mes, con un crecimiento de hasta 10% al año (en un IUL, que tiene piso de cero si el índice baja), puede pasar de $54,000 aportados a $125,819 a los 60. Si sigues hasta los 65, serían $72,000 aportados y $226,809 acumulados. Lo que se junta no tiene tope; el único tope es el 10% de crecimiento de un año.",
+ "datos": [
+  {
+   "dato": "Mediana de cuentas de retiro de familias de 55 a 64 años que tienen cuenta (SCF 2022). Falta verificar contra la fuente.",
+   "valor": 185000,
+   "unidad": "$",
+   "fuente": "https://www.federalreserve.gov/publications/files/scf23.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Aportado de los 45 a los 60 con $300 al mes ($3,600 al año, 15 años)",
+   "expresion": "3600*15",
+   "resultado": 54000
+  },
+  {
+   "descripcion": "Acumulado a los 60 con 10% anual, aporte al inicio de cada año, 15 años",
+   "expresion": "round(3600*((1.1**15-1)/0.1)*1.1,2)",
+   "resultado": 125819.03
+  },
+  {
+   "descripcion": "Ganancia por interés de los 45 a los 60",
+   "expresion": "round(3600*((1.1**15-1)/0.1)*1.1-3600*15,2)",
+   "resultado": 71819.03
+  },
+  {
+   "descripcion": "Aportado de los 45 a los 65 (20 años)",
+   "expresion": "3600*20",
+   "resultado": 72000
+  },
+  {
+   "descripcion": "Acumulado a los 65 con 10% anual, aporte al inicio de cada año, 20 años",
+   "expresion": "round(3600*((1.1**20-1)/0.1)*1.1,2)",
+   "resultado": 226809.0
+  }
+ ],
+ "consejo": "Empieza este mes con lo que puedas, aunque sean $100. Lo que cuenta es que el aporte sea fijo y salga solo de tu cuenta. Revisa con un agente con licencia cuánto crece una póliza IUL con tu edad y tu presupuesto. Cuando te suban el sueldo, sube el aporte.",
+ "que_no_decir": [
+  "Que vas a ganar 10% garantizado cada año: es el máximo, y el piso es cero.",
+  "Que con $300 al mes te vas a hacer rico.",
+  "Que es mejor que cualquier otra inversión.",
+  "Que no importa cuándo empieces.",
+  "Que el IUL es un plan de ahorro sin costos: tiene cargos y hay que revisarlos.",
+  "Cualquier cifra del porcentaje de trabajadores de oficios sin plan de retiro, hasta verificarla en la fuente."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "Treinta años de trabajo y lo único que queda es la troca: cómo se ve empezar a apartar aunque sea tarde",
+ "gancho_pedido": "Treinta años de trabajo no deberían caber en una troca.",
+ "ganchos_recientes": [
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis"
+ ]
+}

@@ -1,0 +1,48 @@
+# FF-082 · Finanzas Familiares · EST-01 · Las deudas que sí te sobreviven
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: La FTC dice que los familiares normalmente no están obligados a pagar con su dinero las deudas de un pariente fallecido; las paga el 'estate'. Excepción principal: si cosignaron. (Cita vista en una página secundaria; confirmar en consumer.ftc.gov) = 1 regla · https://consumer.ftc.gov/articles/debts-and-deceased-relatives
+# Fuente: Estados de propiedad comunitaria donde el cónyuge puede responder por deudas del matrimonio (AZ, CA, ID, LA, NV, NM, TX, WA, WI). Confirmar la lista; una página secundaria habló de 10 si se cuenta Alaska, que es opcional. = 9 estados · https://www.irs.gov/irm/part25/irm_25-018-001
+# Fuente: Mediana de un funeral con velorio y entierro (NFDA 2023). Ya se usó en FF-021, así que solo sirve como contexto y no como cifra principal. = 8300 $ · https://www.nfda.org/news/statistics
+# Fuente: Ley Garn-St Germain: el banco no puede exigir el préstamo completo de golpe cuando la casa pasa a un familiar por la muerte del dueño. Es un dato por confirmar. El pago mensual sigue siendo obligatorio. = 1 regla · https://www.consumerfinance.gov/ask-cfpb/can-a-mortgage-lender-call-my-loan-due-after-a-death-en-2007/
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tus hijos *no heredan* tus deudas.
+Pero hay *excepciones* que nadie te cuenta.
+Una la termina pagando alguien que *ni la usó*.
+Al final te digo la *hoja de tres columnas*
+que tienes que llenar *esta noche*.
+Se llama la *deuda viva*.
+Sigue *cobrándose* cuando tú ya no estás.
+Mira el caso de *Roberto*.
+Debe [$219,000|doscientos diecinueve mil dólares] en total.
+Solo una tarjeta es *solo suya*.
+Esa se paga con *lo que deja*.
+Si no alcanza, el banco *pierde*,
+y tus hijos no pagan *de su bolsillo*.
+Pero aquí viene lo que *nadie te dice*.
+Su hermano firmó con él la *troca*
+y una *tarjeta conjunta*.
+Son [$30,000|treinta mil dólares] que le cobran a *su hermano*.
+Y la *casa* tampoco se borra.
+Doce pagos de la casa suman [$17,400|diecisiete mil cuatrocientos dólares],
+aunque ya no entre *su sueldo*.
+Si nadie paga, el banco recoge *casa y troca*.
+El [96%|noventa y seis por ciento] de su deuda
+*no se borra* cuando él falta.
+Ahora sí, la *hoja de tres columnas*:
+*solo tuyas*, *firmadas con alguien*,
+y *con garantía*: casa y troca.
+Para pagar lo firmado, existe el [IUL|a yu el],
+un *seguro de vida indexado*.
+Si faltas, tu *beneficiario* recibe el dinero
+y tu familia sigue con la *casa*.
+Es tuyo, crece *hasta un* [10%|diez por ciento] al año,
+y si el mercado cae, tiene *piso cero*.
+Cada estado cambia: pregunta a un *abogado de sucesiones*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *cosignó* una deuda.

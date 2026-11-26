@@ -1,0 +1,773 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: renta de $1,500 en Texas, recargo de $50 más un cobro por día y 10 días de atraso (números inventados). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el secreto",
+   "contador": "renta |tarde",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "piel": 1,
+     "etiqueta": "EL CASERO",
+     "en": [
+      0,
+      "Tu"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Mejor no se lo digo",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      1,
+      "nunca"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 93,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      1,
+      "contar"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "POR ESCRITO",
+     "color": "principal",
+     "x": 50,
+     "y": 42,
+     "en": [
+      3,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la regla",
+   "contador": "recargo |con tope",
+   "filas": [
+    "TOPE",
+    "RECARGO"
+   ],
+   "en": [
+    4,
+    "tope"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el contrato",
+   "contador": "renta |$1,500",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Contrato de renta",
+     "en": [
+      5
+     ],
+     "renglones": [
+      {
+       "texto": "Renta del mes",
+       "valor": "$1,500",
+       "en": [
+        5,
+        "1,500"
+       ]
+      },
+      {
+       "texto": "Recargo fijo",
+       "valor": "$50",
+       "en": [
+        6,
+        "50"
+       ]
+      },
+      {
+       "texto": "Por cada día",
+       "valor": "extra",
+       "en": [
+        7,
+        "día"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       7,
+       "día"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 3,
+     "en": [
+      5,
+      "pagas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "10 días tarde",
+   "contador": "atraso |10 días",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 30,
+     "tam": 28,
+     "etiqueta": "10 DÍAS",
+     "en": [
+      8,
+      "Te"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 250,
+     "prefijo": "$",
+     "x": 72,
+     "y": 32,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      9,
+      "cobran"
+     ],
+     "hasta": [
+      9,
+      "250"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "ES EL 17% DE TU RENTA",
+     "color": "principal",
+     "x": 50,
+     "y": 56,
+     "en": [
+      10,
+      "casi"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "ropa": 1,
+     "en": [
+      10,
+      "Eso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    11
+   ],
+   "capitulo": "la ley",
+   "contador": "en |Texas",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "etiqueta": "TÚ",
+     "en": [
+      11,
+      "Tú"
+     ],
+     "cambia": {
+      "en": [
+       12,
+       "Texas"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Lo firmé, lo pago",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      11,
+      "pagas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 72,
+     "y": 52,
+     "tam": 32,
+     "etiqueta": "TEXAS",
+     "en": [
+      12,
+      "Texas"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "TOPE",
+     "color": "verde",
+     "x": 72,
+     "y": 52,
+     "en": [
+      12,
+      "tope"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "el tope",
+   "contador": "tope |$180",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "12%",
+     "x": 30,
+     "y": 20,
+     "tam": 9,
+     "color": "principal",
+     "en": [
+      13,
+      "recargo"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 30,
+     "y": 95,
+     "tam": 50,
+     "valor": 180,
+     "max": 180,
+     "prefijo": "$",
+     "etiqueta": "EDIF. CHICO",
+     "en": [
+      13,
+      "El"
+     ],
+     "hasta": [
+      15,
+      "180"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "10%",
+     "x": 72,
+     "y": 20,
+     "tam": 9,
+     "color": "verde",
+     "en": [
+      16,
+      "10%"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 150,
+     "max": 180,
+     "prefijo": "$",
+     "etiqueta": "EDIF. GRANDE",
+     "en": [
+      16,
+      "grandes"
+     ],
+     "hasta": [
+      16,
+      "10%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "días de gracia",
+   "contador": "espera |2 días",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 32,
+     "tam": 30,
+     "etiqueta": "2 DÍAS COMPLETOS",
+     "en": [
+      17,
+      "Pero"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "ropa": 2,
+     "en": [
+      17,
+      "aquí"
+     ],
+     "cambia": {
+      "en": [
+       19,
+       "días"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "SIN COBRO",
+     "color": "rojo",
+     "x": 72,
+     "y": 32,
+     "en": [
+      18,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "cobro diario",
+   "contador": "cobro |por día",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "id": "rec",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Recargo del contrato",
+     "en": [
+      20
+     ],
+     "renglones": [
+      {
+       "texto": "Recargo fijo",
+       "valor": "$50",
+       "en": [
+        20,
+        "Y"
+       ]
+      },
+      {
+       "texto": "Cobro por día",
+       "valor": "extra",
+       "en": [
+        20,
+        "diario"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       20,
+       "diario"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "NO SUELE VALER",
+     "color": "rojo",
+     "x": 50,
+     "y": 30,
+     "en": [
+      21,
+      "sostiene"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "enojado",
+     "gorro": "gorra",
+     "ropa": 5,
+     "en": [
+      20,
+      "Y"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": [
+    {
+     "en": [
+      22
+     ],
+     "texto": "de más |$70"
+    },
+    {
+     "en": [
+      23
+     ],
+     "texto": "3 veces |$210"
+    }
+   ],
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$70",
+    "etiqueta": "de más cada vez",
+    "en": [
+     22,
+     "70"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TUYOS",
+    "en": [
+     24,
+     "regalaste"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "tu estado",
+   "contador": "cada estado |su regla",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 95,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "en": [
+      25,
+      "Ojo"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "CADA ESTADO, SU REGLA",
+     "color": "principal",
+     "x": 50,
+     "y": 30,
+     "en": [
+      25,
+      "Ojo"
+     ],
+     "sale": [
+      26,
+      "Busca"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "late fee + tu estado",
+     "color": "tinta",
+     "x": 68,
+     "y": 58,
+     "en": [
+      26,
+      "Busca"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": "pide |el desglose",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 3,
+     "etiqueta": "TÚ",
+     "en": [
+      27,
+      "Ahora"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Pido el desglose del recargo, por favor",
+     "piensa": false,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      27,
+      "desglose"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 70,
+     "en": [
+      29,
+      "pruebas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "ojo",
+   "contador": "no descuentes |tú solo",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ",
+     "en": [
+      30,
+      "Nunca"
+     ],
+     "cambia": {
+      "en": [
+       31,
+       "desalojo"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "id": "g",
+     "texto": "Lo descuento yo",
+     "piensa": true,
+     "cola": -1,
+     "x": 24,
+     "y": 16,
+     "en": [
+      30,
+      "descuentes"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "g",
+     "en": [
+      30,
+      "solo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 80,
+     "y": 64,
+     "tam": 24,
+     "en": [
+      31,
+      "eso"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "DESALOJO",
+     "color": "rojo",
+     "x": 80,
+     "y": 64,
+     "en": [
+      31,
+      "desalojo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    32
+   ],
+   "capitulo": "la salida",
+   "contador": "paso |ayuda legal",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      32
+     ],
+     "items": [
+      {
+       "texto": "Casero no corrige",
+       "en": [
+        32,
+        "casero"
+       ]
+      },
+      {
+       "texto": "Llama a ayuda legal gratuita",
+       "en": [
+        33,
+        "ayuda"
+       ]
+      },
+      {
+       "texto": "Paga el día que cobras",
+       "en": [
+        34,
+        "paga"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 4,
+     "en": [
+      34,
+      "cobras"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

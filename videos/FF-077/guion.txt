@@ -1,0 +1,48 @@
+# FF-077 · Finanzas Familiares · EST-01 · El seguro que se acaba a los 55
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Años de cobertura de un seguro a término típico (ejemplo) = 20 años · https://www.naic.org/consumer/life-insurance.htm
+# Fuente: Edad de la persona al comprar (ejemplo) = 35 años · https://www.ssa.gov/oact/STATS/table4c6.html
+# Fuente: Hipoteca de ejemplo a 30 años (supuesto de ilustración) = 300000 $ · https://www.consumerfinance.gov/owning-a-home/
+# Fuente: Tasa de la hipoteca del ejemplo (supuesto de ilustración) = 6.5 % · https://www.consumerfinance.gov/owning-a-home/
+# Fuente: Prima mensual supuesta de 20 años (verificar con cotización real) = 30 $ · https://www.naic.org/consumer/life-insurance.htm
+# Fuente: Prima mensual supuesta de 30 años (verificar con cotización real) = 45 $ · https://www.naic.org/consumer/life-insurance.htm
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Hay *seguros de vida* que se acaban
+justo cuando más los *necesitas*.
+Y el tuyo puede traer una *fecha* escondida.
+Al final te digo la *palabra*
+que tienes que buscar en tu póliza.
+Se llama el *seguro a término*.
+Lo compras a los [35|treinta y cinco], lo pagas *puntual*.
+Cubre [20|veinte] años y se *acaba*.
+Pagas más de [$7,000|siete mil dólares] en total.
+Llegas a los [55|cincuenta y cinco], *vivo*, y no recibes *nada*.
+Tu *hipoteca* era de [30|treinta] años.
+Todavía le faltan [10|diez].
+Aún debes unos [$167,000|ciento sesenta y siete mil dólares].
+Y tus hijos todavía te *necesitan*.
+Pero aquí viene lo que *nadie* te dice.
+A esa edad, asegurarte otra vez cuesta *mucho más*.
+Y con una *enfermedad*, te lo pueden *negar*.
+Primero, compara la *fecha* de tu póliza
+con tu hipoteca y tus *hijos*.
+Ahora sí, la palabra: *conversión*.
+Pregunta si tu póliza se puede *convertir*
+a una *permanente*, y hasta qué fecha.
+Algunas no piden *examen médico*,
+pero solo si lo pides *a tiempo*.
+Otra salida: el [IUL|a yu el], un *seguro de vida indexado*.
+Se queda contigo *toda la vida*.
+Es *tuyo*, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Y si tú faltas, tu *familia* sigue protegida.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene un *seguro a término*.

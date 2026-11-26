@@ -1,0 +1,141 @@
+{
+ "ficha": {
+  "titulo": "Tu reembolso es un préstamo sin intereses",
+  "angulo": "Casi todos celebran el reembolso grande como un premio, pero es su propio dinero que el gobierno tuvo todo el año sin pagarles ni un centavo.",
+  "explicacion": "Cada quincena tu patrón te quita de más para impuestos. Ese dinero se queda con el gobierno hasta que haces tu declaración. Si te devuelven $3,221, eso fueron unos $268 al mes que no pudiste usar para tus deudas, para tus hijos ni para una emergencia. No ganas nada por esa espera. Puedes ajustar tu formulario W-4 con el Estimador de Retención del IRS para que te quiten menos en cada cheque y lo guardes tú.",
+  "datos": [
+   {
+    "dato": "Reembolso promedio del IRS en la temporada 2025 (hasta el 21 de marzo de 2025)",
+    "valor": 3221,
+    "unidad": "$",
+    "fuente": "https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-march-21-2025"
+   },
+   {
+    "dato": "Reembolso promedio un año antes, en 2024",
+    "valor": 3081,
+    "unidad": "$",
+    "fuente": "https://www.irs.gov/newsroom/filing-season-statistics-for-week-ending-march-21-2025"
+   },
+   {
+    "dato": "Tasa anual ilustrativa de una cuenta de ahorro en línea. Es un SUPUESTO para el ejemplo y debe verificarse en Bankrate o la FDIC antes de publicar.",
+    "valor": 4,
+    "unidad": "%",
+    "fuente": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/"
+   }
+  ],
+  "calculos": [
+   {
+    "descripcion": "Reembolso promedio repartido en 12 meses: lo que dejaste de tener cada mes",
+    "expresion": "round(3221/12,2)",
+    "resultado": 268.42
+   },
+   {
+    "descripcion": "Lo mismo repartido en 26 cheques quincenales",
+    "expresion": "round(3221/26,2)",
+    "resultado": 123.88
+   },
+   {
+    "descripcion": "Lo mismo repartido en 52 semanas",
+    "expresion": "round(3221/52,2)",
+    "resultado": 61.94
+   },
+   {
+    "descripcion": "Si apartaras $268.42 al mes en una cuenta al 4% anual (supuesto), cuánto tendrías al final del año",
+    "expresion": "round(3221/12*(((1+0.04/12)**12-1)/(0.04/12)),2)",
+    "resultado": 3280.71
+   },
+   {
+    "descripcion": "Intereses que ganarías en ese año por no prestarle tu dinero al gobierno (con el supuesto del 4%)",
+    "expresion": "round(3221/12*(((1+0.04/12)**12-1)/(0.04/12))-3221,2)",
+    "resultado": 59.71
+   },
+   {
+    "descripcion": "Aumento del reembolso promedio de 2024 a 2025, es decir, cuánto más de más te quitaron en promedio",
+    "expresion": "3221-3081",
+    "resultado": 140
+   }
+  ],
+  "consejo": "Entra a irs.gov y usa el Estimador de Retención de Impuestos (Tax Withholding Estimator) con tu último talón de cheque y tu declaración pasada. Te dice qué poner en un W-4 nuevo, que le entregas a tu patrón. Así te quitan menos en cada cheque. Aparta esa diferencia en una cuenta de ahorros aparte, y si tienes deuda de tarjeta, úsala para pagarla. Revisa que no te quedes corto: lo ideal es llegar cerca de cero, no deberle al IRS en abril. Si cobras por contrato esto no aplica igual, porque ahí tú pagas los trimestrales.",
+  "que_no_decir": [
+   "No digas que nunca debes recibir reembolso: llegar a cero exacto es difícil y es mejor quedar cerca.",
+   "No prometas que ganarás exactamente $59.71: la tasa de ahorro cambia y es solo un ejemplo.",
+   "No digas que el gobierno te robó o que el reembolso es ilegal: es un mecanismo normal de retención.",
+   "No digas que el IRS te paga intereses por esperar: en un reembolso normal no pagan nada.",
+   "No des consejo personal de cuántas exenciones o qué casillas llenar: manda al Estimador del IRS o a un preparador de impuestos.",
+   "No lo uses con quien cobra por contrato sin aclarar que ellos no tienen retención de patrón.",
+   "No digas que $3,221 es lo que te devolverán a ti: es el promedio nacional.",
+   "No repitas las cifras de adelantos de reembolso (FF-039) ni del ITIN (FF-037)."
+  ],
+  "con_iul": false,
+  "idea": "El reembolso grande de impuestos: es tu propio dinero que le prestaste al gobierno todo el año",
+  "gancho_pedido": "Un reembolso grande no es un regalo. Es un préstamo que le hiciste al gobierno.",
+  "ganchos_recientes": [
+   "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+   "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+   "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+   "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+   "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+   "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+   "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+   "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra"
+  ]
+ },
+ "video": {
+  "ganchos": [
+   "Error de hoy: Si celebras tu reembolso de impuestos, / estás celebrando que te quitaron de más. / Y el gobierno no te pagó ni un centavo. / Al final te digo el papel de una hoja que lo arregla.",
+   "Contradicción: Un reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y él no te pagó ni un centavo. / Al final te digo el papel de una hoja que le das a tu patrón.",
+   "Secreto del otro lado: Tu patrón le manda al gobierno / una parte de tu cheque cada quincena, / y nadie te dice que puedes pedirle que te quite menos. / Al final te digo el papel.",
+   "Dos personas: Dos roofers ganan lo mismo. / Uno recibe un reembolso enorme en abril. / El otro se queda con ese dinero cada quincena. / Al final te digo cuál hizo el cambio.",
+   "Reloj: Cada quincena, el gobierno se queda con unos [$124|ciento veinticuatro] tuyos / y no te paga nada por guardarlos. / Al final te digo el papel que lo frena.",
+   "Pregunta que pica: ¿Cuándo fue la última vez que le prestaste dinero al gobierno? / Si cobraste un reembolso, fue este año. / Al final te digo cómo dejar de hacerlo.",
+   "Lo que te deben: Hay dinero tuyo que el gobierno tiene todo el año / y te lo devuelve sin un centavo de más. / Al final te digo cómo quedarte con él.",
+   "Frase prohibida: Nunca digas 'qué bueno, me devolvieron mucho' / sin leer esto primero. / Al final te digo el papel de una hoja que cambia tu cheque."
+  ],
+  "gancho_elegido": "Un reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y él no te pagó ni un centavo. / Al final te digo el papel de una hoja que le das a tu patrón. Frena el scroll porque le dice a un trabajador que lo que celebra cada año es justo al revés, y promete un papel concreto que no puede adivinar.",
+  "titulo": "Tu reembolso es un préstamo",
+  "lineas": [
+   "Un reembolso grande *no es un regalo*.",
+   "Es un *préstamo* que le hiciste al gobierno.",
+   "Y él no te pagó ni *un centavo*.",
+   "Al final te digo el *papel de una hoja*",
+   "que le das a tu *patrón* para arreglarlo.",
+   "Se llama *préstamo sin intereses*.",
+   "Cada quincena, tu patrón te quita *de más*.",
+   "Ese dinero se queda con el *gobierno*",
+   "hasta que haces tu *declaración*.",
+   "En Estados Unidos, el reembolso *promedio*",
+   "fue de [$3,221|tres mil doscientos veintiuno].",
+   "Eso es dinero que tú *ya ganaste*.",
+   "Repartido en el año, son unos [$268|doscientos sesenta y ocho] al *mes*.",
+   "Dinero que no usaste para tus *deudas*.",
+   "Pero aquí viene lo que *nadie* te dice.",
+   "Por esperar, el gobierno *no te paga* nada.",
+   "Ni un centavo de *intereses*.",
+   "Si ese dinero lo hubieras guardado *tú*",
+   "en una cuenta de ahorro al [4%|cuatro por ciento],",
+   "podrías ganar unos [$60|sesenta dólares] *de intereses*.",
+   "Y ahí estaría en una *semana sin trabajo*.",
+   "Ahora sí, el *papel de una hoja*:",
+   "el formulario [W-4|doble u cuatro].",
+   "Se lo entregas a tu *patrón*,",
+   "y te quitan *menos* en cada cheque.",
+   "Para saber qué poner, entra a *irs.gov*.",
+   "Busca el *Estimador de Retención*.",
+   "Ten a la mano tu último *talón de cheque*.",
+   "Esa diferencia, guárdala en una cuenta *aparte*.",
+   "Y si debes en tarjeta, *págala* con eso.",
+   "Revisa que quedes cerca de *cero*,",
+   "para no deberle al IRS en *abril*.",
+   "Si cobras por *contrato*, esto no aplica igual.",
+   "Tú pagas tus impuestos *trimestrales*.",
+   "Tu dinero *trabaja* mejor en tu mano.",
+   "*Sígueme* para más videos de finanzas,",
+   "y compártelo con quien celebra su *reembolso*."
+  ],
+  "escenas_json": "[{\"tipo\":\"lienzo\",\"desde\":[0],\"capitulo\":\"tu reembolso\",\"contador\":\"reembolso |grande\",\"elementos\":[{\"id\":\"yo\",\"que\":\"persona\",\"x\":22,\"y\":92,\"tam\":32,\"cara\":\"feliz\",\"gorro\":\"casco\",\"cambia\":{\"en\":[1,\"préstamo\"],\"cara\":\"preocupado\"}},{\"que\":\"objeto\",\"objeto\":\"billete\",\"x\":22,\"y\":40,\"tam\":24,\"en\":[0,\"reembolso\"]},{\"que\":\"sello\",\"texto\":\"NO ES REGALO\",\"color\":\"rojo\",\"x\":22,\"y\":40,\"en\":[0,\"regalo\"]},{\"id\":\"g1\",\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":76,\"y\":58,\"tam\":32,\"etiqueta\":\"EL GOBIERNO\",\"en\":[1,\"préstamo\"]},{\"que\":\"dinero\",\"de\":\"yo\",\"a\":\"g1\",\"en\":[1,\"hiciste\"],\"hasta\":[2,\"centavo\"]}]},{\"tipo\":\"lienzo\",\"desde\":[3],\"capitulo\":\"el papel\",\"contador\":\"una |hoja\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"a2\",\"que\":\"persona\",\"x\":22,\"y\":93,\"tam\":32,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\"},{\"que\":\"texto\",\"texto\":\"UNA HOJA\",\"color\":\"principal\",\"tam\":6,\"x\":50,\"y\":35,\"en\":[3,\"papel\"]},{\"id\":\"b2\",\"que\":\"persona\",\"x\":78,\"y\":93,\"tam\":32,\"cara\":\"neutro\",\"gorro\":\"sombrero\",\"ropa\":3,\"piel\":2,\"etiqueta\":\"EL PATRÓN\",\"en\":[4,\"patrón\"]},{\"que\":\"flecha\",\"de\":\"a2\",\"a\":\"b2\",\"en\":[4,\"das\"]}]},{\"tipo\":\"tablero\",\"desde\":[5],\"capitulo\":\"la trampa\",\"filas\":[\"SIN\",\"INTERES\"],\"en\":[5,\"intereses\"],\"entrada\":\"destello\"},{\"tipo\":\"lienzo\",\"desde\":[6],\"capitulo\":\"tu cheque\",\"contador\":\"quitan |de más\",\"entrada\":\"corte\",\"elementos\":[{\"id\":\"c4\",\"que\":\"objeto\",\"objeto\":\"cartera\",\"x\":22,\"y\":24,\"tam\":28,\"etiqueta\":\"TU CHEQUE\"},{\"id\":\"g4\",\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":76,\"y\":50,\"tam\":32,\"etiqueta\":\"GOBIERNO\",\"en\":[6,\"quita\"]},{\"que\":\"dinero\",\"de\":\"c4\",\"a\":\"g4\",\"en\":[6,\"quita\"],\"hasta\":[7,\"gobierno\"]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":24,\"y\":74,\"tam\":26,\"etiqueta\":\"UN AÑO\",\"en\":[8,\"hasta\"]}]},{\"tipo\":\"lienzo\",\"desde\":[9],\"capitulo\":\"el promedio\",\"contador\":\"reembolso |promedio\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"texto\",\"texto\":\"ESTADOS UNIDOS\",\"color\":\"tinta\",\"tam\":4.5,\"x\":50,\"y\":12,\"en\":[9]},{\"que\":\"cifra\",\"texto\":\"$3,221\",\"etiqueta\":\"el promedio\",\"color\":\"principal\",\"x\":50,\"y\":38,\"tam\":12,\"en\":[10,\"3,221\"]},{\"que\":\"cifra\",\"texto\":\"$268\",\"etiqueta\":\"al mes\",\"color\":\"verde\",\"x\":50,\"y\":70,\"tam\":12,\"en\":[12,\"268\"]}]},{\"tipo\":\"lienzo\",\"desde\":[13],\"capitulo\":\"tu deuda\",\"contador\":\"intereses |cero\",\"entrada\":\"cuadritos\",\"elementos\":[{\"id\":\"y6\",\"que\":\"persona\",\"x\":22,\"y\":93,\"tam\":32,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"cambia\":{\"en\":[15,\"paga\"],\"cara\":\"enojado\"}},{\"que\":\"objeto\",\"objeto\":\"tarjeta\",\"x\":84,\"y\":38,\"tam\":18,\"etiqueta\":\"TU DEUDA\",\"en\":[13,\"deudas\"]},{\"que\":\"globo\",\"texto\":\"¿Y mis intereses?\",\"piensa\":false,\"cola\":-1,\"x\":24,\"y\":16,\"en\":[15,\"gobierno\"]},{\"que\":\"objeto\",\"objeto\":\"moneda\",\"x\":82,\"y\":74,\"tam\":16,\"etiqueta\":\"GOBIERNO\",\"en\":[15,\"gobierno\"]},{\"que\":\"sello\",\"texto\":\"CERO INTERESES\",\"color\":\"rojo\",\"x\":82,\"y\":74,\"en\":[16,\"intereses\"]}]},{\"tipo\":\"lienzo\",\"desde\":[17],\"capitulo\":\"si ahorras\",\"contador\":\"cuenta |al 4%\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"grafica\",\"x\":50,\"y\":90,\"tam\":70,\"inicio\":0,\"final\":3281,\"barras\":12,\"desdeTexto\":\"HOY\",\"hastaTexto\":\"12 MESES\",\"etiqueta\":\"ahorro al 4%\",\"en\":[17,\"Si\"],\"hasta\":[19,\"ganar\"]},{\"que\":\"cifra\",\"texto\":\"+$60\",\"etiqueta\":\"de intereses\",\"color\":\"verde\",\"x\":50,\"y\":12,\"tam\":8,\"en\":[19,\"60\"]}]},{\"tipo\":\"lienzo\",\"desde\":[20],\"capitulo\":\"emergencia\",\"contador\":\"semana |sin trabajo\",\"elementos\":[{\"que\":\"persona\",\"x\":28,\"y\":93,\"tam\":34,\"cara\":\"preocupado\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"cambia\":{\"en\":[20,\"estaría\"],\"cara\":\"feliz\"}},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":72,\"y\":42,\"tam\":30,\"etiqueta\":\"SIN TRABAJO\",\"en\":[20,\"semana\"]},{\"que\":\"check\",\"x\":28,\"y\":40,\"en\":[20,\"estaría\"]}]},{\"tipo\":\"lienzo\",\"desde\":[21],\"capitulo\":\"el papel\",\"contador\":\"formulario |W-4\",\"entrada\":\"ola\",\"elementos\":[{\"que\":\"recibo\",\"x\":50,\"y\":6,\"tam\":82,\"titulo\":\"Formulario W-4\",\"en\":[21],\"renglones\":[{\"texto\":\"Una sola hoja\",\"valor\":\"1 hoja\",\"en\":[22,\"formulario\"]},{\"texto\":\"Se la das a tu patrón\",\"valor\":\"sí\",\"en\":[23,\"entregas\"]},{\"texto\":\"Te quitan\",\"valor\":\"menos\",\"en\":[24,\"menos\"]}],\"marca\":{\"fila\":2,\"en\":[24,\"menos\"],\"texto\":\"¡MENOS!\"}},{\"id\":\"a9\",\"que\":\"persona\",\"x\":22,\"y\":95,\"tam\":22,\"cara\":\"feliz\",\"gorro\":\"gorra\",\"etiqueta\":\"TÚ\"},{\"id\":\"b9\",\"que\":\"persona\",\"x\":78,\"y\":95,\"tam\":22,\"cara\":\"neutro\",\"gorro\":\"sombrero\",\"ropa\":3,\"piel\":2,\"etiqueta\":\"EL PATRÓN\",\"en\":[23,\"patrón\"]},{\"que\":\"flecha\",\"de\":\"a9\",\"a\":\"b9\",\"en\":[23,\"entregas\"]}]},{\"tipo\":\"lienzo\",\"desde\":[25],\"capitulo\":\"qué hacer\",\"contador\":[{\"en\":[25],\"texto\":\"paso |1 de 3\"},{\"en\":[26],\"texto\":\"paso |2 de 3\"},{\"en\":[27],\"texto\":\"paso |3 de 3\"}],\"entrada\":\"cuadritos\",\"elementos\":[{\"que\":\"lista\",\"x\":50,\"y\":10,\"en\":[25],\"items\":[{\"texto\":\"Entra a irs.gov\",\"en\":[25,\"irs.gov\"]},{\"texto\":\"Busca el Estimador de Retención\",\"en\":[26,\"Estimador\"]},{\"texto\":\"Ten tu último talón de cheque\",\"en\":[27,\"talón\"]}]},{\"que\":\"persona\",\"x\":50,\"y\":95,\"tam\":22,\"cara\":\"feliz\",\"gorro\":\"gorra\"}]},{\"tipo\":\"oscura\",\"desde\":[28],\"capitulo\":\"el premio\",\"contador\":\"para ti |cada mes\",\"entrada\":\"corte\",\"cifra\":{\"texto\":\"+$268\",\"etiqueta\":\"al mes para ti\",\"en\":[28,\"diferencia\"]},\"cae\":{\"objeto\":\"alcancia\",\"letrero\":\"TUYO\",\"en\":[28,\"cuenta\"]}},{\"tipo\":\"lienzo\",\"desde\":[30],\"capitulo\":\"en abril\",\"contador\":\"debes |cerca de cero\",\"entrada\":\"destello\",\"elementos\":[{\"que\":\"texto\",\"texto\":\"CERCA DE CERO\",\"color\":\"principal\",\"tam\":5,\"x\":50,\"y\":14,\"en\":[30]},{\"que\":\"objeto\",\"objeto\":\"calendario\",\"x\":26,\"y\":48,\"tam\":28,\"etiqueta\":\"ABRIL\",\"en\":[31,\"deberle\"]},{\"que\":\"persona\",\"x\":72,\"y\":93,\"tam\":30,\"cara\":\"feliz\",\"gorro\":\"casco\",\"etiqueta\":\"TÚ\",\"en\":[30,\"quedes\"]},{\"que\":\"check\",\"x\":72,\"y\":46,\"en\":[31,\"abril\"]}]},{\"tipo\":\"lienzo\",\"desde\":[32],\"capitulo\":\"por contrato\",\"contador\":\"tú |pagas trimestral\",\"entrada\":\"ola\",\"elementos\":[{\"id\":\"y13\",\"que\":\"persona\",\"x\":24,\"y\":93,\"tam\":34,\"cara\":\"neutro\",\"gorro\":\"gorra\",\"ropa\":2,\"etiqueta\":\"POR CONTRATO\",\"cambia\":{\"en\":[34,\"mano\"],\"cara\":\"feliz\"}},{\"que\":\"globo\",\"texto\":\"Yo pago mis impuestos\",\"piensa\":false,\"cola\":-1,\"x\":28,\"y\":24,\"en\":[32,\"cobras\"]},{\"id\":\"g13\",\"que\":\"objeto\",\"objeto\":\"banco\",\"x\":76,\"y\":56,\"tam\":30,\"etiqueta\":\"EL IRS\",\"en\":[33,\"pagas\"]},{\"que\":\"dinero\",\"de\":\"y13\",\"a\":\"g13\",\"en\":[33,\"pagas\"],\"hasta\":[33,\"trimestrales\"]}]},{\"tipo\":\"cierre\",\"desde\":[35],\"capitulo\":\"síguenos\",\"contador\":\"finanzas |familiares\",\"entrada\":\"ola\",\"nombre\":\"Finanzas Familiares\",\"sub\":\"dinero claro para tu familia\",\"seguir\":[35,\"Sígueme\"],\"compartir\":[36,\"compártelo\"]}]",
+  "aviso": "Ejemplo: reembolso promedio de $3,221 y una cuenta de ahorro al 4% anual como supuesto. Contenido educativo, no es asesoría financiera."
+ },
+ "errores": [
+  "escena 5 (lienzo): persona y sello «CERO INTERESES» se enciman; sepáralos (cambia x/y o tam)"
+ ]
+}

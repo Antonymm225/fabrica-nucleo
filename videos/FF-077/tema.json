@@ -1,0 +1,116 @@
+{
+ "titulo": "El seguro que se acaba a los 55",
+ "angulo": "Pagas el seguro de vida por 20 años puntual, y si sigues vivo el día que vence, no recibes nada y ya no te ven igual: a los 55 volver a asegurarte es mucho más caro, o no te aprueban.",
+ "explicacion": "Muchos seguros de vida baratos son «a término»: cubren 20 o 30 años y se acaban. Si compraste uno a los 35 por 20 años, a los 55 se termina. Pero la hipoteca de 30 años sigue 10 años más, y tus hijos todavía te necesitan. Volver a asegurarte a esa edad cuesta mucho más, y si ya tienes una enfermedad, te pueden negar. Hay seguros que se quedan contigo toda la vida, y algunas pólizas a término dejan convertirlas a uno permanente sin examen médico, pero solo si lo pides antes de la fecha límite.",
+ "datos": [
+  {
+   "dato": "Años de cobertura de un seguro a término típico (ejemplo)",
+   "valor": 20,
+   "unidad": "años",
+   "fuente": "https://www.naic.org/consumer/life-insurance.htm"
+  },
+  {
+   "dato": "Edad de la persona al comprar (ejemplo)",
+   "valor": 35,
+   "unidad": "años",
+   "fuente": "https://www.ssa.gov/oact/STATS/table4c6.html"
+  },
+  {
+   "dato": "Hipoteca de ejemplo a 30 años (supuesto de ilustración)",
+   "valor": 300000,
+   "unidad": "$",
+   "fuente": "https://www.consumerfinance.gov/owning-a-home/"
+  },
+  {
+   "dato": "Tasa de la hipoteca del ejemplo (supuesto de ilustración)",
+   "valor": 6.5,
+   "unidad": "%",
+   "fuente": "https://www.consumerfinance.gov/owning-a-home/"
+  },
+  {
+   "dato": "Prima mensual supuesta de 20 años (verificar con cotización real)",
+   "valor": 30,
+   "unidad": "$",
+   "fuente": "https://www.naic.org/consumer/life-insurance.htm"
+  },
+  {
+   "dato": "Prima mensual supuesta de 30 años (verificar con cotización real)",
+   "valor": 45,
+   "unidad": "$",
+   "fuente": "https://www.naic.org/consumer/life-insurance.htm"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Edad en que se acaba el seguro de 20 años si lo compras a los 35",
+   "expresion": "35+20",
+   "resultado": 55
+  },
+  {
+   "descripcion": "Años de hipoteca que quedan sin seguro (30 menos 20)",
+   "expresion": "30-20",
+   "resultado": 10
+  },
+  {
+   "descripcion": "Pago mensual de una hipoteca de $300,000 a 30 años y 6.5%",
+   "expresion": "round(300000*(0.065/12)/(1-(1+0.065/12)**-360),2)",
+   "resultado": 1896.2
+  },
+  {
+   "descripcion": "Saldo de la hipoteca al terminar el año 20 (aún se debe)",
+   "expresion": "round(300000*(0.065/12)/(1-(1+0.065/12)**-360)*(1-(1+0.065/12)**-120)/(0.065/12),2)",
+   "resultado": 166995.85
+  },
+  {
+   "descripcion": "Total pagado en 20 años de seguro a $30 al mes",
+   "expresion": "30*12*20",
+   "resultado": 7200
+  },
+  {
+   "descripcion": "Total pagado en 30 años de seguro a $45 al mes",
+   "expresion": "45*12*30",
+   "resultado": 16200
+  },
+  {
+   "descripcion": "Edad en que se acaba el seguro de 30 años si lo compras a los 35",
+   "expresion": "35+30",
+   "resultado": 65
+  }
+ ],
+ "consejo": "Haz tres cosas. Uno: mira en tu póliza la fecha en que se acaba y compárala con lo que falta de la hipoteca y la edad de tus hijos. Dos: elige un plazo que cubra hasta que la casa esté pagada y tus hijos sean independientes. Tres: pregúntale a un agente con licencia si tu póliza se puede convertir a una permanente, y hasta qué fecha, o si te conviene un seguro que se quede contigo toda la vida, como el indexado (IUL). No lo dejes para después: la conversión tiene fecha límite.",
+ "que_no_decir": [
+  "Que el seguro a término es malo o una estafa: es barato y sirve para cubrir un tiempo definido.",
+  "Que un seguro permanente es siempre mejor para todos.",
+  "Cualquier cifra de prima como si fuera precio fijo: depende de la edad, la salud y la aseguradora.",
+  "Que te aprueban siempre al renovar o al volver a comprar.",
+  "Que el IUL crece garantizado al 10%: es un tope, con piso de cero.",
+  "Cifras de ahorro, retiro o cuánto se junta en el IUL: este video es solo de protección de la familia."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "El seguro de vida que se termina a los 20 o 30 años contra uno que se queda contigo",
+ "gancho_pedido": "Hay seguros de vida que se acaban justo cuando más los necesitas.",
+ "ganchos_recientes": [
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial"
+ ]
+}

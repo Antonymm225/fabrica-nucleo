@@ -1,0 +1,46 @@
+# FF-075 · Finanzas Familiares · EST-01 · La fiesta de seis horas
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Costo típico de una quinceañera en EE. UU., extremo bajo del rango común de $15,000 a $25,000 (estimación de una organización latina, no un censo) = 15000 $ · https://enlacelatinonc.org/en/quinceanera-party-financial-tips/
+# Fuente: Costo típico de una quinceañera en EE. UU., extremo alto del rango común de $15,000 a $25,000 = 25000 $ · https://enlacelatinonc.org/en/quinceanera-party-financial-tips/
+# Fuente: Costo promedio de una boda en EE. UU. en 2024 (The Knot) = 33000 $ · https://www.theknot.com/content/wedding-data-insights/weddings-in-2024
+# Fuente: Tasa promedio de un préstamo personal (Bankrate, 700 FICO, $5,000, 3 años) = 12.48 % · https://www.bankrate.com/loans/personal-loans/average-personal-loan-rates/
+# Fuente: Tasa máxima que cobran la mayoría de los prestamistas personales (rango de 6.70% a 35.99%) = 35.99 % · https://www.bankrate.com/loans/personal-loans/personal-loan-calculator/
+# Fuente: Duración de la fiesta, dato del equipo (gancho pedido) = 6 horas · https://www.bankrate.com/loans/personal-loans/average-personal-loan-rates/
+# BLOQUE 1
+La fiesta dura *seis horas*.
+La deuda dura *años*.
+Y ese pago *cómodo* esconde miles de dólares.
+Antes de firmar, pide *un número*.
+Al final te digo la *frase exacta* para pedirlo.
+Se llama la *fiesta a crédito*.
+Quince años o boda: no quieres *quedar mal*.
+Aquí en Estados Unidos, una *quinceañera*
+puede costar desde [$15,000|quince mil dólares].
+Digamos que la pagas en [3|tres] años.
+Con un *interés* de más de [12%|doce por ciento].
+Pagas unos [$500|quinientos dólares] al *mes*.
+Suena *cómodo*, ¿verdad?
+Pero al final pagaste [$18,000|dieciocho mil dólares].
+Son más de [$3,000|tres mil dólares] *extra*.
+Y si la estiras a [5|cinco] años,
+la cuota baja a unos [$340|trescientos cuarenta].
+Pero los *intereses* suben a más de [$5,000|cinco mil dólares].
+Cuota más chica, *deuda más larga*.
+Y si tu *crédito* es malo,
+la tasa puede llegar a [36%|treinta y seis por ciento].
+Ahí los *intereses* suben hasta [$9,700|nueve mil setecientos dólares].
+Son seis horas de música y pastel
+que pagas con *años de quincenas*.
+Ahora sí, la frase exacta para pedir el número:
+¿Cuál es el *total a pagar*?
+Pídelo por escrito antes de *firmar*.
+La fiesta vale. Lo caro es pagarla *a crédito*.
+Ponle *fecha* a la fiesta desde hoy.
+Si es en [3|tres] años,
+aparta unos [$417|cuatrocientos diecisiete] al mes.
+En una cuenta *aparte*, con pago automático.
+Y el día de la fiesta, no debes *nada*.
+Si no alcanza, achica la fiesta,
+o pide a los padrinos la *música*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien está planeando unos *quince años*.

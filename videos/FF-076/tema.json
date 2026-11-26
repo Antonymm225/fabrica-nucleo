@@ -1,0 +1,98 @@
+{
+ "titulo": "El dinero que el estado guarda a tu nombre",
+ "angulo": "El dinero que crees perdido no desapareció: el estado lo guarda a tu nombre, no te va a llamar, y buscarlo y reclamarlo es gratis, pero quien te ofrece 'ayudarte' te cobra una parte de lo tuyo.",
+ "explicacion": "Cuando una cuenta, un cheque, un depósito de renta o un pago queda sin tocar y la empresa no te encuentra, la ley la obliga a mandar ese dinero al estado. El estado lo guarda a tu nombre, y casi nunca te avisa. NAUPA calcula que 1 de cada 7 personas en EE.UU. tiene dinero o propiedad sin reclamar. Buscar y reclamar es gratis en el sitio oficial de cada estado, y por eso cualquiera que te cobre un porcentaje por hacer el mismo trámite se queda con una parte de tu dinero. Solo hay que buscar tu nombre en cada estado donde has vivido.",
+ "datos": [
+  {
+   "dato": "Proporción de personas en EE.UU. con dinero o propiedad sin reclamar (NAUPA): 1 de cada 7",
+   "valor": 7,
+   "unidad": "personas (1 de cada N)",
+   "fuente": "https://www.fox29.com/news/theres-billion-dollars-unclaimed-money-us-check-see-youre-owed-money"
+  },
+  {
+   "dato": "Dinero devuelto por los estados a sus dueños en el año fiscal 2024 (en miles de millones)",
+   "valor": 4.49,
+   "unidad": "$ miles de millones",
+   "fuente": "https://www.fox29.com/news/theres-billion-dollars-unclaimed-money-us-check-see-youre-owed-money"
+  },
+  {
+   "dato": "Reclamo promedio pagado a través de MissingMoney.com en el año fiscal 2024",
+   "valor": 2080,
+   "unidad": "$",
+   "fuente": "https://www.nbcdfw.com/news/nbc-5-responds/how-to-search-for-unclaimed-property-cash/3707621/"
+  },
+  {
+   "dato": "Dinero y bienes sin reclamar que tiene el Contralor de Texas (en miles de millones, 'más de')",
+   "valor": 9,
+   "unidad": "$ miles de millones",
+   "fuente": "https://www.nbcdfw.com/news/nbc-5-responds/how-to-search-for-unclaimed-property-cash/3707621/"
+  },
+  {
+   "dato": "Costo de buscar y reclamar en el sitio oficial del estado (la FTC dice que todos los estados tienen búsqueda gratis; California confirma que no cobra por reclamar)",
+   "valor": 0,
+   "unidad": "$",
+   "fuente": "https://askcompassplus.ai/blog/how-to-find-unclaimed-money"
+  },
+  {
+   "dato": "Supuesto del ejemplo: comisión de un 'buscador' o intermediario (NO es dato de fuente, ajustar antes de publicar)",
+   "valor": 30,
+   "unidad": "%",
+   "fuente": "https://unclaimed.org/search"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Comisión de un intermediario sobre un reclamo promedio de $2,080 (supuesto 30%)",
+   "expresion": "round(2080*0.30,2)",
+   "resultado": 624.0
+  },
+  {
+   "descripcion": "Lo que te queda si pagas esa comisión",
+   "expresion": "round(2080-2080*0.30,2)",
+   "resultado": 1456.0
+  },
+  {
+   "descripcion": "Lo que te queda si reclamas directo en el sitio oficial (gratis)",
+   "expresion": "round(2080-0,2)",
+   "resultado": 2080.0
+  },
+  {
+   "descripcion": "Diferencia A contra B: reclamar directo contra pagar intermediario",
+   "expresion": "round(2080-(2080-2080*0.30),2)",
+   "resultado": 624.0
+  },
+  {
+   "descripcion": "Porcentaje aproximado de personas con dinero sin reclamar (1 de cada 7)",
+   "expresion": "round(1/7*100,2)",
+   "resultado": 14.29
+  },
+  {
+   "descripcion": "Familia de 4 adultos o hijos mayores buscando cada uno, con un reclamo promedio por persona de $2,080 (si a todos les toca)",
+   "expresion": "round(4*2080,2)",
+   "resultado": 8320.0
+  }
+ ],
+ "consejo": "Esta semana, en 10 minutos: entra a unclaimed.org/search o a MissingMoney.com, que son las rutas oficiales. Busca tu nombre y el de tu esposa o esposo en cada estado donde has vivido o trabajado, con tus apellidos y con variaciones de tu nombre. Si sale algo, reclámalo tú mismo en el sitio del estado: es gratis. No le pagues a nadie un porcentaje por hacer el mismo trámite. Si te llega un texto o llamada diciendo que tienes dinero guardado, no hagas clic: los programas estatales no mandan alertas por texto, entra tú solo al sitio oficial.",
+ "que_no_decir": [
+  "No prometas que todos tienen dinero: es 1 de cada 7, no todos",
+  "No digas que $2,080 es lo que va a recibir el espectador: es el promedio de reclamos pagados por MissingMoney.com en el año fiscal 2024",
+  "No presentes el 30% de comisión como cifra oficial: es un ejemplo, las comisiones varían",
+  "No digas que todos los intermediarios son estafadores; di que el trámite es gratis y que no necesitas pagar a nadie",
+  "No prometas que el dinero llega en pocos días: los tiempos varían por estado y puede pedirse documentación",
+  "No des links de sitios que no sean oficiales (unclaimed.org, MissingMoney.com o el sitio de cada estado)",
+  "No mezcles el tema con seguros, inversiones ni cooperativas"
+ ],
+ "con_iul": false,
+ "idea": "El dinero no reclamado que guarda cada estado a nombre de la gente: cómo buscar el tuyo gratis",
+ "gancho_pedido": "Puede haber dinero a tu nombre guardado por el estado, y nadie te va a llamar.",
+ "ganchos_recientes": [
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero.",
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número."
+ ]
+}

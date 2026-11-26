@@ -1,0 +1,674 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: $10,000 en ahorros al 0.39% y en tarjetas al 22.3%; aportes de $3,000 al año de los 30 a los 60 años a 10% anual cada año. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 2,
+  "fondo": "liso",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu banco",
+   "contador": "te paga |un dólar",
+   "elementos": [
+    {
+     "id": "yo",
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       2,
+       "57"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 70,
+     "y": 34,
+     "tam": 34,
+     "en": [
+      0,
+      "banco"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$57",
+     "x": 70,
+     "y": 68,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "cobra",
+     "en": [
+      2,
+      "57"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "tu retiro",
+   "contador": "retiro |a los 60",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 28,
+     "y": 32,
+     "tam": 30,
+     "etiqueta": "TU RETIRO",
+     "en": [
+      4
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 32,
+     "tam": 28,
+     "etiqueta": "A LOS 60",
+     "en": [
+      5,
+      "60"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿Cuánto sería?",
+     "x": 50,
+     "y": 75,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      5,
+      "retiro"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "NEGOCIO",
+    "BANCO"
+   ],
+   "en": [
+    6,
+    "negocio"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "tu cuenta",
+   "contador": "ahorros |0.39%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Tasas al año",
+     "en": [
+      9
+     ],
+     "renglones": [
+      {
+       "texto": "Tu cuenta de ahorros",
+       "valor": "0.39%",
+       "en": [
+        9,
+        "0.39"
+       ]
+      },
+      {
+       "texto": "Tarjeta de crédito",
+       "valor": "22%",
+       "en": [
+        10,
+        "22"
+       ]
+      },
+      {
+       "texto": "Te paga al año",
+       "valor": "$39",
+       "en": [
+        12,
+        "39"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       10,
+       "cobra"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 50,
+     "y": 84,
+     "tam": 20,
+     "etiqueta": "EL BANCO",
+     "en": [
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "la diferencia",
+   "contador": "banco |$2,230",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 39,
+     "max": 2230,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "TÚ: $39",
+     "en": [
+      13
+     ],
+     "hasta": [
+      13,
+      "cena"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 50,
+     "y": 22,
+     "tam": 24,
+     "giro": -8,
+     "en": [
+      14,
+      "tarjetas"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 2230,
+     "max": 2230,
+     "prefijo": "$",
+     "etiqueta": "BANCO: $2,230",
+     "en": [
+      14,
+      "tarjetas"
+     ],
+     "hasta": [
+      15,
+      "2,230"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "es legal",
+   "contador": "su |negocio",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 28,
+     "y": 38,
+     "tam": 32,
+     "en": [
+      16
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 38,
+     "en": [
+      16,
+      "ilegal"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "Lo que nadie te dice",
+     "x": 50,
+     "y": 78,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      17,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "treinta años",
+   "contador": "cuenta |normal",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 32,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       21,
+       "apenas"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 22,
+     "tam": 26,
+     "etiqueta": "CADA AÑO",
+     "en": [
+      18
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 90000,
+     "prefijo": "$",
+     "x": 70,
+     "y": 50,
+     "tam": 9,
+     "etiqueta": "juntas",
+     "color": "tinta",
+     "en": [
+      20,
+      "juntas"
+     ],
+     "hasta": [
+      20,
+      "90,000"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$5,600",
+     "x": 70,
+     "y": 77,
+     "tam": 9,
+     "color": "gris",
+     "etiqueta": "ganas",
+     "en": [
+      21,
+      "apenas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      22
+     ],
+     "texto": "retiro |dormido"
+    },
+    {
+     "en": [
+      23
+     ],
+     "texto": "retiro |otro lugar"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      22
+     ],
+     "items": [
+      {
+       "texto": "Cuenta normal: gastos del mes",
+       "en": [
+        22,
+        "gastos"
+       ]
+      },
+      {
+       "texto": "Retiro: otro lugar",
+       "en": [
+        23,
+        "otro"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "etiqueta": "TÚ",
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       23,
+       "otro"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "el IUL",
+   "contador": "crece |hasta 10%",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "IUL",
+     "x": 50,
+     "y": 12,
+     "tam": 7,
+     "color": "principal",
+     "en": [
+      24
+     ]
+    },
+    {
+     "que": "grafica",
+     "inicio": 1000,
+     "final": 542000,
+     "barras": 10,
+     "desdeTexto": "HOY",
+     "hastaTexto": "A LOS 60",
+     "etiqueta": "hasta 10% al año",
+     "x": 50,
+     "y": 85,
+     "en": [
+      27,
+      "crecer"
+     ],
+     "hasta": [
+      27,
+      "año"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "piso cero",
+   "contador": "si cae |no pierde",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       29,
+       "piso"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Y si cae el mercado?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      28
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 72,
+     "y": 50,
+     "tam": 32,
+     "etiqueta": "TU DINERO",
+     "en": [
+      28,
+      "mercado"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "PISO CERO",
+     "color": "verde",
+     "x": 72,
+     "y": 50,
+     "en": [
+      29,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "tu retiro",
+   "contador": "empiezas |temprano",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 34,
+     "etiqueta": "TÚ",
+     "cara": "feliz",
+     "gorro": "gorra"
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 24,
+     "tam": 24,
+     "etiqueta": "TU RETIRO",
+     "en": [
+      30,
+      "retiro"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 76,
+     "y": 24,
+     "tam": 24,
+     "etiqueta": "EMPIEZAS",
+     "en": [
+      31,
+      "empiezas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "tu retiro",
+   "contador": "retiro |a los 60",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$542,000",
+    "etiqueta": "podrías llegar a",
+    "en": [
+     34,
+     "542,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "RETIRO",
+    "en": [
+     34,
+     "unos"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    35
+   ],
+   "capitulo": "tu siguiente paso",
+   "contador": "link |en biografía",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Link en mi biografía",
+     "x": 26,
+     "y": 42,
+     "en": [
+      35
+     ]
+    },
+    {
+     "id": "lk",
+     "que": "texto",
+     "texto": "LINK",
+     "x": 72,
+     "y": 30,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      36,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lk",
+     "en": [
+      36,
+      "link"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 75,
+     "tam": 28,
+     "en": [
+      38,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    39
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    39,
+    "Sígueme"
+   ],
+   "compartir": [
+    40,
+    "compártelo"
+   ]
+  }
+ ]
+}

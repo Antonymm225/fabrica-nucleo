@@ -1,0 +1,49 @@
+# FF-076 · Finanzas Familiares · EST-01 · Dinero guardado a tu nombre
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Proporción de personas en EE.UU. con dinero o propiedad sin reclamar (NAUPA): 1 de cada 7 = 7 personas (1 de cada N) · https://www.fox29.com/news/theres-billion-dollars-unclaimed-money-us-check-see-youre-owed-money
+# Fuente: Dinero devuelto por los estados a sus dueños en el año fiscal 2024 (en miles de millones) = 4.49 $ miles de millones · https://www.fox29.com/news/theres-billion-dollars-unclaimed-money-us-check-see-youre-owed-money
+# Fuente: Reclamo promedio pagado a través de MissingMoney.com en el año fiscal 2024 = 2080 $ · https://www.nbcdfw.com/news/nbc-5-responds/how-to-search-for-unclaimed-property-cash/3707621/
+# Fuente: Dinero y bienes sin reclamar que tiene el Contralor de Texas (en miles de millones, 'más de') = 9 $ miles de millones · https://www.nbcdfw.com/news/nbc-5-responds/how-to-search-for-unclaimed-property-cash/3707621/
+# Fuente: Costo de buscar y reclamar en el sitio oficial del estado (la FTC dice que todos los estados tienen búsqueda gratis; California confirma que no cobra por reclamar) = 0 $ · https://askcompassplus.ai/blog/how-to-find-unclaimed-money
+# Fuente: Supuesto del ejemplo: comisión de un 'buscador' o intermediario (NO es dato de fuente, ajustar antes de publicar) = 30 % · https://unclaimed.org/search
+# BLOQUE 1
+Hay *dinero* a tu nombre
+guardado por el *estado*,
+y nadie te va a llamar.
+Al final te digo la *página oficial*
+donde se busca gratis.
+Se llama *dinero sin reclamar*.
+Cuando una cuenta, un cheque
+o un depósito de renta
+se queda *sin tocar*,
+y la empresa no te encuentra,
+la ley la manda al *estado*.
+Él lo guarda a tu nombre
+y casi nunca te *avisa*.
+Aquí en Estados Unidos,
+una de cada [7|siete] personas
+tiene dinero *sin reclamar*.
+Pero aquí viene lo que nadie te dice:
+buscarlo y reclamarlo es *gratis*.
+Y hay quien te cobra *una parte*.
+El reclamo promedio fue [$2,080|dos mil ochenta dólares].
+Si alguien te cobra [30%|treinta por ciento]
+por hacer el *mismo trámite*,
+te quita [$624|seiscientos veinticuatro dólares].
+Es casi una *semana de trabajo*.
+Te quedas con [$1,456|mil cuatrocientos cincuenta y seis dólares].
+Si reclamas tú, en el sitio *oficial*,
+te quedas con los [$2,080|dos mil ochenta dólares] *completos*.
+Ahora sí, la página *oficial*:
+entra a [unclaimed.org|unclaimed punto org].
+Busca tu nombre y el de tu *esposa*,
+en cada estado donde has vivido.
+Prueba también con tus *apellidos*.
+Si te llega un *texto* diciendo
+que tienes dinero, no hagas *clic*.
+Los programas estatales no mandan *textos*.
+Si a los [4|cuatro] de tu casa
+les toca el promedio, serían [$8,320|ocho mil trescientos veinte dólares].
+Hazlo esta semana, en [10|diez] minutos.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien se ha mudado *muchas veces*.

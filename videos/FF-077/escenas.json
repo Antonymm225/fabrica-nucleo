@@ -1,0 +1,677 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: hipoteca de $300,000 a 30 años con 6.5% de interés y seguro a término de 20 años comprado a los 35, con prima supuesta de $30 al mes. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 5,
+  "fondo": "rayas",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu seguro",
+   "contador": "seguro |de vida",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       2,
+       "fecha"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 28,
+     "tam": 30,
+     "en": [
+      1,
+      "necesitas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 66,
+     "tam": 24,
+     "etiqueta": "VENCE",
+     "en": [
+      2,
+      "fecha"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "el secreto",
+   "contador": "tu |póliza",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu póliza de vida",
+     "en": [
+      3
+     ],
+     "renglones": [
+      {
+       "texto": "Seguro",
+       "valor": "De vida",
+       "en": [
+        3,
+        "final"
+       ]
+      },
+      {
+       "texto": "Se acaba el",
+       "valor": "¿cuándo?",
+       "en": [
+        4,
+        "buscar"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       4,
+       "póliza"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "en": [
+      4,
+      "buscar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "SEGURO",
+    "TERMINO"
+   ],
+   "en": [
+    5,
+    "término"
+   ],
+   "entrada": "cuadritos"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el ejemplo",
+   "contador": [
+    {
+     "en": [
+      6
+     ],
+     "texto": "edad |35 años"
+    },
+    {
+     "en": [
+      9
+     ],
+     "texto": "edad |55 años"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ A LOS 35",
+     "cambia": {
+      "en": [
+       9,
+       "nada"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "id": "cal",
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 24,
+     "tam": 24,
+     "etiqueta": "20 AÑOS",
+     "en": [
+      7,
+      "Cubre"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 40,
+     "valor": 7200,
+     "max": 7200,
+     "prefijo": "$",
+     "etiqueta": "LO QUE PAGAS",
+     "en": [
+      8,
+      "Pagas"
+     ],
+     "hasta": [
+      8,
+      "7,000"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "cal",
+     "en": [
+      9,
+      "recibes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "la hipoteca",
+   "contador": "hipoteca |30 años",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 40,
+     "tam": 36,
+     "etiqueta": "HIPOTECA 30 AÑOS",
+     "en": [
+      10,
+      "hipoteca"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "faltan 10 años",
+     "x": 50,
+     "y": 80,
+     "tam": 6,
+     "color": "principal",
+     "en": [
+      11,
+      "faltan"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    12
+   ],
+   "capitulo": "lo que debes",
+   "contador": "aún debes |$167,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$167,000",
+    "etiqueta": "todavía se debe",
+    "en": [
+     12,
+     "167,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     13,
+     "hijos"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "lo peor",
+   "contador": "a los |55 años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Seguro a los 55",
+     "en": [
+      14
+     ],
+     "renglones": [
+      {
+       "texto": "Seguro nuevo",
+       "valor": "Más caro",
+       "en": [
+        15,
+        "cuesta"
+       ]
+      },
+      {
+       "texto": "Con enfermedad",
+       "valor": "Negado",
+       "en": [
+        16,
+        "enfermedad"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       16,
+       "negar"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "NEGADO",
+     "color": "rojo",
+     "x": 50,
+     "y": 14,
+     "en": [
+      16,
+      "negar"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 87,
+     "tam": 18,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "A LOS 55",
+     "en": [
+      14
+     ],
+     "cambia": {
+      "en": [
+       16,
+       "negar"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "qué hacer",
+   "contador": "paso |1",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      17,
+      "Primero"
+     ],
+     "items": [
+      {
+       "texto": "Mira la fecha de tu póliza",
+       "en": [
+        17,
+        "fecha"
+       ]
+      },
+      {
+       "texto": "Compárala con tu hipoteca",
+       "en": [
+        18,
+        "hipoteca"
+       ]
+      },
+      {
+       "texto": "Compárala con tus hijos",
+       "en": [
+        18,
+        "hijos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 4,
+     "en": [
+      18,
+      "hijos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "la palabra",
+   "contador": "palabra |conversión",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "CONVERSIÓN",
+     "x": 50,
+     "y": 13,
+     "tam": 8,
+     "color": "principal",
+     "en": [
+      19
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Mi póliza se puede convertir?",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 40,
+     "en": [
+      20,
+      "Pregunta"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 74,
+     "y": 62,
+     "tam": 26,
+     "etiqueta": "HASTA QUÉ FECHA",
+     "en": [
+      21,
+      "fecha"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "a tiempo",
+   "contador": "pídelo |a tiempo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "h",
+     "que": "objeto",
+     "objeto": "hospital",
+     "x": 28,
+     "y": 45,
+     "tam": 30,
+     "etiqueta": "EXAMEN MÉDICO",
+     "en": [
+      22
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "h",
+     "en": [
+      22,
+      "piden"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 94,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       23,
+       "tiempo"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 48,
+     "en": [
+      23,
+      "tiempo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "otra salida",
+   "contador": "seguro |IUL",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 50,
+     "tam": 34,
+     "etiqueta": "IUL",
+     "en": [
+      24,
+      "salida"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "hasta 10%",
+     "x": 50,
+     "y": 14,
+     "tam": 9,
+     "color": "verde",
+     "etiqueta": "al año",
+     "en": [
+      27,
+      "hasta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "protección",
+   "contador": "piso |cero",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 24,
+     "y": 40,
+     "tam": 28,
+     "etiqueta": "PROTEGIDA",
+     "en": [
+      28,
+      "Si"
+     ]
+    },
+    {
+     "que": "grafica",
+     "x": 70,
+     "y": 90,
+     "tam": 48,
+     "inicio": 1,
+     "final": 3,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON EL TIEMPO",
+     "etiqueta": "NO BAJA DE CERO",
+     "en": [
+      28,
+      "mercado"
+     ],
+     "hasta": [
+      29,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "da el paso",
+   "contador": "asesor |certificado",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Link en mi biografía",
+     "x": 28,
+     "y": 48,
+     "en": [
+      31
+     ]
+    },
+    {
+     "id": "fam",
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 74,
+     "y": 48,
+     "tam": 32,
+     "etiqueta": "TU FAMILIA",
+     "en": [
+      31
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "fam",
+     "en": [
+      32,
+      "link"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

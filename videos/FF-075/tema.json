@@ -1,0 +1,137 @@
+{
+ "titulo": "La fiesta de seis horas",
+ "angulo": "Una fiesta de $15,000 que dura seis horas te la cobran durante 3 a 5 años, y el pago mensual 'cómodo' esconde que pagas hasta $5,000 extra, o hasta $9,700 si la tasa sale alta.",
+ "explicacion": "Los quince años y la boda se sienten como una promesa que no se puede romper, y por eso mucha gente los paga a crédito. La fiesta termina esa misma noche, pero el pago llega cada mes durante años. Estirar el plazo baja la cuota, pero sube el total: la misma fiesta de $15,000 cuesta $3,059.78 extra a 3 años y $5,238.99 extra a 5 años. Si la tasa es alta, como el máximo de 35.99% que hay en préstamos personales, los intereses suben a $9,730.97. La salida es poner la fiesta al tamaño del ahorro: apartar cada mes desde antes, y el día de la fiesta no deber nada.",
+ "datos": [
+  {
+   "dato": "Costo típico de una quinceañera en EE. UU., extremo bajo del rango común de $15,000 a $25,000 (estimación de una organización latina, no un censo)",
+   "valor": 15000,
+   "unidad": "$",
+   "fuente": "https://enlacelatinonc.org/en/quinceanera-party-financial-tips/"
+  },
+  {
+   "dato": "Costo típico de una quinceañera en EE. UU., extremo alto del rango común de $15,000 a $25,000",
+   "valor": 25000,
+   "unidad": "$",
+   "fuente": "https://enlacelatinonc.org/en/quinceanera-party-financial-tips/"
+  },
+  {
+   "dato": "Costo promedio de una boda en EE. UU. en 2024 (The Knot)",
+   "valor": 33000,
+   "unidad": "$",
+   "fuente": "https://www.theknot.com/content/wedding-data-insights/weddings-in-2024"
+  },
+  {
+   "dato": "Tasa promedio de un préstamo personal (Bankrate, 700 FICO, $5,000, 3 años)",
+   "valor": 12.48,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/loans/personal-loans/average-personal-loan-rates/"
+  },
+  {
+   "dato": "Tasa máxima que cobran la mayoría de los prestamistas personales (rango de 6.70% a 35.99%)",
+   "valor": 35.99,
+   "unidad": "%",
+   "fuente": "https://www.bankrate.com/loans/personal-loans/personal-loan-calculator/"
+  },
+  {
+   "dato": "Duración de la fiesta, dato del equipo (gancho pedido)",
+   "valor": 6,
+   "unidad": "horas",
+   "fuente": "https://www.bankrate.com/loans/personal-loans/average-personal-loan-rates/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Costo de la fiesta de $15,000 por cada hora de fiesta de 6 horas",
+   "expresion": "round(15000/6,2)",
+   "resultado": 2500.0
+  },
+  {
+   "descripcion": "Pago mensual de $15,000 a 12.48% en 36 meses",
+   "expresion": "round(15000*(0.1248/12)/(1-(1+0.1248/12)**-36),2)",
+   "resultado": 501.66
+  },
+  {
+   "descripcion": "Total pagado a 36 meses",
+   "expresion": "round(501.66*36,2)",
+   "resultado": 18059.78
+  },
+  {
+   "descripcion": "Intereses a 36 meses (lo extra por la fiesta)",
+   "expresion": "round(501.66*36-15000,2)",
+   "resultado": 3059.78
+  },
+  {
+   "descripcion": "Pago mensual de $15,000 a 12.48% en 60 meses",
+   "expresion": "round(15000*(0.1248/12)/(1-(1+0.1248/12)**-60),2)",
+   "resultado": 337.32
+  },
+  {
+   "descripcion": "Total pagado a 60 meses",
+   "expresion": "round(337.32*60,2)",
+   "resultado": 20238.99
+  },
+  {
+   "descripcion": "Intereses a 60 meses",
+   "expresion": "round(337.32*60-15000,2)",
+   "resultado": 5238.99
+  },
+  {
+   "descripcion": "Pago mensual de $15,000 a 35.99% en 36 meses",
+   "expresion": "round(15000*(0.3599/12)/(1-(1+0.3599/12)**-36),2)",
+   "resultado": 686.97
+  },
+  {
+   "descripcion": "Intereses a 35.99% en 36 meses",
+   "expresion": "round(686.97*36-15000,2)",
+   "resultado": 9730.97
+  },
+  {
+   "descripcion": "Boda promedio de $33,000 a 12.48% en 60 meses: pago mensual",
+   "expresion": "round(33000*(0.1248/12)/(1-(1+0.1248/12)**-60),2)",
+   "resultado": 742.1
+  },
+  {
+   "descripcion": "Boda de $33,000 a 60 meses: intereses",
+   "expresion": "round(742.1*60-33000,2)",
+   "resultado": 11525.78
+  },
+  {
+   "descripcion": "Alternativa: apartar para la fiesta de $15,000 en 36 meses sin deuda, por mes",
+   "expresion": "round(15000/36,2)",
+   "resultado": 416.67
+  },
+  {
+   "descripcion": "Alternativa: apartar para la fiesta de $15,000 en 24 meses, por mes",
+   "expresion": "round(15000/24,2)",
+   "resultado": 625.0
+  },
+  {
+   "descripcion": "Dinero que te ahorras en intereses si apartas en vez de financiar a 36 meses (frente al pago de $501.66)",
+   "expresion": "round(501.66*36-15000,2)",
+   "resultado": 3059.78
+  }
+ ],
+ "consejo": "Ponle fecha a la fiesta y empieza a apartar hoy: si la fiesta es dentro de 3 años, son unos $416.67 al mes para $15,000, y no pagas intereses. Pon el apartado en una cuenta aparte, como un pago automático. Si el dinero no alcanza, achica la fiesta, pide a los padrinos que cubran partes concretas (pastel, música, vestido) o mueve la fecha. Si no hay otra opción que financiar, compara tasas antes de firmar, elige el plazo más corto que puedas pagar sin atrasarte y mira el total, no solo el pago mensual. Nunca pagues la fiesta con tarjeta ni con un préstamo de día de pago.",
+ "que_no_decir": [
+  "No digas que hacer una fiesta es un error ni juzgues la tradición: la fiesta vale, lo que cuesta es pagarla a crédito.",
+  "No presentes $15,000 como el promedio oficial de una quinceañera: es el extremo bajo de un rango de una organización latina, no una cifra del Censo.",
+  "No prometas que todos consiguen 12.48%: es el promedio con buen crédito (700 FICO); con crédito malo la tasa puede llegar a 35.99%.",
+  "No des el cálculo de intereses como cifra exacta para todos: depende de tu tasa, tu plazo y tu crédito.",
+  "No recomiendes inversiones, cripto, seguros, cooperativas ni planes del trabajo para juntar el dinero.",
+  "No repitas cifras de otros videos (pago mínimo, troca a 72 meses, tele por semana, 391%)."
+ ],
+ "con_iul": false,
+ "idea": "La fiesta de quince años o la boda pagada a crédito: cuánto dura la deuda",
+ "gancho_pedido": "La fiesta dura seis horas. La deuda, años.",
+ "ganchos_recientes": [
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista",
+  "Tu banco te paga un dólar / por guardar tu dinero, / y cobra unos 57 / por prestar ese mismo dinero."
+ ]
+}

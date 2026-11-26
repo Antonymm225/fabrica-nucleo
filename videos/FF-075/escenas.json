@@ -1,0 +1,707 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: fiesta de $15,000 a 36 meses con tasa de 12.48%; con tasa de 35.99% los intereses suben. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 3,
+  "fondo": "cruces",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "la fiesta",
+   "contador": [
+    {
+     "en": [
+      0
+     ],
+     "texto": "fiesta |6 horas"
+    },
+    {
+     "en": [
+      1
+     ],
+     "texto": "deuda |años"
+    }
+   ],
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       1,
+       "deuda"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "6 horas",
+     "x": 70,
+     "y": 25,
+     "tam": 10,
+     "color": "principal",
+     "en": [
+      0,
+      "horas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 72,
+     "y": 62,
+     "tam": 26,
+     "en": [
+      1,
+      "años"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "el pago",
+   "contador": "pago |cómodo",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 93,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué número pido antes de firmar?",
+     "piensa": true,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      3,
+      "número"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 74,
+     "y": 50,
+     "tam": 30,
+     "etiqueta": "PAGO CÓMODO",
+     "en": [
+      2,
+      "cómodo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "FIESTA",
+    "CREDITO"
+   ],
+   "en": [
+    5,
+    "fiesta"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "la fiesta",
+   "contador": "fiesta |$15,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "La quinceañera",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Dura la fiesta",
+       "valor": "6 horas",
+       "en": [
+        7,
+        "Estados"
+       ]
+      },
+      {
+       "texto": "Cuesta desde",
+       "valor": "$15,000",
+       "en": [
+        8,
+        "15,000"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "en": [
+      8,
+      "puede"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el plan",
+   "contador": [
+    {
+     "en": [
+      9
+     ],
+     "texto": "plazo |3 años"
+    },
+    {
+     "en": [
+      11
+     ],
+     "texto": "cuota |$500"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 22,
+     "y": 35,
+     "tam": 28,
+     "etiqueta": "3 AÑOS"
+    },
+    {
+     "que": "cifra",
+     "texto": "12%",
+     "x": 50,
+     "y": 50,
+     "tam": 11,
+     "color": "principal",
+     "en": [
+      10,
+      "12%"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 78,
+     "y": 35,
+     "tam": 28,
+     "etiqueta": "$500 AL MES",
+     "en": [
+      11,
+      "500"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "en": [
+      10,
+      "interés"
+     ],
+     "cambia": {
+      "en": [
+       12,
+       "cómodo"
+      ],
+      "cara": "feliz"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "el total",
+   "contador": "pagas |$18,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "torre",
+     "x": 28,
+     "y": 95,
+     "tam": 50,
+     "valor": 15000,
+     "max": 18000,
+     "prefijo": "$",
+     "etiqueta": "PEDISTE",
+     "en": [
+      13,
+      "final"
+     ],
+     "hasta": [
+      13,
+      "pagaste"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 72,
+     "y": 95,
+     "tam": 50,
+     "valor": 18000,
+     "max": 18000,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "PAGAS",
+     "en": [
+      13,
+      "18,000"
+     ],
+     "hasta": [
+      14,
+      "extra"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$3,000",
+     "x": 50,
+     "y": 22,
+     "tam": 9,
+     "color": "principal",
+     "etiqueta": "extra",
+     "en": [
+      14,
+      "3,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "más años",
+   "contador": "plazo |5 años",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Préstamo a 5 años",
+     "en": [
+      15
+     ],
+     "renglones": [
+      {
+       "texto": "Cuota al mes",
+       "valor": "$340",
+       "en": [
+        16,
+        "340"
+       ]
+      },
+      {
+       "texto": "Intereses",
+       "valor": "$5,000",
+       "en": [
+        17,
+        "5,000"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       17,
+       "suben"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      18,
+      "deuda"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "crédito malo",
+   "contador": "tasa |hasta 36%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "ropa": 4,
+     "etiqueta": "CRÉDITO MALO"
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 22,
+     "tam": 26,
+     "etiqueta": "EL PRESTAMISTA",
+     "en": [
+      19,
+      "crédito"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "36%",
+     "x": 72,
+     "y": 62,
+     "tam": 12,
+     "color": "principal",
+     "en": [
+      20,
+      "36%"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    21
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "intereses |$9,700",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$9,700",
+    "etiqueta": "de intereses",
+    "en": [
+     21,
+     "9,700"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "QUINCENA",
+    "en": [
+     23,
+     "quincenas"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué pedir",
+   "contador": "pide |el total",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "x": 75,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      24,
+      "número"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuál es el total a pagar?",
+     "piensa": false,
+     "cola": 1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      25,
+      "total"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 58,
+     "en": [
+      26,
+      "escrito"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "la salida",
+   "contador": "la fiesta |sin crédito",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 25,
+     "y": 35,
+     "tam": 34
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "tarjeta",
+     "x": 75,
+     "y": 35,
+     "tam": 28,
+     "giro": -8,
+     "en": [
+      27,
+      "caro"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      27,
+      "crédito"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 78,
+     "tam": 22,
+     "en": [
+      28,
+      "fecha"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "ponle fecha",
+   "contador": [
+    {
+     "en": [
+      29
+     ],
+     "texto": "plazo |3 años"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "aparta |$417 al mes"
+    }
+   ],
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 25,
+     "y": 22,
+     "tam": 26,
+     "etiqueta": "3 AÑOS"
+    },
+    {
+     "que": "cifra",
+     "texto": "$417",
+     "x": 72,
+     "y": 24,
+     "tam": 10,
+     "color": "verde",
+     "en": [
+      30,
+      "417"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      30,
+      "aparta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "cuenta aparte",
+   "contador": "aparta |$417 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 0,
+     "final": 15000,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN 3 AÑOS",
+     "etiqueta": "$417 AL MES",
+     "x": 50,
+     "y": 85,
+     "hasta": [
+      32,
+      "nada"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "plan b",
+   "contador": "achica |la fiesta",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      33
+     ],
+     "items": [
+      {
+       "texto": "Achica la fiesta",
+       "en": [
+        33,
+        "achica"
+       ]
+      },
+      {
+       "texto": "Pide a los padrinos",
+       "en": [
+        34,
+        "padrinos"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 26,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      34,
+      "padrinos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+# FF-074 · Finanzas Familiares · EST-01 · Tu banco te paga centavos
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa promedio nacional de una cuenta de ahorros normal (FDIC) = 0.39 % · https://www.fdic.gov/national-rates-and-rate-caps
+# Fuente: Tasa promedio de tarjetas de crédito con intereses (Reserva Federal, G.19; por verificar) = 22.3 % · https://www.federalreserve.gov/releases/g19/current/
+# Fuente: Crecimiento máximo anual del IUL en un año (ficha) = 10 % · https://www.fdic.gov/national-rates-and-rate-caps
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Tu *banco* te paga un dólar
+por guardar tu *dinero*,
+y cobra unos [57|cincuenta y siete]
+por prestar *ese mismo dinero*.
+Al final te hago la cuenta
+de tu *retiro* a los [60|sesenta].
+Se llama el *negocio* del banco.
+Dejas tu dinero en *ahorros*,
+y el banco lo *presta*.
+Tu cuenta paga [0.39%|cero punto treinta y nueve por ciento].
+Una *tarjeta* cobra más de [22%|veintidós por ciento].
+Con un buen ahorro en el banco,
+te paga [$39|treinta y nueve dólares] al *año*.
+Eso es una *cena* con tu familia.
+Pero prestado en *tarjetas*, ese dinero
+le deja al banco [$2,230|dos mil doscientos treinta dólares].
+Nada de esto es *ilegal*.
+Pero aquí viene lo que *nadie te dice*.
+Si apartas lo mismo cada año
+en esa *cuenta* durante treinta años,
+juntas [$90,000|noventa mil dólares] de *tu bolsillo*.
+Y el banco te suma *apenas* [$5,600|cinco mil seiscientos dólares].
+Esa cuenta sirve para *gastos del mes*.
+Para el retiro, busca *otro lugar*.
+Una opción es el [IUL|a yu el],
+un *seguro de vida indexado*.
+Es tuyo.
+Puede crecer *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde* por esa caída.
+Tiene *piso cero*.
+Ahora sí, la cuenta de tu *retiro*:
+si empiezas a los treinta años
+y apartas lo mismo cada año,
+a los [60|sesenta] podrías llegar
+a unos [$542,000|quinientos cuarenta y dos mil dólares].
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien deja su ahorro *dormido*.

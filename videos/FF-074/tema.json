@@ -1,0 +1,114 @@
+{
+ "titulo": "El banco te paga centavos y presta tu dinero caro",
+ "angulo": "Tu banco te paga 0.39% por guardar tu dinero y cobra más de 22% en tarjetas: te paga 1 y cobra unos 57 por el mismo dinero.",
+ "explicacion": "Cuando dejas tu dinero en una cuenta de ahorros normal, el banco lo usa para prestarlo. La cuenta normal paga en promedio 0.39% al año. En las tarjetas de crédito el banco cobra más de 22%. La diferencia es de unas 57 veces, y esa diferencia es su negocio. Por eso el ahorro de tu retiro no debe quedarse ahí dormido.",
+ "datos": [
+  {
+   "dato": "Tasa promedio nacional de una cuenta de ahorros normal (FDIC)",
+   "valor": 0.39,
+   "unidad": "%",
+   "fuente": "https://www.fdic.gov/national-rates-and-rate-caps"
+  },
+  {
+   "dato": "Tasa promedio de tarjetas de crédito con intereses (Reserva Federal, G.19; por verificar)",
+   "valor": 22.3,
+   "unidad": "%",
+   "fuente": "https://www.federalreserve.gov/releases/g19/current/"
+  },
+  {
+   "dato": "Crecimiento máximo anual del IUL en un año (ficha)",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://www.fdic.gov/national-rates-and-rate-caps"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Lo que el banco te paga al año por $10,000 en ahorros normales (0.39%)",
+   "expresion": "10000*0.0039",
+   "resultado": 39.0
+  },
+  {
+   "descripcion": "Lo que el banco cobra al año por prestar $10,000 en tarjetas (22.3%)",
+   "expresion": "10000*0.223",
+   "resultado": 2230.0
+  },
+  {
+   "descripcion": "Diferencia que se queda el banco por cada $10,000",
+   "expresion": "10000*0.223-10000*0.0039",
+   "resultado": 2191.0
+  },
+  {
+   "descripcion": "Cuántas veces más cobra de lo que paga",
+   "expresion": "0.223/0.0039",
+   "resultado": 57.18
+  },
+  {
+   "descripcion": "Total aportado: $3,000 al año de los 30 a los 60 años",
+   "expresion": "3000*30",
+   "resultado": 90000
+  },
+  {
+   "descripcion": "Esos aportes a 10% anual (aporte al inicio de cada año, empieza a los 30, llega a los 60)",
+   "expresion": "round(3000*(((1+0.10)**30-1)/0.10)*(1+0.10),2)",
+   "resultado": 542830.27
+  },
+  {
+   "descripcion": "Los mismos aportes en cuenta normal al 0.39% de los 30 a los 60",
+   "expresion": "round(3000*(((1+0.0039)**30-1)/0.0039)*(1+0.0039),2)",
+   "resultado": 95651.33
+  },
+  {
+   "descripcion": "Diferencia entre ambos a los 60 años",
+   "expresion": "round(3000*(((1+0.10)**30-1)/0.10)*(1+0.10)-3000*(((1+0.0039)**30-1)/0.0039)*(1+0.0039),2)",
+   "resultado": 447178.95
+  },
+  {
+   "descripcion": "Ganancia total en la cuenta normal tras 30 años (después de lo aportado)",
+   "expresion": "round(3000*(((1+0.0039)**30-1)/0.0039)*(1+0.0039)-3000*30,2)",
+   "resultado": 5651.33
+  }
+ ],
+ "consejo": "No dejes dormir tu ahorro de retiro en la cuenta normal del banco. Guarda ahí solo lo de los gastos del mes. Para el retiro, aparta una cantidad fija cada año ($3,000 en el ejemplo) en un instrumento que crezca con interés compuesto, como un seguro de vida indexado (IUL): puede crecer hasta 10% al año con piso de cero. Pide a un agente con licencia que te muestre costos y condiciones por escrito.",
+ "que_no_decir": [
+  "No prometas que el IUL pagará 10% cada año: 10% es el máximo de un año, no una garantía.",
+  "No digas que el banco te roba o te engaña: así funciona su negocio y es legal.",
+  "No digas que la cuenta de ahorros es mala: sirve para el dinero del mes y para emergencias.",
+  "No compares tu cuenta con una tarjeta como si fueran el mismo producto: la tarjeta tiene riesgo para el banco.",
+  "No uses la cifra de $5,000 a $19.50 vs $200 de FF-003 ni el tema de empezar tarde de FF-006.",
+  "No presentes la proyección de $542,830 como resultado seguro: es una ilustración con el máximo de 10% todos los años."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "El dinero guardado en el banco casi sin ganar nada mientras el banco lo presta caro",
+ "gancho_pedido": "Tu banco te paga centavos por guardar tu dinero, y lo presta mucho más caro.",
+ "ganchos_recientes": [
+  "La tanda no te cobra intereses, / pero tiene un riesgo que nadie menciona. / Le pega al que cobra al final. / Te digo qué turno pedir",
+  "La casa que construiste allá / no te manda ni un dólar al mes. / Y muchos la hicieron para el retiro. / Al final te digo la cantidad exacta",
+  "Si le prestas a un familiar de palabra, / puedes perder el dinero y al familiar. / Y el IRS casi no te devuelve nada. / Al final te digo la pregunta de la renta",
+  "Tu hijo tiene 6 años. / Le faltan 12 de comida, ropa y escuela. / Y esos años siguen llegando cada mes, / aunque tú ya no estés para pagarlos.",
+  "Si construyes en el terreno de tu mamá, / en papel, la casa no es tuya. / Y hay algo que casi nadie pide / antes de mandar el primer dólar.",
+  "Una llanta ponchada / no debería ser una emergencia. / Es un gasto que ya sabías. / Al final te digo los tres escalones",
+  "La cuenta más grande de una enfermedad / no te la manda el hospital. / Nadie te avisa que existe. / Al final te digo las tres palabras",
+  "Pedir $300 prestados / te puede costar más del doble. / Al final te digo la pregunta exacta / que le haces al prestamista"
+ ]
+}

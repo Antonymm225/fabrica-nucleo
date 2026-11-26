@@ -1,0 +1,729 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: comisión de 30% sobre un reclamo promedio de $2,080 (supuesto, las comisiones varían). Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "puntos",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu dinero",
+   "contador": "dinero |guardado",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       2,
+       "llamar"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 28,
+     "y": 28,
+     "tam": 22,
+     "en": [
+      0,
+      "dinero"
+     ],
+     "etiqueta": "tu dinero"
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 72,
+     "y": 42,
+     "tam": 34,
+     "en": [
+      1,
+      "estado"
+     ],
+     "etiqueta": "el estado"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "qué buscar",
+   "contador": "buscar |$0",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco"
+    },
+    {
+     "que": "texto",
+     "texto": "PÁGINA OFICIAL",
+     "x": 50,
+     "y": 22,
+     "tam": 5,
+     "color": "principal",
+     "en": [
+      3,
+      "página"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$0",
+     "x": 50,
+     "y": 45,
+     "tam": 13,
+     "color": "verde",
+     "etiqueta": "buscar es gratis",
+     "en": [
+      4,
+      "gratis"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "el nombre",
+   "filas": [
+    "SIN",
+    "RECLAMO"
+   ],
+   "en": [
+    5,
+    "reclamar"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "cómo pasa",
+   "contador": "dinero |sin tocar",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Dinero sin tocar",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Cuenta del banco",
+       "valor": "?",
+       "en": [
+        6,
+        "cuenta"
+       ]
+      },
+      {
+       "texto": "Cheque sin cobrar",
+       "valor": "?",
+       "en": [
+        6,
+        "cheque"
+       ]
+      },
+      {
+       "texto": "Depósito de renta",
+       "valor": "?",
+       "en": [
+        7,
+        "depósito"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       8,
+       "tocar"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "en": [
+      8,
+      "sin"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "adónde va",
+   "contador": "dinero |al estado",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "emp",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 22,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "la empresa",
+     "en": [
+      9,
+      "empresa"
+     ]
+    },
+    {
+     "id": "est",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "el estado",
+     "en": [
+      10,
+      "estado"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "emp",
+     "a": "est",
+     "en": [
+      10,
+      "manda"
+     ],
+     "hasta": [
+      10,
+      "estado"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 26,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ",
+     "en": [
+      11,
+      "nombre"
+     ],
+     "cambia": {
+      "en": [
+       12,
+       "avisa"
+      ],
+      "cara": "enojado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "el país",
+   "contador": "personas |1 de 7",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       15,
+       "dinero"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "1 de 7",
+     "x": 50,
+     "y": 42,
+     "tam": 14,
+     "color": "principal",
+     "etiqueta": "sin reclamar",
+     "en": [
+      14,
+      "7"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "la trampa",
+   "contador": "reclamar |$0",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "check",
+     "x": 24,
+     "y": 48,
+     "en": [
+      17,
+      "gratis"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 94,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL QUE COBRA",
+     "en": [
+      18,
+      "cobra"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Yo te ayudo, me das una parte",
+     "piensa": false,
+     "cola": 1,
+     "x": 74,
+     "y": 24,
+     "en": [
+      18,
+      "parte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    19
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "reclamo |$2,080",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Reclamo promedio",
+     "en": [
+      19
+     ],
+     "renglones": [
+      {
+       "texto": "Tu dinero",
+       "valor": "$2,080",
+       "en": [
+        19,
+        "2,080"
+       ]
+      },
+      {
+       "texto": "Comisión",
+       "valor": "30%",
+       "en": [
+        20,
+        "30"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       21,
+       "trámite"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 22,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "en": [
+      20,
+      "cobra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "te quita |$624",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 94,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "id": "c1",
+     "que": "cifra",
+     "texto": "-$624",
+     "x": 50,
+     "y": 38,
+     "tam": 12,
+     "color": "gris",
+     "etiqueta": "te lo quitan",
+     "en": [
+      22,
+      "624"
+     ],
+     "sale": [
+      24,
+      "quedas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 76,
+     "y": 72,
+     "tam": 24,
+     "etiqueta": "una semana",
+     "en": [
+      23,
+      "semana"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$1,456",
+     "x": 50,
+     "y": 38,
+     "tam": 12,
+     "color": "tinta",
+     "etiqueta": "te queda",
+     "en": [
+      24,
+      "1,456"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "la salida",
+   "contador": "reclamas |$2,080",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 14,
+     "y": 95,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "etiqueta": "PAGAS 30%"
+    },
+    {
+     "que": "torre",
+     "x": 36,
+     "y": 95,
+     "tam": 50,
+     "valor": 1456,
+     "max": 2080,
+     "prefijo": "$",
+     "color": "gris",
+     "en": [
+      25,
+      "reclamas"
+     ],
+     "hasta": [
+      25,
+      "oficial"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 62,
+     "y": 95,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 2,
+     "etiqueta": "RECLAMAS TÚ",
+     "en": [
+      25,
+      "tú"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 50,
+     "valor": 2080,
+     "max": 2080,
+     "prefijo": "$",
+     "en": [
+      26,
+      "quedas"
+     ],
+     "hasta": [
+      26,
+      "2,080"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      27
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      29
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      30
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      27
+     ],
+     "items": [
+      {
+       "texto": "Entra a unclaimed.org",
+       "en": [
+        28,
+        "unclaimed"
+       ]
+      },
+      {
+       "texto": "Busca tu nombre y el de tu esposa",
+       "en": [
+        29,
+        "nombre"
+       ]
+      },
+      {
+       "texto": "En cada estado donde has vivido",
+       "en": [
+        30,
+        "estado"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      27,
+      "Ahora"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "cuidado",
+   "contador": "no hagas |clic",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 94,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       34,
+       "textos"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Con todos mis apellidos",
+     "piensa": false,
+     "cola": -1,
+     "x": 24,
+     "y": 20,
+     "en": [
+      31,
+      "apellidos"
+     ],
+     "sale": [
+      32,
+      "texto"
+     ]
+    },
+    {
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Tienes dinero guardado. Haz clic aquí.",
+     "x": 70,
+     "y": 48,
+     "en": [
+      32,
+      "texto"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "ESTAFA",
+     "color": "rojo",
+     "x": 70,
+     "y": 48,
+     "en": [
+      33,
+      "clic"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    35
+   ],
+   "capitulo": "el premio",
+   "contador": "serían |$8,320",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$8,320",
+    "etiqueta": "para tu familia",
+    "en": [
+     36,
+     "8,320"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "FAMILIA",
+    "en": [
+     35,
+     "casa"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    38
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    38,
+    "Sígueme"
+   ],
+   "compartir": [
+    39,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+# FF-089 · Finanzas Familiares · EST-01 · Tu negocio eres tú
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Negocios pequeños en EE.UU. (total, SBA Advocacy 2024) = 34752434 negocios · https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf
+# Fuente: Negocios pequeños sin empleados (solo el dueño), SBA 2024 = 28477518 negocios · https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf
+# Fuente: Porcentaje de negocios pequeños sin empleados, SBA 2024 (la fuente dice 81.9%) = 81.9 % · https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf
+# Fuente: Negocios sin empleados en EE.UU. en 2022 (Census, redondeado a millones) = 29800000 negocios · https://www.census.gov/library/stories/2025/05/smallest-businesses.html
+# Fuente: Ingresos brutos (ventas, no ganancia) de los negocios sin empleados en 2022 (Census, $1.7 billones) = 1700000000000 $ · https://content.govdelivery.com/accounts/USCENSUS/bulletins/3df376d
+# Fuente: Negocios de construcción sin empleados en 2022 = 2875590 negocios · https://www.census.gov/library/stories/2025/05/smallest-businesses.html
+# Fuente: Ingresos brutos de los negocios de construcción sin empleados en 2022 (redondeado a $238.0 mil millones) = 238000000000 $ · https://www.census.gov/library/stories/2025/05/smallest-businesses.html
+# Fuente: Porcentaje de los negocios sin empleados que son de construcción, 2022 = 9.6 % · https://www.census.gov/library/stories/2025/05/smallest-businesses.html
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si tu negocio *eres tú*,
+tu familia hereda *herramientas*, no un negocio.
+Y esas herramientas se venden *una sola vez*.
+Al final te digo la *cuenta de dos números*
+que mide cuánto *hueco* dejarías.
+Se llama *negocio de un solo dueño*.
+En Estados Unidos, casi [82%|ochenta y dos por ciento]
+de los negocios *no tiene* ni un empleado.
+Solo en construcción hay casi [2.9 millones|dos millones novecientos mil].
+Ahí tú *trabajas*, tú vendes y tú cobras.
+Y aquí viene lo que *nadie* te dice:
+el cliente no le paga a la *troca*.
+Se va con *otro*.
+Ejemplo inventado: un *roofer* deja su troca
+y sus herramientas a su familia.
+Eso les alcanza para unos [5|cinco] *meses*
+de lo que él *ganaba*.
+Pero le faltaban [10|diez] años de *trabajo*,
+o sea, [$700,000|setecientos mil dólares] de *ingreso*.
+Las herramientas cubren apenas [4%|cuatro por ciento].
+Faltan [$670,000|seiscientos setenta mil dólares] de *hueco*.
+Ahora sí, la *cuenta de dos números*:
+lo que dejarías, entre lo que ganas al *año*.
+Eso te dice cuántos *años* cubres.
+Lo que falte es tu *hueco*.
+Para ese hueco sirve el [IUL|a yu el],
+un *seguro de vida indexado*.
+Si faltas, tu familia recibe dinero
+en lugar del *ingreso* que ya no entra.
+Es tuyo, y puede crecer
+*hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierde*.
+Tiene *piso cero*.
+Pídelo a tu nombre, con tu familia
+como *beneficiaria*, y revisa el papeleo
+con un *contador* o abogado.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien *trabaja por su cuenta*.

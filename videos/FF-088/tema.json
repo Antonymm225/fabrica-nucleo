@@ -1,0 +1,92 @@
+{
+ "titulo": "La troca a cuenta que te sale cara",
+ "angulo": "Dejar la troca a cuenta se siente como un favor, pero el dealer te la paga a precio de mayoreo y la revende a precio de tienda, y esa diferencia se la queda él.",
+ "explicacion": "Cuando dejas tu troca a cuenta, el dealer te paga precio de mayoreo, porque él tiene que arreglarla, limpiarla y revenderla. Un particular que la compra paga precio de calle, que es más alto. Con una troca de $25,000 a precio de calle, una oferta 15% más baja te deja $3,750 menos. Hay un detalle que sí cuenta: en Texas, si dejas la troca a cuenta, pagas el impuesto de 6.25% solo sobre la diferencia, y eso te ahorra $1,328.13. Aun así, vender tú mismo te deja unos $2,422 más. Si no quieres vender tú, pide ofertas en efectivo de otros compradores antes de entrar al dealer, y úsalas para negociar.",
+ "datos": [
+  {
+   "dato": "Precio promedio de lista de un vehículo usado en EE. UU. (Cox Automotive, octubre 2025)",
+   "valor": 25945,
+   "unidad": "$",
+   "fuente": "https://www.coxautoinc.com/insights/used-vehicle-inventory-october-2025/"
+  },
+  {
+   "dato": "Rango típico de lo que el valor a cuenta queda por debajo del valor entre particulares (en la página citado como estimación basada en Kelley Blue Book; usamos 15%, el punto medio de 10-20%)",
+   "valor": 15,
+   "unidad": "%",
+   "fuente": "https://www.carwisela.com/blogs/trade-in-value-how-dealers-calculate-it-and-how-to-get-more"
+  },
+  {
+   "dato": "Diferencia típica en dólares entre precio entre particulares y valor a cuenta en autos comunes (estimación secundaria, $1,500 a $3,000)",
+   "valor": 1500,
+   "unidad": "$",
+   "fuente": "https://primeautohub.net/selling-your-car/sale-channels/private-party-sales/what-private-party-value-actually-means-and-why-it-differs-from-trade-in/"
+  },
+  {
+   "dato": "Impuesto de venta de vehículos en Texas; se cobra sobre el precio menos lo que te den por la troca a cuenta en la misma compra",
+   "valor": 6.25,
+   "unidad": "%",
+   "fuente": "https://comptroller.texas.gov/taxes/publications/98-805.php"
+  },
+  {
+   "dato": "Plazo para que el vendedor particular avise a Texas de la venta (formulario VTR-346, gratis en línea) y se libere de responsabilidad",
+   "valor": 30,
+   "unidad": "días",
+   "fuente": "https://www.txdmv.gov/sites/default/files/form_files/VTR-346.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Oferta del dealer a cuenta si es 15% menor que el precio de calle de $25,000",
+   "expresion": "round(25000*(1-0.15),2)",
+   "resultado": 21250.0
+  },
+  {
+   "descripcion": "Diferencia bruta entre vender tú mismo y dejarla a cuenta",
+   "expresion": "round(25000-25000*(1-0.15),2)",
+   "resultado": 3750.0
+  },
+  {
+   "descripcion": "Impuesto de Texas que te ahorras al dejarla a cuenta (6.25% de la oferta)",
+   "expresion": "round(21250*0.0625,2)",
+   "resultado": 1328.13
+  },
+  {
+   "descripcion": "Diferencia real a tu favor al vender tú mismo, ya restando el ahorro de impuesto",
+   "expresion": "round(25000-21250-21250*0.0625,2)",
+   "resultado": 2421.87
+  },
+  {
+   "descripcion": "Lo mismo si la oferta fuera 10% menor (caso más suave)",
+   "expresion": "round(25000*0.10-25000*(1-0.10)*0.0625,2)",
+   "resultado": 1093.75
+  },
+  {
+   "descripcion": "Lo mismo si la oferta fuera 20% menor (caso más duro)",
+   "expresion": "round(25000*0.20-25000*(1-0.20)*0.0625,2)",
+   "resultado": 3750.0
+  }
+ ],
+ "consejo": "Antes de ir al dealer, busca el valor de tu troca en Kelley Blue Book como 'trade-in' y como 'private party', y pide 2 o 3 ofertas de compra en efectivo de otros compradores (por ejemplo, CarMax u otros). Si tu troca está pagada, publícala una semana a precio de calle, y al vender firma el título, guarda una copia y avisa de la venta en tu estado (en Texas, el formulario VTR-346 en línea, gratis y dentro de 30 días). Si prefieres no vender tú, usa la mejor oferta que juntaste para negociar con el dealer, y pídele el precio de la troca nueva y el valor de la vieja por separado. Si todavía debes la troca, llama primero a tu banco para saber cómo transferir el título.",
+ "que_no_decir": [
+  "No prometas que siempre te van a pagar $3,750 más: es un ejemplo con una troca de $25,000 y una oferta 15% más baja.",
+  "No digas que dejarla a cuenta siempre es mala idea: ahorra tiempo y, en Texas, impuesto.",
+  "No uses la cifra de impuestos como si fuera igual en todos los estados: cambia según el estado, y algunos no dan ese crédito.",
+  "No digas que vender entre particulares no tiene riesgos: hay que verificar el pago, el título y avisar de la venta.",
+  "No menciones inversiones, seguros, cooperativas ni planes del trabajo.",
+  "No repitas los casos de troca con deuda vieja ni de la tasa que sube el dealer: son otros videos.",
+  "No presentes el 10-20% como cifra oficial de Kelley Blue Book: viene de páginas que lo citan y es un rango típico."
+ ],
+ "con_iul": false,
+ "idea": "Dejar la troca a cuenta en el dealer contra venderla tú mismo: cuánto se pierde",
+ "gancho_pedido": "Dejar tu troca a cuenta en el dealer parece un favor, y te cuesta miles.",
+ "ganchos_recientes": [
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor.",
+  "La diabetes no te saca de golpe. / Te va sacando de a poco. / Primero tus horas, luego tu sueldo. / Al final te digo las tres preguntas",
+  "No necesitas Seguro Social / para comprar casa en Estados Unidos. / Pero hay un número en tu préstamo / que te sube casi $330 cada mes.",
+  "El fraude que más daña entre nosotros / no viene de un extraño. / Viene de un conocido. / Al final te digo la pregunta exacta",
+  "Si te pagan en efectivo y sin registro, / para el Seguro Social no trabajaste. / Al final te digo la página gratis / donde ves tus años de trabajo,"
+ ]
+}

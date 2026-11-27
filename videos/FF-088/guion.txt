@@ -1,0 +1,45 @@
+# FF-088 · Finanzas Familiares · EST-01 · La troca a cuenta que te sale cara
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Precio promedio de lista de un vehículo usado en EE. UU. (Cox Automotive, octubre 2025) = 25945 $ · https://www.coxautoinc.com/insights/used-vehicle-inventory-october-2025/
+# Fuente: Rango típico de lo que el valor a cuenta queda por debajo del valor entre particulares (en la página citado como estimación basada en Kelley Blue Book; usamos 15%, el punto medio de 10-20%) = 15 % · https://www.carwisela.com/blogs/trade-in-value-how-dealers-calculate-it-and-how-to-get-more
+# Fuente: Diferencia típica en dólares entre precio entre particulares y valor a cuenta en autos comunes (estimación secundaria, $1,500 a $3,000) = 1500 $ · https://primeautohub.net/selling-your-car/sale-channels/private-party-sales/what-private-party-value-actually-means-and-why-it-differs-from-trade-in/
+# Fuente: Impuesto de venta de vehículos en Texas; se cobra sobre el precio menos lo que te den por la troca a cuenta en la misma compra = 6.25 % · https://comptroller.texas.gov/taxes/publications/98-805.php
+# Fuente: Plazo para que el vendedor particular avise a Texas de la venta (formulario VTR-346, gratis en línea) y se libere de responsabilidad = 30 días · https://www.txdmv.gov/sites/default/files/form_files/VTR-346.pdf
+# BLOQUE 1
+Dejar tu troca *a cuenta* parece un favor,
+y te puede costar *miles* de dólares.
+Al final te digo los *dos precios*
+que le pides *por separado* al vendedor.
+Se llama el *precio de mayoreo*.
+Tú crees que te hace un *favor*.
+Pero él te la paga *barata*,
+la arregla, la limpia,
+y la revende a *precio de tienda*.
+Y esa diferencia se la queda *él*.
+Piensa en una troca de [$25,000|veinticinco mil dólares].
+Si el dealer ofrece [15%|quince por ciento] *menos*,
+te da [$21,250|veintiún mil doscientos cincuenta].
+Son [$3,750|tres mil setecientos cincuenta] que *no ves*.
+Pero aquí viene lo que *nadie* te dice.
+En Texas, al dejarla a cuenta,
+pagas el impuesto de [6.25%|seis punto veinticinco por ciento]
+solo sobre la *diferencia*.
+Eso te ahorra [$1,328|mil trescientos veintiocho].
+Aun así, vender tú te deja
+unos [$2,422|dos mil cuatrocientos veintidós] *más*.
+En otros estados el impuesto *cambia*,
+pero el truco del dealer es el *mismo*.
+Antes de ir al dealer, busca *ofertas*.
+Pide dos o tres en *efectivo*
+a otros *compradores*.
+Esas ofertas son tu *fuerza* para negociar.
+Ahora sí, los *dos precios* por separado:
+el precio de la *troca nueva*,
+y lo que te dan por la *vieja*.
+Si los mezcla, no ves dónde te *quita*.
+Si la vendes tú, firma el *título*,
+guarda una copia y avisa en [30|treinta] días.
+Ese formulario de aviso es *gratis*.
+Si aún la debes, llama al *banco* primero.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien va a cambiar de *troca*.

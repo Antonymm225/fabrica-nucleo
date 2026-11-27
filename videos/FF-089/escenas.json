@@ -1,0 +1,654 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: un roofer inventado cuyas herramientas cubren unos 5 meses de su ingreso de 10 años ($700,000). Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 5,
+  "fondo": "liso",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu negocio",
+   "contador": "negocio |eres tú",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 34,
+     "tam": 32,
+     "en": [
+      1,
+      "familia"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "HERRAMIENTAS",
+     "color": "gris",
+     "x": 72,
+     "y": 66,
+     "en": [
+      1,
+      "herramientas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "la cuenta",
+   "contador": "te digo |al final",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cuánto hueco dejaría?",
+     "piensa": true,
+     "cola": -1,
+     "x": 30,
+     "y": 20,
+     "en": [
+      3,
+      "cuenta"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "DOS NÚMEROS",
+     "color": "principal",
+     "x": 72,
+     "y": 55,
+     "en": [
+      3,
+      "dos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "el problema",
+   "filas": [
+    "SOLO",
+    "DUENO"
+   ],
+   "en": [
+    5,
+    "llama"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "en Estados Unidos",
+   "contador": "sin empleados |casi 82%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "82%",
+     "etiqueta": "sin empleados",
+     "color": "principal",
+     "x": 50,
+     "y": 28,
+     "tam": 11
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 76,
+     "y": 78,
+     "tam": 26,
+     "etiqueta": "2.9 MILLONES",
+     "en": [
+      8,
+      "construcción"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      9,
+      "Ahí"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "tu cliente",
+   "contador": "cliente |se va",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "id": "yo",
+     "x": 14,
+     "y": 95,
+     "tam": 28,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "id": "cl",
+     "x": 50,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL CLIENTE",
+     "en": [
+      11,
+      "cliente"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "tr",
+     "objeto": "troca",
+     "x": 28,
+     "y": 42,
+     "tam": 26,
+     "en": [
+      11,
+      "troca"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "tr",
+     "en": [
+      11,
+      "troca"
+     ]
+    },
+    {
+     "que": "persona",
+     "id": "ot",
+     "x": 86,
+     "y": 95,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "OTRO",
+     "en": [
+      12,
+      "otro"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cl",
+     "a": "ot",
+     "en": [
+      12,
+      "va"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "ejemplo",
+   "contador": "ejemplo |inventado",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 92,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "ROOFER"
+    },
+    {
+     "que": "texto",
+     "texto": "EJEMPLO INVENTADO",
+     "color": "gris",
+     "x": 50,
+     "y": 10
+    },
+    {
+     "que": "objeto",
+     "id": "tr",
+     "objeto": "troca",
+     "x": 50,
+     "y": 35,
+     "tam": 26,
+     "en": [
+      13,
+      "troca"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "fa",
+     "objeto": "familia",
+     "x": 82,
+     "y": 35,
+     "tam": 26,
+     "en": [
+      14,
+      "familia"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "tr",
+     "a": "fa",
+     "en": [
+      14,
+      "familia"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "5 meses",
+     "color": "principal",
+     "x": 64,
+     "y": 72,
+     "tam": 9,
+     "en": [
+      15,
+      "meses"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "lo que queda",
+   "contador": "ingreso |10 años",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 24,
+     "y": 32,
+     "tam": 28
+    },
+    {
+     "que": "torre",
+     "x": 82,
+     "y": 95,
+     "tam": 55,
+     "valor": 700000,
+     "max": 700000,
+     "prefijo": "$",
+     "etiqueta": "10 AÑOS",
+     "en": [
+      17,
+      "años"
+     ],
+     "hasta": [
+      18,
+      "700,000"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "CUBREN 4%",
+     "color": "gris",
+     "x": 26,
+     "y": 68,
+     "en": [
+      19,
+      "cubren"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "el hueco",
+   "contador": "hueco |$670,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$670,000",
+    "etiqueta": "de hueco",
+    "en": [
+     20,
+     "670,000"
+    ]
+   },
+   "cae": {
+    "objeto": "familia",
+    "letrero": "HUECO",
+    "en": [
+     20,
+     "hueco"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "la cuenta",
+   "contador": "tu |cuenta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      21
+     ],
+     "items": [
+      {
+       "texto": "Lo que dejarías (troca, herramientas)",
+       "en": [
+        22,
+        "dejarías"
+       ]
+      },
+      {
+       "texto": "Entre lo que ganas al año",
+       "en": [
+        22,
+        "ganas"
+       ]
+      },
+      {
+       "texto": "Lo que falte es tu hueco",
+       "en": [
+        24,
+        "hueco"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 80,
+     "y": 94,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       23,
+       "años"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "la salida",
+   "contador": "si faltas |paga",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "SEGURO DE VIDA",
+     "color": "principal",
+     "x": 50,
+     "y": 14,
+     "en": [
+      25,
+      "Para"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "fa",
+     "objeto": "familia",
+     "x": 28,
+     "y": 62,
+     "tam": 34,
+     "en": [
+      27,
+      "familia"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "bi",
+     "objeto": "billete",
+     "x": 72,
+     "y": 62,
+     "tam": 28,
+     "en": [
+      27,
+      "dinero"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "bi",
+     "a": "fa",
+     "en": [
+      27,
+      "dinero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    29
+   ],
+   "capitulo": "piso cero",
+   "contador": "crece |hasta 10%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 88,
+     "inicio": 10,
+     "final": 60,
+     "barras": 8,
+     "desdeTexto": "HOY",
+     "hastaTexto": "CON LOS AÑOS",
+     "etiqueta": "hasta 10% al año",
+     "en": [
+      29
+     ],
+     "hasta": [
+      30,
+      "año"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO",
+     "color": "verde",
+     "x": 50,
+     "y": 20,
+     "en": [
+      32,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    33
+   ],
+   "capitulo": "qué hacer",
+   "contador": "a tu |nombre",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "id": "yo",
+     "x": 25,
+     "y": 95,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      33,
+      "Pídelo"
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "fa",
+     "objeto": "familia",
+     "x": 72,
+     "y": 55,
+     "tam": 32,
+     "etiqueta": "BENEFICIARIA",
+     "en": [
+      34,
+      "beneficiaria"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "yo",
+     "a": "fa",
+     "en": [
+      34,
+      "beneficiaria"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 72,
+     "y": 88,
+     "en": [
+      35,
+      "contador"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    36
+   ],
+   "capitulo": "da el paso",
+   "contador": "link |en biografía",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "celular",
+     "id": "ce",
+     "modo": "mensaje",
+     "texto": "Aplica aquí",
+     "x": 28,
+     "y": 50
+    },
+    {
+     "que": "objeto",
+     "id": "fa",
+     "objeto": "familia",
+     "x": 74,
+     "y": 55,
+     "tam": 30,
+     "en": [
+      37,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "ce",
+     "a": "fa",
+     "en": [
+      37,
+      "link"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    40
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    40,
+    "Sígueme"
+   ],
+   "compartir": [
+    41,
+    "compártelo"
+   ]
+  }
+ ]
+}

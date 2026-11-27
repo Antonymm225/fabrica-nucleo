@@ -1,0 +1,129 @@
+{
+ "titulo": "Tu negocio eres tú",
+ "angulo": "Casi 82% de los negocios de Estados Unidos no tiene ni un empleado: si el dueño falta, no queda un negocio que siga facturando, solo herramientas que se venden por mucho menos que lo que el dueño producía.",
+ "explicacion": "En Estados Unidos hay unos 28.5 millones de negocios sin empleados, y la construcción tiene casi 2.9 millones. En esos negocios el dueño es el que trabaja, el que cotiza y el que cobra. Si falta, el cliente no le paga a la troca ni al trailer: se va con otro. La familia hereda las herramientas, que se venden una sola vez y a precio de usado, y no hereda el ingreso. Ejemplo hipotético: un roofer que gana $70,000 al año y deja $30,000 en troca y herramientas. Eso le da a la familia unos 5 meses de su ingreso, y le faltaban muchos años de trabajo. La salida es un seguro de vida con IUL que pague en lugar del ingreso que el negocio ya no va a generar.",
+ "datos": [
+  {
+   "dato": "Negocios pequeños en EE.UU. (total, SBA Advocacy 2024)",
+   "valor": 34752434,
+   "unidad": "negocios",
+   "fuente": "https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf"
+  },
+  {
+   "dato": "Negocios pequeños sin empleados (solo el dueño), SBA 2024",
+   "valor": 28477518,
+   "unidad": "negocios",
+   "fuente": "https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf"
+  },
+  {
+   "dato": "Porcentaje de negocios pequeños sin empleados, SBA 2024 (la fuente dice 81.9%)",
+   "valor": 81.9,
+   "unidad": "%",
+   "fuente": "https://advocacy.sba.gov/wp-content/uploads/2024/12/Frequently-Asked-Questions-About-Small-Business_2024-508.pdf"
+  },
+  {
+   "dato": "Negocios sin empleados en EE.UU. en 2022 (Census, redondeado a millones)",
+   "valor": 29800000,
+   "unidad": "negocios",
+   "fuente": "https://www.census.gov/library/stories/2025/05/smallest-businesses.html"
+  },
+  {
+   "dato": "Ingresos brutos (ventas, no ganancia) de los negocios sin empleados en 2022 (Census, $1.7 billones)",
+   "valor": 1700000000000,
+   "unidad": "$",
+   "fuente": "https://content.govdelivery.com/accounts/USCENSUS/bulletins/3df376d"
+  },
+  {
+   "dato": "Negocios de construcción sin empleados en 2022",
+   "valor": 2875590,
+   "unidad": "negocios",
+   "fuente": "https://www.census.gov/library/stories/2025/05/smallest-businesses.html"
+  },
+  {
+   "dato": "Ingresos brutos de los negocios de construcción sin empleados en 2022 (redondeado a $238.0 mil millones)",
+   "valor": 238000000000,
+   "unidad": "$",
+   "fuente": "https://www.census.gov/library/stories/2025/05/smallest-businesses.html"
+  },
+  {
+   "dato": "Porcentaje de los negocios sin empleados que son de construcción, 2022",
+   "valor": 9.6,
+   "unidad": "%",
+   "fuente": "https://www.census.gov/library/stories/2025/05/smallest-businesses.html"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Porcentaje de negocios pequeños que no tienen empleados (SBA 2024)",
+   "expresion": "round(28477518/34752434*100, 2)",
+   "resultado": 81.94
+  },
+  {
+   "descripcion": "Venta bruta promedio de un negocio de construcción de un solo dueño en 2022 (ventas, no ganancia; aproximado por el redondeo de la fuente)",
+   "expresion": "round(238000000000/2875590, 2)",
+   "resultado": 82765.62
+  },
+  {
+   "descripcion": "Venta bruta promedio de cualquier negocio sin empleados en 2022 (aproximado)",
+   "expresion": "round(1700000000000/29800000, 2)",
+   "resultado": 57046.98
+  },
+  {
+   "descripcion": "Ejemplo hipotético: meses de ingreso que cubren $30,000 de troca y herramientas si el dueño gana $70,000 al año",
+   "expresion": "round(30000/(70000/12), 2)",
+   "resultado": 5.14
+  },
+  {
+   "descripcion": "Ejemplo hipotético: ingreso de 10 años que ya no entra si el dueño gana $70,000 al año",
+   "expresion": "70000*10",
+   "resultado": 700000
+  },
+  {
+   "descripcion": "Ejemplo hipotético: qué parte de esos 10 años de ingreso cubren las herramientas ($30,000)",
+   "expresion": "round(30000/700000*100, 2)",
+   "resultado": 4.29
+  },
+  {
+   "descripcion": "Ejemplo hipotético: lo que falta entre 10 años de ingreso y lo que dejan las herramientas",
+   "expresion": "700000-30000",
+   "resultado": 670000
+  }
+ ],
+ "consejo": "Si tu negocio eres tú, haz esta cuenta: ¿cuánto vale lo que dejarías (troca, herramientas, trailer) y cuántos años de ingreso representa? Lo que falte es tu hueco. Cotiza un seguro de vida IUL por esa diferencia, para que la familia reciba dinero en lugar de tu ingreso. Pídelo a tu nombre y con tu familia como beneficiaria, y revisa el papeleo del negocio con un contador o abogado.",
+ "que_no_decir": [
+  "No digas que la familia no puede vender o seguir el negocio en ningún caso: depende de cada situación, y hay oficios donde un socio o un empleado de confianza puede continuar.",
+  "No presentes las ventas brutas promedio ($82,766 en construcción) como ganancia del dueño: son ingresos antes de gastos.",
+  "No des como dato que las herramientas valen $30,000 ni que el dueño gana $70,000: es un ejemplo inventado y hay que decirlo así.",
+  "No prometas que el IUL crece 10% seguro cada año: el 10% es el máximo de un año y el piso es cero.",
+  "No hables de cuánto se junta en el IUL ni de proyecciones de ahorro o retiro.",
+  "No digas que el seguro de vida cuesta poco o es barato sin una cotización real.",
+  "No des consejo legal sobre herencias o sociedades: manda a la gente con un abogado o contador."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "protección de la familia si tú faltas",
+ "cta_iul": "biografia",
+ "idea": "El que tiene su propio negocio y él es el negocio: si falta, la familia hereda herramientas, no ingresos",
+ "gancho_pedido": "Si tu negocio eres tú, el día que faltes tu familia hereda herramientas, no un negocio.",
+ "ganchos_recientes": [
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor.",
+  "La diabetes no te saca de golpe. / Te va sacando de a poco. / Primero tus horas, luego tu sueldo. / Al final te digo las tres preguntas",
+  "No necesitas Seguro Social / para comprar casa en Estados Unidos. / Pero hay un número en tu préstamo / que te sube casi $330 cada mes.",
+  "El fraude que más daña entre nosotros / no viene de un extraño. / Viene de un conocido. / Al final te digo la pregunta exacta",
+  "Si te pagan en efectivo y sin registro, / para el Seguro Social no trabajaste. / Al final te digo la página gratis / donde ves tus años de trabajo,",
+  "Dejar tu troca a cuenta parece un favor, / y te puede costar miles de dólares. / Al final te digo los dos precios / que le pides por separado al vendedor."
+ ]
+}

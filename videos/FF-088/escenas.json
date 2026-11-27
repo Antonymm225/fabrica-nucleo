@@ -1,0 +1,629 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: troca de $25,000 con una oferta a cuenta 15% más baja y el impuesto de 6.25% de Texas. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 4,
+  "fondo": "cuadricula",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "tu troca",
+   "contador": "a |cuenta",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "miles"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 72,
+     "y": 36,
+     "tam": 36,
+     "en": [
+      0,
+      "troca"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "te cuesta miles",
+     "x": 70,
+     "y": 68,
+     "color": "principal",
+     "tam": 5,
+     "en": [
+      1,
+      "miles"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "dos precios",
+   "contador": "dos |precios",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 24,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "PRECIO 1"
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 76,
+     "y": 30,
+     "tam": 26,
+     "etiqueta": "PRECIO 2",
+     "en": [
+      2,
+      "precios"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      3,
+      "vendedor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "contador": "el |mayoreo",
+   "filas": [
+    "MAYOREO",
+    "TIENDA"
+   ],
+   "en": [
+    4,
+    "mayoreo"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el dealer",
+   "contador": "compra |barato",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 15,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       6,
+       "barata"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 22,
+     "y": 30,
+     "tam": 18,
+     "etiqueta": "LO QUE TE PAGA",
+     "en": [
+      6,
+      "paga"
+     ]
+    },
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 52,
+     "y": 52,
+     "tam": 26,
+     "en": [
+      7,
+      "arregla"
+     ]
+    },
+    {
+     "id": "s",
+     "que": "objeto",
+     "objeto": "tienda",
+     "x": 84,
+     "y": 50,
+     "tam": 26,
+     "etiqueta": "PRECIO TIENDA",
+     "en": [
+      8,
+      "tienda"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "t",
+     "a": "s",
+     "en": [
+      8,
+      "revende"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "troca |$25,000",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Tu troca",
+     "en": [
+      9
+     ],
+     "renglones": [
+      {
+       "texto": "Precio de calle",
+       "valor": "$25,000",
+       "en": [
+        10,
+        "25,000"
+       ]
+      },
+      {
+       "texto": "Oferta del dealer",
+       "valor": "$21,250",
+       "en": [
+        11,
+        "menos"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       12,
+       "21,250"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "en": [
+      11,
+      "ofrece"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "lo que te quita",
+   "contador": "te quita |$3,750",
+   "elementos": [
+    {
+     "que": "cifra",
+     "texto": "$3,750",
+     "x": 50,
+     "y": 42,
+     "tam": 13,
+     "color": "principal",
+     "etiqueta": "SE LO QUEDA ÉL",
+     "en": [
+      13,
+      "3,750"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "gorra",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       14,
+       "nadie"
+      ],
+      "cara": "preocupado"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "en Texas",
+   "contador": "impuesto |6.25%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "texto",
+     "texto": "En Texas",
+     "x": 70,
+     "y": 12,
+     "color": "tinta",
+     "tam": 5,
+     "en": [
+      15,
+      "Texas"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 32,
+     "tam": 24,
+     "etiqueta": "IMPUESTO",
+     "en": [
+      16,
+      "impuesto"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$1,328",
+     "x": 70,
+     "y": 64,
+     "tam": 9,
+     "color": "verde",
+     "etiqueta": "te ahorras",
+     "en": [
+      18,
+      "ahorra"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    19
+   ],
+   "capitulo": "vendiendo tú",
+   "contador": "te queda |$2,422",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$2,422",
+    "etiqueta": "vendiendo tú",
+    "en": [
+     20,
+     "2,422"
+    ]
+   },
+   "cae": {
+    "objeto": "troca",
+    "letrero": "TU TROCA",
+    "en": [
+     20,
+     "más"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "otros estados",
+   "contador": "el truco |igual",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "etiqueta": "EL DEALER"
+    },
+    {
+     "que": "texto",
+     "texto": "El impuesto cambia",
+     "x": 50,
+     "y": 12,
+     "color": "tinta",
+     "tam": 5,
+     "en": [
+      21,
+      "impuesto"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Yo te la pago de mayoreo, siempre.",
+     "piensa": false,
+     "cola": -1,
+     "x": 50,
+     "y": 33,
+     "en": [
+      22,
+      "mismo"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      23
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      23
+     ],
+     "items": [
+      {
+       "texto": "Busca ofertas en efectivo",
+       "en": [
+        23,
+        "ofertas"
+       ]
+      },
+      {
+       "texto": "Pide dos o tres compradores",
+       "en": [
+        24,
+        "efectivo"
+       ]
+      },
+      {
+       "texto": "Úsalas para negociar",
+       "en": [
+        26,
+        "fuerza"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      23,
+      "Antes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "los dos precios",
+   "contador": "por |separado",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 3,
+     "cambia": {
+      "en": [
+       30,
+       "quita"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "dos precios separados",
+     "x": 50,
+     "y": 12,
+     "color": "principal",
+     "tam": 5,
+     "en": [
+      27,
+      "precios"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 25,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "TROCA NUEVA",
+     "en": [
+      28,
+      "nueva"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "troca",
+     "x": 75,
+     "y": 42,
+     "tam": 28,
+     "etiqueta": "TU VIEJA",
+     "en": [
+      29,
+      "vieja"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "si la vendes",
+   "contador": "avisa en |30 días",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 75,
+     "y": 40,
+     "tam": 26,
+     "etiqueta": "30 DÍAS",
+     "en": [
+      32,
+      "días"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 75,
+     "y": 78,
+     "en": [
+      33,
+      "gratis"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 25,
+     "y": 28,
+     "tam": 24,
+     "etiqueta": "TU BANCO",
+     "en": [
+      34,
+      "banco"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "titulo": "Cobrar en efectivo: años que no cuentan",
+ "angulo": "Puedes trabajar 10 años completos y para el Seguro Social no trabajaste ni un día, porque solo cuenta lo que se reporta.",
+ "explicacion": "El Seguro Social no mide cuánto trabajaste. Mide lo que se reportó a tu nombre. Para tener derecho a la jubilación necesitas 40 créditos, y eso son unos 10 años de trabajo reportado. Los años sin reporte cuentan como cero cuando calculan tu cheque. Si te pagan en efectivo y sin registro, puedes llegar a los 62 con décadas de trabajo y sin derecho a nada. La salida es exigir que se reporte tu sueldo, o declarar tus ingresos si cobras por tu cuenta. Además, empieza un ahorro propio para el retiro que no dependa de un solo cheque.",
+ "datos": [
+  {
+   "dato": "Ganancias necesarias para un crédito del Seguro Social en 2025",
+   "valor": 1810,
+   "unidad": "$",
+   "fuente": "https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf"
+  },
+  {
+   "dato": "Máximo de créditos que puedes ganar por año",
+   "valor": 4,
+   "unidad": "créditos",
+   "fuente": "https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf"
+  },
+  {
+   "dato": "Créditos necesarios para tener derecho a la jubilación",
+   "valor": 40,
+   "unidad": "créditos",
+   "fuente": "https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf"
+  },
+  {
+   "dato": "Años de ingresos más altos que se usan para calcular el beneficio (los años sin trabajo reportado cuentan como cero)",
+   "valor": 35,
+   "unidad": "años",
+   "fuente": "https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Retiro: 'podrías llegar hasta medio millón'",
+   "valor": 500000,
+   "unidad": "$",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ingreso reportado al año para ganar los 4 créditos de 2025",
+   "expresion": "1810*4",
+   "resultado": 7240
+  },
+  {
+   "descripcion": "Dinero cobrado en efectivo en 10 años a $40,000 al año, que para el Seguro Social cuenta como $0 y 0 créditos",
+   "expresion": "40000*10",
+   "resultado": 400000
+  },
+  {
+   "descripcion": "Ingreso mínimo reportado en 10 años para llegar a 40 créditos (a valor de 2025)",
+   "expresion": "1810*4*10",
+   "resultado": 72400
+  },
+  {
+   "descripcion": "Proyección: aportas $300 al mes ($3,600 al año al inicio de cada año) en un IUL desde los 30 hasta los 60 años, con 10% anual (30 aportes)",
+   "expresion": "round(3600*((1.1**30-1)/0.1)*1.1, 2)",
+   "resultado": 651396.33
+  },
+  {
+   "descripcion": "Total que aportaste de tu bolsillo en esos 30 años",
+   "expresion": "3600*30",
+   "resultado": 108000
+  },
+  {
+   "descripcion": "Interés ganado en la proyección (acumulado menos aportes)",
+   "expresion": "round(3600*((1.1**30-1)/0.1)*1.1-3600*30, 2)",
+   "resultado": 543396.33
+  }
+ ],
+ "consejo": "1) Entra a ssa.gov/myaccount y revisa tu historial de ganancias, año por año. Si faltan años que trabajaste, corrígelos con pruebas (talones, W-2, declaraciones). 2) Si te pagan en efectivo, pide que te reporten con W-2. Si cobras por tu cuenta, declara tus ingresos y paga el impuesto de trabajo por cuenta propia, porque eso es lo que te da créditos. 3) Aunque tengas Seguro Social, el cheque no alcanza solo. Empieza ya un ahorro propio, como un seguro de vida indexado (IUL), donde el dinero crece con interés compuesto desde hoy. Habla con un agente con licencia para ver qué te conviene.",
+ "que_no_decir": [
+  "No decir que el Seguro Social es solo para quien tiene papeles. Ciertos requisitos de estatus sí aplican, así que no hagas promesas sobre eso.",
+  "No animar a evadir impuestos ni decir que declarar es opcional.",
+  "No prometer que el IUL rinde 10% garantizado cada año. Es el máximo de un año, el piso es cero, y la proyección es un ejemplo, no una garantía.",
+  "No decir que el IUL reemplaza al Seguro Social ni que lo cobrarás sin falta.",
+  "No afirmar que el trabajo en efectivo nunca se puede corregir. A veces se puede con pruebas, pero depende del caso y de los plazos.",
+  "No dar cifras exactas de tu cheque futuro del Seguro Social, porque depende de tu historial.",
+  "No decir que el valor del crédito ($1,810) es fijo. Cambia cada año."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "ahorro para el retiro",
+ "cta_iul": "biografia",
+ "idea": "El que cobra en efectivo y sin registro: para el Seguro Social esos años no cuentan",
+ "gancho_pedido": "Si te pagan en efectivo y sin papeles, para el Seguro Social no trabajaste.",
+ "ganchos_recientes": [
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor.",
+  "La diabetes no te saca de golpe. / Te va sacando de a poco. / Primero tus horas, luego tu sueldo. / Al final te digo las tres preguntas",
+  "No necesitas Seguro Social / para comprar casa en Estados Unidos. / Pero hay un número en tu préstamo / que te sube casi $330 cada mes.",
+  "El fraude que más daña entre nosotros / no viene de un extraño. / Viene de un conocido. / Al final te digo la pregunta exacta"
+ ]
+}

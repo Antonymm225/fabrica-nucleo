@@ -1,0 +1,42 @@
+# FF-083 · Finanzas Familiares · EST-01 · El mes trece del cero por ciento
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Tasa típica de interés diferido en tarjetas de tienda, según el CFPB = 31.99 % · https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf
+# Fuente: Tasa promedio de las tarjetas de tienda de los grandes comercios (diciembre 2024), según el CFPB = 32.66 % · https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf
+# Fuente: Precio del ejemplo: compresora y herramientas (ejemplo del video, no es un precio de mercado) = 2400 $ · https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf
+# Fuente: Plazo de la promoción del ejemplo = 12 meses · https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf
+# BLOQUE 1
+*Cero intereses* por [12|doce] meses
+tiene una *trampa* en el mes [13|trece].
+Al final te digo la *pregunta exacta*
+que le haces al *vendedor*.
+Se llama *interés diferido*, o interés oculto.
+Compras una compresora de [$2,400|dos mil cuatrocientos dólares]
+con *cero por ciento* a [12|doce] meses.
+Pagas *puntual* cada mes, pero menos de [$200|doscientos].
+Llegas al mes [12|doce] y te quedan [$600|seiscientos].
+Piensas: «Ya casi, debo *poquito*».
+Pero el *interés* nunca se fue.
+Se fue sumando en *silencio* desde el día uno.
+Y aquí viene lo que *nadie* te dice:
+te cobran el interés de los [$2,400|dos mil cuatrocientos],
+no solo de los [$600|seiscientos] que faltan.
+En este ejemplo, son unos [$504|quinientos cuatro dólares].
+Es más del [80%|ochenta por ciento] de tu saldo.
+En el mes [13|trece] debes casi [$1,100|mil cien dólares].
+Terminas pagando unos [$2,900|dos mil novecientos dólares]
+por una compresora de [$2,400|dos mil cuatrocientos].
+Ese cargo es una *quincena* completa.
+Ahora sí, la *pregunta exacta*:
+«¿Es interés *diferido* o interés *exento*?»
+Si es *exento*, no te cobran lo atrasado.
+Si es *diferido*, divide el precio entre [11|once],
+no entre [12|doce].
+Son [$218|doscientos dieciocho] al mes, no [$200|doscientos].
+Prográmalo *automático* y terminas un mes antes.
+No confíes en el *pago mínimo*:
+casi nunca alcanza para *liquidar* a tiempo.
+Y si no puedes pagar todo a tiempo,
+mejor *no uses* la promoción.
+Así esos [$504|quinientos cuatro dólares] se quedan contigo.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien compra con *cero intereses*.

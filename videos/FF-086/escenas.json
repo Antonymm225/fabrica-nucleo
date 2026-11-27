@@ -1,0 +1,652 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: metes $5,000 y te prometen 10% al mes; cobras dos meses y luego todo se cae. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 2,
+  "fondo": "puntos",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "el fraude",
+   "contador": "fraude |conocido",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "persona",
+     "x": 72,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "piel": 1,
+     "etiqueta": "CONOCIDO",
+     "en": [
+      2,
+      "conocido"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Confía en mí, compadre",
+     "cola": -1,
+     "x": 72,
+     "y": 24,
+     "en": [
+      2,
+      "conocido"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    3
+   ],
+   "capitulo": "una pregunta",
+   "contador": "una |pregunta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 38,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       4,
+       "contestar"
+      ],
+      "cara": "neutro"
+     }
+    },
+    {
+     "que": "texto",
+     "texto": "UNA PREGUNTA",
+     "x": 50,
+     "y": 30,
+     "color": "principal",
+     "tam": 6,
+     "en": [
+      3,
+      "pregunta"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "ESTAFA",
+    "CERCANA"
+   ],
+   "en": [
+    5,
+    "afinidad"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el grupo",
+   "contador": "grupo |confianza",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 18,
+     "y": 92,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "en": [
+      6
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "PAISANO",
+     "en": [
+      8,
+      "paisanos"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 82,
+     "y": 92,
+     "tam": 28,
+     "cara": "enojado",
+     "gorro": "gorra",
+     "ropa": 4,
+     "piel": 1,
+     "etiqueta": "EL ABUSIVO",
+     "en": [
+      9,
+      "abusa"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "CONFIANZA",
+     "x": 50,
+     "y": 42,
+     "color": "verde",
+     "tam": 6,
+     "en": [
+      7,
+      "confía"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "metes |$5,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "La inversión",
+     "en": [
+      10
+     ],
+     "renglones": [
+      {
+       "texto": "Metes",
+       "valor": "$5,000",
+       "en": [
+        10,
+        "cinco"
+       ]
+      },
+      {
+       "texto": "Te prometen al mes",
+       "valor": "10%",
+       "en": [
+        11,
+        "10"
+       ]
+      },
+      {
+       "texto": "Cobras en total",
+       "valor": "$1,000",
+       "en": [
+        13,
+        "1,000"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       11,
+       "mes"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      12,
+      "cumplen"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "la carnada",
+   "contador": "carnada |$1,000",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "id": "t",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 76,
+     "y": 40,
+     "tam": 26,
+     "etiqueta": "TU PAGO",
+     "en": [
+      14
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "CARNADA",
+     "color": "rojo",
+     "x": 76,
+     "y": 40,
+     "en": [
+      14,
+      "carnada"
+     ]
+    },
+    {
+     "id": "n",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 40,
+     "tam": 26,
+     "etiqueta": "EL SIGUIENTE",
+     "en": [
+      15,
+      "nadie"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "n",
+     "a": "t",
+     "en": [
+      16,
+      "pagan"
+     ],
+     "hasta": [
+      16,
+      "siguiente"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 92,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       16,
+       "siguiente"
+      ],
+      "cara": "sorprendido"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    17
+   ],
+   "capitulo": "tu hermano",
+   "contador": "invitas |a tu hermano",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¡Sí paga! Métete tú también.",
+     "cola": -1,
+     "x": 26,
+     "y": 22,
+     "en": [
+      17,
+      "cobrar"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "piel": 3,
+     "etiqueta": "TU HERMANO",
+     "en": [
+      18,
+      "hermano"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    19
+   ],
+   "capitulo": "el golpe",
+   "contador": "pierdes |$9,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "-$9,000",
+    "etiqueta": "tu familia",
+    "en": [
+     22,
+     "9,000"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "VACÍA",
+    "en": [
+     20,
+     "cae"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    23
+   ],
+   "capitulo": "la cuenta",
+   "contador": "10% |al mes",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "x": 50,
+     "y": 86,
+     "inicio": 5000,
+     "final": 15692,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "EN UN AÑO",
+     "etiqueta": "10% cada mes",
+     "en": [
+      23,
+      "cuenta"
+     ],
+     "hasta": [
+      24,
+      "15,692"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    25
+   ],
+   "capitulo": "la pregunta",
+   "contador": "la |pregunta",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "en": [
+      25
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 72,
+     "y": 66,
+     "tam": 26,
+     "en": [
+      25,
+      "pregunta"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "¿DE DÓNDE SALE?",
+     "x": 50,
+     "y": 30,
+     "color": "principal",
+     "tam": 6,
+     "en": [
+      26,
+      "dónde"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "señales",
+   "contador": "señal |de alerta",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 92,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       29,
+       "respuesta"
+      ],
+      "cara": "enojado"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL CONOCIDO",
+     "en": [
+      28
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "No le cuentes a nadie",
+     "cola": -1,
+     "x": 74,
+     "y": 24,
+     "en": [
+      28,
+      "cuentes"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      30
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      31
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      32
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 8,
+     "en": [
+      30
+     ],
+     "items": [
+      {
+       "texto": "Pide todo por escrito",
+       "en": [
+        30,
+        "escrito"
+       ]
+      },
+      {
+       "texto": "Revisa su registro en Investor.gov",
+       "en": [
+        31,
+        "Investor.gov"
+       ]
+      },
+      {
+       "texto": "Date dos días para pensarlo",
+       "en": [
+        32,
+        "días"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 50,
+     "y": 76,
+     "tam": 26,
+     "etiqueta": "DOS DÍAS",
+     "en": [
+      32,
+      "días"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    34
+   ],
+   "capitulo": "si caíste",
+   "contador": "si ya |caíste",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "sombrero",
+     "en": [
+      34
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "NO METAS MÁS",
+     "x": 50,
+     "y": 38,
+     "color": "principal",
+     "tam": 6,
+     "en": [
+      34,
+      "metas"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 76,
+     "y": 68,
+     "en": [
+      36,
+      "verifica"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    37
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    37,
+    "Sígueme"
+   ],
+   "compartir": [
+    38,
+    "compártelo"
+   ]
+  }
+ ]
+}

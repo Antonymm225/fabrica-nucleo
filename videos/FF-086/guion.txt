@@ -1,0 +1,45 @@
+# FF-086 · Finanzas Familiares · EST-01 · El fraude de confianza
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: La SEC advierte que el fraude por afinidad aprovecha la confianza dentro de grupos religiosos, étnicos o de inmigrantes. Su alerta describe casos contra comunidades latinas, entre ellas un esquema piramidal dirigido a inmigrantes dominicanos y brasileños. (Esto sí está verificado.) = 1 alerta de la SEC (fuente verificada) · https://www.sec.gov/oiea/investor-alerts-bulletins/ia_affinityfraud.html
+# Fuente: Pérdidas reportadas por estafas de inversión a la FTC en 2024, en miles de millones de dólares. Es de memoria, verificar antes de publicar. = 5.7 miles de millones de $ · https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024
+# Fuente: Rendimiento aproximado de una cuenta de ahorro en línea con seguro FDIC (referencia realista, verificar la tasa vigente). = 4.5 % anual · https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/
+# BLOQUE 1
+El fraude que más daña entre nosotros
+no viene de un *extraño*.
+Viene de un *conocido*.
+Al final te digo la *pregunta* exacta
+que ningún estafador sabe *contestar*.
+Se llama *fraude por afinidad*.
+La SEC lo advierte en *Estados Unidos*:
+usa un grupo que ya *confía*,
+la iglesia, los *paisanos*, la familia.
+El problema es quien abusa de la *confianza*.
+Digamos que metes cinco mil dólares
+y te prometen [10%|diez por ciento] al *mes*.
+Y *cumplen* los dos primeros meses:
+cobras [$1,000|mil dólares] en total.
+Esa es la *carnada*.
+Y aquí viene lo que nadie te dice:
+te pagan con el dinero del *siguiente*.
+Tú los ves cobrar y metes *más*,
+o invitas a tu *hermano*.
+Cuando ya no entra gente *nueva*,
+todo se *cae*.
+Pierdes [$4,000|cuatro mil dólares].
+Si tu hermano también entró, pierden [$9,000|nueve mil dólares].
+Haz la cuenta: [10%|diez por ciento] al mes
+en un año convertiría esos ahorros en [$15,692|quince mil seiscientos noventa y dos].
+Ahora sí, la *pregunta*:
+¿De dónde sale exactamente el *dinero*?
+Si no te explican *claro*,
+o te dicen que no le cuentes a *nadie*,
+ya tienes tu *respuesta*.
+Antes de dar un dólar, pide todo por *escrito*.
+Busca a esa persona en *Investor.gov*.
+Y date *dos días* para pensarlo,
+aunque digan que se acaba el *cupo*.
+Si ya caíste, no metas más para *recuperar*.
+Repórtalo a la *SEC* y a la FTC.
+Confiar no es malo, pero *verifica*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien invierte con *conocidos*.

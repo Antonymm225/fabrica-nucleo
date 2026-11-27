@@ -1,0 +1,52 @@
+# FF-087 · Finanzas Familiares · EST-01 · Años que no cuentan
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Ganancias necesarias para un crédito del Seguro Social en 2025 = 1810 $ · https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf
+# Fuente: Máximo de créditos que puedes ganar por año = 4 créditos · https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf
+# Fuente: Créditos necesarios para tener derecho a la jubilación = 40 créditos · https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf
+# Fuente: Años de ingresos más altos que se usan para calcular el beneficio (los años sin trabajo reportado cuentan como cero) = 35 años · https://www.ssa.gov/myaccount/assets/materials/EN-05-10703.pdf
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# Fuente: Retiro: 'podrías llegar hasta medio millón' = 500000 $ · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+Si te pagan en *efectivo* y sin registro,
+para el *Seguro Social* no trabajaste.
+Al final te digo la *página gratis*
+donde ves tus años de trabajo,
+y el *papel* que le pides a tu patrón.
+Se llama *trabajo sin reporte*.
+Aquí en Estados Unidos, el Seguro Social
+no mide cuánto *trabajaste*.
+Mide lo que se *reportó* a tu nombre.
+Digamos que cobras en *efectivo*
+durante [10|diez] *años* completos.
+Son [$400,000|cuatrocientos mil dólares] en total.
+Para el Seguro Social, son *cero créditos*.
+Y aquí viene lo que nadie te dice:
+para jubilarte necesitas [40|cuarenta] *créditos*,
+unos [10|diez] años de trabajo *reportado*.
+Con [$7,240|siete mil doscientos cuarenta] reportados al año,
+ya ganas tus [4|cuatro] *créditos* de ese año.
+El cheque usa tus mejores [35|treinta y cinco] años.
+Los años sin reporte entran como *cero*.
+Ahora sí, la página: *ssa.gov/myaccount*.
+Ahí ves tus ganancias, año por *año*.
+Si falta uno que trabajaste,
+intenta corregirlo con tus *talones* de pago.
+El papel que le pides a tu *patrón*:
+el [W-2|doble u dos], para que *reporte* tu sueldo.
+Y si cobras por tu cuenta, *declara* tus ingresos.
+Pero ese cheque solo *no alcanza*.
+Empieza un ahorro *propio* para tu retiro.
+Una opción: [IUL|a yu el], un *seguro de vida indexado*.
+Es tuyo y crece *hasta un* [10%|diez por ciento] al año.
+Si el mercado cae, *no pierdes* por esa caída.
+Tiene *piso cero*.
+Si empiezas hoy y aportas cada mes,
+podrías llegar hasta *medio millón* para tu retiro,
+depende de cuándo *empieces*.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien cobra en *efectivo*.

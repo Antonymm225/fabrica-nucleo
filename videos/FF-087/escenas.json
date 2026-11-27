@@ -1,0 +1,775 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: aportes mensuales constantes a un IUL, con crecimiento de hasta 10% al año; el resultado depende de cuándo empieces. Contenido educativo, no es asesoría financiera.",
+ "con_iul": true,
+ "visual": {
+  "paleta": 3,
+  "fondo": "rayas",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "en efectivo",
+   "contador": "cobras |en efectivo",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 32,
+     "cara": "preocupado",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "trabajaste"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "billete",
+     "x": 70,
+     "y": 32,
+     "tam": 30,
+     "etiqueta": "EFECTIVO",
+     "en": [
+      0,
+      "efectivo"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "NO CUENTA",
+     "color": "rojo",
+     "x": 70,
+     "y": 32,
+     "en": [
+      1,
+      "trabajaste"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "te digo",
+   "contador": "al final |te digo",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "LA PÁGINA GRATIS",
+     "color": "principal",
+     "x": 50,
+     "y": 12
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 24,
+     "y": 52,
+     "tam": 28,
+     "etiqueta": "TUS AÑOS",
+     "en": [
+      3,
+      "años"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      4,
+      "patrón"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "EL PAPEL",
+     "color": "verde",
+     "x": 78,
+     "y": 50,
+     "en": [
+      4,
+      "papel"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    5
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "SIN",
+    "REPORTE"
+   ],
+   "en": [
+    5,
+    "reporte"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    6
+   ],
+   "capitulo": "el sistema",
+   "contador": "mide |lo reportado",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 6,
+     "tam": 82,
+     "titulo": "Seguro Social",
+     "en": [
+      6
+     ],
+     "renglones": [
+      {
+       "texto": "Lo que trabajaste",
+       "valor": "no mide",
+       "en": [
+        7,
+        "trabajaste"
+       ]
+      },
+      {
+       "texto": "Lo que se reportó",
+       "valor": "sí cuenta",
+       "en": [
+        8,
+        "reportó"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 1,
+      "en": [
+       8,
+       "nombre"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 24,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ",
+     "en": [
+      6,
+      "Estados"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    9
+   ],
+   "capitulo": "diez años",
+   "contador": "cobrado |$400,000",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 16,
+     "y": 95,
+     "tam": 30,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       12,
+       "cero"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "id": "t",
+     "que": "torre",
+     "x": 50,
+     "y": 95,
+     "tam": 55,
+     "valor": 400000,
+     "max": 400000,
+     "prefijo": "$",
+     "etiqueta": "EN EFECTIVO",
+     "en": [
+      10,
+      "años"
+     ],
+     "hasta": [
+      11,
+      "total"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$400,000",
+     "x": 82,
+     "y": 55,
+     "tam": 9,
+     "en": [
+      11,
+      "400,000"
+     ],
+     "sale": [
+      12,
+      "Para"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "t",
+     "en": [
+      12,
+      "cero"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "$0",
+     "color": "gris",
+     "x": 82,
+     "y": 55,
+     "tam": 11,
+     "en": [
+      12,
+      "cero"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    13
+   ],
+   "capitulo": "créditos",
+   "contador": "créditos |40",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 20,
+     "y": 95,
+     "tam": 28,
+     "cara": "sorprendido",
+     "gorro": "sombrero",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "cifra",
+     "texto": "40",
+     "etiqueta": "CRÉDITOS",
+     "color": "principal",
+     "x": 50,
+     "y": 40,
+     "tam": 13,
+     "en": [
+      14,
+      "40"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 78,
+     "tam": 22,
+     "etiqueta": "UNOS 10 AÑOS",
+     "en": [
+      15,
+      "unos"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    16
+   ],
+   "capitulo": "tu cheque",
+   "contador": "al año |$7,240",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 22,
+     "y": 28,
+     "tam": 26,
+     "etiqueta": "$7,240"
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 78,
+     "y": 28,
+     "tam": 24,
+     "etiqueta": "UN AÑO",
+     "en": [
+      16,
+      "año"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+4",
+     "etiqueta": "CRÉDITOS",
+     "color": "verde",
+     "x": 50,
+     "y": 56,
+     "tam": 9,
+     "en": [
+      17,
+      "ganas"
+     ],
+     "sale": [
+      18,
+      "cheque"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "35 MEJORES AÑOS",
+     "color": "tinta",
+     "x": 50,
+     "y": 56,
+     "en": [
+      18,
+      "mejores"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 22,
+     "cara": "neutro",
+     "gorro": "casco",
+     "en": [
+      18,
+      "usa"
+     ],
+     "cambia": {
+      "en": [
+       19,
+       "cero"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "sello",
+     "texto": "SIN REPORTE",
+     "color": "rojo",
+     "x": 78,
+     "y": 28,
+     "en": [
+      19,
+      "reporte"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    20
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      20
+     ],
+     "texto": "paso |1 de 3"
+    },
+    {
+     "en": [
+      21
+     ],
+     "texto": "paso |2 de 3"
+    },
+    {
+     "en": [
+      22
+     ],
+     "texto": "paso |3 de 3"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      20
+     ],
+     "items": [
+      {
+       "texto": "Entra a ssa.gov/myaccount",
+       "en": [
+        20
+       ]
+      },
+      {
+       "texto": "Revisa tus años, uno por uno",
+       "en": [
+        21,
+        "ganancias"
+       ]
+      },
+      {
+       "texto": "Corrige con tus talones de pago",
+       "en": [
+        23,
+        "talones"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 95,
+     "tam": 20,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "en": [
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "tu patrón",
+   "contador": "tu patrón |W-2",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 93,
+     "tam": 30,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       25,
+       "W-2"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 93,
+     "tam": 30,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "TU PATRÓN",
+     "en": [
+      24,
+      "patrón"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Pido mi W-2, por favor.",
+     "piensa": false,
+     "cola": -1,
+     "x": 26,
+     "y": 24,
+     "en": [
+      24,
+      "papel"
+     ],
+     "sale": [
+      26,
+      "Y"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 60,
+     "en": [
+      25,
+      "reporte"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "DECLARA TUS INGRESOS",
+     "color": "principal",
+     "x": 50,
+     "y": 20,
+     "en": [
+      26,
+      "declara"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    27
+   ],
+   "capitulo": "tu ahorro",
+   "contador": "retiro |ahorro propio",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 74,
+     "y": 93,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "pelo",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       28,
+       "ahorro"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Un solo cheque no alcanza",
+     "piensa": true,
+     "cola": 1,
+     "x": 70,
+     "y": 24,
+     "en": [
+      27,
+      "cheque"
+     ],
+     "sale": [
+      28,
+      "Empieza"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "alcancia",
+     "x": 28,
+     "y": 48,
+     "tam": 28,
+     "etiqueta": "TU AHORRO",
+     "en": [
+      28,
+      "ahorro"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "IUL · SEGURO INDEXADO",
+     "color": "principal",
+     "x": 50,
+     "y": 12,
+     "en": [
+      29,
+      "indexado"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    30
+   ],
+   "capitulo": "cómo crece",
+   "contador": "crece |hasta 10%",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "texto",
+     "texto": "HASTA 10% AL AÑO",
+     "color": "verde",
+     "x": 50,
+     "y": 14,
+     "sale": [
+      31,
+      "Si"
+     ]
+    },
+    {
+     "que": "grafica",
+     "inicio": 3600,
+     "final": 500000,
+     "barras": 12,
+     "desdeTexto": "HOY",
+     "hastaTexto": "TU RETIRO",
+     "etiqueta": "PISO CERO",
+     "x": 50,
+     "y": 88,
+     "en": [
+      30,
+      "crece"
+     ],
+     "hasta": [
+      32,
+      "cero"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "PISO CERO: NO PIERDES",
+     "color": "principal",
+     "x": 50,
+     "y": 14,
+     "en": [
+      32,
+      "piso"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    33
+   ],
+   "capitulo": "el premio",
+   "contador": "retiro |hasta medio millón",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "$500,000",
+    "etiqueta": "para tu retiro",
+    "en": [
+     34,
+     "medio"
+    ]
+   },
+   "cae": {
+    "objeto": "alcancia",
+    "letrero": "RETIRO",
+    "en": [
+     34,
+     "retiro"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    36
+   ],
+   "capitulo": "tu siguiente paso",
+   "contador": "link |biografía",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "id": "cel",
+     "que": "celular",
+     "modo": "mensaje",
+     "texto": "Link para aplicar",
+     "x": 28,
+     "y": 42
+    },
+    {
+     "id": "lk",
+     "que": "texto",
+     "texto": "LINK",
+     "color": "principal",
+     "tam": 6,
+     "x": 72,
+     "y": 22,
+     "en": [
+      37,
+      "link"
+     ]
+    },
+    {
+     "que": "flecha",
+     "de": "cel",
+     "a": "lk",
+     "en": [
+      37,
+      "biografía"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "familia",
+     "x": 72,
+     "y": 62,
+     "tam": 30,
+     "en": [
+      39,
+      "familia"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    40
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    40,
+    "Sígueme"
+   ],
+   "compartir": [
+    41,
+    "compártelo"
+   ]
+  }
+ ]
+}

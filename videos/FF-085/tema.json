@@ -1,0 +1,112 @@
+{
+ "titulo": "Casa con ITIN: sí se puede, pero la tasa es la trampa",
+ "angulo": "No necesitas Seguro Social para comprar casa, pero el ITIN te puede subir la tasa 2 puntos, y eso son casi $330 más cada mes en un préstamo de $240,000.",
+ "explicacion": "Sí puedes comprar casa con ITIN. Hay bancos chicos y prestamistas especializados que lo aceptan. Normalmente piden entre 15% y 25% de enganche, y la tasa suele ser de 1 a 3 puntos más alta que la convencional. En un préstamo de $240,000 a 30 años, 2 puntos más de tasa son $328.43 más cada mes. A 30 años son unos $118,000 de más. Por eso lo importante no es solo que te aprueben, sino comparar tasa y costos entre varios prestamistas.",
+ "datos": [
+  {
+   "dato": "Enganche mínimo típico en préstamos ITIN (rango bajo)",
+   "valor": 15,
+   "unidad": "%",
+   "fuente": "https://www.itin.so/itin-mortgage-guide/"
+  },
+  {
+   "dato": "Enganche típico en préstamos ITIN (rango alto)",
+   "valor": 25,
+   "unidad": "%",
+   "fuente": "https://www.itin.so/itin-mortgage-guide/"
+  },
+  {
+   "dato": "Tasa ITIN típica (rango bajo)",
+   "valor": 7.5,
+   "unidad": "%",
+   "fuente": "https://www.itin.so/itin-mortgage-guide/"
+  },
+  {
+   "dato": "Tasa ITIN típica (rango alto)",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://www.itin.so/itin-mortgage-guide/"
+  },
+  {
+   "dato": "Diferencia típica de tasa ITIN contra convencional, mínimo 1 y máximo 3 puntos (verificar con Freddie Mac PMMS)",
+   "valor": 2,
+   "unidad": "% (puntos, supuesto del ejemplo)",
+   "fuente": "https://www.freddiemac.com/pmms"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Enganche de casa de $300,000 al 15%",
+   "expresion": "300000*0.15",
+   "resultado": 45000.0
+  },
+  {
+   "descripcion": "Enganche de casa de $300,000 al 20%",
+   "expresion": "300000*0.20",
+   "resultado": 60000.0
+  },
+  {
+   "descripcion": "Enganche de casa de $300,000 al 25%",
+   "expresion": "300000*0.25",
+   "resultado": 75000.0
+  },
+  {
+   "descripcion": "Pago mensual de capital e intereses, préstamo de $240,000 a 30 años al 6.5% (supuesto convencional)",
+   "expresion": "round(240000*(0.065/12)/(1-(1+0.065/12)**-360),2)",
+   "resultado": 1516.96
+  },
+  {
+   "descripcion": "Pago mensual del mismo préstamo al 8.5% (supuesto ITIN)",
+   "expresion": "round(240000*(0.085/12)/(1-(1+0.085/12)**-360),2)",
+   "resultado": 1845.39
+  },
+  {
+   "descripcion": "Diferencia mensual",
+   "expresion": "round(240000*(0.085/12)/(1-(1+0.085/12)**-360)-240000*(0.065/12)/(1-(1+0.065/12)**-360),2)",
+   "resultado": 328.43
+  },
+  {
+   "descripcion": "Diferencia al año",
+   "expresion": "round(12*(240000*(0.085/12)/(1-(1+0.085/12)**-360)-240000*(0.065/12)/(1-(1+0.065/12)**-360)),2)",
+   "resultado": 3941.15
+  },
+  {
+   "descripcion": "Diferencia en 30 años",
+   "expresion": "round(360*(240000*(0.085/12)/(1-(1+0.085/12)**-360)-240000*(0.065/12)/(1-(1+0.065/12)**-360)),2)",
+   "resultado": 118234.48
+  },
+  {
+   "descripcion": "Intereses totales a 30 años al 6.5%",
+   "expresion": "round(360*240000*(0.065/12)/(1-(1+0.065/12)**-360)-240000,2)",
+   "resultado": 306106.77
+  },
+  {
+   "descripcion": "Intereses totales a 30 años al 8.5%",
+   "expresion": "round(360*240000*(0.085/12)/(1-(1+0.085/12)**-360)-240000,2)",
+   "resultado": 424341.25
+  }
+ ],
+ "consejo": "Pide cotización a por lo menos 3 prestamistas que acepten ITIN (bancos chicos, prestamistas de ITIN). Pídeles por escrito el Loan Estimate y compara tasa, cargos y enganche. Ten listos tus papeles: ITIN, declaraciones de impuestos de 2 años, comprobantes de ingresos y estados de cuenta. Pregunta si hay penalidad por pagar antes o refinanciar. Si la tasa sale alta, pregunta cómo bajarla: más enganche, mejor crédito o refinanciar más adelante. Cuida el trato: una tasa más alta no la compres sin comparar.",
+ "que_no_decir": [
+  "Que a todos los aprueban con ITIN o que es garantizado.",
+  "Que con ITIN ocupas poquito enganche: normalmente piden 15% a 25%.",
+  "Que la tasa de 8.5% es la tasa que te van a dar: es un ejemplo.",
+  "Que puedes refinanciar seguro cuando quieras o que la tasa va a bajar.",
+  "Dar cifras de tasas actuales sin verificarlas en Freddie Mac o con cotizaciones reales.",
+  "Mandar a la gente con notarios, 'gestores' o a quien cobre por 'conseguir' el ITIN o el préstamo.",
+  "Prometer que el préstamo ayuda con migración o estatus legal."
+ ],
+ "con_iul": false,
+ "idea": "Comprar casa en Estados Unidos con ITIN: sí se puede, qué piden y en qué fijarse",
+ "gancho_pedido": "No necesitas Seguro Social para comprar casa en Estados Unidos.",
+ "ganchos_recientes": [
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor.",
+  "La diabetes no te saca de golpe. / Te va sacando de a poco. / Primero tus horas, luego tu sueldo. / Al final te digo las tres preguntas"
+ ]
+}

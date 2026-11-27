@@ -1,0 +1,702 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: préstamo de $240,000 a 30 años con tasa de 6.5% contra 8.5%; tu tasa real puede ser distinta. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 1,
+  "fondo": "cruces",
+  "clave": "serif"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "con ITIN",
+   "contador": "casa |con ITIN",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       3,
+       "330"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 70,
+     "y": 38,
+     "tam": 36,
+     "en": [
+      1,
+      "casa"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$330",
+     "x": 68,
+     "y": 72,
+     "tam": 9,
+     "en": [
+      3,
+      "330"
+     ],
+     "etiqueta": "cada mes"
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    4
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "prestamistas |¿cuántos?",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 32,
+     "cara": "neutro",
+     "gorro": "gorra"
+    },
+    {
+     "que": "globo",
+     "texto": "¿A cuántos llamo?",
+     "piensa": true,
+     "cola": -1,
+     "x": 26,
+     "y": 20,
+     "en": [
+      4,
+      "cuántos"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 60,
+     "tam": 28,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      4,
+      "prestamistas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    6
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "TASA",
+    "ITIN"
+   ],
+   "en": [
+    6,
+    "tasa"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    7
+   ],
+   "capitulo": "qué piden",
+   "contador": "enganche |15% a 25%",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Préstamo con ITIN",
+     "en": [
+      7
+     ],
+     "renglones": [
+      {
+       "texto": "Aceptan ITIN",
+       "valor": "SÍ",
+       "en": [
+        7,
+        "ITIN"
+       ]
+      },
+      {
+       "texto": "Bancos chicos",
+       "valor": "SÍ",
+       "en": [
+        8,
+        "bancos"
+       ]
+      },
+      {
+       "texto": "Enganche",
+       "valor": "15% a 25%",
+       "en": [
+        9,
+        "15%"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 2,
+      "en": [
+       9,
+       "enganche"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 20,
+     "cara": "feliz",
+     "gorro": "sombrero",
+     "en": [
+      7,
+      "Con"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "el enganche",
+   "contador": "casa |$300,000",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 24,
+     "y": 38,
+     "tam": 32,
+     "etiqueta": "$300,000",
+     "en": [
+      10
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 58,
+     "y": 95,
+     "tam": 50,
+     "valor": 45000,
+     "max": 75000,
+     "prefijo": "$",
+     "etiqueta": "15%",
+     "en": [
+      11,
+      "45,000"
+     ],
+     "hasta": [
+      11,
+      "45,000"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 50,
+     "valor": 75000,
+     "max": 75000,
+     "prefijo": "$",
+     "etiqueta": "25%",
+     "en": [
+      11,
+      "75,000"
+     ],
+     "hasta": [
+      11,
+      "75,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "lo que nadie dice",
+   "contador": "tasa |+2 puntos",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 28,
+     "y": 94,
+     "tam": 32,
+     "cara": "sorprendido",
+     "gorro": "gorra"
+    },
+    {
+     "que": "cifra",
+     "texto": "+2 puntos",
+     "x": 50,
+     "y": 42,
+     "tam": 12,
+     "etiqueta": "tasa más alta",
+     "color": "principal",
+     "en": [
+      13,
+      "2"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    14
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "ejemplo |préstamo",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 15,
+     "y": 95,
+     "tam": 28,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TASA NORMAL"
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 50,
+     "y": 22,
+     "tam": 24,
+     "etiqueta": "TU PRÉSTAMO",
+     "en": [
+      14,
+      "préstamo"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 38,
+     "y": 95,
+     "tam": 50,
+     "valor": 1517,
+     "max": 1845,
+     "prefijo": "$",
+     "etiqueta": "$1,517",
+     "en": [
+      16,
+      "pagas"
+     ],
+     "hasta": [
+      16,
+      "1,517"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 63,
+     "y": 95,
+     "tam": 28,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TASA ITIN",
+     "en": [
+      17,
+      "Con"
+     ]
+    },
+    {
+     "que": "torre",
+     "x": 86,
+     "y": 95,
+     "tam": 50,
+     "valor": 1845,
+     "max": 1845,
+     "prefijo": "$",
+     "color": "gris",
+     "etiqueta": "$1,845",
+     "en": [
+      17,
+      "pagas"
+     ],
+     "hasta": [
+      17,
+      "1,845"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    18
+   ],
+   "capitulo": "lo que pierdes",
+   "contador": "más |$330 al mes",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "id": "c",
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 24,
+     "y": 26,
+     "tam": 28,
+     "etiqueta": "TU QUINCENA",
+     "en": [
+      18
+     ]
+    },
+    {
+     "id": "b",
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 76,
+     "y": 26,
+     "tam": 30,
+     "etiqueta": "EL PRESTAMISTA",
+     "en": [
+      18,
+      "casi"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "b",
+     "en": [
+      18,
+      "casi"
+     ],
+     "hasta": [
+      19,
+      "4,000"
+     ]
+    },
+    {
+     "que": "cifra",
+     "texto": "+$4,000",
+     "x": 50,
+     "y": 68,
+     "tam": 11,
+     "etiqueta": "en un año",
+     "color": "principal",
+     "en": [
+      19,
+      "4,000"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    20
+   ],
+   "capitulo": "el golpe",
+   "contador": "de más |$118,000",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$118,000",
+    "etiqueta": "de más en todo el préstamo",
+    "en": [
+     20,
+     "118,000"
+    ]
+   },
+   "cae": {
+    "objeto": "casa",
+    "letrero": "TU CASA",
+    "en": [
+     21,
+     "enganche"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    22
+   ],
+   "capitulo": "antes de firmar",
+   "contador": "tasa |puede variar",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "casco",
+     "cambia": {
+      "en": [
+       23,
+       "basta"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "Mi tasa puede ser otra",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      22
+     ],
+     "sale": [
+      23,
+      "Por"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "¡Ya me aprobaron!",
+     "piensa": false,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      23,
+      "aprueben"
+     ],
+     "sale": [
+      24,
+      "Ahora"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "banco",
+     "x": 78,
+     "y": 60,
+     "tam": 28,
+     "etiqueta": "PRESTAMISTA",
+     "en": [
+      25,
+      "prestamistas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    26
+   ],
+   "capitulo": "qué pedir",
+   "contador": "pide |por escrito",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Loan Estimate",
+     "en": [
+      26
+     ],
+     "renglones": [
+      {
+       "texto": "Tasa",
+       "valor": "%",
+       "en": [
+        27,
+        "tasa"
+       ]
+      },
+      {
+       "texto": "Cargos",
+       "valor": "$",
+       "en": [
+        27,
+        "cargos"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       27,
+       "tasa"
+      ],
+      "texto": "¡COMPARA!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 96,
+     "tam": 20,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "en": [
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "tus papeles",
+   "contador": "papeles |4",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 12,
+     "en": [
+      28
+     ],
+     "items": [
+      {
+       "texto": "Tu ITIN",
+       "en": [
+        29,
+        "ITIN"
+       ]
+      },
+      {
+       "texto": "Impuestos de 2 años",
+       "en": [
+        29,
+        "impuestos"
+       ]
+      },
+      {
+       "texto": "Comprobantes de ingresos",
+       "en": [
+        30,
+        "comprobantes"
+       ]
+      },
+      {
+       "texto": "Estados de cuenta",
+       "en": [
+        30,
+        "estados"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    31
+   ],
+   "capitulo": "bajar la tasa",
+   "contador": "tasa |más baja",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 25,
+     "y": 93,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "cambia": {
+      "en": [
+       33,
+       "casa"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "globo",
+     "texto": "¿Cómo bajo mi tasa?",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 22,
+     "en": [
+      31
+     ],
+     "sale": [
+      33,
+      "Comprar"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "casa",
+     "x": 74,
+     "y": 52,
+     "tam": 32,
+     "en": [
+      33,
+      "casa"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "SE PUEDE",
+     "color": "verde",
+     "x": 74,
+     "y": 52,
+     "en": [
+      33,
+      "puede"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    35
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    35,
+    "Sígueme"
+   ],
+   "compartir": [
+    36,
+    "compártelo"
+   ]
+  }
+ ]
+}

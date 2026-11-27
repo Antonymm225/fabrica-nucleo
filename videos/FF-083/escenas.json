@@ -1,0 +1,656 @@
+{
+ "marca": "finanzas-familiares",
+ "estilo": "EST-01",
+ "musica": "jugueton",
+ "aviso": "Ejemplo: compresora de $2,400 a 12 meses, pagos menores a $200 y tasa de 31.99%; el cargo depende del contrato de cada tienda. Contenido educativo, no es asesoría financiera.",
+ "con_iul": false,
+ "visual": {
+  "paleta": 5,
+  "fondo": "cuadricula",
+  "clave": "negra"
+ },
+ "escenas": [
+  {
+   "tipo": "lienzo",
+   "desde": [
+    0
+   ],
+   "capitulo": "cero por ciento",
+   "contador": "promo |12 meses",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 26,
+     "y": 92,
+     "tam": 36,
+     "cara": "feliz",
+     "gorro": "casco",
+     "etiqueta": "TÚ",
+     "cambia": {
+      "en": [
+       1,
+       "trampa"
+      ],
+      "cara": "sorprendido"
+     }
+    },
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 70,
+     "y": 38,
+     "tam": 34,
+     "etiqueta": "MES 13",
+     "en": [
+      1,
+      "mes"
+     ]
+    },
+    {
+     "que": "sello",
+     "texto": "TRAMPA",
+     "color": "rojo",
+     "x": 70,
+     "y": 40,
+     "en": [
+      1,
+      "13"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    2
+   ],
+   "capitulo": "una pregunta",
+   "contador": "pregunta |exacta",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 24,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "gorra",
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Qué le pregunto?",
+     "piensa": false,
+     "cola": 1,
+     "x": 30,
+     "y": 22,
+     "en": [
+      3,
+      "haces"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 76,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      3,
+      "vendedor"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "tablero",
+   "desde": [
+    4
+   ],
+   "capitulo": "la trampa",
+   "filas": [
+    "INTERES",
+    "OCULTO"
+   ],
+   "en": [
+    4,
+    "oculto"
+   ],
+   "entrada": "destello"
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    5
+   ],
+   "capitulo": "el ejemplo",
+   "contador": "compresora |$2,400",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "casco",
+     "ropa": 1
+    },
+    {
+     "que": "cifra",
+     "texto": "$2,400",
+     "x": 68,
+     "y": 28,
+     "tam": 11,
+     "etiqueta": "compresora",
+     "color": "principal",
+     "en": [
+      5,
+      "2,400"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "0% por 12 meses",
+     "x": 68,
+     "y": 55,
+     "color": "verde",
+     "en": [
+      6,
+      "cero"
+     ]
+    },
+    {
+     "que": "objeto",
+     "objeto": "cartera",
+     "x": 68,
+     "y": 80,
+     "tam": 20,
+     "etiqueta": "PAGAS PUNTUAL",
+     "en": [
+      7,
+      "puntual"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    8
+   ],
+   "capitulo": "mes doce",
+   "contador": "te quedan |$600",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "objeto",
+     "objeto": "calendario",
+     "x": 80,
+     "y": 46,
+     "tam": 22,
+     "etiqueta": "MES 12",
+     "en": [
+      8
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 32,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "cambia": {
+      "en": [
+       10,
+       "interés"
+      ],
+      "cara": "preocupado"
+     }
+    },
+    {
+     "que": "cifra",
+     "texto": "$600",
+     "x": 72,
+     "y": 77,
+     "tam": 8,
+     "etiqueta": "te quedan",
+     "color": "tinta",
+     "en": [
+      8,
+      "600"
+     ]
+    },
+    {
+     "que": "globo",
+     "texto": "Ya casi, debo poquito",
+     "piensa": true,
+     "cola": -1,
+     "x": 28,
+     "y": 16,
+     "en": [
+      9,
+      "Piensas"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    10
+   ],
+   "capitulo": "en silencio",
+   "contador": "interés |sumándose",
+   "entrada": "destello",
+   "elementos": [
+    {
+     "que": "grafica",
+     "inicio": 0,
+     "final": 504,
+     "barras": 12,
+     "desdeTexto": "MES 1",
+     "hastaTexto": "MES 12",
+     "etiqueta": "interés guardado",
+     "x": 50,
+     "y": 85,
+     "en": [
+      10
+     ],
+     "hasta": [
+      11,
+      "uno"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    12
+   ],
+   "capitulo": "el cobro",
+   "contador": "interés sobre |$2,400",
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "recibo",
+     "x": 50,
+     "y": 8,
+     "tam": 82,
+     "titulo": "Estado de cuenta",
+     "en": [
+      12
+     ],
+     "renglones": [
+      {
+       "texto": "Interés sobre el precio",
+       "valor": "$2,400",
+       "en": [
+        13,
+        "2,400"
+       ]
+      },
+      {
+       "texto": "Lo que te faltaba",
+       "valor": "$600",
+       "en": [
+        14,
+        "600"
+       ]
+      }
+     ],
+     "marca": {
+      "fila": 0,
+      "en": [
+       13,
+       "2,400"
+      ],
+      "texto": "¡OJO!"
+     }
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 22,
+     "cara": "sorprendido",
+     "gorro": "casco",
+     "en": [
+      12,
+      "nadie"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    15
+   ],
+   "capitulo": "el cargo",
+   "contador": "intereses |$504",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "objeto",
+     "id": "c",
+     "objeto": "cartera",
+     "x": 25,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "TU CARTERA",
+     "en": [
+      15
+     ]
+    },
+    {
+     "que": "objeto",
+     "id": "t",
+     "objeto": "tienda",
+     "x": 75,
+     "y": 28,
+     "tam": 28,
+     "etiqueta": "LA TIENDA",
+     "en": [
+      15,
+      "unos"
+     ]
+    },
+    {
+     "que": "dinero",
+     "de": "c",
+     "a": "t",
+     "en": [
+      15,
+      "unos"
+     ],
+     "hasta": [
+      16,
+      "saldo"
+     ]
+    },
+    {
+     "que": "cifra",
+     "contar": true,
+     "valor": 504,
+     "prefijo": "$",
+     "x": 50,
+     "y": 62,
+     "tam": 10,
+     "etiqueta": "intereses",
+     "color": "principal",
+     "en": [
+      15,
+      "504"
+     ],
+     "hasta": [
+      16,
+      "más"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "mes 13: casi $1,100",
+     "x": 50,
+     "y": 88,
+     "color": "tinta",
+     "en": [
+      17,
+      "1,100"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": [
+    18
+   ],
+   "capitulo": "total",
+   "contador": "pagas |$2,900",
+   "entrada": "destello",
+   "objeto": "billete",
+   "valor": 2900,
+   "prefijo": "$",
+   "etiqueta": "por una de $2,400",
+   "hasta": [
+    18,
+    "2,900"
+   ],
+   "insignia": {
+    "texto": "+$504 EXTRA",
+    "en": [
+     20,
+     "quincena"
+    ]
+   }
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    21
+   ],
+   "capitulo": "la pregunta",
+   "contador": "pregunta |clave",
+   "entrada": "ola",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "feliz",
+     "gorro": "gorra",
+     "ropa": 2,
+     "etiqueta": "TÚ"
+    },
+    {
+     "que": "globo",
+     "texto": "¿Es diferido o exento?",
+     "piensa": false,
+     "cola": 1,
+     "x": 32,
+     "y": 22,
+     "en": [
+      22,
+      "diferido"
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 78,
+     "y": 92,
+     "tam": 34,
+     "cara": "neutro",
+     "gorro": "sombrero",
+     "ropa": 3,
+     "piel": 2,
+     "etiqueta": "EL VENDEDOR",
+     "en": [
+      22,
+      "interés"
+     ]
+    },
+    {
+     "que": "check",
+     "x": 50,
+     "y": 55,
+     "en": [
+      23,
+      "exento"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    24
+   ],
+   "capitulo": "qué hacer",
+   "contador": [
+    {
+     "en": [
+      24
+     ],
+     "texto": "paso |1 de 2"
+    },
+    {
+     "en": [
+      26
+     ],
+     "texto": "paso |2 de 2"
+    }
+   ],
+   "entrada": "corte",
+   "elementos": [
+    {
+     "que": "lista",
+     "x": 50,
+     "y": 10,
+     "en": [
+      24
+     ],
+     "items": [
+      {
+       "texto": "Precio entre 11 meses, no 12",
+       "en": [
+        24,
+        "divide"
+       ]
+      },
+      {
+       "texto": "$218 al mes, pago automático",
+       "en": [
+        26,
+        "218"
+       ]
+      }
+     ]
+    },
+    {
+     "que": "persona",
+     "x": 50,
+     "y": 94,
+     "tam": 22,
+     "cara": "feliz",
+     "gorro": "casco",
+     "en": [
+      26,
+      "Son"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "lienzo",
+   "desde": [
+    28
+   ],
+   "capitulo": "cuidado",
+   "contador": "no la |uses",
+   "entrada": "cuadritos",
+   "elementos": [
+    {
+     "que": "persona",
+     "x": 22,
+     "y": 92,
+     "tam": 34,
+     "cara": "preocupado",
+     "gorro": "gorra",
+     "ropa": 1,
+     "cambia": {
+      "en": [
+       31,
+       "uses"
+      ],
+      "cara": "feliz"
+     }
+    },
+    {
+     "que": "objeto",
+     "id": "pm",
+     "objeto": "tarjeta",
+     "x": 72,
+     "y": 28,
+     "tam": 30,
+     "etiqueta": "PAGO MÍNIMO",
+     "en": [
+      28,
+      "pago"
+     ]
+    },
+    {
+     "que": "tacha",
+     "sobre": "pm",
+     "en": [
+      29,
+      "nunca"
+     ]
+    },
+    {
+     "que": "texto",
+     "texto": "No alcanza: mejor no usarla",
+     "x": 72,
+     "y": 62,
+     "color": "principal",
+     "en": [
+      30,
+      "pagar"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "oscura",
+   "desde": [
+    32
+   ],
+   "capitulo": "el premio",
+   "contador": "ahorras |$504",
+   "entrada": "corte",
+   "cifra": {
+    "texto": "+$504",
+    "etiqueta": "se quedan contigo",
+    "en": [
+     32,
+     "504"
+    ]
+   },
+   "cae": {
+    "objeto": "cartera",
+    "letrero": "TUYO",
+    "en": [
+     32,
+     "contigo"
+    ]
+   }
+  },
+  {
+   "tipo": "cierre",
+   "desde": [
+    33
+   ],
+   "capitulo": "síguenos",
+   "contador": "finanzas |familiares",
+   "entrada": "ola",
+   "nombre": "Finanzas Familiares",
+   "sub": "dinero claro para tu familia",
+   "seguir": [
+    33,
+    "Sígueme"
+   ],
+   "compartir": [
+    34,
+    "compártelo"
+   ]
+  }
+ ]
+}

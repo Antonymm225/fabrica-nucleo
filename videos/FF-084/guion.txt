@@ -1,0 +1,53 @@
+# FF-084 · Finanzas Familiares · EST-01 · La diabetes te saca de a poco
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Caída anual de productividad atribuida a la diabetes (ADA, 2022) = 6.6 % · https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022
+# Fuente: Días de trabajo perdidos por año en EE. UU. por esa caída de productividad = 113000000 días · https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022
+# Fuente: Costo de la productividad perdida por presentismo (trabajar enfermo y rendir menos), 2022 = 35.8 miles de millones de $ · https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022
+# Fuente: Costo por reducción de participación laboral por incapacidad, 2022 = 28.3 miles de millones de $ · https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022
+# Fuente: Puntos porcentuales menos de probabilidad de estar en la fuerza laboral, comparado con personas sin diabetes (mínimo del rango 21-24) = 21 % · https://schaeffer.usc.edu/research/diabetes-paradox-health-labor-disability/
+# Fuente: Puntos porcentuales más de probabilidad de pedir beneficios por incapacidad (mínimo del rango 12-13) = 12 % · https://schaeffer.usc.edu/research/diabetes-paradox-health-labor-disability/
+# Fuente: Espera general del Seguro Social por incapacidad (SSDI) antes del primer pago = 5 meses · https://www.ssa.gov/benefits/disability/qualify.html
+# Fuente: Ejemplo ilustrativo: ingreso por hora de un trabajador de oficio (supuesto, no es dato de fuente) = 25 $ · https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022
+# Fuente: Crecimiento del IUL: decir siempre 'hasta un 10% al año' = 10 % · https://interno/regla-de-la-marca-iul
+# Fuente: Piso del IUL: no pierde por la caída del mercado = 0 % · https://interno/regla-de-la-marca-iul
+# BLOQUE 1
+La *diabetes* no te saca *de golpe*.
+Te va sacando *de a poco*.
+Primero tus horas, luego tu *sueldo*.
+Al final te digo las *tres preguntas*
+que cuidan tu *cheque* si te enfermas.
+Se llama el *goteo* del sueldo.
+Faltas un poco *más*.
+Rindes un poco *menos*.
+En promedio, te baja el *rendimiento*
+[6.6%|seis punto seis por ciento] al *año*.
+Si ganas [$25|veinticinco dólares] la hora,
+son unos [$52,000|cincuenta y dos mil dólares] al año.
+Ese [6.6%|seis punto seis por ciento] son [$3,432|tres mil cuatrocientos treinta y dos dólares] al *año*.
+Más de *tres semanas* de trabajo.
+En [10|diez] años, son [$34,320|treinta y cuatro mil trescientos veinte dólares].
+Y casi *ni lo notas*.
+Pero lo peor viene *después*.
+Cuando *ya no puedes* trabajar,
+el Seguro Social te hace esperar [5|cinco] *meses*.
+Sin pagarte *ni un centavo*.
+Son más de [$21,000|veintiún mil dólares]
+que *no cobras* mientras esperas.
+Es *renta* y *biles* sin cheque.
+Para ese hueco existe el [IUL|a yu el],
+un *seguro de vida indexado*.
+Trae *beneficios en vida*.
+Si te diagnostican una enfermedad *crónica*,
+*crítica* o *terminal*,
+podrías usar parte del dinero *en vida*.
+Ahora sí, las *tres preguntas*:
+¿Qué *enfermedades* cubre?
+¿Cuánto del beneficio *puedes usar*?
+¿Y cuánto cuesta *al mes*?
+Compáralo con los *cinco meses* sin cheque.
+Si quieres aplicar a un [IUL|a yu el],
+te dejo el *link* en mi biografía.
+Un *asesor certificado* ve tu caso a detalle
+y busca la mejor *opción* para tu familia.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien tiene *diabetes en casa*.

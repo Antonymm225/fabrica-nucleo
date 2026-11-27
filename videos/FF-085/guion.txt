@@ -1,0 +1,45 @@
+# FF-085 · Finanzas Familiares · EST-01 · Casa con ITIN: la tasa es la trampa
+# Escrito por Claude (API) desde la ficha tema.json. Cifras verificadas con Python en la revisión.
+# Fuente: Enganche mínimo típico en préstamos ITIN (rango bajo) = 15 % · https://www.itin.so/itin-mortgage-guide/
+# Fuente: Enganche típico en préstamos ITIN (rango alto) = 25 % · https://www.itin.so/itin-mortgage-guide/
+# Fuente: Tasa ITIN típica (rango bajo) = 7.5 % · https://www.itin.so/itin-mortgage-guide/
+# Fuente: Tasa ITIN típica (rango alto) = 10 % · https://www.itin.so/itin-mortgage-guide/
+# Fuente: Diferencia típica de tasa ITIN contra convencional, mínimo 1 y máximo 3 puntos (verificar con Freddie Mac PMMS) = 2 % (puntos, supuesto del ejemplo) · https://www.freddiemac.com/pmms
+# BLOQUE 1
+No necesitas *Seguro Social*
+para comprar casa en *Estados Unidos*.
+Pero hay un número en tu préstamo
+que te sube casi [$330|trescientos treinta dólares] *cada mes*.
+Al final te digo a cuántos *prestamistas* llamar,
+y el *papel* que les pides por escrito.
+Se llama la *tasa ITIN*.
+Con tu *ITIN* sí te pueden prestar.
+Hay bancos chicos y prestamistas *especializados*.
+Piden entre [15%|quince por ciento] y [25%|veinticinco por ciento] de *enganche*.
+En una casa de [$300,000|trescientos mil dólares],
+eso es de [$45,000|cuarenta y cinco mil dólares] a [$75,000|setenta y cinco mil dólares].
+Pero aquí viene lo que *nadie te dice*.
+La tasa suele venir [2|dos] puntos *más alta*.
+Imagina un *préstamo* para esa casa.
+A plazo largo, con una tasa *normal*,
+pagas [$1,517|mil quinientos diecisiete dólares] al *mes*.
+Con [2|dos] puntos más, pagas [$1,845|mil ochocientos cuarenta y cinco dólares].
+Son casi [$330|trescientos treinta dólares] *más* cada mes.
+En un año, casi [$4,000|cuatro mil dólares].
+En todo el préstamo, unos [$118,000|ciento dieciocho mil dólares] de más.
+Casi el doble de un *enganche* de [$60,000|sesenta mil dólares].
+Es un ejemplo, tu tasa puede ser *otra*.
+Por eso no basta que te *aprueben*.
+Ahora sí, lo que tienes que *hacer*:
+Llama a [3|tres] *prestamistas* que acepten ITIN.
+Pídele a cada uno, por escrito,
+el *Loan Estimate*, donde comparas tasa y cargos.
+Ten listos [4|cuatro] *papeles*:
+tu ITIN, tus impuestos de [2|dos] años,
+comprobantes de *ingresos* y estados de cuenta.
+Y pregunta cómo *bajar la tasa*:
+más enganche, mejor *crédito*, o refinanciar después.
+Comprar casa sí se *puede*,
+pero la tasa decide cuánto te *cuesta*.
+*Sígueme* para más videos de finanzas,
+y compártelo con quien quiere *casa propia*.

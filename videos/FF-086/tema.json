@@ -1,0 +1,79 @@
+{
+ "titulo": "El fraude de confianza",
+ "angulo": "La estafa de inversión que más daña a las comunidades no viene de un extraño: viene de alguien en quien ya confías, y el 'pago' de los primeros meses es la carnada, no la prueba de que es real.",
+ "explicacion": "Se llama fraude por afinidad. El estafador usa un grupo que ya confía entre sí: la iglesia, los paisanos, la familia. A veces usa a un líder respetado para que otros entren. Paga 'ganancias' los primeros meses con el dinero de los nuevos, y por eso parece real. Tú lo ves cobrar y metes más dinero o invitas a tu hermano. Cuando se acaba la entrada de gente nueva, todo se cae y el dinero ya no está.",
+ "datos": [
+  {
+   "dato": "La SEC advierte que el fraude por afinidad aprovecha la confianza dentro de grupos religiosos, étnicos o de inmigrantes. Su alerta describe casos contra comunidades latinas, entre ellas un esquema piramidal dirigido a inmigrantes dominicanos y brasileños. (Esto sí está verificado.)",
+   "valor": 1,
+   "unidad": "alerta de la SEC (fuente verificada)",
+   "fuente": "https://www.sec.gov/oiea/investor-alerts-bulletins/ia_affinityfraud.html"
+  },
+  {
+   "dato": "Pérdidas reportadas por estafas de inversión a la FTC en 2024, en miles de millones de dólares. Es de memoria, verificar antes de publicar.",
+   "valor": 5.7,
+   "unidad": "miles de millones de $",
+   "fuente": "https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024"
+  },
+  {
+   "dato": "Rendimiento aproximado de una cuenta de ahorro en línea con seguro FDIC (referencia realista, verificar la tasa vigente).",
+   "valor": 4.5,
+   "unidad": "% anual",
+   "fuente": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ejemplo: tú metes $5,000 y te prometen 10% al mes. Ganancia mensual prometida.",
+   "expresion": "round(5000*0.10,2)",
+   "resultado": 500.0
+  },
+  {
+   "descripcion": "Lo que cobras en los 2 primeros meses (la carnada)",
+   "expresion": "round(5000*0.10*2,2)",
+   "resultado": 1000.0
+  },
+  {
+   "descripcion": "Pérdida real si luego todo se cae: lo que metiste menos lo que cobraste",
+   "expresion": "round(5000-1000,2)",
+   "resultado": 4000.0
+  },
+  {
+   "descripcion": "Si por la confianza invitas a tu hermano con otros $5,000 y los dos pierden todo menos los $1,000 cobrados, la pérdida de la familia",
+   "expresion": "round(10000-1000,2)",
+   "resultado": 9000.0
+  },
+  {
+   "descripcion": "Lo que 10% mensual daría en 12 meses con $5,000 (número imposible, para mostrar que la promesa no cuadra)",
+   "expresion": "round(5000*1.10**12,2)",
+   "resultado": 15692.14
+  },
+  {
+   "descripcion": "Ganancia anual en una cuenta de ahorro en línea al 4.5% con los mismos $5,000",
+   "expresion": "round(5000*0.045,2)",
+   "resultado": 225.0
+  }
+ ],
+ "consejo": "Antes de dar un dólar, haz tres cosas. 1) Busca al vendedor y la inversión en Investor.gov (revisa que esté registrado) y en la oficina de valores de tu estado. 2) Pide todo por escrito, con nombre de la empresa y quién guarda tu dinero. 3) Date 48 horas, aunque digan que 'se acaba el cupo'. Desconfía si hay ganancia fija y alta sin riesgo, si te piden meter a otros, si no te explican de dónde sale el dinero o si te dicen que no le cuentes a nadie. Si ya caíste, no metas más dinero para 'recuperar'. Repórtalo a la SEC, a la FTC (ReportFraud.ftc.gov) y a la oficina de valores de tu estado.",
+ "que_no_decir": [
+  "No acuses a la iglesia, a los paisanos ni a ninguna comunidad: el problema es quien abusa de la confianza, no el grupo.",
+  "No digas que 'los que caen son ingenuos': a cualquiera le puede pasar con alguien de confianza.",
+  "No prometas que revisar el registro garantiza que una inversión sea buena: solo ayuda a descartar vendedores sin licencia.",
+  "No recomiendes ninguna inversión, acción ni criptomoneda.",
+  "No presentes las cifras de la FTC como verificadas hasta revisarlas en la fuente.",
+  "No prometas recuperar el dinero perdido."
+ ],
+ "con_iul": false,
+ "idea": "El fraude de inversión entre conocidos (iglesia, paisanos, familia): cómo se ve y las señales para no caer",
+ "gancho_pedido": "El fraude más común entre nosotros no viene de un extraño. Viene de un conocido.",
+ "ganchos_recientes": [
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor.",
+  "La diabetes no te saca de golpe. / Te va sacando de a poco. / Primero tus horas, luego tu sueldo. / Al final te digo las tres preguntas",
+  "No necesitas Seguro Social / para comprar casa en Estados Unidos. / Pero hay un número en tu préstamo / que te sube casi $330 cada mes."
+ ]
+}

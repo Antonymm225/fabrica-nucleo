@@ -1,0 +1,129 @@
+{
+ "titulo": "La diabetes te saca de a poco",
+ "angulo": "Casi nadie se incapacita de golpe: la diabetes te quita horas y sueldo poco a poco durante años, y cuando por fin no puedes trabajar, el Seguro Social todavía te hace esperar 5 meses sin pagar nada.",
+ "explicacion": "Creemos que una enfermedad solo cuenta cuando te tumba un día. Con la diabetes pasa otra cosa: faltas más, rindes menos y sales del trabajo de a poco. La Asociación Americana de Diabetes calcula que la diabetes reduce la productividad un 6.6% al año, que equivale a 113 millones de días de trabajo perdidos. Las personas con diabetes tienen entre 21 y 24 puntos menos de probabilidad de estar en la fuerza laboral. Cuando por fin pides ayuda por incapacidad, el Seguro Social generalmente hace esperar 5 meses antes del primer pago. Un seguro de vida con beneficios en vida te permite usar parte del dinero si te diagnostican una enfermedad crónica, crítica o terminal.",
+ "datos": [
+  {
+   "dato": "Caída anual de productividad atribuida a la diabetes (ADA, 2022)",
+   "valor": 6.6,
+   "unidad": "%",
+   "fuente": "https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022"
+  },
+  {
+   "dato": "Días de trabajo perdidos por año en EE. UU. por esa caída de productividad",
+   "valor": 113000000,
+   "unidad": "días",
+   "fuente": "https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022"
+  },
+  {
+   "dato": "Costo de la productividad perdida por presentismo (trabajar enfermo y rendir menos), 2022",
+   "valor": 35.8,
+   "unidad": "miles de millones de $",
+   "fuente": "https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022"
+  },
+  {
+   "dato": "Costo por reducción de participación laboral por incapacidad, 2022",
+   "valor": 28.3,
+   "unidad": "miles de millones de $",
+   "fuente": "https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022"
+  },
+  {
+   "dato": "Puntos porcentuales menos de probabilidad de estar en la fuerza laboral, comparado con personas sin diabetes (mínimo del rango 21-24)",
+   "valor": 21,
+   "unidad": "%",
+   "fuente": "https://schaeffer.usc.edu/research/diabetes-paradox-health-labor-disability/"
+  },
+  {
+   "dato": "Puntos porcentuales más de probabilidad de pedir beneficios por incapacidad (mínimo del rango 12-13)",
+   "valor": 12,
+   "unidad": "%",
+   "fuente": "https://schaeffer.usc.edu/research/diabetes-paradox-health-labor-disability/"
+  },
+  {
+   "dato": "Espera general del Seguro Social por incapacidad (SSDI) antes del primer pago",
+   "valor": 5,
+   "unidad": "meses",
+   "fuente": "https://www.ssa.gov/benefits/disability/qualify.html"
+  },
+  {
+   "dato": "Ejemplo ilustrativo: ingreso por hora de un trabajador de oficio (supuesto, no es dato de fuente)",
+   "valor": 25,
+   "unidad": "$",
+   "fuente": "https://diabetesjournals.org/care/article/47/1/26/153797/Economic-Costs-of-Diabetes-in-the-U-S-in-2022"
+  },
+  {
+   "dato": "Crecimiento del IUL: decir siempre 'hasta un 10% al año'",
+   "valor": 10,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  },
+  {
+   "dato": "Piso del IUL: no pierde por la caída del mercado",
+   "valor": 0,
+   "unidad": "%",
+   "fuente": "https://interno/regla-de-la-marca-iul"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Ingreso anual de quien gana $25 por hora, 40 horas por semana, 52 semanas",
+   "expresion": "25*40*52",
+   "resultado": 52000
+  },
+  {
+   "descripcion": "Horas de trabajo por semana que equivalen a 6.6% de 40 horas",
+   "expresion": "round(40*0.066,2)",
+   "resultado": 2.64
+  },
+  {
+   "descripcion": "Horas de trabajo perdidas al año (6.6% de 2,080 horas)",
+   "expresion": "round(40*52*0.066,2)",
+   "resultado": 137.28
+  },
+  {
+   "descripcion": "Dinero perdido al año con 6.6% de caída de productividad sobre $52,000",
+   "expresion": "round(52000*0.066,2)",
+   "resultado": 3432
+  },
+  {
+   "descripcion": "Dinero perdido en 10 años a ese ritmo, sin crecimiento ni intereses",
+   "expresion": "round(52000*0.066*10,2)",
+   "resultado": 34320
+  },
+  {
+   "descripcion": "Ingreso mensual de $52,000 al año",
+   "expresion": "round(52000/12,2)",
+   "resultado": 4333.33
+  },
+  {
+   "descripcion": "Ingreso que no cobras durante los 5 meses de espera del Seguro Social por incapacidad",
+   "expresion": "round(52000/12*5,2)",
+   "resultado": 21666.67
+  }
+ ],
+ "consejo": "No esperes a que te tumben para pensar en protegerte. Si tienes diabetes en la familia, o ya notas que faltas o rindes menos, revisa hoy cuánto necesitas para vivir un mes. Luego pide a un agente de seguros con licencia que te explique si un seguro de vida indexado (IUL) con beneficios en vida te sirve. Pregunta qué enfermedades cubre, cuánto del beneficio puedes usar y cuál es el costo mensual. Compáralo con los 5 meses sin cheque del Seguro Social.",
+ "que_no_decir": [
+  "No prometas que el IUL cura, previene o paga el tratamiento de la diabetes.",
+  "No digas que el seguro paga automáticamente si te diagnostican: depende de la póliza, de la enfermedad cubierta y de los requisitos.",
+  "No presentes el 6.6% ni los $3,432 como lo que va a perder cualquier persona: son promedios nacionales y un ejemplo ilustrativo.",
+  "No digas que todos con diabetes dejan de trabajar o se incapacitan.",
+  "No digas que el Seguro Social nunca paga: sí paga, pero generalmente después de 5 meses de espera.",
+  "No uses datos de ahorro, retiro o cuánto crece el IUL en este video.",
+  "No des consejo médico ni asustes con complicaciones."
+ ],
+ "con_iul": true,
+ "beneficio_iul": "beneficios en vida si te enfermas",
+ "cta_iul": "biografia",
+ "idea": "Una enfermedad crónica como la diabetes: no te saca de trabajar en un día, te va quitando horas y dinero por años",
+ "gancho_pedido": "La diabetes no te saca de trabajar en un día. Te va sacando de a poco.",
+ "ganchos_recientes": [
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas",
+  "Cero intereses por 12 meses / tiene una trampa en el mes 13. / Al final te digo la pregunta exacta / que le haces al vendedor."
+ ]
+}

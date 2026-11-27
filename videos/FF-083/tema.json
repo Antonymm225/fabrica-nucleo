@@ -1,0 +1,95 @@
+{
+ "titulo": "El mes trece del cero por ciento",
+ "angulo": "Pagaste tres cuartas partes y solo te quedan $600, pero el interés se calcula sobre los $2,400 completos desde el día uno, porque «cero interés» en realidad era «interés guardado».",
+ "explicacion": "En muchas tarjetas de tienda, el «0% por 12 meses» es interés diferido. El interés no desaparece: se va sumando en silencio desde el día de la compra. Si el último día todavía debes algo, la tarjeta te cobra el interés de todo el tiempo, y no solo de lo que te falta. Con una tasa típica de 31.99%, una compresora de $2,400 pagada a $150 al mes te deja $600 pendientes y un cargo de unos $504 por intereses. Lo que te venden como $200 al mes es la cuenta exacta, y cualquier retraso o pago más chico lo pagas caro.",
+ "datos": [
+  {
+   "dato": "Tasa típica de interés diferido en tarjetas de tienda, según el CFPB",
+   "valor": 31.99,
+   "unidad": "%",
+   "fuente": "https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf"
+  },
+  {
+   "dato": "Tasa promedio de las tarjetas de tienda de los grandes comercios (diciembre 2024), según el CFPB",
+   "valor": 32.66,
+   "unidad": "%",
+   "fuente": "https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf"
+  },
+  {
+   "dato": "Precio del ejemplo: compresora y herramientas (ejemplo del video, no es un precio de mercado)",
+   "valor": 2400,
+   "unidad": "$",
+   "fuente": "https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf"
+  },
+  {
+   "dato": "Plazo de la promoción del ejemplo",
+   "valor": 12,
+   "unidad": "meses",
+   "fuente": "https://business.cch.com/BFLD/CFPB-Issue-Spotlight-High-Cost-Retail-Credit-Cards-12182024.pdf"
+  }
+ ],
+ "calculos": [
+  {
+   "descripcion": "Pago mensual exacto para terminar en 12 meses",
+   "expresion": "round(2400/12,2)",
+   "resultado": 200.0
+  },
+  {
+   "descripcion": "Saldo que queda tras 12 pagos de $150",
+   "expresion": "round(2400-150*12,2)",
+   "resultado": 600.0
+  },
+  {
+   "descripcion": "Suma de saldos mensuales con pagos de $150 (base del interés acumulado)",
+   "expresion": "round(2400*12-150*(0+1+2+3+4+5+6+7+8+9+10+11),2)",
+   "resultado": 18900.0
+  },
+  {
+   "descripcion": "Interés acumulado de los 12 meses que te cobran de golpe",
+   "expresion": "round(18900*(0.3199/12),2)",
+   "resultado": 503.84
+  },
+  {
+   "descripcion": "Lo que debes el mes 13 (saldo + interés retroactivo)",
+   "expresion": "round(600+18900*(0.3199/12),2)",
+   "resultado": 1103.84
+  },
+  {
+   "descripcion": "Total pagado al final contra el precio de $2,400",
+   "expresion": "round(150*12+600+18900*(0.3199/12),2)",
+   "resultado": 2903.84
+  },
+  {
+   "descripcion": "Interés cobrado como porcentaje del saldo de $600",
+   "expresion": "round(18900*(0.3199/12)/600*100,2)",
+   "resultado": 83.97
+  },
+  {
+   "descripcion": "Pago mensual para terminar un mes antes (11 meses)",
+   "expresion": "round(2400/11,2)",
+   "resultado": 218.18
+  }
+ ],
+ "consejo": "Antes de firmar, pregunta: «¿Este es interés diferido o interés exento?». Divide el precio entre 11 meses, no entre 12, y programa ese pago automático para terminar un mes antes (en el ejemplo, $218.18 en vez de $200). Revisa el estado de cuenta, porque el pago mínimo que te piden casi nunca alcanza para liquidar a tiempo. Si no puedes pagar el total antes de la fecha límite, mejor no uses la promoción.",
+ "que_no_decir": [
+  "No digas que todas las promociones «sin intereses» son trampa: algunas son de verdad 0% y no cobran retroactivo.",
+  "No des el cargo de $503.84 como cifra de cualquier tienda: depende del contrato, la tasa y los pagos.",
+  "No prometas que el pago mínimo te libera a tiempo.",
+  "No uses los $2,400 de la compresora como precio real de mercado.",
+  "No menciones el sillón, el refri, las llantas ni los $600 cortos del último día (FF-004).",
+  "No recomiendes cooperativas ni planes del trabajo."
+ ],
+ "con_iul": false,
+ "idea": "Cero intereses por doce meses' en tiendas: el interés diferido que te cobran completo si no terminas a tiempo",
+ "gancho_pedido": "Cero intereses por doce meses' tiene una trampa en el mes trece.",
+ "ganchos_recientes": [
+  "La fiesta dura seis horas. / La deuda dura años. / Y ese pago cómodo esconde miles de dólares. / Antes de firmar, pide un número.",
+  "Hay dinero a tu nombre / guardado por el estado, / y nadie te va a llamar. / Al final te digo la página oficial",
+  "Hay seguros de vida que se acaban / justo cuando más los necesitas. / Y el tuyo puede traer una fecha escondida. / Al final te digo la palabra",
+  "Tu reembolso grande no es un regalo. / Es un préstamo que le hiciste al gobierno. / Y te lo devuelven sin un centavo de interés. / Al final te digo la herramienta gratis",
+  "Treinta años de trabajo / no deberían caber en una troca. / A los cuarenta y cinco, todavía no es tarde. / Al final te hago la cuenta exacta",
+  "Si te pagan en una tarjeta, / puede que te cobren por usar tu propio sueldo. / Al final te digo la frase exacta / que le entregas a nómina",
+  "Tu casero conoce una regla del recargo / que nunca te va a contar. / Al final te digo el papel / que le pides por escrito.",
+  "Tus hijos no heredan tus deudas. / Pero hay excepciones que nadie te cuenta. / Una la termina pagando alguien que ni la usó. / Al final te digo la hoja de tres columnas"
+ ]
+}
